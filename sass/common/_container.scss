@@ -1,0 +1,60 @@
+//column
+
+//global
+
+.container {
+  width: 1200px;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container,
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.wrapper,
+.package {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+//responsive
+
+@media (max-width: 1199px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media (max-width: 319px) {}

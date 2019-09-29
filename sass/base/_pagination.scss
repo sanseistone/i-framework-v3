@@ -1,0 +1,2074 @@
+//pagination
+
+.page-nav {
+  position: relative;
+  width: 100%;
+  //float: left;
+
+  > li {
+    > a, > span {
+      color: $default-color;
+      border: 1px solid $default-color;
+
+      &:focus, &:hover {
+        color: $white;
+        $color: #2196f3;
+        border-color: $color;
+        background-color: $color;
+      }
+    }
+  }
+}
+
+.pagination {
+  > .active {
+    > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+      color: $white;
+      border-color: $default-color;
+      background-color: $default-color;
+    }
+  }
+
+  &.red {
+    > li > a, > li > span {
+      color: $color-red;
+      border: 1px solid $color-red-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-red-hover;
+        background-color: $color-red-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-red-border;
+        background-color: $color-red-bg;
+      }
+    }
+  }
+
+  &.pink {
+    > li > a, > li > span {
+      color: $color-pink;
+      border: 1px solid $color-pink-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-pink-hover;
+        background-color: $color-pink-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-pink-border;
+        background-color: $color-pink-bg;
+      }
+    }
+  }
+
+  &.purple {
+    > li > a, > li > span {
+      color: $color-purple;
+      border: 1px solid $color-purple-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-purple-hover;
+        background-color: $color-purple-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-purple-border;
+        background-color: $color-purple-bg;
+      }
+    }
+  }
+
+  &.deep-purple {
+    > li > a, > li > span {
+      color: $color-deep-purple;
+      border: 1px solid $color-deep-purple-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-deep-purple-hover;
+        background-color: $color-deep-purple-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-deep-purple-border;
+        background-color: $color-deep-purple-bg;
+      }
+    }
+  }
+
+  &.indigo {
+    > li > a, > li > span {
+      color: $color-indigo;
+      border: 1px solid $color-indigo-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-indigo-hover;
+        background-color: $color-indigo-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-indigo-border;
+        background-color: $color-indigo-bg;
+      }
+    }
+  }
+
+  &.blue {
+    > li > a, > li > span {
+      color: $color-blue;
+      border: 1px solid $color-blue-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-blue-hover;
+        background-color: $color-blue-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-blue-border;
+        background-color: $color-blue-bg;
+      }
+    }
+  }
+
+  &.light-blue {
+    > li > a, > li > span {
+      color: $color-light-blue;
+      border: 1px solid $color-light-blue-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-light-blue-hover;
+        background-color: $color-light-blue-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-light-blue-border;
+        background-color: $color-light-blue-bg;
+      }
+    }
+  }
+
+  &.cyan {
+    > li > a, > li > span {
+      color: $color-cyan;
+      border: 1px solid $color-cyan-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-cyan-hover;
+        background-color: $color-cyan-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-cyan-border;
+        background-color: $color-cyan-bg;
+      }
+    }
+  }
+
+  &.teal {
+    > li > a, > li > span {
+      color: $color-teal;
+      border: 1px solid $color-teal-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-teal-hover;
+        background-color: $color-teal-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-teal-border;
+        background-color: $color-teal-bg;
+      }
+    }
+  }
+
+  &.green {
+    > li > a, > li > span {
+      color: $color-green;
+      border: 1px solid $color-green-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-green-hover;
+        background-color: $color-green-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-green-border;
+        background-color: $color-green-bg;
+      }
+    }
+  }
+
+  &.light-green {
+    > li > a, > li > span {
+      color: $color-light-green;
+      border: 1px solid $color-light-green-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-light-green-hover;
+        background-color: $color-light-green-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-light-green-border;
+        background-color: $color-light-green-bg;
+      }
+    }
+  }
+
+  &.lime {
+    > li > a, > li > span {
+      color: $color-lime;
+      border: 1px solid $color-lime-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-lime-hover;
+        background-color: $color-lime-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-lime-border;
+        background-color: $color-lime-bg;
+      }
+    }
+  }
+
+  &.yellow {
+    > li > a, > li > span {
+      color: $color-yellow;
+      border: 1px solid $color-yellow-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-yellow-hover;
+        background-color: $color-yellow-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-yellow-border;
+        background-color: $color-yellow-bg;
+      }
+    }
+  }
+
+  &.amber {
+    > li > a, > li > span {
+      color: $color-amber;
+      border: 1px solid $color-amber-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-amber-hover;
+        background-color: $color-amber-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-amber-border;
+        background-color: $color-amber-bg;
+      }
+    }
+  }
+
+  &.orange {
+    > li > a, > li > span {
+      color: $color-orange;
+      border: 1px solid $color-orange-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-orange-hover;
+        background-color: $color-orange-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-orange-border;
+        background-color: $color-orange-bg;
+      }
+    }
+  }
+
+  &.deep-orange {
+    > li > a, > li > span {
+      color: $color-deep-orange;
+      border: 1px solid $color-deep-orange-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-deep-orange-hover;
+        background-color: $color-deep-orange-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-deep-orange-border;
+        background-color: $color-deep-orange-bg;
+      }
+    }
+  }
+
+  &.brown {
+    > li > a, > li > span {
+      color: $color-brown;
+      border: 1px solid $color-brown-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-brown-hover;
+        background-color: $color-brown-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-brown-border;
+        background-color: $color-brown-bg;
+      }
+    }
+  }
+
+  &.grey {
+    > li > a, > li > span {
+      color: $color-grey;
+      border: 1px solid $color-grey-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-grey-hover;
+        background-color: $color-grey-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-grey-border;
+        background-color: $color-grey-bg;
+      }
+    }
+  }
+
+  &.blue-grey {
+    > li > a, > li > span {
+      color: $color-blue-grey;
+      border: 1px solid $color-blue-grey-border;
+
+      &:focus, &:hover {
+        color: $white;
+        border-color: $color-blue-grey-hover;
+        background-color: $color-blue-grey-hover;
+      }
+    }
+
+    > .active {
+      > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+        color: $white;
+        border-color: $color-blue-grey-border;
+        background-color: $color-blue-grey-bg;
+      }
+    }
+  }
+
+  &.space {
+    > li {
+      display: inline-block;
+      float: left;
+
+      & + li {
+        margin-left: 4px;
+      }
+
+      > a {
+        border-radius: 0 !important;
+      }
+
+      > a, > span {
+        color: $color-333;
+        border: 1px solid $color-999;
+      }
+    }
+  }
+}
+
+//responsive
+
+@media (max-width: 1199px) {
+
+  .pagination {
+    &.red-lg {
+      > li > a, > li > span {
+        color: $color-red;
+        border: 1px solid $color-red-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-red-hover;
+          background-color: $color-red-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-red-border;
+          background-color: $color-red-bg;
+        }
+      }
+    }
+
+    &.pink-lg {
+      > li > a, > li > span {
+        color: $color-pink;
+        border: 1px solid $color-pink-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-pink-hover;
+          background-color: $color-pink-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-pink-border;
+          background-color: $color-pink-bg;
+        }
+      }
+    }
+
+    &.purple-lg {
+      > li > a, > li > span {
+        color: $color-purple;
+        border: 1px solid $color-purple-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-purple-hover;
+          background-color: $color-purple-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-purple-border;
+          background-color: $color-purple-bg;
+        }
+      }
+    }
+
+    &.deep-purple-lg {
+      > li > a, > li > span {
+        color: $color-deep-purple;
+        border: 1px solid $color-deep-purple-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-deep-purple-hover;
+          background-color: $color-deep-purple-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-deep-purple-border;
+          background-color: $color-deep-purple-bg;
+        }
+      }
+    }
+
+    &.indigo-lg {
+      > li > a, > li > span {
+        color: $color-indigo;
+        border: 1px solid $color-indigo-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-indigo-hover;
+          background-color: $color-indigo-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-indigo-border;
+          background-color: $color-indigo-bg;
+        }
+      }
+    }
+
+    &.blue-lg {
+      > li > a, > li > span {
+        color: $color-blue;
+        border: 1px solid $color-blue-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-blue-hover;
+          background-color: $color-blue-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-blue-border;
+          background-color: $color-blue-bg;
+        }
+      }
+    }
+
+    &.light-blue-lg {
+      > li > a, > li > span {
+        color: $color-light-blue;
+        border: 1px solid $color-light-blue-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-light-blue-hover;
+          background-color: $color-light-blue-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-light-blue-border;
+          background-color: $color-light-blue-bg;
+        }
+      }
+    }
+
+    &.cyan-lg {
+      > li > a, > li > span {
+        color: $color-cyan;
+        border: 1px solid $color-cyan-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-cyan-hover;
+          background-color: $color-cyan-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-cyan-border;
+          background-color: $color-cyan-bg;
+        }
+      }
+    }
+
+    &.teal-lg {
+      > li > a, > li > span {
+        color: $color-teal;
+        border: 1px solid $color-teal-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-teal-hover;
+          background-color: $color-teal-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-teal-border;
+          background-color: $color-teal-bg;
+        }
+      }
+    }
+
+    &.green-lg {
+      > li > a, > li > span {
+        color: $color-green;
+        border: 1px solid $color-green-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-green-hover;
+          background-color: $color-green-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-green-border;
+          background-color: $color-green-bg;
+        }
+      }
+    }
+
+    &.light-green-lg {
+      > li > a, > li > span {
+        color: $color-light-green;
+        border: 1px solid $color-light-green-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-light-green-hover;
+          background-color: $color-light-green-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-light-green-border;
+          background-color: $color-light-green-bg;
+        }
+      }
+    }
+
+    &.lime-lg {
+      > li > a, > li > span {
+        color: $color-lime;
+        border: 1px solid $color-lime-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-lime-hover;
+          background-color: $color-lime-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-lime-border;
+          background-color: $color-lime-bg;
+        }
+      }
+    }
+
+    &.yellow-lg {
+      > li > a, > li > span {
+        color: $color-yellow;
+        border: 1px solid $color-yellow-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-yellow-hover;
+          background-color: $color-yellow-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-yellow-border;
+          background-color: $color-yellow-bg;
+        }
+      }
+    }
+
+    &.amber-lg {
+      > li > a, > li > span {
+        color: $color-amber;
+        border: 1px solid $color-amber-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-amber-hover;
+          background-color: $color-amber-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-amber-border;
+          background-color: $color-amber-bg;
+        }
+      }
+    }
+
+    &.orange-lg {
+      > li > a, > li > span {
+        color: $color-orange;
+        border: 1px solid $color-orange-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-orange-hover;
+          background-color: $color-orange-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-orange-border;
+          background-color: $color-orange-bg;
+        }
+      }
+    }
+
+    &.deep-orange-lg {
+      > li > a, > li > span {
+        color: $color-deep-orange;
+        border: 1px solid $color-deep-orange-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-deep-orange-hover;
+          background-color: $color-deep-orange-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-deep-orange-border;
+          background-color: $color-deep-orange-bg;
+        }
+      }
+    }
+
+    &.brown-lg {
+      > li > a, > li > span {
+        color: $color-brown;
+        border: 1px solid $color-brown-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-brown-hover;
+          background-color: $color-brown-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-brown-border;
+          background-color: $color-brown-bg;
+        }
+      }
+    }
+
+    &.grey-lg {
+      > li > a, > li > span {
+        color: $color-grey;
+        border: 1px solid $color-grey-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-grey-hover;
+          background-color: $color-grey-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-grey-border;
+          background-color: $color-grey-bg;
+        }
+      }
+    }
+
+    &.blue-grey-lg {
+      > li > a, > li > span {
+        color: $color-blue-grey;
+        border: 1px solid $color-blue-grey-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-blue-grey-hover;
+          background-color: $color-blue-grey-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-blue-grey-border;
+          background-color: $color-blue-grey-bg;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .pagination {
+    &.red-md {
+      > li > a, > li > span {
+        color: $color-red;
+        border: 1px solid $color-red-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-red-hover;
+          background-color: $color-red-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-red-border;
+          background-color: $color-red-bg;
+        }
+      }
+    }
+
+    &.pink-md {
+      > li > a, > li > span {
+        color: $color-pink;
+        border: 1px solid $color-pink-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-pink-hover;
+          background-color: $color-pink-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-pink-border;
+          background-color: $color-pink-bg;
+        }
+      }
+    }
+
+    &.purple-md {
+      > li > a, > li > span {
+        color: $color-purple;
+        border: 1px solid $color-purple-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-purple-hover;
+          background-color: $color-purple-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-purple-border;
+          background-color: $color-purple-bg;
+        }
+      }
+    }
+
+    &.deep-purple-md {
+      > li > a, > li > span {
+        color: $color-deep-purple;
+        border: 1px solid $color-deep-purple-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-deep-purple-hover;
+          background-color: $color-deep-purple-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-deep-purple-border;
+          background-color: $color-deep-purple-bg;
+        }
+      }
+    }
+
+    &.indigo-md {
+      > li > a, > li > span {
+        color: $color-indigo;
+        border: 1px solid $color-indigo-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-indigo-hover;
+          background-color: $color-indigo-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-indigo-border;
+          background-color: $color-indigo-bg;
+        }
+      }
+    }
+
+    &.blue-md {
+      > li > a, > li > span {
+        color: $color-blue;
+        border: 1px solid $color-blue-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-blue-hover;
+          background-color: $color-blue-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-blue-border;
+          background-color: $color-blue-bg;
+        }
+      }
+    }
+
+    &.light-blue-md {
+      > li > a, > li > span {
+        color: $color-light-blue;
+        border: 1px solid $color-light-blue-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-light-blue-hover;
+          background-color: $color-light-blue-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-light-blue-border;
+          background-color: $color-light-blue-bg;
+        }
+      }
+    }
+
+    &.cyan-md {
+      > li > a, > li > span {
+        color: $color-cyan;
+        border: 1px solid $color-cyan-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-cyan-hover;
+          background-color: $color-cyan-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-cyan-border;
+          background-color: $color-cyan-bg;
+        }
+      }
+    }
+
+    &.teal-md {
+      > li > a, > li > span {
+        color: $color-teal;
+        border: 1px solid $color-teal-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-teal-hover;
+          background-color: $color-teal-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-teal-border;
+          background-color: $color-teal-bg;
+        }
+      }
+    }
+
+    &.green-md {
+      > li > a, > li > span {
+        color: $color-green;
+        border: 1px solid $color-green-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-green-hover;
+          background-color: $color-green-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-green-border;
+          background-color: $color-green-bg;
+        }
+      }
+    }
+
+    &.light-green-md {
+      > li > a, > li > span {
+        color: $color-light-green;
+        border: 1px solid $color-light-green-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-light-green-hover;
+          background-color: $color-light-green-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-light-green-border;
+          background-color: $color-light-green-bg;
+        }
+      }
+    }
+
+    &.lime-md {
+      > li > a, > li > span {
+        color: $color-lime;
+        border: 1px solid $color-lime-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-lime-hover;
+          background-color: $color-lime-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-lime-border;
+          background-color: $color-lime-bg;
+        }
+      }
+    }
+
+    &.yellow-md {
+      > li > a, > li > span {
+        color: $color-yellow;
+        border: 1px solid $color-yellow-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-yellow-hover;
+          background-color: $color-yellow-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-yellow-border;
+          background-color: $color-yellow-bg;
+        }
+      }
+    }
+
+    &.amber-md {
+      > li > a, > li > span {
+        color: $color-amber;
+        border: 1px solid $color-amber-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-amber-hover;
+          background-color: $color-amber-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-amber-border;
+          background-color: $color-amber-bg;
+        }
+      }
+    }
+
+    &.orange-md {
+      > li > a, > li > span {
+        color: $color-orange;
+        border: 1px solid $color-orange-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-orange-hover;
+          background-color: $color-orange-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-orange-border;
+          background-color: $color-orange-bg;
+        }
+      }
+    }
+
+    &.deep-orange-md {
+      > li > a, > li > span {
+        color: $color-deep-orange;
+        border: 1px solid $color-deep-orange-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-deep-orange-hover;
+          background-color: $color-deep-orange-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-deep-orange-border;
+          background-color: $color-deep-orange-bg;
+        }
+      }
+    }
+
+    &.brown-md {
+      > li > a, > li > span {
+        color: $color-brown;
+        border: 1px solid $color-brown-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-brown-hover;
+          background-color: $color-brown-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-brown-border;
+          background-color: $color-brown-bg;
+        }
+      }
+    }
+
+    &.grey-md {
+      > li > a, > li > span {
+        color: $color-grey;
+        border: 1px solid $color-grey-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-grey-hover;
+          background-color: $color-grey-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-grey-border;
+          background-color: $color-grey-bg;
+        }
+      }
+    }
+
+    &.blue-grey-md {
+      > li > a, > li > span {
+        color: $color-blue-grey;
+        border: 1px solid $color-blue-grey-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-blue-grey-hover;
+          background-color: $color-blue-grey-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-blue-grey-border;
+          background-color: $color-blue-grey-bg;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .pagination {
+    &.red-sm {
+      > li > a, > li > span {
+        color: $color-red;
+        border: 1px solid $color-red-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-red-hover;
+          background-color: $color-red-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-red-border;
+          background-color: $color-red-bg;
+        }
+      }
+    }
+
+    &.pink-sm {
+      > li > a, > li > span {
+        color: $color-pink;
+        border: 1px solid $color-pink-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-pink-hover;
+          background-color: $color-pink-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-pink-border;
+          background-color: $color-pink-bg;
+        }
+      }
+    }
+
+    &.purple-sm {
+      > li > a, > li > span {
+        color: $color-purple;
+        border: 1px solid $color-purple-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-purple-hover;
+          background-color: $color-purple-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-purple-border;
+          background-color: $color-purple-bg;
+        }
+      }
+    }
+
+    &.deep-purple-sm {
+      > li > a, > li > span {
+        color: $color-deep-purple;
+        border: 1px solid $color-deep-purple-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-deep-purple-hover;
+          background-color: $color-deep-purple-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-deep-purple-border;
+          background-color: $color-deep-purple-bg;
+        }
+      }
+    }
+
+    &.indigo-sm {
+      > li > a, > li > span {
+        color: $color-indigo;
+        border: 1px solid $color-indigo-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-indigo-hover;
+          background-color: $color-indigo-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-indigo-border;
+          background-color: $color-indigo-bg;
+        }
+      }
+    }
+
+    &.blue-sm {
+      > li > a, > li > span {
+        color: $color-blue;
+        border: 1px solid $color-blue-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-blue-hover;
+          background-color: $color-blue-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-blue-border;
+          background-color: $color-blue-bg;
+        }
+      }
+    }
+
+    &.light-blue-sm {
+      > li > a, > li > span {
+        color: $color-light-blue;
+        border: 1px solid $color-light-blue-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-light-blue-hover;
+          background-color: $color-light-blue-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-light-blue-border;
+          background-color: $color-light-blue-bg;
+        }
+      }
+    }
+
+    &.cyan-sm {
+      > li > a, > li > span {
+        color: $color-cyan;
+        border: 1px solid $color-cyan-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-cyan-hover;
+          background-color: $color-cyan-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-cyan-border;
+          background-color: $color-cyan-bg;
+        }
+      }
+    }
+
+    &.teal-sm {
+      > li > a, > li > span {
+        color: $color-teal;
+        border: 1px solid $color-teal-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-teal-hover;
+          background-color: $color-teal-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-teal-border;
+          background-color: $color-teal-bg;
+        }
+      }
+    }
+
+    &.green-sm {
+      > li > a, > li > span {
+        color: $color-green;
+        border: 1px solid $color-green-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-green-hover;
+          background-color: $color-green-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-green-border;
+          background-color: $color-green-bg;
+        }
+      }
+    }
+
+    &.light-green-sm {
+      > li > a, > li > span {
+        color: $color-light-green;
+        border: 1px solid $color-light-green-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-light-green-hover;
+          background-color: $color-light-green-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-light-green-border;
+          background-color: $color-light-green-bg;
+        }
+      }
+    }
+
+    &.lime-sm {
+      > li > a, > li > span {
+        color: $color-lime;
+        border: 1px solid $color-lime-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-lime-hover;
+          background-color: $color-lime-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-lime-border;
+          background-color: $color-lime-bg;
+        }
+      }
+    }
+
+    &.yellow-sm {
+      > li > a, > li > span {
+        color: $color-yellow;
+        border: 1px solid $color-yellow-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-yellow-hover;
+          background-color: $color-yellow-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-yellow-border;
+          background-color: $color-yellow-bg;
+        }
+      }
+    }
+
+    &.amber-sm {
+      > li > a, > li > span {
+        color: $color-amber;
+        border: 1px solid $color-amber-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-amber-hover;
+          background-color: $color-amber-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-amber-border;
+          background-color: $color-amber-bg;
+        }
+      }
+    }
+
+    &.orange-sm {
+      > li > a, > li > span {
+        color: $color-orange;
+        border: 1px solid $color-orange-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-orange-hover;
+          background-color: $color-orange-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-orange-border;
+          background-color: $color-orange-bg;
+        }
+      }
+    }
+
+    &.deep-orange-sm {
+      > li > a, > li > span {
+        color: $color-deep-orange;
+        border: 1px solid $color-deep-orange-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-deep-orange-hover;
+          background-color: $color-deep-orange-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-deep-orange-border;
+          background-color: $color-deep-orange-bg;
+        }
+      }
+    }
+
+    &.brown-sm {
+      > li > a, > li > span {
+        color: $color-brown;
+        border: 1px solid $color-brown-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-brown-hover;
+          background-color: $color-brown-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-brown-border;
+          background-color: $color-brown-bg;
+        }
+      }
+    }
+
+    &.grey-sm {
+      > li > a, > li > span {
+        color: $color-grey;
+        border: 1px solid $color-grey-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-grey-hover;
+          background-color: $color-grey-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-grey-border;
+          background-color: $color-grey-bg;
+        }
+      }
+    }
+
+    &.blue-grey-sm {
+      > li > a, > li > span {
+        color: $color-blue-grey;
+        border: 1px solid $color-blue-grey-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-blue-grey-hover;
+          background-color: $color-blue-grey-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-blue-grey-border;
+          background-color: $color-blue-grey-bg;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 476px) {
+
+  .pagination {
+    &.red-xs {
+      > li > a, > li > span {
+        color: $color-red;
+        border: 1px solid $color-red-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-red-hover;
+          background-color: $color-red-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-red-border;
+          background-color: $color-red-bg;
+        }
+      }
+    }
+
+    &.pink-xs {
+      > li > a, > li > span {
+        color: $color-pink;
+        border: 1px solid $color-pink-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-pink-hover;
+          background-color: $color-pink-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-pink-border;
+          background-color: $color-pink-bg;
+        }
+      }
+    }
+
+    &.purple-xs {
+      > li > a, > li > span {
+        color: $color-purple;
+        border: 1px solid $color-purple-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-purple-hover;
+          background-color: $color-purple-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-purple-border;
+          background-color: $color-purple-bg;
+        }
+      }
+    }
+
+    &.deep-purple-xs {
+      > li > a, > li > span {
+        color: $color-deep-purple;
+        border: 1px solid $color-deep-purple-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-deep-purple-hover;
+          background-color: $color-deep-purple-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-deep-purple-border;
+          background-color: $color-deep-purple-bg;
+        }
+      }
+    }
+
+    &.indigo-xs {
+      > li > a, > li > span {
+        color: $color-indigo;
+        border: 1px solid $color-indigo-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-indigo-hover;
+          background-color: $color-indigo-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-indigo-border;
+          background-color: $color-indigo-bg;
+        }
+      }
+    }
+
+    &.blue-xs {
+      > li > a, > li > span {
+        color: $color-blue;
+        border: 1px solid $color-blue-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-blue-hover;
+          background-color: $color-blue-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-blue-border;
+          background-color: $color-blue-bg;
+        }
+      }
+    }
+
+    &.light-blue-xs {
+      > li > a, > li > span {
+        color: $color-light-blue;
+        border: 1px solid $color-light-blue-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-light-blue-hover;
+          background-color: $color-light-blue-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-light-blue-border;
+          background-color: $color-light-blue-bg;
+        }
+      }
+    }
+
+    &.cyan-xs {
+      > li > a, > li > span {
+        color: $color-cyan;
+        border: 1px solid $color-cyan-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-cyan-hover;
+          background-color: $color-cyan-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-cyan-border;
+          background-color: $color-cyan-bg;
+        }
+      }
+    }
+
+    &.teal-xs {
+      > li > a, > li > span {
+        color: $color-teal;
+        border: 1px solid $color-teal-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-teal-hover;
+          background-color: $color-teal-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-teal-border;
+          background-color: $color-teal-bg;
+        }
+      }
+    }
+
+    &.green-xs {
+      > li > a, > li > span {
+        color: $color-green;
+        border: 1px solid $color-green-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-green-hover;
+          background-color: $color-green-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-green-border;
+          background-color: $color-green-bg;
+        }
+      }
+    }
+
+    &.light-green-xs {
+      > li > a, > li > span {
+        color: $color-light-green;
+        border: 1px solid $color-light-green-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-light-green-hover;
+          background-color: $color-light-green-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-light-green-border;
+          background-color: $color-light-green-bg;
+        }
+      }
+    }
+
+    &.lime-xs {
+      > li > a, > li > span {
+        color: $color-lime;
+        border: 1px solid $color-lime-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-lime-hover;
+          background-color: $color-lime-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-lime-border;
+          background-color: $color-lime-bg;
+        }
+      }
+    }
+
+    &.yellow-xs {
+      > li > a, > li > span {
+        color: $color-yellow;
+        border: 1px solid $color-yellow-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-yellow-hover;
+          background-color: $color-yellow-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-yellow-border;
+          background-color: $color-yellow-bg;
+        }
+      }
+    }
+
+    &.amber-xs {
+      > li > a, > li > span {
+        color: $color-amber;
+        border: 1px solid $color-amber-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-amber-hover;
+          background-color: $color-amber-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-amber-border;
+          background-color: $color-amber-bg;
+        }
+      }
+    }
+
+    &.orange-xs {
+      > li > a, > li > span {
+        color: $color-orange;
+        border: 1px solid $color-orange-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-orange-hover;
+          background-color: $color-orange-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-orange-border;
+          background-color: $color-orange-bg;
+        }
+      }
+    }
+
+    &.deep-orange-xs {
+      > li > a, > li > span {
+        color: $color-deep-orange;
+        border: 1px solid $color-deep-orange-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-deep-orange-hover;
+          background-color: $color-deep-orange-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-deep-orange-border;
+          background-color: $color-deep-orange-bg;
+        }
+      }
+    }
+
+    &.brown-xs {
+      > li > a, > li > span {
+        color: $color-brown;
+        border: 1px solid $color-brown-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-brown-hover;
+          background-color: $color-brown-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-brown-border;
+          background-color: $color-brown-bg;
+        }
+      }
+    }
+
+    &.grey-xs {
+      > li > a, > li > span {
+        color: $color-grey;
+        border: 1px solid $color-grey-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-grey-hover;
+          background-color: $color-grey-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-grey-border;
+          background-color: $color-grey-bg;
+        }
+      }
+    }
+
+    &.blue-grey-xs {
+      > li > a, > li > span {
+        color: $color-blue-grey;
+        border: 1px solid $color-blue-grey-border;
+
+        &:focus, &:hover {
+          color: $white;
+          border-color: $color-blue-grey-hover;
+          background-color: $color-blue-grey-hover;
+        }
+      }
+
+      > .active {
+        > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+          color: $white;
+          border-color: $color-blue-grey-border;
+          background-color: $color-blue-grey-bg;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 319px) {}

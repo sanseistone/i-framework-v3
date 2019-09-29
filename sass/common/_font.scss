@@ -1,0 +1,1237 @@
+//font
+
+//font-family
+
+.#{$font} {
+  &-sans {
+    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
+  &-serif {
+    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  }
+
+  &-mono {
+    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  }
+}
+
+//font-size
+
+.#{$font} {
+  &-12 {
+    font-size: 12px;
+  }
+
+  &-14 {
+    font-size: 14px;
+  }
+
+  &-16 {
+    font-size: 16px;
+  }
+
+  &-18 {
+    font-size: 18px;
+  }
+
+  &-20 {
+    font-size: 20px;
+  }
+
+  &-22 {
+    font-size: 22px;
+  }
+
+  &-24 {
+    font-size: 24px;
+  }
+
+  &-26 {
+    font-size: 26px;
+  }
+
+  &-28 {
+    font-size: 28px;
+  }
+
+  &-30 {
+    font-size: 30px;
+  }
+
+  &-32 {
+    font-size: 32px;
+  }
+
+  &-34 {
+    font-size: 34px;
+  }
+
+  &-36 {
+    font-size: 36px;
+  }
+
+  &-38 {
+    font-size: 38px;
+  }
+
+  &-40 {
+    font-size: 40px;
+  }
+
+  &-50 {
+    font-size: 50px;
+  }
+
+  &-60 {
+    font-size: 60px;
+  }
+}
+
+//font-size
+
+.#{$text} {
+  &-xs {
+    font-size: .75rem;
+  }
+
+  &-sm {
+    font-size: .875rem;
+  }
+
+  &-base {
+    font-size: 1rem;
+  }
+
+  &-lg {
+    font-size: 1.125rem;
+  }
+
+  &-xl {
+    font-size: 1.25rem;
+  }
+
+  &-2xl {
+    font-size: 1.5rem;
+  }
+
+  &-3xl {
+    font-size: 1.875rem;
+  }
+
+  &-4xl {
+    font-size: 2.25rem;
+  }
+
+  &-5xl {
+    font-size: 3rem;
+  }
+}
+
+//font-weight
+
+.#{$font} {
+  &-hairline {
+    font-weight: 100;
+  }
+
+  &-thin {
+    font-weight: 200;
+  }
+
+  &-light {
+    font-weight: 300;
+  }
+
+  &-normal {
+    font-weight: 400;
+  }
+
+  &-medium {
+    font-weight: 500;
+  }
+
+  &-semibold {
+    font-weight: 600;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-extrabold {
+    font-weight: 800;
+  }
+
+  &-black {
+    font-weight: 900;
+  }
+}
+
+//letter-spacing
+
+.#{$letter-spacing} {
+  &-tight {
+    letter-spacing: -0.05em;
+  }
+
+  &-normal {
+    letter-spacing: 0;
+  }
+
+  &-wide {
+    letter-spacing: 0.05em;
+  }
+}
+
+//font-style
+
+.#{$font} {
+  &-italic {
+    font-style: italic;
+  }
+
+  &-roman {
+    font-style: normal;
+  }
+}
+
+//text-transform
+
+.#{$font} {
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-lowercase {
+    text-transform: lowercase;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+
+  &-normal-case {
+    text-transform: none;
+  }
+}
+
+//text-decoration
+
+.#{$font} {
+  &-underline {
+    text-decoration: underline;
+  }
+
+  &-line-through {
+    text-decoration: line-through;
+  }
+
+  &-no-underline {
+    text-decoration: none;
+  }
+}
+
+.#{$font} {
+  &-antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  &-subpixel-antialiased {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+
+  &-cursor-pointer {
+    cursor: pointer;
+  }
+
+  &-cursor-hand {
+    cursor: hand;
+  }
+
+  &-cursor-help {
+    cursor: help;
+  }
+}
+
+//responsive
+
+@media (max-width: 1199px) {
+
+  .#{$font} {
+    &-sans-lg {
+      font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
+
+    &-serif-lg {
+      font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    }
+
+    &-mono-lg {
+      font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    }
+  }
+
+  .#{$font} {
+    &-12-lg {
+      font-size: 12px;
+    }
+
+    &-14-lg {
+      font-size: 14px;
+    }
+
+    &-16-lg {
+      font-size: 16px;
+    }
+
+    &-18-lg {
+      font-size: 18px;
+    }
+
+    &-20-lg {
+      font-size: 20px;
+    }
+
+    &-22-lg {
+      font-size: 22px;
+    }
+
+    &-24-lg {
+      font-size: 24px;
+    }
+
+    &-26-lg {
+      font-size: 26px;
+    }
+
+    &-28-lg {
+      font-size: 28px;
+    }
+
+    &-30-lg {
+      font-size: 30px;
+    }
+
+    &-32-lg {
+      font-size: 32px;
+    }
+
+    &-34-lg {
+      font-size: 34px;
+    }
+
+    &-36-lg {
+      font-size: 36px;
+    }
+
+    &-38-lg {
+      font-size: 38px;
+    }
+
+    &-40-lg {
+      font-size: 40px;
+    }
+
+    &-50-lg {
+      font-size: 50px;
+    }
+
+    &-60-lg {
+      font-size: 60px;
+    }
+  }
+
+  .#{$text} {
+    &-xs-lg {
+      font-size: .75rem;
+    }
+
+    &-sm-lg {
+      font-size: .875rem;
+    }
+
+    &-base-lg {
+      font-size: 1rem;
+    }
+
+    &-lg-lg {
+      font-size: 1.125rem;
+    }
+
+    &-xl-lg {
+      font-size: 1.25rem;
+    }
+
+    &-2xl-lg {
+      font-size: 1.5rem;
+    }
+
+    &-3xl-lg {
+      font-size: 1.875rem;
+    }
+
+    &-4xl-lg {
+      font-size: 2.25rem;
+    }
+
+    &-5xl-lg {
+      font-size: 3rem;
+    }
+  }
+
+  .#{$font} {
+    &-hairline-lg {
+      font-weight: 100;
+    }
+
+    &-thin-lg {
+      font-weight: 200;
+    }
+
+    &-light-lg {
+      font-weight: 300;
+    }
+
+    &-normal-lg {
+      font-weight: 400;
+    }
+
+    &-medium-lg {
+      font-weight: 500;
+    }
+
+    &-semibold-lg {
+      font-weight: 600;
+    }
+
+    &-bold-lg {
+      font-weight: 700;
+    }
+
+    &-extrabold-lg {
+      font-weight: 800;
+    }
+
+    &-black-lg {
+      font-weight: 900;
+    }
+  }
+
+  .#{$letter-spacing} {
+    &-tight-lg {
+      letter-spacing: -0.05em;
+    }
+
+    &-normal-lg {
+      letter-spacing: 0;
+    }
+
+    &-wide-lg {
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .#{$font} {
+    &-italic-lg {
+      font-style: italic;
+    }
+
+    &-roman-lg {
+      font-style: normal;
+    }
+  }
+
+  .#{$font} {
+    &-uppercase-lg {
+      text-transform: uppercase;
+    }
+
+    &-lowercase-lg {
+      text-transform: lowercase;
+    }
+
+    &-capitalize-lg {
+      text-transform: capitalize;
+    }
+
+    &-normal-case-lg {
+      text-transform: none;
+    }
+  }
+
+  .#{$font} {
+    &-underline-lg {
+      text-decoration: underline;
+    }
+
+    &-line-through-lg {
+      text-decoration: line-through;
+    }
+
+    &-no-underline-lg {
+      text-decoration: none;
+    }
+  }
+
+  .#{$font} {
+    &-antialiased-lg {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    &-subpixel-antialiased-lg {
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+
+    &-cursor-pointer-lg {
+      cursor: pointer;
+    }
+
+    &-cursor-hand-lg {
+      cursor: hand;
+    }
+
+    &-cursor-help-lg {
+      cursor: help;
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .#{$font} {
+    &-sans-md {
+      font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
+
+    &-serif-md {
+      font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    }
+
+    &-mono-md {
+      font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    }
+  }
+
+  .#{$font} {
+    &-12-md {
+      font-size: 12px;
+    }
+
+    &-14-md {
+      font-size: 14px;
+    }
+
+    &-16-md {
+      font-size: 16px;
+    }
+
+    &-18-md {
+      font-size: 18px;
+    }
+
+    &-20-md {
+      font-size: 20px;
+    }
+
+    &-22-md {
+      font-size: 22px;
+    }
+
+    &-24-md {
+      font-size: 24px;
+    }
+
+    &-26-md {
+      font-size: 26px;
+    }
+
+    &-28-md {
+      font-size: 28px;
+    }
+
+    &-30-md {
+      font-size: 30px;
+    }
+
+    &-32-md {
+      font-size: 32px;
+    }
+
+    &-34-md {
+      font-size: 34px;
+    }
+
+    &-36-md {
+      font-size: 36px;
+    }
+
+    &-38-md {
+      font-size: 38px;
+    }
+
+    &-40-md {
+      font-size: 40px;
+    }
+
+    &-50-md {
+      font-size: 50px;
+    }
+
+    &-60-md {
+      font-size: 60px;
+    }
+  }
+
+  .#{$text} {
+    &-xs-md {
+      font-size: .75rem;
+    }
+
+    &-sm-md {
+      font-size: .875rem;
+    }
+
+    &-base-md {
+      font-size: 1rem;
+    }
+
+    &-md-md {
+      font-size: 1.125rem;
+    }
+
+    &-xl-md {
+      font-size: 1.25rem;
+    }
+
+    &-2xl-md {
+      font-size: 1.5rem;
+    }
+
+    &-3xl-md {
+      font-size: 1.875rem;
+    }
+
+    &-4xl-md {
+      font-size: 2.25rem;
+    }
+
+    &-5xl-md {
+      font-size: 3rem;
+    }
+  }
+
+  .#{$font} {
+    &-hairline-md {
+      font-weight: 100;
+    }
+
+    &-thin-md {
+      font-weight: 200;
+    }
+
+    &-light-md {
+      font-weight: 300;
+    }
+
+    &-normal-md {
+      font-weight: 400;
+    }
+
+    &-medium-md {
+      font-weight: 500;
+    }
+
+    &-semibold-md {
+      font-weight: 600;
+    }
+
+    &-bold-md {
+      font-weight: 700;
+    }
+
+    &-extrabold-md {
+      font-weight: 800;
+    }
+
+    &-black-md {
+      font-weight: 900;
+    }
+  }
+
+  .#{$letter-spacing} {
+    &-tight-md {
+      letter-spacing: -0.05em;
+    }
+
+    &-normal-md {
+      letter-spacing: 0;
+    }
+
+    &-wide-md {
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .#{$font} {
+    &-italic-md {
+      font-style: italic;
+    }
+
+    &-roman-md {
+      font-style: normal;
+    }
+  }
+
+  .#{$font} {
+    &-uppercase-md {
+      text-transform: uppercase;
+    }
+
+    &-lowercase-md {
+      text-transform: lowercase;
+    }
+
+    &-capitalize-md {
+      text-transform: capitalize;
+    }
+
+    &-normal-case-md {
+      text-transform: none;
+    }
+  }
+
+  .#{$font} {
+    &-underline-md {
+      text-decoration: underline;
+    }
+
+    &-line-through-md {
+      text-decoration: line-through;
+    }
+
+    &-no-underline-md {
+      text-decoration: none;
+    }
+  }
+
+  .#{$font} {
+    &-antialiased-md {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    &-subpixel-antialiased-md {
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+
+    &-cursor-pointer-md {
+      cursor: pointer;
+    }
+
+    &-cursor-hand-md {
+      cursor: hand;
+    }
+
+    &-cursor-help-md {
+      cursor: help;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .#{$font} {
+    &-sans-sm {
+      font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
+
+    &-serif-sm {
+      font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    }
+
+    &-mono-sm {
+      font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    }
+  }
+
+  .#{$font} {
+    &-12-sm {
+      font-size: 12px;
+    }
+
+    &-14-sm {
+      font-size: 14px;
+    }
+
+    &-16-sm {
+      font-size: 16px;
+    }
+
+    &-18-sm {
+      font-size: 18px;
+    }
+
+    &-20-sm {
+      font-size: 20px;
+    }
+
+    &-22-sm {
+      font-size: 22px;
+    }
+
+    &-24-sm {
+      font-size: 24px;
+    }
+
+    &-26-sm {
+      font-size: 26px;
+    }
+
+    &-28-sm {
+      font-size: 28px;
+    }
+
+    &-30-sm {
+      font-size: 30px;
+    }
+
+    &-32-sm {
+      font-size: 32px;
+    }
+
+    &-34-sm {
+      font-size: 34px;
+    }
+
+    &-36-sm {
+      font-size: 36px;
+    }
+
+    &-38-sm {
+      font-size: 38px;
+    }
+
+    &-40-sm {
+      font-size: 40px;
+    }
+
+    &-50-sm {
+      font-size: 50px;
+    }
+
+    &-60-sm {
+      font-size: 60px;
+    }
+  }
+
+  .#{$text} {
+    &-xs-sm {
+      font-size: .75rem;
+    }
+
+    &-sm-sm {
+      font-size: .875rem;
+    }
+
+    &-base-sm {
+      font-size: 1rem;
+    }
+
+    &-sm-sm {
+      font-size: 1.125rem;
+    }
+
+    &-xl-sm {
+      font-size: 1.25rem;
+    }
+
+    &-2xl-sm {
+      font-size: 1.5rem;
+    }
+
+    &-3xl-sm {
+      font-size: 1.875rem;
+    }
+
+    &-4xl-sm {
+      font-size: 2.25rem;
+    }
+
+    &-5xl-sm {
+      font-size: 3rem;
+    }
+  }
+
+  .#{$font} {
+    &-hairline-sm {
+      font-weight: 100;
+    }
+
+    &-thin-sm {
+      font-weight: 200;
+    }
+
+    &-light-sm {
+      font-weight: 300;
+    }
+
+    &-normal-sm {
+      font-weight: 400;
+    }
+
+    &-medium-sm {
+      font-weight: 500;
+    }
+
+    &-semibold-sm {
+      font-weight: 600;
+    }
+
+    &-bold-sm {
+      font-weight: 700;
+    }
+
+    &-extrabold-sm {
+      font-weight: 800;
+    }
+
+    &-black-sm {
+      font-weight: 900;
+    }
+  }
+
+  .#{$letter-spacing} {
+    &-tight-sm {
+      letter-spacing: -0.05em;
+    }
+
+    &-normal-sm {
+      letter-spacing: 0;
+    }
+
+    &-wide-sm {
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .#{$font} {
+    &-italic-sm {
+      font-style: italic;
+    }
+
+    &-roman-sm {
+      font-style: normal;
+    }
+  }
+
+  .#{$font} {
+    &-uppercase-sm {
+      text-transform: uppercase;
+    }
+
+    &-lowercase-sm {
+      text-transform: lowercase;
+    }
+
+    &-capitalize-sm {
+      text-transform: capitalize;
+    }
+
+    &-normal-case-sm {
+      text-transform: none;
+    }
+  }
+
+  .#{$font} {
+    &-underline-sm {
+      text-decoration: underline;
+    }
+
+    &-line-through-sm {
+      text-decoration: line-through;
+    }
+
+    &-no-underline-sm {
+      text-decoration: none;
+    }
+  }
+
+  .#{$font} {
+    &-antialiased-sm {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    &-subpixel-antialiased-sm {
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+
+    &-cursor-pointer-sm {
+      cursor: pointer;
+    }
+
+    &-cursor-hand-sm {
+      cursor: hand;
+    }
+
+    &-cursor-help-sm {
+      cursor: help;
+    }
+  }
+
+}
+
+@media (max-width: 479px) {
+
+  .#{$font} {
+    &-sans-xs {
+      font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
+
+    &-serif-xs {
+      font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    }
+
+    &-mono-xs {
+      font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    }
+  }
+
+  .#{$font} {
+    &-12-xs {
+      font-size: 12px;
+    }
+
+    &-14-xs {
+      font-size: 14px;
+    }
+
+    &-16-xs {
+      font-size: 16px;
+    }
+
+    &-18-xs {
+      font-size: 18px;
+    }
+
+    &-20-xs {
+      font-size: 20px;
+    }
+
+    &-22-xs {
+      font-size: 22px;
+    }
+
+    &-24-xs {
+      font-size: 24px;
+    }
+
+    &-26-xs {
+      font-size: 26px;
+    }
+
+    &-28-xs {
+      font-size: 28px;
+    }
+
+    &-30-xs {
+      font-size: 30px;
+    }
+
+    &-32-xs {
+      font-size: 32px;
+    }
+
+    &-34-xs {
+      font-size: 34px;
+    }
+
+    &-36-xs {
+      font-size: 36px;
+    }
+
+    &-38-xs {
+      font-size: 38px;
+    }
+
+    &-40-xs {
+      font-size: 40px;
+    }
+
+    &-50-xs {
+      font-size: 50px;
+    }
+
+    &-60-xs {
+      font-size: 60px;
+    }
+  }
+
+  .#{$text} {
+    &-xs-xs {
+      font-size: .75rem;
+    }
+
+    &-xs-xs {
+      font-size: .875rem;
+    }
+
+    &-base-xs {
+      font-size: 1rem;
+    }
+
+    &-xs-xs {
+      font-size: 1.125rem;
+    }
+
+    &-xl-xs {
+      font-size: 1.25rem;
+    }
+
+    &-2xl-xs {
+      font-size: 1.5rem;
+    }
+
+    &-3xl-xs {
+      font-size: 1.875rem;
+    }
+
+    &-4xl-xs {
+      font-size: 2.25rem;
+    }
+
+    &-5xl-xs {
+      font-size: 3rem;
+    }
+  }
+
+  .#{$font} {
+    &-hairline-xs {
+      font-weight: 100;
+    }
+
+    &-thin-xs {
+      font-weight: 200;
+    }
+
+    &-light-xs {
+      font-weight: 300;
+    }
+
+    &-normal-xs {
+      font-weight: 400;
+    }
+
+    &-medium-xs {
+      font-weight: 500;
+    }
+
+    &-semibold-xs {
+      font-weight: 600;
+    }
+
+    &-bold-xs {
+      font-weight: 700;
+    }
+
+    &-extrabold-xs {
+      font-weight: 800;
+    }
+
+    &-black-xs {
+      font-weight: 900;
+    }
+  }
+
+  .#{$letter-spacing} {
+    &-tight-xs {
+      letter-spacing: -0.05em;
+    }
+
+    &-normal-xs {
+      letter-spacing: 0;
+    }
+
+    &-wide-xs {
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .#{$font} {
+    &-italic-xs {
+      font-style: italic;
+    }
+
+    &-roman-xs {
+      font-style: normal;
+    }
+  }
+
+  .#{$font} {
+    &-uppercase-xs {
+      text-transform: uppercase;
+    }
+
+    &-lowercase-xs {
+      text-transform: lowercase;
+    }
+
+    &-capitalize-xs {
+      text-transform: capitalize;
+    }
+
+    &-normal-case-xs {
+      text-transform: none;
+    }
+  }
+
+  .#{$font} {
+    &-underline-xs {
+      text-decoration: underline;
+    }
+
+    &-line-through-xs {
+      text-decoration: line-through;
+    }
+
+    &-no-underline-xs {
+      text-decoration: none;
+    }
+  }
+
+  .#{$font} {
+    &-antialiased-xs {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    &-subpixel-antialiased-xs {
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+
+    &-cursor-pointer-xs {
+      cursor: pointer;
+    }
+
+    &-cursor-hand-xs {
+      cursor: hand;
+    }
+
+    &-cursor-help-xs {
+      cursor: help;
+    }
+  }
+
+}
+
+@media (max-width: 319px) {}

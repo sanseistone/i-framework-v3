@@ -1,0 +1,424 @@
+//inner-box
+
+.inner-box {
+  position: absolute;
+  transition: all .2s ease;
+  z-index: 99;
+
+  &.default {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    right: 10%;
+    text-align: center;
+  }
+
+  &.default > * {
+    color: #fff;
+    //text-transform: uppercase;
+  }
+}
+
+//white-fill
+
+.#{$white-fill} {
+  &-10 {
+    background: rgba(255, 255, 255, .1);
+  }
+
+  &-20 {
+    background: rgba(255, 255, 255, .2);
+  }
+
+  &-30 {
+    background: rgba(255, 255, 255, .3);
+  }
+
+  &-40 {
+    background: rgba(255, 255, 255, .4);
+  }
+
+  &-50 {
+    background: rgba(255, 255, 255, .5);
+  }
+
+  &-60 {
+    background: rgba(255, 255, 255, .6);
+  }
+
+  &-70 {
+    background: rgba(255, 255, 255, .7);
+  }
+
+  &-80 {
+    background: rgba(255, 255, 255, .8);
+  }
+
+  &-90 {
+    background: rgba(255, 255, 255, .9);
+  }
+}
+
+//black-fill
+
+.#{$black-fill} {
+  &-10 {
+    background: rgba(0, 0, 0, .1);
+  }
+
+  &-20 {
+    background: rgba(0, 0, 0, .2);
+  }
+
+  &-30 {
+    background: rgba(0, 0, 0, .3);
+  }
+
+  &-40 {
+    background: rgba(0, 0, 0, .4);
+  }
+
+  &-50 {
+    background: rgba(0, 0, 0, .5);
+  }
+
+  &-60 {
+    background: rgba(0, 0, 0, .6);
+  }
+
+  &-70 {
+    background: rgba(0, 0, 0, .7);
+  }
+
+  &-80 {
+    background: rgba(0, 0, 0, .8);
+  }
+
+  &-90 {
+    background: rgba(0, 0, 0, .9);
+  }
+}
+
+//responsive
+
+@media (max-width: 1199px) {
+
+  .#{$white-fill} {
+    &-10-lg {
+      background: rgba(255, 255, 255, .1);
+    }
+
+    &-20-lg {
+      background: rgba(255, 255, 255, .2);
+    }
+
+    &-30-lg {
+      background: rgba(255, 255, 255, .3);
+    }
+
+    &-40-lg {
+      background: rgba(255, 255, 255, .4);
+    }
+
+    &-50-lg {
+      background: rgba(255, 255, 255, .5);
+    }
+
+    &-60-lg {
+      background: rgba(255, 255, 255, .6);
+    }
+
+    &-70-lg {
+      background: rgba(255, 255, 255, .7);
+    }
+
+    &-80-lg {
+      background: rgba(255, 255, 255, .8);
+    }
+
+    &-90-lg {
+      background: rgba(255, 255, 255, .9);
+    }
+  }
+
+  .#{$black-fill} {
+    &-10-lg {
+      background: rgba(0, 0, 0, .1);
+    }
+
+    &-20-lg {
+      background: rgba(0, 0, 0, .2);
+    }
+
+    &-30-lg {
+      background: rgba(0, 0, 0, .3);
+    }
+
+    &-40-lg {
+      background: rgba(0, 0, 0, .4);
+    }
+
+    &-50-lg {
+      background: rgba(0, 0, 0, .5);
+    }
+
+    &-60-lg {
+      background: rgba(0, 0, 0, .6);
+    }
+
+    &-70-lg {
+      background: rgba(0, 0, 0, .7);
+    }
+
+    &-80-lg {
+      background: rgba(0, 0, 0, .8);
+    }
+
+    &-90-lg {
+      background: rgba(0, 0, 0, .9);
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .#{$white-fill} {
+    &-10-md {
+      background: rgba(255, 255, 255, .1);
+    }
+
+    &-20-md {
+      background: rgba(255, 255, 255, .2);
+    }
+
+    &-30-md {
+      background: rgba(255, 255, 255, .3);
+    }
+
+    &-40-md {
+      background: rgba(255, 255, 255, .4);
+    }
+
+    &-50-md {
+      background: rgba(255, 255, 255, .5);
+    }
+
+    &-60-md {
+      background: rgba(255, 255, 255, .6);
+    }
+
+    &-70-md {
+      background: rgba(255, 255, 255, .7);
+    }
+
+    &-80-md {
+      background: rgba(255, 255, 255, .8);
+    }
+
+    &-90-md {
+      background: rgba(255, 255, 255, .9);
+    }
+  }
+
+  .#{$black-fill} {
+    &-10-md {
+      background: rgba(0, 0, 0, .1);
+    }
+
+    &-20-md {
+      background: rgba(0, 0, 0, .2);
+    }
+
+    &-30-md {
+      background: rgba(0, 0, 0, .3);
+    }
+
+    &-40-md {
+      background: rgba(0, 0, 0, .4);
+    }
+
+    &-50-md {
+      background: rgba(0, 0, 0, .5);
+    }
+
+    &-60-md {
+      background: rgba(0, 0, 0, .6);
+    }
+
+    &-70-md {
+      background: rgba(0, 0, 0, .7);
+    }
+
+    &-80-md {
+      background: rgba(0, 0, 0, .8);
+    }
+
+    &-90-md {
+      background: rgba(0, 0, 0, .9);
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .#{$white-fill} {
+    &-10-sm {
+      background: rgba(255, 255, 255, .1);
+    }
+
+    &-20-sm {
+      background: rgba(255, 255, 255, .2);
+    }
+
+    &-30-sm {
+      background: rgba(255, 255, 255, .3);
+    }
+
+    &-40-sm {
+      background: rgba(255, 255, 255, .4);
+    }
+
+    &-50-sm {
+      background: rgba(255, 255, 255, .5);
+    }
+
+    &-60-sm {
+      background: rgba(255, 255, 255, .6);
+    }
+
+    &-70-sm {
+      background: rgba(255, 255, 255, .7);
+    }
+
+    &-80-sm {
+      background: rgba(255, 255, 255, .8);
+    }
+
+    &-90-sm {
+      background: rgba(255, 255, 255, .9);
+    }
+  }
+
+  .#{$black-fill} {
+    &-10-sm {
+      background: rgba(0, 0, 0, .1);
+    }
+
+    &-20-sm {
+      background: rgba(0, 0, 0, .2);
+    }
+
+    &-30-sm {
+      background: rgba(0, 0, 0, .3);
+    }
+
+    &-40-sm {
+      background: rgba(0, 0, 0, .4);
+    }
+
+    &-50-sm {
+      background: rgba(0, 0, 0, .5);
+    }
+
+    &-60-sm {
+      background: rgba(0, 0, 0, .6);
+    }
+
+    &-70-sm {
+      background: rgba(0, 0, 0, .7);
+    }
+
+    &-80-sm {
+      background: rgba(0, 0, 0, .8);
+    }
+
+    &-90-sm {
+      background: rgba(0, 0, 0, .9);
+    }
+  }
+
+}
+
+@media (max-width: 479px) {
+
+  .#{$white-fill} {
+    &-10-xs {
+      background: rgba(255, 255, 255, .1);
+    }
+
+    &-20-xs {
+      background: rgba(255, 255, 255, .2);
+    }
+
+    &-30-xs {
+      background: rgba(255, 255, 255, .3);
+    }
+
+    &-40-xs {
+      background: rgba(255, 255, 255, .4);
+    }
+
+    &-50-xs {
+      background: rgba(255, 255, 255, .5);
+    }
+
+    &-60-xs {
+      background: rgba(255, 255, 255, .6);
+    }
+
+    &-70-xs {
+      background: rgba(255, 255, 255, .7);
+    }
+
+    &-80-xs {
+      background: rgba(255, 255, 255, .8);
+    }
+
+    &-90-xs {
+      background: rgba(255, 255, 255, .9);
+    }
+  }
+
+  .#{$black-fill} {
+    &-10-xs {
+      background: rgba(0, 0, 0, .1);
+    }
+
+    &-20-xs {
+      background: rgba(0, 0, 0, .2);
+    }
+
+    &-30-xs {
+      background: rgba(0, 0, 0, .3);
+    }
+
+    &-40-xs {
+      background: rgba(0, 0, 0, .4);
+    }
+
+    &-50-xs {
+      background: rgba(0, 0, 0, .5);
+    }
+
+    &-60-xs {
+      background: rgba(0, 0, 0, .6);
+    }
+
+    &-70-xs {
+      background: rgba(0, 0, 0, .7);
+    }
+
+    &-80-xs {
+      background: rgba(0, 0, 0, .8);
+    }
+
+    &-90-xs {
+      background: rgba(0, 0, 0, .9);
+    }
+  }
+
+}
+
+@media (max-width: 319px) {}

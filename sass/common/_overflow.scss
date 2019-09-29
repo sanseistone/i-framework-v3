@@ -1,0 +1,321 @@
+//overflow
+
+.#{$overflow} {
+  &-auto {
+    overflow: auto;
+  }
+
+  &-hidden {
+    overflow: hidden;
+  }
+
+  &-visible {
+    overflow: visible;
+  }
+
+  &-scroll {
+    overflow: scroll;
+  }
+
+  &-x-auto {
+    overflow-x: auto;
+  }
+
+  &-y-auto {
+    overflow-y: auto;
+  }
+
+  &-x-hidden {
+    overflow-x: hidden;
+  }
+
+  &-y-hidden {
+    overflow-y: hidden;
+  }
+
+  &-x-visible {
+    overflow-x: visible;
+  }
+
+  &-y-visible {
+    overflow-y: visible;
+  }
+
+  &-x-scroll {
+    overflow-x: scroll;
+  }
+
+  &-y-scroll {
+    overflow-y: scroll;
+  }
+}
+
+.#{$scrolling} {
+  &-touch {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &-auto {
+    -webkit-overflow-scrolling: auto;
+  }
+}
+
+//responsive
+
+@media (max-width: 1199px) {
+
+  .#{$overflow} {
+    &-auto-lg {
+      overflow: auto;
+    }
+
+    &-hidden-lg {
+      overflow: hidden;
+    }
+
+    &-visible-lg {
+      overflow: visible;
+    }
+
+    &-scroll-lg {
+      overflow: scroll;
+    }
+
+    &-x-auto-lg {
+      overflow-x: auto;
+    }
+
+    &-y-auto-lg {
+      overflow-y: auto;
+    }
+
+    &-x-hidden-lg {
+      overflow-x: hidden;
+    }
+
+    &-y-hidden-lg {
+      overflow-y: hidden;
+    }
+
+    &-x-visible-lg {
+      overflow-x: visible;
+    }
+
+    &-y-visible-lg {
+      overflow-y: visible;
+    }
+
+    &-x-scroll-lg {
+      overflow-x: scroll;
+    }
+
+    &-y-scroll-lg {
+      overflow-y: scroll;
+    }
+  }
+
+  .#{$scrolling} {
+    &-touch-lg {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &-auto-lg {
+      -webkit-overflow-scrolling: auto;
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .#{$overflow} {
+    &-auto-md {
+      overflow: auto;
+    }
+
+    &-hidden-md {
+      overflow: hidden;
+    }
+
+    &-visible-md {
+      overflow: visible;
+    }
+
+    &-scroll-md {
+      overflow: scroll;
+    }
+
+    &-x-auto-md {
+      overflow-x: auto;
+    }
+
+    &-y-auto-md {
+      overflow-y: auto;
+    }
+
+    &-x-hidden-md {
+      overflow-x: hidden;
+    }
+
+    &-y-hidden-md {
+      overflow-y: hidden;
+    }
+
+    &-x-visible-md {
+      overflow-x: visible;
+    }
+
+    &-y-visible-md {
+      overflow-y: visible;
+    }
+
+    &-x-scroll-md {
+      overflow-x: scroll;
+    }
+
+    &-y-scroll-md {
+      overflow-y: scroll;
+    }
+  }
+
+  .#{$scrolling} {
+    &-touch-md {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &-auto-md {
+      -webkit-overflow-scrolling: auto;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .#{$overflow} {
+    &-auto-sm {
+      overflow: auto;
+    }
+
+    &-hidden-sm {
+      overflow: hidden;
+    }
+
+    &-visible-sm {
+      overflow: visible;
+    }
+
+    &-scroll-sm {
+      overflow: scroll;
+    }
+
+    &-x-auto-sm {
+      overflow-x: auto;
+    }
+
+    &-y-auto-sm {
+      overflow-y: auto;
+    }
+
+    &-x-hidden-sm {
+      overflow-x: hidden;
+    }
+
+    &-y-hidden-sm {
+      overflow-y: hidden;
+    }
+
+    &-x-visible-sm {
+      overflow-x: visible;
+    }
+
+    &-y-visible-sm {
+      overflow-y: visible;
+    }
+
+    &-x-scroll-sm {
+      overflow-x: scroll;
+    }
+
+    &-y-scroll-sm {
+      overflow-y: scroll;
+    }
+  }
+
+  .#{$scrolling} {
+    &-touch-sm {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &-auto-sm {
+      -webkit-overflow-scrolling: auto;
+    }
+  }
+
+}
+
+@media (max-width: 479px) {
+
+  .#{$overflow} {
+    &-auto-xs {
+      overflow: auto;
+    }
+
+    &-hidden-xs {
+      overflow: hidden;
+    }
+
+    &-visible-xs {
+      overflow: visible;
+    }
+
+    &-scroll-xs {
+      overflow: scroll;
+    }
+
+    &-x-auto-xs {
+      overflow-x: auto;
+    }
+
+    &-y-auto-xs {
+      overflow-y: auto;
+    }
+
+    &-x-hidden-xs {
+      overflow-x: hidden;
+    }
+
+    &-y-hidden-xs {
+      overflow-y: hidden;
+    }
+
+    &-x-visible-xs {
+      overflow-x: visible;
+    }
+
+    &-y-visible-xs {
+      overflow-y: visible;
+    }
+
+    &-x-scroll-xs {
+      overflow-x: scroll;
+    }
+
+    &-y-scroll-xs {
+      overflow-y: scroll;
+    }
+  }
+
+  .#{$scrolling} {
+    &-touch-xs {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &-auto-xs {
+      -webkit-overflow-scrolling: auto;
+    }
+  }
+
+}
+
+@media (max-width: 319px) {}

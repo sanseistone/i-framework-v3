@@ -1,0 +1,83 @@
+//float
+
+.#{$float} {
+  &-left {
+    float: left;
+  }
+
+  &-right {
+    float: right;
+  }
+
+  &-none {
+    float: none;
+  }
+}
+
+//responsive
+
+@media (max-width: 1199px) {
+  .#{$float} {
+    &-left-lg {
+      float: left;
+    }
+
+    &-right-lg {
+      float: right;
+    }
+
+    &-none-lg {
+      float: none;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .#{$float} {
+    &-left-md {
+      float: left;
+    }
+
+    &-right-md {
+      float: right;
+    }
+
+    &-none-md {
+      float: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .#{$float} {
+    &-left-sm {
+      float: left;
+    }
+
+    &-right-sm {
+      float: right;
+    }
+
+    &-none-sm {
+      float: none;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .#{$float} {
+    &-left-xs {
+      float: left;
+    }
+
+    &-right-xs {
+      float: right;
+    }
+
+    &-none-xs {
+      float: none;
+    }
+  }
+}
+
+@media (max-width: 319px) {}

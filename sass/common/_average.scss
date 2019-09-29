@@ -1,0 +1,284 @@
+//average
+
+//global
+
+.#{$average} {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+//average
+
+.grid {
+  &.one > .#{$average} {
+    width: 100%;
+  }
+
+  &.two > .#{$average} {
+    width: calc(100% / 2);
+  }
+
+  &.three > .#{$average} {
+    width: calc(100% / 3);
+  }
+
+  &.four > .#{$average} {
+    width: calc(100% / 4);
+  }
+
+  &.five > .#{$average} {
+    width: calc(100% / 5);
+  }
+
+  &.six > .#{$average} {
+    width: calc(100% / 6);
+  }
+
+  &.seven > .#{$average} {
+    width: calc(100% / 7);
+  }
+
+  &.eight > .#{$average} {
+    width: calc(100% / 8);
+  }
+
+  &.nine > .#{$average} {
+    width: calc(100% / 9);
+  }
+
+  &.ten > .#{$average} {
+    width: calc(100% / 10);
+  }
+
+  &.eleven > .#{$average} {
+    width: calc(100% / 11);
+  }
+
+  &.twelve > .#{$average} {
+    width: calc(100% / 12);
+  }
+}
+
+//responsive
+
+@media (max-width: 1199px) {
+
+  .grid {
+    &.one-lg > .#{$average} {
+      width: 100%;
+    }
+
+    &.two-lg > .#{$average} {
+      width: calc(100% / 2);
+    }
+
+    &.three-lg > .#{$average} {
+      width: calc(100% / 3);
+    }
+
+    &.four-lg > .#{$average} {
+      width: calc(100% / 4);
+    }
+
+    &.five-lg > .#{$average} {
+      width: calc(100% / 5);
+    }
+
+    &.six-lg > .#{$average} {
+      width: calc(100% / 6);
+    }
+
+    &.seven-lg > .#{$average} {
+      width: calc(100% / 7);
+    }
+
+    &.eight-lg > .#{$average} {
+      width: calc(100% / 8);
+    }
+
+    &.nine-lg > .#{$average} {
+      width: calc(100% / 9);
+    }
+
+    &.ten-lg > .#{$average} {
+      width: calc(100% / 10);
+    }
+
+    &.eleven-lg > .#{$average} {
+      width: calc(100% / 11);
+    }
+
+    &.twelve-lg > .#{$average} {
+      width: calc(100% / 12);
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .grid {
+    &.one-md > .#{$average} {
+      width: 100%;
+    }
+
+    &.two-md > .#{$average} {
+      width: calc(100% / 2);
+    }
+
+    &.three-md > .#{$average} {
+      width: calc(100% / 3);
+    }
+
+    &.four-md > .#{$average} {
+      width: calc(100% / 4);
+    }
+
+    &.five-md > .#{$average} {
+      width: calc(100% / 5);
+    }
+
+    &.six-md > .#{$average} {
+      width: calc(100% / 6);
+    }
+
+    &.seven-md > .#{$average} {
+      width: calc(100% / 7);
+    }
+
+    &.eight-md > .#{$average} {
+      width: calc(100% / 8);
+    }
+
+    &.nine-md > .#{$average} {
+      width: calc(100% / 9);
+    }
+
+    &.ten-md > .#{$average} {
+      width: calc(100% / 10);
+    }
+
+    &.eleven-md > .#{$average} {
+      width: calc(100% / 11);
+    }
+
+    &.twelve-md > .#{$average} {
+      width: calc(100% / 12);
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .grid {
+    &.one-sm > .#{$average} {
+      width: 100%;
+    }
+
+    &.two-sm > .#{$average} {
+      width: calc(100% / 2);
+    }
+
+    &.three-sm > .#{$average} {
+      width: calc(100% / 3);
+    }
+
+    &.four-sm > .#{$average} {
+      width: calc(100% / 4);
+    }
+
+    &.five-sm > .#{$average} {
+      width: calc(100% / 5);
+    }
+
+    &.six-sm > .#{$average} {
+      width: calc(100% / 6);
+    }
+
+    &.seven-sm > .#{$average} {
+      width: calc(100% / 7);
+    }
+
+    &.eight-sm > .#{$average} {
+      width: calc(100% / 8);
+    }
+
+    &.nine-sm > .#{$average} {
+      width: calc(100% / 9);
+    }
+
+    &.ten-sm > .#{$average} {
+      width: calc(100% / 10);
+    }
+
+    &.eleven-sm > .#{$average} {
+      width: calc(100% / 11);
+    }
+
+    &.twelve-sm > .#{$average} {
+      width: calc(100% / 12);
+    }
+  }
+
+}
+
+@media (max-width: 479px) {
+
+  .grid {
+    &.one-xs > .#{$average} {
+      width: 100%;
+    }
+
+    &.two-xs > .#{$average} {
+      width: calc(100% / 2);
+    }
+
+    &.three-xs > .#{$average} {
+      width: calc(100% / 3);
+    }
+
+    &.four-xs > .#{$average} {
+      width: calc(100% / 4);
+    }
+
+    &.five-xs > .#{$average} {
+      width: calc(100% / 5);
+    }
+
+    &.six-xs > .#{$average} {
+      width: calc(100% / 6);
+    }
+
+    &.seven-xs > .#{$average} {
+      width: calc(100% / 7);
+    }
+
+    &.eight-xs > .#{$average} {
+      width: calc(100% / 8);
+    }
+
+    &.nine-xs > .#{$average} {
+      width: calc(100% / 9);
+    }
+
+    &.ten-xs > .#{$average} {
+      width: calc(100% / 10);
+    }
+
+    &.eleven-xs > .#{$average} {
+      width: calc(100% / 11);
+    }
+
+    &.twelve-xs > .#{$average} {
+      width: calc(100% / 12);
+    }
+  }
+
+}
+
+@media (max-width: 319px) {
+}
