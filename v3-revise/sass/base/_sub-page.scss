@@ -1,0 +1,53 @@
+//sub-page
+
+//post-navigation
+
+.post-navigation {
+  & .post-nav {
+    position: relative;
+    display: inline-block;
+    max-width: 40%;
+
+    > a {
+      display: block;
+      padding: 8px 15px;
+      border-radius: 2px;
+    }
+  }
+
+  & .nav-previous > a {
+    padding-left: 30px;
+
+    &:before {
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      content: "\f100";
+      font-family: FontAwesome;
+    }
+  }
+
+  & .nav-next > a {
+    padding-right: 30px;
+
+    &:after {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      content: "\f101";
+      font-family: FontAwesome;
+    }
+  }
+}
+
+//responsive
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 479px) {}
+
+@media (max-width: 319px) {}

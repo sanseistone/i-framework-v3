@@ -1,0 +1,139 @@
+//corner
+//有待完善，暂时搁置
+
+.corner {
+  position: absolute;
+  z-index: 999;
+}
+
+.corner-box {
+  position: absolute;
+  z-index: 999;
+}
+
+.corner-box::after {
+  color: #1e88e5;
+  font-family: "iconfont" !important;
+}
+
+.corner-box > span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.corner-box-style-a {
+  top: -5px;
+  left: -7px;
+}
+
+.corner-box-style-a > span {
+  top: 3px;
+}
+
+.corner-box-style-a:after {
+  content: "\e613";
+  font-size: 42px;
+  line-height: 1;
+}
+
+.corner-box-style-b {
+  top: -8px;
+  left: 5px;
+}
+
+.corner-box-style-b > span {
+  top: 10px;
+}
+
+.corner-box-style-b::after {
+  content: "\e605";
+  font-size: 55px;
+  line-height: 1;
+}
+
+.corner-box-style-c {
+  top: -25px;
+  right: -10px;
+}
+
+.corner-box-style-c > span {
+  top: 20px;
+}
+
+.corner-box-style-c::after {
+  content: "\e622";
+  font-size: 80px;
+  line-height: 1;
+}
+
+.corner-box-style-d {
+  top: 0;
+  left: -2px;
+  transform: rotate(90deg);
+}
+
+.corner-box-style-d > span {
+  left: 5px;
+  bottom: 15px;
+  transform: rotate(-90deg);
+}
+
+.corner-box-style-d::after {
+  content: "\e650";
+  font-size: 50px;
+  line-height: 1;
+}
+
+.corner-box-style-e {
+  top: 2px;
+  left: 0;
+}
+
+.corner-box-style-e > span {
+  top: 3px;
+  left: 30%;
+  transform: translateX(-30%);
+}
+
+.corner-box-style-e:after {
+  content: "\e603";
+  font-size: 60px;
+  line-height: 1;
+}
+
+.corner-box-style-f {
+  top: -14px;
+  right: 0;
+}
+
+.corner-box-style-f > span {
+  top: 16px;
+  left: 60%;
+  transform: translateX(-60%);
+}
+
+.corner-box-style-f::after {
+  content: "\e6d7";
+  font-size: 60px;
+  line-height: 1;
+}
+
+//responsive
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
+}
+
+@media (max-width: 319px) {}

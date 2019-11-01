@@ -1,0 +1,119 @@
+//bootstrap定义的无响应样式集合
+//当网页不需要响应时，引入此样式，
+//另外html的head部分关于视窗检查的mete标签需要注释或删除掉
+//如下标签：
+//<meta name="viewport" content="width=device-width, initial-scale=1">
+
+//Template-specific stuff
+//
+// Customizations just for the template; these are not necessary for anything
+//with disabling the responsiveness.
+
+//Account for fixed navbar
+
+body {
+  //padding-top: 70px;
+  //padding-bottom: 30px;
+}
+
+body {
+  min-width: 1170px;
+}
+
+ //Reset the container
+
+.container {
+  width: 1170px;
+  max-width: none !important;
+
+  & .navbar-header,
+  & .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+ //Always float the navbar header
+
+.navbar-header {
+  float: left;
+}
+
+ //Undo the collapsing navbar
+
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+  visibility: visible !important;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-collapse {
+  border-top: 0;
+}
+
+.navbar-brand {
+  margin-left: -15px;
+}
+
+ //Always apply the floated nav
+
+.navbar-nav {
+  float: left;
+  margin: 0;
+
+  > li {
+    float: left;
+
+    > a {
+      padding: 15px;
+    }
+  }
+
+  &.navbar-right {
+    float: right;
+  }
+}
+
+ //Redeclare since we override the float above
+
+//Undo custom dropdowns
+
+.navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+
+  > li > a {
+    color: #333;
+
+    &:hover, &:focus {
+      color: #fff !important;
+      background-color: #428bca !important;
+    }
+  }
+
+  > .active > a, > .active > a:hover, > .active > a:focus {
+    color: #fff !important;
+    background-color: #428bca !important;
+  }
+
+  > .disabled > a, > .disabled > a:hover, > .disabled > a:focus {
+    color: #999 !important;
+    background-color: transparent !important;
+  }
+
+}
+
+

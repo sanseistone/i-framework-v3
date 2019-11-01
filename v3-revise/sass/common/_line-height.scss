@@ -1,0 +1,935 @@
+//line-height
+
+//multiple
+
+.#{$line-height} {
+  &-1,
+  &-1 > *,
+  &-all-1,
+  &-all-1 * {
+    line-height: 1;
+  }
+
+  &-1-2,
+  &-1-2 > *,
+  &-all-1-2,
+  &-all-1-2 * {
+    line-height: 1.2;
+  }
+
+  &-1-4,
+  &-1-4 > *,
+  &-all-1-4,
+  &-all-1-4 * {
+    line-height: 1.4;
+  }
+
+  &-1-6,
+  &-1-6 > *,
+  &-all-1-6,
+  &-all-1-6 * {
+    line-height: 1.6;
+  }
+
+  &-1-8,
+  &-1-8 > *,
+  &-all-1-8,
+  &-all-1-8 * {
+    line-height: 1.8;
+  }
+
+  &-2,
+  &-2 > *,
+  &-all-2,
+  &-all-2 * {
+    line-height: 2;
+  }
+
+  &-2-2,
+  &-2-2 > *,
+  &-all-2-2,
+  &-all-2-2 * {
+    line-height: 2.2;
+  }
+
+  &-2-4,
+  &-2-4 > *,
+  &-all-2-4,
+  &-all-2-4 * {
+    line-height: 2.4;
+  }
+
+  &-2-6,
+  &-2-6 > *,
+  &-all-2-6,
+  &-all-2-6 * {
+    line-height: 2.6;
+  }
+
+  &-2-8,
+  &-2-8 > *,
+  &-all-2-8,
+  &-all-2-8 * {
+    line-height: 2.8;
+  }
+
+  &-3,
+  &-3 > *,
+  &-all-3,
+  &-all-3 * {
+    line-height: 3;
+  }
+
+  &-3-2,
+  &-3-2 > *,
+  &-all-3-2,
+  &-all-3-2 * {
+    line-height: 3.2;
+  }
+
+  &-3-4,
+  &-3-4 > *,
+  &-all-3-4,
+  &-all-3-4 * {
+    line-height: 3.4;
+  }
+
+  &-3-6,
+  &-3-6 > *,
+  &-all-3-6,
+  &-all-3-6 * {
+    line-height: 3.6;
+  }
+}
+
+//pixel
+
+.#{$line-height} {
+  &-5 {
+    line-height: 5px;
+  }
+
+  &-10 {
+    line-height: 10px;
+  }
+
+  &-15 {
+    line-height: 15px;
+  }
+
+  &-20 {
+    line-height: 20px;
+  }
+
+  &-25 {
+    line-height: 25px;
+  }
+
+  &-30 {
+    line-height: 30px;
+  }
+
+  &-35 {
+    line-height: 35px;
+  }
+
+  &-40 {
+    line-height: 40px;
+  }
+
+  &-45 {
+    line-height: 45px;
+  }
+
+  &-50 {
+    line-height: 50px;
+  }
+
+  &-55 {
+    line-height: 55px;
+  }
+
+  &-60 {
+    line-height: 60px;
+  }
+
+  &-65 {
+    line-height: 65px;
+  }
+
+  &-70 {
+    line-height: 70px;
+  }
+
+  &-75 {
+    line-height: 75px;
+  }
+
+  &-80 {
+    line-height: 80px;
+  }
+
+  &-85 {
+    line-height: 85px;
+  }
+
+  &-90 {
+    line-height: 90px;
+  }
+
+  &-95 {
+    line-height: 95px;
+  }
+
+  &-100 {
+    line-height: 100px;
+  }
+}
+
+//responsive
+
+@media (max-width: 1199px) {
+
+  .#{$line-height} {
+    &-1-lg,
+    &-1-lg > *,
+    &-all-1-lg,
+    &-all-1-lg * {
+      line-height: 1;
+    }
+
+    &-1-2-lg,
+    &-1-2-lg > *,
+    &-all-1-2-lg,
+    &-all-1-2-lg * {
+      line-height: 1.2;
+    }
+
+    &-1-4-lg,
+    &-1-4-lg > *,
+    &-all-1-4-lg,
+    &-all-1-4-lg * {
+      line-height: 1.4;
+    }
+
+    &-1-6-lg,
+    &-1-6-lg > *,
+    &-all-1-6-lg,
+    &-all-1-6-lg * {
+      line-height: 1.6;
+    }
+
+    &-1-8-lg,
+    &-1-8-lg > *,
+    &-all-1-8-lg,
+    &-all-1-8-lg * {
+      line-height: 1.8;
+    }
+
+    &-2-lg,
+    &-2-lg > *,
+    &-all-2-lg,
+    &-all-2-lg * {
+      line-height: 2;
+    }
+
+    &-2-2-lg,
+    &-2-2-lg > *,
+    &-all-2-2-lg,
+    &-all-2-2-lg * {
+      line-height: 2.2;
+    }
+
+    &-2-4-lg,
+    &-2-4-lg > *,
+    &-all-2-4-lg,
+    &-all-2-4-lg * {
+      line-height: 2.4;
+    }
+
+    &-2-6-lg,
+    &-2-6-lg > *,
+    &-all-2-6-lg,
+    &-all-2-6-lg * {
+      line-height: 2.6;
+    }
+
+    &-2-8-lg,
+    &-2-8-lg > *,
+    &-all-2-8-lg,
+    &-all-2-8-lg * {
+      line-height: 2.8;
+    }
+
+    &-3-lg,
+    &-3-lg > *,
+    &-all-3-lg,
+    &-all-3-lg * {
+      line-height: 3;
+    }
+
+    &-3-2-lg,
+    &-3-2-lg > *,
+    &-all-3-2-lg,
+    &-all-3-2-lg * {
+      line-height: 3.2;
+    }
+
+    &-3-4-lg,
+    &-3-4-lg > *,
+    &-all-3-4-lg,
+    &-all-3-4-lg * {
+      line-height: 3.4;
+    }
+
+    &-3-6-lg,
+    &-3-6-lg > *,
+    &-all-3-6-lg,
+    &-all-3-6-lg * {
+      line-height: 3.6;
+    }
+  }
+
+  .#{$line-height} {
+    &-5-lg {
+      line-height: 5px;
+    }
+
+    &-10-lg {
+      line-height: 10px;
+    }
+
+    &-15-lg {
+      line-height: 15px;
+    }
+
+    &-20-lg {
+      line-height: 20px;
+    }
+
+    &-25-lg {
+      line-height: 25px;
+    }
+
+    &-30-lg {
+      line-height: 30px;
+    }
+
+    &-35-lg {
+      line-height: 35px;
+    }
+
+    &-40-lg {
+      line-height: 40px;
+    }
+
+    &-45-lg {
+      line-height: 45px;
+    }
+
+    &-50-lg {
+      line-height: 50px;
+    }
+
+    &-55-lg {
+      line-height: 55px;
+    }
+
+    &-60-lg {
+      line-height: 60px;
+    }
+
+    &-65-lg {
+      line-height: 65px;
+    }
+
+    &-70-lg {
+      line-height: 70px;
+    }
+
+    &-75-lg {
+      line-height: 75px;
+    }
+
+    &-80-lg {
+      line-height: 80px;
+    }
+
+    &-85-lg {
+      line-height: 85px;
+    }
+
+    &-90-lg {
+      line-height: 90px;
+    }
+
+    &-95-lg {
+      line-height: 95px;
+    }
+
+    &-100-lg {
+      line-height: 100px;
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .#{$line-height} {
+    &-1-md,
+    &-1-md > *,
+    &-all-1-md,
+    &-all-1-md * {
+      line-height: 1;
+    }
+
+    &-1-2-md,
+    &-1-2-md > *,
+    &-all-1-2-md,
+    &-all-1-2-md * {
+      line-height: 1.2;
+    }
+
+    &-1-4-md,
+    &-1-4-md > *,
+    &-all-1-4-md,
+    &-all-1-4-md * {
+      line-height: 1.4;
+    }
+
+    &-1-6-md,
+    &-1-6-md > *,
+    &-all-1-6-md,
+    &-all-1-6-md * {
+      line-height: 1.6;
+    }
+
+    &-1-8-md,
+    &-1-8-md > *,
+    &-all-1-8-md,
+    &-all-1-8-md * {
+      line-height: 1.8;
+    }
+
+    &-2-md,
+    &-2-md > *,
+    &-all-2-md,
+    &-all-2-md * {
+      line-height: 2;
+    }
+
+    &-2-2-md,
+    &-2-2-md > *,
+    &-all-2-2-md,
+    &-all-2-2-md * {
+      line-height: 2.2;
+    }
+
+    &-2-4-md,
+    &-2-4-md > *,
+    &-all-2-4-md,
+    &-all-2-4-md * {
+      line-height: 2.4;
+    }
+
+    &-2-6-md,
+    &-2-6-md > *,
+    &-all-2-6-md,
+    &-all-2-6-md * {
+      line-height: 2.6;
+    }
+
+    &-2-8-md,
+    &-2-8-md > *,
+    &-all-2-8-md,
+    &-all-2-8-md * {
+      line-height: 2.8;
+    }
+
+    &-3-md,
+    &-3-md > *,
+    &-all-3-md,
+    &-all-3-md * {
+      line-height: 3;
+    }
+
+    &-3-2-md,
+    &-3-2-md > *,
+    &-all-3-2-md,
+    &-all-3-2-md * {
+      line-height: 3.2;
+    }
+
+    &-3-4-md,
+    &-3-4-md > *,
+    &-all-3-4-md,
+    &-all-3-4-md * {
+      line-height: 3.4;
+    }
+
+    &-3-6-md,
+    &-3-6-md > *,
+    &-all-3-6-md,
+    &-all-3-6-md * {
+      line-height: 3.6;
+    }
+  }
+
+  .#{$line-height} {
+    &-5-md {
+      line-height: 5px;
+    }
+
+    &-10-md {
+      line-height: 10px;
+    }
+
+    &-15-md {
+      line-height: 15px;
+    }
+
+    &-20-md {
+      line-height: 20px;
+    }
+
+    &-25-md {
+      line-height: 25px;
+    }
+
+    &-30-md {
+      line-height: 30px;
+    }
+
+    &-35-md {
+      line-height: 35px;
+    }
+
+    &-40-md {
+      line-height: 40px;
+    }
+
+    &-45-md {
+      line-height: 45px;
+    }
+
+    &-50-md {
+      line-height: 50px;
+    }
+
+    &-55-md {
+      line-height: 55px;
+    }
+
+    &-60-md {
+      line-height: 60px;
+    }
+
+    &-65-md {
+      line-height: 65px;
+    }
+
+    &-70-md {
+      line-height: 70px;
+    }
+
+    &-75-md {
+      line-height: 75px;
+    }
+
+    &-80-md {
+      line-height: 80px;
+    }
+
+    &-85-md {
+      line-height: 85px;
+    }
+
+    &-90-md {
+      line-height: 90px;
+    }
+
+    &-95-md {
+      line-height: 95px;
+    }
+
+    &-100-md {
+      line-height: 100px;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .#{$line-height} {
+    &-1-sm,
+    &-1-sm > *,
+    &-all-1-sm,
+    &-all-1-sm * {
+      line-height: 1;
+    }
+
+    &-1-2-sm,
+    &-1-2-sm > *,
+    &-all-1-2-sm,
+    &-all-1-2-sm * {
+      line-height: 1.2;
+    }
+
+    &-1-4-sm,
+    &-1-4-sm > *,
+    &-all-1-4-sm,
+    &-all-1-4-sm * {
+      line-height: 1.4;
+    }
+
+    &-1-6-sm,
+    &-1-6-sm > *,
+    &-all-1-6-sm,
+    &-all-1-6-sm * {
+      line-height: 1.6;
+    }
+
+    &-1-8-sm,
+    &-1-8-sm > *,
+    &-all-1-8-sm,
+    &-all-1-8-sm * {
+      line-height: 1.8;
+    }
+
+    &-2-sm,
+    &-2-sm > *,
+    &-all-2-sm,
+    &-all-2-sm * {
+      line-height: 2;
+    }
+
+    &-2-2-sm,
+    &-2-2-sm > *,
+    &-all-2-2-sm,
+    &-all-2-2-sm * {
+      line-height: 2.2;
+    }
+
+    &-2-4-sm,
+    &-2-4-sm > *,
+    &-all-2-4-sm,
+    &-all-2-4-sm * {
+      line-height: 2.4;
+    }
+
+    &-2-6-sm,
+    &-2-6-sm > *,
+    &-all-2-6-sm,
+    &-all-2-6-sm * {
+      line-height: 2.6;
+    }
+
+    &-2-8-sm,
+    &-2-8-sm > *,
+    &-all-2-8-sm,
+    &-all-2-8-sm * {
+      line-height: 2.8;
+    }
+
+    &-3-sm,
+    &-3-sm > *,
+    &-all-3-sm,
+    &-all-3-sm * {
+      line-height: 3;
+    }
+
+    &-3-2-sm,
+    &-3-2-sm > *,
+    &-all-3-2-sm,
+    &-all-3-2-sm * {
+      line-height: 3.2;
+    }
+
+    &-3-4-sm,
+    &-3-4-sm > *,
+    &-all-3-4-sm,
+    &-all-3-4-sm * {
+      line-height: 3.4;
+    }
+
+    &-3-6-sm,
+    &-3-6-sm > *,
+    &-all-3-6-sm,
+    &-all-3-6-sm * {
+      line-height: 3.6;
+    }
+  }
+
+  .#{$line-height} {
+    &-5-sm {
+      line-height: 5px;
+    }
+
+    &-10-sm {
+      line-height: 10px;
+    }
+
+    &-15-sm {
+      line-height: 15px;
+    }
+
+    &-20-sm {
+      line-height: 20px;
+    }
+
+    &-25-sm {
+      line-height: 25px;
+    }
+
+    &-30-sm {
+      line-height: 30px;
+    }
+
+    &-35-sm {
+      line-height: 35px;
+    }
+
+    &-40-sm {
+      line-height: 40px;
+    }
+
+    &-45-sm {
+      line-height: 45px;
+    }
+
+    &-50-sm {
+      line-height: 50px;
+    }
+
+    &-55-sm {
+      line-height: 55px;
+    }
+
+    &-60-sm {
+      line-height: 60px;
+    }
+
+    &-65-sm {
+      line-height: 65px;
+    }
+
+    &-70-sm {
+      line-height: 70px;
+    }
+
+    &-75-sm {
+      line-height: 75px;
+    }
+
+    &-80-sm {
+      line-height: 80px;
+    }
+
+    &-85-sm {
+      line-height: 85px;
+    }
+
+    &-90-sm {
+      line-height: 90px;
+    }
+
+    &-95-sm {
+      line-height: 95px;
+    }
+
+    &-100-sm {
+      line-height: 100px;
+    }
+  }
+
+}
+
+@media (max-width: 479px) {
+
+  .#{$line-height} {
+    &-1-xs,
+    &-1-xs > *,
+    &-all-1-xs,
+    &-all-1-xs * {
+      line-height: 1;
+    }
+
+    &-1-2-xs,
+    &-1-2-xs > *,
+    &-all-1-2-xs,
+    &-all-1-2-xs * {
+      line-height: 1.2;
+    }
+
+    &-1-4-xs,
+    &-1-4-xs > *,
+    &-all-1-4-xs,
+    &-all-1-4-xs * {
+      line-height: 1.4;
+    }
+
+    &-1-6-xs,
+    &-1-6-xs > *,
+    &-all-1-6-xs,
+    &-all-1-6-xs * {
+      line-height: 1.6;
+    }
+
+    &-1-8-xs,
+    &-1-8-xs > *,
+    &-all-1-8-xs,
+    &-all-1-8-xs * {
+      line-height: 1.8;
+    }
+
+    &-2-xs,
+    &-2-xs > *,
+    &-all-2-xs,
+    &-all-2-xs * {
+      line-height: 2;
+    }
+
+    &-2-2-xs,
+    &-2-2-xs > *,
+    &-all-2-2-xs,
+    &-all-2-2-xs * {
+      line-height: 2.2;
+    }
+
+    &-2-4-xs,
+    &-2-4-xs > *,
+    &-all-2-4-xs,
+    &-all-2-4-xs * {
+      line-height: 2.4;
+    }
+
+    &-2-6-xs,
+    &-2-6-xs > *,
+    &-all-2-6-xs,
+    &-all-2-6-xs * {
+      line-height: 2.6;
+    }
+
+    &-2-8-xs,
+    &-2-8-xs > *,
+    &-all-2-8-xs,
+    &-all-2-8-xs * {
+      line-height: 2.8;
+    }
+
+    &-3-xs,
+    &-3-xs > *,
+    &-all-3-xs,
+    &-all-3-xs * {
+      line-height: 3;
+    }
+
+    &-3-2-xs,
+    &-3-2-xs > *,
+    &-all-3-2-xs,
+    &-all-3-2-xs * {
+      line-height: 3.2;
+    }
+
+    &-3-4-xs,
+    &-3-4-xs > *,
+    &-all-3-4-xs,
+    &-all-3-4-xs * {
+      line-height: 3.4;
+    }
+
+    &-3-6-xs,
+    &-3-6-xs > *,
+    &-all-3-6-xs,
+    &-all-3-6-xs * {
+      line-height: 3.6;
+    }
+  }
+
+  .#{$line-height} {
+    &-5-xs {
+      line-height: 5px;
+    }
+
+    &-10-xs {
+      line-height: 10px;
+    }
+
+    &-15-xs {
+      line-height: 15px;
+    }
+
+    &-20-xs {
+      line-height: 20px;
+    }
+
+    &-25-xs {
+      line-height: 25px;
+    }
+
+    &-30-xs {
+      line-height: 30px;
+    }
+
+    &-35-xs {
+      line-height: 35px;
+    }
+
+    &-40-xs {
+      line-height: 40px;
+    }
+
+    &-45-xs {
+      line-height: 45px;
+    }
+
+    &-50-xs {
+      line-height: 50px;
+    }
+
+    &-55-xs {
+      line-height: 55px;
+    }
+
+    &-60-xs {
+      line-height: 60px;
+    }
+
+    &-65-xs {
+      line-height: 65px;
+    }
+
+    &-70-xs {
+      line-height: 70px;
+    }
+
+    &-75-xs {
+      line-height: 75px;
+    }
+
+    &-80-xs {
+      line-height: 80px;
+    }
+
+    &-85-xs {
+      line-height: 85px;
+    }
+
+    &-90-xs {
+      line-height: 90px;
+    }
+
+    &-95-xs {
+      line-height: 95px;
+    }
+
+    &-100-xs {
+      line-height: 100px;
+    }
+  }
+
+}
+
+@media (max-width: 319px) {}

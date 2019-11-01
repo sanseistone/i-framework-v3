@@ -1,0 +1,7675 @@
+//border-color
+
+[class*="btn-"].default {
+  color: #fff;
+  border-color: $default-color;
+  background-color: $default-color;
+}
+
+.#{$btn-white} {
+  & {
+    color: #333;
+    border-color: #fff;
+    background-color: #fff;
+  }
+
+  &:focus, &:hover, &.active, &.active:focus, &.active:hover {
+    color: #333;
+    border-color: #fff;
+    background-color: #fff;
+  }
+}
+
+.#{$btn-black} {
+  & {
+    color: #fff;
+    border-color: #333;
+    background-color: #333;
+  }
+
+  &:focus,
+  &:hover,
+  &.active,
+  &.active:focus,
+  &.active:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color: #333;
+  }
+}
+
+//red
+
+.#{$btn-red} {
+  & {
+    border-color: red;
+    background-color: red;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #ffebee;
+    background-color: #ffebee;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #ffcdd2;
+    background-color: #ffcdd2;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #ef9a9a;
+    background-color: #ef9a9a;
+  }
+
+  &-300 {
+    border-color: #e57373;
+    background-color: #e57373;
+  }
+
+  &-400 {
+    border-color: #ef5350;
+    background-color: #ef5350;
+  }
+
+  &-500 {
+    border-color: #f44336;
+    background-color: #f44336;
+  }
+
+  &-600 {
+    border-color: #e53935;
+    background-color: #e53935;
+  }
+
+  &-700 {
+    border-color: #d32f2f;
+    background-color: #d32f2f;
+  }
+
+  &-800 {
+    border-color: #c62828;
+    background-color: #c62828;
+  }
+
+  &-900 {
+    border-color: #b71c1c;
+    background-color: #b71c1c;
+  }
+
+  &-a100 {
+    border-color: #ff8a80;
+    background-color: #ff8a80;
+  }
+
+  &-a200 {
+    border-color: #ff5252;
+    background-color: #ff5252;
+  }
+
+  &-a400 {
+    border-color: #ff1744;
+    background-color: #ff1744;
+  }
+
+  &-a700 {
+    border-color: #d50000;
+    background-color: #d50000;
+  }
+}
+
+//pink
+
+.#{$btn-pink} {
+  & {
+    color: #555;
+    border-color: pink;
+    background-color: pink;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #fce4ec;
+    background-color: #fce4ec;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #f8bbd0;
+    background-color: #f8bbd0;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #f48fb1;
+    background-color: #f48fb1;
+  }
+
+  &-300 {
+    border-color: #f06292;
+    background-color: #f06292;
+  }
+
+  &-400 {
+    border-color: #ec407a;
+    background-color: #ec407a;
+  }
+
+  &-500 {
+    border-color: #e91e63;
+    background-color: #e91e63;
+  }
+
+  &-600 {
+    border-color: #d81b60;
+    background-color: #d81b60;
+  }
+
+  &-700 {
+    border-color: #c2185b;
+    background-color: #c2185b;
+  }
+
+  &-800 {
+    border-color: #ad1457;
+    background-color: #ad1457;
+  }
+
+  &-900 {
+    border-color: #880e4f;
+    background-color: #880e4f;
+  }
+
+  &-a100 {
+    border-color: #ff80ab;
+    background-color: #ff80ab;
+  }
+
+  &-a200 {
+    border-color: #ff4081;
+    background-color: #ff4081;
+  }
+
+  &-a400 {
+    border-color: #f50057;
+    background-color: #f50057;
+  }
+
+  &-a700 {
+    border-color: #c51162;
+    background-color: #c51162;
+  }
+}
+
+//purple
+
+.#{$btn-purple} {
+  & {
+    border-color: purple;
+    background-color: purple;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #f3e5f5;
+    background-color: #f3e5f5;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #e1bee7;
+    background-color: #e1bee7;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #ce93d8;
+    background-color: #ce93d8;
+  }
+
+  &-300 {
+    border-color: #ba68c8;
+    background-color: #ba68c8;
+  }
+
+  &-400 {
+    border-color: #ab47bc;
+    background-color: #ab47bc;
+  }
+
+  &-500 {
+    border-color: #9c27b0;
+    background-color: #9c27b0;
+  }
+
+  &-600 {
+    border-color: #8e24aa;
+    background-color: #8e24aa;
+  }
+
+  &-700 {
+    border-color: #7b1fa2;
+    background-color: #7b1fa2;
+  }
+
+  &-800 {
+    border-color: #6a1b9a;
+    background-color: #6a1b9a;
+  }
+
+  &-900 {
+    border-color: #4a148c;
+    background-color: #4a148c;
+  }
+
+  &-a100 {
+    border-color: #ea80fc;
+    background-color: #ea80fc;
+  }
+
+  &-a200 {
+    border-color: #e040fb;
+    background-color: #e040fb;
+  }
+
+  &-a400 {
+    border-color: #d500f9;
+    background-color: #d500f9;
+  }
+
+  &-a700 {
+    border-color: #a0f;
+    background-color: #a0f;
+  }
+}
+
+//deep-purple
+
+.#{$btn-deep-purple} {
+  & {
+    border-color: darkmagenta;
+    background-color: darkmagenta;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #ede7f6;
+    background-color: #ede7f6;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #d1c4e9;
+    background-color: #d1c4e9;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #b39ddb;
+    background-color: #b39ddb;
+  }
+
+  &-300 {
+    border-color: #9575cd;
+    background-color: #9575cd;
+  }
+
+  &-400 {
+    border-color: #7e57c2;
+    background-color: #7e57c2;
+  }
+
+  &-500 {
+    border-color: #673ab7;
+    background-color: #673ab7;
+  }
+
+  &-600 {
+    border-color: #5e35b1;
+    background-color: #5e35b1;
+  }
+
+  &-700 {
+    border-color: #512da8;
+    background-color: #512da8;
+  }
+
+  &-800 {
+    border-color: #4527a0;
+    background-color: #4527a0;
+  }
+
+  &-900 {
+    border-color: #311b92;
+    background-color: #311b92;
+  }
+
+  &-a100 {
+    border-color: #b388ff;
+    background-color: #b388ff;
+  }
+
+  &-a200 {
+    border-color: #7c4dff;
+    background-color: #7c4dff;
+  }
+
+  &-a400 {
+    border-color: #651fff;
+    background-color: #651fff;
+  }
+
+  &-a700 {
+    border-color: #6200ea;
+    background-color: #6200ea;
+  }
+}
+
+//indigo
+
+.#{$btn-indigo} {
+  & {
+    border-color: indigo;
+    background-color: indigo;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #e8eaf6;
+    background-color: #e8eaf6;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #c5cae9;
+    background-color: #c5cae9;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #9fa8da;
+    background-color: #9fa8da;
+  }
+
+  &-300 {
+    color: #555;
+    border-color: #7986cb;
+    background-color: #7986cb;
+  }
+
+  &-400 {
+    border-color: #5c6bc0;
+    background-color: #5c6bc0;
+  }
+
+  &-500 {
+    border-color: #3f51b5;
+    background-color: #3f51b5;
+  }
+
+  &-600 {
+    border-color: #3949ab;
+    background-color: #3949ab;
+  }
+
+  &-700 {
+    border-color: #303f9f;
+    background-color: #303f9f;
+  }
+
+  &-800 {
+    border-color: #283593;
+    background-color: #283593;
+  }
+
+  &-900 {
+    border-color: #1a237e;
+    background-color: #1a237e;
+  }
+
+  &-a100 {
+    border-color: #8c9eff;
+    background-color: #8c9eff;
+  }
+
+  &-a200 {
+    border-color: #536dfe;
+    background-color: #536dfe;
+  }
+
+  &-a400 {
+    border-color: #3d5afe;
+    background-color: #3d5afe;
+  }
+
+  &-a700 {
+    border-color: #304ffe;
+    background-color: #304ffe;
+  }
+}
+
+//blue
+
+.#{$btn-blue} {
+  & {
+    border-color: blue;
+    background-color: blue;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #e3f2fd;
+    background-color: #e3f2fd;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #bbdefb;
+    background-color: #bbdefb;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #90caf9;
+    background-color: #90caf9;
+  }
+
+  &-300 {
+    color: #555;
+    border-color: #64b5f6;
+    background-color: #64b5f6;
+  }
+
+  &-400 {
+    border-color: #42a5f5;
+    background-color: #42a5f5;
+  }
+
+  &-500 {
+    border-color: #2196f3;
+    background-color: #2196f3;
+  }
+
+  &-600 {
+    border-color: #1e88e5;
+    background-color: #1e88e5;
+  }
+
+  &-700 {
+    border-color: #1976d2;
+    background-color: #1976d2;
+  }
+
+  &-800 {
+    border-color: #1565c0;
+    background-color: #1565c0;
+  }
+
+  &-900 {
+    border-color: #0d47a1;
+    background-color: #0d47a1;
+  }
+
+  &-a100 {
+    color: #555;
+    border-color: #82b1ff;
+    background-color: #82b1ff;
+  }
+
+  &-a200 {
+    border-color: #448aff;
+    background-color: #448aff;
+  }
+
+  &-a400 {
+    border-color: #2979ff;
+    background-color: #2979ff;
+  }
+
+  &-a700 {
+    border-color: #2962ff;
+    background-color: #2962ff;
+  }
+}
+
+//light-blue
+
+.#{$btn-light-blue} {
+  & {
+    color: #555;
+    border-color: lightblue;
+    background-color: lightblue;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #e1f5fe;
+    background-color: #e1f5fe;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #b3e5fc;
+    background-color: #b3e5fc;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #81d4fa;
+    background-color: #81d4fa;
+  }
+
+  &-300 {
+    border-color: #4fc3f7;
+    background-color: #4fc3f7;
+  }
+
+  &-400 {
+    border-color: #29b6f6;
+    background-color: #29b6f6;
+  }
+
+  &-500 {
+    border-color: #03a9f4;
+    background-color: #03a9f4;
+  }
+
+  &-600 {
+    border-color: #039be5;
+    background-color: #039be5;
+  }
+
+  &-700 {
+    border-color: #0288d1;
+    background-color: #0288d1;
+  }
+
+  &-800 {
+    border-color: #0277bd;
+    background-color: #0277bd;
+  }
+
+  &-900 {
+    border-color: #01579b;
+    background-color: #01579b;
+  }
+
+  &-a100 {
+    color: #555;
+    border-color: #80d8ff;
+    background-color: #80d8ff;
+  }
+
+  &-a200 {
+    border-color: #40c4ff;
+    background-color: #40c4ff;
+  }
+
+  &-a400 {
+    border-color: #00b0ff;
+    background-color: #00b0ff;
+  }
+
+  &-a700 {
+    border-color: #0091ea;
+    background-color: #0091ea;
+  }
+}
+
+//cyan
+
+.#{$btn-cyan} {
+  & {
+    color: #555;
+    border-color: cyan;
+    background-color: cyan;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #e0f7fa;
+    background-color: #e0f7fa;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #b2ebf2;
+    background-color: #b2ebf2;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #80deea;
+    background-color: #80deea;
+  }
+
+  &-300 {
+    border-color: #4dd0e1;
+    background-color: #4dd0e1;
+  }
+
+  &-400 {
+    border-color: #26c6da;
+    background-color: #26c6da;
+  }
+
+  &-500 {
+    border-color: #00bcd4;
+    background-color: #00bcd4;
+  }
+
+  &-600 {
+    border-color: #00acc1;
+    background-color: #00acc1;
+  }
+
+  &-700 {
+    border-color: #0097a7;
+    background-color: #0097a7;
+  }
+
+  &-800 {
+    border-color: #00838f;
+    background-color: #00838f;
+  }
+
+  &-900 {
+    border-color: #006064;
+    background-color: #006064;
+  }
+
+  &-a100 {
+    color: #555;
+    border-color: #84ffff;
+    background-color: #84ffff;
+  }
+
+  &-a200 {
+    color: #555;
+    border-color: #18ffff;
+    background-color: #18ffff;
+  }
+
+  &-a400 {
+    border-color: #00e5ff;
+    background-color: #00e5ff;
+  }
+
+  &-a700 {
+    border-color: #00b8d4;
+    background-color: #00b8d4;
+  }
+}
+
+//teal
+
+.#{$btn-teal} {
+  & {
+    border-color: teal;
+    background-color: teal;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #e0f2f1;
+    background-color: #e0f2f1;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #b2dfdb;
+    background-color: #b2dfdb;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #80cbc4;
+    background-color: #80cbc4;
+  }
+
+  &-300 {
+    border-color: #4db6ac;
+    background-color: #4db6ac;
+  }
+
+  &-400 {
+    border-color: #26a69a;
+    background-color: #26a69a;
+  }
+
+  &-500 {
+    border-color: #009688;
+    background-color: #009688;
+  }
+
+  &-600 {
+    border-color: #00897b;
+    background-color: #00897b;
+  }
+
+  &-700 {
+    border-color: #00796b;
+    background-color: #00796b;
+  }
+
+  &-800 {
+    border-color: #00695c;
+    background-color: #00695c;
+  }
+
+  &-900 {
+    border-color: #004d40;
+    background-color: #004d40;
+  }
+
+  &-a100 {
+    color: #555;
+    border-color: #a7ffeb;
+    background-color: #a7ffeb;
+  }
+
+  &-a200 {
+    color: #555;
+    border-color: #64ffda;
+    background-color: #64ffda;
+  }
+
+  &-a400 {
+    border-color: #1de9b6;
+    background-color: #1de9b6;
+  }
+
+  &-a700 {
+    border-color: #00bfa5;
+    background-color: #00bfa5;
+  }
+}
+
+//green
+
+.#{$btn-green} {
+  & {
+    border-color: green;
+    background-color: green;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #e8f5e9;
+    background-color: #e8f5e9;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #c8e6c9;
+    background-color: #c8e6c9;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #a5d6a7;
+    background-color: #a5d6a7;
+  }
+
+  &-300 {
+    color: #555;
+    border-color: #81c784;
+    background-color: #81c784;
+  }
+
+  &-400 {
+    border-color: #66bb6a;
+    background-color: #66bb6a;
+  }
+
+  &-500 {
+    border-color: #4caf50;
+    background-color: #4caf50;
+  }
+
+  &-600 {
+    border-color: #43a047;
+    background-color: #43a047;
+  }
+
+  &-700 {
+    border-color: #388e3c;
+    background-color: #388e3c;
+  }
+
+  &-800 {
+    border-color: #2e7d32;
+    background-color: #2e7d32;
+  }
+
+  &-900 {
+    border-color: #1b5e20;
+    background-color: #1b5e20;
+  }
+
+  &-a100 {
+    color: #555;
+    border-color: #b9f6ca;
+    background-color: #b9f6ca;
+  }
+
+  &-a200 {
+    color: #555;
+    border-color: #69f0ae;
+    background-color: #69f0ae;
+  }
+
+  &-a400 {
+    border-color: #00e676;
+    background-color: #00e676;
+  }
+
+  &-a700 {
+    border-color: #00c853;
+    background-color: #00c853;
+  }
+}
+
+//light-green
+
+.#{$btn-light-green} {
+  & {
+    color: #555;
+    border-color: lightgreen;
+    background-color: lightgreen;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #f1f8e9;
+    background-color: #f1f8e9;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #dcedc8;
+    background-color: #dcedc8;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #c5e1a5;
+    background-color: #c5e1a5;
+  }
+
+  &-300 {
+    color: #555;
+    border-color: #aed581;
+    background-color: #aed581;
+  }
+
+  &-400 {
+    color: #555;
+    border-color: #9ccc65;
+    background-color: #9ccc65;
+  }
+
+  &-500 {
+    border-color: #8bc34a;
+    background-color: #8bc34a;
+  }
+
+  &-600 {
+    border-color: #7cb342;
+    background-color: #7cb342;
+  }
+
+  &-700 {
+    border-color: #689f38;
+    background-color: #689f38;
+  }
+
+  &-800 {
+    border-color: #558b2f;
+    background-color: #558b2f;
+  }
+
+  &-900 {
+    border-color: #33691e;
+    background-color: #33691e;
+  }
+
+  &-a100 {
+    color: #555;
+    border-color: #ccff90;
+    background-color: #ccff90;
+  }
+
+  &-a200 {
+    color: #555;
+    border-color: #b2ff59;
+    background-color: #b2ff59;
+  }
+
+  &-a400 {
+    border-color: #76ff03;
+    background-color: #76ff03;
+  }
+
+  &-a700 {
+    border-color: #64dd17;
+    background-color: #64dd17;
+  }
+}
+
+//lime
+
+.#{$btn-lime} {
+  & {
+    border-color: lime;
+    background-color: lime;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #f9fbe7;
+    background-color: #f9fbe7;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #f0f4c3;
+    background-color: #f0f4c3;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #e6ee9c;
+    background-color: #e6ee9c;
+  }
+
+  &-300 {
+    color: #555;
+    border-color: #d4e056;
+    background-color: #d4e056;
+  }
+
+  &-400 {
+    border-color: #d4e157;
+    background-color: #d4e157;
+  }
+
+  &-500 {
+    border-color: #cddc39;
+    background-color: #cddc39;
+  }
+
+  &-600 {
+    border-color: #c0ca33;
+    background-color: #c0ca33;
+  }
+
+  &-700 {
+    border-color: #afb42b;
+    background-color: #afb42b;
+  }
+
+  &-800 {
+    border-color: #9e9d24;
+    background-color: #9e9d24;
+  }
+
+  &-900 {
+    border-color: #827717;
+    background-color: #827717;
+  }
+
+  &-a100 {
+    color: #555;
+    border-color: #f4ff81;
+    background-color: #f4ff81;
+  }
+
+  &-a200 {
+    color: #555;
+    border-color: #eeff41;
+    background-color: #eeff41;
+  }
+
+  &-a400 {
+    color: #555;
+    border-color: #c6ff00;
+    background-color: #c6ff00;
+  }
+
+  &-a700 {
+    border-color: #aeea00;
+    background-color: #aeea00;
+  }
+}
+
+//yellow
+
+.#{$btn-yellow} {
+  & {
+    color: #555;
+    border-color: yellow;
+    background-color: yellow;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #fffde7;
+    background-color: #fffde7;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #fff9c4;
+    background-color: #fff9c4;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #fff59d;
+    background-color: #fff59d;
+  }
+
+  &-300 {
+    color: #555;
+    border-color: #fff176;
+    background-color: #fff176;
+  }
+
+  &-400 {
+    color: #555;
+    border-color: #ffee58;
+    background-color: #ffee58;
+  }
+
+  &-500 {
+    color: #555;
+    border-color: #ffeb3b;
+    background-color: #ffeb3b;
+  }
+
+  &-600 {
+    border-color: #fdd835;
+    background-color: #fdd835;
+  }
+
+  &-700 {
+    border-color: #fbc02d;
+    background-color: #fbc02d;
+  }
+
+  &-800 {
+    border-color: #f9a825;
+    background-color: #f9a825;
+  }
+
+  &-900 {
+    border-color: #f57f17;
+    background-color: #f57f17;
+  }
+
+  &-a100 {
+    color: #555;
+    border-color: #ffff8d;
+    background-color: #ffff8d;
+  }
+
+  &-a200 {
+    color: #555;
+    border-color: #ff0;
+    background-color: #ff0;
+  }
+
+  &-a400 {
+    color: #555;
+    border-color: #ffea00;
+    background-color: #ffea00;
+  }
+
+  &-a700 {
+    border-color: #ffd600;
+    background-color: #ffd600;
+  }
+}
+
+//amber
+
+.#{$btn-amber} {
+  & {
+    border-color: #ffd740;
+    background-color: #ffd740;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #fff8e1;
+    background-color: #fff8e1;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #ffecb3;
+    background-color: #ffecb3;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #ffe082;
+    background-color: #ffe082;
+  }
+
+  &-300 {
+    color: #555;
+    border-color: #ffd54f;
+    background-color: #ffd54f;
+  }
+
+  &-400 {
+    border-color: #ffca28;
+    background-color: #ffca28;
+  }
+
+  &-500 {
+    border-color: #ffc107;
+    background-color: #ffc107;
+  }
+
+  &-600 {
+    border-color: #ffb300;
+    background-color: #ffb300;
+  }
+
+  &-700 {
+    border-color: #ffa000;
+    background-color: #ffa000;
+  }
+
+  &-800 {
+    border-color: #ff8f00;
+    background-color: #ff8f00;
+  }
+
+  &-900 {
+    border-color: #ff6f00;
+    background-color: #ff6f00;
+  }
+
+  &-a100 {
+    color: #555;
+    border-color: #ffe57f;
+    background-color: #ffe57f;
+  }
+
+  &-a200 {
+    color: #555;
+    border-color: #ffd740;
+    background-color: #ffd740;
+  }
+
+  &-a400 {
+    border-color: #ffc400;
+    background-color: #ffc400;
+  }
+
+  &-a700 {
+    border-color: #ffab00;
+    background-color: #ffab00;
+  }
+}
+
+//orange
+
+.#{$btn-orange} {
+  & {
+    border-color: orange;
+    background-color: orange;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #fff3e0;
+    background-color: #fff3e0;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #ffe0b2;
+    background-color: #ffe0b2;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #ffcc80;
+    background-color: #ffcc80;
+  }
+
+  &-300 {
+    border-color: #ffb74d;
+    background-color: #ffb74d;
+  }
+
+  &-400 {
+    border-color: #ffa726;
+    background-color: #ffa726;
+  }
+
+  &-500 {
+    border-color: #ff9800;
+    background-color: #ff9800;
+  }
+
+  &-600 {
+    border-color: #fb8c00;
+    background-color: #fb8c00;
+  }
+
+  &-700 {
+    border-color: #f57c00;
+    background-color: #f57c00;
+  }
+
+  &-800 {
+    border-color: #ef6c00;
+    background-color: #ef6c00;
+  }
+
+  &-900 {
+    border-color: #e65100;
+    background-color: #e65100;
+  }
+
+  &-a100 {
+    color: #555;
+    border-color: #ffd180;
+    background-color: #ffd180;
+  }
+
+  &-a200 {
+    border-color: #ffab40;
+    background-color: #ffab40;
+  }
+
+  &-a400 {
+    border-color: #ff9100;
+    background-color: #ff9100;
+  }
+
+  &-a700 {
+    border-color: #ff6d00;
+    background-color: #ff6d00;
+  }
+}
+
+//deep-orange
+
+.#{$btn-deep-orange} {
+  & {
+    border-color: darkorange;
+    background-color: darkorange;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #fbe9e7;
+    background-color: #fbe9e7;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #ffccbc;
+    background-color: #ffccbc;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #ffab91;
+    background-color: #ffab91;
+  }
+
+  &-300 {
+    border-color: #ff8a65;
+    background-color: #ff8a65;
+  }
+
+  &-400 {
+    border-color: #ff7043;
+    background-color: #ff7043;
+  }
+
+  &-500 {
+    border-color: #ff5722;
+    background-color: #ff5722;
+  }
+
+  &-600 {
+    border-color: #f4511e;
+    background-color: #f4511e;
+  }
+
+  &-700 {
+    border-color: #e64a19;
+    background-color: #e64a19;
+  }
+
+  &-800 {
+    border-color: #d84315;
+    background-color: #d84315;
+  }
+
+  &-900 {
+    border-color: #bf360c;
+    background-color: #bf360c;
+  }
+
+  &-a100 {
+    color: #555;
+    border-color: #ff9e80;
+    background-color: #ff9e80;
+  }
+
+  &-a200 {
+    border-color: #ff6e40;
+    background-color: #ff6e40;
+  }
+
+  &-a400 {
+    border-color: #ff3d00;
+    background-color: #ff3d00;
+  }
+
+  &-a700 {
+    border-color: #dd2c00;
+    background-color: #dd2c00;
+  }
+}
+
+//brown
+
+.#{$btn-brown} {
+  & {
+    border-color: brown;
+    background-color: brown;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #efebe9;
+    background-color: #efebe9;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #d7ccc8;
+    background-color: #d7ccc8;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #bcaaa4;
+    background-color: #bcaaa4;
+  }
+
+  &-300 {
+    border-color: #a1887f;
+    background-color: #a1887f;
+  }
+
+  &-400 {
+    border-color: #8d6e63;
+    background-color: #8d6e63;
+  }
+
+  &-500 {
+    border-color: #795548;
+    background-color: #795548;
+  }
+
+  &-600 {
+    border-color: #6d4c41;
+    background-color: #6d4c41;
+  }
+
+  &-700 {
+    border-color: #5d4037;
+    background-color: #5d4037;
+  }
+
+  &-800 {
+    border-color: #4e342e;
+    background-color: #4e342e;
+  }
+
+  &-900 {
+    border-color: #3e2723;
+    background-color: #3e2723;
+  }
+}
+
+//grey
+
+.#{$btn-grey} {
+  & {
+    border-color: grey;
+    background-color: grey;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #fafafa;
+    background-color: #fafafa;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #f5f5f5;
+    background-color: #f5f5f5;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #eee;
+    background-color: #eee;
+  }
+
+  &-300 {
+    color: #555;
+    border-color: #e0e0e0;
+    background-color: #e0e0e0;
+  }
+
+  &-400 {
+    color: #555;
+    border-color: #bdbdbd;
+    background-color: #bdbdbd;
+  }
+
+  &-500 {
+    border-color: #9e9e9e;
+    background-color: #9e9e9e;
+  }
+
+  &-600 {
+    border-color: #757575;
+    background-color: #757575;
+  }
+
+  &-700 {
+    border-color: #616161;
+    background-color: #616161;
+  }
+
+  &-800 {
+    border-color: #424242;
+    background-color: #424242;
+  }
+
+  &-900 {
+    border-color: #212121;
+    background-color: #212121;
+  }
+}
+
+//blue-grey
+
+.#{$btn-blue-grey} {
+  & {
+    color: #555;
+    border-color: lightsteelblue;
+    background-color: lightsteelblue;
+  }
+
+  &-50 {
+    color: #555;
+    border-color: #eceff1;
+    background-color: #eceff1;
+  }
+
+  &-100 {
+    color: #555;
+    border-color: #cfd8dc;
+    background-color: #cfd8dc;
+  }
+
+  &-200 {
+    color: #555;
+    border-color: #b0bec5;
+    background-color: #b0bec5;
+  }
+
+  &-300 {
+    border-color: #90a4ae;
+    background-color: #90a4ae;
+  }
+
+  &-400 {
+    border-color: #78909c;
+    background-color: #78909c;
+  }
+
+  &-500 {
+    border-color: #607d8b;
+    background-color: #607d8b;
+  }
+
+  &-600 {
+    border-color: #546e7a;
+    background-color: #546e7a;
+  }
+
+  &-700 {
+    border-color: #455a64;
+    background-color: #455a64;
+  }
+
+  &-800 {
+    border-color: #37474f;
+    background-color: #37474f;
+  }
+
+  &-900 {
+    border-color: #263238;
+    background-color: #263238;
+  }
+}
+
+//responsive
+
+@media (max-width: 1199px) {
+
+  [class*="btn-"].default-lg {
+    color: #fff;
+    border-color: $default-color;
+    background-color: $default-color;
+  }
+
+  .#{$btn-white} {
+    &-lg {
+      color: #333;
+      border-color: #fff;
+      background-color: #fff;
+    }
+  }
+
+  .#{$btn-black} {
+    &-lg {
+      color: #fff;
+      border-color: #333;
+      background-color: #333;
+    }
+  }
+
+  .#{$btn-red} {
+    &-lg {
+      border-color: red;
+      background-color: red;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #ffebee;
+      background-color: #ffebee;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #ffcdd2;
+      background-color: #ffcdd2;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #ef9a9a;
+      background-color: #ef9a9a;
+    }
+
+    &-300-lg {
+      border-color: #e57373;
+      background-color: #e57373;
+    }
+
+    &-400-lg {
+      border-color: #ef5350;
+      background-color: #ef5350;
+    }
+
+    &-500-lg {
+      border-color: #f44336;
+      background-color: #f44336;
+    }
+
+    &-600-lg {
+      border-color: #e53935;
+      background-color: #e53935;
+    }
+
+    &-700-lg {
+      border-color: #d32f2f;
+      background-color: #d32f2f;
+    }
+
+    &-800-lg {
+      border-color: #c62828;
+      background-color: #c62828;
+    }
+
+    &-900-lg {
+      border-color: #b71c1c;
+      background-color: #b71c1c;
+    }
+
+    &-a100-lg {
+      border-color: #ff8a80;
+      background-color: #ff8a80;
+    }
+
+    &-a200-lg {
+      border-color: #ff5252;
+      background-color: #ff5252;
+    }
+
+    &-a400-lg {
+      border-color: #ff1744;
+      background-color: #ff1744;
+    }
+
+    &-a700-lg {
+      border-color: #d50000;
+      background-color: #d50000;
+    }
+  }
+
+  .#{$btn-pink} {
+    &-lg {
+      color: #555;
+      border-color: pink;
+      background-color: pink;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #fce4ec;
+      background-color: #fce4ec;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #f8bbd0;
+      background-color: #f8bbd0;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #f48fb1;
+      background-color: #f48fb1;
+    }
+
+    &-300-lg {
+      border-color: #f06292;
+      background-color: #f06292;
+    }
+
+    &-400-lg {
+      border-color: #ec407a;
+      background-color: #ec407a;
+    }
+
+    &-500-lg {
+      border-color: #e91e63;
+      background-color: #e91e63;
+    }
+
+    &-600-lg {
+      border-color: #d81b60;
+      background-color: #d81b60;
+    }
+
+    &-700-lg {
+      border-color: #c2185b;
+      background-color: #c2185b;
+    }
+
+    &-800-lg {
+      border-color: #ad1457;
+      background-color: #ad1457;
+    }
+
+    &-900-lg {
+      border-color: #880e4f;
+      background-color: #880e4f;
+    }
+
+    &-a100-lg {
+      border-color: #ff80ab;
+      background-color: #ff80ab;
+    }
+
+    &-a200-lg {
+      border-color: #ff4081;
+      background-color: #ff4081;
+    }
+
+    &-a400-lg {
+      border-color: #f50057;
+      background-color: #f50057;
+    }
+
+    &-a700-lg {
+      border-color: #c51162;
+      background-color: #c51162;
+    }
+  }
+
+  .#{$btn-purple} {
+    &-lg {
+      border-color: purple;
+      background-color: purple;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #f3e5f5;
+      background-color: #f3e5f5;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #e1bee7;
+      background-color: #e1bee7;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #ce93d8;
+      background-color: #ce93d8;
+    }
+
+    &-300-lg {
+      border-color: #ba68c8;
+      background-color: #ba68c8;
+    }
+
+    &-400-lg {
+      border-color: #ab47bc;
+      background-color: #ab47bc;
+    }
+
+    &-500-lg {
+      border-color: #9c27b0;
+      background-color: #9c27b0;
+    }
+
+    &-600-lg {
+      border-color: #8e24aa;
+      background-color: #8e24aa;
+    }
+
+    &-700-lg {
+      border-color: #7b1fa2;
+      background-color: #7b1fa2;
+    }
+
+    &-800-lg {
+      border-color: #6a1b9a;
+      background-color: #6a1b9a;
+    }
+
+    &-900-lg {
+      border-color: #4a148c;
+      background-color: #4a148c;
+    }
+
+    &-a100-lg {
+      border-color: #ea80fc;
+      background-color: #ea80fc;
+    }
+
+    &-a200-lg {
+      border-color: #e040fb;
+      background-color: #e040fb;
+    }
+
+    &-a400-lg {
+      border-color: #d500f9;
+      background-color: #d500f9;
+    }
+
+    &-a700-lg {
+      border-color: #a0f;
+      background-color: #a0f;
+    }
+  }
+
+  .#{$btn-deep-purple} {
+    &-lg {
+      border-color: darkmagenta;
+      background-color: darkmagenta;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #ede7f6;
+      background-color: #ede7f6;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #d1c4e9;
+      background-color: #d1c4e9;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #b39ddb;
+      background-color: #b39ddb;
+    }
+
+    &-300-lg {
+      border-color: #9575cd;
+      background-color: #9575cd;
+    }
+
+    &-400-lg {
+      border-color: #7e57c2;
+      background-color: #7e57c2;
+    }
+
+    &-500-lg {
+      border-color: #673ab7;
+      background-color: #673ab7;
+    }
+
+    &-600-lg {
+      border-color: #5e35b1;
+      background-color: #5e35b1;
+    }
+
+    &-700-lg {
+      border-color: #512da8;
+      background-color: #512da8;
+    }
+
+    &-800-lg {
+      border-color: #4527a0;
+      background-color: #4527a0;
+    }
+
+    &-900-lg {
+      border-color: #311b92;
+      background-color: #311b92;
+    }
+
+    &-a100-lg {
+      border-color: #b388ff;
+      background-color: #b388ff;
+    }
+
+    &-a200-lg {
+      border-color: #7c4dff;
+      background-color: #7c4dff;
+    }
+
+    &-a400-lg {
+      border-color: #651fff;
+      background-color: #651fff;
+    }
+
+    &-a700-lg {
+      border-color: #6200ea;
+      background-color: #6200ea;
+    }
+  }
+
+  .#{$btn-indigo} {
+    &-lg {
+      border-color: indigo;
+      background-color: indigo;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #e8eaf6;
+      background-color: #e8eaf6;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #c5cae9;
+      background-color: #c5cae9;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #9fa8da;
+      background-color: #9fa8da;
+    }
+
+    &-300-lg {
+      color: #555;
+      border-color: #7986cb;
+      background-color: #7986cb;
+    }
+
+    &-400-lg {
+      border-color: #5c6bc0;
+      background-color: #5c6bc0;
+    }
+
+    &-500-lg {
+      border-color: #3f51b5;
+      background-color: #3f51b5;
+    }
+
+    &-600-lg {
+      border-color: #3949ab;
+      background-color: #3949ab;
+    }
+
+    &-700-lg {
+      border-color: #303f9f;
+      background-color: #303f9f;
+    }
+
+    &-800-lg {
+      border-color: #283593;
+      background-color: #283593;
+    }
+
+    &-900-lg {
+      border-color: #1a237e;
+      background-color: #1a237e;
+    }
+
+    &-a100-lg {
+      border-color: #8c9eff;
+      background-color: #8c9eff;
+    }
+
+    &-a200-lg {
+      border-color: #536dfe;
+      background-color: #536dfe;
+    }
+
+    &-a400-lg {
+      border-color: #3d5afe;
+      background-color: #3d5afe;
+    }
+
+    &-a700-lg {
+      border-color: #304ffe;
+      background-color: #304ffe;
+    }
+  }
+
+  .#{$btn-blue} {
+    &-lg {
+      border-color: blue;
+      background-color: blue;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #e3f2fd;
+      background-color: #e3f2fd;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #bbdefb;
+      background-color: #bbdefb;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #90caf9;
+      background-color: #90caf9;
+    }
+
+    &-300-lg {
+      color: #555;
+      border-color: #64b5f6;
+      background-color: #64b5f6;
+    }
+
+    &-400-lg {
+      border-color: #42a5f5;
+      background-color: #42a5f5;
+    }
+
+    &-500-lg {
+      border-color: #2196f3;
+      background-color: #2196f3;
+    }
+
+    &-600-lg {
+      border-color: #1e88e5;
+      background-color: #1e88e5;
+    }
+
+    &-700-lg {
+      border-color: #1976d2;
+      background-color: #1976d2;
+    }
+
+    &-800-lg {
+      border-color: #1565c0;
+      background-color: #1565c0;
+    }
+
+    &-900-lg {
+      border-color: #0d47a1;
+      background-color: #0d47a1;
+    }
+
+    &-a100-lg {
+      color: #555;
+      border-color: #82b1ff;
+      background-color: #82b1ff;
+    }
+
+    &-a200-lg {
+      border-color: #448aff;
+      background-color: #448aff;
+    }
+
+    &-a400-lg {
+      border-color: #2979ff;
+      background-color: #2979ff;
+    }
+
+    &-a700-lg {
+      border-color: #2962ff;
+      background-color: #2962ff;
+    }
+  }
+
+  .#{$btn-light-blue} {
+    &-lg {
+      color: #555;
+      border-color: lightblue;
+      background-color: lightblue;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #e1f5fe;
+      background-color: #e1f5fe;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #b3e5fc;
+      background-color: #b3e5fc;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #81d4fa;
+      background-color: #81d4fa;
+    }
+
+    &-300-lg {
+      border-color: #4fc3f7;
+      background-color: #4fc3f7;
+    }
+
+    &-400-lg {
+      border-color: #29b6f6;
+      background-color: #29b6f6;
+    }
+
+    &-500-lg {
+      border-color: #03a9f4;
+      background-color: #03a9f4;
+    }
+
+    &-600-lg {
+      border-color: #039be5;
+      background-color: #039be5;
+    }
+
+    &-700-lg {
+      border-color: #0288d1;
+      background-color: #0288d1;
+    }
+
+    &-800-lg {
+      border-color: #0277bd;
+      background-color: #0277bd;
+    }
+
+    &-900-lg {
+      border-color: #01579b;
+      background-color: #01579b;
+    }
+
+    &-a100-lg {
+      color: #555;
+      border-color: #80d8ff;
+      background-color: #80d8ff;
+    }
+
+    &-a200-lg {
+      border-color: #40c4ff;
+      background-color: #40c4ff;
+    }
+
+    &-a400-lg {
+      border-color: #00b0ff;
+      background-color: #00b0ff;
+    }
+
+    &-a700-lg {
+      border-color: #0091ea;
+      background-color: #0091ea;
+    }
+  }
+
+  .#{$btn-cyan} {
+    &-lg {
+      color: #555;
+      border-color: cyan;
+      background-color: cyan;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #e0f7fa;
+      background-color: #e0f7fa;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #b2ebf2;
+      background-color: #b2ebf2;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #80deea;
+      background-color: #80deea;
+    }
+
+    &-300-lg {
+      border-color: #4dd0e1;
+      background-color: #4dd0e1;
+    }
+
+    &-400-lg {
+      border-color: #26c6da;
+      background-color: #26c6da;
+    }
+
+    &-500-lg {
+      border-color: #00bcd4;
+      background-color: #00bcd4;
+    }
+
+    &-600-lg {
+      border-color: #00acc1;
+      background-color: #00acc1;
+    }
+
+    &-700-lg {
+      border-color: #0097a7;
+      background-color: #0097a7;
+    }
+
+    &-800-lg {
+      border-color: #00838f;
+      background-color: #00838f;
+    }
+
+    &-900-lg {
+      border-color: #006064;
+      background-color: #006064;
+    }
+
+    &-a100-lg {
+      color: #555;
+      border-color: #84ffff;
+      background-color: #84ffff;
+    }
+
+    &-a200-lg {
+      color: #555;
+      border-color: #18ffff;
+      background-color: #18ffff;
+    }
+
+    &-a400-lg {
+      border-color: #00e5ff;
+      background-color: #00e5ff;
+    }
+
+    &-a700-lg {
+      border-color: #00b8d4;
+      background-color: #00b8d4;
+    }
+  }
+
+  .#{$btn-teal} {
+    &-lg {
+      border-color: teal;
+      background-color: teal;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #e0f2f1;
+      background-color: #e0f2f1;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #b2dfdb;
+      background-color: #b2dfdb;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #80cbc4;
+      background-color: #80cbc4;
+    }
+
+    &-300-lg {
+      border-color: #4db6ac;
+      background-color: #4db6ac;
+    }
+
+    &-400-lg {
+      border-color: #26a69a;
+      background-color: #26a69a;
+    }
+
+    &-500-lg {
+      border-color: #009688;
+      background-color: #009688;
+    }
+
+    &-600-lg {
+      border-color: #00897b;
+      background-color: #00897b;
+    }
+
+    &-700-lg {
+      border-color: #00796b;
+      background-color: #00796b;
+    }
+
+    &-800-lg {
+      border-color: #00695c;
+      background-color: #00695c;
+    }
+
+    &-900-lg {
+      border-color: #004d40;
+      background-color: #004d40;
+    }
+
+    &-a100-lg {
+      color: #555;
+      border-color: #a7ffeb;
+      background-color: #a7ffeb;
+    }
+
+    &-a200-lg {
+      color: #555;
+      border-color: #64ffda;
+      background-color: #64ffda;
+    }
+
+    &-a400-lg {
+      border-color: #1de9b6;
+      background-color: #1de9b6;
+    }
+
+    &-a700-lg {
+      border-color: #00bfa5;
+      background-color: #00bfa5;
+    }
+  }
+
+  .#{$btn-green} {
+    &-lg {
+      border-color: green;
+      background-color: green;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #e8f5e9;
+      background-color: #e8f5e9;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #c8e6c9;
+      background-color: #c8e6c9;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #a5d6a7;
+      background-color: #a5d6a7;
+    }
+
+    &-300-lg {
+      color: #555;
+      border-color: #81c784;
+      background-color: #81c784;
+    }
+
+    &-400-lg {
+      border-color: #66bb6a;
+      background-color: #66bb6a;
+    }
+
+    &-500-lg {
+      border-color: #4caf50;
+      background-color: #4caf50;
+    }
+
+    &-600-lg {
+      border-color: #43a047;
+      background-color: #43a047;
+    }
+
+    &-700-lg {
+      border-color: #388e3c;
+      background-color: #388e3c;
+    }
+
+    &-800-lg {
+      border-color: #2e7d32;
+      background-color: #2e7d32;
+    }
+
+    &-900-lg {
+      border-color: #1b5e20;
+      background-color: #1b5e20;
+    }
+
+    &-a100-lg {
+      color: #555;
+      border-color: #b9f6ca;
+      background-color: #b9f6ca;
+    }
+
+    &-a200-lg {
+      color: #555;
+      border-color: #69f0ae;
+      background-color: #69f0ae;
+    }
+
+    &-a400-lg {
+      border-color: #00e676;
+      background-color: #00e676;
+    }
+
+    &-a700-lg {
+      border-color: #00c853;
+      background-color: #00c853;
+    }
+  }
+
+  .#{$btn-light-green} {
+    &-lg {
+      color: #555;
+      border-color: lightgreen;
+      background-color: lightgreen;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #f1f8e9;
+      background-color: #f1f8e9;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #dcedc8;
+      background-color: #dcedc8;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #c5e1a5;
+      background-color: #c5e1a5;
+    }
+
+    &-300-lg {
+      color: #555;
+      border-color: #aed581;
+      background-color: #aed581;
+    }
+
+    &-400-lg {
+      color: #555;
+      border-color: #9ccc65;
+      background-color: #9ccc65;
+    }
+
+    &-500-lg {
+      border-color: #8bc34a;
+      background-color: #8bc34a;
+    }
+
+    &-600-lg {
+      border-color: #7cb342;
+      background-color: #7cb342;
+    }
+
+    &-700-lg {
+      border-color: #689f38;
+      background-color: #689f38;
+    }
+
+    &-800-lg {
+      border-color: #558b2f;
+      background-color: #558b2f;
+    }
+
+    &-900-lg {
+      border-color: #33691e;
+      background-color: #33691e;
+    }
+
+    &-a100-lg {
+      color: #555;
+      border-color: #ccff90;
+      background-color: #ccff90;
+    }
+
+    &-a200-lg {
+      color: #555;
+      border-color: #b2ff59;
+      background-color: #b2ff59;
+    }
+
+    &-a400-lg {
+      border-color: #76ff03;
+      background-color: #76ff03;
+    }
+
+    &-a700-lg {
+      border-color: #64dd17;
+      background-color: #64dd17;
+    }
+  }
+
+  .#{$btn-lime} {
+    &-lg {
+      border-color: lime;
+      background-color: lime;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #f9fbe7;
+      background-color: #f9fbe7;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #f0f4c3;
+      background-color: #f0f4c3;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #e6ee9c;
+      background-color: #e6ee9c;
+    }
+
+    &-300-lg {
+      color: #555;
+      border-color: #d4e056;
+      background-color: #d4e056;
+    }
+
+    &-400-lg {
+      border-color: #d4e157;
+      background-color: #d4e157;
+    }
+
+    &-500-lg {
+      border-color: #cddc39;
+      background-color: #cddc39;
+    }
+
+    &-600-lg {
+      border-color: #c0ca33;
+      background-color: #c0ca33;
+    }
+
+    &-700-lg {
+      border-color: #afb42b;
+      background-color: #afb42b;
+    }
+
+    &-800-lg {
+      border-color: #9e9d24;
+      background-color: #9e9d24;
+    }
+
+    &-900-lg {
+      border-color: #827717;
+      background-color: #827717;
+    }
+
+    &-a100-lg {
+      color: #555;
+      border-color: #f4ff81;
+      background-color: #f4ff81;
+    }
+
+    &-a200-lg {
+      color: #555;
+      border-color: #eeff41;
+      background-color: #eeff41;
+    }
+
+    &-a400-lg {
+      color: #555;
+      border-color: #c6ff00;
+      background-color: #c6ff00;
+    }
+
+    &-a700-lg {
+      border-color: #aeea00;
+      background-color: #aeea00;
+    }
+  }
+
+  .#{$btn-yellow} {
+    &-lg {
+      color: #555;
+      border-color: yellow;
+      background-color: yellow;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #fffde7;
+      background-color: #fffde7;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #fff9c4;
+      background-color: #fff9c4;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #fff59d;
+      background-color: #fff59d;
+    }
+
+    &-300-lg {
+      color: #555;
+      border-color: #fff176;
+      background-color: #fff176;
+    }
+
+    &-400-lg {
+      color: #555;
+      border-color: #ffee58;
+      background-color: #ffee58;
+    }
+
+    &-500-lg {
+      color: #555;
+      border-color: #ffeb3b;
+      background-color: #ffeb3b;
+    }
+
+    &-600-lg {
+      border-color: #fdd835;
+      background-color: #fdd835;
+    }
+
+    &-700-lg {
+      border-color: #fbc02d;
+      background-color: #fbc02d;
+    }
+
+    &-800-lg {
+      border-color: #f9a825;
+      background-color: #f9a825;
+    }
+
+    &-900-lg {
+      border-color: #f57f17;
+      background-color: #f57f17;
+    }
+
+    &-a100-lg {
+      color: #555;
+      border-color: #ffff8d;
+      background-color: #ffff8d;
+    }
+
+    &-a200-lg {
+      color: #555;
+      border-color: #ff0;
+      background-color: #ff0;
+    }
+
+    &-a400-lg {
+      color: #555;
+      border-color: #ffea00;
+      background-color: #ffea00;
+    }
+
+    &-a700-lg {
+      border-color: #ffd600;
+      background-color: #ffd600;
+    }
+  }
+
+  .#{$btn-amber} {
+    &-lg {
+      border-color: #ffd740;
+      background-color: #ffd740;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #fff8e1;
+      background-color: #fff8e1;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #ffecb3;
+      background-color: #ffecb3;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #ffe082;
+      background-color: #ffe082;
+    }
+
+    &-300-lg {
+      color: #555;
+      border-color: #ffd54f;
+      background-color: #ffd54f;
+    }
+
+    &-400-lg {
+      border-color: #ffca28;
+      background-color: #ffca28;
+    }
+
+    &-500-lg {
+      border-color: #ffc107;
+      background-color: #ffc107;
+    }
+
+    &-600-lg {
+      border-color: #ffb300;
+      background-color: #ffb300;
+    }
+
+    &-700-lg {
+      border-color: #ffa000;
+      background-color: #ffa000;
+    }
+
+    &-800-lg {
+      border-color: #ff8f00;
+      background-color: #ff8f00;
+    }
+
+    &-900-lg {
+      border-color: #ff6f00;
+      background-color: #ff6f00;
+    }
+
+    &-a100-lg {
+      color: #555;
+      border-color: #ffe57f;
+      background-color: #ffe57f;
+    }
+
+    &-a200-lg {
+      color: #555;
+      border-color: #ffd740;
+      background-color: #ffd740;
+    }
+
+    &-a400-lg {
+      border-color: #ffc400;
+      background-color: #ffc400;
+    }
+
+    &-a700-lg {
+      border-color: #ffab00;
+      background-color: #ffab00;
+    }
+  }
+
+  .#{$btn-orange} {
+    &-lg {
+      border-color: orange;
+      background-color: orange;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #fff3e0;
+      background-color: #fff3e0;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #ffe0b2;
+      background-color: #ffe0b2;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #ffcc80;
+      background-color: #ffcc80;
+    }
+
+    &-300-lg {
+      border-color: #ffb74d;
+      background-color: #ffb74d;
+    }
+
+    &-400-lg {
+      border-color: #ffa726;
+      background-color: #ffa726;
+    }
+
+    &-500-lg {
+      border-color: #ff9800;
+      background-color: #ff9800;
+    }
+
+    &-600-lg {
+      border-color: #fb8c00;
+      background-color: #fb8c00;
+    }
+
+    &-700-lg {
+      border-color: #f57c00;
+      background-color: #f57c00;
+    }
+
+    &-800-lg {
+      border-color: #ef6c00;
+      background-color: #ef6c00;
+    }
+
+    &-900-lg {
+      border-color: #e65100;
+      background-color: #e65100;
+    }
+
+    &-a100-lg {
+      color: #555;
+      border-color: #ffd180;
+      background-color: #ffd180;
+    }
+
+    &-a200-lg {
+      border-color: #ffab40;
+      background-color: #ffab40;
+    }
+
+    &-a400-lg {
+      border-color: #ff9100;
+      background-color: #ff9100;
+    }
+
+    &-a700-lg {
+      border-color: #ff6d00;
+      background-color: #ff6d00;
+    }
+  }
+
+  .#{$btn-deep-orange} {
+    &-lg {
+      border-color: darkorange;
+      background-color: darkorange;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #fbe9e7;
+      background-color: #fbe9e7;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #ffccbc;
+      background-color: #ffccbc;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #ffab91;
+      background-color: #ffab91;
+    }
+
+    &-300-lg {
+      border-color: #ff8a65;
+      background-color: #ff8a65;
+    }
+
+    &-400-lg {
+      border-color: #ff7043;
+      background-color: #ff7043;
+    }
+
+    &-500-lg {
+      border-color: #ff5722;
+      background-color: #ff5722;
+    }
+
+    &-600-lg {
+      border-color: #f4511e;
+      background-color: #f4511e;
+    }
+
+    &-700-lg {
+      border-color: #e64a19;
+      background-color: #e64a19;
+    }
+
+    &-800-lg {
+      border-color: #d84315;
+      background-color: #d84315;
+    }
+
+    &-900-lg {
+      border-color: #bf360c;
+      background-color: #bf360c;
+    }
+
+    &-a100-lg {
+      color: #555;
+      border-color: #ff9e80;
+      background-color: #ff9e80;
+    }
+
+    &-a200-lg {
+      border-color: #ff6e40;
+      background-color: #ff6e40;
+    }
+
+    &-a400-lg {
+      border-color: #ff3d00;
+      background-color: #ff3d00;
+    }
+
+    &-a700-lg {
+      border-color: #dd2c00;
+      background-color: #dd2c00;
+    }
+  }
+
+  .#{$btn-brown} {
+    &-lg {
+      border-color: brown;
+      background-color: brown;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #efebe9;
+      background-color: #efebe9;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #d7ccc8;
+      background-color: #d7ccc8;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #bcaaa4;
+      background-color: #bcaaa4;
+    }
+
+    &-300-lg {
+      border-color: #a1887f;
+      background-color: #a1887f;
+    }
+
+    &-400-lg {
+      border-color: #8d6e63;
+      background-color: #8d6e63;
+    }
+
+    &-500-lg {
+      border-color: #795548;
+      background-color: #795548;
+    }
+
+    &-600-lg {
+      border-color: #6d4c41;
+      background-color: #6d4c41;
+    }
+
+    &-700-lg {
+      border-color: #5d4037;
+      background-color: #5d4037;
+    }
+
+    &-800-lg {
+      border-color: #4e342e;
+      background-color: #4e342e;
+    }
+
+    &-900-lg {
+      border-color: #3e2723;
+      background-color: #3e2723;
+    }
+  }
+
+  .#{$btn-grey} {
+    &-lg {
+      border-color: grey;
+      background-color: grey;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #fafafa;
+      background-color: #fafafa;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #f5f5f5;
+      background-color: #f5f5f5;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #eee;
+      background-color: #eee;
+    }
+
+    &-300-lg {
+      color: #555;
+      border-color: #e0e0e0;
+      background-color: #e0e0e0;
+    }
+
+    &-400-lg {
+      color: #555;
+      border-color: #bdbdbd;
+      background-color: #bdbdbd;
+    }
+
+    &-500-lg {
+      border-color: #9e9e9e;
+      background-color: #9e9e9e;
+    }
+
+    &-600-lg {
+      border-color: #757575;
+      background-color: #757575;
+    }
+
+    &-700-lg {
+      border-color: #616161;
+      background-color: #616161;
+    }
+
+    &-800-lg {
+      border-color: #424242;
+      background-color: #424242;
+    }
+
+    &-900-lg {
+      border-color: #212121;
+      background-color: #212121;
+    }
+  }
+
+  .#{$btn-blue-grey} {
+    &-lg {
+      color: #555;
+      border-color: lightsteelblue;
+      background-color: lightsteelblue;
+    }
+
+    &-50-lg {
+      color: #555;
+      border-color: #eceff1;
+      background-color: #eceff1;
+    }
+
+    &-100-lg {
+      color: #555;
+      border-color: #cfd8dc;
+      background-color: #cfd8dc;
+    }
+
+    &-200-lg {
+      color: #555;
+      border-color: #b0bec5;
+      background-color: #b0bec5;
+    }
+
+    &-300-lg {
+      border-color: #90a4ae;
+      background-color: #90a4ae;
+    }
+
+    &-400-lg {
+      border-color: #78909c;
+      background-color: #78909c;
+    }
+
+    &-500-lg {
+      border-color: #607d8b;
+      background-color: #607d8b;
+    }
+
+    &-600-lg {
+      border-color: #546e7a;
+      background-color: #546e7a;
+    }
+
+    &-700-lg {
+      border-color: #455a64;
+      background-color: #455a64;
+    }
+
+    &-800-lg {
+      border-color: #37474f;
+      background-color: #37474f;
+    }
+
+    &-900-lg {
+      border-color: #263238;
+      background-color: #263238;
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  [class*="btn-"].default-md {
+    color: #fff;
+    border-color: $default-color;
+    background-color: $default-color;
+  }
+
+  .#{$btn-white} {
+    &-md {
+      color: #333;
+      border-color: #fff;
+      background-color: #fff;
+    }
+  }
+
+  .#{$btn-black} {
+    &-md {
+      color: #fff;
+      border-color: #333;
+      background-color: #333;
+    }
+  }
+
+  .#{$btn-red} {
+    &-md {
+      border-color: red;
+      background-color: red;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #ffebee;
+      background-color: #ffebee;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #ffcdd2;
+      background-color: #ffcdd2;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #ef9a9a;
+      background-color: #ef9a9a;
+    }
+
+    &-300-md {
+      border-color: #e57373;
+      background-color: #e57373;
+    }
+
+    &-400-md {
+      border-color: #ef5350;
+      background-color: #ef5350;
+    }
+
+    &-500-md {
+      border-color: #f44336;
+      background-color: #f44336;
+    }
+
+    &-600-md {
+      border-color: #e53935;
+      background-color: #e53935;
+    }
+
+    &-700-md {
+      border-color: #d32f2f;
+      background-color: #d32f2f;
+    }
+
+    &-800-md {
+      border-color: #c62828;
+      background-color: #c62828;
+    }
+
+    &-900-md {
+      border-color: #b71c1c;
+      background-color: #b71c1c;
+    }
+
+    &-a100-md {
+      border-color: #ff8a80;
+      background-color: #ff8a80;
+    }
+
+    &-a200-md {
+      border-color: #ff5252;
+      background-color: #ff5252;
+    }
+
+    &-a400-md {
+      border-color: #ff1744;
+      background-color: #ff1744;
+    }
+
+    &-a700-md {
+      border-color: #d50000;
+      background-color: #d50000;
+    }
+  }
+
+  .#{$btn-pink} {
+    &-md {
+      color: #555;
+      border-color: pink;
+      background-color: pink;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #fce4ec;
+      background-color: #fce4ec;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #f8bbd0;
+      background-color: #f8bbd0;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #f48fb1;
+      background-color: #f48fb1;
+    }
+
+    &-300-md {
+      border-color: #f06292;
+      background-color: #f06292;
+    }
+
+    &-400-md {
+      border-color: #ec407a;
+      background-color: #ec407a;
+    }
+
+    &-500-md {
+      border-color: #e91e63;
+      background-color: #e91e63;
+    }
+
+    &-600-md {
+      border-color: #d81b60;
+      background-color: #d81b60;
+    }
+
+    &-700-md {
+      border-color: #c2185b;
+      background-color: #c2185b;
+    }
+
+    &-800-md {
+      border-color: #ad1457;
+      background-color: #ad1457;
+    }
+
+    &-900-md {
+      border-color: #880e4f;
+      background-color: #880e4f;
+    }
+
+    &-a100-md {
+      border-color: #ff80ab;
+      background-color: #ff80ab;
+    }
+
+    &-a200-md {
+      border-color: #ff4081;
+      background-color: #ff4081;
+    }
+
+    &-a400-md {
+      border-color: #f50057;
+      background-color: #f50057;
+    }
+
+    &-a700-md {
+      border-color: #c51162;
+      background-color: #c51162;
+    }
+  }
+
+  .#{$btn-purple} {
+    &-md {
+      border-color: purple;
+      background-color: purple;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #f3e5f5;
+      background-color: #f3e5f5;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #e1bee7;
+      background-color: #e1bee7;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #ce93d8;
+      background-color: #ce93d8;
+    }
+
+    &-300-md {
+      border-color: #ba68c8;
+      background-color: #ba68c8;
+    }
+
+    &-400-md {
+      border-color: #ab47bc;
+      background-color: #ab47bc;
+    }
+
+    &-500-md {
+      border-color: #9c27b0;
+      background-color: #9c27b0;
+    }
+
+    &-600-md {
+      border-color: #8e24aa;
+      background-color: #8e24aa;
+    }
+
+    &-700-md {
+      border-color: #7b1fa2;
+      background-color: #7b1fa2;
+    }
+
+    &-800-md {
+      border-color: #6a1b9a;
+      background-color: #6a1b9a;
+    }
+
+    &-900-md {
+      border-color: #4a148c;
+      background-color: #4a148c;
+    }
+
+    &-a100-md {
+      border-color: #ea80fc;
+      background-color: #ea80fc;
+    }
+
+    &-a200-md {
+      border-color: #e040fb;
+      background-color: #e040fb;
+    }
+
+    &-a400-md {
+      border-color: #d500f9;
+      background-color: #d500f9;
+    }
+
+    &-a700-md {
+      border-color: #a0f;
+      background-color: #a0f;
+    }
+  }
+
+  .#{$btn-deep-purple} {
+    &-md {
+      border-color: darkmagenta;
+      background-color: darkmagenta;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #ede7f6;
+      background-color: #ede7f6;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #d1c4e9;
+      background-color: #d1c4e9;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #b39ddb;
+      background-color: #b39ddb;
+    }
+
+    &-300-md {
+      border-color: #9575cd;
+      background-color: #9575cd;
+    }
+
+    &-400-md {
+      border-color: #7e57c2;
+      background-color: #7e57c2;
+    }
+
+    &-500-md {
+      border-color: #673ab7;
+      background-color: #673ab7;
+    }
+
+    &-600-md {
+      border-color: #5e35b1;
+      background-color: #5e35b1;
+    }
+
+    &-700-md {
+      border-color: #512da8;
+      background-color: #512da8;
+    }
+
+    &-800-md {
+      border-color: #4527a0;
+      background-color: #4527a0;
+    }
+
+    &-900-md {
+      border-color: #311b92;
+      background-color: #311b92;
+    }
+
+    &-a100-md {
+      border-color: #b388ff;
+      background-color: #b388ff;
+    }
+
+    &-a200-md {
+      border-color: #7c4dff;
+      background-color: #7c4dff;
+    }
+
+    &-a400-md {
+      border-color: #651fff;
+      background-color: #651fff;
+    }
+
+    &-a700-md {
+      border-color: #6200ea;
+      background-color: #6200ea;
+    }
+  }
+
+  .#{$btn-indigo} {
+    &-md {
+      border-color: indigo;
+      background-color: indigo;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #e8eaf6;
+      background-color: #e8eaf6;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #c5cae9;
+      background-color: #c5cae9;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #9fa8da;
+      background-color: #9fa8da;
+    }
+
+    &-300-md {
+      color: #555;
+      border-color: #7986cb;
+      background-color: #7986cb;
+    }
+
+    &-400-md {
+      border-color: #5c6bc0;
+      background-color: #5c6bc0;
+    }
+
+    &-500-md {
+      border-color: #3f51b5;
+      background-color: #3f51b5;
+    }
+
+    &-600-md {
+      border-color: #3949ab;
+      background-color: #3949ab;
+    }
+
+    &-700-md {
+      border-color: #303f9f;
+      background-color: #303f9f;
+    }
+
+    &-800-md {
+      border-color: #283593;
+      background-color: #283593;
+    }
+
+    &-900-md {
+      border-color: #1a237e;
+      background-color: #1a237e;
+    }
+
+    &-a100-md {
+      border-color: #8c9eff;
+      background-color: #8c9eff;
+    }
+
+    &-a200-md {
+      border-color: #536dfe;
+      background-color: #536dfe;
+    }
+
+    &-a400-md {
+      border-color: #3d5afe;
+      background-color: #3d5afe;
+    }
+
+    &-a700-md {
+      border-color: #304ffe;
+      background-color: #304ffe;
+    }
+  }
+
+  .#{$btn-blue} {
+    &-md {
+      border-color: blue;
+      background-color: blue;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #e3f2fd;
+      background-color: #e3f2fd;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #bbdefb;
+      background-color: #bbdefb;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #90caf9;
+      background-color: #90caf9;
+    }
+
+    &-300-md {
+      color: #555;
+      border-color: #64b5f6;
+      background-color: #64b5f6;
+    }
+
+    &-400-md {
+      border-color: #42a5f5;
+      background-color: #42a5f5;
+    }
+
+    &-500-md {
+      border-color: #2196f3;
+      background-color: #2196f3;
+    }
+
+    &-600-md {
+      border-color: #1e88e5;
+      background-color: #1e88e5;
+    }
+
+    &-700-md {
+      border-color: #1976d2;
+      background-color: #1976d2;
+    }
+
+    &-800-md {
+      border-color: #1565c0;
+      background-color: #1565c0;
+    }
+
+    &-900-md {
+      border-color: #0d47a1;
+      background-color: #0d47a1;
+    }
+
+    &-a100-md {
+      color: #555;
+      border-color: #82b1ff;
+      background-color: #82b1ff;
+    }
+
+    &-a200-md {
+      border-color: #448aff;
+      background-color: #448aff;
+    }
+
+    &-a400-md {
+      border-color: #2979ff;
+      background-color: #2979ff;
+    }
+
+    &-a700-md {
+      border-color: #2962ff;
+      background-color: #2962ff;
+    }
+  }
+
+  .#{$btn-light-blue} {
+    &-md {
+      color: #555;
+      border-color: lightblue;
+      background-color: lightblue;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #e1f5fe;
+      background-color: #e1f5fe;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #b3e5fc;
+      background-color: #b3e5fc;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #81d4fa;
+      background-color: #81d4fa;
+    }
+
+    &-300-md {
+      border-color: #4fc3f7;
+      background-color: #4fc3f7;
+    }
+
+    &-400-md {
+      border-color: #29b6f6;
+      background-color: #29b6f6;
+    }
+
+    &-500-md {
+      border-color: #03a9f4;
+      background-color: #03a9f4;
+    }
+
+    &-600-md {
+      border-color: #039be5;
+      background-color: #039be5;
+    }
+
+    &-700-md {
+      border-color: #0288d1;
+      background-color: #0288d1;
+    }
+
+    &-800-md {
+      border-color: #0277bd;
+      background-color: #0277bd;
+    }
+
+    &-900-md {
+      border-color: #01579b;
+      background-color: #01579b;
+    }
+
+    &-a100-md {
+      color: #555;
+      border-color: #80d8ff;
+      background-color: #80d8ff;
+    }
+
+    &-a200-md {
+      border-color: #40c4ff;
+      background-color: #40c4ff;
+    }
+
+    &-a400-md {
+      border-color: #00b0ff;
+      background-color: #00b0ff;
+    }
+
+    &-a700-md {
+      border-color: #0091ea;
+      background-color: #0091ea;
+    }
+  }
+
+  .#{$btn-cyan} {
+    &-md {
+      color: #555;
+      border-color: cyan;
+      background-color: cyan;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #e0f7fa;
+      background-color: #e0f7fa;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #b2ebf2;
+      background-color: #b2ebf2;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #80deea;
+      background-color: #80deea;
+    }
+
+    &-300-md {
+      border-color: #4dd0e1;
+      background-color: #4dd0e1;
+    }
+
+    &-400-md {
+      border-color: #26c6da;
+      background-color: #26c6da;
+    }
+
+    &-500-md {
+      border-color: #00bcd4;
+      background-color: #00bcd4;
+    }
+
+    &-600-md {
+      border-color: #00acc1;
+      background-color: #00acc1;
+    }
+
+    &-700-md {
+      border-color: #0097a7;
+      background-color: #0097a7;
+    }
+
+    &-800-md {
+      border-color: #00838f;
+      background-color: #00838f;
+    }
+
+    &-900-md {
+      border-color: #006064;
+      background-color: #006064;
+    }
+
+    &-a100-md {
+      color: #555;
+      border-color: #84ffff;
+      background-color: #84ffff;
+    }
+
+    &-a200-md {
+      color: #555;
+      border-color: #18ffff;
+      background-color: #18ffff;
+    }
+
+    &-a400-md {
+      border-color: #00e5ff;
+      background-color: #00e5ff;
+    }
+
+    &-a700-md {
+      border-color: #00b8d4;
+      background-color: #00b8d4;
+    }
+  }
+
+  .#{$btn-teal} {
+    &-md {
+      border-color: teal;
+      background-color: teal;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #e0f2f1;
+      background-color: #e0f2f1;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #b2dfdb;
+      background-color: #b2dfdb;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #80cbc4;
+      background-color: #80cbc4;
+    }
+
+    &-300-md {
+      border-color: #4db6ac;
+      background-color: #4db6ac;
+    }
+
+    &-400-md {
+      border-color: #26a69a;
+      background-color: #26a69a;
+    }
+
+    &-500-md {
+      border-color: #009688;
+      background-color: #009688;
+    }
+
+    &-600-md {
+      border-color: #00897b;
+      background-color: #00897b;
+    }
+
+    &-700-md {
+      border-color: #00796b;
+      background-color: #00796b;
+    }
+
+    &-800-md {
+      border-color: #00695c;
+      background-color: #00695c;
+    }
+
+    &-900-md {
+      border-color: #004d40;
+      background-color: #004d40;
+    }
+
+    &-a100-md {
+      color: #555;
+      border-color: #a7ffeb;
+      background-color: #a7ffeb;
+    }
+
+    &-a200-md {
+      color: #555;
+      border-color: #64ffda;
+      background-color: #64ffda;
+    }
+
+    &-a400-md {
+      border-color: #1de9b6;
+      background-color: #1de9b6;
+    }
+
+    &-a700-md {
+      border-color: #00bfa5;
+      background-color: #00bfa5;
+    }
+  }
+
+  .#{$btn-green} {
+    &-md {
+      border-color: green;
+      background-color: green;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #e8f5e9;
+      background-color: #e8f5e9;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #c8e6c9;
+      background-color: #c8e6c9;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #a5d6a7;
+      background-color: #a5d6a7;
+    }
+
+    &-300-md {
+      color: #555;
+      border-color: #81c784;
+      background-color: #81c784;
+    }
+
+    &-400-md {
+      border-color: #66bb6a;
+      background-color: #66bb6a;
+    }
+
+    &-500-md {
+      border-color: #4caf50;
+      background-color: #4caf50;
+    }
+
+    &-600-md {
+      border-color: #43a047;
+      background-color: #43a047;
+    }
+
+    &-700-md {
+      border-color: #388e3c;
+      background-color: #388e3c;
+    }
+
+    &-800-md {
+      border-color: #2e7d32;
+      background-color: #2e7d32;
+    }
+
+    &-900-md {
+      border-color: #1b5e20;
+      background-color: #1b5e20;
+    }
+
+    &-a100-md {
+      color: #555;
+      border-color: #b9f6ca;
+      background-color: #b9f6ca;
+    }
+
+    &-a200-md {
+      color: #555;
+      border-color: #69f0ae;
+      background-color: #69f0ae;
+    }
+
+    &-a400-md {
+      border-color: #00e676;
+      background-color: #00e676;
+    }
+
+    &-a700-md {
+      border-color: #00c853;
+      background-color: #00c853;
+    }
+  }
+
+  .#{$btn-light-green} {
+    &-md {
+      color: #555;
+      border-color: lightgreen;
+      background-color: lightgreen;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #f1f8e9;
+      background-color: #f1f8e9;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #dcedc8;
+      background-color: #dcedc8;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #c5e1a5;
+      background-color: #c5e1a5;
+    }
+
+    &-300-md {
+      color: #555;
+      border-color: #aed581;
+      background-color: #aed581;
+    }
+
+    &-400-md {
+      color: #555;
+      border-color: #9ccc65;
+      background-color: #9ccc65;
+    }
+
+    &-500-md {
+      border-color: #8bc34a;
+      background-color: #8bc34a;
+    }
+
+    &-600-md {
+      border-color: #7cb342;
+      background-color: #7cb342;
+    }
+
+    &-700-md {
+      border-color: #689f38;
+      background-color: #689f38;
+    }
+
+    &-800-md {
+      border-color: #558b2f;
+      background-color: #558b2f;
+    }
+
+    &-900-md {
+      border-color: #33691e;
+      background-color: #33691e;
+    }
+
+    &-a100-md {
+      color: #555;
+      border-color: #ccff90;
+      background-color: #ccff90;
+    }
+
+    &-a200-md {
+      color: #555;
+      border-color: #b2ff59;
+      background-color: #b2ff59;
+    }
+
+    &-a400-md {
+      border-color: #76ff03;
+      background-color: #76ff03;
+    }
+
+    &-a700-md {
+      border-color: #64dd17;
+      background-color: #64dd17;
+    }
+  }
+
+  .#{$btn-lime} {
+    &-md {
+      border-color: lime;
+      background-color: lime;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #f9fbe7;
+      background-color: #f9fbe7;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #f0f4c3;
+      background-color: #f0f4c3;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #e6ee9c;
+      background-color: #e6ee9c;
+    }
+
+    &-300-md {
+      color: #555;
+      border-color: #d4e056;
+      background-color: #d4e056;
+    }
+
+    &-400-md {
+      border-color: #d4e157;
+      background-color: #d4e157;
+    }
+
+    &-500-md {
+      border-color: #cddc39;
+      background-color: #cddc39;
+    }
+
+    &-600-md {
+      border-color: #c0ca33;
+      background-color: #c0ca33;
+    }
+
+    &-700-md {
+      border-color: #afb42b;
+      background-color: #afb42b;
+    }
+
+    &-800-md {
+      border-color: #9e9d24;
+      background-color: #9e9d24;
+    }
+
+    &-900-md {
+      border-color: #827717;
+      background-color: #827717;
+    }
+
+    &-a100-md {
+      color: #555;
+      border-color: #f4ff81;
+      background-color: #f4ff81;
+    }
+
+    &-a200-md {
+      color: #555;
+      border-color: #eeff41;
+      background-color: #eeff41;
+    }
+
+    &-a400-md {
+      color: #555;
+      border-color: #c6ff00;
+      background-color: #c6ff00;
+    }
+
+    &-a700-md {
+      border-color: #aeea00;
+      background-color: #aeea00;
+    }
+  }
+
+  .#{$btn-yellow} {
+    &-md {
+      color: #555;
+      border-color: yellow;
+      background-color: yellow;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #fffde7;
+      background-color: #fffde7;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #fff9c4;
+      background-color: #fff9c4;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #fff59d;
+      background-color: #fff59d;
+    }
+
+    &-300-md {
+      color: #555;
+      border-color: #fff176;
+      background-color: #fff176;
+    }
+
+    &-400-md {
+      color: #555;
+      border-color: #ffee58;
+      background-color: #ffee58;
+    }
+
+    &-500-md {
+      color: #555;
+      border-color: #ffeb3b;
+      background-color: #ffeb3b;
+    }
+
+    &-600-md {
+      border-color: #fdd835;
+      background-color: #fdd835;
+    }
+
+    &-700-md {
+      border-color: #fbc02d;
+      background-color: #fbc02d;
+    }
+
+    &-800-md {
+      border-color: #f9a825;
+      background-color: #f9a825;
+    }
+
+    &-900-md {
+      border-color: #f57f17;
+      background-color: #f57f17;
+    }
+
+    &-a100-md {
+      color: #555;
+      border-color: #ffff8d;
+      background-color: #ffff8d;
+    }
+
+    &-a200-md {
+      color: #555;
+      border-color: #ff0;
+      background-color: #ff0;
+    }
+
+    &-a400-md {
+      color: #555;
+      border-color: #ffea00;
+      background-color: #ffea00;
+    }
+
+    &-a700-md {
+      border-color: #ffd600;
+      background-color: #ffd600;
+    }
+  }
+
+  .#{$btn-amber} {
+    &-md {
+      border-color: #ffd740;
+      background-color: #ffd740;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #fff8e1;
+      background-color: #fff8e1;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #ffecb3;
+      background-color: #ffecb3;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #ffe082;
+      background-color: #ffe082;
+    }
+
+    &-300-md {
+      color: #555;
+      border-color: #ffd54f;
+      background-color: #ffd54f;
+    }
+
+    &-400-md {
+      border-color: #ffca28;
+      background-color: #ffca28;
+    }
+
+    &-500-md {
+      border-color: #ffc107;
+      background-color: #ffc107;
+    }
+
+    &-600-md {
+      border-color: #ffb300;
+      background-color: #ffb300;
+    }
+
+    &-700-md {
+      border-color: #ffa000;
+      background-color: #ffa000;
+    }
+
+    &-800-md {
+      border-color: #ff8f00;
+      background-color: #ff8f00;
+    }
+
+    &-900-md {
+      border-color: #ff6f00;
+      background-color: #ff6f00;
+    }
+
+    &-a100-md {
+      color: #555;
+      border-color: #ffe57f;
+      background-color: #ffe57f;
+    }
+
+    &-a200-md {
+      color: #555;
+      border-color: #ffd740;
+      background-color: #ffd740;
+    }
+
+    &-a400-md {
+      border-color: #ffc400;
+      background-color: #ffc400;
+    }
+
+    &-a700-md {
+      border-color: #ffab00;
+      background-color: #ffab00;
+    }
+  }
+
+  .#{$btn-orange} {
+    &-md {
+      border-color: orange;
+      background-color: orange;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #fff3e0;
+      background-color: #fff3e0;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #ffe0b2;
+      background-color: #ffe0b2;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #ffcc80;
+      background-color: #ffcc80;
+    }
+
+    &-300-md {
+      border-color: #ffb74d;
+      background-color: #ffb74d;
+    }
+
+    &-400-md {
+      border-color: #ffa726;
+      background-color: #ffa726;
+    }
+
+    &-500-md {
+      border-color: #ff9800;
+      background-color: #ff9800;
+    }
+
+    &-600-md {
+      border-color: #fb8c00;
+      background-color: #fb8c00;
+    }
+
+    &-700-md {
+      border-color: #f57c00;
+      background-color: #f57c00;
+    }
+
+    &-800-md {
+      border-color: #ef6c00;
+      background-color: #ef6c00;
+    }
+
+    &-900-md {
+      border-color: #e65100;
+      background-color: #e65100;
+    }
+
+    &-a100-md {
+      color: #555;
+      border-color: #ffd180;
+      background-color: #ffd180;
+    }
+
+    &-a200-md {
+      border-color: #ffab40;
+      background-color: #ffab40;
+    }
+
+    &-a400-md {
+      border-color: #ff9100;
+      background-color: #ff9100;
+    }
+
+    &-a700-md {
+      border-color: #ff6d00;
+      background-color: #ff6d00;
+    }
+  }
+
+  .#{$btn-deep-orange} {
+    &-md {
+      border-color: darkorange;
+      background-color: darkorange;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #fbe9e7;
+      background-color: #fbe9e7;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #ffccbc;
+      background-color: #ffccbc;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #ffab91;
+      background-color: #ffab91;
+    }
+
+    &-300-md {
+      border-color: #ff8a65;
+      background-color: #ff8a65;
+    }
+
+    &-400-md {
+      border-color: #ff7043;
+      background-color: #ff7043;
+    }
+
+    &-500-md {
+      border-color: #ff5722;
+      background-color: #ff5722;
+    }
+
+    &-600-md {
+      border-color: #f4511e;
+      background-color: #f4511e;
+    }
+
+    &-700-md {
+      border-color: #e64a19;
+      background-color: #e64a19;
+    }
+
+    &-800-md {
+      border-color: #d84315;
+      background-color: #d84315;
+    }
+
+    &-900-md {
+      border-color: #bf360c;
+      background-color: #bf360c;
+    }
+
+    &-a100-md {
+      color: #555;
+      border-color: #ff9e80;
+      background-color: #ff9e80;
+    }
+
+    &-a200-md {
+      border-color: #ff6e40;
+      background-color: #ff6e40;
+    }
+
+    &-a400-md {
+      border-color: #ff3d00;
+      background-color: #ff3d00;
+    }
+
+    &-a700-md {
+      border-color: #dd2c00;
+      background-color: #dd2c00;
+    }
+  }
+
+  .#{$btn-brown} {
+    &-md {
+      border-color: brown;
+      background-color: brown;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #efebe9;
+      background-color: #efebe9;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #d7ccc8;
+      background-color: #d7ccc8;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #bcaaa4;
+      background-color: #bcaaa4;
+    }
+
+    &-300-md {
+      border-color: #a1887f;
+      background-color: #a1887f;
+    }
+
+    &-400-md {
+      border-color: #8d6e63;
+      background-color: #8d6e63;
+    }
+
+    &-500-md {
+      border-color: #795548;
+      background-color: #795548;
+    }
+
+    &-600-md {
+      border-color: #6d4c41;
+      background-color: #6d4c41;
+    }
+
+    &-700-md {
+      border-color: #5d4037;
+      background-color: #5d4037;
+    }
+
+    &-800-md {
+      border-color: #4e342e;
+      background-color: #4e342e;
+    }
+
+    &-900-md {
+      border-color: #3e2723;
+      background-color: #3e2723;
+    }
+  }
+
+  .#{$btn-grey} {
+    &-md {
+      border-color: grey;
+      background-color: grey;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #fafafa;
+      background-color: #fafafa;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #f5f5f5;
+      background-color: #f5f5f5;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #eee;
+      background-color: #eee;
+    }
+
+    &-300-md {
+      color: #555;
+      border-color: #e0e0e0;
+      background-color: #e0e0e0;
+    }
+
+    &-400-md {
+      color: #555;
+      border-color: #bdbdbd;
+      background-color: #bdbdbd;
+    }
+
+    &-500-md {
+      border-color: #9e9e9e;
+      background-color: #9e9e9e;
+    }
+
+    &-600-md {
+      border-color: #757575;
+      background-color: #757575;
+    }
+
+    &-700-md {
+      border-color: #616161;
+      background-color: #616161;
+    }
+
+    &-800-md {
+      border-color: #424242;
+      background-color: #424242;
+    }
+
+    &-900-md {
+      border-color: #212121;
+      background-color: #212121;
+    }
+  }
+
+  .#{$btn-blue-grey} {
+    &-md {
+      color: #555;
+      border-color: lightsteelblue;
+      background-color: lightsteelblue;
+    }
+
+    &-50-md {
+      color: #555;
+      border-color: #eceff1;
+      background-color: #eceff1;
+    }
+
+    &-100-md {
+      color: #555;
+      border-color: #cfd8dc;
+      background-color: #cfd8dc;
+    }
+
+    &-200-md {
+      color: #555;
+      border-color: #b0bec5;
+      background-color: #b0bec5;
+    }
+
+    &-300-md {
+      border-color: #90a4ae;
+      background-color: #90a4ae;
+    }
+
+    &-400-md {
+      border-color: #78909c;
+      background-color: #78909c;
+    }
+
+    &-500-md {
+      border-color: #607d8b;
+      background-color: #607d8b;
+    }
+
+    &-600-md {
+      border-color: #546e7a;
+      background-color: #546e7a;
+    }
+
+    &-700-md {
+      border-color: #455a64;
+      background-color: #455a64;
+    }
+
+    &-800-md {
+      border-color: #37474f;
+      background-color: #37474f;
+    }
+
+    &-900-md {
+      border-color: #263238;
+      background-color: #263238;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  [class*="btn-"].default-sm {
+    color: #fff;
+    border-color: $default-color;
+    background-color: $default-color;
+  }
+
+  .#{$btn-white} {
+    &-sm {
+      color: #333;
+      border-color: #fff;
+      background-color: #fff;
+    }
+  }
+
+  .#{$btn-black} {
+    &-sm {
+      color: #fff;
+      border-color: #333;
+      background-color: #333;
+    }
+  }
+
+  .#{$btn-red} {
+    &-sm {
+      border-color: red;
+      background-color: red;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #ffebee;
+      background-color: #ffebee;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #ffcdd2;
+      background-color: #ffcdd2;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #ef9a9a;
+      background-color: #ef9a9a;
+    }
+
+    &-300-sm {
+      border-color: #e57373;
+      background-color: #e57373;
+    }
+
+    &-400-sm {
+      border-color: #ef5350;
+      background-color: #ef5350;
+    }
+
+    &-500-sm {
+      border-color: #f44336;
+      background-color: #f44336;
+    }
+
+    &-600-sm {
+      border-color: #e53935;
+      background-color: #e53935;
+    }
+
+    &-700-sm {
+      border-color: #d32f2f;
+      background-color: #d32f2f;
+    }
+
+    &-800-sm {
+      border-color: #c62828;
+      background-color: #c62828;
+    }
+
+    &-900-sm {
+      border-color: #b71c1c;
+      background-color: #b71c1c;
+    }
+
+    &-a100-sm {
+      border-color: #ff8a80;
+      background-color: #ff8a80;
+    }
+
+    &-a200-sm {
+      border-color: #ff5252;
+      background-color: #ff5252;
+    }
+
+    &-a400-sm {
+      border-color: #ff1744;
+      background-color: #ff1744;
+    }
+
+    &-a700-sm {
+      border-color: #d50000;
+      background-color: #d50000;
+    }
+  }
+
+  .#{$btn-pink} {
+    &-sm {
+      color: #555;
+      border-color: pink;
+      background-color: pink;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #fce4ec;
+      background-color: #fce4ec;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #f8bbd0;
+      background-color: #f8bbd0;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #f48fb1;
+      background-color: #f48fb1;
+    }
+
+    &-300-sm {
+      border-color: #f06292;
+      background-color: #f06292;
+    }
+
+    &-400-sm {
+      border-color: #ec407a;
+      background-color: #ec407a;
+    }
+
+    &-500-sm {
+      border-color: #e91e63;
+      background-color: #e91e63;
+    }
+
+    &-600-sm {
+      border-color: #d81b60;
+      background-color: #d81b60;
+    }
+
+    &-700-sm {
+      border-color: #c2185b;
+      background-color: #c2185b;
+    }
+
+    &-800-sm {
+      border-color: #ad1457;
+      background-color: #ad1457;
+    }
+
+    &-900-sm {
+      border-color: #880e4f;
+      background-color: #880e4f;
+    }
+
+    &-a100-sm {
+      border-color: #ff80ab;
+      background-color: #ff80ab;
+    }
+
+    &-a200-sm {
+      border-color: #ff4081;
+      background-color: #ff4081;
+    }
+
+    &-a400-sm {
+      border-color: #f50057;
+      background-color: #f50057;
+    }
+
+    &-a700-sm {
+      border-color: #c51162;
+      background-color: #c51162;
+    }
+  }
+
+  .#{$btn-purple} {
+    &-sm {
+      border-color: purple;
+      background-color: purple;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #f3e5f5;
+      background-color: #f3e5f5;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #e1bee7;
+      background-color: #e1bee7;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #ce93d8;
+      background-color: #ce93d8;
+    }
+
+    &-300-sm {
+      border-color: #ba68c8;
+      background-color: #ba68c8;
+    }
+
+    &-400-sm {
+      border-color: #ab47bc;
+      background-color: #ab47bc;
+    }
+
+    &-500-sm {
+      border-color: #9c27b0;
+      background-color: #9c27b0;
+    }
+
+    &-600-sm {
+      border-color: #8e24aa;
+      background-color: #8e24aa;
+    }
+
+    &-700-sm {
+      border-color: #7b1fa2;
+      background-color: #7b1fa2;
+    }
+
+    &-800-sm {
+      border-color: #6a1b9a;
+      background-color: #6a1b9a;
+    }
+
+    &-900-sm {
+      border-color: #4a148c;
+      background-color: #4a148c;
+    }
+
+    &-a100-sm {
+      border-color: #ea80fc;
+      background-color: #ea80fc;
+    }
+
+    &-a200-sm {
+      border-color: #e040fb;
+      background-color: #e040fb;
+    }
+
+    &-a400-sm {
+      border-color: #d500f9;
+      background-color: #d500f9;
+    }
+
+    &-a700-sm {
+      border-color: #a0f;
+      background-color: #a0f;
+    }
+  }
+
+  .#{$btn-deep-purple} {
+    &-sm {
+      border-color: darkmagenta;
+      background-color: darkmagenta;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #ede7f6;
+      background-color: #ede7f6;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #d1c4e9;
+      background-color: #d1c4e9;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #b39ddb;
+      background-color: #b39ddb;
+    }
+
+    &-300-sm {
+      border-color: #9575cd;
+      background-color: #9575cd;
+    }
+
+    &-400-sm {
+      border-color: #7e57c2;
+      background-color: #7e57c2;
+    }
+
+    &-500-sm {
+      border-color: #673ab7;
+      background-color: #673ab7;
+    }
+
+    &-600-sm {
+      border-color: #5e35b1;
+      background-color: #5e35b1;
+    }
+
+    &-700-sm {
+      border-color: #512da8;
+      background-color: #512da8;
+    }
+
+    &-800-sm {
+      border-color: #4527a0;
+      background-color: #4527a0;
+    }
+
+    &-900-sm {
+      border-color: #311b92;
+      background-color: #311b92;
+    }
+
+    &-a100-sm {
+      border-color: #b388ff;
+      background-color: #b388ff;
+    }
+
+    &-a200-sm {
+      border-color: #7c4dff;
+      background-color: #7c4dff;
+    }
+
+    &-a400-sm {
+      border-color: #651fff;
+      background-color: #651fff;
+    }
+
+    &-a700-sm {
+      border-color: #6200ea;
+      background-color: #6200ea;
+    }
+  }
+
+  .#{$btn-indigo} {
+    &-sm {
+      border-color: indigo;
+      background-color: indigo;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #e8eaf6;
+      background-color: #e8eaf6;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #c5cae9;
+      background-color: #c5cae9;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #9fa8da;
+      background-color: #9fa8da;
+    }
+
+    &-300-sm {
+      color: #555;
+      border-color: #7986cb;
+      background-color: #7986cb;
+    }
+
+    &-400-sm {
+      border-color: #5c6bc0;
+      background-color: #5c6bc0;
+    }
+
+    &-500-sm {
+      border-color: #3f51b5;
+      background-color: #3f51b5;
+    }
+
+    &-600-sm {
+      border-color: #3949ab;
+      background-color: #3949ab;
+    }
+
+    &-700-sm {
+      border-color: #303f9f;
+      background-color: #303f9f;
+    }
+
+    &-800-sm {
+      border-color: #283593;
+      background-color: #283593;
+    }
+
+    &-900-sm {
+      border-color: #1a237e;
+      background-color: #1a237e;
+    }
+
+    &-a100-sm {
+      border-color: #8c9eff;
+      background-color: #8c9eff;
+    }
+
+    &-a200-sm {
+      border-color: #536dfe;
+      background-color: #536dfe;
+    }
+
+    &-a400-sm {
+      border-color: #3d5afe;
+      background-color: #3d5afe;
+    }
+
+    &-a700-sm {
+      border-color: #304ffe;
+      background-color: #304ffe;
+    }
+  }
+
+  .#{$btn-blue} {
+    &-sm {
+      border-color: blue;
+      background-color: blue;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #e3f2fd;
+      background-color: #e3f2fd;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #bbdefb;
+      background-color: #bbdefb;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #90caf9;
+      background-color: #90caf9;
+    }
+
+    &-300-sm {
+      color: #555;
+      border-color: #64b5f6;
+      background-color: #64b5f6;
+    }
+
+    &-400-sm {
+      border-color: #42a5f5;
+      background-color: #42a5f5;
+    }
+
+    &-500-sm {
+      border-color: #2196f3;
+      background-color: #2196f3;
+    }
+
+    &-600-sm {
+      border-color: #1e88e5;
+      background-color: #1e88e5;
+    }
+
+    &-700-sm {
+      border-color: #1976d2;
+      background-color: #1976d2;
+    }
+
+    &-800-sm {
+      border-color: #1565c0;
+      background-color: #1565c0;
+    }
+
+    &-900-sm {
+      border-color: #0d47a1;
+      background-color: #0d47a1;
+    }
+
+    &-a100-sm {
+      color: #555;
+      border-color: #82b1ff;
+      background-color: #82b1ff;
+    }
+
+    &-a200-sm {
+      border-color: #448aff;
+      background-color: #448aff;
+    }
+
+    &-a400-sm {
+      border-color: #2979ff;
+      background-color: #2979ff;
+    }
+
+    &-a700-sm {
+      border-color: #2962ff;
+      background-color: #2962ff;
+    }
+  }
+
+  .#{$btn-light-blue} {
+    &-sm {
+      color: #555;
+      border-color: lightblue;
+      background-color: lightblue;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #e1f5fe;
+      background-color: #e1f5fe;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #b3e5fc;
+      background-color: #b3e5fc;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #81d4fa;
+      background-color: #81d4fa;
+    }
+
+    &-300-sm {
+      border-color: #4fc3f7;
+      background-color: #4fc3f7;
+    }
+
+    &-400-sm {
+      border-color: #29b6f6;
+      background-color: #29b6f6;
+    }
+
+    &-500-sm {
+      border-color: #03a9f4;
+      background-color: #03a9f4;
+    }
+
+    &-600-sm {
+      border-color: #039be5;
+      background-color: #039be5;
+    }
+
+    &-700-sm {
+      border-color: #0288d1;
+      background-color: #0288d1;
+    }
+
+    &-800-sm {
+      border-color: #0277bd;
+      background-color: #0277bd;
+    }
+
+    &-900-sm {
+      border-color: #01579b;
+      background-color: #01579b;
+    }
+
+    &-a100-sm {
+      color: #555;
+      border-color: #80d8ff;
+      background-color: #80d8ff;
+    }
+
+    &-a200-sm {
+      border-color: #40c4ff;
+      background-color: #40c4ff;
+    }
+
+    &-a400-sm {
+      border-color: #00b0ff;
+      background-color: #00b0ff;
+    }
+
+    &-a700-sm {
+      border-color: #0091ea;
+      background-color: #0091ea;
+    }
+  }
+
+  .#{$btn-cyan} {
+    &-sm {
+      color: #555;
+      border-color: cyan;
+      background-color: cyan;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #e0f7fa;
+      background-color: #e0f7fa;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #b2ebf2;
+      background-color: #b2ebf2;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #80deea;
+      background-color: #80deea;
+    }
+
+    &-300-sm {
+      border-color: #4dd0e1;
+      background-color: #4dd0e1;
+    }
+
+    &-400-sm {
+      border-color: #26c6da;
+      background-color: #26c6da;
+    }
+
+    &-500-sm {
+      border-color: #00bcd4;
+      background-color: #00bcd4;
+    }
+
+    &-600-sm {
+      border-color: #00acc1;
+      background-color: #00acc1;
+    }
+
+    &-700-sm {
+      border-color: #0097a7;
+      background-color: #0097a7;
+    }
+
+    &-800-sm {
+      border-color: #00838f;
+      background-color: #00838f;
+    }
+
+    &-900-sm {
+      border-color: #006064;
+      background-color: #006064;
+    }
+
+    &-a100-sm {
+      color: #555;
+      border-color: #84ffff;
+      background-color: #84ffff;
+    }
+
+    &-a200-sm {
+      color: #555;
+      border-color: #18ffff;
+      background-color: #18ffff;
+    }
+
+    &-a400-sm {
+      border-color: #00e5ff;
+      background-color: #00e5ff;
+    }
+
+    &-a700-sm {
+      border-color: #00b8d4;
+      background-color: #00b8d4;
+    }
+  }
+
+  .#{$btn-teal} {
+    &-sm {
+      border-color: teal;
+      background-color: teal;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #e0f2f1;
+      background-color: #e0f2f1;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #b2dfdb;
+      background-color: #b2dfdb;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #80cbc4;
+      background-color: #80cbc4;
+    }
+
+    &-300-sm {
+      border-color: #4db6ac;
+      background-color: #4db6ac;
+    }
+
+    &-400-sm {
+      border-color: #26a69a;
+      background-color: #26a69a;
+    }
+
+    &-500-sm {
+      border-color: #009688;
+      background-color: #009688;
+    }
+
+    &-600-sm {
+      border-color: #00897b;
+      background-color: #00897b;
+    }
+
+    &-700-sm {
+      border-color: #00796b;
+      background-color: #00796b;
+    }
+
+    &-800-sm {
+      border-color: #00695c;
+      background-color: #00695c;
+    }
+
+    &-900-sm {
+      border-color: #004d40;
+      background-color: #004d40;
+    }
+
+    &-a100-sm {
+      color: #555;
+      border-color: #a7ffeb;
+      background-color: #a7ffeb;
+    }
+
+    &-a200-sm {
+      color: #555;
+      border-color: #64ffda;
+      background-color: #64ffda;
+    }
+
+    &-a400-sm {
+      border-color: #1de9b6;
+      background-color: #1de9b6;
+    }
+
+    &-a700-sm {
+      border-color: #00bfa5;
+      background-color: #00bfa5;
+    }
+  }
+
+  .#{$btn-green} {
+    &-sm {
+      border-color: green;
+      background-color: green;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #e8f5e9;
+      background-color: #e8f5e9;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #c8e6c9;
+      background-color: #c8e6c9;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #a5d6a7;
+      background-color: #a5d6a7;
+    }
+
+    &-300-sm {
+      color: #555;
+      border-color: #81c784;
+      background-color: #81c784;
+    }
+
+    &-400-sm {
+      border-color: #66bb6a;
+      background-color: #66bb6a;
+    }
+
+    &-500-sm {
+      border-color: #4caf50;
+      background-color: #4caf50;
+    }
+
+    &-600-sm {
+      border-color: #43a047;
+      background-color: #43a047;
+    }
+
+    &-700-sm {
+      border-color: #388e3c;
+      background-color: #388e3c;
+    }
+
+    &-800-sm {
+      border-color: #2e7d32;
+      background-color: #2e7d32;
+    }
+
+    &-900-sm {
+      border-color: #1b5e20;
+      background-color: #1b5e20;
+    }
+
+    &-a100-sm {
+      color: #555;
+      border-color: #b9f6ca;
+      background-color: #b9f6ca;
+    }
+
+    &-a200-sm {
+      color: #555;
+      border-color: #69f0ae;
+      background-color: #69f0ae;
+    }
+
+    &-a400-sm {
+      border-color: #00e676;
+      background-color: #00e676;
+    }
+
+    &-a700-sm {
+      border-color: #00c853;
+      background-color: #00c853;
+    }
+  }
+
+  .#{$btn-light-green} {
+    &-sm {
+      color: #555;
+      border-color: lightgreen;
+      background-color: lightgreen;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #f1f8e9;
+      background-color: #f1f8e9;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #dcedc8;
+      background-color: #dcedc8;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #c5e1a5;
+      background-color: #c5e1a5;
+    }
+
+    &-300-sm {
+      color: #555;
+      border-color: #aed581;
+      background-color: #aed581;
+    }
+
+    &-400-sm {
+      color: #555;
+      border-color: #9ccc65;
+      background-color: #9ccc65;
+    }
+
+    &-500-sm {
+      border-color: #8bc34a;
+      background-color: #8bc34a;
+    }
+
+    &-600-sm {
+      border-color: #7cb342;
+      background-color: #7cb342;
+    }
+
+    &-700-sm {
+      border-color: #689f38;
+      background-color: #689f38;
+    }
+
+    &-800-sm {
+      border-color: #558b2f;
+      background-color: #558b2f;
+    }
+
+    &-900-sm {
+      border-color: #33691e;
+      background-color: #33691e;
+    }
+
+    &-a100-sm {
+      color: #555;
+      border-color: #ccff90;
+      background-color: #ccff90;
+    }
+
+    &-a200-sm {
+      color: #555;
+      border-color: #b2ff59;
+      background-color: #b2ff59;
+    }
+
+    &-a400-sm {
+      border-color: #76ff03;
+      background-color: #76ff03;
+    }
+
+    &-a700-sm {
+      border-color: #64dd17;
+      background-color: #64dd17;
+    }
+  }
+
+  .#{$btn-lime} {
+    &-sm {
+      border-color: lime;
+      background-color: lime;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #f9fbe7;
+      background-color: #f9fbe7;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #f0f4c3;
+      background-color: #f0f4c3;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #e6ee9c;
+      background-color: #e6ee9c;
+    }
+
+    &-300-sm {
+      color: #555;
+      border-color: #d4e056;
+      background-color: #d4e056;
+    }
+
+    &-400-sm {
+      border-color: #d4e157;
+      background-color: #d4e157;
+    }
+
+    &-500-sm {
+      border-color: #cddc39;
+      background-color: #cddc39;
+    }
+
+    &-600-sm {
+      border-color: #c0ca33;
+      background-color: #c0ca33;
+    }
+
+    &-700-sm {
+      border-color: #afb42b;
+      background-color: #afb42b;
+    }
+
+    &-800-sm {
+      border-color: #9e9d24;
+      background-color: #9e9d24;
+    }
+
+    &-900-sm {
+      border-color: #827717;
+      background-color: #827717;
+    }
+
+    &-a100-sm {
+      color: #555;
+      border-color: #f4ff81;
+      background-color: #f4ff81;
+    }
+
+    &-a200-sm {
+      color: #555;
+      border-color: #eeff41;
+      background-color: #eeff41;
+    }
+
+    &-a400-sm {
+      color: #555;
+      border-color: #c6ff00;
+      background-color: #c6ff00;
+    }
+
+    &-a700-sm {
+      border-color: #aeea00;
+      background-color: #aeea00;
+    }
+  }
+
+  .#{$btn-yellow} {
+    &-sm {
+      color: #555;
+      border-color: yellow;
+      background-color: yellow;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #fffde7;
+      background-color: #fffde7;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #fff9c4;
+      background-color: #fff9c4;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #fff59d;
+      background-color: #fff59d;
+    }
+
+    &-300-sm {
+      color: #555;
+      border-color: #fff176;
+      background-color: #fff176;
+    }
+
+    &-400-sm {
+      color: #555;
+      border-color: #ffee58;
+      background-color: #ffee58;
+    }
+
+    &-500-sm {
+      color: #555;
+      border-color: #ffeb3b;
+      background-color: #ffeb3b;
+    }
+
+    &-600-sm {
+      border-color: #fdd835;
+      background-color: #fdd835;
+    }
+
+    &-700-sm {
+      border-color: #fbc02d;
+      background-color: #fbc02d;
+    }
+
+    &-800-sm {
+      border-color: #f9a825;
+      background-color: #f9a825;
+    }
+
+    &-900-sm {
+      border-color: #f57f17;
+      background-color: #f57f17;
+    }
+
+    &-a100-sm {
+      color: #555;
+      border-color: #ffff8d;
+      background-color: #ffff8d;
+    }
+
+    &-a200-sm {
+      color: #555;
+      border-color: #ff0;
+      background-color: #ff0;
+    }
+
+    &-a400-sm {
+      color: #555;
+      border-color: #ffea00;
+      background-color: #ffea00;
+    }
+
+    &-a700-sm {
+      border-color: #ffd600;
+      background-color: #ffd600;
+    }
+  }
+
+  .#{$btn-amber} {
+    &-sm {
+      border-color: #ffd740;
+      background-color: #ffd740;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #fff8e1;
+      background-color: #fff8e1;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #ffecb3;
+      background-color: #ffecb3;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #ffe082;
+      background-color: #ffe082;
+    }
+
+    &-300-sm {
+      color: #555;
+      border-color: #ffd54f;
+      background-color: #ffd54f;
+    }
+
+    &-400-sm {
+      border-color: #ffca28;
+      background-color: #ffca28;
+    }
+
+    &-500-sm {
+      border-color: #ffc107;
+      background-color: #ffc107;
+    }
+
+    &-600-sm {
+      border-color: #ffb300;
+      background-color: #ffb300;
+    }
+
+    &-700-sm {
+      border-color: #ffa000;
+      background-color: #ffa000;
+    }
+
+    &-800-sm {
+      border-color: #ff8f00;
+      background-color: #ff8f00;
+    }
+
+    &-900-sm {
+      border-color: #ff6f00;
+      background-color: #ff6f00;
+    }
+
+    &-a100-sm {
+      color: #555;
+      border-color: #ffe57f;
+      background-color: #ffe57f;
+    }
+
+    &-a200-sm {
+      color: #555;
+      border-color: #ffd740;
+      background-color: #ffd740;
+    }
+
+    &-a400-sm {
+      border-color: #ffc400;
+      background-color: #ffc400;
+    }
+
+    &-a700-sm {
+      border-color: #ffab00;
+      background-color: #ffab00;
+    }
+  }
+
+  .#{$btn-orange} {
+    &-sm {
+      border-color: orange;
+      background-color: orange;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #fff3e0;
+      background-color: #fff3e0;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #ffe0b2;
+      background-color: #ffe0b2;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #ffcc80;
+      background-color: #ffcc80;
+    }
+
+    &-300-sm {
+      border-color: #ffb74d;
+      background-color: #ffb74d;
+    }
+
+    &-400-sm {
+      border-color: #ffa726;
+      background-color: #ffa726;
+    }
+
+    &-500-sm {
+      border-color: #ff9800;
+      background-color: #ff9800;
+    }
+
+    &-600-sm {
+      border-color: #fb8c00;
+      background-color: #fb8c00;
+    }
+
+    &-700-sm {
+      border-color: #f57c00;
+      background-color: #f57c00;
+    }
+
+    &-800-sm {
+      border-color: #ef6c00;
+      background-color: #ef6c00;
+    }
+
+    &-900-sm {
+      border-color: #e65100;
+      background-color: #e65100;
+    }
+
+    &-a100-sm {
+      color: #555;
+      border-color: #ffd180;
+      background-color: #ffd180;
+    }
+
+    &-a200-sm {
+      border-color: #ffab40;
+      background-color: #ffab40;
+    }
+
+    &-a400-sm {
+      border-color: #ff9100;
+      background-color: #ff9100;
+    }
+
+    &-a700-sm {
+      border-color: #ff6d00;
+      background-color: #ff6d00;
+    }
+  }
+
+  .#{$btn-deep-orange} {
+    &-sm {
+      border-color: darkorange;
+      background-color: darkorange;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #fbe9e7;
+      background-color: #fbe9e7;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #ffccbc;
+      background-color: #ffccbc;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #ffab91;
+      background-color: #ffab91;
+    }
+
+    &-300-sm {
+      border-color: #ff8a65;
+      background-color: #ff8a65;
+    }
+
+    &-400-sm {
+      border-color: #ff7043;
+      background-color: #ff7043;
+    }
+
+    &-500-sm {
+      border-color: #ff5722;
+      background-color: #ff5722;
+    }
+
+    &-600-sm {
+      border-color: #f4511e;
+      background-color: #f4511e;
+    }
+
+    &-700-sm {
+      border-color: #e64a19;
+      background-color: #e64a19;
+    }
+
+    &-800-sm {
+      border-color: #d84315;
+      background-color: #d84315;
+    }
+
+    &-900-sm {
+      border-color: #bf360c;
+      background-color: #bf360c;
+    }
+
+    &-a100-sm {
+      color: #555;
+      border-color: #ff9e80;
+      background-color: #ff9e80;
+    }
+
+    &-a200-sm {
+      border-color: #ff6e40;
+      background-color: #ff6e40;
+    }
+
+    &-a400-sm {
+      border-color: #ff3d00;
+      background-color: #ff3d00;
+    }
+
+    &-a700-sm {
+      border-color: #dd2c00;
+      background-color: #dd2c00;
+    }
+  }
+
+  .#{$btn-brown} {
+    &-sm {
+      border-color: brown;
+      background-color: brown;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #efebe9;
+      background-color: #efebe9;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #d7ccc8;
+      background-color: #d7ccc8;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #bcaaa4;
+      background-color: #bcaaa4;
+    }
+
+    &-300-sm {
+      border-color: #a1887f;
+      background-color: #a1887f;
+    }
+
+    &-400-sm {
+      border-color: #8d6e63;
+      background-color: #8d6e63;
+    }
+
+    &-500-sm {
+      border-color: #795548;
+      background-color: #795548;
+    }
+
+    &-600-sm {
+      border-color: #6d4c41;
+      background-color: #6d4c41;
+    }
+
+    &-700-sm {
+      border-color: #5d4037;
+      background-color: #5d4037;
+    }
+
+    &-800-sm {
+      border-color: #4e342e;
+      background-color: #4e342e;
+    }
+
+    &-900-sm {
+      border-color: #3e2723;
+      background-color: #3e2723;
+    }
+  }
+
+  .#{$btn-grey} {
+    &-sm {
+      border-color: grey;
+      background-color: grey;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #fafafa;
+      background-color: #fafafa;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #f5f5f5;
+      background-color: #f5f5f5;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #eee;
+      background-color: #eee;
+    }
+
+    &-300-sm {
+      color: #555;
+      border-color: #e0e0e0;
+      background-color: #e0e0e0;
+    }
+
+    &-400-sm {
+      color: #555;
+      border-color: #bdbdbd;
+      background-color: #bdbdbd;
+    }
+
+    &-500-sm {
+      border-color: #9e9e9e;
+      background-color: #9e9e9e;
+    }
+
+    &-600-sm {
+      border-color: #757575;
+      background-color: #757575;
+    }
+
+    &-700-sm {
+      border-color: #616161;
+      background-color: #616161;
+    }
+
+    &-800-sm {
+      border-color: #424242;
+      background-color: #424242;
+    }
+
+    &-900-sm {
+      border-color: #212121;
+      background-color: #212121;
+    }
+  }
+
+  .#{$btn-blue-grey} {
+    &-sm {
+      color: #555;
+      border-color: lightsteelblue;
+      background-color: lightsteelblue;
+    }
+
+    &-50-sm {
+      color: #555;
+      border-color: #eceff1;
+      background-color: #eceff1;
+    }
+
+    &-100-sm {
+      color: #555;
+      border-color: #cfd8dc;
+      background-color: #cfd8dc;
+    }
+
+    &-200-sm {
+      color: #555;
+      border-color: #b0bec5;
+      background-color: #b0bec5;
+    }
+
+    &-300-sm {
+      border-color: #90a4ae;
+      background-color: #90a4ae;
+    }
+
+    &-400-sm {
+      border-color: #78909c;
+      background-color: #78909c;
+    }
+
+    &-500-sm {
+      border-color: #607d8b;
+      background-color: #607d8b;
+    }
+
+    &-600-sm {
+      border-color: #546e7a;
+      background-color: #546e7a;
+    }
+
+    &-700-sm {
+      border-color: #455a64;
+      background-color: #455a64;
+    }
+
+    &-800-sm {
+      border-color: #37474f;
+      background-color: #37474f;
+    }
+
+    &-900-sm {
+      border-color: #263238;
+      background-color: #263238;
+    }
+  }
+
+}
+
+@media (max-width: 479px) {
+
+  [class*="btn-"].default-xs {
+    color: #fff;
+    border-color: $default-color;
+    background-color: $default-color;
+  }
+
+  .#{$btn-white} {
+    &-xs {
+      color: #333;
+      border-color: #fff;
+      background-color: #fff;
+    }
+  }
+
+  .#{$btn-black} {
+    &-xs {
+      color: #fff;
+      border-color: #333;
+      background-color: #333;
+    }
+  }
+
+  .#{$btn-red} {
+    &-xs {
+      border-color: red;
+      background-color: red;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #ffebee;
+      background-color: #ffebee;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #ffcdd2;
+      background-color: #ffcdd2;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #ef9a9a;
+      background-color: #ef9a9a;
+    }
+
+    &-300-xs {
+      border-color: #e57373;
+      background-color: #e57373;
+    }
+
+    &-400-xs {
+      border-color: #ef5350;
+      background-color: #ef5350;
+    }
+
+    &-500-xs {
+      border-color: #f44336;
+      background-color: #f44336;
+    }
+
+    &-600-xs {
+      border-color: #e53935;
+      background-color: #e53935;
+    }
+
+    &-700-xs {
+      border-color: #d32f2f;
+      background-color: #d32f2f;
+    }
+
+    &-800-xs {
+      border-color: #c62828;
+      background-color: #c62828;
+    }
+
+    &-900-xs {
+      border-color: #b71c1c;
+      background-color: #b71c1c;
+    }
+
+    &-a100-xs {
+      border-color: #ff8a80;
+      background-color: #ff8a80;
+    }
+
+    &-a200-xs {
+      border-color: #ff5252;
+      background-color: #ff5252;
+    }
+
+    &-a400-xs {
+      border-color: #ff1744;
+      background-color: #ff1744;
+    }
+
+    &-a700-xs {
+      border-color: #d50000;
+      background-color: #d50000;
+    }
+  }
+
+  .#{$btn-pink} {
+    &-xs {
+      color: #555;
+      border-color: pink;
+      background-color: pink;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #fce4ec;
+      background-color: #fce4ec;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #f8bbd0;
+      background-color: #f8bbd0;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #f48fb1;
+      background-color: #f48fb1;
+    }
+
+    &-300-xs {
+      border-color: #f06292;
+      background-color: #f06292;
+    }
+
+    &-400-xs {
+      border-color: #ec407a;
+      background-color: #ec407a;
+    }
+
+    &-500-xs {
+      border-color: #e91e63;
+      background-color: #e91e63;
+    }
+
+    &-600-xs {
+      border-color: #d81b60;
+      background-color: #d81b60;
+    }
+
+    &-700-xs {
+      border-color: #c2185b;
+      background-color: #c2185b;
+    }
+
+    &-800-xs {
+      border-color: #ad1457;
+      background-color: #ad1457;
+    }
+
+    &-900-xs {
+      border-color: #880e4f;
+      background-color: #880e4f;
+    }
+
+    &-a100-xs {
+      border-color: #ff80ab;
+      background-color: #ff80ab;
+    }
+
+    &-a200-xs {
+      border-color: #ff4081;
+      background-color: #ff4081;
+    }
+
+    &-a400-xs {
+      border-color: #f50057;
+      background-color: #f50057;
+    }
+
+    &-a700-xs {
+      border-color: #c51162;
+      background-color: #c51162;
+    }
+  }
+
+  .#{$btn-purple} {
+    &-xs {
+      border-color: purple;
+      background-color: purple;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #f3e5f5;
+      background-color: #f3e5f5;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #e1bee7;
+      background-color: #e1bee7;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #ce93d8;
+      background-color: #ce93d8;
+    }
+
+    &-300-xs {
+      border-color: #ba68c8;
+      background-color: #ba68c8;
+    }
+
+    &-400-xs {
+      border-color: #ab47bc;
+      background-color: #ab47bc;
+    }
+
+    &-500-xs {
+      border-color: #9c27b0;
+      background-color: #9c27b0;
+    }
+
+    &-600-xs {
+      border-color: #8e24aa;
+      background-color: #8e24aa;
+    }
+
+    &-700-xs {
+      border-color: #7b1fa2;
+      background-color: #7b1fa2;
+    }
+
+    &-800-xs {
+      border-color: #6a1b9a;
+      background-color: #6a1b9a;
+    }
+
+    &-900-xs {
+      border-color: #4a148c;
+      background-color: #4a148c;
+    }
+
+    &-a100-xs {
+      border-color: #ea80fc;
+      background-color: #ea80fc;
+    }
+
+    &-a200-xs {
+      border-color: #e040fb;
+      background-color: #e040fb;
+    }
+
+    &-a400-xs {
+      border-color: #d500f9;
+      background-color: #d500f9;
+    }
+
+    &-a700-xs {
+      border-color: #a0f;
+      background-color: #a0f;
+    }
+  }
+
+  .#{$btn-deep-purple} {
+    &-xs {
+      border-color: darkmagenta;
+      background-color: darkmagenta;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #ede7f6;
+      background-color: #ede7f6;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #d1c4e9;
+      background-color: #d1c4e9;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #b39ddb;
+      background-color: #b39ddb;
+    }
+
+    &-300-xs {
+      border-color: #9575cd;
+      background-color: #9575cd;
+    }
+
+    &-400-xs {
+      border-color: #7e57c2;
+      background-color: #7e57c2;
+    }
+
+    &-500-xs {
+      border-color: #673ab7;
+      background-color: #673ab7;
+    }
+
+    &-600-xs {
+      border-color: #5e35b1;
+      background-color: #5e35b1;
+    }
+
+    &-700-xs {
+      border-color: #512da8;
+      background-color: #512da8;
+    }
+
+    &-800-xs {
+      border-color: #4527a0;
+      background-color: #4527a0;
+    }
+
+    &-900-xs {
+      border-color: #311b92;
+      background-color: #311b92;
+    }
+
+    &-a100-xs {
+      border-color: #b388ff;
+      background-color: #b388ff;
+    }
+
+    &-a200-xs {
+      border-color: #7c4dff;
+      background-color: #7c4dff;
+    }
+
+    &-a400-xs {
+      border-color: #651fff;
+      background-color: #651fff;
+    }
+
+    &-a700-xs {
+      border-color: #6200ea;
+      background-color: #6200ea;
+    }
+  }
+
+  .#{$btn-indigo} {
+    &-xs {
+      border-color: indigo;
+      background-color: indigo;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #e8eaf6;
+      background-color: #e8eaf6;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #c5cae9;
+      background-color: #c5cae9;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #9fa8da;
+      background-color: #9fa8da;
+    }
+
+    &-300-xs {
+      color: #555;
+      border-color: #7986cb;
+      background-color: #7986cb;
+    }
+
+    &-400-xs {
+      border-color: #5c6bc0;
+      background-color: #5c6bc0;
+    }
+
+    &-500-xs {
+      border-color: #3f51b5;
+      background-color: #3f51b5;
+    }
+
+    &-600-xs {
+      border-color: #3949ab;
+      background-color: #3949ab;
+    }
+
+    &-700-xs {
+      border-color: #303f9f;
+      background-color: #303f9f;
+    }
+
+    &-800-xs {
+      border-color: #283593;
+      background-color: #283593;
+    }
+
+    &-900-xs {
+      border-color: #1a237e;
+      background-color: #1a237e;
+    }
+
+    &-a100-xs {
+      border-color: #8c9eff;
+      background-color: #8c9eff;
+    }
+
+    &-a200-xs {
+      border-color: #536dfe;
+      background-color: #536dfe;
+    }
+
+    &-a400-xs {
+      border-color: #3d5afe;
+      background-color: #3d5afe;
+    }
+
+    &-a700-xs {
+      border-color: #304ffe;
+      background-color: #304ffe;
+    }
+  }
+
+  .#{$btn-blue} {
+    &-xs {
+      border-color: blue;
+      background-color: blue;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #e3f2fd;
+      background-color: #e3f2fd;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #bbdefb;
+      background-color: #bbdefb;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #90caf9;
+      background-color: #90caf9;
+    }
+
+    &-300-xs {
+      color: #555;
+      border-color: #64b5f6;
+      background-color: #64b5f6;
+    }
+
+    &-400-xs {
+      border-color: #42a5f5;
+      background-color: #42a5f5;
+    }
+
+    &-500-xs {
+      border-color: #2196f3;
+      background-color: #2196f3;
+    }
+
+    &-600-xs {
+      border-color: #1e88e5;
+      background-color: #1e88e5;
+    }
+
+    &-700-xs {
+      border-color: #1976d2;
+      background-color: #1976d2;
+    }
+
+    &-800-xs {
+      border-color: #1565c0;
+      background-color: #1565c0;
+    }
+
+    &-900-xs {
+      border-color: #0d47a1;
+      background-color: #0d47a1;
+    }
+
+    &-a100-xs {
+      color: #555;
+      border-color: #82b1ff;
+      background-color: #82b1ff;
+    }
+
+    &-a200-xs {
+      border-color: #448aff;
+      background-color: #448aff;
+    }
+
+    &-a400-xs {
+      border-color: #2979ff;
+      background-color: #2979ff;
+    }
+
+    &-a700-xs {
+      border-color: #2962ff;
+      background-color: #2962ff;
+    }
+  }
+
+  .#{$btn-light-blue} {
+    &-xs {
+      color: #555;
+      border-color: lightblue;
+      background-color: lightblue;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #e1f5fe;
+      background-color: #e1f5fe;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #b3e5fc;
+      background-color: #b3e5fc;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #81d4fa;
+      background-color: #81d4fa;
+    }
+
+    &-300-xs {
+      border-color: #4fc3f7;
+      background-color: #4fc3f7;
+    }
+
+    &-400-xs {
+      border-color: #29b6f6;
+      background-color: #29b6f6;
+    }
+
+    &-500-xs {
+      border-color: #03a9f4;
+      background-color: #03a9f4;
+    }
+
+    &-600-xs {
+      border-color: #039be5;
+      background-color: #039be5;
+    }
+
+    &-700-xs {
+      border-color: #0288d1;
+      background-color: #0288d1;
+    }
+
+    &-800-xs {
+      border-color: #0277bd;
+      background-color: #0277bd;
+    }
+
+    &-900-xs {
+      border-color: #01579b;
+      background-color: #01579b;
+    }
+
+    &-a100-xs {
+      color: #555;
+      border-color: #80d8ff;
+      background-color: #80d8ff;
+    }
+
+    &-a200-xs {
+      border-color: #40c4ff;
+      background-color: #40c4ff;
+    }
+
+    &-a400-xs {
+      border-color: #00b0ff;
+      background-color: #00b0ff;
+    }
+
+    &-a700-xs {
+      border-color: #0091ea;
+      background-color: #0091ea;
+    }
+  }
+
+  .#{$btn-cyan} {
+    &-xs {
+      color: #555;
+      border-color: cyan;
+      background-color: cyan;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #e0f7fa;
+      background-color: #e0f7fa;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #b2ebf2;
+      background-color: #b2ebf2;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #80deea;
+      background-color: #80deea;
+    }
+
+    &-300-xs {
+      border-color: #4dd0e1;
+      background-color: #4dd0e1;
+    }
+
+    &-400-xs {
+      border-color: #26c6da;
+      background-color: #26c6da;
+    }
+
+    &-500-xs {
+      border-color: #00bcd4;
+      background-color: #00bcd4;
+    }
+
+    &-600-xs {
+      border-color: #00acc1;
+      background-color: #00acc1;
+    }
+
+    &-700-xs {
+      border-color: #0097a7;
+      background-color: #0097a7;
+    }
+
+    &-800-xs {
+      border-color: #00838f;
+      background-color: #00838f;
+    }
+
+    &-900-xs {
+      border-color: #006064;
+      background-color: #006064;
+    }
+
+    &-a100-xs {
+      color: #555;
+      border-color: #84ffff;
+      background-color: #84ffff;
+    }
+
+    &-a200-xs {
+      color: #555;
+      border-color: #18ffff;
+      background-color: #18ffff;
+    }
+
+    &-a400-xs {
+      border-color: #00e5ff;
+      background-color: #00e5ff;
+    }
+
+    &-a700-xs {
+      border-color: #00b8d4;
+      background-color: #00b8d4;
+    }
+  }
+
+  .#{$btn-teal} {
+    &-xs {
+      border-color: teal;
+      background-color: teal;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #e0f2f1;
+      background-color: #e0f2f1;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #b2dfdb;
+      background-color: #b2dfdb;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #80cbc4;
+      background-color: #80cbc4;
+    }
+
+    &-300-xs {
+      border-color: #4db6ac;
+      background-color: #4db6ac;
+    }
+
+    &-400-xs {
+      border-color: #26a69a;
+      background-color: #26a69a;
+    }
+
+    &-500-xs {
+      border-color: #009688;
+      background-color: #009688;
+    }
+
+    &-600-xs {
+      border-color: #00897b;
+      background-color: #00897b;
+    }
+
+    &-700-xs {
+      border-color: #00796b;
+      background-color: #00796b;
+    }
+
+    &-800-xs {
+      border-color: #00695c;
+      background-color: #00695c;
+    }
+
+    &-900-xs {
+      border-color: #004d40;
+      background-color: #004d40;
+    }
+
+    &-a100-xs {
+      color: #555;
+      border-color: #a7ffeb;
+      background-color: #a7ffeb;
+    }
+
+    &-a200-xs {
+      color: #555;
+      border-color: #64ffda;
+      background-color: #64ffda;
+    }
+
+    &-a400-xs {
+      border-color: #1de9b6;
+      background-color: #1de9b6;
+    }
+
+    &-a700-xs {
+      border-color: #00bfa5;
+      background-color: #00bfa5;
+    }
+  }
+
+  .#{$btn-green} {
+    &-xs {
+      border-color: green;
+      background-color: green;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #e8f5e9;
+      background-color: #e8f5e9;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #c8e6c9;
+      background-color: #c8e6c9;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #a5d6a7;
+      background-color: #a5d6a7;
+    }
+
+    &-300-xs {
+      color: #555;
+      border-color: #81c784;
+      background-color: #81c784;
+    }
+
+    &-400-xs {
+      border-color: #66bb6a;
+      background-color: #66bb6a;
+    }
+
+    &-500-xs {
+      border-color: #4caf50;
+      background-color: #4caf50;
+    }
+
+    &-600-xs {
+      border-color: #43a047;
+      background-color: #43a047;
+    }
+
+    &-700-xs {
+      border-color: #388e3c;
+      background-color: #388e3c;
+    }
+
+    &-800-xs {
+      border-color: #2e7d32;
+      background-color: #2e7d32;
+    }
+
+    &-900-xs {
+      border-color: #1b5e20;
+      background-color: #1b5e20;
+    }
+
+    &-a100-xs {
+      color: #555;
+      border-color: #b9f6ca;
+      background-color: #b9f6ca;
+    }
+
+    &-a200-xs {
+      color: #555;
+      border-color: #69f0ae;
+      background-color: #69f0ae;
+    }
+
+    &-a400-xs {
+      border-color: #00e676;
+      background-color: #00e676;
+    }
+
+    &-a700-xs {
+      border-color: #00c853;
+      background-color: #00c853;
+    }
+  }
+
+  .#{$btn-light-green} {
+    &-xs {
+      color: #555;
+      border-color: lightgreen;
+      background-color: lightgreen;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #f1f8e9;
+      background-color: #f1f8e9;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #dcedc8;
+      background-color: #dcedc8;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #c5e1a5;
+      background-color: #c5e1a5;
+    }
+
+    &-300-xs {
+      color: #555;
+      border-color: #aed581;
+      background-color: #aed581;
+    }
+
+    &-400-xs {
+      color: #555;
+      border-color: #9ccc65;
+      background-color: #9ccc65;
+    }
+
+    &-500-xs {
+      border-color: #8bc34a;
+      background-color: #8bc34a;
+    }
+
+    &-600-xs {
+      border-color: #7cb342;
+      background-color: #7cb342;
+    }
+
+    &-700-xs {
+      border-color: #689f38;
+      background-color: #689f38;
+    }
+
+    &-800-xs {
+      border-color: #558b2f;
+      background-color: #558b2f;
+    }
+
+    &-900-xs {
+      border-color: #33691e;
+      background-color: #33691e;
+    }
+
+    &-a100-xs {
+      color: #555;
+      border-color: #ccff90;
+      background-color: #ccff90;
+    }
+
+    &-a200-xs {
+      color: #555;
+      border-color: #b2ff59;
+      background-color: #b2ff59;
+    }
+
+    &-a400-xs {
+      border-color: #76ff03;
+      background-color: #76ff03;
+    }
+
+    &-a700-xs {
+      border-color: #64dd17;
+      background-color: #64dd17;
+    }
+  }
+
+  .#{$btn-lime} {
+    &-xs {
+      border-color: lime;
+      background-color: lime;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #f9fbe7;
+      background-color: #f9fbe7;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #f0f4c3;
+      background-color: #f0f4c3;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #e6ee9c;
+      background-color: #e6ee9c;
+    }
+
+    &-300-xs {
+      color: #555;
+      border-color: #d4e056;
+      background-color: #d4e056;
+    }
+
+    &-400-xs {
+      border-color: #d4e157;
+      background-color: #d4e157;
+    }
+
+    &-500-xs {
+      border-color: #cddc39;
+      background-color: #cddc39;
+    }
+
+    &-600-xs {
+      border-color: #c0ca33;
+      background-color: #c0ca33;
+    }
+
+    &-700-xs {
+      border-color: #afb42b;
+      background-color: #afb42b;
+    }
+
+    &-800-xs {
+      border-color: #9e9d24;
+      background-color: #9e9d24;
+    }
+
+    &-900-xs {
+      border-color: #827717;
+      background-color: #827717;
+    }
+
+    &-a100-xs {
+      color: #555;
+      border-color: #f4ff81;
+      background-color: #f4ff81;
+    }
+
+    &-a200-xs {
+      color: #555;
+      border-color: #eeff41;
+      background-color: #eeff41;
+    }
+
+    &-a400-xs {
+      color: #555;
+      border-color: #c6ff00;
+      background-color: #c6ff00;
+    }
+
+    &-a700-xs {
+      border-color: #aeea00;
+      background-color: #aeea00;
+    }
+  }
+
+  .#{$btn-yellow} {
+    &-xs {
+      color: #555;
+      border-color: yellow;
+      background-color: yellow;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #fffde7;
+      background-color: #fffde7;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #fff9c4;
+      background-color: #fff9c4;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #fff59d;
+      background-color: #fff59d;
+    }
+
+    &-300-xs {
+      color: #555;
+      border-color: #fff176;
+      background-color: #fff176;
+    }
+
+    &-400-xs {
+      color: #555;
+      border-color: #ffee58;
+      background-color: #ffee58;
+    }
+
+    &-500-xs {
+      color: #555;
+      border-color: #ffeb3b;
+      background-color: #ffeb3b;
+    }
+
+    &-600-xs {
+      border-color: #fdd835;
+      background-color: #fdd835;
+    }
+
+    &-700-xs {
+      border-color: #fbc02d;
+      background-color: #fbc02d;
+    }
+
+    &-800-xs {
+      border-color: #f9a825;
+      background-color: #f9a825;
+    }
+
+    &-900-xs {
+      border-color: #f57f17;
+      background-color: #f57f17;
+    }
+
+    &-a100-xs {
+      color: #555;
+      border-color: #ffff8d;
+      background-color: #ffff8d;
+    }
+
+    &-a200-xs {
+      color: #555;
+      border-color: #ff0;
+      background-color: #ff0;
+    }
+
+    &-a400-xs {
+      color: #555;
+      border-color: #ffea00;
+      background-color: #ffea00;
+    }
+
+    &-a700-xs {
+      border-color: #ffd600;
+      background-color: #ffd600;
+    }
+  }
+
+  .#{$btn-amber} {
+    &-xs {
+      border-color: #ffd740;
+      background-color: #ffd740;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #fff8e1;
+      background-color: #fff8e1;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #ffecb3;
+      background-color: #ffecb3;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #ffe082;
+      background-color: #ffe082;
+    }
+
+    &-300-xs {
+      color: #555;
+      border-color: #ffd54f;
+      background-color: #ffd54f;
+    }
+
+    &-400-xs {
+      border-color: #ffca28;
+      background-color: #ffca28;
+    }
+
+    &-500-xs {
+      border-color: #ffc107;
+      background-color: #ffc107;
+    }
+
+    &-600-xs {
+      border-color: #ffb300;
+      background-color: #ffb300;
+    }
+
+    &-700-xs {
+      border-color: #ffa000;
+      background-color: #ffa000;
+    }
+
+    &-800-xs {
+      border-color: #ff8f00;
+      background-color: #ff8f00;
+    }
+
+    &-900-xs {
+      border-color: #ff6f00;
+      background-color: #ff6f00;
+    }
+
+    &-a100-xs {
+      color: #555;
+      border-color: #ffe57f;
+      background-color: #ffe57f;
+    }
+
+    &-a200-xs {
+      color: #555;
+      border-color: #ffd740;
+      background-color: #ffd740;
+    }
+
+    &-a400-xs {
+      border-color: #ffc400;
+      background-color: #ffc400;
+    }
+
+    &-a700-xs {
+      border-color: #ffab00;
+      background-color: #ffab00;
+    }
+  }
+
+  .#{$btn-orange} {
+    &-xs {
+      border-color: orange;
+      background-color: orange;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #fff3e0;
+      background-color: #fff3e0;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #ffe0b2;
+      background-color: #ffe0b2;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #ffcc80;
+      background-color: #ffcc80;
+    }
+
+    &-300-xs {
+      border-color: #ffb74d;
+      background-color: #ffb74d;
+    }
+
+    &-400-xs {
+      border-color: #ffa726;
+      background-color: #ffa726;
+    }
+
+    &-500-xs {
+      border-color: #ff9800;
+      background-color: #ff9800;
+    }
+
+    &-600-xs {
+      border-color: #fb8c00;
+      background-color: #fb8c00;
+    }
+
+    &-700-xs {
+      border-color: #f57c00;
+      background-color: #f57c00;
+    }
+
+    &-800-xs {
+      border-color: #ef6c00;
+      background-color: #ef6c00;
+    }
+
+    &-900-xs {
+      border-color: #e65100;
+      background-color: #e65100;
+    }
+
+    &-a100-xs {
+      color: #555;
+      border-color: #ffd180;
+      background-color: #ffd180;
+    }
+
+    &-a200-xs {
+      border-color: #ffab40;
+      background-color: #ffab40;
+    }
+
+    &-a400-xs {
+      border-color: #ff9100;
+      background-color: #ff9100;
+    }
+
+    &-a700-xs {
+      border-color: #ff6d00;
+      background-color: #ff6d00;
+    }
+  }
+
+  .#{$btn-deep-orange} {
+    &-xs {
+      border-color: darkorange;
+      background-color: darkorange;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #fbe9e7;
+      background-color: #fbe9e7;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #ffccbc;
+      background-color: #ffccbc;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #ffab91;
+      background-color: #ffab91;
+    }
+
+    &-300-xs {
+      border-color: #ff8a65;
+      background-color: #ff8a65;
+    }
+
+    &-400-xs {
+      border-color: #ff7043;
+      background-color: #ff7043;
+    }
+
+    &-500-xs {
+      border-color: #ff5722;
+      background-color: #ff5722;
+    }
+
+    &-600-xs {
+      border-color: #f4511e;
+      background-color: #f4511e;
+    }
+
+    &-700-xs {
+      border-color: #e64a19;
+      background-color: #e64a19;
+    }
+
+    &-800-xs {
+      border-color: #d84315;
+      background-color: #d84315;
+    }
+
+    &-900-xs {
+      border-color: #bf360c;
+      background-color: #bf360c;
+    }
+
+    &-a100-xs {
+      color: #555;
+      border-color: #ff9e80;
+      background-color: #ff9e80;
+    }
+
+    &-a200-xs {
+      border-color: #ff6e40;
+      background-color: #ff6e40;
+    }
+
+    &-a400-xs {
+      border-color: #ff3d00;
+      background-color: #ff3d00;
+    }
+
+    &-a700-xs {
+      border-color: #dd2c00;
+      background-color: #dd2c00;
+    }
+  }
+
+  .#{$btn-brown} {
+    &-xs {
+      border-color: brown;
+      background-color: brown;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #efebe9;
+      background-color: #efebe9;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #d7ccc8;
+      background-color: #d7ccc8;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #bcaaa4;
+      background-color: #bcaaa4;
+    }
+
+    &-300-xs {
+      border-color: #a1887f;
+      background-color: #a1887f;
+    }
+
+    &-400-xs {
+      border-color: #8d6e63;
+      background-color: #8d6e63;
+    }
+
+    &-500-xs {
+      border-color: #795548;
+      background-color: #795548;
+    }
+
+    &-600-xs {
+      border-color: #6d4c41;
+      background-color: #6d4c41;
+    }
+
+    &-700-xs {
+      border-color: #5d4037;
+      background-color: #5d4037;
+    }
+
+    &-800-xs {
+      border-color: #4e342e;
+      background-color: #4e342e;
+    }
+
+    &-900-xs {
+      border-color: #3e2723;
+      background-color: #3e2723;
+    }
+  }
+
+  .#{$btn-grey} {
+    &-xs {
+      border-color: grey;
+      background-color: grey;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #fafafa;
+      background-color: #fafafa;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #f5f5f5;
+      background-color: #f5f5f5;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #eee;
+      background-color: #eee;
+    }
+
+    &-300-xs {
+      color: #555;
+      border-color: #e0e0e0;
+      background-color: #e0e0e0;
+    }
+
+    &-400-xs {
+      color: #555;
+      border-color: #bdbdbd;
+      background-color: #bdbdbd;
+    }
+
+    &-500-xs {
+      border-color: #9e9e9e;
+      background-color: #9e9e9e;
+    }
+
+    &-600-xs {
+      border-color: #757575;
+      background-color: #757575;
+    }
+
+    &-700-xs {
+      border-color: #616161;
+      background-color: #616161;
+    }
+
+    &-800-xs {
+      border-color: #424242;
+      background-color: #424242;
+    }
+
+    &-900-xs {
+      border-color: #212121;
+      background-color: #212121;
+    }
+  }
+
+  .#{$btn-blue-grey} {
+    &-xs {
+      color: #555;
+      border-color: lightsteelblue;
+      background-color: lightsteelblue;
+    }
+
+    &-50-xs {
+      color: #555;
+      border-color: #eceff1;
+      background-color: #eceff1;
+    }
+
+    &-100-xs {
+      color: #555;
+      border-color: #cfd8dc;
+      background-color: #cfd8dc;
+    }
+
+    &-200-xs {
+      color: #555;
+      border-color: #b0bec5;
+      background-color: #b0bec5;
+    }
+
+    &-300-xs {
+      border-color: #90a4ae;
+      background-color: #90a4ae;
+    }
+
+    &-400-xs {
+      border-color: #78909c;
+      background-color: #78909c;
+    }
+
+    &-500-xs {
+      border-color: #607d8b;
+      background-color: #607d8b;
+    }
+
+    &-600-xs {
+      border-color: #546e7a;
+      background-color: #546e7a;
+    }
+
+    &-700-xs {
+      border-color: #455a64;
+      background-color: #455a64;
+    }
+
+    &-800-xs {
+      border-color: #37474f;
+      background-color: #37474f;
+    }
+
+    &-900-xs {
+      border-color: #263238;
+      background-color: #263238;
+    }
+  }
+
+}
+
+@media (max-width: 319px) {}

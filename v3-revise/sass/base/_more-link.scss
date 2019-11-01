@@ -1,0 +1,1021 @@
+//more-link
+
+.more-link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 1;
+  padding: 4px 12px;
+
+  &::after {
+    content: "\f101";
+    font-family: FontAwesome;
+    font-style: normal;
+    padding-left: 5px;
+  }
+
+  &:hover {
+    color: $default-color;
+    text-decoration: none;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+}
+
+.pill {
+  color: $default-color;
+  border-radius: 15px;
+  border: 1px solid $default-color;
+
+  &:hover {
+    color: $default-color;
+    text-decoration: none;
+    border: 1px solid $default-color;
+  }
+
+  &.red {
+    color: $color-red;
+    border: 1px solid $color-red-border;
+
+    &:hover {
+      color: $color-red-hover;
+      border: 1px solid $color-red-hover;
+    }
+  }
+
+  &.pink {
+    color: $color-pink;
+    border: 1px solid $color-pink-border;
+
+    &:hover {
+      color: $color-pink-hover;
+      border: 1px solid $color-pink-hover;
+    }
+  }
+
+  &.purple {
+    color: $color-purple;
+    border: 1px solid $color-purple-border;
+
+    &:hover {
+      color: $color-purple-hover;
+      border: 1px solid $color-purple-hover;
+    }
+  }
+
+  &.deep-purple {
+    color: $color-deep-purple;
+    border: 1px solid $color-deep-purple-border;
+
+    &:hover {
+      color: $color-deep-purple-hover;
+      border: 1px solid $color-deep-purple-hover;
+    }
+  }
+
+  &.indigo {
+    color: $color-indigo;
+    border: 1px solid $color-indigo-border;
+
+    &:hover {
+      color: $color-indigo-hover;
+      border: 1px solid $color-indigo-hover;
+    }
+  }
+
+  &.blue {
+    color: $color-blue;
+    border: 1px solid $color-blue-border;
+
+    &:hover {
+      color: $color-blue-hover;
+      border: 1px solid $color-blue-hover;
+    }
+  }
+
+  &.light-blue {
+    color: $color-light-blue;
+    border: 1px solid $color-light-blue-border;
+
+    &:hover {
+      color: $color-light-blue-hover;
+      border: 1px solid $color-light-blue-hover;
+    }
+  }
+
+  &.cyan {
+    color: $color-cyan;
+    border: 1px solid $color-cyan-border;
+
+    &:hover {
+      color: $color-cyan-hover;
+      border: 1px solid $color-cyan-hover;
+    }
+  }
+
+  &.teal {
+    color: $color-teal;
+    border: 1px solid $color-teal-border;
+
+    &:hover {
+      color: $color-teal-hover;
+      border: 1px solid $color-teal-hover;
+    }
+  }
+
+  &.green {
+    color: $color-green;
+    border: 1px solid $color-green-border;
+
+    &:hover {
+      color: $color-green-hover;
+      border: 1px solid $color-green-hover;
+    }
+  }
+
+  &.light-green {
+    color: $color-light-green;
+    border: 1px solid $color-light-green-border;
+
+    &:hover {
+      color: $color-light-green-hover;
+      border: 1px solid $color-light-green-hover;
+    }
+  }
+
+  &.lime {
+    color: $color-lime;
+    border: 1px solid $color-lime-border;
+
+    &:hover {
+      color: $color-lime-hover;
+      border: 1px solid $color-lime-hover;
+    }
+  }
+
+  &.yellow {
+    color: $color-yellow;
+    border: 1px solid $color-yellow-border;
+
+    &:hover {
+      color: $color-yellow-hover;
+      border: 1px solid $color-yellow-hover;
+    }
+  }
+
+  &.amber {
+    color: $color-amber;
+    border: 1px solid $color-amber-border;
+
+    &:hover {
+      color: $color-amber-hover;
+      border: 1px solid $color-amber-hover;
+    }
+  }
+
+  &.orange {
+    color: $color-orange;
+    border: 1px solid $color-orange-border;
+
+    &:hover {
+      color: $color-orange-hover;
+      border: 1px solid $color-orange-hover;
+    }
+  }
+
+  &.deep-orange {
+    color: $color-deep-orange;
+    border: 1px solid $color-deep-orange-border;
+
+    &:hover {
+      color: $color-deep-orange-hover;
+      border: 1px solid $color-deep-orange-hover;
+    }
+  }
+
+  &.brown {
+    color: $color-brown;
+    border: 1px solid $color-brown-border;
+
+    &:hover {
+      color: $color-brown-hover;
+      border: 1px solid $color-brown-hover;
+    }
+  }
+
+  &.grey {
+    color: $color-grey;
+    border: 1px solid $color-grey-border;
+
+    &:hover {
+      color: $color-grey-hover;
+      border: 1px solid $color-grey-hover;
+    }
+  }
+
+  &.blue-grey {
+    color: $color-blue-grey;
+    border: 1px solid $color-blue-grey-border;
+
+    &:hover {
+      color: $color-blue-grey-hover;
+      border: 1px solid $color-blue-grey-hover;
+    }
+  }
+
+}
+
+//responsive
+
+@media (max-width: 1199px) {
+
+  .pill {
+    &.red-lg {
+      color: $color-red;
+      border: 1px solid $color-red-border;
+
+      &:hover {
+        color: $color-red-hover;
+        border: 1px solid $color-red-hover;
+      }
+    }
+
+    &.pink-lg {
+      color: $color-pink;
+      border: 1px solid $color-pink-border;
+
+      &:hover {
+        color: $color-pink-hover;
+        border: 1px solid $color-pink-hover;
+      }
+    }
+
+    &.purple-lg {
+      color: $color-purple;
+      border: 1px solid $color-purple-border;
+
+      &:hover {
+        color: $color-purple-hover;
+        border: 1px solid $color-purple-hover;
+      }
+    }
+
+    &.deep-purple-lg {
+      color: $color-deep-purple;
+      border: 1px solid $color-deep-purple-border;
+
+      &:hover {
+        color: $color-deep-purple-hover;
+        border: 1px solid $color-deep-purple-hover;
+      }
+    }
+
+    &.indigo-lg {
+      color: $color-indigo;
+      border: 1px solid $color-indigo-border;
+
+      &:hover {
+        color: $color-indigo-hover;
+        border: 1px solid $color-indigo-hover;
+      }
+    }
+
+    &.blue-lg {
+      color: $color-blue;
+      border: 1px solid $color-blue-border;
+
+      &:hover {
+        color: $color-blue-hover;
+        border: 1px solid $color-blue-hover;
+      }
+    }
+
+    &.light-blue-lg {
+      color: $color-light-blue;
+      border: 1px solid $color-light-blue-border;
+
+      &:hover {
+        color: $color-light-blue-hover;
+        border: 1px solid $color-light-blue-hover;
+      }
+    }
+
+    &.cyan-lg {
+      color: $color-cyan;
+      border: 1px solid $color-cyan-border;
+
+      &:hover {
+        color: $color-cyan-hover;
+        border: 1px solid $color-cyan-hover;
+      }
+    }
+
+    &.teal-lg {
+      color: $color-teal;
+      border: 1px solid $color-teal-border;
+
+      &:hover {
+        color: $color-teal-hover;
+        border: 1px solid $color-teal-hover;
+      }
+    }
+
+    &.green-lg {
+      color: $color-green;
+      border: 1px solid $color-green-border;
+
+      &:hover {
+        color: $color-green-hover;
+        border: 1px solid $color-green-hover;
+      }
+    }
+
+    &.light-green-lg {
+      color: $color-light-green;
+      border: 1px solid $color-light-green-border;
+
+      &:hover {
+        color: $color-light-green-hover;
+        border: 1px solid $color-light-green-hover;
+      }
+    }
+
+    &.lime-lg {
+      color: $color-lime;
+      border: 1px solid $color-lime-border;
+
+      &:hover {
+        color: $color-lime-hover;
+        border: 1px solid $color-lime-hover;
+      }
+    }
+
+    &.yellow-lg {
+      color: $color-yellow;
+      border: 1px solid $color-yellow-border;
+
+      &:hover {
+        color: $color-yellow-hover;
+        border: 1px solid $color-yellow-hover;
+      }
+    }
+
+    &.amber-lg {
+      color: $color-amber;
+      border: 1px solid $color-amber-border;
+
+      &:hover {
+        color: $color-amber-hover;
+        border: 1px solid $color-amber-hover;
+      }
+    }
+
+    &.orange-lg {
+      color: $color-orange;
+      border: 1px solid $color-orange-border;
+
+      &:hover {
+        color: $color-orange-hover;
+        border: 1px solid $color-orange-hover;
+      }
+    }
+
+    &.deep-orange-lg {
+      color: $color-deep-orange;
+      border: 1px solid $color-deep-orange-border;
+
+      &:hover {
+        color: $color-deep-orange-hover;
+        border: 1px solid $color-deep-orange-hover;
+      }
+    }
+
+    &.brown-lg {
+      color: $color-brown;
+      border: 1px solid $color-brown-border;
+
+      &:hover {
+        color: $color-brown-hover;
+        border: 1px solid $color-brown-hover;
+      }
+    }
+
+    &.grey-lg {
+      color: $color-grey;
+      border: 1px solid $color-grey-border;
+
+      &:hover {
+        color: $color-grey-hover;
+        border: 1px solid $color-grey-hover;
+      }
+    }
+
+    &.blue-grey-lg {
+      color: $color-blue-grey;
+      border: 1px solid $color-blue-grey-border;
+
+      &:hover {
+        color: $color-blue-grey-hover;
+        border: 1px solid $color-blue-grey-hover;
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .pill {
+    &.red-md {
+      color: $color-red;
+      border: 1px solid $color-red-border;
+
+      &:hover {
+        color: $color-red-hover;
+        border: 1px solid $color-red-hover;
+      }
+    }
+
+    &.pink-md {
+      color: $color-pink;
+      border: 1px solid $color-pink-border;
+
+      &:hover {
+        color: $color-pink-hover;
+        border: 1px solid $color-pink-hover;
+      }
+    }
+
+    &.purple-md {
+      color: $color-purple;
+      border: 1px solid $color-purple-border;
+
+      &:hover {
+        color: $color-purple-hover;
+        border: 1px solid $color-purple-hover;
+      }
+    }
+
+    &.deep-purple-md {
+      color: $color-deep-purple;
+      border: 1px solid $color-deep-purple-border;
+
+      &:hover {
+        color: $color-deep-purple-hover;
+        border: 1px solid $color-deep-purple-hover;
+      }
+    }
+
+    &.indigo-md {
+      color: $color-indigo;
+      border: 1px solid $color-indigo-border;
+
+      &:hover {
+        color: $color-indigo-hover;
+        border: 1px solid $color-indigo-hover;
+      }
+    }
+
+    &.blue-md {
+      color: $color-blue;
+      border: 1px solid $color-blue-border;
+
+      &:hover {
+        color: $color-blue-hover;
+        border: 1px solid $color-blue-hover;
+      }
+    }
+
+    &.light-blue-md {
+      color: $color-light-blue;
+      border: 1px solid $color-light-blue-border;
+
+      &:hover {
+        color: $color-light-blue-hover;
+        border: 1px solid $color-light-blue-hover;
+      }
+    }
+
+    &.cyan-md {
+      color: $color-cyan;
+      border: 1px solid $color-cyan-border;
+
+      &:hover {
+        color: $color-cyan-hover;
+        border: 1px solid $color-cyan-hover;
+      }
+    }
+
+    &.teal-md {
+      color: $color-teal;
+      border: 1px solid $color-teal-border;
+
+      &:hover {
+        color: $color-teal-hover;
+        border: 1px solid $color-teal-hover;
+      }
+    }
+
+    &.green-md {
+      color: $color-green;
+      border: 1px solid $color-green-border;
+
+      &:hover {
+        color: $color-green-hover;
+        border: 1px solid $color-green-hover;
+      }
+    }
+
+    &.light-green-md {
+      color: $color-light-green;
+      border: 1px solid $color-light-green-border;
+
+      &:hover {
+        color: $color-light-green-hover;
+        border: 1px solid $color-light-green-hover;
+      }
+    }
+
+    &.lime-md {
+      color: $color-lime;
+      border: 1px solid $color-lime-border;
+
+      &:hover {
+        color: $color-lime-hover;
+        border: 1px solid $color-lime-hover;
+      }
+    }
+
+    &.yellow-md {
+      color: $color-yellow;
+      border: 1px solid $color-yellow-border;
+
+      &:hover {
+        color: $color-yellow-hover;
+        border: 1px solid $color-yellow-hover;
+      }
+    }
+
+    &.amber-md {
+      color: $color-amber;
+      border: 1px solid $color-amber-border;
+
+      &:hover {
+        color: $color-amber-hover;
+        border: 1px solid $color-amber-hover;
+      }
+    }
+
+    &.orange-md {
+      color: $color-orange;
+      border: 1px solid $color-orange-border;
+
+      &:hover {
+        color: $color-orange-hover;
+        border: 1px solid $color-orange-hover;
+      }
+    }
+
+    &.deep-orange-md {
+      color: $color-deep-orange;
+      border: 1px solid $color-deep-orange-border;
+
+      &:hover {
+        color: $color-deep-orange-hover;
+        border: 1px solid $color-deep-orange-hover;
+      }
+    }
+
+    &.brown-md {
+      color: $color-brown;
+      border: 1px solid $color-brown-border;
+
+      &:hover {
+        color: $color-brown-hover;
+        border: 1px solid $color-brown-hover;
+      }
+    }
+
+    &.grey-md {
+      color: $color-grey;
+      border: 1px solid $color-grey-border;
+
+      &:hover {
+        color: $color-grey-hover;
+        border: 1px solid $color-grey-hover;
+      }
+    }
+
+    &.blue-grey-md {
+      color: $color-blue-grey;
+      border: 1px solid $color-blue-grey-border;
+
+      &:hover {
+        color: $color-blue-grey-hover;
+        border: 1px solid $color-blue-grey-hover;
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .pill {
+    &.red-sm {
+      color: $color-red;
+      border: 1px solid $color-red-border;
+
+      &:hover {
+        color: $color-red-hover;
+        border: 1px solid $color-red-hover;
+      }
+    }
+
+    &.pink-sm {
+      color: $color-pink;
+      border: 1px solid $color-pink-border;
+
+      &:hover {
+        color: $color-pink-hover;
+        border: 1px solid $color-pink-hover;
+      }
+    }
+
+    &.purple-sm {
+      color: $color-purple;
+      border: 1px solid $color-purple-border;
+
+      &:hover {
+        color: $color-purple-hover;
+        border: 1px solid $color-purple-hover;
+      }
+    }
+
+    &.deep-purple-sm {
+      color: $color-deep-purple;
+      border: 1px solid $color-deep-purple-border;
+
+      &:hover {
+        color: $color-deep-purple-hover;
+        border: 1px solid $color-deep-purple-hover;
+      }
+    }
+
+    &.indigo-sm {
+      color: $color-indigo;
+      border: 1px solid $color-indigo-border;
+
+      &:hover {
+        color: $color-indigo-hover;
+        border: 1px solid $color-indigo-hover;
+      }
+    }
+
+    &.blue-sm {
+      color: $color-blue;
+      border: 1px solid $color-blue-border;
+
+      &:hover {
+        color: $color-blue-hover;
+        border: 1px solid $color-blue-hover;
+      }
+    }
+
+    &.light-blue-sm {
+      color: $color-light-blue;
+      border: 1px solid $color-light-blue-border;
+
+      &:hover {
+        color: $color-light-blue-hover;
+        border: 1px solid $color-light-blue-hover;
+      }
+    }
+
+    &.cyan-sm {
+      color: $color-cyan;
+      border: 1px solid $color-cyan-border;
+
+      &:hover {
+        color: $color-cyan-hover;
+        border: 1px solid $color-cyan-hover;
+      }
+    }
+
+    &.teal-sm {
+      color: $color-teal;
+      border: 1px solid $color-teal-border;
+
+      &:hover {
+        color: $color-teal-hover;
+        border: 1px solid $color-teal-hover;
+      }
+    }
+
+    &.green-sm {
+      color: $color-green;
+      border: 1px solid $color-green-border;
+
+      &:hover {
+        color: $color-green-hover;
+        border: 1px solid $color-green-hover;
+      }
+    }
+
+    &.light-green-sm {
+      color: $color-light-green;
+      border: 1px solid $color-light-green-border;
+
+      &:hover {
+        color: $color-light-green-hover;
+        border: 1px solid $color-light-green-hover;
+      }
+    }
+
+    &.lime-sm {
+      color: $color-lime;
+      border: 1px solid $color-lime-border;
+
+      &:hover {
+        color: $color-lime-hover;
+        border: 1px solid $color-lime-hover;
+      }
+    }
+
+    &.yellow-sm {
+      color: $color-yellow;
+      border: 1px solid $color-yellow-border;
+
+      &:hover {
+        color: $color-yellow-hover;
+        border: 1px solid $color-yellow-hover;
+      }
+    }
+
+    &.amber-sm {
+      color: $color-amber;
+      border: 1px solid $color-amber-border;
+
+      &:hover {
+        color: $color-amber-hover;
+        border: 1px solid $color-amber-hover;
+      }
+    }
+
+    &.orange-sm {
+      color: $color-orange;
+      border: 1px solid $color-orange-border;
+
+      &:hover {
+        color: $color-orange-hover;
+        border: 1px solid $color-orange-hover;
+      }
+    }
+
+    &.deep-orange-sm {
+      color: $color-deep-orange;
+      border: 1px solid $color-deep-orange-border;
+
+      &:hover {
+        color: $color-deep-orange-hover;
+        border: 1px solid $color-deep-orange-hover;
+      }
+    }
+
+    &.brown-sm {
+      color: $color-brown;
+      border: 1px solid $color-brown-border;
+
+      &:hover {
+        color: $color-brown-hover;
+        border: 1px solid $color-brown-hover;
+      }
+    }
+
+    &.grey-sm {
+      color: $color-grey;
+      border: 1px solid $color-grey-border;
+
+      &:hover {
+        color: $color-grey-hover;
+        border: 1px solid $color-grey-hover;
+      }
+    }
+
+    &.blue-grey-sm {
+      color: $color-blue-grey;
+      border: 1px solid $color-blue-grey-border;
+
+      &:hover {
+        color: $color-blue-grey-hover;
+        border: 1px solid $color-blue-grey-hover;
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 479px) {
+
+  .pill {
+    &.red-xs {
+      color: $color-red;
+      border: 1px solid $color-red-border;
+
+      &:hover {
+        color: $color-red-hover;
+        border: 1px solid $color-red-hover;
+      }
+    }
+
+    &.pink-xs {
+      color: $color-pink;
+      border: 1px solid $color-pink-border;
+
+      &:hover {
+        color: $color-pink-hover;
+        border: 1px solid $color-pink-hover;
+      }
+    }
+
+    &.purple-xs {
+      color: $color-purple;
+      border: 1px solid $color-purple-border;
+
+      &:hover {
+        color: $color-purple-hover;
+        border: 1px solid $color-purple-hover;
+      }
+    }
+
+    &.deep-purple-xs {
+      color: $color-deep-purple;
+      border: 1px solid $color-deep-purple-border;
+
+      &:hover {
+        color: $color-deep-purple-hover;
+        border: 1px solid $color-deep-purple-hover;
+      }
+    }
+
+    &.indigo-xs {
+      color: $color-indigo;
+      border: 1px solid $color-indigo-border;
+
+      &:hover {
+        color: $color-indigo-hover;
+        border: 1px solid $color-indigo-hover;
+      }
+    }
+
+    &.blue-xs {
+      color: $color-blue;
+      border: 1px solid $color-blue-border;
+
+      &:hover {
+        color: $color-blue-hover;
+        border: 1px solid $color-blue-hover;
+      }
+    }
+
+    &.light-blue-xs {
+      color: $color-light-blue;
+      border: 1px solid $color-light-blue-border;
+
+      &:hover {
+        color: $color-light-blue-hover;
+        border: 1px solid $color-light-blue-hover;
+      }
+    }
+
+    &.cyan-xs {
+      color: $color-cyan;
+      border: 1px solid $color-cyan-border;
+
+      &:hover {
+        color: $color-cyan-hover;
+        border: 1px solid $color-cyan-hover;
+      }
+    }
+
+    &.teal-xs {
+      color: $color-teal;
+      border: 1px solid $color-teal-border;
+
+      &:hover {
+        color: $color-teal-hover;
+        border: 1px solid $color-teal-hover;
+      }
+    }
+
+    &.green-xs {
+      color: $color-green;
+      border: 1px solid $color-green-border;
+
+      &:hover {
+        color: $color-green-hover;
+        border: 1px solid $color-green-hover;
+      }
+    }
+
+    &.light-green-xs {
+      color: $color-light-green;
+      border: 1px solid $color-light-green-border;
+
+      &:hover {
+        color: $color-light-green-hover;
+        border: 1px solid $color-light-green-hover;
+      }
+    }
+
+    &.lime-xs {
+      color: $color-lime;
+      border: 1px solid $color-lime-border;
+
+      &:hover {
+        color: $color-lime-hover;
+        border: 1px solid $color-lime-hover;
+      }
+    }
+
+    &.yellow-xs {
+      color: $color-yellow;
+      border: 1px solid $color-yellow-border;
+
+      &:hover {
+        color: $color-yellow-hover;
+        border: 1px solid $color-yellow-hover;
+      }
+    }
+
+    &.amber-xs {
+      color: $color-amber;
+      border: 1px solid $color-amber-border;
+
+      &:hover {
+        color: $color-amber-hover;
+        border: 1px solid $color-amber-hover;
+      }
+    }
+
+    &.orange-xs {
+      color: $color-orange;
+      border: 1px solid $color-orange-border;
+
+      &:hover {
+        color: $color-orange-hover;
+        border: 1px solid $color-orange-hover;
+      }
+    }
+
+    &.deep-orange-xs {
+      color: $color-deep-orange;
+      border: 1px solid $color-deep-orange-border;
+
+      &:hover {
+        color: $color-deep-orange-hover;
+        border: 1px solid $color-deep-orange-hover;
+      }
+    }
+
+    &.brown-xs {
+      color: $color-brown;
+      border: 1px solid $color-brown-border;
+
+      &:hover {
+        color: $color-brown-hover;
+        border: 1px solid $color-brown-hover;
+      }
+    }
+
+    &.grey-xs {
+      color: $color-grey;
+      border: 1px solid $color-grey-border;
+
+      &:hover {
+        color: $color-grey-hover;
+        border: 1px solid $color-grey-hover;
+      }
+    }
+
+    &.blue-grey-xs {
+      color: $color-blue-grey;
+      border: 1px solid $color-blue-grey-border;
+
+      &:hover {
+        color: $color-blue-grey-hover;
+        border: 1px solid $color-blue-grey-hover;
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 319px) {
+}
