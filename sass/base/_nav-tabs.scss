@@ -1,1169 +1,258 @@
 //nav-tabs
 
 .nav-tabs {
-  border-bottom: 1px solid $default-color;
+  border-bottom: 1px solid $color-default;
 
   > li {
     > a {
       border-radius: 0;
 
       &:focus, &:hover {
-        color: $white;
+        color: $color-f;
         cursor: default;
-        border: 1px solid $default-color;
+        border: 1px solid $color-default;
         border-bottom-color: transparent;
-        background-color: $default-color;
+        background-color: $color-default;
       }
     }
 
-    &.active > a, &.active > a:focus, &.active > a:hover {
-      color: $white;
+    & > a.active, & > a.active:focus, & > a.active:hover {
+      color: $color-f;
       cursor: default;
-      border: 1px solid $default-color;
+      border: 1px solid $color-default;
       border-bottom-color: transparent;
-      background-color: $default-color;
+      background-color: $color-default;
     }
   }
 
-  &.empty {
-    border-bottom: 1px solid $color-ddd;
 
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $color-333;
+
+  &.empty {
+    border-bottom: 1px solid $color-d;
+
+    & > li > a:focus, & > li > a:hover, & > li > a.active, & > li > a.active:focus, & > li > a.active:hover {
+      color: $color-3;
       border: 1px solid transparent;
-      border-bottom: 3px solid $color-333;
+      border-bottom: 3px solid $color-3;
       background-color: transparent;
     }
   }
 
   &.white {
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $color-f;
 
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $color-333;
-      border: 1px solid $white;
-      background-color: $white;
+    & > li > a:focus, & > li > a:hover, & > li > a.active, & > li > a.active:focus, & > li > a.active:hover {
+      color: $color-3;
+      border: 1px solid $color-f;
+      background-color: $color-f;
     }
   }
 
   &.black {
-    border-bottom: 1px solid $color-333;
+    border-bottom: 1px solid $color-3;
 
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-333;
-      background-color: $color-333;
+    & > li > a:focus, & > li > a:hover, & > li > a.active, & > li > a.active:focus, & > li > a.active:hover {
+      color: $color-f;
+      border: 1px solid $color-3;
+      background-color: $color-3;
     }
   }
 
-  &.red {
-    border-bottom: 1px solid $color-red-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-red-border;
-      background-color: $color-red-bg;
-    }
-  }
-
-  &.pink {
-    border-bottom: 1px solid $color-pink-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-pink-border;
-      background-color: $color-pink-bg;
-    }
-  }
-
-  &.purple {
-    border-bottom: 1px solid $color-purple-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-purple-border;
-      background-color: $color-purple-bg;
-    }
-  }
-
-  &.deep-purple {
-    border-bottom: 1px solid $color-deep-purple-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-deep-purple-border;
-      background-color: $color-deep-purple-bg;
-    }
-  }
-
-  &.indigo {
-    border-bottom: 1px solid $color-indigo-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-indigo-border;
-      background-color: $color-indigo-bg;
-    }
-  }
-
-  &.blue {
-    border-bottom: 1px solid $color-blue-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-blue-border;
-      background-color: $color-blue-bg;
-    }
-  }
-
-  &.light-blue {
-    border-bottom: 1px solid $color-light-blue-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-light-blue-border;
-      background-color: $color-light-blue-bg;
-    }
-  }
-
-  &.cyan {
-    border-bottom: 1px solid $color-cyan-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $color-333;
-      border: 1px solid $color-cyan-border;
-      background-color: $color-cyan-bg;
-    }
-  }
-
-  &.teal {
-    border-bottom: 1px solid $color-teal-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-teal-border;
-      background-color: $color-teal-bg;
-    }
-  }
-
-  &.green {
-    border-bottom: 1px solid $color-green-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-green-border;
-      background-color: $color-green-bg;
-    }
-  }
-
-  &.light-green {
-    border-bottom: 1px solid $color-light-green-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $color-333;
-      border: 1px solid $color-light-green-border;
-      background-color: $color-light-green-bg;
-    }
-  }
-
-  &.lime {
-    border-bottom: 1px solid $color-lime-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $color-333;
-      border: 1px solid $color-lime-border;
-      background-color: $color-lime-bg;
-    }
-  }
-
-  &.yellow {
-    border-bottom: 1px solid $color-yellow-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $color-333;
-      border: 1px solid $color-yellow-border;
-      background-color: $color-yellow-bg;
-    }
-  }
-
-  &.amber {
-    border-bottom: 1px solid $color-amber-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $color-333;
-      border: 1px solid $color-amber-border;
-      background-color: $color-amber-bg;
-    }
-  }
-
-  &.orange {
-    border-bottom: 1px solid $color-orange-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-orange-border;
-      background-color: $color-orange-bg;
-    }
-  }
-
-  &.deep-orange {
-    border-bottom: 1px solid $color-deep-orange-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-deep-orange-border;
-      background-color: $color-deep-orange-bg;
-    }
-  }
-
-  &.brown {
-    border-bottom: 1px solid $color-brown-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-brown-border;
-      background-color: $color-brown-bg;
-    }
-  }
-
-  &.grey {
-    border-bottom: 1px solid $color-grey-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-grey-border;
-      background-color: $color-grey-bg;
-    }
-  }
-
-  &.blue-grey {
-    border-bottom: 1px solid $color-blue-grey-border;
-
-    & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-      color: $white;
-      border: 1px solid $color-blue-grey-border;
-      background-color: $color-blue-grey-bg;
+  @each $key, $value in $namespace-color {
+    &.#{$key} {
+      @include nav-tabs-variant($value, $value, $value);
     }
   }
 
 }
 
-//responsive
+//responsive-pc
 
 @media (max-width: 1199px) {
-
+  //Extra large devices (large desktops, 992px and 1200px)
   .nav-tabs {
-
     &.empty-lg {
-      border-bottom: 1px solid $color-ddd;
+      border-bottom: 1px solid $color-d;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
+        color: $color-3;
         border: 1px solid transparent;
-        border-bottom: 3px solid $color-333;
+        border-bottom: 3px solid $color-3;
         background-color: transparent;
       }
     }
 
     &.white-lg {
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid $color-f;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $white;
-        background-color: $white;
+        color: $color-3;
+        border: 1px solid $color-f;
+        background-color: $color-f;
       }
     }
 
     &.black-lg {
-      border-bottom: 1px solid $color-333;
+      border-bottom: 1px solid $color-3;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-333;
-        background-color: $color-333;
+        color: $color-f;
+        border: 1px solid $color-3;
+        background-color: $color-3;
       }
     }
 
-    &.red-lg {
-      border-bottom: 1px solid $color-red-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-red-border;
-        background-color: $color-red-bg;
+    @each $key, $value in $namespace-color {
+      &.#{$key}-lg {
+        @include nav-tabs-variant($value, $value, $value);
       }
     }
-
-    &.pink-lg {
-      border-bottom: 1px solid $color-pink-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-pink-border;
-        background-color: $color-pink-bg;
-      }
-    }
-
-    &.purple-lg {
-      border-bottom: 1px solid $color-purple-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-purple-border;
-        background-color: $color-purple-bg;
-      }
-    }
-
-    &.deep-purple-lg {
-      border-bottom: 1px solid $color-deep-purple-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-deep-purple-border;
-        background-color: $color-deep-purple-bg;
-      }
-    }
-
-    &.indigo-lg {
-      border-bottom: 1px solid $color-indigo-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-indigo-border;
-        background-color: $color-indigo-bg;
-      }
-    }
-
-    &.blue-lg {
-      border-bottom: 1px solid $color-blue-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-blue-border;
-        background-color: $color-blue-bg;
-      }
-    }
-
-    &.light-blue-lg {
-      border-bottom: 1px solid $color-light-blue-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-light-blue-border;
-        background-color: $color-light-blue-bg;
-      }
-    }
-
-    &.cyan-lg {
-      border-bottom: 1px solid $color-cyan-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-cyan-border;
-        background-color: $color-cyan-bg;
-      }
-    }
-
-    &.teal-lg {
-      border-bottom: 1px solid $color-teal-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-teal-border;
-        background-color: $color-teal-bg;
-      }
-    }
-
-    &.green-lg {
-      border-bottom: 1px solid $color-green-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-green-border;
-        background-color: $color-green-bg;
-      }
-    }
-
-    &.light-green-lg {
-      border-bottom: 1px solid $color-light-green-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-light-green-border;
-        background-color: $color-light-green-bg;
-      }
-    }
-
-    &.lime-lg {
-      border-bottom: 1px solid $color-lime-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-lime-border;
-        background-color: $color-lime-bg;
-      }
-    }
-
-    &.yellow-lg {
-      border-bottom: 1px solid $color-yellow-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-yellow-border;
-        background-color: $color-yellow-bg;
-      }
-    }
-
-    &.amber-lg {
-      border-bottom: 1px solid $color-amber-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-amber-border;
-        background-color: $color-amber-bg;
-      }
-    }
-
-    &.orange-lg {
-      border-bottom: 1px solid $color-orange-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-orange-border;
-        background-color: $color-orange-bg;
-      }
-    }
-
-    &.deep-orange-lg {
-      border-bottom: 1px solid $color-deep-orange-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-deep-orange-border;
-        background-color: $color-deep-orange-bg;
-      }
-    }
-
-    &.brown-lg {
-      border-bottom: 1px solid $color-brown-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-brown-border;
-        background-color: $color-brown-bg;
-      }
-    }
-
-    &.grey-lg {
-      border-bottom: 1px solid $color-grey-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-grey-border;
-        background-color: $color-grey-bg;
-      }
-    }
-
-    &.blue-grey-lg {
-      border-bottom: 1px solid $color-blue-grey-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-blue-grey-border;
-        background-color: $color-blue-grey-bg;
-      }
-    }
-
   }
-
 }
 
 @media (max-width: 991px) {
-
+  //Large devices (desktops, 768px and 992px)
   .nav-tabs {
-
     &.empty-md {
-      border-bottom: 1px solid $color-ddd;
+      border-bottom: 1px solid $color-d;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
+        color: $color-3;
         border: 1px solid transparent;
-        border-bottom: 3px solid $color-333;
+        border-bottom: 3px solid $color-3;
         background-color: transparent;
       }
     }
 
     &.white-md {
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid $color-f;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $white;
-        background-color: $white;
+        color: $color-3;
+        border: 1px solid $color-f;
+        background-color: $color-f;
       }
     }
 
     &.black-md {
-      border-bottom: 1px solid $color-333;
+      border-bottom: 1px solid $color-3;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-333;
-        background-color: $color-333;
+        color: $color-f;
+        border: 1px solid $color-3;
+        background-color: $color-3;
       }
     }
 
-    &.red-md {
-      border-bottom: 1px solid $color-red-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-red-border;
-        background-color: $color-red-bg;
+    @each $key, $value in $namespace-color {
+      &.#{$key}-md {
+        @include nav-tabs-variant($value, $value, $value);
       }
     }
-
-    &.pink-md {
-      border-bottom: 1px solid $color-pink-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-pink-border;
-        background-color: $color-pink-bg;
-      }
-    }
-
-    &.purple-md {
-      border-bottom: 1px solid $color-purple-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-purple-border;
-        background-color: $color-purple-bg;
-      }
-    }
-
-    &.deep-purple-md {
-      border-bottom: 1px solid $color-deep-purple-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-deep-purple-border;
-        background-color: $color-deep-purple-bg;
-      }
-    }
-
-    &.indigo-md {
-      border-bottom: 1px solid $color-indigo-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-indigo-border;
-        background-color: $color-indigo-bg;
-      }
-    }
-
-    &.blue-md {
-      border-bottom: 1px solid $color-blue-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-blue-border;
-        background-color: $color-blue-bg;
-      }
-    }
-
-    &.light-blue-md {
-      border-bottom: 1px solid $color-light-blue-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-light-blue-border;
-        background-color: $color-light-blue-bg;
-      }
-    }
-
-    &.cyan-md {
-      border-bottom: 1px solid $color-cyan-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-cyan-border;
-        background-color: $color-cyan-bg;
-      }
-    }
-
-    &.teal-md {
-      border-bottom: 1px solid $color-teal-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-teal-border;
-        background-color: $color-teal-bg;
-      }
-    }
-
-    &.green-md {
-      border-bottom: 1px solid $color-green-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-green-border;
-        background-color: $color-green-bg;
-      }
-    }
-
-    &.light-green-md {
-      border-bottom: 1px solid $color-light-green-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-light-green-border;
-        background-color: $color-light-green-bg;
-      }
-    }
-
-    &.lime-md {
-      border-bottom: 1px solid $color-lime-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-lime-border;
-        background-color: $color-lime-bg;
-      }
-    }
-
-    &.yellow-md {
-      border-bottom: 1px solid $color-yellow-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-yellow-border;
-        background-color: $color-yellow-bg;
-      }
-    }
-
-    &.amber-md {
-      border-bottom: 1px solid $color-amber-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-amber-border;
-        background-color: $color-amber-bg;
-      }
-    }
-
-    &.orange-md {
-      border-bottom: 1px solid $color-orange-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-orange-border;
-        background-color: $color-orange-bg;
-      }
-    }
-
-    &.deep-orange-md {
-      border-bottom: 1px solid $color-deep-orange-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-deep-orange-border;
-        background-color: $color-deep-orange-bg;
-      }
-    }
-
-    &.brown-md {
-      border-bottom: 1px solid $color-brown-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-brown-border;
-        background-color: $color-brown-bg;
-      }
-    }
-
-    &.grey-md {
-      border-bottom: 1px solid $color-grey-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-grey-border;
-        background-color: $color-grey-bg;
-      }
-    }
-
-    &.blue-grey-md {
-      border-bottom: 1px solid $color-blue-grey-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-blue-grey-border;
-        background-color: $color-blue-grey-bg;
-      }
-    }
-
   }
-
 }
 
 @media (max-width: 767px) {
-
+  //Medium devices (tablets, 576px and 768px)
   .nav-tabs {
-
     &.empty-sm {
-      border-bottom: 1px solid $color-ddd;
+      border-bottom: 1px solid $color-d;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
+        color: $color-3;
         border: 1px solid transparent;
-        border-bottom: 3px solid $color-333;
+        border-bottom: 3px solid $color-3;
         background-color: transparent;
       }
     }
 
     &.white-sm {
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid $color-f;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $white;
-        background-color: $white;
+        color: $color-3;
+        border: 1px solid $color-f;
+        background-color: $color-f;
       }
     }
 
     &.black-sm {
-      border-bottom: 1px solid $color-333;
+      border-bottom: 1px solid $color-3;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-333;
-        background-color: $color-333;
+        color: $color-f;
+        border: 1px solid $color-3;
+        background-color: $color-3;
       }
     }
 
-    &.red-sm {
-      border-bottom: 1px solid $color-red-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-red-border;
-        background-color: $color-red-bg;
+    @each $key, $value in $namespace-color {
+      &.#{$key}-sm {
+        @include nav-tabs-variant($value, $value, $value);
       }
     }
-
-    &.pink-sm {
-      border-bottom: 1px solid $color-pink-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-pink-border;
-        background-color: $color-pink-bg;
-      }
-    }
-
-    &.purple-sm {
-      border-bottom: 1px solid $color-purple-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-purple-border;
-        background-color: $color-purple-bg;
-      }
-    }
-
-    &.deep-purple-sm {
-      border-bottom: 1px solid $color-deep-purple-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-deep-purple-border;
-        background-color: $color-deep-purple-bg;
-      }
-    }
-
-    &.indigo-sm {
-      border-bottom: 1px solid $color-indigo-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-indigo-border;
-        background-color: $color-indigo-bg;
-      }
-    }
-
-    &.blue-sm {
-      border-bottom: 1px solid $color-blue-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-blue-border;
-        background-color: $color-blue-bg;
-      }
-    }
-
-    &.light-blue-sm {
-      border-bottom: 1px solid $color-light-blue-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-light-blue-border;
-        background-color: $color-light-blue-bg;
-      }
-    }
-
-    &.cyan-sm {
-      border-bottom: 1px solid $color-cyan-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-cyan-border;
-        background-color: $color-cyan-bg;
-      }
-    }
-
-    &.teal-sm {
-      border-bottom: 1px solid $color-teal-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-teal-border;
-        background-color: $color-teal-bg;
-      }
-    }
-
-    &.green-sm {
-      border-bottom: 1px solid $color-green-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-green-border;
-        background-color: $color-green-bg;
-      }
-    }
-
-    &.light-green-sm {
-      border-bottom: 1px solid $color-light-green-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-light-green-border;
-        background-color: $color-light-green-bg;
-      }
-    }
-
-    &.lime-sm {
-      border-bottom: 1px solid $color-lime-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-lime-border;
-        background-color: $color-lime-bg;
-      }
-    }
-
-    &.yellow-sm {
-      border-bottom: 1px solid $color-yellow-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-yellow-border;
-        background-color: $color-yellow-bg;
-      }
-    }
-
-    &.amber-sm {
-      border-bottom: 1px solid $color-amber-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-amber-border;
-        background-color: $color-amber-bg;
-      }
-    }
-
-    &.orange-sm {
-      border-bottom: 1px solid $color-orange-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-orange-border;
-        background-color: $color-orange-bg;
-      }
-    }
-
-    &.deep-orange-sm {
-      border-bottom: 1px solid $color-deep-orange-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-deep-orange-border;
-        background-color: $color-deep-orange-bg;
-      }
-    }
-
-    &.brown-sm {
-      border-bottom: 1px solid $color-brown-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-brown-border;
-        background-color: $color-brown-bg;
-      }
-    }
-
-    &.grey-sm {
-      border-bottom: 1px solid $color-grey-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-grey-border;
-        background-color: $color-grey-bg;
-      }
-    }
-
-    &.blue-grey-sm {
-      border-bottom: 1px solid $color-blue-grey-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-blue-grey-border;
-        background-color: $color-blue-grey-bg;
-      }
-    }
-
   }
-
 }
 
-@media (max-width: 479px) {
-
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
   .nav-tabs {
-
     &.empty-xs {
-      border-bottom: 1px solid $color-ddd;
+      border-bottom: 1px solid $color-d;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
+        color: $color-3;
         border: 1px solid transparent;
-        border-bottom: 3px solid $color-333;
+        border-bottom: 3px solid $color-3;
         background-color: transparent;
       }
     }
 
     &.white-xs {
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid $color-f;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $white;
-        background-color: $white;
+        color: $color-3;
+        border: 1px solid $color-f;
+        background-color: $color-f;
       }
     }
 
     &.black-xs {
-      border-bottom: 1px solid $color-333;
+      border-bottom: 1px solid $color-3;
 
       & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-333;
-        background-color: $color-333;
+        color: $color-f;
+        border: 1px solid $color-3;
+        background-color: $color-3;
       }
     }
 
-    &.red-xs {
-      border-bottom: 1px solid $color-red-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-red-border;
-        background-color: $color-red-bg;
+    @each $key, $value in $namespace-color {
+      &.#{$key}-xs {
+        @include nav-tabs-variant($value, $value, $value);
       }
     }
-
-    &.pink-xs {
-      border-bottom: 1px solid $color-pink-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-pink-border;
-        background-color: $color-pink-bg;
-      }
-    }
-
-    &.purple-xs {
-      border-bottom: 1px solid $color-purple-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-purple-border;
-        background-color: $color-purple-bg;
-      }
-    }
-
-    &.deep-purple-xs {
-      border-bottom: 1px solid $color-deep-purple-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-deep-purple-border;
-        background-color: $color-deep-purple-bg;
-      }
-    }
-
-    &.indigo-xs {
-      border-bottom: 1px solid $color-indigo-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-indigo-border;
-        background-color: $color-indigo-bg;
-      }
-    }
-
-    &.blue-xs {
-      border-bottom: 1px solid $color-blue-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-blue-border;
-        background-color: $color-blue-bg;
-      }
-    }
-
-    &.light-blue-xs {
-      border-bottom: 1px solid $color-light-blue-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-light-blue-border;
-        background-color: $color-light-blue-bg;
-      }
-    }
-
-    &.cyan-xs {
-      border-bottom: 1px solid $color-cyan-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-cyan-border;
-        background-color: $color-cyan-bg;
-      }
-    }
-
-    &.teal-xs {
-      border-bottom: 1px solid $color-teal-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-teal-border;
-        background-color: $color-teal-bg;
-      }
-    }
-
-    &.green-xs {
-      border-bottom: 1px solid $color-green-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-green-border;
-        background-color: $color-green-bg;
-      }
-    }
-
-    &.light-green-xs {
-      border-bottom: 1px solid $color-light-green-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-light-green-border;
-        background-color: $color-light-green-bg;
-      }
-    }
-
-    &.lime-xs {
-      border-bottom: 1px solid $color-lime-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-lime-border;
-        background-color: $color-lime-bg;
-      }
-    }
-
-    &.yellow-xs {
-      border-bottom: 1px solid $color-yellow-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-yellow-border;
-        background-color: $color-yellow-bg;
-      }
-    }
-
-    &.amber-xs {
-      border-bottom: 1px solid $color-amber-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $color-333;
-        border: 1px solid $color-amber-border;
-        background-color: $color-amber-bg;
-      }
-    }
-
-    &.orange-xs {
-      border-bottom: 1px solid $color-orange-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-orange-border;
-        background-color: $color-orange-bg;
-      }
-    }
-
-    &.deep-orange-xs {
-      border-bottom: 1px solid $color-deep-orange-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-deep-orange-border;
-        background-color: $color-deep-orange-bg;
-      }
-    }
-
-    &.brown-xs {
-      border-bottom: 1px solid $color-brown-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-brown-border;
-        background-color: $color-brown-bg;
-      }
-    }
-
-    &.grey-xs {
-      border-bottom: 1px solid $color-grey-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-grey-border;
-        background-color: $color-grey-bg;
-      }
-    }
-
-    &.blue-grey-xs {
-      border-bottom: 1px solid $color-blue-grey-border;
-
-      & > li > a:focus, & > li > a:hover, & > li.active > a, & > li.active > a:focus, & > li.active > a:hover {
-        color: $white;
-        border: 1px solid $color-blue-grey-border;
-        background-color: $color-blue-grey-bg;
-      }
-    }
-
   }
-
 }
 
-@media (max-width: 319px) {}
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

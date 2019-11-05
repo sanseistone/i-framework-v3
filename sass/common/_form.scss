@@ -1,700 +1,675 @@
 //form
 
-input {
-  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
-    /*chrome浏览器下
-    去除number类型输入框里的上下小箭头*/
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  &[type="number"] {
-    /*Firefox浏览器下
-    去除number类型输入框里的上下小箭头*/
-    -moz-appearance: textfield;
-  }
-
-  &:focus {
-    outline: none;
-  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /*chrome浏览器下
+  去除number类型输入框里的上下小箭头*/
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.form-control {
+input[type="number"] {
+  /*Firefox浏览器下
+  去除number类型输入框里的上下小箭头*/
+  -moz-appearance: textfield;
+}
+
+:focus {
+  outline: none;
+}
+
+.#{$form-control} {
   border-radius: 0;
   box-shadow: none;
   outline: none;
 
-  &:focus, &:hover {
-    border: 1px solid $default-color;
+  &:focus,
+  &:hover {
+    border: 1px solid $color-default;
     outline: 0;
     box-shadow: none;
   }
 
-  //color
-
-  &.white:focus, &.white:hover {
-    $border: 1px solid $white;
-    color: $white;
-    border: $border;
+  @each $key, $value in $red-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.black:focus, &.black:hover {
-    $border: 1px solid $black;
-    color: $black;
-    border: $border;
+  @each $key, $value in $pink-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.red:focus, &.red:hover {
-    $border: 1px solid $color-red-hover;
-    color: $color-red-hover;
-    border: $border;
+  @each $key, $value in $purple-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.pink:focus, &.pink:hover {
-    $border: 1px solid $color-pink-hover;
-    color: $color-pink-hover;
-    border: $border;
+  @each $key, $value in $deep-purple-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.purple:focus, &.purple:hover {
-    $border: 1px solid $color-purple-hover;
-    color: $color-purple-hover;
-    border: $border;
+  @each $key, $value in $indigo-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.deep-purple:focus, &.deep-purple:hover {
-    $border: 1px solid $color-deep-purple-hover;
-    color: $color-deep-purple-hover;
-    border: $border;
+  @each $key, $value in $blue-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.indigo:focus, &.indigo:hover {
-    $border: 1px solid $color-indigo-hover;
-    color: $color-indigo-hover;
-    border: $border;
+  @each $key, $value in $light-blue-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.blue:focus, &.blue:hover {
-    $border: 1px solid $color-blue-hover;
-    color: $color-blue-hover;
-    border: $border;
+  @each $key, $value in $cyan-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.light-blue:focus, &.light-blue:hover {
-    $border: 1px solid $color-light-blue-hover;
-    color: $color-light-blue-hover;
-    border: $border;
+  @each $key, $value in $teal-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.cyan:focus, &.cyan:hover {
-    $border: 1px solid $color-cyan-hover;
-    color: $color-cyan-hover;
-    border: $border;
+  @each $key, $value in $green-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.teal:focus, &.teal:hover {
-    $border: 1px solid $color-teal-hover;
-    color: $color-teal-hover;
-    border: $border;
+  @each $key, $value in $light-green-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.green:focus, &.green:hover {
-    $border: 1px solid $color-green-hover;
-    color: $color-green-hover;
-    border: $border;
+  @each $key, $value in $lime-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.light-green:focus, &.light-green:hover {
-    $border: 1px solid $color-light-green-hover;
-    color: $color-light-green-hover;
-    border: $border;
+  @each $key, $value in $yellow-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.lime:focus, &.lime:hover {
-    $border: 1px solid $color-lime-hover;
-    color: $color-lime-hover;
-    border: $border;
+  @each $key, $value in $amber-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.yellow:focus, &.yellow:hover {
-    $border: 1px solid $color-yellow-hover;
-    color: $color-yellow-hover;
-    border: $border;
+  @each $key, $value in $orange-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.amber:focus, &.amber:hover {
-    $border: 1px solid $color-amber-hover;
-    color: $color-amber-hover;
-    border: $border;
+  @each $key, $value in $deep-orange-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.orange:focus, &.orange:hover {
-    $border: 1px solid $color-orange-hover;
-    color: $color-orange-hover;
-    border: $border;
+  @each $key, $value in $brown-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.deep-orange:focus, &.deep-orange:hover {
-    $border: 1px solid $color-deep-orange-hover;
-    color: $color-deep-orange-hover;
-    border: $border;
+  @each $key, $value in $grey-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.brown:focus, &.brown:hover {
-    $border: 1px solid $color-brown-hover;
-    color: $color-brown-hover;
-    border: $border;
+  @each $key, $value in $blue-grey-series {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 
-  &.grey:focus, &.grey:hover {
-    $border: 1px solid $color-grey-hover;
-    color: $color-grey-hover;
-    border: $border;
-  }
-
-  &.blue-grey:focus, &.blue-grey:hover {
-    $border: 1px solid $color-blue-grey-hover;
-    color: $color-blue-grey-hover;
-    border: $border;
+  @each $key, $value in $namespace-color {
+    &.#{$key} {
+      @include form-variant($value);
+    }
   }
 }
 
-//responsive
+//responsive-pc
 
 @media (max-width: 1199px) {
-
-  .form-control {
-
-    &.white-lg:focus, &.white-lg:hover {
-      $border: 1px solid $white;
-      color: $white;
-      border: $border;
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$form-control} {
+    @each $key, $value in $red-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.black-lg:focus, &.black-lg:hover {
-      $border: 1px solid $black;
-      color: $black;
-      border: $border;
+    @each $key, $value in $pink-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.red-lg:focus, &.red-lg:hover {
-      $border: 1px solid $color-red-hover;
-      color: $color-red-hover;
-      border: $border;
+    @each $key, $value in $purple-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.pink-lg:focus, &.pink-lg:hover {
-      $border: 1px solid $color-pink-hover;
-      color: $color-pink-hover;
-      border: $border;
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.purple-lg:focus, &.purple-lg:hover {
-      $border: 1px solid $color-purple-hover;
-      color: $color-purple-hover;
-      border: $border;
+    @each $key, $value in $indigo-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.deep-purple-lg:focus, &.deep-purple-lg:hover {
-      $border: 1px solid $color-deep-purple-hover;
-      color: $color-deep-purple-hover;
-      border: $border;
+    @each $key, $value in $blue-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.indigo-lg:focus, &.indigo-lg:hover {
-      $border: 1px solid $color-indigo-hover;
-      color: $color-indigo-hover;
-      border: $border;
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.blue-lg:focus, &.blue-lg:hover {
-      $border: 1px solid $color-blue-hover;
-      color: $color-blue-hover;
-      border: $border;
+    @each $key, $value in $cyan-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.light-blue-lg:focus, &.light-blue-lg:hover {
-      $border: 1px solid $color-light-blue-hover;
-      color: $color-light-blue-hover;
-      border: $border;
+    @each $key, $value in $teal-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.cyan-lg:focus, &.cyan-lg:hover {
-      $border: 1px solid $color-cyan-hover;
-      color: $color-cyan-hover;
-      border: $border;
+    @each $key, $value in $green-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.teal-lg:focus, &.teal-lg:hover {
-      $border: 1px solid $color-teal-hover;
-      color: $color-teal-hover;
-      border: $border;
+    @each $key, $value in $light-green-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.green-lg:focus, &.green-lg:hover {
-      $border: 1px solid $color-green-hover;
-      color: $color-green-hover;
-      border: $border;
+    @each $key, $value in $lime-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.light-green-lg:focus, &.light-green-lg:hover {
-      $border: 1px solid $color-light-green-hover;
-      color: $color-light-green-hover;
-      border: $border;
+    @each $key, $value in $yellow-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.lime-lg:focus, &.lime-lg:hover {
-      $border: 1px solid $color-lime-hover;
-      color: $color-lime-hover;
-      border: $border;
+    @each $key, $value in $amber-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.yellow-lg:focus, &.yellow-lg:hover {
-      $border: 1px solid $color-yellow-hover;
-      color: $color-yellow-hover;
-      border: $border;
+    @each $key, $value in $orange-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.amber-lg:focus, &.amber-lg:hover {
-      $border: 1px solid $color-amber-hover;
-      color: $color-amber-hover;
-      border: $border;
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.orange-lg:focus, &.orange-lg:hover {
-      $border: 1px solid $color-orange-hover;
-      color: $color-orange-hover;
-      border: $border;
+    @each $key, $value in $brown-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.deep-orange-lg:focus, &.deep-orange-lg:hover {
-      $border: 1px solid $color-deep-orange-hover;
-      color: $color-deep-orange-hover;
-      border: $border;
+    @each $key, $value in $grey-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.brown-lg:focus, &.brown-lg:hover {
-      $border: 1px solid $color-brown-hover;
-      color: $color-brown-hover;
-      border: $border;
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
 
-    &.grey-lg:focus, &.grey-lg:hover {
-      $border: 1px solid $color-grey-hover;
-      color: $color-grey-hover;
-      border: $border;
+    @each $key, $value in $namespace-color {
+      &.#{$key}-lg {
+        @include form-variant($value);
+      }
     }
-
-    &.blue-grey-lg:focus, &.blue-grey-lg:hover {
-      $border: 1px solid $color-blue-grey-hover;
-      color: $color-blue-grey-hover;
-      border: $border;
-    }
-
   }
-
 }
 
 @media (max-width: 991px) {
-
-  .form-control {
-
-    &.white-md:focus, &.white-md:hover {
-      $border: 1px solid $white;
-      color: $white;
-      border: $border;
+  //Large devices (desktops, 768px and 992px)
+  .#{$form-control} {
+    @each $key, $value in $red-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.black-md:focus, &.black-md:hover {
-      $border: 1px solid $black;
-      color: $black;
-      border: $border;
+    @each $key, $value in $pink-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.red-md:focus, &.red-md:hover {
-      $border: 1px solid $color-red-hover;
-      color: $color-red-hover;
-      border: $border;
+    @each $key, $value in $purple-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.pink-md:focus, &.pink-md:hover {
-      $border: 1px solid $color-pink-hover;
-      color: $color-pink-hover;
-      border: $border;
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.purple-md:focus, &.purple-md:hover {
-      $border: 1px solid $color-purple-hover;
-      color: $color-purple-hover;
-      border: $border;
+    @each $key, $value in $indigo-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.deep-purple-md:focus, &.deep-purple-md:hover {
-      $border: 1px solid $color-deep-purple-hover;
-      color: $color-deep-purple-hover;
-      border: $border;
+    @each $key, $value in $blue-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.indigo-md:focus, &.indigo-md:hover {
-      $border: 1px solid $color-indigo-hover;
-      color: $color-indigo-hover;
-      border: $border;
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.blue-md:focus, &.blue-md:hover {
-      $border: 1px solid $color-blue-hover;
-      color: $color-blue-hover;
-      border: $border;
+    @each $key, $value in $cyan-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.light-blue-md:focus, &.light-blue-md:hover {
-      $border: 1px solid $color-light-blue-hover;
-      color: $color-light-blue-hover;
-      border: $border;
+    @each $key, $value in $teal-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.cyan-md:focus, &.cyan-md:hover {
-      $border: 1px solid $color-cyan-hover;
-      color: $color-cyan-hover;
-      border: $border;
+    @each $key, $value in $green-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.teal-md:focus, &.teal-md:hover {
-      $border: 1px solid $color-teal-hover;
-      color: $color-teal-hover;
-      border: $border;
+    @each $key, $value in $light-green-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.green-md:focus, &.green-md:hover {
-      $border: 1px solid $color-green-hover;
-      color: $color-green-hover;
-      border: $border;
+    @each $key, $value in $lime-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.light-green-md:focus, &.light-green-md:hover {
-      $border: 1px solid $color-light-green-hover;
-      color: $color-light-green-hover;
-      border: $border;
+    @each $key, $value in $yellow-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.lime-md:focus, &.lime-md:hover {
-      $border: 1px solid $color-lime-hover;
-      color: $color-lime-hover;
-      border: $border;
+    @each $key, $value in $amber-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.yellow-md:focus, &.yellow-md:hover {
-      $border: 1px solid $color-yellow-hover;
-      color: $color-yellow-hover;
-      border: $border;
+    @each $key, $value in $orange-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.amber-md:focus, &.amber-md:hover {
-      $border: 1px solid $color-amber-hover;
-      color: $color-amber-hover;
-      border: $border;
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.orange-md:focus, &.orange-md:hover {
-      $border: 1px solid $color-orange-hover;
-      color: $color-orange-hover;
-      border: $border;
+    @each $key, $value in $brown-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.deep-orange-md:focus, &.deep-orange-md:hover {
-      $border: 1px solid $color-deep-orange-hover;
-      color: $color-deep-orange-hover;
-      border: $border;
+    @each $key, $value in $grey-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.brown-md:focus, &.brown-md:hover {
-      $border: 1px solid $color-brown-hover;
-      color: $color-brown-hover;
-      border: $border;
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
 
-    &.grey-md:focus, &.grey-md:hover {
-      $border: 1px solid $color-grey-hover;
-      color: $color-grey-hover;
-      border: $border;
+    @each $key, $value in $namespace-color {
+      &.#{$key}-md {
+        @include form-variant($value);
+      }
     }
-
-    &.blue-grey-md:focus, &.blue-grey-md:hover {
-      $border: 1px solid $color-blue-grey-hover;
-      color: $color-blue-grey-hover;
-      border: $border;
-    }
-
   }
-
 }
 
 @media (max-width: 767px) {
-
-  .form-control {
-
-    &.white-sm:focus, &.white-sm:hover {
-      $border: 1px solid $white;
-      color: $white;
-      border: $border;
+  //Medium devices (tablets, 576px and 768px)
+  .#{$form-control} {
+    @each $key, $value in $red-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.black-sm:focus, &.black-sm:hover {
-      $border: 1px solid $black;
-      color: $black;
-      border: $border;
+    @each $key, $value in $pink-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.red-sm:focus, &.red-sm:hover {
-      $border: 1px solid $color-red-hover;
-      color: $color-red-hover;
-      border: $border;
+    @each $key, $value in $purple-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.pink-sm:focus, &.pink-sm:hover {
-      $border: 1px solid $color-pink-hover;
-      color: $color-pink-hover;
-      border: $border;
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.purple-sm:focus, &.purple-sm:hover {
-      $border: 1px solid $color-purple-hover;
-      color: $color-purple-hover;
-      border: $border;
+    @each $key, $value in $indigo-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.deep-purple-sm:focus, &.deep-purple-sm:hover {
-      $border: 1px solid $color-deep-purple-hover;
-      color: $color-deep-purple-hover;
-      border: $border;
+    @each $key, $value in $blue-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.indigo-sm:focus, &.indigo-sm:hover {
-      $border: 1px solid $color-indigo-hover;
-      color: $color-indigo-hover;
-      border: $border;
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.blue-sm:focus, &.blue-sm:hover {
-      $border: 1px solid $color-blue-hover;
-      color: $color-blue-hover;
-      border: $border;
+    @each $key, $value in $cyan-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.light-blue-sm:focus, &.light-blue-sm:hover {
-      $border: 1px solid $color-light-blue-hover;
-      color: $color-light-blue-hover;
-      border: $border;
+    @each $key, $value in $teal-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.cyan-sm:focus, &.cyan-sm:hover {
-      $border: 1px solid $color-cyan-hover;
-      color: $color-cyan-hover;
-      border: $border;
+    @each $key, $value in $green-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.teal-sm:focus, &.teal-sm:hover {
-      $border: 1px solid $color-teal-hover;
-      color: $color-teal-hover;
-      border: $border;
+    @each $key, $value in $light-green-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.green-sm:focus, &.green-sm:hover {
-      $border: 1px solid $color-green-hover;
-      color: $color-green-hover;
-      border: $border;
+    @each $key, $value in $lime-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.light-green-sm:focus, &.light-green-sm:hover {
-      $border: 1px solid $color-light-green-hover;
-      color: $color-light-green-hover;
-      border: $border;
+    @each $key, $value in $yellow-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.lime-sm:focus, &.lime-sm:hover {
-      $border: 1px solid $color-lime-hover;
-      color: $color-lime-hover;
-      border: $border;
+    @each $key, $value in $amber-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.yellow-sm:focus, &.yellow-sm:hover {
-      $border: 1px solid $color-yellow-hover;
-      color: $color-yellow-hover;
-      border: $border;
+    @each $key, $value in $orange-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.amber-sm:focus, &.amber-sm:hover {
-      $border: 1px solid $color-amber-hover;
-      color: $color-amber-hover;
-      border: $border;
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.orange-sm:focus, &.orange-sm:hover {
-      $border: 1px solid $color-orange-hover;
-      color: $color-orange-hover;
-      border: $border;
+    @each $key, $value in $brown-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.deep-orange-sm:focus, &.deep-orange-sm:hover {
-      $border: 1px solid $color-deep-orange-hover;
-      color: $color-deep-orange-hover;
-      border: $border;
+    @each $key, $value in $grey-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.brown-sm:focus, &.brown-sm:hover {
-      $border: 1px solid $color-brown-hover;
-      color: $color-brown-hover;
-      border: $border;
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
 
-    &.grey-sm:focus, &.grey-sm:hover {
-      $border: 1px solid $color-grey-hover;
-      color: $color-grey-hover;
-      border: $border;
+    @each $key, $value in $namespace-color {
+      &.#{$key}-sm {
+        @include form-variant($value);
+      }
     }
-
-    &.blue-grey-sm:focus, &.blue-grey-sm:hover {
-      $border: 1px solid $color-blue-grey-hover;
-      color: $color-blue-grey-hover;
-      border: $border;
-    }
-
   }
-
 }
 
-@media (max-width: 479px) {
-
-  .form-control {
-
-    &.white-xs:focus, &.white-xs:hover {
-      $border: 1px solid $white;
-      color: $white;
-      border: $border;
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$form-control} {
+    @each $key, $value in $red-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.black-xs:focus, &.black-xs:hover {
-      $border: 1px solid $black;
-      color: $black;
-      border: $border;
+    @each $key, $value in $pink-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.red-xs:focus, &.red-xs:hover {
-      $border: 1px solid $color-red-hover;
-      color: $color-red-hover;
-      border: $border;
+    @each $key, $value in $purple-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.pink-xs:focus, &.pink-xs:hover {
-      $border: 1px solid $color-pink-hover;
-      color: $color-pink-hover;
-      border: $border;
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.purple-xs:focus, &.purple-xs:hover {
-      $border: 1px solid $color-purple-hover;
-      color: $color-purple-hover;
-      border: $border;
+    @each $key, $value in $indigo-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.deep-purple-xs:focus, &.deep-purple-xs:hover {
-      $border: 1px solid $color-deep-purple-hover;
-      color: $color-deep-purple-hover;
-      border: $border;
+    @each $key, $value in $blue-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.indigo-xs:focus, &.indigo-xs:hover {
-      $border: 1px solid $color-indigo-hover;
-      color: $color-indigo-hover;
-      border: $border;
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.blue-xs:focus, &.blue-xs:hover {
-      $border: 1px solid $color-blue-hover;
-      color: $color-blue-hover;
-      border: $border;
+    @each $key, $value in $cyan-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.light-blue-xs:focus, &.light-blue-xs:hover {
-      $border: 1px solid $color-light-blue-hover;
-      color: $color-light-blue-hover;
-      border: $border;
+    @each $key, $value in $teal-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.cyan-xs:focus, &.cyan-xs:hover {
-      $border: 1px solid $color-cyan-hover;
-      color: $color-cyan-hover;
-      border: $border;
+    @each $key, $value in $green-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.teal-xs:focus, &.teal-xs:hover {
-      $border: 1px solid $color-teal-hover;
-      color: $color-teal-hover;
-      border: $border;
+    @each $key, $value in $light-green-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.green-xs:focus, &.green-xs:hover {
-      $border: 1px solid $color-green-hover;
-      color: $color-green-hover;
-      border: $border;
+    @each $key, $value in $lime-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.light-green-xs:focus, &.light-green-xs:hover {
-      $border: 1px solid $color-light-green-hover;
-      color: $color-light-green-hover;
-      border: $border;
+    @each $key, $value in $yellow-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.lime-xs:focus, &.lime-xs:hover {
-      $border: 1px solid $color-lime-hover;
-      color: $color-lime-hover;
-      border: $border;
+    @each $key, $value in $amber-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.yellow-xs:focus, &.yellow-xs:hover {
-      $border: 1px solid $color-yellow-hover;
-      color: $color-yellow-hover;
-      border: $border;
+    @each $key, $value in $orange-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.amber-xs:focus, &.amber-xs:hover {
-      $border: 1px solid $color-amber-hover;
-      color: $color-amber-hover;
-      border: $border;
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.orange-xs:focus, &.orange-xs:hover {
-      $border: 1px solid $color-orange-hover;
-      color: $color-orange-hover;
-      border: $border;
+    @each $key, $value in $brown-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.deep-orange-xs:focus, &.deep-orange-xs:hover {
-      $border: 1px solid $color-deep-orange-hover;
-      color: $color-deep-orange-hover;
-      border: $border;
+    @each $key, $value in $grey-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.brown-xs:focus, &.brown-xs:hover {
-      $border: 1px solid $color-brown-hover;
-      color: $color-brown-hover;
-      border: $border;
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
 
-    &.grey-xs:focus, &.grey-xs:hover {
-      $border: 1px solid $color-grey-hover;
-      color: $color-grey-hover;
-      border: $border;
+    @each $key, $value in $namespace-color {
+      &.#{$key}-xs {
+        @include form-variant($value);
+      }
     }
-
-    &.blue-grey-xs:focus, &.blue-grey-xs:hover {
-      $border: 1px solid $color-blue-grey-hover;
-      color: $color-blue-grey-hover;
-      border: $border;
-    }
-
   }
-
 }
 
-@media (max-width: 319px) {}
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

@@ -1,60 +1,103 @@
-//column
-
 //global
 
-.container {
-  width: 1200px;
+.#{$container} {
+  max-width: 1200px;
 }
 
-.container-fluid {
+.#{$container-fluid} {
   width: 100%;
 }
 
-.container,
-.container-fluid {
+.#{$container},
+.#{$container-fluid} {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.grid {
-  margin-left: -15px;
+.#{$layout},
+.#{$grid},
+.#{$row} {
   margin-right: -15px;
+  margin-left: -15px;
 }
 
-.wrapper,
-.package {
+.#{$layout},
+.#{$grid},
+.#{$row} {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.#{$wrapper},
+.#{$package} {
   position: relative;
-  display: block;
   width: 100%;
-  float: left;
 }
 
-//responsive
+.#{$wrapper},
+.#{$package} {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.#{$wrapper},
+.#{$package} {
+  //display: block;
+}
+
+//responsive-pc
 
 @media (max-width: 1199px) {
-  .container {
-    width: auto;
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$container} {
+    max-width: inherit;
   }
 }
 
 @media (max-width: 991px) {
-  .container {
-    width: auto;
+  //Large devices (desktops, 768px and 992px)
+  .#{$container} {
+    max-width: inherit;
   }
 }
 
 @media (max-width: 767px) {
-  .container {
-    width: auto;
+  //Medium devices (tablets, 576px and 768px)
+  .#{$container} {
+    max-width: inherit;
   }
 }
 
-@media (max-width: 479px) {
-  .container {
-    width: auto;
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$container} {
+    max-width: inherit;
   }
 }
 
-@media (max-width: 319px) {}
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

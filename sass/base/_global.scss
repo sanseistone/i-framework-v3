@@ -1,11 +1,17 @@
 //body
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
-  &:before, &:after {
+  &::before, &::after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -13,29 +19,29 @@
 }
 
 body {
-  font-family: $font-family;
-  font-size: $font-size;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
   line-height: $line-height-default;
-  color: #333;
-  background-color: #fff;
+  color: $color-3;
+  background-color: $color-f;
   padding: 0;
   margin: 0;
 }
 
 a {
-  color: #333;
+  color: $color-3;
   transition: all .3s ease;
 
   &:hover {
-    color: $default-color;
-    text-decoration: none;
+    color: $color-default;
+    //text-decoration: none;
   }
 
   &:focus {
     outline: none;
     outline-offset: 0;
-    color: $default-color;
-    text-decoration: none;
+    color: $color-default;
+    //text-decoration: none;
   }
 }
 
@@ -72,7 +78,7 @@ header {
     margin-right: 15px;
 
     &::before {
-      font-family: FontAwesome;
+      font-family: "Font Awesome 5 Pro";
       padding-right: 5px;
     }
   }
@@ -101,68 +107,6 @@ header {
   }
 }
 
-//products-grid
-
-.products-grid {
-  position: relative;
-  width: 100%;
-  float: left;
-}
-
-.col-list {
-  /*margin-bottom: 30px;*/
-}
-
-.col-full {
-  width: 100%;
-  float: left;
-
-  & .item-box .pic-box {
-    width: 30%;
-    float: left;
-    margin-bottom: 0;
-  }
-
-  & .item-box .info {
-    width: 70%;
-    float: left;
-    padding-left: 30px;
-
-    & .title, & .star, & .price {
-      display: block;
-    }
-
-    & .title {
-      font-weight: bold;
-    }
-
-    & .text-summary {
-      display: block;
-    }
-  }
-}
-
-.col-box .item-box .text-summary {
-  display: none;
-}
-
-.grid-choice {
-  $color: #3597e2;
-
-  & .btn, & .btn:hover {
-    color: $color;
-    padding: 3px 8px;
-    border: 1px solid $color;
-    background-color: #fff;
-  }
-
-  & .active, & .active:focus, & .active:hover, & .active:active, & .active:active:focus, & .active:active:hover {
-    color: #fff;
-    border: 1px solid $color;
-    background-color: $color;
-  }
-}
-
 //other
 
 #scrollUp {
@@ -178,14 +122,41 @@ header {
 footer {
 }
 
-//responsive
+//responsive-pc
 
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+}
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+}
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+}
 
-@media (max-width: 479px) {}
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+}
 
-@media (max-width: 319px) {}
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

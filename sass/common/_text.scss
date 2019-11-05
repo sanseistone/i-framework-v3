@@ -1,21 +1,23 @@
-//text
-
 //text-align
 
 .#{$text} {
-  &-left, &-left > * {
+  &-#{$left},
+  &-#{$left} > * {
     text-align: left;
   }
 
-  &-center, &-center > * {
+  &-#{$center},
+  &-#{$center} > * {
     text-align: center;
   }
 
-  &-right, &-right > * {
+  &-#{$right},
+  &-#{$right} > * {
     text-align: right;
   }
 
-  &-justify, &-justify > * {
+  &-#{$justify},
+  &-#{$justify} > * {
     text-align: justify;
   }
 }
@@ -23,27 +25,27 @@
 //vertical-align
 
 .#{$align} {
-  &-baseline {
+  &-#{$base} {
     vertical-align: baseline;
   }
 
-  &-top {
+  &-#{$top} {
     vertical-align: top;
   }
 
-  &-middle {
+  &-#{$middle} {
     vertical-align: middle;
   }
 
-  &-bottom {
+  &-#{$bottom} {
     vertical-align: bottom;
   }
 
-  &-text-top {
+  &-t-#{$top} {
     vertical-align: text-top;
   }
 
-  &-text-bottom {
+  &-t-#{$bottom} {
     vertical-align: text-bottom;
   }
 }
@@ -51,7 +53,7 @@
 //white-space
 
 .#{$white-space} {
-  &-normal {
+  &-#{$normal} {
     white-space: normal;
   }
 
@@ -86,7 +88,7 @@
 
 //multiple-lines
 
-.single-line {
+.#{$single-lines} {
   width: 100%;
   display: block;
   white-space: nowrap;
@@ -94,142 +96,113 @@
   overflow: hidden;
 }
 
-.multiple-lines {
+.#{$multiple-lines} {
   width: 100%;
   display: -webkit-box;
-  float: left;
+  /*float: left;*/
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
 
-  &.one {
-    height: calc(19.6px * 1);
-    -webkit-line-clamp: 1;
-  }
-
-  &.two {
-    height: calc(19.6px * 2);
-    -webkit-line-clamp: 2;
-  }
-
-  &.three {
-    height: calc(19.6px * 3);
-    -webkit-line-clamp: 3;
-  }
-
-  &.four {
-    height: calc(19.6px * 4);
-    -webkit-line-clamp: 4;
-  }
-
-  &.five {
-    height: calc(19.6px * 5);
-    -webkit-line-clamp: 5;
-  }
-
-  &.six {
-    height: calc(19.6px * 6);
-    -webkit-line-clamp: 6;
-  }
-
-  &.one.font-12 {
-    height: calc(16.8px * 1);
-  }
-
-  &.two.font-12 {
-    height: calc(16.8px * 2);
-  }
-
-  &.three.font-12 {
-    height: calc(16.8px * 3);
-  }
-
-  &.four.font-12 {
-    height: calc(16.8px * 4);
-  }
-
-  &.five.font-12 {
-    height: calc(16.8px * 5);
-  }
-
-  &.six.font-12 {
-    height: calc(16.8px * 6);
-  }
-
-  &.one.font-16 {
-    height: calc(22.4px * 1);
-  }
-
-  &.two.font-16 {
-    height: calc(22.4px * 2);
-  }
-
-  &.three.font-16 {
-    height: calc(22.4px * 3);
-  }
-
-  &.four.font-16 {
-    height: calc(22.4px * 4);
-  }
-
-  &.five.font-16 {
-    height: calc(22.4px * 5);
-  }
-
-  &.six.font-16 {
-    height: calc(22.4px * 6);
+@each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+  .#{$multiple-lines} {
+    &.#{$lines-number}.#{$font-r075} {
+      height: calc(#{$rem-1} * .75 * #{$line-height-default} * #{$lines-line});
+      -webkit-line-clamp: $lines-line;
+    }
   }
 }
 
-//responsive
+@each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+  .#{$multiple-lines} {
+    &.#{$lines-number}.#{$font-r0875} {
+      height: calc(#{$rem-1} * .875 * #{$line-height-default} * #{$lines-line});
+      -webkit-line-clamp: $lines-line;
+    }
+  }
+}
+
+@each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+  .#{$multiple-lines} {
+    &.#{$lines-number} {
+      height: calc(#{$rem-1} * 1 * #{$line-height-default} * #{$lines-line});
+      -webkit-line-clamp: $lines-line;
+    }
+  }
+}
+
+@each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+  .#{$multiple-lines} {
+    &.#{$lines-number}.#{$font-r125} {
+      height: calc(#{$rem-1} * 1.25 * #{$line-height-default} * #{$lines-line});
+      -webkit-line-clamp: $lines-line;
+    }
+  }
+}
+
+@each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+  .#{$multiple-lines} {
+    &.#{$lines-number}.#{$font-r150} {
+      height: calc(#{$rem-1} * 1.5 * #{$line-height-default} * #{$lines-line});
+      -webkit-line-clamp: $lines-line;
+    }
+  }
+}
+
+//responsive-pc
 
 @media (max-width: 1199px) {
-
+  //Extra large devices (large desktops, 992px and 1200px)
   .#{$text} {
-    &-left-lg, &-left-lg > * {
+    &-#{$left}-lg,
+    &-#{$left}-lg > * {
       text-align: left;
     }
 
-    &-center-lg, &-center-lg > * {
+    &-#{$center}-lg,
+    &-#{$center}-lg > * {
       text-align: center;
     }
 
-    &-right-lg, &-right-lg > * {
+    &-#{$right}-lg,
+    &-#{$right}-lg > * {
       text-align: right;
     }
 
-    &-justify-lg, &-justify-lg > * {
+    &-#{$justify}-lg,
+    &-#{$justify}-lg > * {
       text-align: justify;
     }
   }
 
   .#{$align} {
-    &-baseline-lg {
+    &-#{$base}-lg {
       vertical-align: baseline;
     }
 
-    &-top-lg {
+    &-#{$top}-lg {
       vertical-align: top;
     }
 
-    &-middle-lg {
+    &-#{$middle}-lg {
       vertical-align: middle;
     }
 
-    &-bottom-lg {
+    &-#{$bottom}-lg {
       vertical-align: bottom;
     }
 
-    &-text-top-lg {
+    &-t-#{$top}-lg {
       vertical-align: text-top;
     }
 
-    &-text-bottom-lg {
+    &-t-#{$bottom}-lg {
       vertical-align: text-bottom;
     }
   }
 
   .#{$white-space} {
-    &-normal-lg {
+    &-#{$normal}-lg {
       white-space: normal;
     }
 
@@ -260,7 +233,7 @@
     }
   }
 
-  .single-line-lg {
+  .#{$single-lines}-lg {
     width: 100%;
     display: block;
     white-space: nowrap;
@@ -268,142 +241,104 @@
     overflow: hidden;
   }
 
-  .multiple-lines {
-    width: 100%;
-    display: -webkit-box;
-    float: left;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    &.one-lg {
-      height: calc(19.6px * 1);
-      -webkit-line-clamp: 1;
-    }
-
-    &.two-lg {
-      height: calc(19.6px * 2);
-      -webkit-line-clamp: 2;
-    }
-
-    &.three-lg {
-      height: calc(19.6px * 3);
-      -webkit-line-clamp: 3;
-    }
-
-    &.four-lg {
-      height: calc(19.6px * 4);
-      -webkit-line-clamp: 4;
-    }
-
-    &.five-lg {
-      height: calc(19.6px * 5);
-      -webkit-line-clamp: 5;
-    }
-
-    &.six-lg {
-      height: calc(19.6px * 6);
-      -webkit-line-clamp: 6;
-    }
-
-    &.one-lg.font-12 {
-      height: calc(16.8px * 1);
-    }
-
-    &.two-lg.font-12 {
-      height: calc(16.8px * 2);
-    }
-
-    &.three-lg.font-12 {
-      height: calc(16.8px * 3);
-    }
-
-    &.four-lg.font-12 {
-      height: calc(16.8px * 4);
-    }
-
-    &.five-lg.font-12 {
-      height: calc(16.8px * 5);
-    }
-
-    &.six-lg.font-12 {
-      height: calc(16.8px * 6);
-    }
-
-    &.one-lg.font-16 {
-      height: calc(22.4px * 1);
-    }
-
-    &.two-lg.font-16 {
-      height: calc(22.4px * 2);
-    }
-
-    &.three-lg.font-16 {
-      height: calc(22.4px * 3);
-    }
-
-    &.four-lg.font-16 {
-      height: calc(22.4px * 4);
-    }
-
-    &.five-lg.font-16 {
-      height: calc(22.4px * 5);
-    }
-
-    &.six-lg.font-16 {
-      height: calc(22.4px * 6);
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-lg.#{$font-r075} {
+        height: calc(#{$rem-1} * .75 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
     }
   }
 
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-lg.#{$font-r0875} {
+        height: calc(#{$rem-1} * .875 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-lg {
+        height: calc(#{$rem-1} * 1 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-lg.#{$font-r125} {
+        height: calc(#{$rem-1} * 1.25 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-lg.#{$font-r150} {
+        height: calc(#{$rem-1} * 1.5 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
-
+  //Large devices (desktops, 768px and 992px)
   .#{$text} {
-    &-left-md, &-left-md > * {
+    &-#{$left}-md,
+    &-#{$left}-md > * {
       text-align: left;
     }
 
-    &-center-md, &-center-md > * {
+    &-#{$center}-md,
+    &-#{$center}-md > * {
       text-align: center;
     }
 
-    &-right-md, &-right-md > * {
+    &-#{$right}-md,
+    &-#{$right}-md > * {
       text-align: right;
     }
 
-    &-justify-md, &-justify-md > * {
+    &-#{$justify}-md,
+    &-#{$justify}-md > * {
       text-align: justify;
     }
   }
 
   .#{$align} {
-    &-baseline-md {
+    &-#{$base}-md {
       vertical-align: baseline;
     }
 
-    &-top-md {
+    &-#{$top}-md {
       vertical-align: top;
     }
 
-    &-middle-md {
+    &-#{$middle}-md {
       vertical-align: middle;
     }
 
-    &-bottom-md {
+    &-#{$bottom}-md {
       vertical-align: bottom;
     }
 
-    &-text-top-md {
+    &-t-#{$top}-md {
       vertical-align: text-top;
     }
 
-    &-text-bottom-md {
+    &-t-#{$bottom}-md {
       vertical-align: text-bottom;
     }
   }
 
   .#{$white-space} {
-    &-normal-md {
+    &-#{$normal}-md {
       white-space: normal;
     }
 
@@ -434,7 +369,7 @@
     }
   }
 
-  .single-line-md {
+  .#{$single-lines}-md {
     width: 100%;
     display: block;
     white-space: nowrap;
@@ -442,142 +377,104 @@
     overflow: hidden;
   }
 
-  .multiple-lines {
-    width: 100%;
-    display: -webkit-box;
-    float: left;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    &.one-md {
-      height: calc(19.6px * 1);
-      -webkit-line-clamp: 1;
-    }
-
-    &.two-md {
-      height: calc(19.6px * 2);
-      -webkit-line-clamp: 2;
-    }
-
-    &.three-md {
-      height: calc(19.6px * 3);
-      -webkit-line-clamp: 3;
-    }
-
-    &.four-md {
-      height: calc(19.6px * 4);
-      -webkit-line-clamp: 4;
-    }
-
-    &.five-md {
-      height: calc(19.6px * 5);
-      -webkit-line-clamp: 5;
-    }
-
-    &.six-md {
-      height: calc(19.6px * 6);
-      -webkit-line-clamp: 6;
-    }
-
-    &.one-md.font-12 {
-      height: calc(16.8px * 1);
-    }
-
-    &.two-md.font-12 {
-      height: calc(16.8px * 2);
-    }
-
-    &.three-md.font-12 {
-      height: calc(16.8px * 3);
-    }
-
-    &.four-md.font-12 {
-      height: calc(16.8px * 4);
-    }
-
-    &.five-md.font-12 {
-      height: calc(16.8px * 5);
-    }
-
-    &.six-md.font-12 {
-      height: calc(16.8px * 6);
-    }
-
-    &.one-md.font-16 {
-      height: calc(22.4px * 1);
-    }
-
-    &.two-md.font-16 {
-      height: calc(22.4px * 2);
-    }
-
-    &.three-md.font-16 {
-      height: calc(22.4px * 3);
-    }
-
-    &.four-md.font-16 {
-      height: calc(22.4px * 4);
-    }
-
-    &.five-md.font-16 {
-      height: calc(22.4px * 5);
-    }
-
-    &.six-md.font-16 {
-      height: calc(22.4px * 6);
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-md.#{$font-r075} {
+        height: calc(#{$rem-1} * .75 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
     }
   }
 
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-md.#{$font-r0875} {
+        height: calc(#{$rem-1} * .875 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-md {
+        height: calc(#{$rem-1} * 1 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-md.#{$font-r125} {
+        height: calc(#{$rem-1} * 1.25 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-md.#{$font-r150} {
+        height: calc(#{$rem-1} * 1.5 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
-
+  //Medium devices (tablets, 576px and 768px)
   .#{$text} {
-    &-left-sm, &-left-sm > * {
+    &-#{$left}-sm,
+    &-#{$left}-sm > * {
       text-align: left;
     }
 
-    &-center-sm, &-center-sm > * {
+    &-#{$center}-sm,
+    &-#{$center}-sm > * {
       text-align: center;
     }
 
-    &-right-sm, &-right-sm > * {
+    &-#{$right}-sm,
+    &-#{$right}-sm > * {
       text-align: right;
     }
 
-    &-justify-sm, &-justify-sm > * {
+    &-#{$justify}-sm,
+    &-#{$justify}-sm > * {
       text-align: justify;
     }
   }
 
   .#{$align} {
-    &-baseline-sm {
+    &-#{$base}-sm {
       vertical-align: baseline;
     }
 
-    &-top-sm {
+    &-#{$top}-sm {
       vertical-align: top;
     }
 
-    &-middle-sm {
+    &-#{$middle}-sm {
       vertical-align: middle;
     }
 
-    &-bottom-sm {
+    &-#{$bottom}-sm {
       vertical-align: bottom;
     }
 
-    &-text-top-sm {
+    &-t-#{$top}-sm {
       vertical-align: text-top;
     }
 
-    &-text-bottom-sm {
+    &-t-#{$bottom}-sm {
       vertical-align: text-bottom;
     }
   }
 
   .#{$white-space} {
-    &-normal-sm {
+    &-#{$normal}-sm {
       white-space: normal;
     }
 
@@ -608,7 +505,7 @@
     }
   }
 
-  .single-line-sm {
+  .#{$single-lines}-sm {
     width: 100%;
     display: block;
     white-space: nowrap;
@@ -616,142 +513,104 @@
     overflow: hidden;
   }
 
-  .multiple-lines {
-    width: 100%;
-    display: -webkit-box;
-    float: left;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    &.one-sm {
-      height: calc(19.6px * 1);
-      -webkit-line-clamp: 1;
-    }
-
-    &.two-sm {
-      height: calc(19.6px * 2);
-      -webkit-line-clamp: 2;
-    }
-
-    &.three-sm {
-      height: calc(19.6px * 3);
-      -webkit-line-clamp: 3;
-    }
-
-    &.four-sm {
-      height: calc(19.6px * 4);
-      -webkit-line-clamp: 4;
-    }
-
-    &.five-sm {
-      height: calc(19.6px * 5);
-      -webkit-line-clamp: 5;
-    }
-
-    &.six-sm {
-      height: calc(19.6px * 6);
-      -webkit-line-clamp: 6;
-    }
-
-    &.one-sm.font-12 {
-      height: calc(16.8px * 1);
-    }
-
-    &.two-sm.font-12 {
-      height: calc(16.8px * 2);
-    }
-
-    &.three-sm.font-12 {
-      height: calc(16.8px * 3);
-    }
-
-    &.four-sm.font-12 {
-      height: calc(16.8px * 4);
-    }
-
-    &.five-sm.font-12 {
-      height: calc(16.8px * 5);
-    }
-
-    &.six-sm.font-12 {
-      height: calc(16.8px * 6);
-    }
-
-    &.one-sm.font-16 {
-      height: calc(22.4px * 1);
-    }
-
-    &.two-sm.font-16 {
-      height: calc(22.4px * 2);
-    }
-
-    &.three-sm.font-16 {
-      height: calc(22.4px * 3);
-    }
-
-    &.four-sm.font-16 {
-      height: calc(22.4px * 4);
-    }
-
-    &.five-sm.font-16 {
-      height: calc(22.4px * 5);
-    }
-
-    &.six-sm.font-16 {
-      height: calc(22.4px * 6);
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-sm.#{$font-r075} {
+        height: calc(#{$rem-1} * .75 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
     }
   }
 
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-sm.#{$font-r0875} {
+        height: calc(#{$rem-1} * .875 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-sm {
+        height: calc(#{$rem-1} * 1 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-sm.#{$font-r125} {
+        height: calc(#{$rem-1} * 1.25 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-sm.#{$font-r150} {
+        height: calc(#{$rem-1} * 1.5 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
 }
 
-@media (max-width: 479px) {
-
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
   .#{$text} {
-    &-left-xs, &-left-xs > * {
+    &-#{$left}-xs,
+    &-#{$left}-xs > * {
       text-align: left;
     }
 
-    &-center-xs, &-center-xs > * {
+    &-#{$center}-xs,
+    &-#{$center}-xs > * {
       text-align: center;
     }
 
-    &-right-xs, &-right-xs > * {
+    &-#{$right}-xs,
+    &-#{$right}-xs > * {
       text-align: right;
     }
 
-    &-justify-xs, &-justify-xs > * {
+    &-#{$justify}-xs,
+    &-#{$justify}-xs > * {
       text-align: justify;
     }
   }
 
   .#{$align} {
-    &-baseline-xs {
+    &-#{$base}-xs {
       vertical-align: baseline;
     }
 
-    &-top-xs {
+    &-#{$top}-xs {
       vertical-align: top;
     }
 
-    &-middle-xs {
+    &-#{$middle}-xs {
       vertical-align: middle;
     }
 
-    &-bottom-xs {
+    &-#{$bottom}-xs {
       vertical-align: bottom;
     }
 
-    &-text-top-xs {
+    &-t-#{$top}-xs {
       vertical-align: text-top;
     }
 
-    &-text-bottom-xs {
+    &-t-#{$bottom}-xs {
       vertical-align: text-bottom;
     }
   }
 
   .#{$white-space} {
-    &-normal-xs {
+    &-#{$normal}-xs {
       white-space: normal;
     }
 
@@ -782,7 +641,7 @@
     }
   }
 
-  .single-line-xs {
+  .#{$single-lines}-xs {
     width: 100%;
     display: block;
     white-space: nowrap;
@@ -790,92 +649,69 @@
     overflow: hidden;
   }
 
-  .multiple-lines {
-    width: 100%;
-    display: -webkit-box;
-    float: left;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    &.one-xs {
-      height: calc(19.6px * 1);
-      -webkit-line-clamp: 1;
-    }
-
-    &.two-xs {
-      height: calc(19.6px * 2);
-      -webkit-line-clamp: 2;
-    }
-
-    &.three-xs {
-      height: calc(19.6px * 3);
-      -webkit-line-clamp: 3;
-    }
-
-    &.four-xs {
-      height: calc(19.6px * 4);
-      -webkit-line-clamp: 4;
-    }
-
-    &.five-xs {
-      height: calc(19.6px * 5);
-      -webkit-line-clamp: 5;
-    }
-
-    &.six-xs {
-      height: calc(19.6px * 6);
-      -webkit-line-clamp: 6;
-    }
-
-    &.one-xs.font-12 {
-      height: calc(16.8px * 1);
-    }
-
-    &.two-xs.font-12 {
-      height: calc(16.8px * 2);
-    }
-
-    &.three-xs.font-12 {
-      height: calc(16.8px * 3);
-    }
-
-    &.four-xs.font-12 {
-      height: calc(16.8px * 4);
-    }
-
-    &.five-xs.font-12 {
-      height: calc(16.8px * 5);
-    }
-
-    &.six-xs.font-12 {
-      height: calc(16.8px * 6);
-    }
-
-    &.one-xs.font-16 {
-      height: calc(22.4px * 1);
-    }
-
-    &.two-xs.font-16 {
-      height: calc(22.4px * 2);
-    }
-
-    &.three-xs.font-16 {
-      height: calc(22.4px * 3);
-    }
-
-    &.four-xs.font-16 {
-      height: calc(22.4px * 4);
-    }
-
-    &.five-xs.font-16 {
-      height: calc(22.4px * 5);
-    }
-
-    &.six-xs.font-16 {
-      height: calc(22.4px * 6);
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-xs.#{$font-r075} {
+        height: calc(#{$rem-1} * .75 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
     }
   }
 
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-xs.#{$font-r0875} {
+        height: calc(#{$rem-1} * .875 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-xs {
+        height: calc(#{$rem-1} * 1 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-xs.#{$font-r125} {
+        height: calc(#{$rem-1} * 1.25 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
+
+  @each $lines-number, $lines-line in (one:1, two:2, three:3, four:4, five:5, six:6) {
+    .#{$multiple-lines} {
+      &.#{$lines-number}-xs.#{$font-r150} {
+        height: calc(#{$rem-1} * 1.5 * #{$line-height-default} * #{$lines-line});
+        -webkit-line-clamp: $lines-line;
+      }
+    }
+  }
 }
 
-@media (max-width: 319px) {}
+//responsive-mobile
+
+//Extra small devices (portrait ph#{$one}s, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

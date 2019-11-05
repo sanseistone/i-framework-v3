@@ -1,83 +1,106 @@
 //float
 
 .#{$float} {
-  &-left {
+  &-l {
     float: left;
   }
 
-  &-right {
+  &-r {
     float: right;
   }
 
-  &-none {
+  &-n {
     float: none;
   }
 }
 
-//responsive
+//responsive-pc
 
 @media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
   .#{$float} {
-    &-left-lg {
+    &-l-lg {
       float: left;
     }
 
-    &-right-lg {
+    &-r-lg {
       float: right;
     }
 
-    &-none-lg {
+    &-n-lg {
       float: none;
     }
   }
 }
 
 @media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
   .#{$float} {
-    &-left-md {
+    &-l-md {
       float: left;
     }
 
-    &-right-md {
+    &-r-md {
       float: right;
     }
 
-    &-none-md {
+    &-n-md {
       float: none;
     }
   }
 }
 
 @media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
   .#{$float} {
-    &-left-sm {
+    &-l-sm {
       float: left;
     }
 
-    &-right-sm {
+    &-r-sm {
       float: right;
     }
 
-    &-none-sm {
+    &-n-sm {
       float: none;
     }
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
   .#{$float} {
-    &-left-xs {
+    &-l-xs {
       float: left;
     }
 
-    &-right-xs {
+    &-r-xs {
       float: right;
     }
 
-    &-none-xs {
+    &-n-xs {
       float: none;
     }
   }
 }
 
-@media (max-width: 319px) {}
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

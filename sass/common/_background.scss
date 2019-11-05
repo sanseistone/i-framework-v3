@@ -1,7 +1,5 @@
 //background
 
-//background-position
-
 .#{$background-position} {
   &-t {
     background-position: top;
@@ -40,8 +38,6 @@
   }
 }
 
-//background-size
-
 .#{$background-size} {
   &-auto {
     background-size: auto;
@@ -55,8 +51,6 @@
     background-size: contain;
   }
 }
-
-//background-repeat
 
 .#{$background-repeat} {
   & {
@@ -76,8 +70,6 @@
   }
 }
 
-//background-origin
-
 .#{$background-origin} {
   &-border {
     background-origin: border-box;
@@ -91,8 +83,6 @@
     background-origin: padding-box;
   }
 }
-
-//background-clip
 
 .#{$background-clip} {
   &-border {
@@ -108,8 +98,6 @@
   }
 }
 
-//background-attachment
-
 .#{$background-attachment} {
   &-scroll {
     background-attachment: scroll;
@@ -124,18 +112,16 @@
   }
 }
 
-//background-image
-
-.#{$background-attachment} {
-  &-image-n {
+.#{$background-image} {
+  &-n {
     background-image: none;
   }
 }
 
-//responsive
+//responsive-pc
 
 @media (max-width: 1199px) {
-
+  //Extra large devices (large desktops, 992px and 1200px)
   .#{$background-position} {
     &-t-lg {
       background-position: top;
@@ -248,16 +234,15 @@
     }
   }
 
-  .#{$background-attachment} {
-    &-image-n-lg {
+  .#{$background-image} {
+    &-n-lg {
       background-image: none;
     }
   }
-
 }
 
 @media (max-width: 991px) {
-
+  //Large devices (desktops, 768px and 992px)
   .#{$background-position} {
     &-t-md {
       background-position: top;
@@ -370,16 +355,15 @@
     }
   }
 
-  .#{$background-attachment} {
-    &-image-n-md {
+  .#{$background-image} {
+    &-n-md {
       background-image: none;
     }
   }
-
 }
 
 @media (max-width: 767px) {
-
+  //Medium devices (tablets, 576px and 768px)
   .#{$background-position} {
     &-t-sm {
       background-position: top;
@@ -492,16 +476,15 @@
     }
   }
 
-  .#{$background-attachment} {
-    &-image-n-sm {
+  .#{$background-image} {
+    &-n-sm {
       background-image: none;
     }
   }
-
 }
 
-@media (max-width: 479px) {
-
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
   .#{$background-position} {
     &-t-xs {
       background-position: top;
@@ -614,13 +597,30 @@
     }
   }
 
-  .#{$background-attachment} {
-    &-image-n-xs {
+  .#{$background-image} {
+    &-n-xs {
       background-image: none;
     }
   }
-
 }
 
-@media (max-width: 319px) {
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
 }

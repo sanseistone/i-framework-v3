@@ -1,471 +1,716 @@
 //link
 
-a.hover {
+a.#{$hover} {
   &.underline {
     text-decoration: underline;
   }
 
-  &.white:hover, &.white:focus {
-    color: $white;
+  &.white:focus,
+  &.white:hover {
+    color: $color-f;
   }
 
-  &.black:hover, &.black:focus {
-    color: $black;
+  &.black:focus,
+  &.black:hover {
+    color: $color-0;
   }
 
-  &.red:hover, &.red:focus {
-    color: $color-red-hover;
+  @each $key, $value in $red-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.pink:hover, &.pink:focus {
-    color: $color-pink-hover;
+  @each $key, $value in $pink-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.purple:hover, &.purple:focus {
-    color: $color-purple-hover;
+  @each $key, $value in $purple-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.deep-purple:hover, &.deep-purple:focus {
-    color: $color-deep-purple-hover;
+  @each $key, $value in $deep-purple-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.indigo:hover, &.indigo:focus {
-    color: $color-indigo-hover;
+  @each $key, $value in $indigo-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.blue:hover, &.blue:focus {
-    color: $color-blue-hover;
+  @each $key, $value in $blue-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.light-blue:hover, &.light-blue:focus {
-    color: $color-light-blue-hover;
+  @each $key, $value in $light-blue-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.cyan:hover, &.cyan:focus {
-    color: $color-cyan-hover;
+  @each $key, $value in $cyan-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.teal:hover, &.teal:focus {
-    color: $color-teal-hover;
+  @each $key, $value in $teal-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.green:hover, &.green:focus {
-    color: $color-green-hover;
+  @each $key, $value in $green-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.light-green:hover, &.light-green:focus {
-    color: $color-light-green-hover;
+  @each $key, $value in $light-green-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.lime:hover, &.lime:focus {
-    color: $color-lime-hover;
+  @each $key, $value in $lime-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.yellow:hover, &.yellow:focus {
-    color: $color-yellow-hover;
+  @each $key, $value in $yellow-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.amber:hover, &.amber:focus {
-    color: $color-amber-hover;
+  @each $key, $value in $amber-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.orange:hover, &.orange:focus {
-    color: $color-orange-hover;
+  @each $key, $value in $orange-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.deep-orange:hover, &.deep-orange:focus {
-    color: $color-deep-orange-hover;
+  @each $key, $value in $deep-orange-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.brown:hover, &.brown:focus {
-    color: $color-brown;
+  @each $key, $value in $brown-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.grey:hover, &.grey:focus {
-    color: $color-grey-hover;
+  @each $key, $value in $grey-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 
-  &.blue-grey:hover, &.blue-grey:focus {
-    color: $color-blue-grey-hover;
+  @each $key, $value in $blue-grey-series {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
+  }
+
+  @each $key, $value in $namespace-color {
+    &.#{$key}:focus, &.#{$key}:hover {
+      @include font-variant($value);
+    }
   }
 }
 
-//responsive
+//responsive-pc
 
 @media (max-width: 1199px) {
-
-  a.hover {
+  //Extra large devices (large desktops, 992px and 1200px)
+  a.#{$hover} {
     &.underline-lg {
       text-decoration: underline;
     }
 
-    &.white-lg:hover, &.white-lg:focus {
-      color: $white;
+    &.white-lg:focus,
+    &.white-lg:hover {
+      color: $color-f;
     }
 
-    &.black-lg:hover, &.black-lg:focus {
-      color: $black;
+    &.black-lg:focus,
+    &.black-lg:hover {
+      color: $color-0;
     }
 
-    &.red-lg:hover, &.red-lg:focus {
-      color: $color-red-hover;
+    @each $key, $value in $red-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.pink-lg:hover, &.pink-lg:focus {
-      color: $color-pink-hover;
+    @each $key, $value in $pink-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.purple-lg:hover, &.purple-lg:focus {
-      color: $color-purple-hover;
+    @each $key, $value in $purple-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.deep-purple-lg:hover, &.deep-purple-lg:focus {
-      color: $color-deep-purple-hover;
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.indigo-lg:hover, &.indigo-lg:focus {
-      color: $color-indigo-hover;
+    @each $key, $value in $indigo-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.blue-lg:hover, &.blue-lg:focus {
-      color: $color-blue-hover;
+    @each $key, $value in $blue-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.light-blue-lg:hover, &.light-blue-lg:focus {
-      color: $color-light-blue-hover;
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.cyan-lg:hover, &.cyan-lg:focus {
-      color: $color-cyan-hover;
+    @each $key, $value in $cyan-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.teal-lg:hover, &.teal-lg:focus {
-      color: $color-teal-hover;
+    @each $key, $value in $teal-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.green-lg:hover, &.green-lg:focus {
-      color: $color-green-hover;
+    @each $key, $value in $green-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.light-green-lg:hover, &.light-green-lg:focus {
-      color: $color-light-green-hover;
+    @each $key, $value in $light-green-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.lime-lg:hover, &.lime-lg:focus {
-      color: $color-lime-hover;
+    @each $key, $value in $lime-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.yellow-lg:hover, &.yellow-lg:focus {
-      color: $color-yellow-hover;
+    @each $key, $value in $yellow-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.amber-lg:hover, &.amber-lg:focus {
-      color: $color-amber-hover;
+    @each $key, $value in $amber-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.orange-lg:hover, &.orange-lg:focus {
-      color: $color-orange-hover;
+    @each $key, $value in $orange-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.deep-orange-lg:hover, &.deep-orange-lg:focus {
-      color: $color-deep-orange-hover;
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.brown-lg:hover, &.brown-lg:focus {
-      color: $color-brown;
+    @each $key, $value in $brown-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.grey-lg:hover, &.grey-lg:focus {
-      color: $color-grey-hover;
+    @each $key, $value in $grey-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.blue-grey-lg:hover, &.blue-grey-lg:focus {
-      color: $color-blue-grey-hover;
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-lg:focus, &.#{$key}-lg:hover {
+        @include font-variant($value);
+      }
     }
   }
-
 }
 
 @media (max-width: 991px) {
-
-  a.hover {
+  //Large devices (desktops, 768px and 992px)
+  a.#{$hover} {
     &.underline-md {
       text-decoration: underline;
     }
 
-    &.white-md:hover, &.white-md:focus {
-      color: $white;
+    &.white-md:focus,
+    &.white-md:hover {
+      color: $color-f;
     }
 
-    &.black-md:hover, &.black-md:focus {
-      color: $black;
+    &.black-md:focus,
+    &.black-md:hover {
+      color: $color-0;
     }
 
-    &.red-md:hover, &.red-md:focus {
-      color: $color-red-hover;
+    @each $key, $value in $red-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.pink-md:hover, &.pink-md:focus {
-      color: $color-pink-hover;
+    @each $key, $value in $pink-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.purple-md:hover, &.purple-md:focus {
-      color: $color-purple-hover;
+    @each $key, $value in $purple-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.deep-purple-md:hover, &.deep-purple-md:focus {
-      color: $color-deep-purple-hover;
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.indigo-md:hover, &.indigo-md:focus {
-      color: $color-indigo-hover;
+    @each $key, $value in $indigo-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.blue-md:hover, &.blue-md:focus {
-      color: $color-blue-hover;
+    @each $key, $value in $blue-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.light-blue-md:hover, &.light-blue-md:focus {
-      color: $color-light-blue-hover;
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.cyan-md:hover, &.cyan-md:focus {
-      color: $color-cyan-hover;
+    @each $key, $value in $cyan-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.teal-md:hover, &.teal-md:focus {
-      color: $color-teal-hover;
+    @each $key, $value in $teal-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.green-md:hover, &.green-md:focus {
-      color: $color-green-hover;
+    @each $key, $value in $green-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.light-green-md:hover, &.light-green-md:focus {
-      color: $color-light-green-hover;
+    @each $key, $value in $light-green-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.lime-md:hover, &.lime-md:focus {
-      color: $color-lime-hover;
+    @each $key, $value in $lime-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.yellow-md:hover, &.yellow-md:focus {
-      color: $color-yellow-hover;
+    @each $key, $value in $yellow-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.amber-md:hover, &.amber-md:focus {
-      color: $color-amber-hover;
+    @each $key, $value in $amber-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.orange-md:hover, &.orange-md:focus {
-      color: $color-orange-hover;
+    @each $key, $value in $orange-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.deep-orange-md:hover, &.deep-orange-md:focus {
-      color: $color-deep-orange-hover;
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.brown-md:hover, &.brown-md:focus {
-      color: $color-brown;
+    @each $key, $value in $brown-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.grey-md:hover, &.grey-md:focus {
-      color: $color-grey-hover;
+    @each $key, $value in $grey-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.blue-grey-md:hover, &.blue-grey-md:focus {
-      color: $color-blue-grey-hover;
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-md:focus, &.#{$key}-md:hover {
+        @include font-variant($value);
+      }
     }
   }
-
 }
 
 @media (max-width: 767px) {
-
-  a.hover {
+  //Medium devices (tablets, 576px and 768px)
+  a.#{$hover} {
     &.underline-sm {
       text-decoration: underline;
     }
 
-    &.white-sm:hover, &.white-sm:focus {
-      color: $white;
+    &.white-sm:focus,
+    &.white-sm:hover {
+      color: $color-f;
     }
 
-    &.black-sm:hover, &.black-sm:focus {
-      color: $black;
+    &.black-sm:focus,
+    &.black-sm:hover {
+      color: $color-0;
     }
 
-    &.red-sm:hover, &.red-sm:focus {
-      color: $color-red-hover;
+    @each $key, $value in $red-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.pink-sm:hover, &.pink-sm:focus {
-      color: $color-pink-hover;
+    @each $key, $value in $pink-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.purple-sm:hover, &.purple-sm:focus {
-      color: $color-purple-hover;
+    @each $key, $value in $purple-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.deep-purple-sm:hover, &.deep-purple-sm:focus {
-      color: $color-deep-purple-hover;
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.indigo-sm:hover, &.indigo-sm:focus {
-      color: $color-indigo-hover;
+    @each $key, $value in $indigo-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.blue-sm:hover, &.blue-sm:focus {
-      color: $color-blue-hover;
+    @each $key, $value in $blue-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.light-blue-sm:hover, &.light-blue-sm:focus {
-      color: $color-light-blue-hover;
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.cyan-sm:hover, &.cyan-sm:focus {
-      color: $color-cyan-hover;
+    @each $key, $value in $cyan-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.teal-sm:hover, &.teal-sm:focus {
-      color: $color-teal-hover;
+    @each $key, $value in $teal-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.green-sm:hover, &.green-sm:focus {
-      color: $color-green-hover;
+    @each $key, $value in $green-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.light-green-sm:hover, &.light-green-sm:focus {
-      color: $color-light-green-hover;
+    @each $key, $value in $light-green-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.lime-sm:hover, &.lime-sm:focus {
-      color: $color-lime-hover;
+    @each $key, $value in $lime-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.yellow-sm:hover, &.yellow-sm:focus {
-      color: $color-yellow-hover;
+    @each $key, $value in $yellow-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.amber-sm:hover, &.amber-sm:focus {
-      color: $color-amber-hover;
+    @each $key, $value in $amber-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.orange-sm:hover, &.orange-sm:focus {
-      color: $color-orange-hover;
+    @each $key, $value in $orange-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.deep-orange-sm:hover, &.deep-orange-sm:focus {
-      color: $color-deep-orange-hover;
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.brown-sm:hover, &.brown-sm:focus {
-      color: $color-brown;
+    @each $key, $value in $brown-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.grey-sm:hover, &.grey-sm:focus {
-      color: $color-grey-hover;
+    @each $key, $value in $grey-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.blue-grey-sm:hover, &.blue-grey-sm:focus {
-      color: $color-blue-grey-hover;
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-sm:focus, &.#{$key}-sm:hover {
+        @include font-variant($value);
+      }
     }
   }
-
 }
 
-@media (max-width: 479px) {
-
-  a.hover {
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  a.#{$hover} {
     &.underline-xs {
       text-decoration: underline;
     }
 
-    &.white-xs:hover, &.white-xs:focus {
-      color: $white;
+    &.white-xs:focus,
+    &.white-xs:hover {
+      color: $color-f;
     }
 
-    &.black-xs:hover, &.black-xs:focus {
-      color: $black;
+    &.black-xs:focus,
+    &.black-xs:hover {
+      color: $color-0;
     }
 
-    &.red-xs:hover, &.red-xs:focus {
-      color: $color-red-hover;
+    @each $key, $value in $red-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.pink-xs:hover, &.pink-xs:focus {
-      color: $color-pink-hover;
+    @each $key, $value in $pink-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.purple-xs:hover, &.purple-xs:focus {
-      color: $color-purple-hover;
+    @each $key, $value in $purple-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.deep-purple-xs:hover, &.deep-purple-xs:focus {
-      color: $color-deep-purple-hover;
+    @each $key, $value in $deep-purple-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.indigo-xs:hover, &.indigo-xs:focus {
-      color: $color-indigo-hover;
+    @each $key, $value in $indigo-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.blue-xs:hover, &.blue-xs:focus {
-      color: $color-blue-hover;
+    @each $key, $value in $blue-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.light-blue-xs:hover, &.light-blue-xs:focus {
-      color: $color-light-blue-hover;
+    @each $key, $value in $light-blue-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.cyan-xs:hover, &.cyan-xs:focus {
-      color: $color-cyan-hover;
+    @each $key, $value in $cyan-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.teal-xs:hover, &.teal-xs:focus {
-      color: $color-teal-hover;
+    @each $key, $value in $teal-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.green-xs:hover, &.green-xs:focus {
-      color: $color-green-hover;
+    @each $key, $value in $green-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.light-green-xs:hover, &.light-green-xs:focus {
-      color: $color-light-green-hover;
+    @each $key, $value in $light-green-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.lime-xs:hover, &.lime-xs:focus {
-      color: $color-lime-hover;
+    @each $key, $value in $lime-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.yellow-xs:hover, &.yellow-xs:focus {
-      color: $color-yellow-hover;
+    @each $key, $value in $yellow-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.amber-xs:hover, &.amber-xs:focus {
-      color: $color-amber-hover;
+    @each $key, $value in $amber-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.orange-xs:hover, &.orange-xs:focus {
-      color: $color-orange-hover;
+    @each $key, $value in $orange-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.deep-orange-xs:hover, &.deep-orange-xs:focus {
-      color: $color-deep-orange-hover;
+    @each $key, $value in $deep-orange-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.brown-xs:hover, &.brown-xs:focus {
-      color: $color-brown;
+    @each $key, $value in $brown-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.grey-xs:hover, &.grey-xs:focus {
-      color: $color-grey-hover;
+    @each $key, $value in $grey-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
 
-    &.blue-grey-xs:hover, &.blue-grey-xs:focus {
-      color: $color-blue-grey-hover;
+    @each $key, $value in $blue-grey-series {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
+    }
+
+    @each $key, $value in $namespace-color {
+      &.#{$key}-xs:focus, &.#{$key}-xs:hover {
+        @include font-variant($value);
+      }
     }
   }
-
 }
 
-@media (max-width: 319px) {}
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

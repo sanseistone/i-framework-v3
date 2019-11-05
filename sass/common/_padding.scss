@@ -1,900 +1,126 @@
-//padding
+//.g-p
 
-//.group-p
-
-.#{$group-p} {
-  &-0 > * {
-    padding: 0;
-  }
-
-  &-1 > * {
-    padding: 1px;
-  }
-
-  &-2 > * {
-    padding: 2px;
-  }
-
-  &-3 > * {
-    padding: 3px;
-  }
-
-  &-4 > * {
-    padding: 4px;
-  }
-
-  &-5 > * {
-    padding: 5px;
-  }
-
-  &-6 > * {
-    padding: 6px;
-  }
-
-  &-7 > * {
-    padding: 7px;
-  }
-
-  &-8 > * {
-    padding: 8px;
-  }
-
-  &-9 > * {
-    padding: 9px;
-  }
-
-  &-10 > * {
-    padding: 10px;
-  }
-
-  &-15 > * {
-    padding: 15px;
-  }
-
-  &-20 > * {
-    padding: 20px;
-  }
-
-  &-25 > * {
-    padding: 25px;
-  }
-
-  &-30 > * {
-    padding: 30px;
-  }
-
-  &-35 > * {
-    padding: 35px;
-  }
-
-  &-40 > * {
-    padding: 40px;
-  }
-
-  &-45 > * {
-    padding: 45px;
-  }
-
-  &-50 > * {
-    padding: 50px;
-  }
-
-  &-55 > * {
-    padding: 55px;
-  }
-
-  &-60 > * {
-    padding: 60px;
-  }
-
-  &-65 > * {
-    padding: 65px;
-  }
-
-  &-70 > * {
-    padding: 70px;
-  }
-
-  &-75 > * {
-    padding: 75px;
-  }
-
-  &-80 > * {
-    padding: 80px;
-  }
-
-  &-85 > * {
-    padding: 85px;
-  }
-
-  &-90 > * {
-    padding: 90px;
-  }
-
-  &-95 > * {
-    padding: 95px;
-  }
-
-  &-100 > * {
-    padding: 100px;
+.#{$group-padding} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} > * {
+      @include group-p-variant($value);
+    }
   }
 }
 
-//.group-pt
-
-.#{$group-pt} {
-  &-0 > * {
-    padding-top: 0;
-  }
-
-  &-1 > * {
-    padding-top: 1px;
-  }
-
-  &-2 > * {
-    padding-top: 2px;
-  }
-
-  &-3 > * {
-    padding-top: 3px;
-  }
-
-  &-4 > * {
-    padding-top: 4px;
-  }
-
-  &-5 > * {
-    padding-top: 5px;
-  }
-
-  &-6 > * {
-    padding-top: 6px;
-  }
-
-  &-7 > * {
-    padding-top: 7px;
-  }
-
-  &-8 > * {
-    padding-top: 8px;
-  }
-
-  &-9 > * {
-    padding-top: 9px;
-  }
-
-  &-10 > * {
-    padding-top: 10px;
-  }
-
-  &-15 > * {
-    padding-top: 15px;
-  }
-
-  &-20 > * {
-    padding-top: 20px;
-  }
-
-  &-25 > * {
-    padding-top: 25px;
-  }
-
-  &-30 > * {
-    padding-top: 30px;
-  }
-
-  &-35 > * {
-    padding-top: 35px;
-  }
-
-  &-40 > * {
-    padding-top: 40px;
-  }
-
-  &-45 > * {
-    padding-top: 45px;
-  }
-
-  &-50 > * {
-    padding-top: 50px;
-  }
-
-  &-55 > * {
-    padding-top: 55px;
-  }
-
-  &-60 > * {
-    padding-top: 60px;
-  }
-
-  &-65 > * {
-    padding-top: 65px;
-  }
-
-  &-70 > * {
-    padding-top: 70px;
-  }
-
-  &-75 > * {
-    padding-top: 75px;
-  }
-
-  &-80 > * {
-    padding-top: 80px;
-  }
-
-  &-85 > * {
-    padding-top: 85px;
-  }
-
-  &-90 > * {
-    padding-top: 90px;
-  }
-
-  &-95 > * {
-    padding-top: 95px;
-  }
-
-  &-100 > * {
-    padding-top: 100px;
+.#{$group-padding} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-p-variant($value);
+    }
   }
 }
 
-//.group-pr
+//.g-pt
 
-.#{$group-pr} {
-  &-0 > * {
-    padding-right: 0;
-  }
-
-  &-1 > * {
-    padding-right: 1px;
-  }
-
-  &-2 > * {
-    padding-right: 2px;
-  }
-
-  &-3 > * {
-    padding-right: 3px;
-  }
-
-  &-4 > * {
-    padding-right: 4px;
-  }
-
-  &-5 > * {
-    padding-right: 5px;
-  }
-
-  &-6 > * {
-    padding-right: 6px;
-  }
-
-  &-7 > * {
-    padding-right: 7px;
-  }
-
-  &-8 > * {
-    padding-right: 8px;
-  }
-
-  &-9 > * {
-    padding-right: 9px;
-  }
-
-  &-10 > * {
-    padding-right: 10px;
-  }
-
-  &-15 > * {
-    padding-right: 15px;
-  }
-
-  &-20 > * {
-    padding-right: 20px;
-  }
-
-  &-25 > * {
-    padding-right: 25px;
-  }
-
-  &-30 > * {
-    padding-right: 30px;
-  }
-
-  &-35 > * {
-    padding-right: 35px;
-  }
-
-  &-40 > * {
-    padding-right: 40px;
-  }
-
-  &-45 > * {
-    padding-right: 45px;
-  }
-
-  &-50 > * {
-    padding-right: 50px;
-  }
-
-  &-55 > * {
-    padding-right: 55px;
-  }
-
-  &-60 > * {
-    padding-right: 60px;
-  }
-
-  &-65 > * {
-    padding-right: 65px;
-  }
-
-  &-70 > * {
-    padding-right: 70px;
-  }
-
-  &-75 > * {
-    padding-right: 75px;
-  }
-
-  &-80 > * {
-    padding-right: 80px;
-  }
-
-  &-85 > * {
-    padding-right: 85px;
-  }
-
-  &-90 > * {
-    padding-right: 90px;
-  }
-
-  &-95 > * {
-    padding-right: 95px;
-  }
-
-  &-100 > * {
-    padding-right: 100px;
+.#{$group-padding-top} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} > * {
+      @include group-pt-variant($value);
+    }
   }
 }
 
-//.group-pb
-
-.#{$group-pb} {
-  &-0 > * {
-    padding-bottom: 0;
-  }
-
-  &-1 > * {
-    padding-bottom: 1px;
-  }
-
-  &-2 > * {
-    padding-bottom: 2px;
-  }
-
-  &-3 > * {
-    padding-bottom: 3px;
-  }
-
-  &-4 > * {
-    padding-bottom: 4px;
-  }
-
-  &-5 > * {
-    padding-bottom: 5px;
-  }
-
-  &-6 > * {
-    padding-bottom: 6px;
-  }
-
-  &-7 > * {
-    padding-bottom: 7px;
-  }
-
-  &-8 > * {
-    padding-bottom: 8px;
-  }
-
-  &-9 > * {
-    padding-bottom: 9px;
-  }
-
-  &-10 > * {
-    padding-bottom: 10px;
-  }
-
-  &-15 > * {
-    padding-bottom: 15px;
-  }
-
-  &-20 > * {
-    padding-bottom: 20px;
-  }
-
-  &-25 > * {
-    padding-bottom: 25px;
-  }
-
-  &-30 > * {
-    padding-bottom: 30px;
-  }
-
-  &-35 > * {
-    padding-bottom: 35px;
-  }
-
-  &-40 > * {
-    padding-bottom: 40px;
-  }
-
-  &-45 > * {
-    padding-bottom: 45px;
-  }
-
-  &-50 > * {
-    padding-bottom: 50px;
-  }
-
-  &-55 > * {
-    padding-bottom: 55px;
-  }
-
-  &-60 > * {
-    padding-bottom: 60px;
-  }
-
-  &-65 > * {
-    padding-bottom: 65px;
-  }
-
-  &-70 > * {
-    padding-bottom: 70px;
-  }
-
-  &-75 > * {
-    padding-bottom: 75px;
-  }
-
-  &-80 > * {
-    padding-bottom: 80px;
-  }
-
-  &-85 > * {
-    padding-bottom: 85px;
-  }
-
-  &-90 > * {
-    padding-bottom: 90px;
-  }
-
-  &-95 > * {
-    padding-bottom: 95px;
-  }
-
-  &-100 > * {
-    padding-bottom: 100px;
+.#{$group-padding-top} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-pt-variant($value);
+    }
   }
 }
 
-//.group-pl
+//.g-pr
 
-.#{$group-pl} {
-  &-0 > * {
-    padding-left: 0;
-  }
-
-  &-1 > * {
-    padding-left: 1px;
-  }
-
-  &-2 > * {
-    padding-left: 2px;
-  }
-
-  &-3 > * {
-    padding-left: 3px;
-  }
-
-  &-4 > * {
-    padding-left: 4px;
-  }
-
-  &-5 > * {
-    padding-left: 5px;
-  }
-
-  &-6 > * {
-    padding-left: 6px;
-  }
-
-  &-7 > * {
-    padding-left: 7px;
-  }
-
-  &-8 > * {
-    padding-left: 8px;
-  }
-
-  &-9 > * {
-    padding-left: 9px;
-  }
-
-  &-10 > * {
-    padding-left: 10px;
-  }
-
-  &-15 > * {
-    padding-left: 15px;
-  }
-
-  &-20 > * {
-    padding-left: 20px;
-  }
-
-  &-25 > * {
-    padding-left: 25px;
-  }
-
-  &-30 > * {
-    padding-left: 30px;
-  }
-
-  &-35 > * {
-    padding-left: 35px;
-  }
-
-  &-40 > * {
-    padding-left: 40px;
-  }
-
-  &-45 > * {
-    padding-left: 45px;
-  }
-
-  &-50 > * {
-    padding-left: 50px;
-  }
-
-  &-55 > * {
-    padding-left: 55px;
-  }
-
-  &-60 > * {
-    padding-left: 60px;
-  }
-
-  &-65 > * {
-    padding-left: 65px;
-  }
-
-  &-70 > * {
-    padding-left: 70px;
-  }
-
-  &-75 > * {
-    padding-left: 75px;
-  }
-
-  &-80 > * {
-    padding-left: 80px;
-  }
-
-  &-85 > * {
-    padding-left: 85px;
-  }
-
-  &-90 > * {
-    padding-left: 90px;
-  }
-
-  &-95 > * {
-    padding-left: 95px;
-  }
-
-  &-100 > * {
-    padding-left: 100px;
+.#{$group-padding-right} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} > * {
+      @include group-pr-variant($value);
+    }
   }
 }
 
-//.group-px
-
-.#{$group-px} {
-  &-0 > * {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  &-1 > * {
-    padding-left: 1px;
-    padding-right: 1px;
-  }
-
-  &-2 > * {
-    padding-left: 2px;
-    padding-right: 2px;
-  }
-
-  &-3 > * {
-    padding-left: 3px;
-    padding-right: 3px;
-  }
-
-  &-4 > * {
-    padding-left: 4px;
-    padding-right: 4px;
-  }
-
-  &-5 > * {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  &-6 > * {
-    padding-left: 6px;
-    padding-right: 6px;
-  }
-
-  &-7 > * {
-    padding-left: 7px;
-    padding-right: 7px;
-  }
-
-  &-8 > * {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  &-9 > * {
-    padding-left: 9px;
-    padding-right: 9px;
-  }
-
-  &-10 > * {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  &-15 > * {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  &-20 > * {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  &-25 > * {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  &-30 > * {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  &-35 > * {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-
-  &-40 > * {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  &-45 > * {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  &-50 > * {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  &-55 > * {
-    padding-left: 55px;
-    padding-right: 55px;
-  }
-
-  &-60 > * {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-  &-65 > * {
-    padding-left: 65px;
-    padding-right: 65px;
-  }
-
-  &-70 > * {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-
-  &-75 > * {
-    padding-left: 75px;
-    padding-right: 75px;
-  }
-
-  &-80 > * {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-  &-85 > * {
-    padding-left: 85px;
-    padding-right: 85px;
-  }
-
-  &-90 > * {
-    padding-left: 90px;
-    padding-right: 90px;
-  }
-
-  &-95 > * {
-    padding-left: 95px;
-    padding-right: 95px;
-  }
-
-  &-100 > * {
-    padding-left: 100px;
-    padding-right: 100px;
+.#{$group-padding-right} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-pr-variant($value);
+    }
   }
 }
 
-//.group-py
+//.g-pb
 
-.#{$group-py} {
-  &-0 > * {
-    padding-top: 0;
-    padding-bottom: 0;
+.#{$group-padding-bottom} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} > * {
+      @include group-pb-variant($value);
+    }
   }
+}
 
-  &-1 > * {
-    padding-top: 1px;
-    padding-bottom: 1px;
+.#{$group-padding-bottom} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-pb-variant($value);
+    }
   }
+}
 
-  &-2 > * {
-    padding-top: 2px;
-    padding-bottom: 2px;
+//.g-pl
+
+.#{$group-padding-left} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} > * {
+      @include group-pl-variant($value);
+    }
   }
+}
 
-  &-3 > * {
-    padding-top: 3px;
-    padding-bottom: 3px;
+.#{$group-padding-left} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-pl-variant($value);
+    }
   }
+}
 
-  &-4 > * {
-    padding-top: 4px;
-    padding-bottom: 4px;
+//.g-px
+
+.#{$group-padding-x-axis} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} > * {
+      @include group-px-variant($value, $value);
+    }
   }
+}
 
-  &-5 > * {
-    padding-top: 5px;
-    padding-bottom: 5px;
+.#{$group-padding-x-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-px-variant($value, $value);
+    }
   }
+}
 
-  &-6 > * {
-    padding-top: 6px;
-    padding-bottom: 6px;
+//.g-py
+
+.#{$group-padding-y-axis} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} > * {
+      @include group-py-variant($value, $value);
+    }
   }
+}
 
-  &-7 > * {
-    padding-top: 7px;
-    padding-bottom: 7px;
-  }
-
-  &-8 > * {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-
-  &-9 > * {
-    padding-top: 9px;
-    padding-bottom: 9px;
-  }
-
-  &-10 > * {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  &-15 > * {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  &-20 > * {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  &-25 > * {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  &-30 > * {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  &-35 > * {
-    padding-top: 35px;
-    padding-bottom: 35px;
-  }
-
-  &-40 > * {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  &-45 > * {
-    padding-top: 45px;
-    padding-bottom: 45px;
-  }
-
-  &-50 > * {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  &-55 > * {
-    padding-top: 55px;
-    padding-bottom: 55px;
-  }
-
-  &-60 > * {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  &-65 > * {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-
-  &-70 > * {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-
-  &-75 > * {
-    padding-top: 75px;
-    padding-bottom: 75px;
-  }
-
-  &-80 > * {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  &-85 > * {
-    padding-top: 85px;
-    padding-bottom: 85px;
-  }
-
-  &-90 > * {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-
-  &-95 > * {
-    padding-top: 95px;
-    padding-bottom: 95px;
-  }
-
-  &-100 > * {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.#{$group-padding-y-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-py-variant($value, $value);
+    }
   }
 }
 
@@ -907,1782 +133,248 @@
     padding: 0;
   }
 
-  &-0 {
+  @each $key, $value in $group-p-series {
+    &-#{$key} {
+      @include padding-pixel-variant($value);
+    }
+  }
+}
+
+.#{$padding} {
+  &-all-0,
+  &-all-0 > *,
+  &-all-0 * {
     padding: 0;
   }
 
-  &-1 {
-    padding: 1px;
-  }
-
-  &-2 {
-    padding: 2px;
-  }
-
-  &-3 {
-    padding: 3px;
-  }
-
-  &-4 {
-    padding: 4px;
-  }
-
-  &-5 {
-    padding: 5px;
-  }
-
-  &-6 {
-    padding: 6px;
-  }
-
-  &-7 {
-    padding: 7px;
-  }
-
-  &-8 {
-    padding: 8px;
-  }
-
-  &-9 {
-    padding: 9px;
-  }
-
-  &-10 {
-    padding: 10px;
-  }
-
-  &-15 {
-    padding: 15px;
-  }
-
-  &-20 {
-    padding: 20px;
-  }
-
-  &-25 {
-    padding: 25px;
-  }
-
-  &-30 {
-    padding: 30px;
-  }
-
-  &-35 {
-    padding: 35px;
-  }
-
-  &-40 {
-    padding: 50px;
-  }
-
-  &-45 {
-    padding: 45px;
-  }
-
-  &-50 {
-    padding: 50px;
-  }
-
-  &-55 {
-    padding: 55px;
-  }
-
-  &-60 {
-    padding: 60px;
-  }
-
-  &-65 {
-    padding: 65px;
-  }
-
-  &-70 {
-    padding: 70px;
-  }
-
-  &-75 {
-    padding: 75px;
-  }
-
-  &-80 {
-    padding: 80px;
-  }
-
-  &-85 {
-    padding: 85px;
-  }
-
-  &-90 {
-    padding: 90px;
-  }
-
-  &-95 {
-    padding: 95px;
-  }
-
-  &-100 {
-    padding: 100px;
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include padding-pixel-variant($value);
+    }
   }
 }
 
 //padding-top
 
-.#{$padding-t} {
-  &-0 {
-    padding-top: 0;
+.#{$padding-top} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} {
+      @include group-pt-variant($value);
+    }
   }
+}
 
-  &-1 {
-    padding-top: 1px;
-  }
-
-  &-2 {
-    padding-top: 2px;
-  }
-
-  &-3 {
-    padding-top: 3px;
-  }
-
-  &-4 {
-    padding-top: 4px;
-  }
-
-  &-5 {
-    padding-top: 5px;
-  }
-
-  &-6 {
-    padding-top: 6px;
-  }
-
-  &-7 {
-    padding-top: 7px;
-  }
-
-  &-8 {
-    padding-top: 8px;
-  }
-
-  &-9 {
-    padding-top: 9px;
-  }
-
-  &-10 {
-    padding-top: 10px;
-  }
-
-  &-15 {
-    padding-top: 15px;
-  }
-
-  &-20 {
-    padding-top: 20px;
-  }
-
-  &-25 {
-    padding-top: 25px;
-  }
-
-  &-30 {
-    padding-top: 30px;
-  }
-
-  &-35 {
-    padding-top: 35px;
-  }
-
-  &-40 {
-    padding-top: 40px;
-  }
-
-  &-45 {
-    padding-top: 45px;
-  }
-
-  &-50 {
-    padding-top: 50px;
-  }
-
-  &-55 {
-    padding-top: 55px;
-  }
-
-  &-60 {
-    padding-top: 60px;
-  }
-
-  &-65 {
-    padding-top: 65px;
-  }
-
-  &-70 {
-    padding-top: 70px;
-  }
-
-  &-75 {
-    padding-top: 75px;
-  }
-
-  &-80 {
-    padding-top: 80px;
-  }
-
-  &-85 {
-    padding-top: 85px;
-  }
-
-  &-90 {
-    padding-top: 50px;
-  }
-
-  &-95 {
-    padding-top: 95px;
-  }
-
-  &-100 {
-    padding-top: 100px;
+.#{$padding-top} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-pt-variant($value);
+    }
   }
 }
 
 //padding-right
 
-.#{$padding-r} {
-  &-0 {
-    padding-right: 0;
+.#{$padding-right} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} {
+      @include group-pr-variant($value);
+    }
   }
+}
 
-  &-1 {
-    padding-right: 1px;
-  }
-
-  &-2 {
-    padding-right: 2px;
-  }
-
-  &-3 {
-    padding-right: 3px;
-  }
-
-  &-4 {
-    padding-right: 4px;
-  }
-
-  &-5 {
-    padding-right: 5px;
-  }
-
-  &-6 {
-    padding-right: 6px;
-  }
-
-  &-7 {
-    padding-right: 7px;
-  }
-
-  &-8 {
-    padding-right: 8px;
-  }
-
-  &-9 {
-    padding-right: 9px;
-  }
-
-  &-10 {
-    padding-right: 10px;
-  }
-
-  &-15 {
-    padding-right: 15px;
-  }
-
-  &-20 {
-    padding-right: 20px;
-  }
-
-  &-25 {
-    padding-right: 25px;
-  }
-
-  &-30 {
-    padding-right: 30px;
-  }
-
-  &-35 {
-    padding-right: 35px;
-  }
-
-  &-40 {
-    padding-right: 40px;
-  }
-
-  &-45 {
-    padding-right: 45px;
-  }
-
-  &-50 {
-    padding-right: 50px;
-  }
-
-  &-55 {
-    padding-right: 55px;
-  }
-
-  &-60 {
-    padding-right: 60px;
-  }
-
-  &-65 {
-    padding-right: 65px;
-  }
-
-  &-70 {
-    padding-right: 70px;
-  }
-
-  &-75 {
-    padding-right: 75px;
-  }
-
-  &-80 {
-    padding-right: 80px;
-  }
-
-  &-85 {
-    padding-right: 85px;
-  }
-
-  &-90 {
-    padding-right: 90px;
-  }
-
-  &-95 {
-    padding-right: 95px;
-  }
-
-  &-100 {
-    padding-right: 100px;
+.#{$padding-right} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-pr-variant($value);
+    }
   }
 }
 
 //padding-bottom
 
-.#{$padding-b} {
-  &-0 {
-    padding-bottom: 0;
+.#{$padding-bottom} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} {
+      @include group-pb-variant($value);
+    }
   }
+}
 
-  &-1 {
-    padding-bottom: 1px;
-  }
-
-  &-2 {
-    padding-bottom: 2px;
-  }
-
-  &-3 {
-    padding-bottom: 3px;
-  }
-
-  &-4 {
-    padding-bottom: 4px;
-  }
-
-  &-5 {
-    padding-bottom: 5px;
-  }
-
-  &-6 {
-    padding-bottom: 6px;
-  }
-
-  &-7 {
-    padding-bottom: 7px;
-  }
-
-  &-8 {
-    padding-bottom: 8px;
-  }
-
-  &-9 {
-    padding-bottom: 9px;
-  }
-
-  &-10 {
-    padding-bottom: 10px;
-  }
-
-  &-15 {
-    padding-bottom: 15px;
-  }
-
-  &-20 {
-    padding-bottom: 20px;
-  }
-
-  &-25 {
-    padding-bottom: 25px;
-  }
-
-  &-30 {
-    padding-bottom: 30px;
-  }
-
-  &-35 {
-    padding-bottom: 35px;
-  }
-
-  &-40 {
-    padding-bottom: 40px;
-  }
-
-  &-45 {
-    padding-bottom: 45px;
-  }
-
-  &-50 {
-    padding-bottom: 50px;
-  }
-
-  &-55 {
-    padding-bottom: 55px;
-  }
-
-  &-60 {
-    padding-bottom: 60px;
-  }
-
-  &-65 {
-    padding-bottom: 65px;
-  }
-
-  &-70 {
-    padding-bottom: 70px;
-  }
-
-  &-75 {
-    padding-bottom: 75px;
-  }
-
-  &-80 {
-    padding-bottom: 80px;
-  }
-
-  &-85 {
-    padding-bottom: 85px;
-  }
-
-  &-90 {
-    padding-bottom: 90px;
-  }
-
-  &-95 {
-    padding-bottom: 95px;
-  }
-
-  &-100 {
-    padding-bottom: 100px;
+.#{$padding-bottom} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-pb-variant($value);
+    }
   }
 }
 
 //padding-left
 
-.#{$padding-l} {
-  &-0 {
-    padding-left: 0;
+.#{$padding-left} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} {
+      @include group-pl-variant($value);
+    }
   }
+}
 
-  &-1 {
-    padding-left: 1px;
-  }
-
-  &-2 {
-    padding-left: 2px;
-  }
-
-  &-3 {
-    padding-left: 3px;
-  }
-
-  &-4 {
-    padding-left: 4px;
-  }
-
-  &-5 {
-    padding-left: 5px;
-  }
-
-  &-6 {
-    padding-left: 6px;
-  }
-
-  &-7 {
-    padding-left: 7px;
-  }
-
-  &-8 {
-    padding-left: 8px;
-  }
-
-  &-9 {
-    padding-left: 9px;
-  }
-
-  &-10 {
-    padding-left: 10px;
-  }
-
-  &-15 {
-    padding-left: 15px;
-  }
-
-  &-20 {
-    padding-left: 20px;
-  }
-
-  &-25 {
-    padding-left: 25px;
-  }
-
-  &-30 {
-    padding-left: 30px;
-  }
-
-  &-35 {
-    padding-left: 35px;
-  }
-
-  &-40 {
-    padding-left: 40px;
-  }
-
-  &-45 {
-    padding-left: 45px;
-  }
-
-  &-50 {
-    padding-left: 50px;
-  }
-
-  &-55 {
-    padding-left: 55px;
-  }
-
-  &-65 {
-    padding-left: 65px;
-  }
-
-  &-70 {
-    padding-left: 70px;
-  }
-
-  &-75 {
-    padding-left: 75px;
-  }
-
-  &-80 {
-    padding-left: 80px;
-  }
-
-  &-85 {
-    padding-left: 85px;
-  }
-
-  &-90 {
-    padding-left: 90px;
-  }
-
-  &-95 {
-    padding-left: 95px;
-  }
-
-  &-100 {
-    padding-left: 100px;
+.#{$padding-left} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-pl-variant($value);
+    }
   }
 }
 
 //padding-x
 
-.#{$padding-x} {
-  &-0 {
-    padding-left: 0;
-    padding-right: 0;
+.#{$padding-x-axis} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} {
+      @include group-px-variant($value, $value);
+    }
   }
+}
 
-  &-1 {
-    padding-left: 1px;
-    padding-right: 1px;
-  }
-
-  &-2 {
-    padding-left: 2px;
-    padding-right: 2px;
-  }
-
-  &-3 {
-    padding-left: 3px;
-    padding-right: 3px;
-  }
-
-  &-4 {
-    padding-left: 4px;
-    padding-right: 4px;
-  }
-
-  &-5 {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  &-6 {
-    padding-left: 6px;
-    padding-right: 6px;
-  }
-
-  &-7 {
-    padding-left: 7px;
-    padding-right: 7px;
-  }
-
-  &-8 {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  &-9 {
-    padding-left: 9px;
-    padding-right: 9px;
-  }
-
-  &-10 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  &-15 {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  &-20 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  &-25 {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  &-30 {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  &-35 {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-
-  &-40 {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  &-45 {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  &-50 {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  &-55 {
-    padding-left: 55px;
-    padding-right: 55px;
-  }
-
-  &-60 {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-  &-65 {
-    padding-left: 65px;
-    padding-right: 65px;
-  }
-
-  &-70 {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-
-  &-75 {
-    padding-left: 75px;
-    padding-right: 75px;
-  }
-
-  &-80 {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-  &-85 {
-    padding-left: 85px;
-    padding-right: 85px;
-  }
-
-  &-90 {
-    padding-left: 90px;
-    padding-right: 90px;
-  }
-
-  &-95 {
-    padding-left: 95px;
-    padding-right: 95px;
-  }
-
-  &-100 {
-    padding-left: 100px;
-    padding-right: 100px;
+.#{$padding-x-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-px-variant($value, $value);
+    }
   }
 }
 
 //padding-y
 
-.#{$padding-y} {
-  &-0 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  &-1 {
-    padding-top: 1px;
-    padding-bottom: 1px;
-  }
-
-  &-2 {
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-
-  &-3 {
-    padding-top: 3px;
-    padding-bottom: 3px;
-  }
-
-  &-4 {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  &-5 {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
-  &-6 {
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-
-  &-7 {
-    padding-top: 7px;
-    padding-bottom: 7px;
-  }
-
-  &-8 {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-
-  &-9 {
-    padding-top: 9px;
-    padding-bottom: 9px;
-  }
-
-  &-10 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  &-15 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  &-20 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  &-25 {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  &-30 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  &-35 {
-    padding-top: 35px;
-    padding-bottom: 35px;
-  }
-
-  &-40 {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  &-45 {
-    padding-top: 45px;
-    padding-bottom: 45px;
-  }
-
-  &-50 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  &-55 {
-    padding-top: 55px;
-    padding-bottom: 55px;
-  }
-
-  &-60 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  &-65 {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-
-  &-70 {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-
-  &-75 {
-    padding-top: 75px;
-    padding-bottom: 75px;
-  }
-
-  &-80 {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  &-85 {
-    padding-top: 85px;
-    padding-bottom: 85px;
-  }
-
-  &-90 {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-
-  &-95 {
-    padding-top: 95px;
-    padding-bottom: 95px;
-  }
-
-  &-100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.#{$padding-y-axis} {
+  @each $key, $value in $group-p-series {
+    &-#{$key} {
+      @include group-py-variant($value, $value);
+    }
   }
 }
 
-//responsive
+.#{$padding-y-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-py-variant($value, $value);
+    }
+  }
+}
+
+//responsive-pc
 
 @media (max-width: 1199px) {
-
-  .#{$group-p} {
-    &-0-lg > * {
-      padding: 0;
-    }
-
-    &-1-lg > * {
-      padding: 1px;
-    }
-
-    &-2-lg > * {
-      padding: 2px;
-    }
-
-    &-3-lg > * {
-      padding: 3px;
-    }
-
-    &-4-lg > * {
-      padding: 4px;
-    }
-
-    &-5-lg > * {
-      padding: 5px;
-    }
-
-    &-6-lg > * {
-      padding: 6px;
-    }
-
-    &-7-lg > * {
-      padding: 7px;
-    }
-
-    &-8-lg > * {
-      padding: 8px;
-    }
-
-    &-9-lg > * {
-      padding: 9px;
-    }
-
-    &-10-lg > * {
-      padding: 10px;
-    }
-
-    &-15-lg > * {
-      padding: 15px;
-    }
-
-    &-20-lg > * {
-      padding: 20px;
-    }
-
-    &-25-lg > * {
-      padding: 25px;
-    }
-
-    &-30-lg > * {
-      padding: 30px;
-    }
-
-    &-35-lg > * {
-      padding: 35px;
-    }
-
-    &-40-lg > * {
-      padding: 40px;
-    }
-
-    &-45-lg > * {
-      padding: 45px;
-    }
-
-    &-50-lg > * {
-      padding: 50px;
-    }
-
-    &-55-lg > * {
-      padding: 55px;
-    }
-
-    &-60-lg > * {
-      padding: 60px;
-    }
-
-    &-65-lg > * {
-      padding: 65px;
-    }
-
-    &-70-lg > * {
-      padding: 70px;
-    }
-
-    &-75-lg > * {
-      padding: 75px;
-    }
-
-    &-80-lg > * {
-      padding: 80px;
-    }
-
-    &-85-lg > * {
-      padding: 85px;
-    }
-
-    &-90-lg > * {
-      padding: 90px;
-    }
-
-    &-95-lg > * {
-      padding: 95px;
-    }
-
-    &-100-lg > * {
-      padding: 100px;
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$group-padding} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg > * {
+        @include group-p-variant($value);
+      }
     }
   }
 
-  .#{$group-pt} {
-    &-0-lg > * {
-      padding-top: 0;
-    }
-
-    &-1-lg > * {
-      padding-top: 1px;
-    }
-
-    &-2-lg > * {
-      padding-top: 2px;
-    }
-
-    &-3-lg > * {
-      padding-top: 3px;
-    }
-
-    &-4-lg > * {
-      padding-top: 4px;
-    }
-
-    &-5-lg > * {
-      padding-top: 5px;
-    }
-
-    &-6-lg > * {
-      padding-top: 6px;
-    }
-
-    &-7-lg > * {
-      padding-top: 7px;
-    }
-
-    &-8-lg > * {
-      padding-top: 8px;
-    }
-
-    &-9-lg > * {
-      padding-top: 9px;
-    }
-
-    &-10-lg > * {
-      padding-top: 10px;
-    }
-
-    &-15-lg > * {
-      padding-top: 15px;
-    }
-
-    &-20-lg > * {
-      padding-top: 20px;
-    }
-
-    &-25-lg > * {
-      padding-top: 25px;
-    }
-
-    &-30-lg > * {
-      padding-top: 30px;
-    }
-
-    &-35-lg > * {
-      padding-top: 35px;
-    }
-
-    &-40-lg > * {
-      padding-top: 40px;
-    }
-
-    &-45-lg > * {
-      padding-top: 45px;
-    }
-
-    &-50-lg > * {
-      padding-top: 50px;
-    }
-
-    &-55-lg > * {
-      padding-top: 55px;
-    }
-
-    &-60-lg > * {
-      padding-top: 60px;
-    }
-
-    &-65-lg > * {
-      padding-top: 65px;
-    }
-
-    &-70-lg > * {
-      padding-top: 70px;
-    }
-
-    &-75-lg > * {
-      padding-top: 75px;
-    }
-
-    &-80-lg > * {
-      padding-top: 80px;
-    }
-
-    &-85-lg > * {
-      padding-top: 85px;
-    }
-
-    &-90-lg > * {
-      padding-top: 90px;
-    }
-
-    &-95-lg > * {
-      padding-top: 95px;
-    }
-
-    &-100-lg > * {
-      padding-top: 100px;
+  .#{$group-padding} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-p-variant($value);
+      }
     }
   }
 
-  .#{$group-pr} {
-    &-0-lg > * {
-      padding-right: 0;
-    }
-
-    &-1-lg > * {
-      padding-right: 1px;
-    }
-
-    &-2-lg > * {
-      padding-right: 2px;
-    }
-
-    &-3-lg > * {
-      padding-right: 3px;
-    }
-
-    &-4-lg > * {
-      padding-right: 4px;
-    }
-
-    &-5-lg > * {
-      padding-right: 5px;
-    }
-
-    &-6-lg > * {
-      padding-right: 6px;
-    }
-
-    &-7-lg > * {
-      padding-right: 7px;
-    }
-
-    &-8-lg > * {
-      padding-right: 8px;
-    }
-
-    &-9-lg > * {
-      padding-right: 9px;
-    }
-
-    &-10-lg > * {
-      padding-right: 10px;
-    }
-
-    &-15-lg > * {
-      padding-right: 15px;
-    }
-
-    &-20-lg > * {
-      padding-right: 20px;
-    }
-
-    &-25-lg > * {
-      padding-right: 25px;
-    }
-
-    &-30-lg > * {
-      padding-right: 30px;
-    }
-
-    &-35-lg > * {
-      padding-right: 35px;
-    }
-
-    &-40-lg > * {
-      padding-right: 40px;
-    }
-
-    &-45-lg > * {
-      padding-right: 45px;
-    }
-
-    &-50-lg > * {
-      padding-right: 50px;
-    }
-
-    &-55-lg > * {
-      padding-right: 55px;
-    }
-
-    &-60-lg > * {
-      padding-right: 60px;
-    }
-
-    &-65-lg > * {
-      padding-right: 65px;
-    }
-
-    &-70-lg > * {
-      padding-right: 70px;
-    }
-
-    &-75-lg > * {
-      padding-right: 75px;
-    }
-
-    &-80-lg > * {
-      padding-right: 80px;
-    }
-
-    &-85-lg > * {
-      padding-right: 85px;
-    }
-
-    &-90-lg > * {
-      padding-right: 90px;
-    }
-
-    &-95-lg > * {
-      padding-right: 95px;
-    }
-
-    &-100-lg > * {
-      padding-right: 100px;
+  .#{$group-padding-top} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg > * {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$group-pb} {
-    &-0-lg > * {
-      padding-bottom: 0;
-    }
-
-    &-1-lg > * {
-      padding-bottom: 1px;
-    }
-
-    &-2-lg > * {
-      padding-bottom: 2px;
-    }
-
-    &-3-lg > * {
-      padding-bottom: 3px;
-    }
-
-    &-4-lg > * {
-      padding-bottom: 4px;
-    }
-
-    &-5-lg > * {
-      padding-bottom: 5px;
-    }
-
-    &-6-lg > * {
-      padding-bottom: 6px;
-    }
-
-    &-7-lg > * {
-      padding-bottom: 7px;
-    }
-
-    &-8-lg > * {
-      padding-bottom: 8px;
-    }
-
-    &-9-lg > * {
-      padding-bottom: 9px;
-    }
-
-    &-10-lg > * {
-      padding-bottom: 10px;
-    }
-
-    &-15-lg > * {
-      padding-bottom: 15px;
-    }
-
-    &-20-lg > * {
-      padding-bottom: 20px;
-    }
-
-    &-25-lg > * {
-      padding-bottom: 25px;
-    }
-
-    &-30-lg > * {
-      padding-bottom: 30px;
-    }
-
-    &-35-lg > * {
-      padding-bottom: 35px;
-    }
-
-    &-40-lg > * {
-      padding-bottom: 40px;
-    }
-
-    &-45-lg > * {
-      padding-bottom: 45px;
-    }
-
-    &-50-lg > * {
-      padding-bottom: 50px;
-    }
-
-    &-55-lg > * {
-      padding-bottom: 55px;
-    }
-
-    &-60-lg > * {
-      padding-bottom: 60px;
-    }
-
-    &-65-lg > * {
-      padding-bottom: 65px;
-    }
-
-    &-70-lg > * {
-      padding-bottom: 70px;
-    }
-
-    &-75-lg > * {
-      padding-bottom: 75px;
-    }
-
-    &-80-lg > * {
-      padding-bottom: 80px;
-    }
-
-    &-85-lg > * {
-      padding-bottom: 85px;
-    }
-
-    &-90-lg > * {
-      padding-bottom: 90px;
-    }
-
-    &-95-lg > * {
-      padding-bottom: 95px;
-    }
-
-    &-100-lg > * {
-      padding-bottom: 100px;
+  .#{$group-padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$group-pl} {
-    &-0-lg > * {
-      padding-left: 0;
-    }
-
-    &-1-lg > * {
-      padding-left: 1px;
-    }
-
-    &-2-lg > * {
-      padding-left: 2px;
-    }
-
-    &-3-lg > * {
-      padding-left: 3px;
-    }
-
-    &-4-lg > * {
-      padding-left: 4px;
-    }
-
-    &-5-lg > * {
-      padding-left: 5px;
-    }
-
-    &-6-lg > * {
-      padding-left: 6px;
-    }
-
-    &-7-lg > * {
-      padding-left: 7px;
-    }
-
-    &-8-lg > * {
-      padding-left: 8px;
-    }
-
-    &-9-lg > * {
-      padding-left: 9px;
-    }
-
-    &-10-lg > * {
-      padding-left: 10px;
-    }
-
-    &-15-lg > * {
-      padding-left: 15px;
-    }
-
-    &-20-lg > * {
-      padding-left: 20px;
-    }
-
-    &-25-lg > * {
-      padding-left: 25px;
-    }
-
-    &-30-lg > * {
-      padding-left: 30px;
-    }
-
-    &-35-lg > * {
-      padding-left: 35px;
-    }
-
-    &-40-lg > * {
-      padding-left: 40px;
-    }
-
-    &-45-lg > * {
-      padding-left: 45px;
-    }
-
-    &-50-lg > * {
-      padding-left: 50px;
-    }
-
-    &-55-lg > * {
-      padding-left: 55px;
-    }
-
-    &-60-lg > * {
-      padding-left: 60px;
-    }
-
-    &-65-lg > * {
-      padding-left: 65px;
-    }
-
-    &-70-lg > * {
-      padding-left: 70px;
-    }
-
-    &-75-lg > * {
-      padding-left: 75px;
-    }
-
-    &-80-lg > * {
-      padding-left: 80px;
-    }
-
-    &-85-lg > * {
-      padding-left: 85px;
-    }
-
-    &-90-lg > * {
-      padding-left: 90px;
-    }
-
-    &-95-lg > * {
-      padding-left: 95px;
-    }
-
-    &-100-lg > * {
-      padding-left: 100px;
+  .#{$group-padding-right} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg > * {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$group-px} {
-    &-0-lg > * {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &-1-lg > * {
-      padding-left: 1px;
-      padding-right: 1px;
-    }
-
-    &-2-lg > * {
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-
-    &-3-lg > * {
-      padding-left: 3px;
-      padding-right: 3px;
-    }
-
-    &-4-lg > * {
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-
-    &-5-lg > * {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-
-    &-6-lg > * {
-      padding-left: 6px;
-      padding-right: 6px;
-    }
-
-    &-7-lg > * {
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-
-    &-8-lg > * {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-
-    &-9-lg > * {
-      padding-left: 9px;
-      padding-right: 9px;
-    }
-
-    &-10-lg > * {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &-15-lg > * {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    &-20-lg > * {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    &-25-lg > * {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-
-    &-30-lg > * {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    &-35-lg > * {
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-
-    &-40-lg > * {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    &-45-lg > * {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-
-    &-50-lg > * {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    &-55-lg > * {
-      padding-left: 55px;
-      padding-right: 55px;
-    }
-
-    &-60-lg > * {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
-    &-65-lg > * {
-      padding-left: 65px;
-      padding-right: 65px;
-    }
-
-    &-70-lg > * {
-      padding-left: 70px;
-      padding-right: 70px;
-    }
-
-    &-75-lg > * {
-      padding-left: 75px;
-      padding-right: 75px;
-    }
-
-    &-80-lg > * {
-      padding-left: 80px;
-      padding-right: 80px;
-    }
-
-    &-85-lg > * {
-      padding-left: 85px;
-      padding-right: 85px;
-    }
-
-    &-90-lg > * {
-      padding-left: 90px;
-      padding-right: 90px;
-    }
-
-    &-95-lg > * {
-      padding-left: 95px;
-      padding-right: 95px;
-    }
-
-    &-100-lg > * {
-      padding-left: 100px;
-      padding-right: 100px;
+  .#{$group-padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$group-py} {
-    &-0-lg > * {
-      padding-top: 0;
-      padding-bottom: 0;
+  .#{$group-padding-bottom} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg > * {
+        @include group-pb-variant($value);
+      }
     }
+  }
 
-    &-1-lg > * {
-      padding-top: 1px;
-      padding-bottom: 1px;
+  .#{$group-padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-pb-variant($value);
+      }
     }
+  }
 
-    &-2-lg > * {
-      padding-top: 2px;
-      padding-bottom: 2px;
+  .#{$group-padding-left} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg > * {
+        @include group-pl-variant($value);
+      }
     }
+  }
 
-    &-3-lg > * {
-      padding-top: 3px;
-      padding-bottom: 3px;
+  .#{$group-padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-pl-variant($value);
+      }
     }
+  }
 
-    &-4-lg > * {
-      padding-top: 4px;
-      padding-bottom: 4px;
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg > * {
+        @include group-px-variant($value, $value);
+      }
     }
+  }
 
-    &-5-lg > * {
-      padding-top: 5px;
-      padding-bottom: 5px;
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-px-variant($value, $value);
+      }
     }
+  }
 
-    &-6-lg > * {
-      padding-top: 6px;
-      padding-bottom: 6px;
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg > * {
+        @include group-py-variant($value, $value);
+      }
     }
+  }
 
-    &-7-lg > * {
-      padding-top: 7px;
-      padding-bottom: 7px;
-    }
-
-    &-8-lg > * {
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-
-    &-9-lg > * {
-      padding-top: 9px;
-      padding-bottom: 9px;
-    }
-
-    &-10-lg > * {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    &-15-lg > * {
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-
-    &-20-lg > * {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    &-25-lg > * {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-
-    &-30-lg > * {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    &-35-lg > * {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-
-    &-40-lg > * {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-
-    &-45-lg > * {
-      padding-top: 45px;
-      padding-bottom: 45px;
-    }
-
-    &-50-lg > * {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    &-55-lg > * {
-      padding-top: 55px;
-      padding-bottom: 55px;
-    }
-
-    &-60-lg > * {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    &-65-lg > * {
-      padding-top: 65px;
-      padding-bottom: 65px;
-    }
-
-    &-70-lg > * {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-
-    &-75-lg > * {
-      padding-top: 75px;
-      padding-bottom: 75px;
-    }
-
-    &-80-lg > * {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-
-    &-85-lg > * {
-      padding-top: 85px;
-      padding-bottom: 85px;
-    }
-
-    &-90-lg > * {
-      padding-top: 90px;
-      padding-bottom: 90px;
-    }
-
-    &-95-lg > * {
-      padding-top: 95px;
-      padding-bottom: 95px;
-    }
-
-    &-100-lg > * {
-      padding-top: 100px;
-      padding-bottom: 100px;
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-py-variant($value, $value);
+      }
     }
   }
 
@@ -2693,1770 +385,235 @@
       padding: 0;
     }
 
-    &-0-lg {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg {
+        @include padding-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$padding} {
+    &-all-0-lg,
+    &-all-0-lg > *,
+    &-all-0-lg * {
       padding: 0;
     }
 
-    &-1-lg {
-      padding: 1px;
-    }
-
-    &-2-lg {
-      padding: 2px;
-    }
-
-    &-3-lg {
-      padding: 3px;
-    }
-
-    &-4-lg {
-      padding: 4px;
-    }
-
-    &-5-lg {
-      padding: 5px;
-    }
-
-    &-6-lg {
-      padding: 6px;
-    }
-
-    &-7-lg {
-      padding: 7px;
-    }
-
-    &-8-lg {
-      padding: 8px;
-    }
-
-    &-9-lg {
-      padding: 9px;
-    }
-
-    &-10-lg {
-      padding: 10px;
-    }
-
-    &-15-lg {
-      padding: 15px;
-    }
-
-    &-20-lg {
-      padding: 20px;
-    }
-
-    &-25-lg {
-      padding: 25px;
-    }
-
-    &-30-lg {
-      padding: 30px;
-    }
-
-    &-35-lg {
-      padding: 35px;
-    }
-
-    &-40-lg {
-      padding: 50px;
-    }
-
-    &-45-lg {
-      padding: 45px;
-    }
-
-    &-50-lg {
-      padding: 50px;
-    }
-
-    &-55-lg {
-      padding: 55px;
-    }
-
-    &-60-lg {
-      padding: 60px;
-    }
-
-    &-65-lg {
-      padding: 65px;
-    }
-
-    &-70-lg {
-      padding: 70px;
-    }
-
-    &-75-lg {
-      padding: 75px;
-    }
-
-    &-80-lg {
-      padding: 80px;
-    }
-
-    &-85-lg {
-      padding: 85px;
-    }
-
-    &-90-lg {
-      padding: 90px;
-    }
-
-    &-95-lg {
-      padding: 95px;
-    }
-
-    &-100-lg {
-      padding: 100px;
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include padding-pixel-variant($value);
+      }
     }
   }
 
-  .#{$padding-t} {
-    &-0-lg {
-      padding-top: 0;
-    }
-
-    &-1-lg {
-      padding-top: 1px;
-    }
-
-    &-2-lg {
-      padding-top: 2px;
-    }
-
-    &-3-lg {
-      padding-top: 3px;
-    }
-
-    &-4-lg {
-      padding-top: 4px;
-    }
-
-    &-5-lg {
-      padding-top: 5px;
-    }
-
-    &-6-lg {
-      padding-top: 6px;
-    }
-
-    &-7-lg {
-      padding-top: 7px;
-    }
-
-    &-8-lg {
-      padding-top: 8px;
-    }
-
-    &-9-lg {
-      padding-top: 9px;
-    }
-
-    &-10-lg {
-      padding-top: 10px;
-    }
-
-    &-15-lg {
-      padding-top: 15px;
-    }
-
-    &-20-lg {
-      padding-top: 20px;
-    }
-
-    &-25-lg {
-      padding-top: 25px;
-    }
-
-    &-30-lg {
-      padding-top: 30px;
-    }
-
-    &-35-lg {
-      padding-top: 35px;
-    }
-
-    &-40-lg {
-      padding-top: 40px;
-    }
-
-    &-45-lg {
-      padding-top: 45px;
-    }
-
-    &-50-lg {
-      padding-top: 50px;
-    }
-
-    &-55-lg {
-      padding-top: 55px;
-    }
-
-    &-60-lg {
-      padding-top: 60px;
-    }
-
-    &-65-lg {
-      padding-top: 65px;
-    }
-
-    &-70-lg {
-      padding-top: 70px;
-    }
-
-    &-75-lg {
-      padding-top: 75px;
-    }
-
-    &-80-lg {
-      padding-top: 80px;
-    }
-
-    &-85-lg {
-      padding-top: 85px;
-    }
-
-    &-90-lg {
-      padding-top: 50px;
-    }
-
-    &-95-lg {
-      padding-top: 95px;
-    }
-
-    &-100-lg {
-      padding-top: 100px;
+  .#{$padding-top} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$padding-r} {
-    &-0-lg {
-      padding-right: 0;
-    }
-
-    &-1-lg {
-      padding-right: 1px;
-    }
-
-    &-2-lg {
-      padding-right: 2px;
-    }
-
-    &-3-lg {
-      padding-right: 3px;
-    }
-
-    &-4-lg {
-      padding-right: 4px;
-    }
-
-    &-5-lg {
-      padding-right: 5px;
-    }
-
-    &-6-lg {
-      padding-right: 6px;
-    }
-
-    &-7-lg {
-      padding-right: 7px;
-    }
-
-    &-8-lg {
-      padding-right: 8px;
-    }
-
-    &-9-lg {
-      padding-right: 9px;
-    }
-
-    &-10-lg {
-      padding-right: 10px;
-    }
-
-    &-15-lg {
-      padding-right: 15px;
-    }
-
-    &-20-lg {
-      padding-right: 20px;
-    }
-
-    &-25-lg {
-      padding-right: 25px;
-    }
-
-    &-30-lg {
-      padding-right: 30px;
-    }
-
-    &-35-lg {
-      padding-right: 35px;
-    }
-
-    &-40-lg {
-      padding-right: 40px;
-    }
-
-    &-45-lg {
-      padding-right: 45px;
-    }
-
-    &-50-lg {
-      padding-right: 50px;
-    }
-
-    &-55-lg {
-      padding-right: 55px;
-    }
-
-    &-60-lg {
-      padding-right: 60px;
-    }
-
-    &-65-lg {
-      padding-right: 65px;
-    }
-
-    &-70-lg {
-      padding-right: 70px;
-    }
-
-    &-75-lg {
-      padding-right: 75px;
-    }
-
-    &-80-lg {
-      padding-right: 80px;
-    }
-
-    &-85-lg {
-      padding-right: 85px;
-    }
-
-    &-90-lg {
-      padding-right: 90px;
-    }
-
-    &-95-lg {
-      padding-right: 95px;
-    }
-
-    &-100-lg {
-      padding-right: 100px;
+  .#{$padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$padding-b} {
-    &-0-lg {
-      padding-bottom: 0;
-    }
-
-    &-1-lg {
-      padding-bottom: 1px;
-    }
-
-    &-2-lg {
-      padding-bottom: 2px;
-    }
-
-    &-3-lg {
-      padding-bottom: 3px;
-    }
-
-    &-4-lg {
-      padding-bottom: 4px;
-    }
-
-    &-5-lg {
-      padding-bottom: 5px;
-    }
-
-    &-6-lg {
-      padding-bottom: 6px;
-    }
-
-    &-7-lg {
-      padding-bottom: 7px;
-    }
-
-    &-8-lg {
-      padding-bottom: 8px;
-    }
-
-    &-9-lg {
-      padding-bottom: 9px;
-    }
-
-    &-10-lg {
-      padding-bottom: 10px;
-    }
-
-    &-15-lg {
-      padding-bottom: 15px;
-    }
-
-    &-20-lg {
-      padding-bottom: 20px;
-    }
-
-    &-25-lg {
-      padding-bottom: 25px;
-    }
-
-    &-30-lg {
-      padding-bottom: 30px;
-    }
-
-    &-35-lg {
-      padding-bottom: 35px;
-    }
-
-    &-40-lg {
-      padding-bottom: 40px;
-    }
-
-    &-45-lg {
-      padding-bottom: 45px;
-    }
-
-    &-50-lg {
-      padding-bottom: 50px;
-    }
-
-    &-55-lg {
-      padding-bottom: 55px;
-    }
-
-    &-60-lg {
-      padding-bottom: 60px;
-    }
-
-    &-65-lg {
-      padding-bottom: 65px;
-    }
-
-    &-70-lg {
-      padding-bottom: 70px;
-    }
-
-    &-75-lg {
-      padding-bottom: 75px;
-    }
-
-    &-80-lg {
-      padding-bottom: 80px;
-    }
-
-    &-85-lg {
-      padding-bottom: 85px;
-    }
-
-    &-90-lg {
-      padding-bottom: 90px;
-    }
-
-    &-95-lg {
-      padding-bottom: 95px;
-    }
-
-    &-100-lg {
-      padding-bottom: 100px;
+  .#{$padding-right} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$padding-l} {
-    &-0-lg {
-      padding-left: 0;
-    }
-
-    &-1-lg {
-      padding-left: 1px;
-    }
-
-    &-2-lg {
-      padding-left: 2px;
-    }
-
-    &-3-lg {
-      padding-left: 3px;
-    }
-
-    &-4-lg {
-      padding-left: 4px;
-    }
-
-    &-5-lg {
-      padding-left: 5px;
-    }
-
-    &-6-lg {
-      padding-left: 6px;
-    }
-
-    &-7-lg {
-      padding-left: 7px;
-    }
-
-    &-8-lg {
-      padding-left: 8px;
-    }
-
-    &-9-lg {
-      padding-left: 9px;
-    }
-
-    &-10-lg {
-      padding-left: 10px;
-    }
-
-    &-15-lg {
-      padding-left: 15px;
-    }
-
-    &-20-lg {
-      padding-left: 20px;
-    }
-
-    &-25-lg {
-      padding-left: 25px;
-    }
-
-    &-30-lg {
-      padding-left: 30px;
-    }
-
-    &-35-lg {
-      padding-left: 35px;
-    }
-
-    &-40-lg {
-      padding-left: 40px;
-    }
-
-    &-45-lg {
-      padding-left: 45px;
-    }
-
-    &-50-lg {
-      padding-left: 50px;
-    }
-
-    &-55-lg {
-      padding-left: 55px;
-    }
-
-    &-65-lg {
-      padding-left: 65px;
-    }
-
-    &-70-lg {
-      padding-left: 70px;
-    }
-
-    &-75-lg {
-      padding-left: 75px;
-    }
-
-    &-80-lg {
-      padding-left: 80px;
-    }
-
-    &-85-lg {
-      padding-left: 85px;
-    }
-
-    &-90-lg {
-      padding-left: 90px;
-    }
-
-    &-95-lg {
-      padding-left: 95px;
-    }
-
-    &-100-lg {
-      padding-left: 100px;
+  .#{$padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$padding-x} {
-    &-0-lg {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &-1-lg {
-      padding-left: 1px;
-      padding-right: 1px;
-    }
-
-    &-2-lg {
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-
-    &-3-lg {
-      padding-left: 3px;
-      padding-right: 3px;
-    }
-
-    &-4-lg {
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-
-    &-5-lg {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-
-    &-6-lg {
-      padding-left: 6px;
-      padding-right: 6px;
-    }
-
-    &-7-lg {
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-
-    &-8-lg {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-
-    &-9-lg {
-      padding-left: 9px;
-      padding-right: 9px;
-    }
-
-    &-10-lg {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &-15-lg {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    &-20-lg {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    &-25-lg {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-
-    &-30-lg {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    &-35-lg {
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-
-    &-40-lg {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    &-45-lg {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-
-    &-50-lg {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    &-55-lg {
-      padding-left: 55px;
-      padding-right: 55px;
-    }
-
-    &-60-lg {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
-    &-65-lg {
-      padding-left: 65px;
-      padding-right: 65px;
-    }
-
-    &-70-lg {
-      padding-left: 70px;
-      padding-right: 70px;
-    }
-
-    &-75-lg {
-      padding-left: 75px;
-      padding-right: 75px;
-    }
-
-    &-80-lg {
-      padding-left: 80px;
-      padding-right: 80px;
-    }
-
-    &-85-lg {
-      padding-left: 85px;
-      padding-right: 85px;
-    }
-
-    &-90-lg {
-      padding-left: 90px;
-      padding-right: 90px;
-    }
-
-    &-95-lg {
-      padding-left: 95px;
-      padding-right: 95px;
-    }
-
-    &-100-lg {
-      padding-left: 100px;
-      padding-right: 100px;
+  .#{$padding-bottom} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg {
+        @include group-pb-variant($value);
+      }
     }
   }
 
-  .#{$padding-y} {
-    &-0-lg {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-
-    &-1-lg {
-      padding-top: 1px;
-      padding-bottom: 1px;
-    }
-
-    &-2-lg {
-      padding-top: 2px;
-      padding-bottom: 2px;
-    }
-
-    &-3-lg {
-      padding-top: 3px;
-      padding-bottom: 3px;
-    }
-
-    &-4-lg {
-      padding-top: 4px;
-      padding-bottom: 4px;
-    }
-
-    &-5-lg {
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-
-    &-6-lg {
-      padding-top: 6px;
-      padding-bottom: 6px;
-    }
-
-    &-7-lg {
-      padding-top: 7px;
-      padding-bottom: 7px;
-    }
-
-    &-8-lg {
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-
-    &-9-lg {
-      padding-top: 9px;
-      padding-bottom: 9px;
-    }
-
-    &-10-lg {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    &-15-lg {
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-
-    &-20-lg {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    &-25-lg {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-
-    &-30-lg {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    &-35-lg {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-
-    &-40-lg {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-
-    &-45-lg {
-      padding-top: 45px;
-      padding-bottom: 45px;
-    }
-
-    &-50-lg {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    &-55-lg {
-      padding-top: 55px;
-      padding-bottom: 55px;
-    }
-
-    &-60-lg {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    &-65-lg {
-      padding-top: 65px;
-      padding-bottom: 65px;
-    }
-
-    &-70-lg {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-
-    &-75-lg {
-      padding-top: 75px;
-      padding-bottom: 75px;
-    }
-
-    &-80-lg {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-
-    &-85-lg {
-      padding-top: 85px;
-      padding-bottom: 85px;
-    }
-
-    &-90-lg {
-      padding-top: 90px;
-      padding-bottom: 90px;
-    }
-
-    &-95-lg {
-      padding-top: 95px;
-      padding-bottom: 95px;
-    }
-
-    &-100-lg {
-      padding-top: 100px;
-      padding-bottom: 100px;
+  .#{$padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-pb-variant($value);
+      }
     }
   }
 
+  .#{$padding-left} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-lg {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
-
-  .#{$group-p} {
-    &-0-md > * {
-      padding: 0;
-    }
-
-    &-1-md > * {
-      padding: 1px;
-    }
-
-    &-2-md > * {
-      padding: 2px;
-    }
-
-    &-3-md > * {
-      padding: 3px;
-    }
-
-    &-4-md > * {
-      padding: 4px;
-    }
-
-    &-5-md > * {
-      padding: 5px;
-    }
-
-    &-6-md > * {
-      padding: 6px;
-    }
-
-    &-7-md > * {
-      padding: 7px;
-    }
-
-    &-8-md > * {
-      padding: 8px;
-    }
-
-    &-9-md > * {
-      padding: 9px;
-    }
-
-    &-10-md > * {
-      padding: 10px;
-    }
-
-    &-15-md > * {
-      padding: 15px;
-    }
-
-    &-20-md > * {
-      padding: 20px;
-    }
-
-    &-25-md > * {
-      padding: 25px;
-    }
-
-    &-30-md > * {
-      padding: 30px;
-    }
-
-    &-35-md > * {
-      padding: 35px;
-    }
-
-    &-40-md > * {
-      padding: 40px;
-    }
-
-    &-45-md > * {
-      padding: 45px;
-    }
-
-    &-50-md > * {
-      padding: 50px;
-    }
-
-    &-55-md > * {
-      padding: 55px;
-    }
-
-    &-60-md > * {
-      padding: 60px;
-    }
-
-    &-65-md > * {
-      padding: 65px;
-    }
-
-    &-70-md > * {
-      padding: 70px;
-    }
-
-    &-75-md > * {
-      padding: 75px;
-    }
-
-    &-80-md > * {
-      padding: 80px;
-    }
-
-    &-85-md > * {
-      padding: 85px;
-    }
-
-    &-90-md > * {
-      padding: 90px;
-    }
-
-    &-95-md > * {
-      padding: 95px;
-    }
-
-    &-100-md > * {
-      padding: 100px;
+  //Large devices (desktops, 768px and 992px)
+  .#{$group-padding} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md > * {
+        @include group-p-variant($value);
+      }
     }
   }
 
-  .#{$group-pt} {
-    &-0-md > * {
-      padding-top: 0;
-    }
-
-    &-1-md > * {
-      padding-top: 1px;
-    }
-
-    &-2-md > * {
-      padding-top: 2px;
-    }
-
-    &-3-md > * {
-      padding-top: 3px;
-    }
-
-    &-4-md > * {
-      padding-top: 4px;
-    }
-
-    &-5-md > * {
-      padding-top: 5px;
-    }
-
-    &-6-md > * {
-      padding-top: 6px;
-    }
-
-    &-7-md > * {
-      padding-top: 7px;
-    }
-
-    &-8-md > * {
-      padding-top: 8px;
-    }
-
-    &-9-md > * {
-      padding-top: 9px;
-    }
-
-    &-10-md > * {
-      padding-top: 10px;
-    }
-
-    &-15-md > * {
-      padding-top: 15px;
-    }
-
-    &-20-md > * {
-      padding-top: 20px;
-    }
-
-    &-25-md > * {
-      padding-top: 25px;
-    }
-
-    &-30-md > * {
-      padding-top: 30px;
-    }
-
-    &-35-md > * {
-      padding-top: 35px;
-    }
-
-    &-40-md > * {
-      padding-top: 40px;
-    }
-
-    &-45-md > * {
-      padding-top: 45px;
-    }
-
-    &-50-md > * {
-      padding-top: 50px;
-    }
-
-    &-55-md > * {
-      padding-top: 55px;
-    }
-
-    &-60-md > * {
-      padding-top: 60px;
-    }
-
-    &-65-md > * {
-      padding-top: 65px;
-    }
-
-    &-70-md > * {
-      padding-top: 70px;
-    }
-
-    &-75-md > * {
-      padding-top: 75px;
-    }
-
-    &-80-md > * {
-      padding-top: 80px;
-    }
-
-    &-85-md > * {
-      padding-top: 85px;
-    }
-
-    &-90-md > * {
-      padding-top: 90px;
-    }
-
-    &-95-md > * {
-      padding-top: 95px;
-    }
-
-    &-100-md > * {
-      padding-top: 100px;
+  .#{$group-padding} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-p-variant($value);
+      }
     }
   }
 
-  .#{$group-pr} {
-    &-0-md > * {
-      padding-right: 0;
-    }
-
-    &-1-md > * {
-      padding-right: 1px;
-    }
-
-    &-2-md > * {
-      padding-right: 2px;
-    }
-
-    &-3-md > * {
-      padding-right: 3px;
-    }
-
-    &-4-md > * {
-      padding-right: 4px;
-    }
-
-    &-5-md > * {
-      padding-right: 5px;
-    }
-
-    &-6-md > * {
-      padding-right: 6px;
-    }
-
-    &-7-md > * {
-      padding-right: 7px;
-    }
-
-    &-8-md > * {
-      padding-right: 8px;
-    }
-
-    &-9-md > * {
-      padding-right: 9px;
-    }
-
-    &-10-md > * {
-      padding-right: 10px;
-    }
-
-    &-15-md > * {
-      padding-right: 15px;
-    }
-
-    &-20-md > * {
-      padding-right: 20px;
-    }
-
-    &-25-md > * {
-      padding-right: 25px;
-    }
-
-    &-30-md > * {
-      padding-right: 30px;
-    }
-
-    &-35-md > * {
-      padding-right: 35px;
-    }
-
-    &-40-md > * {
-      padding-right: 40px;
-    }
-
-    &-45-md > * {
-      padding-right: 45px;
-    }
-
-    &-50-md > * {
-      padding-right: 50px;
-    }
-
-    &-55-md > * {
-      padding-right: 55px;
-    }
-
-    &-60-md > * {
-      padding-right: 60px;
-    }
-
-    &-65-md > * {
-      padding-right: 65px;
-    }
-
-    &-70-md > * {
-      padding-right: 70px;
-    }
-
-    &-75-md > * {
-      padding-right: 75px;
-    }
-
-    &-80-md > * {
-      padding-right: 80px;
-    }
-
-    &-85-md > * {
-      padding-right: 85px;
-    }
-
-    &-90-md > * {
-      padding-right: 90px;
-    }
-
-    &-95-md > * {
-      padding-right: 95px;
-    }
-
-    &-100-md > * {
-      padding-right: 100px;
+  .#{$group-padding-top} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md > * {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$group-pb} {
-    &-0-md > * {
-      padding-bottom: 0;
-    }
-
-    &-1-md > * {
-      padding-bottom: 1px;
-    }
-
-    &-2-md > * {
-      padding-bottom: 2px;
-    }
-
-    &-3-md > * {
-      padding-bottom: 3px;
-    }
-
-    &-4-md > * {
-      padding-bottom: 4px;
-    }
-
-    &-5-md > * {
-      padding-bottom: 5px;
-    }
-
-    &-6-md > * {
-      padding-bottom: 6px;
-    }
-
-    &-7-md > * {
-      padding-bottom: 7px;
-    }
-
-    &-8-md > * {
-      padding-bottom: 8px;
-    }
-
-    &-9-md > * {
-      padding-bottom: 9px;
-    }
-
-    &-10-md > * {
-      padding-bottom: 10px;
-    }
-
-    &-15-md > * {
-      padding-bottom: 15px;
-    }
-
-    &-20-md > * {
-      padding-bottom: 20px;
-    }
-
-    &-25-md > * {
-      padding-bottom: 25px;
-    }
-
-    &-30-md > * {
-      padding-bottom: 30px;
-    }
-
-    &-35-md > * {
-      padding-bottom: 35px;
-    }
-
-    &-40-md > * {
-      padding-bottom: 40px;
-    }
-
-    &-45-md > * {
-      padding-bottom: 45px;
-    }
-
-    &-50-md > * {
-      padding-bottom: 50px;
-    }
-
-    &-55-md > * {
-      padding-bottom: 55px;
-    }
-
-    &-60-md > * {
-      padding-bottom: 60px;
-    }
-
-    &-65-md > * {
-      padding-bottom: 65px;
-    }
-
-    &-70-md > * {
-      padding-bottom: 70px;
-    }
-
-    &-75-md > * {
-      padding-bottom: 75px;
-    }
-
-    &-80-md > * {
-      padding-bottom: 80px;
-    }
-
-    &-85-md > * {
-      padding-bottom: 85px;
-    }
-
-    &-90-md > * {
-      padding-bottom: 90px;
-    }
-
-    &-95-md > * {
-      padding-bottom: 95px;
-    }
-
-    &-100-md > * {
-      padding-bottom: 100px;
+  .#{$group-padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$group-pl} {
-    &-0-md > * {
-      padding-left: 0;
-    }
-
-    &-1-md > * {
-      padding-left: 1px;
-    }
-
-    &-2-md > * {
-      padding-left: 2px;
-    }
-
-    &-3-md > * {
-      padding-left: 3px;
-    }
-
-    &-4-md > * {
-      padding-left: 4px;
-    }
-
-    &-5-md > * {
-      padding-left: 5px;
-    }
-
-    &-6-md > * {
-      padding-left: 6px;
-    }
-
-    &-7-md > * {
-      padding-left: 7px;
-    }
-
-    &-8-md > * {
-      padding-left: 8px;
-    }
-
-    &-9-md > * {
-      padding-left: 9px;
-    }
-
-    &-10-md > * {
-      padding-left: 10px;
-    }
-
-    &-15-md > * {
-      padding-left: 15px;
-    }
-
-    &-20-md > * {
-      padding-left: 20px;
-    }
-
-    &-25-md > * {
-      padding-left: 25px;
-    }
-
-    &-30-md > * {
-      padding-left: 30px;
-    }
-
-    &-35-md > * {
-      padding-left: 35px;
-    }
-
-    &-40-md > * {
-      padding-left: 40px;
-    }
-
-    &-45-md > * {
-      padding-left: 45px;
-    }
-
-    &-50-md > * {
-      padding-left: 50px;
-    }
-
-    &-55-md > * {
-      padding-left: 55px;
-    }
-
-    &-60-md > * {
-      padding-left: 60px;
-    }
-
-    &-65-md > * {
-      padding-left: 65px;
-    }
-
-    &-70-md > * {
-      padding-left: 70px;
-    }
-
-    &-75-md > * {
-      padding-left: 75px;
-    }
-
-    &-80-md > * {
-      padding-left: 80px;
-    }
-
-    &-85-md > * {
-      padding-left: 85px;
-    }
-
-    &-90-md > * {
-      padding-left: 90px;
-    }
-
-    &-95-md > * {
-      padding-left: 95px;
-    }
-
-    &-100-md > * {
-      padding-left: 100px;
+  .#{$group-padding-right} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md > * {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$group-px} {
-    &-0-md > * {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &-1-md > * {
-      padding-left: 1px;
-      padding-right: 1px;
-    }
-
-    &-2-md > * {
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-
-    &-3-md > * {
-      padding-left: 3px;
-      padding-right: 3px;
-    }
-
-    &-4-md > * {
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-
-    &-5-md > * {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-
-    &-6-md > * {
-      padding-left: 6px;
-      padding-right: 6px;
-    }
-
-    &-7-md > * {
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-
-    &-8-md > * {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-
-    &-9-md > * {
-      padding-left: 9px;
-      padding-right: 9px;
-    }
-
-    &-10-md > * {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &-15-md > * {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    &-20-md > * {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    &-25-md > * {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-
-    &-30-md > * {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    &-35-md > * {
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-
-    &-40-md > * {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    &-45-md > * {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-
-    &-50-md > * {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    &-55-md > * {
-      padding-left: 55px;
-      padding-right: 55px;
-    }
-
-    &-60-md > * {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
-    &-65-md > * {
-      padding-left: 65px;
-      padding-right: 65px;
-    }
-
-    &-70-md > * {
-      padding-left: 70px;
-      padding-right: 70px;
-    }
-
-    &-75-md > * {
-      padding-left: 75px;
-      padding-right: 75px;
-    }
-
-    &-80-md > * {
-      padding-left: 80px;
-      padding-right: 80px;
-    }
-
-    &-85-md > * {
-      padding-left: 85px;
-      padding-right: 85px;
-    }
-
-    &-90-md > * {
-      padding-left: 90px;
-      padding-right: 90px;
-    }
-
-    &-95-md > * {
-      padding-left: 95px;
-      padding-right: 95px;
-    }
-
-    &-100-md > * {
-      padding-left: 100px;
-      padding-right: 100px;
+  .#{$group-padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$group-py} {
-    &-0-md > * {
-      padding-top: 0;
-      padding-bottom: 0;
+  .#{$group-padding-bottom} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md > * {
+        @include group-pb-variant($value);
+      }
     }
+  }
 
-    &-1-md > * {
-      padding-top: 1px;
-      padding-bottom: 1px;
+  .#{$group-padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-pb-variant($value);
+      }
     }
+  }
 
-    &-2-md > * {
-      padding-top: 2px;
-      padding-bottom: 2px;
+  .#{$group-padding-left} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md > * {
+        @include group-pl-variant($value);
+      }
     }
+  }
 
-    &-3-md > * {
-      padding-top: 3px;
-      padding-bottom: 3px;
+  .#{$group-padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-pl-variant($value);
+      }
     }
+  }
 
-    &-4-md > * {
-      padding-top: 4px;
-      padding-bottom: 4px;
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md > * {
+        @include group-px-variant($value, $value);
+      }
     }
+  }
 
-    &-5-md > * {
-      padding-top: 5px;
-      padding-bottom: 5px;
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-px-variant($value, $value);
+      }
     }
+  }
 
-    &-6-md > * {
-      padding-top: 6px;
-      padding-bottom: 6px;
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md > * {
+        @include group-py-variant($value, $value);
+      }
     }
+  }
 
-    &-7-md > * {
-      padding-top: 7px;
-      padding-bottom: 7px;
-    }
-
-    &-8-md > * {
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-
-    &-9-md > * {
-      padding-top: 9px;
-      padding-bottom: 9px;
-    }
-
-    &-10-md > * {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    &-15-md > * {
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-
-    &-20-md > * {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    &-25-md > * {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-
-    &-30-md > * {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    &-35-md > * {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-
-    &-40-md > * {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-
-    &-45-md > * {
-      padding-top: 45px;
-      padding-bottom: 45px;
-    }
-
-    &-50-md > * {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    &-55-md > * {
-      padding-top: 55px;
-      padding-bottom: 55px;
-    }
-
-    &-60-md > * {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    &-65-md > * {
-      padding-top: 65px;
-      padding-bottom: 65px;
-    }
-
-    &-70-md > * {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-
-    &-75-md > * {
-      padding-top: 75px;
-      padding-bottom: 75px;
-    }
-
-    &-80-md > * {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-
-    &-85-md > * {
-      padding-top: 85px;
-      padding-bottom: 85px;
-    }
-
-    &-90-md > * {
-      padding-top: 90px;
-      padding-bottom: 90px;
-    }
-
-    &-95-md > * {
-      padding-top: 95px;
-      padding-bottom: 95px;
-    }
-
-    &-100-md > * {
-      padding-top: 100px;
-      padding-bottom: 100px;
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-py-variant($value, $value);
+      }
     }
   }
 
@@ -4467,1770 +624,235 @@
       padding: 0;
     }
 
-    &-0-md {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md {
+        @include padding-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$padding} {
+    &-all-0-md,
+    &-all-0-md > *,
+    &-all-0-md * {
       padding: 0;
     }
 
-    &-1-md {
-      padding: 1px;
-    }
-
-    &-2-md {
-      padding: 2px;
-    }
-
-    &-3-md {
-      padding: 3px;
-    }
-
-    &-4-md {
-      padding: 4px;
-    }
-
-    &-5-md {
-      padding: 5px;
-    }
-
-    &-6-md {
-      padding: 6px;
-    }
-
-    &-7-md {
-      padding: 7px;
-    }
-
-    &-8-md {
-      padding: 8px;
-    }
-
-    &-9-md {
-      padding: 9px;
-    }
-
-    &-10-md {
-      padding: 10px;
-    }
-
-    &-15-md {
-      padding: 15px;
-    }
-
-    &-20-md {
-      padding: 20px;
-    }
-
-    &-25-md {
-      padding: 25px;
-    }
-
-    &-30-md {
-      padding: 30px;
-    }
-
-    &-35-md {
-      padding: 35px;
-    }
-
-    &-40-md {
-      padding: 50px;
-    }
-
-    &-45-md {
-      padding: 45px;
-    }
-
-    &-50-md {
-      padding: 50px;
-    }
-
-    &-55-md {
-      padding: 55px;
-    }
-
-    &-60-md {
-      padding: 60px;
-    }
-
-    &-65-md {
-      padding: 65px;
-    }
-
-    &-70-md {
-      padding: 70px;
-    }
-
-    &-75-md {
-      padding: 75px;
-    }
-
-    &-80-md {
-      padding: 80px;
-    }
-
-    &-85-md {
-      padding: 85px;
-    }
-
-    &-90-md {
-      padding: 90px;
-    }
-
-    &-95-md {
-      padding: 95px;
-    }
-
-    &-100-md {
-      padding: 100px;
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include padding-pixel-variant($value);
+      }
     }
   }
 
-  .#{$padding-t} {
-    &-0-md {
-      padding-top: 0;
-    }
-
-    &-1-md {
-      padding-top: 1px;
-    }
-
-    &-2-md {
-      padding-top: 2px;
-    }
-
-    &-3-md {
-      padding-top: 3px;
-    }
-
-    &-4-md {
-      padding-top: 4px;
-    }
-
-    &-5-md {
-      padding-top: 5px;
-    }
-
-    &-6-md {
-      padding-top: 6px;
-    }
-
-    &-7-md {
-      padding-top: 7px;
-    }
-
-    &-8-md {
-      padding-top: 8px;
-    }
-
-    &-9-md {
-      padding-top: 9px;
-    }
-
-    &-10-md {
-      padding-top: 10px;
-    }
-
-    &-15-md {
-      padding-top: 15px;
-    }
-
-    &-20-md {
-      padding-top: 20px;
-    }
-
-    &-25-md {
-      padding-top: 25px;
-    }
-
-    &-30-md {
-      padding-top: 30px;
-    }
-
-    &-35-md {
-      padding-top: 35px;
-    }
-
-    &-40-md {
-      padding-top: 40px;
-    }
-
-    &-45-md {
-      padding-top: 45px;
-    }
-
-    &-50-md {
-      padding-top: 50px;
-    }
-
-    &-55-md {
-      padding-top: 55px;
-    }
-
-    &-60-md {
-      padding-top: 60px;
-    }
-
-    &-65-md {
-      padding-top: 65px;
-    }
-
-    &-70-md {
-      padding-top: 70px;
-    }
-
-    &-75-md {
-      padding-top: 75px;
-    }
-
-    &-80-md {
-      padding-top: 80px;
-    }
-
-    &-85-md {
-      padding-top: 85px;
-    }
-
-    &-90-md {
-      padding-top: 50px;
-    }
-
-    &-95-md {
-      padding-top: 95px;
-    }
-
-    &-100-md {
-      padding-top: 100px;
+  .#{$padding-top} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$padding-r} {
-    &-0-md {
-      padding-right: 0;
-    }
-
-    &-1-md {
-      padding-right: 1px;
-    }
-
-    &-2-md {
-      padding-right: 2px;
-    }
-
-    &-3-md {
-      padding-right: 3px;
-    }
-
-    &-4-md {
-      padding-right: 4px;
-    }
-
-    &-5-md {
-      padding-right: 5px;
-    }
-
-    &-6-md {
-      padding-right: 6px;
-    }
-
-    &-7-md {
-      padding-right: 7px;
-    }
-
-    &-8-md {
-      padding-right: 8px;
-    }
-
-    &-9-md {
-      padding-right: 9px;
-    }
-
-    &-10-md {
-      padding-right: 10px;
-    }
-
-    &-15-md {
-      padding-right: 15px;
-    }
-
-    &-20-md {
-      padding-right: 20px;
-    }
-
-    &-25-md {
-      padding-right: 25px;
-    }
-
-    &-30-md {
-      padding-right: 30px;
-    }
-
-    &-35-md {
-      padding-right: 35px;
-    }
-
-    &-40-md {
-      padding-right: 40px;
-    }
-
-    &-45-md {
-      padding-right: 45px;
-    }
-
-    &-50-md {
-      padding-right: 50px;
-    }
-
-    &-55-md {
-      padding-right: 55px;
-    }
-
-    &-60-md {
-      padding-right: 60px;
-    }
-
-    &-65-md {
-      padding-right: 65px;
-    }
-
-    &-70-md {
-      padding-right: 70px;
-    }
-
-    &-75-md {
-      padding-right: 75px;
-    }
-
-    &-80-md {
-      padding-right: 80px;
-    }
-
-    &-85-md {
-      padding-right: 85px;
-    }
-
-    &-90-md {
-      padding-right: 90px;
-    }
-
-    &-95-md {
-      padding-right: 95px;
-    }
-
-    &-100-md {
-      padding-right: 100px;
+  .#{$padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$padding-b} {
-    &-0-md {
-      padding-bottom: 0;
-    }
-
-    &-1-md {
-      padding-bottom: 1px;
-    }
-
-    &-2-md {
-      padding-bottom: 2px;
-    }
-
-    &-3-md {
-      padding-bottom: 3px;
-    }
-
-    &-4-md {
-      padding-bottom: 4px;
-    }
-
-    &-5-md {
-      padding-bottom: 5px;
-    }
-
-    &-6-md {
-      padding-bottom: 6px;
-    }
-
-    &-7-md {
-      padding-bottom: 7px;
-    }
-
-    &-8-md {
-      padding-bottom: 8px;
-    }
-
-    &-9-md {
-      padding-bottom: 9px;
-    }
-
-    &-10-md {
-      padding-bottom: 10px;
-    }
-
-    &-15-md {
-      padding-bottom: 15px;
-    }
-
-    &-20-md {
-      padding-bottom: 20px;
-    }
-
-    &-25-md {
-      padding-bottom: 25px;
-    }
-
-    &-30-md {
-      padding-bottom: 30px;
-    }
-
-    &-35-md {
-      padding-bottom: 35px;
-    }
-
-    &-40-md {
-      padding-bottom: 40px;
-    }
-
-    &-45-md {
-      padding-bottom: 45px;
-    }
-
-    &-50-md {
-      padding-bottom: 50px;
-    }
-
-    &-55-md {
-      padding-bottom: 55px;
-    }
-
-    &-60-md {
-      padding-bottom: 60px;
-    }
-
-    &-65-md {
-      padding-bottom: 65px;
-    }
-
-    &-70-md {
-      padding-bottom: 70px;
-    }
-
-    &-75-md {
-      padding-bottom: 75px;
-    }
-
-    &-80-md {
-      padding-bottom: 80px;
-    }
-
-    &-85-md {
-      padding-bottom: 85px;
-    }
-
-    &-90-md {
-      padding-bottom: 90px;
-    }
-
-    &-95-md {
-      padding-bottom: 95px;
-    }
-
-    &-100-md {
-      padding-bottom: 100px;
+  .#{$padding-right} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$padding-l} {
-    &-0-md {
-      padding-left: 0;
-    }
-
-    &-1-md {
-      padding-left: 1px;
-    }
-
-    &-2-md {
-      padding-left: 2px;
-    }
-
-    &-3-md {
-      padding-left: 3px;
-    }
-
-    &-4-md {
-      padding-left: 4px;
-    }
-
-    &-5-md {
-      padding-left: 5px;
-    }
-
-    &-6-md {
-      padding-left: 6px;
-    }
-
-    &-7-md {
-      padding-left: 7px;
-    }
-
-    &-8-md {
-      padding-left: 8px;
-    }
-
-    &-9-md {
-      padding-left: 9px;
-    }
-
-    &-10-md {
-      padding-left: 10px;
-    }
-
-    &-15-md {
-      padding-left: 15px;
-    }
-
-    &-20-md {
-      padding-left: 20px;
-    }
-
-    &-25-md {
-      padding-left: 25px;
-    }
-
-    &-30-md {
-      padding-left: 30px;
-    }
-
-    &-35-md {
-      padding-left: 35px;
-    }
-
-    &-40-md {
-      padding-left: 40px;
-    }
-
-    &-45-md {
-      padding-left: 45px;
-    }
-
-    &-50-md {
-      padding-left: 50px;
-    }
-
-    &-55-md {
-      padding-left: 55px;
-    }
-
-    &-65-md {
-      padding-left: 65px;
-    }
-
-    &-70-md {
-      padding-left: 70px;
-    }
-
-    &-75-md {
-      padding-left: 75px;
-    }
-
-    &-80-md {
-      padding-left: 80px;
-    }
-
-    &-85-md {
-      padding-left: 85px;
-    }
-
-    &-90-md {
-      padding-left: 90px;
-    }
-
-    &-95-md {
-      padding-left: 95px;
-    }
-
-    &-100-md {
-      padding-left: 100px;
+  .#{$padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$padding-x} {
-    &-0-md {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &-1-md {
-      padding-left: 1px;
-      padding-right: 1px;
-    }
-
-    &-2-md {
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-
-    &-3-md {
-      padding-left: 3px;
-      padding-right: 3px;
-    }
-
-    &-4-md {
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-
-    &-5-md {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-
-    &-6-md {
-      padding-left: 6px;
-      padding-right: 6px;
-    }
-
-    &-7-md {
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-
-    &-8-md {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-
-    &-9-md {
-      padding-left: 9px;
-      padding-right: 9px;
-    }
-
-    &-10-md {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &-15-md {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    &-20-md {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    &-25-md {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-
-    &-30-md {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    &-35-md {
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-
-    &-40-md {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    &-45-md {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-
-    &-50-md {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    &-55-md {
-      padding-left: 55px;
-      padding-right: 55px;
-    }
-
-    &-60-md {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
-    &-65-md {
-      padding-left: 65px;
-      padding-right: 65px;
-    }
-
-    &-70-md {
-      padding-left: 70px;
-      padding-right: 70px;
-    }
-
-    &-75-md {
-      padding-left: 75px;
-      padding-right: 75px;
-    }
-
-    &-80-md {
-      padding-left: 80px;
-      padding-right: 80px;
-    }
-
-    &-85-md {
-      padding-left: 85px;
-      padding-right: 85px;
-    }
-
-    &-90-md {
-      padding-left: 90px;
-      padding-right: 90px;
-    }
-
-    &-95-md {
-      padding-left: 95px;
-      padding-right: 95px;
-    }
-
-    &-100-md {
-      padding-left: 100px;
-      padding-right: 100px;
+  .#{$padding-bottom} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md {
+        @include group-pb-variant($value);
+      }
     }
   }
 
-  .#{$padding-y} {
-    &-0-md {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-
-    &-1-md {
-      padding-top: 1px;
-      padding-bottom: 1px;
-    }
-
-    &-2-md {
-      padding-top: 2px;
-      padding-bottom: 2px;
-    }
-
-    &-3-md {
-      padding-top: 3px;
-      padding-bottom: 3px;
-    }
-
-    &-4-md {
-      padding-top: 4px;
-      padding-bottom: 4px;
-    }
-
-    &-5-md {
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-
-    &-6-md {
-      padding-top: 6px;
-      padding-bottom: 6px;
-    }
-
-    &-7-md {
-      padding-top: 7px;
-      padding-bottom: 7px;
-    }
-
-    &-8-md {
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-
-    &-9-md {
-      padding-top: 9px;
-      padding-bottom: 9px;
-    }
-
-    &-10-md {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    &-15-md {
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-
-    &-20-md {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    &-25-md {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-
-    &-30-md {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    &-35-md {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-
-    &-40-md {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-
-    &-45-md {
-      padding-top: 45px;
-      padding-bottom: 45px;
-    }
-
-    &-50-md {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    &-55-md {
-      padding-top: 55px;
-      padding-bottom: 55px;
-    }
-
-    &-60-md {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    &-65-md {
-      padding-top: 65px;
-      padding-bottom: 65px;
-    }
-
-    &-70-md {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-
-    &-75-md {
-      padding-top: 75px;
-      padding-bottom: 75px;
-    }
-
-    &-80-md {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-
-    &-85-md {
-      padding-top: 85px;
-      padding-bottom: 85px;
-    }
-
-    &-90-md {
-      padding-top: 90px;
-      padding-bottom: 90px;
-    }
-
-    &-95-md {
-      padding-top: 95px;
-      padding-bottom: 95px;
-    }
-
-    &-100-md {
-      padding-top: 100px;
-      padding-bottom: 100px;
+  .#{$padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-pb-variant($value);
+      }
     }
   }
 
+  .#{$padding-left} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-md {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
-
-  .#{$group-p} {
-    &-0-sm > * {
-      padding: 0;
-    }
-
-    &-1-sm > * {
-      padding: 1px;
-    }
-
-    &-2-sm > * {
-      padding: 2px;
-    }
-
-    &-3-sm > * {
-      padding: 3px;
-    }
-
-    &-4-sm > * {
-      padding: 4px;
-    }
-
-    &-5-sm > * {
-      padding: 5px;
-    }
-
-    &-6-sm > * {
-      padding: 6px;
-    }
-
-    &-7-sm > * {
-      padding: 7px;
-    }
-
-    &-8-sm > * {
-      padding: 8px;
-    }
-
-    &-9-sm > * {
-      padding: 9px;
-    }
-
-    &-10-sm > * {
-      padding: 10px;
-    }
-
-    &-15-sm > * {
-      padding: 15px;
-    }
-
-    &-20-sm > * {
-      padding: 20px;
-    }
-
-    &-25-sm > * {
-      padding: 25px;
-    }
-
-    &-30-sm > * {
-      padding: 30px;
-    }
-
-    &-35-sm > * {
-      padding: 35px;
-    }
-
-    &-40-sm > * {
-      padding: 40px;
-    }
-
-    &-45-sm > * {
-      padding: 45px;
-    }
-
-    &-50-sm > * {
-      padding: 50px;
-    }
-
-    &-55-sm > * {
-      padding: 55px;
-    }
-
-    &-60-sm > * {
-      padding: 60px;
-    }
-
-    &-65-sm > * {
-      padding: 65px;
-    }
-
-    &-70-sm > * {
-      padding: 70px;
-    }
-
-    &-75-sm > * {
-      padding: 75px;
-    }
-
-    &-80-sm > * {
-      padding: 80px;
-    }
-
-    &-85-sm > * {
-      padding: 85px;
-    }
-
-    &-90-sm > * {
-      padding: 90px;
-    }
-
-    &-95-sm > * {
-      padding: 95px;
-    }
-
-    &-100-sm > * {
-      padding: 100px;
+  //Medium devices (tablets, 576px and 768px)
+  .#{$group-padding} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm > * {
+        @include group-p-variant($value);
+      }
     }
   }
 
-  .#{$group-pt} {
-    &-0-sm > * {
-      padding-top: 0;
-    }
-
-    &-1-sm > * {
-      padding-top: 1px;
-    }
-
-    &-2-sm > * {
-      padding-top: 2px;
-    }
-
-    &-3-sm > * {
-      padding-top: 3px;
-    }
-
-    &-4-sm > * {
-      padding-top: 4px;
-    }
-
-    &-5-sm > * {
-      padding-top: 5px;
-    }
-
-    &-6-sm > * {
-      padding-top: 6px;
-    }
-
-    &-7-sm > * {
-      padding-top: 7px;
-    }
-
-    &-8-sm > * {
-      padding-top: 8px;
-    }
-
-    &-9-sm > * {
-      padding-top: 9px;
-    }
-
-    &-10-sm > * {
-      padding-top: 10px;
-    }
-
-    &-15-sm > * {
-      padding-top: 15px;
-    }
-
-    &-20-sm > * {
-      padding-top: 20px;
-    }
-
-    &-25-sm > * {
-      padding-top: 25px;
-    }
-
-    &-30-sm > * {
-      padding-top: 30px;
-    }
-
-    &-35-sm > * {
-      padding-top: 35px;
-    }
-
-    &-40-sm > * {
-      padding-top: 40px;
-    }
-
-    &-45-sm > * {
-      padding-top: 45px;
-    }
-
-    &-50-sm > * {
-      padding-top: 50px;
-    }
-
-    &-55-sm > * {
-      padding-top: 55px;
-    }
-
-    &-60-sm > * {
-      padding-top: 60px;
-    }
-
-    &-65-sm > * {
-      padding-top: 65px;
-    }
-
-    &-70-sm > * {
-      padding-top: 70px;
-    }
-
-    &-75-sm > * {
-      padding-top: 75px;
-    }
-
-    &-80-sm > * {
-      padding-top: 80px;
-    }
-
-    &-85-sm > * {
-      padding-top: 85px;
-    }
-
-    &-90-sm > * {
-      padding-top: 90px;
-    }
-
-    &-95-sm > * {
-      padding-top: 95px;
-    }
-
-    &-100-sm > * {
-      padding-top: 100px;
+  .#{$group-padding} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-p-variant($value);
+      }
     }
   }
 
-  .#{$group-pr} {
-    &-0-sm > * {
-      padding-right: 0;
-    }
-
-    &-1-sm > * {
-      padding-right: 1px;
-    }
-
-    &-2-sm > * {
-      padding-right: 2px;
-    }
-
-    &-3-sm > * {
-      padding-right: 3px;
-    }
-
-    &-4-sm > * {
-      padding-right: 4px;
-    }
-
-    &-5-sm > * {
-      padding-right: 5px;
-    }
-
-    &-6-sm > * {
-      padding-right: 6px;
-    }
-
-    &-7-sm > * {
-      padding-right: 7px;
-    }
-
-    &-8-sm > * {
-      padding-right: 8px;
-    }
-
-    &-9-sm > * {
-      padding-right: 9px;
-    }
-
-    &-10-sm > * {
-      padding-right: 10px;
-    }
-
-    &-15-sm > * {
-      padding-right: 15px;
-    }
-
-    &-20-sm > * {
-      padding-right: 20px;
-    }
-
-    &-25-sm > * {
-      padding-right: 25px;
-    }
-
-    &-30-sm > * {
-      padding-right: 30px;
-    }
-
-    &-35-sm > * {
-      padding-right: 35px;
-    }
-
-    &-40-sm > * {
-      padding-right: 40px;
-    }
-
-    &-45-sm > * {
-      padding-right: 45px;
-    }
-
-    &-50-sm > * {
-      padding-right: 50px;
-    }
-
-    &-55-sm > * {
-      padding-right: 55px;
-    }
-
-    &-60-sm > * {
-      padding-right: 60px;
-    }
-
-    &-65-sm > * {
-      padding-right: 65px;
-    }
-
-    &-70-sm > * {
-      padding-right: 70px;
-    }
-
-    &-75-sm > * {
-      padding-right: 75px;
-    }
-
-    &-80-sm > * {
-      padding-right: 80px;
-    }
-
-    &-85-sm > * {
-      padding-right: 85px;
-    }
-
-    &-90-sm > * {
-      padding-right: 90px;
-    }
-
-    &-95-sm > * {
-      padding-right: 95px;
-    }
-
-    &-100-sm > * {
-      padding-right: 100px;
+  .#{$group-padding-top} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm > * {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$group-pb} {
-    &-0-sm > * {
-      padding-bottom: 0;
-    }
-
-    &-1-sm > * {
-      padding-bottom: 1px;
-    }
-
-    &-2-sm > * {
-      padding-bottom: 2px;
-    }
-
-    &-3-sm > * {
-      padding-bottom: 3px;
-    }
-
-    &-4-sm > * {
-      padding-bottom: 4px;
-    }
-
-    &-5-sm > * {
-      padding-bottom: 5px;
-    }
-
-    &-6-sm > * {
-      padding-bottom: 6px;
-    }
-
-    &-7-sm > * {
-      padding-bottom: 7px;
-    }
-
-    &-8-sm > * {
-      padding-bottom: 8px;
-    }
-
-    &-9-sm > * {
-      padding-bottom: 9px;
-    }
-
-    &-10-sm > * {
-      padding-bottom: 10px;
-    }
-
-    &-15-sm > * {
-      padding-bottom: 15px;
-    }
-
-    &-20-sm > * {
-      padding-bottom: 20px;
-    }
-
-    &-25-sm > * {
-      padding-bottom: 25px;
-    }
-
-    &-30-sm > * {
-      padding-bottom: 30px;
-    }
-
-    &-35-sm > * {
-      padding-bottom: 35px;
-    }
-
-    &-40-sm > * {
-      padding-bottom: 40px;
-    }
-
-    &-45-sm > * {
-      padding-bottom: 45px;
-    }
-
-    &-50-sm > * {
-      padding-bottom: 50px;
-    }
-
-    &-55-sm > * {
-      padding-bottom: 55px;
-    }
-
-    &-60-sm > * {
-      padding-bottom: 60px;
-    }
-
-    &-65-sm > * {
-      padding-bottom: 65px;
-    }
-
-    &-70-sm > * {
-      padding-bottom: 70px;
-    }
-
-    &-75-sm > * {
-      padding-bottom: 75px;
-    }
-
-    &-80-sm > * {
-      padding-bottom: 80px;
-    }
-
-    &-85-sm > * {
-      padding-bottom: 85px;
-    }
-
-    &-90-sm > * {
-      padding-bottom: 90px;
-    }
-
-    &-95-sm > * {
-      padding-bottom: 95px;
-    }
-
-    &-100-sm > * {
-      padding-bottom: 100px;
+  .#{$group-padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$group-pl} {
-    &-0-sm > * {
-      padding-left: 0;
-    }
-
-    &-1-sm > * {
-      padding-left: 1px;
-    }
-
-    &-2-sm > * {
-      padding-left: 2px;
-    }
-
-    &-3-sm > * {
-      padding-left: 3px;
-    }
-
-    &-4-sm > * {
-      padding-left: 4px;
-    }
-
-    &-5-sm > * {
-      padding-left: 5px;
-    }
-
-    &-6-sm > * {
-      padding-left: 6px;
-    }
-
-    &-7-sm > * {
-      padding-left: 7px;
-    }
-
-    &-8-sm > * {
-      padding-left: 8px;
-    }
-
-    &-9-sm > * {
-      padding-left: 9px;
-    }
-
-    &-10-sm > * {
-      padding-left: 10px;
-    }
-
-    &-15-sm > * {
-      padding-left: 15px;
-    }
-
-    &-20-sm > * {
-      padding-left: 20px;
-    }
-
-    &-25-sm > * {
-      padding-left: 25px;
-    }
-
-    &-30-sm > * {
-      padding-left: 30px;
-    }
-
-    &-35-sm > * {
-      padding-left: 35px;
-    }
-
-    &-40-sm > * {
-      padding-left: 40px;
-    }
-
-    &-45-sm > * {
-      padding-left: 45px;
-    }
-
-    &-50-sm > * {
-      padding-left: 50px;
-    }
-
-    &-55-sm > * {
-      padding-left: 55px;
-    }
-
-    &-60-sm > * {
-      padding-left: 60px;
-    }
-
-    &-65-sm > * {
-      padding-left: 65px;
-    }
-
-    &-70-sm > * {
-      padding-left: 70px;
-    }
-
-    &-75-sm > * {
-      padding-left: 75px;
-    }
-
-    &-80-sm > * {
-      padding-left: 80px;
-    }
-
-    &-85-sm > * {
-      padding-left: 85px;
-    }
-
-    &-90-sm > * {
-      padding-left: 90px;
-    }
-
-    &-95-sm > * {
-      padding-left: 95px;
-    }
-
-    &-100-sm > * {
-      padding-left: 100px;
+  .#{$group-padding-right} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm > * {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$group-px} {
-    &-0-sm > * {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &-1-sm > * {
-      padding-left: 1px;
-      padding-right: 1px;
-    }
-
-    &-2-sm > * {
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-
-    &-3-sm > * {
-      padding-left: 3px;
-      padding-right: 3px;
-    }
-
-    &-4-sm > * {
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-
-    &-5-sm > * {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-
-    &-6-sm > * {
-      padding-left: 6px;
-      padding-right: 6px;
-    }
-
-    &-7-sm > * {
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-
-    &-8-sm > * {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-
-    &-9-sm > * {
-      padding-left: 9px;
-      padding-right: 9px;
-    }
-
-    &-10-sm > * {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &-15-sm > * {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    &-20-sm > * {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    &-25-sm > * {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-
-    &-30-sm > * {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    &-35-sm > * {
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-
-    &-40-sm > * {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    &-45-sm > * {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-
-    &-50-sm > * {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    &-55-sm > * {
-      padding-left: 55px;
-      padding-right: 55px;
-    }
-
-    &-60-sm > * {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
-    &-65-sm > * {
-      padding-left: 65px;
-      padding-right: 65px;
-    }
-
-    &-70-sm > * {
-      padding-left: 70px;
-      padding-right: 70px;
-    }
-
-    &-75-sm > * {
-      padding-left: 75px;
-      padding-right: 75px;
-    }
-
-    &-80-sm > * {
-      padding-left: 80px;
-      padding-right: 80px;
-    }
-
-    &-85-sm > * {
-      padding-left: 85px;
-      padding-right: 85px;
-    }
-
-    &-90-sm > * {
-      padding-left: 90px;
-      padding-right: 90px;
-    }
-
-    &-95-sm > * {
-      padding-left: 95px;
-      padding-right: 95px;
-    }
-
-    &-100-sm > * {
-      padding-left: 100px;
-      padding-right: 100px;
+  .#{$group-padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$group-py} {
-    &-0-sm > * {
-      padding-top: 0;
-      padding-bottom: 0;
+  .#{$group-padding-bottom} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm > * {
+        @include group-pb-variant($value);
+      }
     }
+  }
 
-    &-1-sm > * {
-      padding-top: 1px;
-      padding-bottom: 1px;
+  .#{$group-padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-pb-variant($value);
+      }
     }
+  }
 
-    &-2-sm > * {
-      padding-top: 2px;
-      padding-bottom: 2px;
+  .#{$group-padding-left} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm > * {
+        @include group-pl-variant($value);
+      }
     }
+  }
 
-    &-3-sm > * {
-      padding-top: 3px;
-      padding-bottom: 3px;
+  .#{$group-padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-pl-variant($value);
+      }
     }
+  }
 
-    &-4-sm > * {
-      padding-top: 4px;
-      padding-bottom: 4px;
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm > * {
+        @include group-px-variant($value, $value);
+      }
     }
+  }
 
-    &-5-sm > * {
-      padding-top: 5px;
-      padding-bottom: 5px;
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-px-variant($value, $value);
+      }
     }
+  }
 
-    &-6-sm > * {
-      padding-top: 6px;
-      padding-bottom: 6px;
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm > * {
+        @include group-py-variant($value, $value);
+      }
     }
+  }
 
-    &-7-sm > * {
-      padding-top: 7px;
-      padding-bottom: 7px;
-    }
-
-    &-8-sm > * {
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-
-    &-9-sm > * {
-      padding-top: 9px;
-      padding-bottom: 9px;
-    }
-
-    &-10-sm > * {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    &-15-sm > * {
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-
-    &-20-sm > * {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    &-25-sm > * {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-
-    &-30-sm > * {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    &-35-sm > * {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-
-    &-40-sm > * {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-
-    &-45-sm > * {
-      padding-top: 45px;
-      padding-bottom: 45px;
-    }
-
-    &-50-sm > * {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    &-55-sm > * {
-      padding-top: 55px;
-      padding-bottom: 55px;
-    }
-
-    &-60-sm > * {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    &-65-sm > * {
-      padding-top: 65px;
-      padding-bottom: 65px;
-    }
-
-    &-70-sm > * {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-
-    &-75-sm > * {
-      padding-top: 75px;
-      padding-bottom: 75px;
-    }
-
-    &-80-sm > * {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-
-    &-85-sm > * {
-      padding-top: 85px;
-      padding-bottom: 85px;
-    }
-
-    &-90-sm > * {
-      padding-top: 90px;
-      padding-bottom: 90px;
-    }
-
-    &-95-sm > * {
-      padding-top: 95px;
-      padding-bottom: 95px;
-    }
-
-    &-100-sm > * {
-      padding-top: 100px;
-      padding-bottom: 100px;
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-py-variant($value, $value);
+      }
     }
   }
 
@@ -6241,1770 +863,235 @@
       padding: 0;
     }
 
-    &-0-sm {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm {
+        @include padding-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$padding} {
+    &-all-0-sm,
+    &-all-0-sm > *,
+    &-all-0-sm * {
       padding: 0;
     }
 
-    &-1-sm {
-      padding: 1px;
-    }
-
-    &-2-sm {
-      padding: 2px;
-    }
-
-    &-3-sm {
-      padding: 3px;
-    }
-
-    &-4-sm {
-      padding: 4px;
-    }
-
-    &-5-sm {
-      padding: 5px;
-    }
-
-    &-6-sm {
-      padding: 6px;
-    }
-
-    &-7-sm {
-      padding: 7px;
-    }
-
-    &-8-sm {
-      padding: 8px;
-    }
-
-    &-9-sm {
-      padding: 9px;
-    }
-
-    &-10-sm {
-      padding: 10px;
-    }
-
-    &-15-sm {
-      padding: 15px;
-    }
-
-    &-20-sm {
-      padding: 20px;
-    }
-
-    &-25-sm {
-      padding: 25px;
-    }
-
-    &-30-sm {
-      padding: 30px;
-    }
-
-    &-35-sm {
-      padding: 35px;
-    }
-
-    &-40-sm {
-      padding: 50px;
-    }
-
-    &-45-sm {
-      padding: 45px;
-    }
-
-    &-50-sm {
-      padding: 50px;
-    }
-
-    &-55-sm {
-      padding: 55px;
-    }
-
-    &-60-sm {
-      padding: 60px;
-    }
-
-    &-65-sm {
-      padding: 65px;
-    }
-
-    &-70-sm {
-      padding: 70px;
-    }
-
-    &-75-sm {
-      padding: 75px;
-    }
-
-    &-80-sm {
-      padding: 80px;
-    }
-
-    &-85-sm {
-      padding: 85px;
-    }
-
-    &-90-sm {
-      padding: 90px;
-    }
-
-    &-95-sm {
-      padding: 95px;
-    }
-
-    &-100-sm {
-      padding: 100px;
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include padding-pixel-variant($value);
+      }
     }
   }
 
-  .#{$padding-t} {
-    &-0-sm {
-      padding-top: 0;
-    }
-
-    &-1-sm {
-      padding-top: 1px;
-    }
-
-    &-2-sm {
-      padding-top: 2px;
-    }
-
-    &-3-sm {
-      padding-top: 3px;
-    }
-
-    &-4-sm {
-      padding-top: 4px;
-    }
-
-    &-5-sm {
-      padding-top: 5px;
-    }
-
-    &-6-sm {
-      padding-top: 6px;
-    }
-
-    &-7-sm {
-      padding-top: 7px;
-    }
-
-    &-8-sm {
-      padding-top: 8px;
-    }
-
-    &-9-sm {
-      padding-top: 9px;
-    }
-
-    &-10-sm {
-      padding-top: 10px;
-    }
-
-    &-15-sm {
-      padding-top: 15px;
-    }
-
-    &-20-sm {
-      padding-top: 20px;
-    }
-
-    &-25-sm {
-      padding-top: 25px;
-    }
-
-    &-30-sm {
-      padding-top: 30px;
-    }
-
-    &-35-sm {
-      padding-top: 35px;
-    }
-
-    &-40-sm {
-      padding-top: 40px;
-    }
-
-    &-45-sm {
-      padding-top: 45px;
-    }
-
-    &-50-sm {
-      padding-top: 50px;
-    }
-
-    &-55-sm {
-      padding-top: 55px;
-    }
-
-    &-60-sm {
-      padding-top: 60px;
-    }
-
-    &-65-sm {
-      padding-top: 65px;
-    }
-
-    &-70-sm {
-      padding-top: 70px;
-    }
-
-    &-75-sm {
-      padding-top: 75px;
-    }
-
-    &-80-sm {
-      padding-top: 80px;
-    }
-
-    &-85-sm {
-      padding-top: 85px;
-    }
-
-    &-90-sm {
-      padding-top: 50px;
-    }
-
-    &-95-sm {
-      padding-top: 95px;
-    }
-
-    &-100-sm {
-      padding-top: 100px;
+  .#{$padding-top} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$padding-r} {
-    &-0-sm {
-      padding-right: 0;
-    }
-
-    &-1-sm {
-      padding-right: 1px;
-    }
-
-    &-2-sm {
-      padding-right: 2px;
-    }
-
-    &-3-sm {
-      padding-right: 3px;
-    }
-
-    &-4-sm {
-      padding-right: 4px;
-    }
-
-    &-5-sm {
-      padding-right: 5px;
-    }
-
-    &-6-sm {
-      padding-right: 6px;
-    }
-
-    &-7-sm {
-      padding-right: 7px;
-    }
-
-    &-8-sm {
-      padding-right: 8px;
-    }
-
-    &-9-sm {
-      padding-right: 9px;
-    }
-
-    &-10-sm {
-      padding-right: 10px;
-    }
-
-    &-15-sm {
-      padding-right: 15px;
-    }
-
-    &-20-sm {
-      padding-right: 20px;
-    }
-
-    &-25-sm {
-      padding-right: 25px;
-    }
-
-    &-30-sm {
-      padding-right: 30px;
-    }
-
-    &-35-sm {
-      padding-right: 35px;
-    }
-
-    &-40-sm {
-      padding-right: 40px;
-    }
-
-    &-45-sm {
-      padding-right: 45px;
-    }
-
-    &-50-sm {
-      padding-right: 50px;
-    }
-
-    &-55-sm {
-      padding-right: 55px;
-    }
-
-    &-60-sm {
-      padding-right: 60px;
-    }
-
-    &-65-sm {
-      padding-right: 65px;
-    }
-
-    &-70-sm {
-      padding-right: 70px;
-    }
-
-    &-75-sm {
-      padding-right: 75px;
-    }
-
-    &-80-sm {
-      padding-right: 80px;
-    }
-
-    &-85-sm {
-      padding-right: 85px;
-    }
-
-    &-90-sm {
-      padding-right: 90px;
-    }
-
-    &-95-sm {
-      padding-right: 95px;
-    }
-
-    &-100-sm {
-      padding-right: 100px;
+  .#{$padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$padding-b} {
-    &-0-sm {
-      padding-bottom: 0;
-    }
-
-    &-1-sm {
-      padding-bottom: 1px;
-    }
-
-    &-2-sm {
-      padding-bottom: 2px;
-    }
-
-    &-3-sm {
-      padding-bottom: 3px;
-    }
-
-    &-4-sm {
-      padding-bottom: 4px;
-    }
-
-    &-5-sm {
-      padding-bottom: 5px;
-    }
-
-    &-6-sm {
-      padding-bottom: 6px;
-    }
-
-    &-7-sm {
-      padding-bottom: 7px;
-    }
-
-    &-8-sm {
-      padding-bottom: 8px;
-    }
-
-    &-9-sm {
-      padding-bottom: 9px;
-    }
-
-    &-10-sm {
-      padding-bottom: 10px;
-    }
-
-    &-15-sm {
-      padding-bottom: 15px;
-    }
-
-    &-20-sm {
-      padding-bottom: 20px;
-    }
-
-    &-25-sm {
-      padding-bottom: 25px;
-    }
-
-    &-30-sm {
-      padding-bottom: 30px;
-    }
-
-    &-35-sm {
-      padding-bottom: 35px;
-    }
-
-    &-40-sm {
-      padding-bottom: 40px;
-    }
-
-    &-45-sm {
-      padding-bottom: 45px;
-    }
-
-    &-50-sm {
-      padding-bottom: 50px;
-    }
-
-    &-55-sm {
-      padding-bottom: 55px;
-    }
-
-    &-60-sm {
-      padding-bottom: 60px;
-    }
-
-    &-65-sm {
-      padding-bottom: 65px;
-    }
-
-    &-70-sm {
-      padding-bottom: 70px;
-    }
-
-    &-75-sm {
-      padding-bottom: 75px;
-    }
-
-    &-80-sm {
-      padding-bottom: 80px;
-    }
-
-    &-85-sm {
-      padding-bottom: 85px;
-    }
-
-    &-90-sm {
-      padding-bottom: 90px;
-    }
-
-    &-95-sm {
-      padding-bottom: 95px;
-    }
-
-    &-100-sm {
-      padding-bottom: 100px;
+  .#{$padding-right} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$padding-l} {
-    &-0-sm {
-      padding-left: 0;
-    }
-
-    &-1-sm {
-      padding-left: 1px;
-    }
-
-    &-2-sm {
-      padding-left: 2px;
-    }
-
-    &-3-sm {
-      padding-left: 3px;
-    }
-
-    &-4-sm {
-      padding-left: 4px;
-    }
-
-    &-5-sm {
-      padding-left: 5px;
-    }
-
-    &-6-sm {
-      padding-left: 6px;
-    }
-
-    &-7-sm {
-      padding-left: 7px;
-    }
-
-    &-8-sm {
-      padding-left: 8px;
-    }
-
-    &-9-sm {
-      padding-left: 9px;
-    }
-
-    &-10-sm {
-      padding-left: 10px;
-    }
-
-    &-15-sm {
-      padding-left: 15px;
-    }
-
-    &-20-sm {
-      padding-left: 20px;
-    }
-
-    &-25-sm {
-      padding-left: 25px;
-    }
-
-    &-30-sm {
-      padding-left: 30px;
-    }
-
-    &-35-sm {
-      padding-left: 35px;
-    }
-
-    &-40-sm {
-      padding-left: 40px;
-    }
-
-    &-45-sm {
-      padding-left: 45px;
-    }
-
-    &-50-sm {
-      padding-left: 50px;
-    }
-
-    &-55-sm {
-      padding-left: 55px;
-    }
-
-    &-65-sm {
-      padding-left: 65px;
-    }
-
-    &-70-sm {
-      padding-left: 70px;
-    }
-
-    &-75-sm {
-      padding-left: 75px;
-    }
-
-    &-80-sm {
-      padding-left: 80px;
-    }
-
-    &-85-sm {
-      padding-left: 85px;
-    }
-
-    &-90-sm {
-      padding-left: 90px;
-    }
-
-    &-95-sm {
-      padding-left: 95px;
-    }
-
-    &-100-sm {
-      padding-left: 100px;
+  .#{$padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$padding-x} {
-    &-0-sm {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &-1-sm {
-      padding-left: 1px;
-      padding-right: 1px;
-    }
-
-    &-2-sm {
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-
-    &-3-sm {
-      padding-left: 3px;
-      padding-right: 3px;
-    }
-
-    &-4-sm {
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-
-    &-5-sm {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-
-    &-6-sm {
-      padding-left: 6px;
-      padding-right: 6px;
-    }
-
-    &-7-sm {
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-
-    &-8-sm {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-
-    &-9-sm {
-      padding-left: 9px;
-      padding-right: 9px;
-    }
-
-    &-10-sm {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &-15-sm {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    &-20-sm {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    &-25-sm {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-
-    &-30-sm {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    &-35-sm {
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-
-    &-40-sm {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    &-45-sm {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-
-    &-50-sm {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    &-55-sm {
-      padding-left: 55px;
-      padding-right: 55px;
-    }
-
-    &-60-sm {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
-    &-65-sm {
-      padding-left: 65px;
-      padding-right: 65px;
-    }
-
-    &-70-sm {
-      padding-left: 70px;
-      padding-right: 70px;
-    }
-
-    &-75-sm {
-      padding-left: 75px;
-      padding-right: 75px;
-    }
-
-    &-80-sm {
-      padding-left: 80px;
-      padding-right: 80px;
-    }
-
-    &-85-sm {
-      padding-left: 85px;
-      padding-right: 85px;
-    }
-
-    &-90-sm {
-      padding-left: 90px;
-      padding-right: 90px;
-    }
-
-    &-95-sm {
-      padding-left: 95px;
-      padding-right: 95px;
-    }
-
-    &-100-sm {
-      padding-left: 100px;
-      padding-right: 100px;
+  .#{$padding-bottom} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm {
+        @include group-pb-variant($value);
+      }
     }
   }
 
-  .#{$padding-y} {
-    &-0-sm {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-
-    &-1-sm {
-      padding-top: 1px;
-      padding-bottom: 1px;
-    }
-
-    &-2-sm {
-      padding-top: 2px;
-      padding-bottom: 2px;
-    }
-
-    &-3-sm {
-      padding-top: 3px;
-      padding-bottom: 3px;
-    }
-
-    &-4-sm {
-      padding-top: 4px;
-      padding-bottom: 4px;
-    }
-
-    &-5-sm {
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-
-    &-6-sm {
-      padding-top: 6px;
-      padding-bottom: 6px;
-    }
-
-    &-7-sm {
-      padding-top: 7px;
-      padding-bottom: 7px;
-    }
-
-    &-8-sm {
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-
-    &-9-sm {
-      padding-top: 9px;
-      padding-bottom: 9px;
-    }
-
-    &-10-sm {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    &-15-sm {
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-
-    &-20-sm {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    &-25-sm {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-
-    &-30-sm {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    &-35-sm {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-
-    &-40-sm {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-
-    &-45-sm {
-      padding-top: 45px;
-      padding-bottom: 45px;
-    }
-
-    &-50-sm {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    &-55-sm {
-      padding-top: 55px;
-      padding-bottom: 55px;
-    }
-
-    &-60-sm {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    &-65-sm {
-      padding-top: 65px;
-      padding-bottom: 65px;
-    }
-
-    &-70-sm {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-
-    &-75-sm {
-      padding-top: 75px;
-      padding-bottom: 75px;
-    }
-
-    &-80-sm {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-
-    &-85-sm {
-      padding-top: 85px;
-      padding-bottom: 85px;
-    }
-
-    &-90-sm {
-      padding-top: 90px;
-      padding-bottom: 90px;
-    }
-
-    &-95-sm {
-      padding-top: 95px;
-      padding-bottom: 95px;
-    }
-
-    &-100-sm {
-      padding-top: 100px;
-      padding-bottom: 100px;
+  .#{$padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-pb-variant($value);
+      }
     }
   }
 
+  .#{$padding-left} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-sm {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
 }
 
-@media (max-width: 479px) {
-
-  .#{$group-p} {
-    &-0-xs > * {
-      padding: 0;
-    }
-
-    &-1-xs > * {
-      padding: 1px;
-    }
-
-    &-2-xs > * {
-      padding: 2px;
-    }
-
-    &-3-xs > * {
-      padding: 3px;
-    }
-
-    &-4-xs > * {
-      padding: 4px;
-    }
-
-    &-5-xs > * {
-      padding: 5px;
-    }
-
-    &-6-xs > * {
-      padding: 6px;
-    }
-
-    &-7-xs > * {
-      padding: 7px;
-    }
-
-    &-8-xs > * {
-      padding: 8px;
-    }
-
-    &-9-xs > * {
-      padding: 9px;
-    }
-
-    &-10-xs > * {
-      padding: 10px;
-    }
-
-    &-15-xs > * {
-      padding: 15px;
-    }
-
-    &-20-xs > * {
-      padding: 20px;
-    }
-
-    &-25-xs > * {
-      padding: 25px;
-    }
-
-    &-30-xs > * {
-      padding: 30px;
-    }
-
-    &-35-xs > * {
-      padding: 35px;
-    }
-
-    &-40-xs > * {
-      padding: 40px;
-    }
-
-    &-45-xs > * {
-      padding: 45px;
-    }
-
-    &-50-xs > * {
-      padding: 50px;
-    }
-
-    &-55-xs > * {
-      padding: 55px;
-    }
-
-    &-60-xs > * {
-      padding: 60px;
-    }
-
-    &-65-xs > * {
-      padding: 65px;
-    }
-
-    &-70-xs > * {
-      padding: 70px;
-    }
-
-    &-75-xs > * {
-      padding: 75px;
-    }
-
-    &-80-xs > * {
-      padding: 80px;
-    }
-
-    &-85-xs > * {
-      padding: 85px;
-    }
-
-    &-90-xs > * {
-      padding: 90px;
-    }
-
-    &-95-xs > * {
-      padding: 95px;
-    }
-
-    &-100-xs > * {
-      padding: 100px;
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$group-padding} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs > * {
+        @include group-p-variant($value);
+      }
     }
   }
 
-  .#{$group-pt} {
-    &-0-xs > * {
-      padding-top: 0;
-    }
-
-    &-1-xs > * {
-      padding-top: 1px;
-    }
-
-    &-2-xs > * {
-      padding-top: 2px;
-    }
-
-    &-3-xs > * {
-      padding-top: 3px;
-    }
-
-    &-4-xs > * {
-      padding-top: 4px;
-    }
-
-    &-5-xs > * {
-      padding-top: 5px;
-    }
-
-    &-6-xs > * {
-      padding-top: 6px;
-    }
-
-    &-7-xs > * {
-      padding-top: 7px;
-    }
-
-    &-8-xs > * {
-      padding-top: 8px;
-    }
-
-    &-9-xs > * {
-      padding-top: 9px;
-    }
-
-    &-10-xs > * {
-      padding-top: 10px;
-    }
-
-    &-15-xs > * {
-      padding-top: 15px;
-    }
-
-    &-20-xs > * {
-      padding-top: 20px;
-    }
-
-    &-25-xs > * {
-      padding-top: 25px;
-    }
-
-    &-30-xs > * {
-      padding-top: 30px;
-    }
-
-    &-35-xs > * {
-      padding-top: 35px;
-    }
-
-    &-40-xs > * {
-      padding-top: 40px;
-    }
-
-    &-45-xs > * {
-      padding-top: 45px;
-    }
-
-    &-50-xs > * {
-      padding-top: 50px;
-    }
-
-    &-55-xs > * {
-      padding-top: 55px;
-    }
-
-    &-60-xs > * {
-      padding-top: 60px;
-    }
-
-    &-65-xs > * {
-      padding-top: 65px;
-    }
-
-    &-70-xs > * {
-      padding-top: 70px;
-    }
-
-    &-75-xs > * {
-      padding-top: 75px;
-    }
-
-    &-80-xs > * {
-      padding-top: 80px;
-    }
-
-    &-85-xs > * {
-      padding-top: 85px;
-    }
-
-    &-90-xs > * {
-      padding-top: 90px;
-    }
-
-    &-95-xs > * {
-      padding-top: 95px;
-    }
-
-    &-100-xs > * {
-      padding-top: 100px;
+  .#{$group-padding} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-p-variant($value);
+      }
     }
   }
 
-  .#{$group-pr} {
-    &-0-xs > * {
-      padding-right: 0;
-    }
-
-    &-1-xs > * {
-      padding-right: 1px;
-    }
-
-    &-2-xs > * {
-      padding-right: 2px;
-    }
-
-    &-3-xs > * {
-      padding-right: 3px;
-    }
-
-    &-4-xs > * {
-      padding-right: 4px;
-    }
-
-    &-5-xs > * {
-      padding-right: 5px;
-    }
-
-    &-6-xs > * {
-      padding-right: 6px;
-    }
-
-    &-7-xs > * {
-      padding-right: 7px;
-    }
-
-    &-8-xs > * {
-      padding-right: 8px;
-    }
-
-    &-9-xs > * {
-      padding-right: 9px;
-    }
-
-    &-10-xs > * {
-      padding-right: 10px;
-    }
-
-    &-15-xs > * {
-      padding-right: 15px;
-    }
-
-    &-20-xs > * {
-      padding-right: 20px;
-    }
-
-    &-25-xs > * {
-      padding-right: 25px;
-    }
-
-    &-30-xs > * {
-      padding-right: 30px;
-    }
-
-    &-35-xs > * {
-      padding-right: 35px;
-    }
-
-    &-40-xs > * {
-      padding-right: 40px;
-    }
-
-    &-45-xs > * {
-      padding-right: 45px;
-    }
-
-    &-50-xs > * {
-      padding-right: 50px;
-    }
-
-    &-55-xs > * {
-      padding-right: 55px;
-    }
-
-    &-60-xs > * {
-      padding-right: 60px;
-    }
-
-    &-65-xs > * {
-      padding-right: 65px;
-    }
-
-    &-70-xs > * {
-      padding-right: 70px;
-    }
-
-    &-75-xs > * {
-      padding-right: 75px;
-    }
-
-    &-80-xs > * {
-      padding-right: 80px;
-    }
-
-    &-85-xs > * {
-      padding-right: 85px;
-    }
-
-    &-90-xs > * {
-      padding-right: 90px;
-    }
-
-    &-95-xs > * {
-      padding-right: 95px;
-    }
-
-    &-100-xs > * {
-      padding-right: 100px;
+  .#{$group-padding-top} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs > * {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$group-pb} {
-    &-0-xs > * {
-      padding-bottom: 0;
-    }
-
-    &-1-xs > * {
-      padding-bottom: 1px;
-    }
-
-    &-2-xs > * {
-      padding-bottom: 2px;
-    }
-
-    &-3-xs > * {
-      padding-bottom: 3px;
-    }
-
-    &-4-xs > * {
-      padding-bottom: 4px;
-    }
-
-    &-5-xs > * {
-      padding-bottom: 5px;
-    }
-
-    &-6-xs > * {
-      padding-bottom: 6px;
-    }
-
-    &-7-xs > * {
-      padding-bottom: 7px;
-    }
-
-    &-8-xs > * {
-      padding-bottom: 8px;
-    }
-
-    &-9-xs > * {
-      padding-bottom: 9px;
-    }
-
-    &-10-xs > * {
-      padding-bottom: 10px;
-    }
-
-    &-15-xs > * {
-      padding-bottom: 15px;
-    }
-
-    &-20-xs > * {
-      padding-bottom: 20px;
-    }
-
-    &-25-xs > * {
-      padding-bottom: 25px;
-    }
-
-    &-30-xs > * {
-      padding-bottom: 30px;
-    }
-
-    &-35-xs > * {
-      padding-bottom: 35px;
-    }
-
-    &-40-xs > * {
-      padding-bottom: 40px;
-    }
-
-    &-45-xs > * {
-      padding-bottom: 45px;
-    }
-
-    &-50-xs > * {
-      padding-bottom: 50px;
-    }
-
-    &-55-xs > * {
-      padding-bottom: 55px;
-    }
-
-    &-60-xs > * {
-      padding-bottom: 60px;
-    }
-
-    &-65-xs > * {
-      padding-bottom: 65px;
-    }
-
-    &-70-xs > * {
-      padding-bottom: 70px;
-    }
-
-    &-75-xs > * {
-      padding-bottom: 75px;
-    }
-
-    &-80-xs > * {
-      padding-bottom: 80px;
-    }
-
-    &-85-xs > * {
-      padding-bottom: 85px;
-    }
-
-    &-90-xs > * {
-      padding-bottom: 90px;
-    }
-
-    &-95-xs > * {
-      padding-bottom: 95px;
-    }
-
-    &-100-xs > * {
-      padding-bottom: 100px;
+  .#{$group-padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$group-pl} {
-    &-0-xs > * {
-      padding-left: 0;
-    }
-
-    &-1-xs > * {
-      padding-left: 1px;
-    }
-
-    &-2-xs > * {
-      padding-left: 2px;
-    }
-
-    &-3-xs > * {
-      padding-left: 3px;
-    }
-
-    &-4-xs > * {
-      padding-left: 4px;
-    }
-
-    &-5-xs > * {
-      padding-left: 5px;
-    }
-
-    &-6-xs > * {
-      padding-left: 6px;
-    }
-
-    &-7-xs > * {
-      padding-left: 7px;
-    }
-
-    &-8-xs > * {
-      padding-left: 8px;
-    }
-
-    &-9-xs > * {
-      padding-left: 9px;
-    }
-
-    &-10-xs > * {
-      padding-left: 10px;
-    }
-
-    &-15-xs > * {
-      padding-left: 15px;
-    }
-
-    &-20-xs > * {
-      padding-left: 20px;
-    }
-
-    &-25-xs > * {
-      padding-left: 25px;
-    }
-
-    &-30-xs > * {
-      padding-left: 30px;
-    }
-
-    &-35-xs > * {
-      padding-left: 35px;
-    }
-
-    &-40-xs > * {
-      padding-left: 40px;
-    }
-
-    &-45-xs > * {
-      padding-left: 45px;
-    }
-
-    &-50-xs > * {
-      padding-left: 50px;
-    }
-
-    &-55-xs > * {
-      padding-left: 55px;
-    }
-
-    &-60-xs > * {
-      padding-left: 60px;
-    }
-
-    &-65-xs > * {
-      padding-left: 65px;
-    }
-
-    &-70-xs > * {
-      padding-left: 70px;
-    }
-
-    &-75-xs > * {
-      padding-left: 75px;
-    }
-
-    &-80-xs > * {
-      padding-left: 80px;
-    }
-
-    &-85-xs > * {
-      padding-left: 85px;
-    }
-
-    &-90-xs > * {
-      padding-left: 90px;
-    }
-
-    &-95-xs > * {
-      padding-left: 95px;
-    }
-
-    &-100-xs > * {
-      padding-left: 100px;
+  .#{$group-padding-right} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs > * {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$group-px} {
-    &-0-xs > * {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &-1-xs > * {
-      padding-left: 1px;
-      padding-right: 1px;
-    }
-
-    &-2-xs > * {
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-
-    &-3-xs > * {
-      padding-left: 3px;
-      padding-right: 3px;
-    }
-
-    &-4-xs > * {
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-
-    &-5-xs > * {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-
-    &-6-xs > * {
-      padding-left: 6px;
-      padding-right: 6px;
-    }
-
-    &-7-xs > * {
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-
-    &-8-xs > * {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-
-    &-9-xs > * {
-      padding-left: 9px;
-      padding-right: 9px;
-    }
-
-    &-10-xs > * {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &-15-xs > * {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    &-20-xs > * {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    &-25-xs > * {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-
-    &-30-xs > * {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    &-35-xs > * {
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-
-    &-40-xs > * {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    &-45-xs > * {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-
-    &-50-xs > * {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    &-55-xs > * {
-      padding-left: 55px;
-      padding-right: 55px;
-    }
-
-    &-60-xs > * {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
-    &-65-xs > * {
-      padding-left: 65px;
-      padding-right: 65px;
-    }
-
-    &-70-xs > * {
-      padding-left: 70px;
-      padding-right: 70px;
-    }
-
-    &-75-xs > * {
-      padding-left: 75px;
-      padding-right: 75px;
-    }
-
-    &-80-xs > * {
-      padding-left: 80px;
-      padding-right: 80px;
-    }
-
-    &-85-xs > * {
-      padding-left: 85px;
-      padding-right: 85px;
-    }
-
-    &-90-xs > * {
-      padding-left: 90px;
-      padding-right: 90px;
-    }
-
-    &-95-xs > * {
-      padding-left: 95px;
-      padding-right: 95px;
-    }
-
-    &-100-xs > * {
-      padding-left: 100px;
-      padding-right: 100px;
+  .#{$group-padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$group-py} {
-    &-0-xs > * {
-      padding-top: 0;
-      padding-bottom: 0;
+  .#{$group-padding-bottom} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs > * {
+        @include group-pb-variant($value);
+      }
     }
+  }
 
-    &-1-xs > * {
-      padding-top: 1px;
-      padding-bottom: 1px;
+  .#{$group-padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-pb-variant($value);
+      }
     }
+  }
 
-    &-2-xs > * {
-      padding-top: 2px;
-      padding-bottom: 2px;
+  .#{$group-padding-left} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs > * {
+        @include group-pl-variant($value);
+      }
     }
+  }
 
-    &-3-xs > * {
-      padding-top: 3px;
-      padding-bottom: 3px;
+  .#{$group-padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-pl-variant($value);
+      }
     }
+  }
 
-    &-4-xs > * {
-      padding-top: 4px;
-      padding-bottom: 4px;
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs > * {
+        @include group-px-variant($value, $value);
+      }
     }
+  }
 
-    &-5-xs > * {
-      padding-top: 5px;
-      padding-bottom: 5px;
+  .#{$group-padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-px-variant($value, $value);
+      }
     }
+  }
 
-    &-6-xs > * {
-      padding-top: 6px;
-      padding-bottom: 6px;
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs > * {
+        @include group-py-variant($value, $value);
+      }
     }
+  }
 
-    &-7-xs > * {
-      padding-top: 7px;
-      padding-bottom: 7px;
-    }
-
-    &-8-xs > * {
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-
-    &-9-xs > * {
-      padding-top: 9px;
-      padding-bottom: 9px;
-    }
-
-    &-10-xs > * {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    &-15-xs > * {
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-
-    &-20-xs > * {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    &-25-xs > * {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-
-    &-30-xs > * {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    &-35-xs > * {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-
-    &-40-xs > * {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-
-    &-45-xs > * {
-      padding-top: 45px;
-      padding-bottom: 45px;
-    }
-
-    &-50-xs > * {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    &-55-xs > * {
-      padding-top: 55px;
-      padding-bottom: 55px;
-    }
-
-    &-60-xs > * {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    &-65-xs > * {
-      padding-top: 65px;
-      padding-bottom: 65px;
-    }
-
-    &-70-xs > * {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-
-    &-75-xs > * {
-      padding-top: 75px;
-      padding-bottom: 75px;
-    }
-
-    &-80-xs > * {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-
-    &-85-xs > * {
-      padding-top: 85px;
-      padding-bottom: 85px;
-    }
-
-    &-90-xs > * {
-      padding-top: 90px;
-      padding-bottom: 90px;
-    }
-
-    &-95-xs > * {
-      padding-top: 95px;
-      padding-bottom: 95px;
-    }
-
-    &-100-xs > * {
-      padding-top: 100px;
-      padding-bottom: 100px;
+  .#{$group-padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-py-variant($value, $value);
+      }
     }
   }
 
@@ -8015,885 +1102,141 @@
       padding: 0;
     }
 
-    &-0-xs {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs {
+        @include padding-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$padding} {
+    &-all-0-xs,
+    &-all-0-xs > *,
+    &-all-0-xs * {
       padding: 0;
     }
 
-    &-1-xs {
-      padding: 1px;
-    }
-
-    &-2-xs {
-      padding: 2px;
-    }
-
-    &-3-xs {
-      padding: 3px;
-    }
-
-    &-4-xs {
-      padding: 4px;
-    }
-
-    &-5-xs {
-      padding: 5px;
-    }
-
-    &-6-xs {
-      padding: 6px;
-    }
-
-    &-7-xs {
-      padding: 7px;
-    }
-
-    &-8-xs {
-      padding: 8px;
-    }
-
-    &-9-xs {
-      padding: 9px;
-    }
-
-    &-10-xs {
-      padding: 10px;
-    }
-
-    &-15-xs {
-      padding: 15px;
-    }
-
-    &-20-xs {
-      padding: 20px;
-    }
-
-    &-25-xs {
-      padding: 25px;
-    }
-
-    &-30-xs {
-      padding: 30px;
-    }
-
-    &-35-xs {
-      padding: 35px;
-    }
-
-    &-40-xs {
-      padding: 50px;
-    }
-
-    &-45-xs {
-      padding: 45px;
-    }
-
-    &-50-xs {
-      padding: 50px;
-    }
-
-    &-55-xs {
-      padding: 55px;
-    }
-
-    &-60-xs {
-      padding: 60px;
-    }
-
-    &-65-xs {
-      padding: 65px;
-    }
-
-    &-70-xs {
-      padding: 70px;
-    }
-
-    &-75-xs {
-      padding: 75px;
-    }
-
-    &-80-xs {
-      padding: 80px;
-    }
-
-    &-85-xs {
-      padding: 85px;
-    }
-
-    &-90-xs {
-      padding: 90px;
-    }
-
-    &-95-xs {
-      padding: 95px;
-    }
-
-    &-100-xs {
-      padding: 100px;
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include padding-pixel-variant($value);
+      }
     }
   }
 
-  .#{$padding-t} {
-    &-0-xs {
-      padding-top: 0;
-    }
-
-    &-1-xs {
-      padding-top: 1px;
-    }
-
-    &-2-xs {
-      padding-top: 2px;
-    }
-
-    &-3-xs {
-      padding-top: 3px;
-    }
-
-    &-4-xs {
-      padding-top: 4px;
-    }
-
-    &-5-xs {
-      padding-top: 5px;
-    }
-
-    &-6-xs {
-      padding-top: 6px;
-    }
-
-    &-7-xs {
-      padding-top: 7px;
-    }
-
-    &-8-xs {
-      padding-top: 8px;
-    }
-
-    &-9-xs {
-      padding-top: 9px;
-    }
-
-    &-10-xs {
-      padding-top: 10px;
-    }
-
-    &-15-xs {
-      padding-top: 15px;
-    }
-
-    &-20-xs {
-      padding-top: 20px;
-    }
-
-    &-25-xs {
-      padding-top: 25px;
-    }
-
-    &-30-xs {
-      padding-top: 30px;
-    }
-
-    &-35-xs {
-      padding-top: 35px;
-    }
-
-    &-40-xs {
-      padding-top: 40px;
-    }
-
-    &-45-xs {
-      padding-top: 45px;
-    }
-
-    &-50-xs {
-      padding-top: 50px;
-    }
-
-    &-55-xs {
-      padding-top: 55px;
-    }
-
-    &-60-xs {
-      padding-top: 60px;
-    }
-
-    &-65-xs {
-      padding-top: 65px;
-    }
-
-    &-70-xs {
-      padding-top: 70px;
-    }
-
-    &-75-xs {
-      padding-top: 75px;
-    }
-
-    &-80-xs {
-      padding-top: 80px;
-    }
-
-    &-85-xs {
-      padding-top: 85px;
-    }
-
-    &-90-xs {
-      padding-top: 50px;
-    }
-
-    &-95-xs {
-      padding-top: 95px;
-    }
-
-    &-100-xs {
-      padding-top: 100px;
+  .#{$padding-top} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$padding-r} {
-    &-0-xs {
-      padding-right: 0;
-    }
-
-    &-1-xs {
-      padding-right: 1px;
-    }
-
-    &-2-xs {
-      padding-right: 2px;
-    }
-
-    &-3-xs {
-      padding-right: 3px;
-    }
-
-    &-4-xs {
-      padding-right: 4px;
-    }
-
-    &-5-xs {
-      padding-right: 5px;
-    }
-
-    &-6-xs {
-      padding-right: 6px;
-    }
-
-    &-7-xs {
-      padding-right: 7px;
-    }
-
-    &-8-xs {
-      padding-right: 8px;
-    }
-
-    &-9-xs {
-      padding-right: 9px;
-    }
-
-    &-10-xs {
-      padding-right: 10px;
-    }
-
-    &-15-xs {
-      padding-right: 15px;
-    }
-
-    &-20-xs {
-      padding-right: 20px;
-    }
-
-    &-25-xs {
-      padding-right: 25px;
-    }
-
-    &-30-xs {
-      padding-right: 30px;
-    }
-
-    &-35-xs {
-      padding-right: 35px;
-    }
-
-    &-40-xs {
-      padding-right: 40px;
-    }
-
-    &-45-xs {
-      padding-right: 45px;
-    }
-
-    &-50-xs {
-      padding-right: 50px;
-    }
-
-    &-55-xs {
-      padding-right: 55px;
-    }
-
-    &-60-xs {
-      padding-right: 60px;
-    }
-
-    &-65-xs {
-      padding-right: 65px;
-    }
-
-    &-70-xs {
-      padding-right: 70px;
-    }
-
-    &-75-xs {
-      padding-right: 75px;
-    }
-
-    &-80-xs {
-      padding-right: 80px;
-    }
-
-    &-85-xs {
-      padding-right: 85px;
-    }
-
-    &-90-xs {
-      padding-right: 90px;
-    }
-
-    &-95-xs {
-      padding-right: 95px;
-    }
-
-    &-100-xs {
-      padding-right: 100px;
+  .#{$padding-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-pt-variant($value);
+      }
     }
   }
 
-  .#{$padding-b} {
-    &-0-xs {
-      padding-bottom: 0;
-    }
-
-    &-1-xs {
-      padding-bottom: 1px;
-    }
-
-    &-2-xs {
-      padding-bottom: 2px;
-    }
-
-    &-3-xs {
-      padding-bottom: 3px;
-    }
-
-    &-4-xs {
-      padding-bottom: 4px;
-    }
-
-    &-5-xs {
-      padding-bottom: 5px;
-    }
-
-    &-6-xs {
-      padding-bottom: 6px;
-    }
-
-    &-7-xs {
-      padding-bottom: 7px;
-    }
-
-    &-8-xs {
-      padding-bottom: 8px;
-    }
-
-    &-9-xs {
-      padding-bottom: 9px;
-    }
-
-    &-10-xs {
-      padding-bottom: 10px;
-    }
-
-    &-15-xs {
-      padding-bottom: 15px;
-    }
-
-    &-20-xs {
-      padding-bottom: 20px;
-    }
-
-    &-25-xs {
-      padding-bottom: 25px;
-    }
-
-    &-30-xs {
-      padding-bottom: 30px;
-    }
-
-    &-35-xs {
-      padding-bottom: 35px;
-    }
-
-    &-40-xs {
-      padding-bottom: 40px;
-    }
-
-    &-45-xs {
-      padding-bottom: 45px;
-    }
-
-    &-50-xs {
-      padding-bottom: 50px;
-    }
-
-    &-55-xs {
-      padding-bottom: 55px;
-    }
-
-    &-60-xs {
-      padding-bottom: 60px;
-    }
-
-    &-65-xs {
-      padding-bottom: 65px;
-    }
-
-    &-70-xs {
-      padding-bottom: 70px;
-    }
-
-    &-75-xs {
-      padding-bottom: 75px;
-    }
-
-    &-80-xs {
-      padding-bottom: 80px;
-    }
-
-    &-85-xs {
-      padding-bottom: 85px;
-    }
-
-    &-90-xs {
-      padding-bottom: 90px;
-    }
-
-    &-95-xs {
-      padding-bottom: 95px;
-    }
-
-    &-100-xs {
-      padding-bottom: 100px;
+  .#{$padding-right} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$padding-l} {
-    &-0-xs {
-      padding-left: 0;
-    }
-
-    &-1-xs {
-      padding-left: 1px;
-    }
-
-    &-2-xs {
-      padding-left: 2px;
-    }
-
-    &-3-xs {
-      padding-left: 3px;
-    }
-
-    &-4-xs {
-      padding-left: 4px;
-    }
-
-    &-5-xs {
-      padding-left: 5px;
-    }
-
-    &-6-xs {
-      padding-left: 6px;
-    }
-
-    &-7-xs {
-      padding-left: 7px;
-    }
-
-    &-8-xs {
-      padding-left: 8px;
-    }
-
-    &-9-xs {
-      padding-left: 9px;
-    }
-
-    &-10-xs {
-      padding-left: 10px;
-    }
-
-    &-15-xs {
-      padding-left: 15px;
-    }
-
-    &-20-xs {
-      padding-left: 20px;
-    }
-
-    &-25-xs {
-      padding-left: 25px;
-    }
-
-    &-30-xs {
-      padding-left: 30px;
-    }
-
-    &-35-xs {
-      padding-left: 35px;
-    }
-
-    &-40-xs {
-      padding-left: 40px;
-    }
-
-    &-45-xs {
-      padding-left: 45px;
-    }
-
-    &-50-xs {
-      padding-left: 50px;
-    }
-
-    &-55-xs {
-      padding-left: 55px;
-    }
-
-    &-65-xs {
-      padding-left: 65px;
-    }
-
-    &-70-xs {
-      padding-left: 70px;
-    }
-
-    &-75-xs {
-      padding-left: 75px;
-    }
-
-    &-80-xs {
-      padding-left: 80px;
-    }
-
-    &-85-xs {
-      padding-left: 85px;
-    }
-
-    &-90-xs {
-      padding-left: 90px;
-    }
-
-    &-95-xs {
-      padding-left: 95px;
-    }
-
-    &-100-xs {
-      padding-left: 100px;
+  .#{$padding-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-pr-variant($value);
+      }
     }
   }
 
-  .#{$padding-x} {
-    &-0-xs {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &-1-xs {
-      padding-left: 1px;
-      padding-right: 1px;
-    }
-
-    &-2-xs {
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-
-    &-3-xs {
-      padding-left: 3px;
-      padding-right: 3px;
-    }
-
-    &-4-xs {
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-
-    &-5-xs {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-
-    &-6-xs {
-      padding-left: 6px;
-      padding-right: 6px;
-    }
-
-    &-7-xs {
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-
-    &-8-xs {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-
-    &-9-xs {
-      padding-left: 9px;
-      padding-right: 9px;
-    }
-
-    &-10-xs {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &-15-xs {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    &-20-xs {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    &-25-xs {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-
-    &-30-xs {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    &-35-xs {
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-
-    &-40-xs {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    &-45-xs {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-
-    &-50-xs {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    &-55-xs {
-      padding-left: 55px;
-      padding-right: 55px;
-    }
-
-    &-60-xs {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
-    &-65-xs {
-      padding-left: 65px;
-      padding-right: 65px;
-    }
-
-    &-70-xs {
-      padding-left: 70px;
-      padding-right: 70px;
-    }
-
-    &-75-xs {
-      padding-left: 75px;
-      padding-right: 75px;
-    }
-
-    &-80-xs {
-      padding-left: 80px;
-      padding-right: 80px;
-    }
-
-    &-85-xs {
-      padding-left: 85px;
-      padding-right: 85px;
-    }
-
-    &-90-xs {
-      padding-left: 90px;
-      padding-right: 90px;
-    }
-
-    &-95-xs {
-      padding-left: 95px;
-      padding-right: 95px;
-    }
-
-    &-100-xs {
-      padding-left: 100px;
-      padding-right: 100px;
+  .#{$padding-bottom} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs {
+        @include group-pb-variant($value);
+      }
     }
   }
 
-  .#{$padding-y} {
-    &-0-xs {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-
-    &-1-xs {
-      padding-top: 1px;
-      padding-bottom: 1px;
-    }
-
-    &-2-xs {
-      padding-top: 2px;
-      padding-bottom: 2px;
-    }
-
-    &-3-xs {
-      padding-top: 3px;
-      padding-bottom: 3px;
-    }
-
-    &-4-xs {
-      padding-top: 4px;
-      padding-bottom: 4px;
-    }
-
-    &-5-xs {
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-
-    &-6-xs {
-      padding-top: 6px;
-      padding-bottom: 6px;
-    }
-
-    &-7-xs {
-      padding-top: 7px;
-      padding-bottom: 7px;
-    }
-
-    &-8-xs {
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-
-    &-9-xs {
-      padding-top: 9px;
-      padding-bottom: 9px;
-    }
-
-    &-10-xs {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    &-15-xs {
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-
-    &-20-xs {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    &-25-xs {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-
-    &-30-xs {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    &-35-xs {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-
-    &-40-xs {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-
-    &-45-xs {
-      padding-top: 45px;
-      padding-bottom: 45px;
-    }
-
-    &-50-xs {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    &-55-xs {
-      padding-top: 55px;
-      padding-bottom: 55px;
-    }
-
-    &-60-xs {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    &-65-xs {
-      padding-top: 65px;
-      padding-bottom: 65px;
-    }
-
-    &-70-xs {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-
-    &-75-xs {
-      padding-top: 75px;
-      padding-bottom: 75px;
-    }
-
-    &-80-xs {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-
-    &-85-xs {
-      padding-top: 85px;
-      padding-bottom: 85px;
-    }
-
-    &-90-xs {
-      padding-top: 90px;
-      padding-bottom: 90px;
-    }
-
-    &-95-xs {
-      padding-top: 95px;
-      padding-bottom: 95px;
-    }
-
-    &-100-xs {
-      padding-top: 100px;
-      padding-bottom: 100px;
+  .#{$padding-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-pb-variant($value);
+      }
     }
   }
 
+  .#{$padding-left} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-pl-variant($value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-px-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $group-p-series {
+      &-#{$key}-xs {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$padding-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-py-variant($value, $value);
+      }
+    }
+  }
 }
 
-@media (max-width: 319px) {}
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

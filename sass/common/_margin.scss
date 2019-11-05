@@ -1,900 +1,126 @@
-//margin
+//.g-m
 
-//.group-m
-
-.#{$group-m} {
-  &-0 > * {
-    margin: 0;
-  }
-
-  &-1 > * {
-    margin: 1px;
-  }
-
-  &-2 > * {
-    margin: 2px;
-  }
-
-  &-3 > * {
-    margin: 3px;
-  }
-
-  &-4 > * {
-    margin: 4px;
-  }
-
-  &-5 > * {
-    margin: 5px;
-  }
-
-  &-6 > * {
-    margin: 6px;
-  }
-
-  &-7 > * {
-    margin: 7px;
-  }
-
-  &-8 > * {
-    margin: 8px;
-  }
-
-  &-9 > * {
-    margin: 9px;
-  }
-
-  &-10 > * {
-    margin: 10px;
-  }
-
-  &-15 > * {
-    margin: 15px;
-  }
-
-  &-20 > * {
-    margin: 20px;
-  }
-
-  &-25 > * {
-    margin: 25px;
-  }
-
-  &-30 > * {
-    margin: 30px;
-  }
-
-  &-35 > * {
-    margin: 35px;
-  }
-
-  &-40 > * {
-    margin: 40px;
-  }
-
-  &-45 > * {
-    margin: 45px;
-  }
-
-  &-50 > * {
-    margin: 50px;
-  }
-
-  &-55 > * {
-    margin: 55px;
-  }
-
-  &-60 > * {
-    margin: 60px;
-  }
-
-  &-65 > * {
-    margin: 65px;
-  }
-
-  &-70 > * {
-    margin: 70px;
-  }
-
-  &-75 > * {
-    margin: 75px;
-  }
-
-  &-80 > * {
-    margin: 80px;
-  }
-
-  &-85 > * {
-    margin: 85px;
-  }
-
-  &-90 > * {
-    margin: 90px;
-  }
-
-  &-95 > * {
-    margin: 95px;
-  }
-
-  &-100 > * {
-    margin: 100px;
+.#{$group-margin} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} > * {
+      @include group-m-variant($value);
+    }
   }
 }
 
-//.group-mt
-
-.#{$group-mt} {
-  &-0 > * {
-    margin-top: 0;
-  }
-
-  &-1 > * {
-    margin-top: 1px;
-  }
-
-  &-2 > * {
-    margin-top: 2px;
-  }
-
-  &-3 > * {
-    margin-top: 3px;
-  }
-
-  &-4 > * {
-    margin-top: 4px;
-  }
-
-  &-5 > * {
-    margin-top: 5px;
-  }
-
-  &-6 > * {
-    margin-top: 6px;
-  }
-
-  &-7 > * {
-    margin-top: 7px;
-  }
-
-  &-8 > * {
-    margin-top: 8px;
-  }
-
-  &-9 > * {
-    margin-top: 9px;
-  }
-
-  &-10 > * {
-    margin-top: 10px;
-  }
-
-  &-15 > * {
-    margin-top: 15px;
-  }
-
-  &-20 > * {
-    margin-top: 20px;
-  }
-
-  &-25 > * {
-    margin-top: 25px;
-  }
-
-  &-30 > * {
-    margin-top: 30px;
-  }
-
-  &-35 > * {
-    margin-top: 35px;
-  }
-
-  &-40 > * {
-    margin-top: 40px;
-  }
-
-  &-45 > * {
-    margin-top: 45px;
-  }
-
-  &-50 > * {
-    margin-top: 50px;
-  }
-
-  &-55 > * {
-    margin-top: 55px;
-  }
-
-  &-60 > * {
-    margin-top: 60px;
-  }
-
-  &-65 > * {
-    margin-top: 65px;
-  }
-
-  &-70 > * {
-    margin-top: 70px;
-  }
-
-  &-75 > * {
-    margin-top: 75px;
-  }
-
-  &-80 > * {
-    margin-top: 80px;
-  }
-
-  &-85 > * {
-    margin-top: 85px;
-  }
-
-  &-90 > * {
-    margin-top: 90px;
-  }
-
-  &-95 > * {
-    margin-top: 95px;
-  }
-
-  &-100 > * {
-    margin-top: 100px;
+.#{$group-margin} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-m-variant($value);
+    }
   }
 }
 
-//.group-mr
+//.g-mt
 
-.#{$group-mr} {
-  &-0 > * {
-    margin-right: 0;
-  }
-
-  &-1 > * {
-    margin-right: 1px;
-  }
-
-  &-2 > * {
-    margin-right: 2px;
-  }
-
-  &-3 > * {
-    margin-right: 3px;
-  }
-
-  &-4 > * {
-    margin-right: 4px;
-  }
-
-  &-5 > * {
-    margin-right: 5px;
-  }
-
-  &-6 > * {
-    margin-right: 6px;
-  }
-
-  &-7 > * {
-    margin-right: 7px;
-  }
-
-  &-8 > * {
-    margin-right: 8px;
-  }
-
-  &-9 > * {
-    margin-right: 9px;
-  }
-
-  &-10 > * {
-    margin-right: 10px;
-  }
-
-  &-15 > * {
-    margin-right: 15px;
-  }
-
-  &-20 > * {
-    margin-right: 20px;
-  }
-
-  &-25 > * {
-    margin-right: 25px;
-  }
-
-  &-30 > * {
-    margin-right: 30px;
-  }
-
-  &-35 > * {
-    margin-right: 35px;
-  }
-
-  &-40 > * {
-    margin-right: 40px;
-  }
-
-  &-45 > * {
-    margin-right: 45px;
-  }
-
-  &-50 > * {
-    margin-right: 50px;
-  }
-
-  &-55 > * {
-    margin-right: 55px;
-  }
-
-  &-60 > * {
-    margin-right: 60px;
-  }
-
-  &-65 > * {
-    margin-right: 65px;
-  }
-
-  &-70 > * {
-    margin-right: 70px;
-  }
-
-  &-75 > * {
-    margin-right: 75px;
-  }
-
-  &-80 > * {
-    margin-right: 80px;
-  }
-
-  &-85 > * {
-    margin-right: 85px;
-  }
-
-  &-90 > * {
-    margin-right: 90px;
-  }
-
-  &-95 > * {
-    margin-right: 95px;
-  }
-
-  &-100 > * {
-    margin-right: 100px;
+.#{$group-margin-top} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} > * {
+      @include group-mt-variant($value);
+    }
   }
 }
 
-//.group-mb
-
-.#{$group-mb} {
-  &-0 > * {
-    margin-bottom: 0;
-  }
-
-  &-1 > * {
-    margin-bottom: 1px;
-  }
-
-  &-2 > * {
-    margin-bottom: 2px;
-  }
-
-  &-3 > * {
-    margin-bottom: 3px;
-  }
-
-  &-4 > * {
-    margin-bottom: 4px;
-  }
-
-  &-5 > * {
-    margin-bottom: 5px;
-  }
-
-  &-6 > * {
-    margin-bottom: 6px;
-  }
-
-  &-7 > * {
-    margin-bottom: 7px;
-  }
-
-  &-8 > * {
-    margin-bottom: 8px;
-  }
-
-  &-9 > * {
-    margin-bottom: 9px;
-  }
-
-  &-10 > * {
-    margin-bottom: 10px;
-  }
-
-  &-15 > * {
-    margin-bottom: 15px;
-  }
-
-  &-20 > * {
-    margin-bottom: 20px;
-  }
-
-  &-25 > * {
-    margin-bottom: 25px;
-  }
-
-  &-30 > * {
-    margin-bottom: 30px;
-  }
-
-  &-35 > * {
-    margin-bottom: 35px;
-  }
-
-  &-40 > * {
-    margin-bottom: 40px;
-  }
-
-  &-45 > * {
-    margin-bottom: 45px;
-  }
-
-  &-50 > * {
-    margin-bottom: 50px;
-  }
-
-  &-55 > * {
-    margin-bottom: 55px;
-  }
-
-  &-60 > * {
-    margin-bottom: 60px;
-  }
-
-  &-65 > * {
-    margin-bottom: 65px;
-  }
-
-  &-70 > * {
-    margin-bottom: 70px;
-  }
-
-  &-75 > * {
-    margin-bottom: 75px;
-  }
-
-  &-80 > * {
-    margin-bottom: 80px;
-  }
-
-  &-85 > * {
-    margin-bottom: 85px;
-  }
-
-  &-90 > * {
-    margin-bottom: 90px;
-  }
-
-  &-95 > * {
-    margin-bottom: 95px;
-  }
-
-  &-100 > * {
-    margin-bottom: 100px;
+.#{$group-margin-top} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-mt-variant($value);
+    }
   }
 }
 
-//.group-ml
+//.g-mr
 
-.#{$group-ml} {
-  &-0 > * {
-    margin-left: 0;
-  }
-
-  &-1 > * {
-    margin-left: 1px;
-  }
-
-  &-2 > * {
-    margin-left: 2px;
-  }
-
-  &-3 > * {
-    margin-left: 3px;
-  }
-
-  &-4 > * {
-    margin-left: 4px;
-  }
-
-  &-5 > * {
-    margin-left: 5px;
-  }
-
-  &-6 > * {
-    margin-left: 6px;
-  }
-
-  &-7 > * {
-    margin-left: 7px;
-  }
-
-  &-8 > * {
-    margin-left: 8px;
-  }
-
-  &-9 > * {
-    margin-left: 9px;
-  }
-
-  &-10 > * {
-    margin-left: 10px;
-  }
-
-  &-15 > * {
-    margin-left: 15px;
-  }
-
-  &-20 > * {
-    margin-left: 20px;
-  }
-
-  &-25 > * {
-    margin-left: 25px;
-  }
-
-  &-30 > * {
-    margin-left: 30px;
-  }
-
-  &-35 > * {
-    margin-left: 35px;
-  }
-
-  &-40 > * {
-    margin-left: 40px;
-  }
-
-  &-45 > * {
-    margin-left: 45px;
-  }
-
-  &-50 > * {
-    margin-left: 50px;
-  }
-
-  &-55 > * {
-    margin-left: 55px;
-  }
-
-  &-60 > * {
-    margin-left: 60px;
-  }
-
-  &-65 > * {
-    margin-left: 65px;
-  }
-
-  &-70 > * {
-    margin-left: 70px;
-  }
-
-  &-75 > * {
-    margin-left: 75px;
-  }
-
-  &-80 > * {
-    margin-left: 80px;
-  }
-
-  &-85 > * {
-    margin-left: 85px;
-  }
-
-  &-90 > * {
-    margin-left: 90px;
-  }
-
-  &-95 > * {
-    margin-left: 95px;
-  }
-
-  &-100 > * {
-    margin-left: 100px;
+.#{$group-margin-right} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} > * {
+      @include group-mr-variant($value);
+    }
   }
 }
 
-//.group-mx
-
-.#{$group-mx} {
-  &-0 > * {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  &-1 > * {
-    margin-left: 1px;
-    margin-right: 1px;
-  }
-
-  &-2 > * {
-    margin-left: 2px;
-    margin-right: 2px;
-  }
-
-  &-3 > * {
-    margin-left: 3px;
-    margin-right: 3px;
-  }
-
-  &-4 > * {
-    margin-left: 4px;
-    margin-right: 4px;
-  }
-
-  &-5 > * {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  &-6 > * {
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-
-  &-7 > * {
-    margin-left: 7px;
-    margin-right: 7px;
-  }
-
-  &-8 > * {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-
-  &-9 > * {
-    margin-left: 9px;
-    margin-right: 9px;
-  }
-
-  &-10 > * {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  &-15 > * {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  &-20 > * {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  &-25 > * {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-
-  &-30 > * {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  &-35 > * {
-    margin-left: 35px;
-    margin-right: 35px;
-  }
-
-  &-40 > * {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  &-45 > * {
-    margin-left: 45px;
-    margin-right: 45px;
-  }
-
-  &-50 > * {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  &-55 > * {
-    margin-left: 55px;
-    margin-right: 55px;
-  }
-
-  &-60 > * {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-
-  &-65 > * {
-    margin-left: 65px;
-    margin-right: 65px;
-  }
-
-  &-70 > * {
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-
-  &-75 > * {
-    margin-left: 75px;
-    margin-right: 75px;
-  }
-
-  &-80 > * {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-
-  &-85 > * {
-    margin-left: 85px;
-    margin-right: 85px;
-  }
-
-  &-90 > * {
-    margin-left: 90px;
-    margin-right: 90px;
-  }
-
-  &-95 > * {
-    margin-left: 95px;
-    margin-right: 95px;
-  }
-
-  &-100 > * {
-    margin-left: 100px;
-    margin-right: 100px;
+.#{$group-margin-right} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-mr-variant($value);
+    }
   }
 }
 
-//.group-my
+//.g-mb
 
-.#{$group-my} {
-  &-0 > * {
-    margin-top: 0;
-    margin-bottom: 0;
+.#{$group-margin-bottom} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} > * {
+      @include group-mb-variant($value);
+    }
   }
+}
 
-  &-1 > * {
-    margin-top: 1px;
-    margin-bottom: 1px;
+.#{$group-margin-bottom} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-mb-variant($value);
+    }
   }
+}
 
-  &-2 > * {
-    margin-top: 2px;
-    margin-bottom: 2px;
+//.g-ml
+
+.#{$group-margin-left} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} > * {
+      @include group-ml-variant($value);
+    }
   }
+}
 
-  &-3 > * {
-    margin-top: 3px;
-    margin-bottom: 3px;
+.#{$group-margin-left} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-ml-variant($value);
+    }
   }
+}
 
-  &-4 > * {
-    margin-top: 4px;
-    margin-bottom: 4px;
+//.g-mx
+
+.#{$group-margin-x-axis} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} > * {
+      @include group-mx-variant($value, $value);
+    }
   }
+}
 
-  &-5 > * {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.#{$group-margin-x-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-mx-variant($value, $value);
+    }
   }
+}
 
-  &-6 > * {
-    margin-top: 6px;
-    margin-bottom: 6px;
+//.g-my
+
+.#{$group-margin-y-axis} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} > * {
+      @include group-my-variant($value, $value);
+    }
   }
+}
 
-  &-7 > * {
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
-
-  &-8 > * {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-
-  &-9 > * {
-    margin-top: 9px;
-    margin-bottom: 9px;
-  }
-
-  &-10 > * {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  &-15 > * {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  &-20 > * {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  &-25 > * {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-
-  &-30 > * {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  &-35 > * {
-    margin-top: 35px;
-    margin-bottom: 35px;
-  }
-
-  &-40 > * {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  &-45 > * {
-    margin-top: 45px;
-    margin-bottom: 45px;
-  }
-
-  &-50 > * {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  &-55 > * {
-    margin-top: 55px;
-    margin-bottom: 55px;
-  }
-
-  &-60 > * {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-
-  &-65 > * {
-    margin-top: 65px;
-    margin-bottom: 65px;
-  }
-
-  &-70 > * {
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
-
-  &-75 > * {
-    margin-top: 75px;
-    margin-bottom: 75px;
-  }
-
-  &-80 > * {
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-
-  &-85 > * {
-    margin-top: 85px;
-    margin-bottom: 85px;
-  }
-
-  &-90 > * {
-    margin-top: 90px;
-    margin-bottom: 90px;
-  }
-
-  &-95 > * {
-    margin-top: 95px;
-    margin-bottom: 95px;
-  }
-
-  &-100 > * {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.#{$group-margin-y-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} > * {
+      @include group-my-variant($value, $value);
+    }
   }
 }
 
@@ -911,2535 +137,360 @@
     margin: 0;
   }
 
-  &-0 {
+  @each $key, $value in $group-m-series {
+    &-#{$key} {
+      @include margin-pixel-variant($value);
+    }
+  }
+}
+
+.#{$margin} {
+  &-center {
+    margin: 0 auto;
+  }
+
+  &-all-0,
+  &-all-0 > *,
+  &-all-0 * {
     margin: 0;
   }
 
-  &-1 {
-    margin: 1px;
-  }
-
-  &-2 {
-    margin: 2px;
-  }
-
-  &-3 {
-    margin: 3px;
-  }
-
-  &-4 {
-    margin: 4px;
-  }
-
-  &-5 {
-    margin: 5px;
-  }
-
-  &-6 {
-    margin: 6px;
-  }
-
-  &-7 {
-    margin: 7px;
-  }
-
-  &-8 {
-    margin: 8px;
-  }
-
-  &-9 {
-    margin: 9px;
-  }
-
-  &-10 {
-    margin: 10px;
-  }
-
-  &-15 {
-    margin: 15px;
-  }
-
-  &-20 {
-    margin: 20px;
-  }
-
-  &-25 {
-    margin: 25px;
-  }
-
-  &-30 {
-    margin: 30px;
-  }
-
-  &-35 {
-    margin: 35px;
-  }
-
-  &-40 {
-    margin: 50px;
-  }
-
-  &-45 {
-    margin: 45px;
-  }
-
-  &-50 {
-    margin: 50px;
-  }
-
-  &-55 {
-    margin: 55px;
-  }
-
-  &-60 {
-    margin: 60px;
-  }
-
-  &-65 {
-    margin: 65px;
-  }
-
-  &-70 {
-    margin: 70px;
-  }
-
-  &-75 {
-    margin: 75px;
-  }
-
-  &-80 {
-    margin: 80px;
-  }
-
-  &-85 {
-    margin: 85px;
-  }
-
-  &-90 {
-    margin: 90px;
-  }
-
-  &-95 {
-    margin: 95px;
-  }
-
-  &-100 {
-    margin: 100px;
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include margin-pixel-variant($value);
+    }
   }
 }
 
 //margin-top
 
-.#{$margin-t} {
-  &-0 {
-    margin-top: 0;
+.#{$margin-top} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} {
+      @include group-mt-variant($value);
+    }
   }
+}
 
-  &-1 {
-    margin-top: 1px;
-  }
-
-  &-2 {
-    margin-top: 2px;
-  }
-
-  &-3 {
-    margin-top: 3px;
-  }
-
-  &-4 {
-    margin-top: 4px;
-  }
-
-  &-5 {
-    margin-top: 5px;
-  }
-
-  &-6 {
-    margin-top: 6px;
-  }
-
-  &-7 {
-    margin-top: 7px;
-  }
-
-  &-8 {
-    margin-top: 8px;
-  }
-
-  &-9 {
-    margin-top: 9px;
-  }
-
-  &-10 {
-    margin-top: 10px;
-  }
-
-  &-15 {
-    margin-top: 15px;
-  }
-
-  &-20 {
-    margin-top: 20px;
-  }
-
-  &-25 {
-    margin-top: 25px;
-  }
-
-  &-30 {
-    margin-top: 30px;
-  }
-
-  &-35 {
-    margin-top: 35px;
-  }
-
-  &-40 {
-    margin-top: 40px;
-  }
-
-  &-45 {
-    margin-top: 45px;
-  }
-
-  &-50 {
-    margin-top: 50px;
-  }
-
-  &-55 {
-    margin-top: 55px;
-  }
-
-  &-60 {
-    margin-top: 60px;
-  }
-
-  &-65 {
-    margin-top: 65px;
-  }
-
-  &-70 {
-    margin-top: 70px;
-  }
-
-  &-75 {
-    margin-top: 75px;
-  }
-
-  &-80 {
-    margin-top: 80px;
-  }
-
-  &-85 {
-    margin-top: 85px;
-  }
-
-  &-90 {
-    margin-top: 50px;
-  }
-
-  &-95 {
-    margin-top: 95px;
-  }
-
-  &-100 {
-    margin-top: 100px;
+.#{$margin-top} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-mt-variant($value);
+    }
   }
 }
 
 //margin-right
 
-.#{$margin-r} {
-  &-0 {
-    margin-right: 0;
+.#{$margin-right} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} {
+      @include group-mr-variant($value);
+    }
   }
+}
 
-  &-1 {
-    margin-right: 1px;
-  }
-
-  &-2 {
-    margin-right: 2px;
-  }
-
-  &-3 {
-    margin-right: 3px;
-  }
-
-  &-4 {
-    margin-right: 4px;
-  }
-
-  &-5 {
-    margin-right: 5px;
-  }
-
-  &-6 {
-    margin-right: 6px;
-  }
-
-  &-7 {
-    margin-right: 7px;
-  }
-
-  &-8 {
-    margin-right: 8px;
-  }
-
-  &-9 {
-    margin-right: 9px;
-  }
-
-  &-10 {
-    margin-right: 10px;
-  }
-
-  &-15 {
-    margin-right: 15px;
-  }
-
-  &-20 {
-    margin-right: 20px;
-  }
-
-  &-25 {
-    margin-right: 25px;
-  }
-
-  &-30 {
-    margin-right: 30px;
-  }
-
-  &-35 {
-    margin-right: 35px;
-  }
-
-  &-40 {
-    margin-right: 40px;
-  }
-
-  &-45 {
-    margin-right: 45px;
-  }
-
-  &-50 {
-    margin-right: 50px;
-  }
-
-  &-55 {
-    margin-right: 55px;
-  }
-
-  &-60 {
-    margin-right: 60px;
-  }
-
-  &-65 {
-    margin-right: 65px;
-  }
-
-  &-70 {
-    margin-right: 70px;
-  }
-
-  &-75 {
-    margin-right: 75px;
-  }
-
-  &-80 {
-    margin-right: 80px;
-  }
-
-  &-85 {
-    margin-right: 85px;
-  }
-
-  &-90 {
-    margin-right: 90px;
-  }
-
-  &-95 {
-    margin-right: 95px;
-  }
-
-  &-100 {
-    margin-right: 100px;
+.#{$margin-right} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-mr-variant($value);
+    }
   }
 }
 
 //margin-bottom
 
-.#{$margin-b} {
-  &-0 {
-    margin-bottom: 0;
+.#{$margin-bottom} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} {
+      @include group-mb-variant($value);
+    }
   }
+}
 
-  &-1 {
-    margin-bottom: 1px;
-  }
-
-  &-2 {
-    margin-bottom: 2px;
-  }
-
-  &-3 {
-    margin-bottom: 3px;
-  }
-
-  &-4 {
-    margin-bottom: 4px;
-  }
-
-  &-5 {
-    margin-bottom: 5px;
-  }
-
-  &-6 {
-    margin-bottom: 6px;
-  }
-
-  &-7 {
-    margin-bottom: 7px;
-  }
-
-  &-8 {
-    margin-bottom: 8px;
-  }
-
-  &-9 {
-    margin-bottom: 9px;
-  }
-
-  &-10 {
-    margin-bottom: 10px;
-  }
-
-  &-15 {
-    margin-bottom: 15px;
-  }
-
-  &-20 {
-    margin-bottom: 20px;
-  }
-
-  &-25 {
-    margin-bottom: 25px;
-  }
-
-  &-30 {
-    margin-bottom: 30px;
-  }
-
-  &-35 {
-    margin-bottom: 35px;
-  }
-
-  &-40 {
-    margin-bottom: 40px;
-  }
-
-  &-45 {
-    margin-bottom: 45px;
-  }
-
-  &-50 {
-    margin-bottom: 50px;
-  }
-
-  &-55 {
-    margin-bottom: 55px;
-  }
-
-  &-60 {
-    margin-bottom: 60px;
-  }
-
-  &-65 {
-    margin-bottom: 65px;
-  }
-
-  &-70 {
-    margin-bottom: 70px;
-  }
-
-  &-75 {
-    margin-bottom: 75px;
-  }
-
-  &-80 {
-    margin-bottom: 80px;
-  }
-
-  &-85 {
-    margin-bottom: 85px;
-  }
-
-  &-90 {
-    margin-bottom: 90px;
-  }
-
-  &-95 {
-    margin-bottom: 95px;
-  }
-
-  &-100 {
-    margin-bottom: 100px;
+.#{$margin-bottom} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-mb-variant($value);
+    }
   }
 }
 
 //margin-left
 
-.#{$margin-l} {
-  &-0 {
-    margin-left: 0;
+.#{$margin-left} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} {
+      @include group-ml-variant($value);
+    }
   }
+}
 
-  &-1 {
-    margin-left: 1px;
-  }
-
-  &-2 {
-    margin-left: 2px;
-  }
-
-  &-3 {
-    margin-left: 3px;
-  }
-
-  &-4 {
-    margin-left: 4px;
-  }
-
-  &-5 {
-    margin-left: 5px;
-  }
-
-  &-6 {
-    margin-left: 6px;
-  }
-
-  &-7 {
-    margin-left: 7px;
-  }
-
-  &-8 {
-    margin-left: 8px;
-  }
-
-  &-9 {
-    margin-left: 9px;
-  }
-
-  &-10 {
-    margin-left: 10px;
-  }
-
-  &-15 {
-    margin-left: 15px;
-  }
-
-  &-20 {
-    margin-left: 20px;
-  }
-
-  &-25 {
-    margin-left: 25px;
-  }
-
-  &-30 {
-    margin-left: 30px;
-  }
-
-  &-35 {
-    margin-left: 35px;
-  }
-
-  &-40 {
-    margin-left: 40px;
-  }
-
-  &-45 {
-    margin-left: 45px;
-  }
-
-  &-50 {
-    margin-left: 50px;
-  }
-
-  &-55 {
-    margin-left: 55px;
-  }
-
-  &-65 {
-    margin-left: 65px;
-  }
-
-  &-70 {
-    margin-left: 70px;
-  }
-
-  &-75 {
-    margin-left: 75px;
-  }
-
-  &-80 {
-    margin-left: 80px;
-  }
-
-  &-85 {
-    margin-left: 85px;
-  }
-
-  &-90 {
-    margin-left: 90px;
-  }
-
-  &-95 {
-    margin-left: 95px;
-  }
-
-  &-100 {
-    margin-left: 100px;
+.#{$margin-left} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-ml-variant($value);
+    }
   }
 }
 
 //margin-x
 
-.#{$margin-x} {
-  &-0 {
-    margin-left: 0;
-    margin-right: 0;
+.#{$margin-x-axis} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} {
+      @include group-mx-variant($value, $value);
+    }
   }
+}
 
-  &-1 {
-    margin-left: 1px;
-    margin-right: 1px;
-  }
-
-  &-2 {
-    margin-left: 2px;
-    margin-right: 2px;
-  }
-
-  &-3 {
-    margin-left: 3px;
-    margin-right: 3px;
-  }
-
-  &-4 {
-    margin-left: 4px;
-    margin-right: 4px;
-  }
-
-  &-5 {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  &-6 {
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-
-  &-7 {
-    margin-left: 7px;
-    margin-right: 7px;
-  }
-
-  &-8 {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-
-  &-9 {
-    margin-left: 9px;
-    margin-right: 9px;
-  }
-
-  &-10 {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  &-15 {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  &-20 {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  &-25 {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-
-  &-30 {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  &-35 {
-    margin-left: 35px;
-    margin-right: 35px;
-  }
-
-  &-40 {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  &-45 {
-    margin-left: 45px;
-    margin-right: 45px;
-  }
-
-  &-50 {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  &-55 {
-    margin-left: 55px;
-    margin-right: 55px;
-  }
-
-  &-60 {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-
-  &-65 {
-    margin-left: 65px;
-    margin-right: 65px;
-  }
-
-  &-70 {
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-
-  &-75 {
-    margin-left: 75px;
-    margin-right: 75px;
-  }
-
-  &-80 {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-
-  &-85 {
-    margin-left: 85px;
-    margin-right: 85px;
-  }
-
-  &-90 {
-    margin-left: 90px;
-    margin-right: 90px;
-  }
-
-  &-95 {
-    margin-left: 95px;
-    margin-right: 95px;
-  }
-
-  &-100 {
-    margin-left: 100px;
-    margin-right: 100px;
+.#{$margin-x-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-mx-variant($value, $value);
+    }
   }
 }
 
 //margin-y
 
-.#{$margin-y} {
-  &-0 {
-    margin-top: 0;
-    margin-bottom: 0;
+.#{$margin-y-axis} {
+  @each $key, $value in $group-m-series {
+    &-#{$key} {
+      @include group-my-variant($value, $value);
+    }
   }
+}
 
-  &-1 {
-    margin-top: 1px;
-    margin-bottom: 1px;
-  }
-
-  &-2 {
-    margin-top: 2px;
-    margin-bottom: 2px;
-  }
-
-  &-3 {
-    margin-top: 3px;
-    margin-bottom: 3px;
-  }
-
-  &-4 {
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
-
-  &-5 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  &-6 {
-    margin-top: 6px;
-    margin-bottom: 6px;
-  }
-
-  &-7 {
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
-
-  &-8 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-
-  &-9 {
-    margin-top: 9px;
-    margin-bottom: 9px;
-  }
-
-  &-10 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  &-15 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  &-20 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  &-25 {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-
-  &-30 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  &-35 {
-    margin-top: 35px;
-    margin-bottom: 35px;
-  }
-
-  &-40 {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  &-45 {
-    margin-top: 45px;
-    margin-bottom: 45px;
-  }
-
-  &-50 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  &-55 {
-    margin-top: 55px;
-    margin-bottom: 55px;
-  }
-
-  &-60 {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-
-  &-65 {
-    margin-top: 65px;
-    margin-bottom: 65px;
-  }
-
-  &-70 {
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
-
-  &-75 {
-    margin-top: 75px;
-    margin-bottom: 75px;
-  }
-
-  &-80 {
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-
-  &-85 {
-    margin-top: 85px;
-    margin-bottom: 85px;
-  }
-
-  &-90 {
-    margin-top: 90px;
-    margin-bottom: 90px;
-  }
-
-  &-95 {
-    margin-top: 95px;
-    margin-bottom: 95px;
-  }
-
-  &-100 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.#{$margin-y-axis} {
+  @each $key, $value in $rem-size-series {
+    &-#{$key} {
+      @include group-my-variant($value, $value);
+    }
   }
 }
 
 //margin-out-top
 
-.#{$margin-out-t} {
-  &-1 {
-    margin-top: -1px;
+.#{$margin-out-top} {
+  @each $key, $value in $group-mo-series {
+    &-#{$key} {
+      @include margin-ot-variant($value);
+    }
   }
+}
 
-  &-2 {
-    margin-top: -2px;
-  }
-
-  &-3 {
-    margin-top: -3px;
-  }
-
-  &-4 {
-    margin-top: -4px;
-  }
-
-  &-5 {
-    margin-top: -5px;
-  }
-
-  &-6 {
-    margin-top: -6px;
-  }
-
-  &-7 {
-    margin-top: -7px;
-  }
-
-  &-8 {
-    margin-top: -8px;
-  }
-
-  &-9 {
-    margin-top: -9px;
-  }
-
-  &-10 {
-    margin-top: -10px;
-  }
-
-  &-15 {
-    margin-top: -15px;
-  }
-
-  &-20 {
-    margin-top: -20px;
-  }
-
-  &-25 {
-    margin-top: -25px;
-  }
-
-  &-30 {
-    margin-top: -30px;
-  }
-
-  &-35 {
-    margin-top: -35px;
-  }
-
-  &-40 {
-    margin-top: -40px;
-  }
-
-  &-45 {
-    margin-top: -45px;
-  }
-
-  &-50 {
-    margin-top: -50px;
-  }
-
-  &-55 {
-    margin-top: -55px;
-  }
-
-  &-60 {
-    margin-top: -60px;
-  }
-
-  &-65 {
-    margin-top: -65px;
-  }
-
-  &-70 {
-    margin-top: -70px;
-  }
-
-  &-75 {
-    margin-top: -75px;
-  }
-
-  &-80 {
-    margin-top: -80px;
-  }
-
-  &-85 {
-    margin-top: -85px;
-  }
-
-  &-90 {
-    margin-top: -50px;
-  }
-
-  &-95 {
-    margin-top: -95px;
-  }
-
-  &-100 {
-    margin-top: -100px;
+.#{$margin-out-top} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-ot-variant($value);
+    }
   }
 }
 
 //margin-out-right
 
-.#{$margin-out-r} {
-  &-1 {
-    margin-right: -1px;
+.#{$margin-out-right} {
+  @each $key, $value in $group-mo-series {
+    &-#{$key} {
+      @include margin-or-variant($value);
+    }
   }
+}
 
-  &-2 {
-    margin-right: -2px;
-  }
-
-  &-3 {
-    margin-right: -3px;
-  }
-
-  &-4 {
-    margin-right: -4px;
-  }
-
-  &-5 {
-    margin-right: -5px;
-  }
-
-  &-6 {
-    margin-right: -6px;
-  }
-
-  &-7 {
-    margin-right: -7px;
-  }
-
-  &-8 {
-    margin-right: -8px;
-  }
-
-  &-9 {
-    margin-right: -9px;
-  }
-
-  &-10 {
-    margin-right: -10px;
-  }
-
-  &-15 {
-    margin-right: -15px;
-  }
-
-  &-20 {
-    margin-right: -20px;
-  }
-
-  &-25 {
-    margin-right: -25px;
-  }
-
-  &-30 {
-    margin-right: -30px;
-  }
-
-  &-35 {
-    margin-right: -35px;
-  }
-
-  &-40 {
-    margin-right: -40px;
-  }
-
-  &-45 {
-    margin-right: -45px;
-  }
-
-  &-50 {
-    margin-right: -50px;
-  }
-
-  &-55 {
-    margin-right: -55px;
-  }
-
-  &-60 {
-    margin-right: -60px;
-  }
-
-  &-65 {
-    margin-right: -65px;
-  }
-
-  &-70 {
-    margin-right: -70px;
-  }
-
-  &-75 {
-    margin-right: -75px;
-  }
-
-  &-80 {
-    margin-right: -80px;
-  }
-
-  &-85 {
-    margin-right: -85px;
-  }
-
-  &-90 {
-    margin-right: -90px;
-  }
-
-  &-95 {
-    margin-right: -95px;
-  }
-
-  &-100 {
-    margin-right: -100px;
+.#{$margin-out-right} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-or-variant($value);
+    }
   }
 }
 
 //margin-out-bottom
 
-.#{$margin-out-b} {
-  &-1 {
-    margin-bottom: -1px;
+.#{$margin-out-bottom} {
+  @each $key, $value in $group-mo-series {
+    &-#{$key} {
+      @include margin-ob-variant($value);
+    }
   }
+}
 
-  &-2 {
-    margin-bottom: -2px;
-  }
-
-  &-3 {
-    margin-bottom: -3px;
-  }
-
-  &-4 {
-    margin-bottom: -4px;
-  }
-
-  &-5 {
-    margin-bottom: -5px;
-  }
-
-  &-6 {
-    margin-bottom: -6px;
-  }
-
-  &-7 {
-    margin-bottom: -7px;
-  }
-
-  &-8 {
-    margin-bottom: -8px;
-  }
-
-  &-9 {
-    margin-bottom: -9px;
-  }
-
-  &-10 {
-    margin-bottom: -10px;
-  }
-
-  &-15 {
-    margin-bottom: -15px;
-  }
-
-  &-20 {
-    margin-bottom: -20px;
-  }
-
-  &-25 {
-    margin-bottom: -25px;
-  }
-
-  &-30 {
-    margin-bottom: -30px;
-  }
-
-  &-35 {
-    margin-bottom: -35px;
-  }
-
-  &-40 {
-    margin-bottom: -40px;
-  }
-
-  &-45 {
-    margin-bottom: -45px;
-  }
-
-  &-50 {
-    margin-bottom: -50px;
-  }
-
-  &-55 {
-    margin-bottom: -55px;
-  }
-
-  &-60 {
-    margin-bottom: -60px;
-  }
-
-  &-65 {
-    margin-bottom: -65px;
-  }
-
-  &-70 {
-    margin-bottom: -70px;
-  }
-
-  &-75 {
-    margin-bottom: -75px;
-  }
-
-  &-80 {
-    margin-bottom: -80px;
-  }
-
-  &-85 {
-    margin-bottom: -85px;
-  }
-
-  &-90 {
-    margin-bottom: -90px;
-  }
-
-  &-95 {
-    margin-bottom: -95px;
-  }
-
-  &-100 {
-    margin-bottom: -100px;
+.#{$margin-out-bottom} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-ob-variant($value);
+    }
   }
 }
 
 //margin-out-left
 
-.#{$margin-out-l} {
-  &-1 {
-    margin-left: -1px;
+.#{$margin-out-left} {
+  @each $key, $value in $group-mo-series {
+    &-#{$key} {
+      @include margin-ol-variant($value);
+    }
   }
+}
 
-  &-2 {
-    margin-left: -2px;
-  }
-
-  &-3 {
-    margin-left: -3px;
-  }
-
-  &-4 {
-    margin-left: -4px;
-  }
-
-  &-5 {
-    margin-left: -5px;
-  }
-
-  &-6 {
-    margin-left: -6px;
-  }
-
-  &-7 {
-    margin-left: -7px;
-  }
-
-  &-8 {
-    margin-left: -8px;
-  }
-
-  &-9 {
-    margin-left: -9px;
-  }
-
-  &-10 {
-    margin-left: -10px;
-  }
-
-  &-15 {
-    margin-left: -15px;
-  }
-
-  &-20 {
-    margin-left: -20px;
-  }
-
-  &-25 {
-    margin-left: -25px;
-  }
-
-  &-30 {
-    margin-left: -30px;
-  }
-
-  &-35 {
-    margin-left: -35px;
-  }
-
-  &-40 {
-    margin-left: -40px;
-  }
-
-  &-45 {
-    margin-left: -45px;
-  }
-
-  &-50 {
-    margin-left: -50px;
-  }
-
-  &-55 {
-    margin-left: -55px;
-  }
-
-  &-65 {
-    margin-left: -65px;
-  }
-
-  &-70 {
-    margin-left: -70px;
-  }
-
-  &-75 {
-    margin-left: -75px;
-  }
-
-  &-80 {
-    margin-left: -80px;
-  }
-
-  &-85 {
-    margin-left: -85px;
-  }
-
-  &-90 {
-    margin-left: -90px;
-  }
-
-  &-95 {
-    margin-left: -95px;
-  }
-
-  &-100 {
-    margin-left: -100px;
+.#{$margin-out-left} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-ol-variant($value);
+    }
   }
 }
 
 //margin-out-x
 
-.#{$margin-out-x} {
-  &-1 {
-    margin-left: -1px;
-    margin-right: -1px;
+.#{$margin-out-x-axis} {
+  @each $key, $value in $group-mo-series {
+    &-#{$key} {
+      @include margin-ox-variant($value, $value);
+    }
   }
+}
 
-  &-2 {
-    margin-left: -2px;
-    margin-right: -2px;
-  }
-
-  &-3 {
-    margin-left: -3px;
-    margin-right: -3px;
-  }
-
-  &-4 {
-    margin-left: -4px;
-    margin-right: -4px;
-  }
-
-  &-5 {
-    margin-left: -5px;
-    margin-right: -5px;
-  }
-
-  &-6 {
-    margin-left: -6px;
-    margin-right: -6px;
-  }
-
-  &-7 {
-    margin-left: -7px;
-    margin-right: -7px;
-  }
-
-  &-8 {
-    margin-left: -8px;
-    margin-right: -8px;
-  }
-
-  &-9 {
-    margin-left: -9px;
-    margin-right: -9px;
-  }
-
-  &-10 {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-
-  &-15 {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-
-  &-20 {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-
-  &-25 {
-    margin-left: -25px;
-    margin-right: -25px;
-  }
-
-  &-30 {
-    margin-left: -30px;
-    margin-right: -30px;
-  }
-
-  &-35 {
-    margin-left: -35px;
-    margin-right: -35px;
-  }
-
-  &-40 {
-    margin-left: -40px;
-    margin-right: -40px;
-  }
-
-  &-45 {
-    margin-left: -45px;
-    margin-right: -45px;
-  }
-
-  &-50 {
-    margin-left: -50px;
-    margin-right: -50px;
-  }
-
-  &-55 {
-    margin-left: -55px;
-    margin-right: -55px;
-  }
-
-  &-60 {
-    margin-left: -60px;
-    margin-right: -60px;
-  }
-
-  &-65 {
-    margin-left: -65px;
-    margin-right: -65px;
-  }
-
-  &-70 {
-    margin-left: -70px;
-    margin-right: -70px;
-  }
-
-  &-75 {
-    margin-left: -75px;
-    margin-right: -75px;
-  }
-
-  &-80 {
-    margin-left: -80px;
-    margin-right: -80px;
-  }
-
-  &-85 {
-    margin-left: -85px;
-    margin-right: -85px;
-  }
-
-  &-90 {
-    margin-left: -90px;
-    margin-right: -90px;
-  }
-
-  &-95 {
-    margin-left: -95px;
-    margin-right: -95px;
-  }
-
-  &-100 {
-    margin-left: -100px;
-    margin-right: -100px;
+.#{$margin-out-x-axis} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-ox-variant($value, $value);
+    }
   }
 }
 
 //margin-out-y
 
-.#{$margin-out-y} {
-  &-0 {
-    margin-top: -0;
-    margin-bottom: -0;
-  }
-
-  &-1 {
-    margin-top: -1px;
-    margin-bottom: -1px;
-  }
-
-  &-2 {
-    margin-top: -2px;
-    margin-bottom: -2px;
-  }
-
-  &-3 {
-    margin-top: -3px;
-    margin-bottom: -3px;
-  }
-
-  &-4 {
-    margin-top: -4px;
-    margin-bottom: -4px;
-  }
-
-  &-5 {
-    margin-top: -5px;
-    margin-bottom: -5px;
-  }
-
-  &-6 {
-    margin-top: -6px;
-    margin-bottom: -6px;
-  }
-
-  &-7 {
-    margin-top: -7px;
-    margin-bottom: -7px;
-  }
-
-  &-8 {
-    margin-top: -8px;
-    margin-bottom: -8px;
-  }
-
-  &-9 {
-    margin-top: -9px;
-    margin-bottom: -9px;
-  }
-
-  &-10 {
-    margin-top: -10px;
-    margin-bottom: -10px;
-  }
-
-  &-15 {
-    margin-top: -15px;
-    margin-bottom: -15px;
-  }
-
-  &-20 {
-    margin-top: -20px;
-    margin-bottom: -20px;
-  }
-
-  &-25 {
-    margin-top: -25px;
-    margin-bottom: -25px;
-  }
-
-  &-30 {
-    margin-top: -30px;
-    margin-bottom: -30px;
-  }
-
-  &-35 {
-    margin-top: -35px;
-    margin-bottom: -35px;
-  }
-
-  &-40 {
-    margin-top: -40px;
-    margin-bottom: -40px;
-  }
-
-  &-45 {
-    margin-top: -45px;
-    margin-bottom: -45px;
-  }
-
-  &-50 {
-    margin-top: -50px;
-    margin-bottom: -50px;
-  }
-
-  &-55 {
-    margin-top: -55px;
-    margin-bottom: -55px;
-  }
-
-  &-60 {
-    margin-top: -60px;
-    margin-bottom: -60px;
-  }
-
-  &-65 {
-    margin-top: -65px;
-    margin-bottom: -65px;
-  }
-
-  &-70 {
-    margin-top: -70px;
-    margin-bottom: -70px;
-  }
-
-  &-75 {
-    margin-top: -75px;
-    margin-bottom: -75px;
-  }
-
-  &-80 {
-    margin-top: -80px;
-    margin-bottom: -80px;
-  }
-
-  &-85 {
-    margin-top: -85px;
-    margin-bottom: -85px;
-  }
-
-  &-90 {
-    margin-top: -90px;
-    margin-bottom: -90px;
-  }
-
-  &-95 {
-    margin-top: -95px;
-    margin-bottom: -95px;
-  }
-
-  &-100 {
-    margin-top: -100px;
-    margin-bottom: -100px;
+.#{$margin-out-y-axis} {
+  @each $key, $value in $group-mo-series {
+    &-#{$key} {
+      @include margin-oy-variant($value, $value);
+    }
   }
 }
 
-//responsive
+.#{$margin-out-y-axis} {
+  @each $key, $value in $rem-size-minus-series {
+    &-#{$key} {
+      @include margin-oy-variant($value, $value);
+    }
+  }
+}
+
+//responsive-pc
 
 @media (max-width: 1199px) {
-
-  .#{$group-m} {
-    &-0-lg > * {
-      margin: 0;
-    }
-
-    &-1-lg > * {
-      margin: 1px;
-    }
-
-    &-2-lg > * {
-      margin: 2px;
-    }
-
-    &-3-lg > * {
-      margin: 3px;
-    }
-
-    &-4-lg > * {
-      margin: 4px;
-    }
-
-    &-5-lg > * {
-      margin: 5px;
-    }
-
-    &-6-lg > * {
-      margin: 6px;
-    }
-
-    &-7-lg > * {
-      margin: 7px;
-    }
-
-    &-8-lg > * {
-      margin: 8px;
-    }
-
-    &-9-lg > * {
-      margin: 9px;
-    }
-
-    &-10-lg > * {
-      margin: 10px;
-    }
-
-    &-15-lg > * {
-      margin: 15px;
-    }
-
-    &-20-lg > * {
-      margin: 20px;
-    }
-
-    &-25-lg > * {
-      margin: 25px;
-    }
-
-    &-30-lg > * {
-      margin: 30px;
-    }
-
-    &-35-lg > * {
-      margin: 35px;
-    }
-
-    &-40-lg > * {
-      margin: 40px;
-    }
-
-    &-45-lg > * {
-      margin: 45px;
-    }
-
-    &-50-lg > * {
-      margin: 50px;
-    }
-
-    &-55-lg > * {
-      margin: 55px;
-    }
-
-    &-60-lg > * {
-      margin: 60px;
-    }
-
-    &-65-lg > * {
-      margin: 65px;
-    }
-
-    &-70-lg > * {
-      margin: 70px;
-    }
-
-    &-75-lg > * {
-      margin: 75px;
-    }
-
-    &-80-lg > * {
-      margin: 80px;
-    }
-
-    &-85-lg > * {
-      margin: 85px;
-    }
-
-    &-90-lg > * {
-      margin: 90px;
-    }
-
-    &-95-lg > * {
-      margin: 95px;
-    }
-
-    &-100-lg > * {
-      margin: 100px;
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$group-margin} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg > * {
+        @include group-m-variant($value);
+      }
     }
   }
 
-  .#{$group-mt} {
-    &-0-lg > * {
-      margin-top: 0;
-    }
-
-    &-1-lg > * {
-      margin-top: 1px;
-    }
-
-    &-2-lg > * {
-      margin-top: 2px;
-    }
-
-    &-3-lg > * {
-      margin-top: 3px;
-    }
-
-    &-4-lg > * {
-      margin-top: 4px;
-    }
-
-    &-5-lg > * {
-      margin-top: 5px;
-    }
-
-    &-6-lg > * {
-      margin-top: 6px;
-    }
-
-    &-7-lg > * {
-      margin-top: 7px;
-    }
-
-    &-8-lg > * {
-      margin-top: 8px;
-    }
-
-    &-9-lg > * {
-      margin-top: 9px;
-    }
-
-    &-10-lg > * {
-      margin-top: 10px;
-    }
-
-    &-15-lg > * {
-      margin-top: 15px;
-    }
-
-    &-20-lg > * {
-      margin-top: 20px;
-    }
-
-    &-25-lg > * {
-      margin-top: 25px;
-    }
-
-    &-30-lg > * {
-      margin-top: 30px;
-    }
-
-    &-35-lg > * {
-      margin-top: 35px;
-    }
-
-    &-40-lg > * {
-      margin-top: 40px;
-    }
-
-    &-45-lg > * {
-      margin-top: 45px;
-    }
-
-    &-50-lg > * {
-      margin-top: 50px;
-    }
-
-    &-55-lg > * {
-      margin-top: 55px;
-    }
-
-    &-60-lg > * {
-      margin-top: 60px;
-    }
-
-    &-65-lg > * {
-      margin-top: 65px;
-    }
-
-    &-70-lg > * {
-      margin-top: 70px;
-    }
-
-    &-75-lg > * {
-      margin-top: 75px;
-    }
-
-    &-80-lg > * {
-      margin-top: 80px;
-    }
-
-    &-85-lg > * {
-      margin-top: 85px;
-    }
-
-    &-90-lg > * {
-      margin-top: 90px;
-    }
-
-    &-95-lg > * {
-      margin-top: 95px;
-    }
-
-    &-100-lg > * {
-      margin-top: 100px;
+  .#{$group-margin} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-m-variant($value);
+      }
     }
   }
 
-  .#{$group-mr} {
-    &-0-lg > * {
-      margin-right: 0;
-    }
-
-    &-1-lg > * {
-      margin-right: 1px;
-    }
-
-    &-2-lg > * {
-      margin-right: 2px;
-    }
-
-    &-3-lg > * {
-      margin-right: 3px;
-    }
-
-    &-4-lg > * {
-      margin-right: 4px;
-    }
-
-    &-5-lg > * {
-      margin-right: 5px;
-    }
-
-    &-6-lg > * {
-      margin-right: 6px;
-    }
-
-    &-7-lg > * {
-      margin-right: 7px;
-    }
-
-    &-8-lg > * {
-      margin-right: 8px;
-    }
-
-    &-9-lg > * {
-      margin-right: 9px;
-    }
-
-    &-10-lg > * {
-      margin-right: 10px;
-    }
-
-    &-15-lg > * {
-      margin-right: 15px;
-    }
-
-    &-20-lg > * {
-      margin-right: 20px;
-    }
-
-    &-25-lg > * {
-      margin-right: 25px;
-    }
-
-    &-30-lg > * {
-      margin-right: 30px;
-    }
-
-    &-35-lg > * {
-      margin-right: 35px;
-    }
-
-    &-40-lg > * {
-      margin-right: 40px;
-    }
-
-    &-45-lg > * {
-      margin-right: 45px;
-    }
-
-    &-50-lg > * {
-      margin-right: 50px;
-    }
-
-    &-55-lg > * {
-      margin-right: 55px;
-    }
-
-    &-60-lg > * {
-      margin-right: 60px;
-    }
-
-    &-65-lg > * {
-      margin-right: 65px;
-    }
-
-    &-70-lg > * {
-      margin-right: 70px;
-    }
-
-    &-75-lg > * {
-      margin-right: 75px;
-    }
-
-    &-80-lg > * {
-      margin-right: 80px;
-    }
-
-    &-85-lg > * {
-      margin-right: 85px;
-    }
-
-    &-90-lg > * {
-      margin-right: 90px;
-    }
-
-    &-95-lg > * {
-      margin-right: 95px;
-    }
-
-    &-100-lg > * {
-      margin-right: 100px;
+  .#{$group-margin-top} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg > * {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$group-mb} {
-    &-0-lg > * {
-      margin-bottom: 0;
-    }
-
-    &-1-lg > * {
-      margin-bottom: 1px;
-    }
-
-    &-2-lg > * {
-      margin-bottom: 2px;
-    }
-
-    &-3-lg > * {
-      margin-bottom: 3px;
-    }
-
-    &-4-lg > * {
-      margin-bottom: 4px;
-    }
-
-    &-5-lg > * {
-      margin-bottom: 5px;
-    }
-
-    &-6-lg > * {
-      margin-bottom: 6px;
-    }
-
-    &-7-lg > * {
-      margin-bottom: 7px;
-    }
-
-    &-8-lg > * {
-      margin-bottom: 8px;
-    }
-
-    &-9-lg > * {
-      margin-bottom: 9px;
-    }
-
-    &-10-lg > * {
-      margin-bottom: 10px;
-    }
-
-    &-15-lg > * {
-      margin-bottom: 15px;
-    }
-
-    &-20-lg > * {
-      margin-bottom: 20px;
-    }
-
-    &-25-lg > * {
-      margin-bottom: 25px;
-    }
-
-    &-30-lg > * {
-      margin-bottom: 30px;
-    }
-
-    &-35-lg > * {
-      margin-bottom: 35px;
-    }
-
-    &-40-lg > * {
-      margin-bottom: 40px;
-    }
-
-    &-45-lg > * {
-      margin-bottom: 45px;
-    }
-
-    &-50-lg > * {
-      margin-bottom: 50px;
-    }
-
-    &-55-lg > * {
-      margin-bottom: 55px;
-    }
-
-    &-60-lg > * {
-      margin-bottom: 60px;
-    }
-
-    &-65-lg > * {
-      margin-bottom: 65px;
-    }
-
-    &-70-lg > * {
-      margin-bottom: 70px;
-    }
-
-    &-75-lg > * {
-      margin-bottom: 75px;
-    }
-
-    &-80-lg > * {
-      margin-bottom: 80px;
-    }
-
-    &-85-lg > * {
-      margin-bottom: 85px;
-    }
-
-    &-90-lg > * {
-      margin-bottom: 90px;
-    }
-
-    &-95-lg > * {
-      margin-bottom: 95px;
-    }
-
-    &-100-lg > * {
-      margin-bottom: 100px;
+  .#{$group-margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$group-ml} {
-    &-0-lg > * {
-      margin-left: 0;
-    }
-
-    &-1-lg > * {
-      margin-left: 1px;
-    }
-
-    &-2-lg > * {
-      margin-left: 2px;
-    }
-
-    &-3-lg > * {
-      margin-left: 3px;
-    }
-
-    &-4-lg > * {
-      margin-left: 4px;
-    }
-
-    &-5-lg > * {
-      margin-left: 5px;
-    }
-
-    &-6-lg > * {
-      margin-left: 6px;
-    }
-
-    &-7-lg > * {
-      margin-left: 7px;
-    }
-
-    &-8-lg > * {
-      margin-left: 8px;
-    }
-
-    &-9-lg > * {
-      margin-left: 9px;
-    }
-
-    &-10-lg > * {
-      margin-left: 10px;
-    }
-
-    &-15-lg > * {
-      margin-left: 15px;
-    }
-
-    &-20-lg > * {
-      margin-left: 20px;
-    }
-
-    &-25-lg > * {
-      margin-left: 25px;
-    }
-
-    &-30-lg > * {
-      margin-left: 30px;
-    }
-
-    &-35-lg > * {
-      margin-left: 35px;
-    }
-
-    &-40-lg > * {
-      margin-left: 40px;
-    }
-
-    &-45-lg > * {
-      margin-left: 45px;
-    }
-
-    &-50-lg > * {
-      margin-left: 50px;
-    }
-
-    &-55-lg > * {
-      margin-left: 55px;
-    }
-
-    &-60-lg > * {
-      margin-left: 60px;
-    }
-
-    &-65-lg > * {
-      margin-left: 65px;
-    }
-
-    &-70-lg > * {
-      margin-left: 70px;
-    }
-
-    &-75-lg > * {
-      margin-left: 75px;
-    }
-
-    &-80-lg > * {
-      margin-left: 80px;
-    }
-
-    &-85-lg > * {
-      margin-left: 85px;
-    }
-
-    &-90-lg > * {
-      margin-left: 90px;
-    }
-
-    &-95-lg > * {
-      margin-left: 95px;
-    }
-
-    &-100-lg > * {
-      margin-left: 100px;
+  .#{$group-margin-right} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg > * {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$group-mx} {
-    &-0-lg > * {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    &-1-lg > * {
-      margin-left: 1px;
-      margin-right: 1px;
-    }
-
-    &-2-lg > * {
-      margin-left: 2px;
-      margin-right: 2px;
-    }
-
-    &-3-lg > * {
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-
-    &-4-lg > * {
-      margin-left: 4px;
-      margin-right: 4px;
-    }
-
-    &-5-lg > * {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    &-6-lg > * {
-      margin-left: 6px;
-      margin-right: 6px;
-    }
-
-    &-7-lg > * {
-      margin-left: 7px;
-      margin-right: 7px;
-    }
-
-    &-8-lg > * {
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-
-    &-9-lg > * {
-      margin-left: 9px;
-      margin-right: 9px;
-    }
-
-    &-10-lg > * {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    &-15-lg > * {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    &-20-lg > * {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-
-    &-25-lg > * {
-      margin-left: 25px;
-      margin-right: 25px;
-    }
-
-    &-30-lg > * {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-
-    &-35-lg > * {
-      margin-left: 35px;
-      margin-right: 35px;
-    }
-
-    &-40-lg > * {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    &-45-lg > * {
-      margin-left: 45px;
-      margin-right: 45px;
-    }
-
-    &-50-lg > * {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    &-55-lg > * {
-      margin-left: 55px;
-      margin-right: 55px;
-    }
-
-    &-60-lg > * {
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-
-    &-65-lg > * {
-      margin-left: 65px;
-      margin-right: 65px;
-    }
-
-    &-70-lg > * {
-      margin-left: 70px;
-      margin-right: 70px;
-    }
-
-    &-75-lg > * {
-      margin-left: 75px;
-      margin-right: 75px;
-    }
-
-    &-80-lg > * {
-      margin-left: 80px;
-      margin-right: 80px;
-    }
-
-    &-85-lg > * {
-      margin-left: 85px;
-      margin-right: 85px;
-    }
-
-    &-90-lg > * {
-      margin-left: 90px;
-      margin-right: 90px;
-    }
-
-    &-95-lg > * {
-      margin-left: 95px;
-      margin-right: 95px;
-    }
-
-    &-100-lg > * {
-      margin-left: 100px;
-      margin-right: 100px;
+  .#{$group-margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$group-my} {
-    &-0-lg > * {
-      margin-top: 0;
-      margin-bottom: 0;
+  .#{$group-margin-bottom} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg > * {
+        @include group-mb-variant($value);
+      }
     }
+  }
 
-    &-1-lg > * {
-      margin-top: 1px;
-      margin-bottom: 1px;
+  .#{$group-margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-mb-variant($value);
+      }
     }
+  }
 
-    &-2-lg > * {
-      margin-top: 2px;
-      margin-bottom: 2px;
+  .#{$group-margin-left} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg > * {
+        @include group-ml-variant($value);
+      }
     }
+  }
 
-    &-3-lg > * {
-      margin-top: 3px;
-      margin-bottom: 3px;
+  .#{$group-margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-ml-variant($value);
+      }
     }
+  }
 
-    &-4-lg > * {
-      margin-top: 4px;
-      margin-bottom: 4px;
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg > * {
+        @include group-mx-variant($value, $value);
+      }
     }
+  }
 
-    &-5-lg > * {
-      margin-top: 5px;
-      margin-bottom: 5px;
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-mx-variant($value, $value);
+      }
     }
+  }
 
-    &-6-lg > * {
-      margin-top: 6px;
-      margin-bottom: 6px;
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg > * {
+        @include group-my-variant($value, $value);
+      }
     }
+  }
 
-    &-7-lg > * {
-      margin-top: 7px;
-      margin-bottom: 7px;
-    }
-
-    &-8-lg > * {
-      margin-top: 8px;
-      margin-bottom: 8px;
-    }
-
-    &-9-lg > * {
-      margin-top: 9px;
-      margin-bottom: 9px;
-    }
-
-    &-10-lg > * {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    &-15-lg > * {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    &-20-lg > * {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    &-25-lg > * {
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
-
-    &-30-lg > * {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    &-35-lg > * {
-      margin-top: 35px;
-      margin-bottom: 35px;
-    }
-
-    &-40-lg > * {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-
-    &-45-lg > * {
-      margin-top: 45px;
-      margin-bottom: 45px;
-    }
-
-    &-50-lg > * {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-
-    &-55-lg > * {
-      margin-top: 55px;
-      margin-bottom: 55px;
-    }
-
-    &-60-lg > * {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-
-    &-65-lg > * {
-      margin-top: 65px;
-      margin-bottom: 65px;
-    }
-
-    &-70-lg > * {
-      margin-top: 70px;
-      margin-bottom: 70px;
-    }
-
-    &-75-lg > * {
-      margin-top: 75px;
-      margin-bottom: 75px;
-    }
-
-    &-80-lg > * {
-      margin-top: 80px;
-      margin-bottom: 80px;
-    }
-
-    &-85-lg > * {
-      margin-top: 85px;
-      margin-bottom: 85px;
-    }
-
-    &-90-lg > * {
-      margin-top: 90px;
-      margin-bottom: 90px;
-    }
-
-    &-95-lg > * {
-      margin-top: 95px;
-      margin-bottom: 95px;
-    }
-
-    &-100-lg > * {
-      margin-top: 100px;
-      margin-bottom: 100px;
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg > * {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
@@ -3454,2511 +505,335 @@
       margin: 0;
     }
 
-    &-0-lg {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg {
+        @include margin-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$margin} {
+    &-center-lg {
+      margin: 0 auto;
+    }
+
+    &-all-0-lg,
+    &-all-0-lg > *,
+    &-all-0-lg * {
       margin: 0;
     }
 
-    &-1-lg {
-      margin: 1px;
-    }
-
-    &-2-lg {
-      margin: 2px;
-    }
-
-    &-3-lg {
-      margin: 3px;
-    }
-
-    &-4-lg {
-      margin: 4px;
-    }
-
-    &-5-lg {
-      margin: 5px;
-    }
-
-    &-6-lg {
-      margin: 6px;
-    }
-
-    &-7-lg {
-      margin: 7px;
-    }
-
-    &-8-lg {
-      margin: 8px;
-    }
-
-    &-9-lg {
-      margin: 9px;
-    }
-
-    &-10-lg {
-      margin: 10px;
-    }
-
-    &-15-lg {
-      margin: 15px;
-    }
-
-    &-20-lg {
-      margin: 20px;
-    }
-
-    &-25-lg {
-      margin: 25px;
-    }
-
-    &-30-lg {
-      margin: 30px;
-    }
-
-    &-35-lg {
-      margin: 35px;
-    }
-
-    &-40-lg {
-      margin: 50px;
-    }
-
-    &-45-lg {
-      margin: 45px;
-    }
-
-    &-50-lg {
-      margin: 50px;
-    }
-
-    &-55-lg {
-      margin: 55px;
-    }
-
-    &-60-lg {
-      margin: 60px;
-    }
-
-    &-65-lg {
-      margin: 65px;
-    }
-
-    &-70-lg {
-      margin: 70px;
-    }
-
-    &-75-lg {
-      margin: 75px;
-    }
-
-    &-80-lg {
-      margin: 80px;
-    }
-
-    &-85-lg {
-      margin: 85px;
-    }
-
-    &-90-lg {
-      margin: 90px;
-    }
-
-    &-95-lg {
-      margin: 95px;
-    }
-
-    &-100-lg {
-      margin: 100px;
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include margin-pixel-variant($value);
+      }
     }
   }
 
-  .#{$margin-t} {
-    &-0-lg {
-      margin-top: 0;
-    }
-
-    &-1-lg {
-      margin-top: 1px;
-    }
-
-    &-2-lg {
-      margin-top: 2px;
-    }
-
-    &-3-lg {
-      margin-top: 3px;
-    }
-
-    &-4-lg {
-      margin-top: 4px;
-    }
-
-    &-5-lg {
-      margin-top: 5px;
-    }
-
-    &-6-lg {
-      margin-top: 6px;
-    }
-
-    &-7-lg {
-      margin-top: 7px;
-    }
-
-    &-8-lg {
-      margin-top: 8px;
-    }
-
-    &-9-lg {
-      margin-top: 9px;
-    }
-
-    &-10-lg {
-      margin-top: 10px;
-    }
-
-    &-15-lg {
-      margin-top: 15px;
-    }
-
-    &-20-lg {
-      margin-top: 20px;
-    }
-
-    &-25-lg {
-      margin-top: 25px;
-    }
-
-    &-30-lg {
-      margin-top: 30px;
-    }
-
-    &-35-lg {
-      margin-top: 35px;
-    }
-
-    &-40-lg {
-      margin-top: 40px;
-    }
-
-    &-45-lg {
-      margin-top: 45px;
-    }
-
-    &-50-lg {
-      margin-top: 50px;
-    }
-
-    &-55-lg {
-      margin-top: 55px;
-    }
-
-    &-60-lg {
-      margin-top: 60px;
-    }
-
-    &-65-lg {
-      margin-top: 65px;
-    }
-
-    &-70-lg {
-      margin-top: 70px;
-    }
-
-    &-75-lg {
-      margin-top: 75px;
-    }
-
-    &-80-lg {
-      margin-top: 80px;
-    }
-
-    &-85-lg {
-      margin-top: 85px;
-    }
-
-    &-90-lg {
-      margin-top: 50px;
-    }
-
-    &-95-lg {
-      margin-top: 95px;
-    }
-
-    &-100-lg {
-      margin-top: 100px;
+  .#{$margin-top} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$margin-r} {
-    &-0-lg {
-      margin-right: 0;
-    }
-
-    &-1-lg {
-      margin-right: 1px;
-    }
-
-    &-2-lg {
-      margin-right: 2px;
-    }
-
-    &-3-lg {
-      margin-right: 3px;
-    }
-
-    &-4-lg {
-      margin-right: 4px;
-    }
-
-    &-5-lg {
-      margin-right: 5px;
-    }
-
-    &-6-lg {
-      margin-right: 6px;
-    }
-
-    &-7-lg {
-      margin-right: 7px;
-    }
-
-    &-8-lg {
-      margin-right: 8px;
-    }
-
-    &-9-lg {
-      margin-right: 9px;
-    }
-
-    &-10-lg {
-      margin-right: 10px;
-    }
-
-    &-15-lg {
-      margin-right: 15px;
-    }
-
-    &-20-lg {
-      margin-right: 20px;
-    }
-
-    &-25-lg {
-      margin-right: 25px;
-    }
-
-    &-30-lg {
-      margin-right: 30px;
-    }
-
-    &-35-lg {
-      margin-right: 35px;
-    }
-
-    &-40-lg {
-      margin-right: 40px;
-    }
-
-    &-45-lg {
-      margin-right: 45px;
-    }
-
-    &-50-lg {
-      margin-right: 50px;
-    }
-
-    &-55-lg {
-      margin-right: 55px;
-    }
-
-    &-60-lg {
-      margin-right: 60px;
-    }
-
-    &-65-lg {
-      margin-right: 65px;
-    }
-
-    &-70-lg {
-      margin-right: 70px;
-    }
-
-    &-75-lg {
-      margin-right: 75px;
-    }
-
-    &-80-lg {
-      margin-right: 80px;
-    }
-
-    &-85-lg {
-      margin-right: 85px;
-    }
-
-    &-90-lg {
-      margin-right: 90px;
-    }
-
-    &-95-lg {
-      margin-right: 95px;
-    }
-
-    &-100-lg {
-      margin-right: 100px;
+  .#{$margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$margin-b} {
-    &-0-lg {
-      margin-bottom: 0;
-    }
-
-    &-1-lg {
-      margin-bottom: 1px;
-    }
-
-    &-2-lg {
-      margin-bottom: 2px;
-    }
-
-    &-3-lg {
-      margin-bottom: 3px;
-    }
-
-    &-4-lg {
-      margin-bottom: 4px;
-    }
-
-    &-5-lg {
-      margin-bottom: 5px;
-    }
-
-    &-6-lg {
-      margin-bottom: 6px;
-    }
-
-    &-7-lg {
-      margin-bottom: 7px;
-    }
-
-    &-8-lg {
-      margin-bottom: 8px;
-    }
-
-    &-9-lg {
-      margin-bottom: 9px;
-    }
-
-    &-10-lg {
-      margin-bottom: 10px;
-    }
-
-    &-15-lg {
-      margin-bottom: 15px;
-    }
-
-    &-20-lg {
-      margin-bottom: 20px;
-    }
-
-    &-25-lg {
-      margin-bottom: 25px;
-    }
-
-    &-30-lg {
-      margin-bottom: 30px;
-    }
-
-    &-35-lg {
-      margin-bottom: 35px;
-    }
-
-    &-40-lg {
-      margin-bottom: 40px;
-    }
-
-    &-45-lg {
-      margin-bottom: 45px;
-    }
-
-    &-50-lg {
-      margin-bottom: 50px;
-    }
-
-    &-55-lg {
-      margin-bottom: 55px;
-    }
-
-    &-60-lg {
-      margin-bottom: 60px;
-    }
-
-    &-65-lg {
-      margin-bottom: 65px;
-    }
-
-    &-70-lg {
-      margin-bottom: 70px;
-    }
-
-    &-75-lg {
-      margin-bottom: 75px;
-    }
-
-    &-80-lg {
-      margin-bottom: 80px;
-    }
-
-    &-85-lg {
-      margin-bottom: 85px;
-    }
-
-    &-90-lg {
-      margin-bottom: 90px;
-    }
-
-    &-95-lg {
-      margin-bottom: 95px;
-    }
-
-    &-100-lg {
-      margin-bottom: 100px;
+  .#{$margin-right} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$margin-l} {
-    &-0-lg {
-      margin-left: 0;
-    }
-
-    &-1-lg {
-      margin-left: 1px;
-    }
-
-    &-2-lg {
-      margin-left: 2px;
-    }
-
-    &-3-lg {
-      margin-left: 3px;
-    }
-
-    &-4-lg {
-      margin-left: 4px;
-    }
-
-    &-5-lg {
-      margin-left: 5px;
-    }
-
-    &-6-lg {
-      margin-left: 6px;
-    }
-
-    &-7-lg {
-      margin-left: 7px;
-    }
-
-    &-8-lg {
-      margin-left: 8px;
-    }
-
-    &-9-lg {
-      margin-left: 9px;
-    }
-
-    &-10-lg {
-      margin-left: 10px;
-    }
-
-    &-15-lg {
-      margin-left: 15px;
-    }
-
-    &-20-lg {
-      margin-left: 20px;
-    }
-
-    &-25-lg {
-      margin-left: 25px;
-    }
-
-    &-30-lg {
-      margin-left: 30px;
-    }
-
-    &-35-lg {
-      margin-left: 35px;
-    }
-
-    &-40-lg {
-      margin-left: 40px;
-    }
-
-    &-45-lg {
-      margin-left: 45px;
-    }
-
-    &-50-lg {
-      margin-left: 50px;
-    }
-
-    &-55-lg {
-      margin-left: 55px;
-    }
-
-    &-65-lg {
-      margin-left: 65px;
-    }
-
-    &-70-lg {
-      margin-left: 70px;
-    }
-
-    &-75-lg {
-      margin-left: 75px;
-    }
-
-    &-80-lg {
-      margin-left: 80px;
-    }
-
-    &-85-lg {
-      margin-left: 85px;
-    }
-
-    &-90-lg {
-      margin-left: 90px;
-    }
-
-    &-95-lg {
-      margin-left: 95px;
-    }
-
-    &-100-lg {
-      margin-left: 100px;
+  .#{$margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$margin-x} {
-    &-0-lg {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    &-1-lg {
-      margin-left: 1px;
-      margin-right: 1px;
-    }
-
-    &-2-lg {
-      margin-left: 2px;
-      margin-right: 2px;
-    }
-
-    &-3-lg {
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-
-    &-4-lg {
-      margin-left: 4px;
-      margin-right: 4px;
-    }
-
-    &-5-lg {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    &-6-lg {
-      margin-left: 6px;
-      margin-right: 6px;
-    }
-
-    &-7-lg {
-      margin-left: 7px;
-      margin-right: 7px;
-    }
-
-    &-8-lg {
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-
-    &-9-lg {
-      margin-left: 9px;
-      margin-right: 9px;
-    }
-
-    &-10-lg {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    &-15-lg {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    &-20-lg {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-
-    &-25-lg {
-      margin-left: 25px;
-      margin-right: 25px;
-    }
-
-    &-30-lg {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-
-    &-35-lg {
-      margin-left: 35px;
-      margin-right: 35px;
-    }
-
-    &-40-lg {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    &-45-lg {
-      margin-left: 45px;
-      margin-right: 45px;
-    }
-
-    &-50-lg {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    &-55-lg {
-      margin-left: 55px;
-      margin-right: 55px;
-    }
-
-    &-60-lg {
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-
-    &-65-lg {
-      margin-left: 65px;
-      margin-right: 65px;
-    }
-
-    &-70-lg {
-      margin-left: 70px;
-      margin-right: 70px;
-    }
-
-    &-75-lg {
-      margin-left: 75px;
-      margin-right: 75px;
-    }
-
-    &-80-lg {
-      margin-left: 80px;
-      margin-right: 80px;
-    }
-
-    &-85-lg {
-      margin-left: 85px;
-      margin-right: 85px;
-    }
-
-    &-90-lg {
-      margin-left: 90px;
-      margin-right: 90px;
-    }
-
-    &-95-lg {
-      margin-left: 95px;
-      margin-right: 95px;
-    }
-
-    &-100-lg {
-      margin-left: 100px;
-      margin-right: 100px;
+  .#{$margin-bottom} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg {
+        @include group-mb-variant($value);
+      }
     }
   }
 
-  .#{$margin-y} {
-    &-0-lg {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &-1-lg {
-      margin-top: 1px;
-      margin-bottom: 1px;
-    }
-
-    &-2-lg {
-      margin-top: 2px;
-      margin-bottom: 2px;
-    }
-
-    &-3-lg {
-      margin-top: 3px;
-      margin-bottom: 3px;
-    }
-
-    &-4-lg {
-      margin-top: 4px;
-      margin-bottom: 4px;
-    }
-
-    &-5-lg {
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-
-    &-6-lg {
-      margin-top: 6px;
-      margin-bottom: 6px;
-    }
-
-    &-7-lg {
-      margin-top: 7px;
-      margin-bottom: 7px;
-    }
-
-    &-8-lg {
-      margin-top: 8px;
-      margin-bottom: 8px;
-    }
-
-    &-9-lg {
-      margin-top: 9px;
-      margin-bottom: 9px;
-    }
-
-    &-10-lg {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    &-15-lg {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    &-20-lg {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    &-25-lg {
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
-
-    &-30-lg {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    &-35-lg {
-      margin-top: 35px;
-      margin-bottom: 35px;
-    }
-
-    &-40-lg {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-
-    &-45-lg {
-      margin-top: 45px;
-      margin-bottom: 45px;
-    }
-
-    &-50-lg {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-
-    &-55-lg {
-      margin-top: 55px;
-      margin-bottom: 55px;
-    }
-
-    &-60-lg {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-
-    &-65-lg {
-      margin-top: 65px;
-      margin-bottom: 65px;
-    }
-
-    &-70-lg {
-      margin-top: 70px;
-      margin-bottom: 70px;
-    }
-
-    &-75-lg {
-      margin-top: 75px;
-      margin-bottom: 75px;
-    }
-
-    &-80-lg {
-      margin-top: 80px;
-      margin-bottom: 80px;
-    }
-
-    &-85-lg {
-      margin-top: 85px;
-      margin-bottom: 85px;
-    }
-
-    &-90-lg {
-      margin-top: 90px;
-      margin-bottom: 90px;
-    }
-
-    &-95-lg {
-      margin-top: 95px;
-      margin-bottom: 95px;
-    }
-
-    &-100-lg {
-      margin-top: 100px;
-      margin-bottom: 100px;
+  .#{$margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-mb-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-t} {
-    &-1-lg {
-      margin-top: -1px;
-    }
-
-    &-2-lg {
-      margin-top: -2px;
-    }
-
-    &-3-lg {
-      margin-top: -3px;
-    }
-
-    &-4-lg {
-      margin-top: -4px;
-    }
-
-    &-5-lg {
-      margin-top: -5px;
-    }
-
-    &-6-lg {
-      margin-top: -6px;
-    }
-
-    &-7-lg {
-      margin-top: -7px;
-    }
-
-    &-8-lg {
-      margin-top: -8px;
-    }
-
-    &-9-lg {
-      margin-top: -9px;
-    }
-
-    &-10-lg {
-      margin-top: -10px;
-    }
-
-    &-15-lg {
-      margin-top: -15px;
-    }
-
-    &-20-lg {
-      margin-top: -20px;
-    }
-
-    &-25-lg {
-      margin-top: -25px;
-    }
-
-    &-30-lg {
-      margin-top: -30px;
-    }
-
-    &-35-lg {
-      margin-top: -35px;
-    }
-
-    &-40-lg {
-      margin-top: -40px;
-    }
-
-    &-45-lg {
-      margin-top: -45px;
-    }
-
-    &-50-lg {
-      margin-top: -50px;
-    }
-
-    &-55-lg {
-      margin-top: -55px;
-    }
-
-    &-60-lg {
-      margin-top: -60px;
-    }
-
-    &-65-lg {
-      margin-top: -65px;
-    }
-
-    &-70-lg {
-      margin-top: -70px;
-    }
-
-    &-75-lg {
-      margin-top: -75px;
-    }
-
-    &-80-lg {
-      margin-top: -80px;
-    }
-
-    &-85-lg {
-      margin-top: -85px;
-    }
-
-    &-90-lg {
-      margin-top: -50px;
-    }
-
-    &-95-lg {
-      margin-top: -95px;
-    }
-
-    &-100-lg {
-      margin-top: -100px;
+  .#{$margin-left} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg {
+        @include group-ml-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-r} {
-    &-1-lg {
-      margin-right: -1px;
-    }
-
-    &-2-lg {
-      margin-right: -2px;
-    }
-
-    &-3-lg {
-      margin-right: -3px;
-    }
-
-    &-4-lg {
-      margin-right: -4px;
-    }
-
-    &-5-lg {
-      margin-right: -5px;
-    }
-
-    &-6-lg {
-      margin-right: -6px;
-    }
-
-    &-7-lg {
-      margin-right: -7px;
-    }
-
-    &-8-lg {
-      margin-right: -8px;
-    }
-
-    &-9-lg {
-      margin-right: -9px;
-    }
-
-    &-10-lg {
-      margin-right: -10px;
-    }
-
-    &-15-lg {
-      margin-right: -15px;
-    }
-
-    &-20-lg {
-      margin-right: -20px;
-    }
-
-    &-25-lg {
-      margin-right: -25px;
-    }
-
-    &-30-lg {
-      margin-right: -30px;
-    }
-
-    &-35-lg {
-      margin-right: -35px;
-    }
-
-    &-40-lg {
-      margin-right: -40px;
-    }
-
-    &-45-lg {
-      margin-right: -45px;
-    }
-
-    &-50-lg {
-      margin-right: -50px;
-    }
-
-    &-55-lg {
-      margin-right: -55px;
-    }
-
-    &-60-lg {
-      margin-right: -60px;
-    }
-
-    &-65-lg {
-      margin-right: -65px;
-    }
-
-    &-70-lg {
-      margin-right: -70px;
-    }
-
-    &-75-lg {
-      margin-right: -75px;
-    }
-
-    &-80-lg {
-      margin-right: -80px;
-    }
-
-    &-85-lg {
-      margin-right: -85px;
-    }
-
-    &-90-lg {
-      margin-right: -90px;
-    }
-
-    &-95-lg {
-      margin-right: -95px;
-    }
-
-    &-100-lg {
-      margin-right: -100px;
+  .#{$margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-ml-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-b} {
-    &-1-lg {
-      margin-bottom: -1px;
-    }
-
-    &-2-lg {
-      margin-bottom: -2px;
-    }
-
-    &-3-lg {
-      margin-bottom: -3px;
-    }
-
-    &-4-lg {
-      margin-bottom: -4px;
-    }
-
-    &-5-lg {
-      margin-bottom: -5px;
-    }
-
-    &-6-lg {
-      margin-bottom: -6px;
-    }
-
-    &-7-lg {
-      margin-bottom: -7px;
-    }
-
-    &-8-lg {
-      margin-bottom: -8px;
-    }
-
-    &-9-lg {
-      margin-bottom: -9px;
-    }
-
-    &-10-lg {
-      margin-bottom: -10px;
-    }
-
-    &-15-lg {
-      margin-bottom: -15px;
-    }
-
-    &-20-lg {
-      margin-bottom: -20px;
-    }
-
-    &-25-lg {
-      margin-bottom: -25px;
-    }
-
-    &-30-lg {
-      margin-bottom: -30px;
-    }
-
-    &-35-lg {
-      margin-bottom: -35px;
-    }
-
-    &-40-lg {
-      margin-bottom: -40px;
-    }
-
-    &-45-lg {
-      margin-bottom: -45px;
-    }
-
-    &-50-lg {
-      margin-bottom: -50px;
-    }
-
-    &-55-lg {
-      margin-bottom: -55px;
-    }
-
-    &-60-lg {
-      margin-bottom: -60px;
-    }
-
-    &-65-lg {
-      margin-bottom: -65px;
-    }
-
-    &-70-lg {
-      margin-bottom: -70px;
-    }
-
-    &-75-lg {
-      margin-bottom: -75px;
-    }
-
-    &-80-lg {
-      margin-bottom: -80px;
-    }
-
-    &-85-lg {
-      margin-bottom: -85px;
-    }
-
-    &-90-lg {
-      margin-bottom: -90px;
-    }
-
-    &-95-lg {
-      margin-bottom: -95px;
-    }
-
-    &-100-lg {
-      margin-bottom: -100px;
+  .#{$margin-x-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg {
+        @include group-mx-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-l} {
-    &-1-lg {
-      margin-left: -1px;
-    }
-
-    &-2-lg {
-      margin-left: -2px;
-    }
-
-    &-3-lg {
-      margin-left: -3px;
-    }
-
-    &-4-lg {
-      margin-left: -4px;
-    }
-
-    &-5-lg {
-      margin-left: -5px;
-    }
-
-    &-6-lg {
-      margin-left: -6px;
-    }
-
-    &-7-lg {
-      margin-left: -7px;
-    }
-
-    &-8-lg {
-      margin-left: -8px;
-    }
-
-    &-9-lg {
-      margin-left: -9px;
-    }
-
-    &-10-lg {
-      margin-left: -10px;
-    }
-
-    &-15-lg {
-      margin-left: -15px;
-    }
-
-    &-20-lg {
-      margin-left: -20px;
-    }
-
-    &-25-lg {
-      margin-left: -25px;
-    }
-
-    &-30-lg {
-      margin-left: -30px;
-    }
-
-    &-35-lg {
-      margin-left: -35px;
-    }
-
-    &-40-lg {
-      margin-left: -40px;
-    }
-
-    &-45-lg {
-      margin-left: -45px;
-    }
-
-    &-50-lg {
-      margin-left: -50px;
-    }
-
-    &-55-lg {
-      margin-left: -55px;
-    }
-
-    &-65-lg {
-      margin-left: -65px;
-    }
-
-    &-70-lg {
-      margin-left: -70px;
-    }
-
-    &-75-lg {
-      margin-left: -75px;
-    }
-
-    &-80-lg {
-      margin-left: -80px;
-    }
-
-    &-85-lg {
-      margin-left: -85px;
-    }
-
-    &-90-lg {
-      margin-left: -90px;
-    }
-
-    &-95-lg {
-      margin-left: -95px;
-    }
-
-    &-100-lg {
-      margin-left: -100px;
+  .#{$margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-mx-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-x} {
-    &-1-lg {
-      margin-left: -1px;
-      margin-right: -1px;
-    }
-
-    &-2-lg {
-      margin-left: -2px;
-      margin-right: -2px;
-    }
-
-    &-3-lg {
-      margin-left: -3px;
-      margin-right: -3px;
-    }
-
-    &-4-lg {
-      margin-left: -4px;
-      margin-right: -4px;
-    }
-
-    &-5-lg {
-      margin-left: -5px;
-      margin-right: -5px;
-    }
-
-    &-6-lg {
-      margin-left: -6px;
-      margin-right: -6px;
-    }
-
-    &-7-lg {
-      margin-left: -7px;
-      margin-right: -7px;
-    }
-
-    &-8-lg {
-      margin-left: -8px;
-      margin-right: -8px;
-    }
-
-    &-9-lg {
-      margin-left: -9px;
-      margin-right: -9px;
-    }
-
-    &-10-lg {
-      margin-left: -10px;
-      margin-right: -10px;
-    }
-
-    &-15-lg {
-      margin-left: -15px;
-      margin-right: -15px;
-    }
-
-    &-20-lg {
-      margin-left: -20px;
-      margin-right: -20px;
-    }
-
-    &-25-lg {
-      margin-left: -25px;
-      margin-right: -25px;
-    }
-
-    &-30-lg {
-      margin-left: -30px;
-      margin-right: -30px;
-    }
-
-    &-35-lg {
-      margin-left: -35px;
-      margin-right: -35px;
-    }
-
-    &-40-lg {
-      margin-left: -40px;
-      margin-right: -40px;
-    }
-
-    &-45-lg {
-      margin-left: -45px;
-      margin-right: -45px;
-    }
-
-    &-50-lg {
-      margin-left: -50px;
-      margin-right: -50px;
-    }
-
-    &-55-lg {
-      margin-left: -55px;
-      margin-right: -55px;
-    }
-
-    &-60-lg {
-      margin-left: -60px;
-      margin-right: -60px;
-    }
-
-    &-65-lg {
-      margin-left: -65px;
-      margin-right: -65px;
-    }
-
-    &-70-lg {
-      margin-left: -70px;
-      margin-right: -70px;
-    }
-
-    &-75-lg {
-      margin-left: -75px;
-      margin-right: -75px;
-    }
-
-    &-80-lg {
-      margin-left: -80px;
-      margin-right: -80px;
-    }
-
-    &-85-lg {
-      margin-left: -85px;
-      margin-right: -85px;
-    }
-
-    &-90-lg {
-      margin-left: -90px;
-      margin-right: -90px;
-    }
-
-    &-95-lg {
-      margin-left: -95px;
-      margin-right: -95px;
-    }
-
-    &-100-lg {
-      margin-left: -100px;
-      margin-right: -100px;
+  .#{$margin-y-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-lg {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-y} {
-    &-0-lg {
-      margin-top: -0;
-      margin-bottom: -0;
-    }
-
-    &-1-lg {
-      margin-top: -1px;
-      margin-bottom: -1px;
-    }
-
-    &-2-lg {
-      margin-top: -2px;
-      margin-bottom: -2px;
-    }
-
-    &-3-lg {
-      margin-top: -3px;
-      margin-bottom: -3px;
-    }
-
-    &-4-lg {
-      margin-top: -4px;
-      margin-bottom: -4px;
-    }
-
-    &-5-lg {
-      margin-top: -5px;
-      margin-bottom: -5px;
-    }
-
-    &-6-lg {
-      margin-top: -6px;
-      margin-bottom: -6px;
-    }
-
-    &-7-lg {
-      margin-top: -7px;
-      margin-bottom: -7px;
-    }
-
-    &-8-lg {
-      margin-top: -8px;
-      margin-bottom: -8px;
-    }
-
-    &-9-lg {
-      margin-top: -9px;
-      margin-bottom: -9px;
-    }
-
-    &-10-lg {
-      margin-top: -10px;
-      margin-bottom: -10px;
-    }
-
-    &-15-lg {
-      margin-top: -15px;
-      margin-bottom: -15px;
-    }
-
-    &-20-lg {
-      margin-top: -20px;
-      margin-bottom: -20px;
-    }
-
-    &-25-lg {
-      margin-top: -25px;
-      margin-bottom: -25px;
-    }
-
-    &-30-lg {
-      margin-top: -30px;
-      margin-bottom: -30px;
-    }
-
-    &-35-lg {
-      margin-top: -35px;
-      margin-bottom: -35px;
-    }
-
-    &-40-lg {
-      margin-top: -40px;
-      margin-bottom: -40px;
-    }
-
-    &-45-lg {
-      margin-top: -45px;
-      margin-bottom: -45px;
-    }
-
-    &-50-lg {
-      margin-top: -50px;
-      margin-bottom: -50px;
-    }
-
-    &-55-lg {
-      margin-top: -55px;
-      margin-bottom: -55px;
-    }
-
-    &-60-lg {
-      margin-top: -60px;
-      margin-bottom: -60px;
-    }
-
-    &-65-lg {
-      margin-top: -65px;
-      margin-bottom: -65px;
-    }
-
-    &-70-lg {
-      margin-top: -70px;
-      margin-bottom: -70px;
-    }
-
-    &-75-lg {
-      margin-top: -75px;
-      margin-bottom: -75px;
-    }
-
-    &-80-lg {
-      margin-top: -80px;
-      margin-bottom: -80px;
-    }
-
-    &-85-lg {
-      margin-top: -85px;
-      margin-bottom: -85px;
-    }
-
-    &-90-lg {
-      margin-top: -90px;
-      margin-bottom: -90px;
-    }
-
-    &-95-lg {
-      margin-top: -95px;
-      margin-bottom: -95px;
-    }
-
-    &-100-lg {
-      margin-top: -100px;
-      margin-bottom: -100px;
+  .#{$margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-lg {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
+  .#{$margin-out-top} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-lg {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-top} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-lg {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-lg {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-lg {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-lg {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-lg {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-lg {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
-
-  .#{$group-m} {
-    &-0-md > * {
-      margin: 0;
-    }
-
-    &-1-md > * {
-      margin: 1px;
-    }
-
-    &-2-md > * {
-      margin: 2px;
-    }
-
-    &-3-md > * {
-      margin: 3px;
-    }
-
-    &-4-md > * {
-      margin: 4px;
-    }
-
-    &-5-md > * {
-      margin: 5px;
-    }
-
-    &-6-md > * {
-      margin: 6px;
-    }
-
-    &-7-md > * {
-      margin: 7px;
-    }
-
-    &-8-md > * {
-      margin: 8px;
-    }
-
-    &-9-md > * {
-      margin: 9px;
-    }
-
-    &-10-md > * {
-      margin: 10px;
-    }
-
-    &-15-md > * {
-      margin: 15px;
-    }
-
-    &-20-md > * {
-      margin: 20px;
-    }
-
-    &-25-md > * {
-      margin: 25px;
-    }
-
-    &-30-md > * {
-      margin: 30px;
-    }
-
-    &-35-md > * {
-      margin: 35px;
-    }
-
-    &-40-md > * {
-      margin: 40px;
-    }
-
-    &-45-md > * {
-      margin: 45px;
-    }
-
-    &-50-md > * {
-      margin: 50px;
-    }
-
-    &-55-md > * {
-      margin: 55px;
-    }
-
-    &-60-md > * {
-      margin: 60px;
-    }
-
-    &-65-md > * {
-      margin: 65px;
-    }
-
-    &-70-md > * {
-      margin: 70px;
-    }
-
-    &-75-md > * {
-      margin: 75px;
-    }
-
-    &-80-md > * {
-      margin: 80px;
-    }
-
-    &-85-md > * {
-      margin: 85px;
-    }
-
-    &-90-md > * {
-      margin: 90px;
-    }
-
-    &-95-md > * {
-      margin: 95px;
-    }
-
-    &-100-md > * {
-      margin: 100px;
+  //Large devices (desktops, 768px and 992px)
+  .#{$group-margin} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md > * {
+        @include group-m-variant($value);
+      }
     }
   }
 
-  .#{$group-mt} {
-    &-0-md > * {
-      margin-top: 0;
-    }
-
-    &-1-md > * {
-      margin-top: 1px;
-    }
-
-    &-2-md > * {
-      margin-top: 2px;
-    }
-
-    &-3-md > * {
-      margin-top: 3px;
-    }
-
-    &-4-md > * {
-      margin-top: 4px;
-    }
-
-    &-5-md > * {
-      margin-top: 5px;
-    }
-
-    &-6-md > * {
-      margin-top: 6px;
-    }
-
-    &-7-md > * {
-      margin-top: 7px;
-    }
-
-    &-8-md > * {
-      margin-top: 8px;
-    }
-
-    &-9-md > * {
-      margin-top: 9px;
-    }
-
-    &-10-md > * {
-      margin-top: 10px;
-    }
-
-    &-15-md > * {
-      margin-top: 15px;
-    }
-
-    &-20-md > * {
-      margin-top: 20px;
-    }
-
-    &-25-md > * {
-      margin-top: 25px;
-    }
-
-    &-30-md > * {
-      margin-top: 30px;
-    }
-
-    &-35-md > * {
-      margin-top: 35px;
-    }
-
-    &-40-md > * {
-      margin-top: 40px;
-    }
-
-    &-45-md > * {
-      margin-top: 45px;
-    }
-
-    &-50-md > * {
-      margin-top: 50px;
-    }
-
-    &-55-md > * {
-      margin-top: 55px;
-    }
-
-    &-60-md > * {
-      margin-top: 60px;
-    }
-
-    &-65-md > * {
-      margin-top: 65px;
-    }
-
-    &-70-md > * {
-      margin-top: 70px;
-    }
-
-    &-75-md > * {
-      margin-top: 75px;
-    }
-
-    &-80-md > * {
-      margin-top: 80px;
-    }
-
-    &-85-md > * {
-      margin-top: 85px;
-    }
-
-    &-90-md > * {
-      margin-top: 90px;
-    }
-
-    &-95-md > * {
-      margin-top: 95px;
-    }
-
-    &-100-md > * {
-      margin-top: 100px;
+  .#{$group-margin} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-m-variant($value);
+      }
     }
   }
 
-  .#{$group-mr} {
-    &-0-md > * {
-      margin-right: 0;
-    }
-
-    &-1-md > * {
-      margin-right: 1px;
-    }
-
-    &-2-md > * {
-      margin-right: 2px;
-    }
-
-    &-3-md > * {
-      margin-right: 3px;
-    }
-
-    &-4-md > * {
-      margin-right: 4px;
-    }
-
-    &-5-md > * {
-      margin-right: 5px;
-    }
-
-    &-6-md > * {
-      margin-right: 6px;
-    }
-
-    &-7-md > * {
-      margin-right: 7px;
-    }
-
-    &-8-md > * {
-      margin-right: 8px;
-    }
-
-    &-9-md > * {
-      margin-right: 9px;
-    }
-
-    &-10-md > * {
-      margin-right: 10px;
-    }
-
-    &-15-md > * {
-      margin-right: 15px;
-    }
-
-    &-20-md > * {
-      margin-right: 20px;
-    }
-
-    &-25-md > * {
-      margin-right: 25px;
-    }
-
-    &-30-md > * {
-      margin-right: 30px;
-    }
-
-    &-35-md > * {
-      margin-right: 35px;
-    }
-
-    &-40-md > * {
-      margin-right: 40px;
-    }
-
-    &-45-md > * {
-      margin-right: 45px;
-    }
-
-    &-50-md > * {
-      margin-right: 50px;
-    }
-
-    &-55-md > * {
-      margin-right: 55px;
-    }
-
-    &-60-md > * {
-      margin-right: 60px;
-    }
-
-    &-65-md > * {
-      margin-right: 65px;
-    }
-
-    &-70-md > * {
-      margin-right: 70px;
-    }
-
-    &-75-md > * {
-      margin-right: 75px;
-    }
-
-    &-80-md > * {
-      margin-right: 80px;
-    }
-
-    &-85-md > * {
-      margin-right: 85px;
-    }
-
-    &-90-md > * {
-      margin-right: 90px;
-    }
-
-    &-95-md > * {
-      margin-right: 95px;
-    }
-
-    &-100-md > * {
-      margin-right: 100px;
+  .#{$group-margin-top} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md > * {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$group-mb} {
-    &-0-md > * {
-      margin-bottom: 0;
-    }
-
-    &-1-md > * {
-      margin-bottom: 1px;
-    }
-
-    &-2-md > * {
-      margin-bottom: 2px;
-    }
-
-    &-3-md > * {
-      margin-bottom: 3px;
-    }
-
-    &-4-md > * {
-      margin-bottom: 4px;
-    }
-
-    &-5-md > * {
-      margin-bottom: 5px;
-    }
-
-    &-6-md > * {
-      margin-bottom: 6px;
-    }
-
-    &-7-md > * {
-      margin-bottom: 7px;
-    }
-
-    &-8-md > * {
-      margin-bottom: 8px;
-    }
-
-    &-9-md > * {
-      margin-bottom: 9px;
-    }
-
-    &-10-md > * {
-      margin-bottom: 10px;
-    }
-
-    &-15-md > * {
-      margin-bottom: 15px;
-    }
-
-    &-20-md > * {
-      margin-bottom: 20px;
-    }
-
-    &-25-md > * {
-      margin-bottom: 25px;
-    }
-
-    &-30-md > * {
-      margin-bottom: 30px;
-    }
-
-    &-35-md > * {
-      margin-bottom: 35px;
-    }
-
-    &-40-md > * {
-      margin-bottom: 40px;
-    }
-
-    &-45-md > * {
-      margin-bottom: 45px;
-    }
-
-    &-50-md > * {
-      margin-bottom: 50px;
-    }
-
-    &-55-md > * {
-      margin-bottom: 55px;
-    }
-
-    &-60-md > * {
-      margin-bottom: 60px;
-    }
-
-    &-65-md > * {
-      margin-bottom: 65px;
-    }
-
-    &-70-md > * {
-      margin-bottom: 70px;
-    }
-
-    &-75-md > * {
-      margin-bottom: 75px;
-    }
-
-    &-80-md > * {
-      margin-bottom: 80px;
-    }
-
-    &-85-md > * {
-      margin-bottom: 85px;
-    }
-
-    &-90-md > * {
-      margin-bottom: 90px;
-    }
-
-    &-95-md > * {
-      margin-bottom: 95px;
-    }
-
-    &-100-md > * {
-      margin-bottom: 100px;
+  .#{$group-margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$group-ml} {
-    &-0-md > * {
-      margin-left: 0;
-    }
-
-    &-1-md > * {
-      margin-left: 1px;
-    }
-
-    &-2-md > * {
-      margin-left: 2px;
-    }
-
-    &-3-md > * {
-      margin-left: 3px;
-    }
-
-    &-4-md > * {
-      margin-left: 4px;
-    }
-
-    &-5-md > * {
-      margin-left: 5px;
-    }
-
-    &-6-md > * {
-      margin-left: 6px;
-    }
-
-    &-7-md > * {
-      margin-left: 7px;
-    }
-
-    &-8-md > * {
-      margin-left: 8px;
-    }
-
-    &-9-md > * {
-      margin-left: 9px;
-    }
-
-    &-10-md > * {
-      margin-left: 10px;
-    }
-
-    &-15-md > * {
-      margin-left: 15px;
-    }
-
-    &-20-md > * {
-      margin-left: 20px;
-    }
-
-    &-25-md > * {
-      margin-left: 25px;
-    }
-
-    &-30-md > * {
-      margin-left: 30px;
-    }
-
-    &-35-md > * {
-      margin-left: 35px;
-    }
-
-    &-40-md > * {
-      margin-left: 40px;
-    }
-
-    &-45-md > * {
-      margin-left: 45px;
-    }
-
-    &-50-md > * {
-      margin-left: 50px;
-    }
-
-    &-55-md > * {
-      margin-left: 55px;
-    }
-
-    &-60-md > * {
-      margin-left: 60px;
-    }
-
-    &-65-md > * {
-      margin-left: 65px;
-    }
-
-    &-70-md > * {
-      margin-left: 70px;
-    }
-
-    &-75-md > * {
-      margin-left: 75px;
-    }
-
-    &-80-md > * {
-      margin-left: 80px;
-    }
-
-    &-85-md > * {
-      margin-left: 85px;
-    }
-
-    &-90-md > * {
-      margin-left: 90px;
-    }
-
-    &-95-md > * {
-      margin-left: 95px;
-    }
-
-    &-100-md > * {
-      margin-left: 100px;
+  .#{$group-margin-right} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md > * {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$group-mx} {
-    &-0-md > * {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    &-1-md > * {
-      margin-left: 1px;
-      margin-right: 1px;
-    }
-
-    &-2-md > * {
-      margin-left: 2px;
-      margin-right: 2px;
-    }
-
-    &-3-md > * {
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-
-    &-4-md > * {
-      margin-left: 4px;
-      margin-right: 4px;
-    }
-
-    &-5-md > * {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    &-6-md > * {
-      margin-left: 6px;
-      margin-right: 6px;
-    }
-
-    &-7-md > * {
-      margin-left: 7px;
-      margin-right: 7px;
-    }
-
-    &-8-md > * {
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-
-    &-9-md > * {
-      margin-left: 9px;
-      margin-right: 9px;
-    }
-
-    &-10-md > * {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    &-15-md > * {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    &-20-md > * {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-
-    &-25-md > * {
-      margin-left: 25px;
-      margin-right: 25px;
-    }
-
-    &-30-md > * {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-
-    &-35-md > * {
-      margin-left: 35px;
-      margin-right: 35px;
-    }
-
-    &-40-md > * {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    &-45-md > * {
-      margin-left: 45px;
-      margin-right: 45px;
-    }
-
-    &-50-md > * {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    &-55-md > * {
-      margin-left: 55px;
-      margin-right: 55px;
-    }
-
-    &-60-md > * {
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-
-    &-65-md > * {
-      margin-left: 65px;
-      margin-right: 65px;
-    }
-
-    &-70-md > * {
-      margin-left: 70px;
-      margin-right: 70px;
-    }
-
-    &-75-md > * {
-      margin-left: 75px;
-      margin-right: 75px;
-    }
-
-    &-80-md > * {
-      margin-left: 80px;
-      margin-right: 80px;
-    }
-
-    &-85-md > * {
-      margin-left: 85px;
-      margin-right: 85px;
-    }
-
-    &-90-md > * {
-      margin-left: 90px;
-      margin-right: 90px;
-    }
-
-    &-95-md > * {
-      margin-left: 95px;
-      margin-right: 95px;
-    }
-
-    &-100-md > * {
-      margin-left: 100px;
-      margin-right: 100px;
+  .#{$group-margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$group-my} {
-    &-0-md > * {
-      margin-top: 0;
-      margin-bottom: 0;
+  .#{$group-margin-bottom} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md > * {
+        @include group-mb-variant($value);
+      }
     }
+  }
 
-    &-1-md > * {
-      margin-top: 1px;
-      margin-bottom: 1px;
+  .#{$group-margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-mb-variant($value);
+      }
     }
+  }
 
-    &-2-md > * {
-      margin-top: 2px;
-      margin-bottom: 2px;
+  .#{$group-margin-left} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md > * {
+        @include group-ml-variant($value);
+      }
     }
+  }
 
-    &-3-md > * {
-      margin-top: 3px;
-      margin-bottom: 3px;
+  .#{$group-margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-ml-variant($value);
+      }
     }
+  }
 
-    &-4-md > * {
-      margin-top: 4px;
-      margin-bottom: 4px;
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md > * {
+        @include group-mx-variant($value, $value);
+      }
     }
+  }
 
-    &-5-md > * {
-      margin-top: 5px;
-      margin-bottom: 5px;
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-mx-variant($value, $value);
+      }
     }
+  }
 
-    &-6-md > * {
-      margin-top: 6px;
-      margin-bottom: 6px;
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md > * {
+        @include group-my-variant($value, $value);
+      }
     }
+  }
 
-    &-7-md > * {
-      margin-top: 7px;
-      margin-bottom: 7px;
-    }
-
-    &-8-md > * {
-      margin-top: 8px;
-      margin-bottom: 8px;
-    }
-
-    &-9-md > * {
-      margin-top: 9px;
-      margin-bottom: 9px;
-    }
-
-    &-10-md > * {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    &-15-md > * {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    &-20-md > * {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    &-25-md > * {
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
-
-    &-30-md > * {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    &-35-md > * {
-      margin-top: 35px;
-      margin-bottom: 35px;
-    }
-
-    &-40-md > * {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-
-    &-45-md > * {
-      margin-top: 45px;
-      margin-bottom: 45px;
-    }
-
-    &-50-md > * {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-
-    &-55-md > * {
-      margin-top: 55px;
-      margin-bottom: 55px;
-    }
-
-    &-60-md > * {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-
-    &-65-md > * {
-      margin-top: 65px;
-      margin-bottom: 65px;
-    }
-
-    &-70-md > * {
-      margin-top: 70px;
-      margin-bottom: 70px;
-    }
-
-    &-75-md > * {
-      margin-top: 75px;
-      margin-bottom: 75px;
-    }
-
-    &-80-md > * {
-      margin-top: 80px;
-      margin-bottom: 80px;
-    }
-
-    &-85-md > * {
-      margin-top: 85px;
-      margin-bottom: 85px;
-    }
-
-    &-90-md > * {
-      margin-top: 90px;
-      margin-bottom: 90px;
-    }
-
-    &-95-md > * {
-      margin-top: 95px;
-      margin-bottom: 95px;
-    }
-
-    &-100-md > * {
-      margin-top: 100px;
-      margin-bottom: 100px;
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md > * {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
@@ -5973,2511 +848,335 @@
       margin: 0;
     }
 
-    &-0-md {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md {
+        @include margin-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$margin} {
+    &-center-md {
+      margin: 0 auto;
+    }
+
+    &-all-0-md,
+    &-all-0-md > *,
+    &-all-0-md * {
       margin: 0;
     }
 
-    &-1-md {
-      margin: 1px;
-    }
-
-    &-2-md {
-      margin: 2px;
-    }
-
-    &-3-md {
-      margin: 3px;
-    }
-
-    &-4-md {
-      margin: 4px;
-    }
-
-    &-5-md {
-      margin: 5px;
-    }
-
-    &-6-md {
-      margin: 6px;
-    }
-
-    &-7-md {
-      margin: 7px;
-    }
-
-    &-8-md {
-      margin: 8px;
-    }
-
-    &-9-md {
-      margin: 9px;
-    }
-
-    &-10-md {
-      margin: 10px;
-    }
-
-    &-15-md {
-      margin: 15px;
-    }
-
-    &-20-md {
-      margin: 20px;
-    }
-
-    &-25-md {
-      margin: 25px;
-    }
-
-    &-30-md {
-      margin: 30px;
-    }
-
-    &-35-md {
-      margin: 35px;
-    }
-
-    &-40-md {
-      margin: 50px;
-    }
-
-    &-45-md {
-      margin: 45px;
-    }
-
-    &-50-md {
-      margin: 50px;
-    }
-
-    &-55-md {
-      margin: 55px;
-    }
-
-    &-60-md {
-      margin: 60px;
-    }
-
-    &-65-md {
-      margin: 65px;
-    }
-
-    &-70-md {
-      margin: 70px;
-    }
-
-    &-75-md {
-      margin: 75px;
-    }
-
-    &-80-md {
-      margin: 80px;
-    }
-
-    &-85-md {
-      margin: 85px;
-    }
-
-    &-90-md {
-      margin: 90px;
-    }
-
-    &-95-md {
-      margin: 95px;
-    }
-
-    &-100-md {
-      margin: 100px;
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include margin-pixel-variant($value);
+      }
     }
   }
 
-  .#{$margin-t} {
-    &-0-md {
-      margin-top: 0;
-    }
-
-    &-1-md {
-      margin-top: 1px;
-    }
-
-    &-2-md {
-      margin-top: 2px;
-    }
-
-    &-3-md {
-      margin-top: 3px;
-    }
-
-    &-4-md {
-      margin-top: 4px;
-    }
-
-    &-5-md {
-      margin-top: 5px;
-    }
-
-    &-6-md {
-      margin-top: 6px;
-    }
-
-    &-7-md {
-      margin-top: 7px;
-    }
-
-    &-8-md {
-      margin-top: 8px;
-    }
-
-    &-9-md {
-      margin-top: 9px;
-    }
-
-    &-10-md {
-      margin-top: 10px;
-    }
-
-    &-15-md {
-      margin-top: 15px;
-    }
-
-    &-20-md {
-      margin-top: 20px;
-    }
-
-    &-25-md {
-      margin-top: 25px;
-    }
-
-    &-30-md {
-      margin-top: 30px;
-    }
-
-    &-35-md {
-      margin-top: 35px;
-    }
-
-    &-40-md {
-      margin-top: 40px;
-    }
-
-    &-45-md {
-      margin-top: 45px;
-    }
-
-    &-50-md {
-      margin-top: 50px;
-    }
-
-    &-55-md {
-      margin-top: 55px;
-    }
-
-    &-60-md {
-      margin-top: 60px;
-    }
-
-    &-65-md {
-      margin-top: 65px;
-    }
-
-    &-70-md {
-      margin-top: 70px;
-    }
-
-    &-75-md {
-      margin-top: 75px;
-    }
-
-    &-80-md {
-      margin-top: 80px;
-    }
-
-    &-85-md {
-      margin-top: 85px;
-    }
-
-    &-90-md {
-      margin-top: 50px;
-    }
-
-    &-95-md {
-      margin-top: 95px;
-    }
-
-    &-100-md {
-      margin-top: 100px;
+  .#{$margin-top} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$margin-r} {
-    &-0-md {
-      margin-right: 0;
-    }
-
-    &-1-md {
-      margin-right: 1px;
-    }
-
-    &-2-md {
-      margin-right: 2px;
-    }
-
-    &-3-md {
-      margin-right: 3px;
-    }
-
-    &-4-md {
-      margin-right: 4px;
-    }
-
-    &-5-md {
-      margin-right: 5px;
-    }
-
-    &-6-md {
-      margin-right: 6px;
-    }
-
-    &-7-md {
-      margin-right: 7px;
-    }
-
-    &-8-md {
-      margin-right: 8px;
-    }
-
-    &-9-md {
-      margin-right: 9px;
-    }
-
-    &-10-md {
-      margin-right: 10px;
-    }
-
-    &-15-md {
-      margin-right: 15px;
-    }
-
-    &-20-md {
-      margin-right: 20px;
-    }
-
-    &-25-md {
-      margin-right: 25px;
-    }
-
-    &-30-md {
-      margin-right: 30px;
-    }
-
-    &-35-md {
-      margin-right: 35px;
-    }
-
-    &-40-md {
-      margin-right: 40px;
-    }
-
-    &-45-md {
-      margin-right: 45px;
-    }
-
-    &-50-md {
-      margin-right: 50px;
-    }
-
-    &-55-md {
-      margin-right: 55px;
-    }
-
-    &-60-md {
-      margin-right: 60px;
-    }
-
-    &-65-md {
-      margin-right: 65px;
-    }
-
-    &-70-md {
-      margin-right: 70px;
-    }
-
-    &-75-md {
-      margin-right: 75px;
-    }
-
-    &-80-md {
-      margin-right: 80px;
-    }
-
-    &-85-md {
-      margin-right: 85px;
-    }
-
-    &-90-md {
-      margin-right: 90px;
-    }
-
-    &-95-md {
-      margin-right: 95px;
-    }
-
-    &-100-md {
-      margin-right: 100px;
+  .#{$margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$margin-b} {
-    &-0-md {
-      margin-bottom: 0;
-    }
-
-    &-1-md {
-      margin-bottom: 1px;
-    }
-
-    &-2-md {
-      margin-bottom: 2px;
-    }
-
-    &-3-md {
-      margin-bottom: 3px;
-    }
-
-    &-4-md {
-      margin-bottom: 4px;
-    }
-
-    &-5-md {
-      margin-bottom: 5px;
-    }
-
-    &-6-md {
-      margin-bottom: 6px;
-    }
-
-    &-7-md {
-      margin-bottom: 7px;
-    }
-
-    &-8-md {
-      margin-bottom: 8px;
-    }
-
-    &-9-md {
-      margin-bottom: 9px;
-    }
-
-    &-10-md {
-      margin-bottom: 10px;
-    }
-
-    &-15-md {
-      margin-bottom: 15px;
-    }
-
-    &-20-md {
-      margin-bottom: 20px;
-    }
-
-    &-25-md {
-      margin-bottom: 25px;
-    }
-
-    &-30-md {
-      margin-bottom: 30px;
-    }
-
-    &-35-md {
-      margin-bottom: 35px;
-    }
-
-    &-40-md {
-      margin-bottom: 40px;
-    }
-
-    &-45-md {
-      margin-bottom: 45px;
-    }
-
-    &-50-md {
-      margin-bottom: 50px;
-    }
-
-    &-55-md {
-      margin-bottom: 55px;
-    }
-
-    &-60-md {
-      margin-bottom: 60px;
-    }
-
-    &-65-md {
-      margin-bottom: 65px;
-    }
-
-    &-70-md {
-      margin-bottom: 70px;
-    }
-
-    &-75-md {
-      margin-bottom: 75px;
-    }
-
-    &-80-md {
-      margin-bottom: 80px;
-    }
-
-    &-85-md {
-      margin-bottom: 85px;
-    }
-
-    &-90-md {
-      margin-bottom: 90px;
-    }
-
-    &-95-md {
-      margin-bottom: 95px;
-    }
-
-    &-100-md {
-      margin-bottom: 100px;
+  .#{$margin-right} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$margin-l} {
-    &-0-md {
-      margin-left: 0;
-    }
-
-    &-1-md {
-      margin-left: 1px;
-    }
-
-    &-2-md {
-      margin-left: 2px;
-    }
-
-    &-3-md {
-      margin-left: 3px;
-    }
-
-    &-4-md {
-      margin-left: 4px;
-    }
-
-    &-5-md {
-      margin-left: 5px;
-    }
-
-    &-6-md {
-      margin-left: 6px;
-    }
-
-    &-7-md {
-      margin-left: 7px;
-    }
-
-    &-8-md {
-      margin-left: 8px;
-    }
-
-    &-9-md {
-      margin-left: 9px;
-    }
-
-    &-10-md {
-      margin-left: 10px;
-    }
-
-    &-15-md {
-      margin-left: 15px;
-    }
-
-    &-20-md {
-      margin-left: 20px;
-    }
-
-    &-25-md {
-      margin-left: 25px;
-    }
-
-    &-30-md {
-      margin-left: 30px;
-    }
-
-    &-35-md {
-      margin-left: 35px;
-    }
-
-    &-40-md {
-      margin-left: 40px;
-    }
-
-    &-45-md {
-      margin-left: 45px;
-    }
-
-    &-50-md {
-      margin-left: 50px;
-    }
-
-    &-55-md {
-      margin-left: 55px;
-    }
-
-    &-65-md {
-      margin-left: 65px;
-    }
-
-    &-70-md {
-      margin-left: 70px;
-    }
-
-    &-75-md {
-      margin-left: 75px;
-    }
-
-    &-80-md {
-      margin-left: 80px;
-    }
-
-    &-85-md {
-      margin-left: 85px;
-    }
-
-    &-90-md {
-      margin-left: 90px;
-    }
-
-    &-95-md {
-      margin-left: 95px;
-    }
-
-    &-100-md {
-      margin-left: 100px;
+  .#{$margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$margin-x} {
-    &-0-md {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    &-1-md {
-      margin-left: 1px;
-      margin-right: 1px;
-    }
-
-    &-2-md {
-      margin-left: 2px;
-      margin-right: 2px;
-    }
-
-    &-3-md {
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-
-    &-4-md {
-      margin-left: 4px;
-      margin-right: 4px;
-    }
-
-    &-5-md {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    &-6-md {
-      margin-left: 6px;
-      margin-right: 6px;
-    }
-
-    &-7-md {
-      margin-left: 7px;
-      margin-right: 7px;
-    }
-
-    &-8-md {
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-
-    &-9-md {
-      margin-left: 9px;
-      margin-right: 9px;
-    }
-
-    &-10-md {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    &-15-md {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    &-20-md {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-
-    &-25-md {
-      margin-left: 25px;
-      margin-right: 25px;
-    }
-
-    &-30-md {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-
-    &-35-md {
-      margin-left: 35px;
-      margin-right: 35px;
-    }
-
-    &-40-md {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    &-45-md {
-      margin-left: 45px;
-      margin-right: 45px;
-    }
-
-    &-50-md {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    &-55-md {
-      margin-left: 55px;
-      margin-right: 55px;
-    }
-
-    &-60-md {
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-
-    &-65-md {
-      margin-left: 65px;
-      margin-right: 65px;
-    }
-
-    &-70-md {
-      margin-left: 70px;
-      margin-right: 70px;
-    }
-
-    &-75-md {
-      margin-left: 75px;
-      margin-right: 75px;
-    }
-
-    &-80-md {
-      margin-left: 80px;
-      margin-right: 80px;
-    }
-
-    &-85-md {
-      margin-left: 85px;
-      margin-right: 85px;
-    }
-
-    &-90-md {
-      margin-left: 90px;
-      margin-right: 90px;
-    }
-
-    &-95-md {
-      margin-left: 95px;
-      margin-right: 95px;
-    }
-
-    &-100-md {
-      margin-left: 100px;
-      margin-right: 100px;
+  .#{$margin-bottom} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md {
+        @include group-mb-variant($value);
+      }
     }
   }
 
-  .#{$margin-y} {
-    &-0-md {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &-1-md {
-      margin-top: 1px;
-      margin-bottom: 1px;
-    }
-
-    &-2-md {
-      margin-top: 2px;
-      margin-bottom: 2px;
-    }
-
-    &-3-md {
-      margin-top: 3px;
-      margin-bottom: 3px;
-    }
-
-    &-4-md {
-      margin-top: 4px;
-      margin-bottom: 4px;
-    }
-
-    &-5-md {
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-
-    &-6-md {
-      margin-top: 6px;
-      margin-bottom: 6px;
-    }
-
-    &-7-md {
-      margin-top: 7px;
-      margin-bottom: 7px;
-    }
-
-    &-8-md {
-      margin-top: 8px;
-      margin-bottom: 8px;
-    }
-
-    &-9-md {
-      margin-top: 9px;
-      margin-bottom: 9px;
-    }
-
-    &-10-md {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    &-15-md {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    &-20-md {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    &-25-md {
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
-
-    &-30-md {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    &-35-md {
-      margin-top: 35px;
-      margin-bottom: 35px;
-    }
-
-    &-40-md {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-
-    &-45-md {
-      margin-top: 45px;
-      margin-bottom: 45px;
-    }
-
-    &-50-md {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-
-    &-55-md {
-      margin-top: 55px;
-      margin-bottom: 55px;
-    }
-
-    &-60-md {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-
-    &-65-md {
-      margin-top: 65px;
-      margin-bottom: 65px;
-    }
-
-    &-70-md {
-      margin-top: 70px;
-      margin-bottom: 70px;
-    }
-
-    &-75-md {
-      margin-top: 75px;
-      margin-bottom: 75px;
-    }
-
-    &-80-md {
-      margin-top: 80px;
-      margin-bottom: 80px;
-    }
-
-    &-85-md {
-      margin-top: 85px;
-      margin-bottom: 85px;
-    }
-
-    &-90-md {
-      margin-top: 90px;
-      margin-bottom: 90px;
-    }
-
-    &-95-md {
-      margin-top: 95px;
-      margin-bottom: 95px;
-    }
-
-    &-100-md {
-      margin-top: 100px;
-      margin-bottom: 100px;
+  .#{$margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-mb-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-t} {
-    &-1-md {
-      margin-top: -1px;
-    }
-
-    &-2-md {
-      margin-top: -2px;
-    }
-
-    &-3-md {
-      margin-top: -3px;
-    }
-
-    &-4-md {
-      margin-top: -4px;
-    }
-
-    &-5-md {
-      margin-top: -5px;
-    }
-
-    &-6-md {
-      margin-top: -6px;
-    }
-
-    &-7-md {
-      margin-top: -7px;
-    }
-
-    &-8-md {
-      margin-top: -8px;
-    }
-
-    &-9-md {
-      margin-top: -9px;
-    }
-
-    &-10-md {
-      margin-top: -10px;
-    }
-
-    &-15-md {
-      margin-top: -15px;
-    }
-
-    &-20-md {
-      margin-top: -20px;
-    }
-
-    &-25-md {
-      margin-top: -25px;
-    }
-
-    &-30-md {
-      margin-top: -30px;
-    }
-
-    &-35-md {
-      margin-top: -35px;
-    }
-
-    &-40-md {
-      margin-top: -40px;
-    }
-
-    &-45-md {
-      margin-top: -45px;
-    }
-
-    &-50-md {
-      margin-top: -50px;
-    }
-
-    &-55-md {
-      margin-top: -55px;
-    }
-
-    &-60-md {
-      margin-top: -60px;
-    }
-
-    &-65-md {
-      margin-top: -65px;
-    }
-
-    &-70-md {
-      margin-top: -70px;
-    }
-
-    &-75-md {
-      margin-top: -75px;
-    }
-
-    &-80-md {
-      margin-top: -80px;
-    }
-
-    &-85-md {
-      margin-top: -85px;
-    }
-
-    &-90-md {
-      margin-top: -50px;
-    }
-
-    &-95-md {
-      margin-top: -95px;
-    }
-
-    &-100-md {
-      margin-top: -100px;
+  .#{$margin-left} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md {
+        @include group-ml-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-r} {
-    &-1-md {
-      margin-right: -1px;
-    }
-
-    &-2-md {
-      margin-right: -2px;
-    }
-
-    &-3-md {
-      margin-right: -3px;
-    }
-
-    &-4-md {
-      margin-right: -4px;
-    }
-
-    &-5-md {
-      margin-right: -5px;
-    }
-
-    &-6-md {
-      margin-right: -6px;
-    }
-
-    &-7-md {
-      margin-right: -7px;
-    }
-
-    &-8-md {
-      margin-right: -8px;
-    }
-
-    &-9-md {
-      margin-right: -9px;
-    }
-
-    &-10-md {
-      margin-right: -10px;
-    }
-
-    &-15-md {
-      margin-right: -15px;
-    }
-
-    &-20-md {
-      margin-right: -20px;
-    }
-
-    &-25-md {
-      margin-right: -25px;
-    }
-
-    &-30-md {
-      margin-right: -30px;
-    }
-
-    &-35-md {
-      margin-right: -35px;
-    }
-
-    &-40-md {
-      margin-right: -40px;
-    }
-
-    &-45-md {
-      margin-right: -45px;
-    }
-
-    &-50-md {
-      margin-right: -50px;
-    }
-
-    &-55-md {
-      margin-right: -55px;
-    }
-
-    &-60-md {
-      margin-right: -60px;
-    }
-
-    &-65-md {
-      margin-right: -65px;
-    }
-
-    &-70-md {
-      margin-right: -70px;
-    }
-
-    &-75-md {
-      margin-right: -75px;
-    }
-
-    &-80-md {
-      margin-right: -80px;
-    }
-
-    &-85-md {
-      margin-right: -85px;
-    }
-
-    &-90-md {
-      margin-right: -90px;
-    }
-
-    &-95-md {
-      margin-right: -95px;
-    }
-
-    &-100-md {
-      margin-right: -100px;
+  .#{$margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-ml-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-b} {
-    &-1-md {
-      margin-bottom: -1px;
-    }
-
-    &-2-md {
-      margin-bottom: -2px;
-    }
-
-    &-3-md {
-      margin-bottom: -3px;
-    }
-
-    &-4-md {
-      margin-bottom: -4px;
-    }
-
-    &-5-md {
-      margin-bottom: -5px;
-    }
-
-    &-6-md {
-      margin-bottom: -6px;
-    }
-
-    &-7-md {
-      margin-bottom: -7px;
-    }
-
-    &-8-md {
-      margin-bottom: -8px;
-    }
-
-    &-9-md {
-      margin-bottom: -9px;
-    }
-
-    &-10-md {
-      margin-bottom: -10px;
-    }
-
-    &-15-md {
-      margin-bottom: -15px;
-    }
-
-    &-20-md {
-      margin-bottom: -20px;
-    }
-
-    &-25-md {
-      margin-bottom: -25px;
-    }
-
-    &-30-md {
-      margin-bottom: -30px;
-    }
-
-    &-35-md {
-      margin-bottom: -35px;
-    }
-
-    &-40-md {
-      margin-bottom: -40px;
-    }
-
-    &-45-md {
-      margin-bottom: -45px;
-    }
-
-    &-50-md {
-      margin-bottom: -50px;
-    }
-
-    &-55-md {
-      margin-bottom: -55px;
-    }
-
-    &-60-md {
-      margin-bottom: -60px;
-    }
-
-    &-65-md {
-      margin-bottom: -65px;
-    }
-
-    &-70-md {
-      margin-bottom: -70px;
-    }
-
-    &-75-md {
-      margin-bottom: -75px;
-    }
-
-    &-80-md {
-      margin-bottom: -80px;
-    }
-
-    &-85-md {
-      margin-bottom: -85px;
-    }
-
-    &-90-md {
-      margin-bottom: -90px;
-    }
-
-    &-95-md {
-      margin-bottom: -95px;
-    }
-
-    &-100-md {
-      margin-bottom: -100px;
+  .#{$margin-x-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md {
+        @include group-mx-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-l} {
-    &-1-md {
-      margin-left: -1px;
-    }
-
-    &-2-md {
-      margin-left: -2px;
-    }
-
-    &-3-md {
-      margin-left: -3px;
-    }
-
-    &-4-md {
-      margin-left: -4px;
-    }
-
-    &-5-md {
-      margin-left: -5px;
-    }
-
-    &-6-md {
-      margin-left: -6px;
-    }
-
-    &-7-md {
-      margin-left: -7px;
-    }
-
-    &-8-md {
-      margin-left: -8px;
-    }
-
-    &-9-md {
-      margin-left: -9px;
-    }
-
-    &-10-md {
-      margin-left: -10px;
-    }
-
-    &-15-md {
-      margin-left: -15px;
-    }
-
-    &-20-md {
-      margin-left: -20px;
-    }
-
-    &-25-md {
-      margin-left: -25px;
-    }
-
-    &-30-md {
-      margin-left: -30px;
-    }
-
-    &-35-md {
-      margin-left: -35px;
-    }
-
-    &-40-md {
-      margin-left: -40px;
-    }
-
-    &-45-md {
-      margin-left: -45px;
-    }
-
-    &-50-md {
-      margin-left: -50px;
-    }
-
-    &-55-md {
-      margin-left: -55px;
-    }
-
-    &-65-md {
-      margin-left: -65px;
-    }
-
-    &-70-md {
-      margin-left: -70px;
-    }
-
-    &-75-md {
-      margin-left: -75px;
-    }
-
-    &-80-md {
-      margin-left: -80px;
-    }
-
-    &-85-md {
-      margin-left: -85px;
-    }
-
-    &-90-md {
-      margin-left: -90px;
-    }
-
-    &-95-md {
-      margin-left: -95px;
-    }
-
-    &-100-md {
-      margin-left: -100px;
+  .#{$margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-mx-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-x} {
-    &-1-md {
-      margin-left: -1px;
-      margin-right: -1px;
-    }
-
-    &-2-md {
-      margin-left: -2px;
-      margin-right: -2px;
-    }
-
-    &-3-md {
-      margin-left: -3px;
-      margin-right: -3px;
-    }
-
-    &-4-md {
-      margin-left: -4px;
-      margin-right: -4px;
-    }
-
-    &-5-md {
-      margin-left: -5px;
-      margin-right: -5px;
-    }
-
-    &-6-md {
-      margin-left: -6px;
-      margin-right: -6px;
-    }
-
-    &-7-md {
-      margin-left: -7px;
-      margin-right: -7px;
-    }
-
-    &-8-md {
-      margin-left: -8px;
-      margin-right: -8px;
-    }
-
-    &-9-md {
-      margin-left: -9px;
-      margin-right: -9px;
-    }
-
-    &-10-md {
-      margin-left: -10px;
-      margin-right: -10px;
-    }
-
-    &-15-md {
-      margin-left: -15px;
-      margin-right: -15px;
-    }
-
-    &-20-md {
-      margin-left: -20px;
-      margin-right: -20px;
-    }
-
-    &-25-md {
-      margin-left: -25px;
-      margin-right: -25px;
-    }
-
-    &-30-md {
-      margin-left: -30px;
-      margin-right: -30px;
-    }
-
-    &-35-md {
-      margin-left: -35px;
-      margin-right: -35px;
-    }
-
-    &-40-md {
-      margin-left: -40px;
-      margin-right: -40px;
-    }
-
-    &-45-md {
-      margin-left: -45px;
-      margin-right: -45px;
-    }
-
-    &-50-md {
-      margin-left: -50px;
-      margin-right: -50px;
-    }
-
-    &-55-md {
-      margin-left: -55px;
-      margin-right: -55px;
-    }
-
-    &-60-md {
-      margin-left: -60px;
-      margin-right: -60px;
-    }
-
-    &-65-md {
-      margin-left: -65px;
-      margin-right: -65px;
-    }
-
-    &-70-md {
-      margin-left: -70px;
-      margin-right: -70px;
-    }
-
-    &-75-md {
-      margin-left: -75px;
-      margin-right: -75px;
-    }
-
-    &-80-md {
-      margin-left: -80px;
-      margin-right: -80px;
-    }
-
-    &-85-md {
-      margin-left: -85px;
-      margin-right: -85px;
-    }
-
-    &-90-md {
-      margin-left: -90px;
-      margin-right: -90px;
-    }
-
-    &-95-md {
-      margin-left: -95px;
-      margin-right: -95px;
-    }
-
-    &-100-md {
-      margin-left: -100px;
-      margin-right: -100px;
+  .#{$margin-y-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-md {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-y} {
-    &-0-md {
-      margin-top: -0;
-      margin-bottom: -0;
-    }
-
-    &-1-md {
-      margin-top: -1px;
-      margin-bottom: -1px;
-    }
-
-    &-2-md {
-      margin-top: -2px;
-      margin-bottom: -2px;
-    }
-
-    &-3-md {
-      margin-top: -3px;
-      margin-bottom: -3px;
-    }
-
-    &-4-md {
-      margin-top: -4px;
-      margin-bottom: -4px;
-    }
-
-    &-5-md {
-      margin-top: -5px;
-      margin-bottom: -5px;
-    }
-
-    &-6-md {
-      margin-top: -6px;
-      margin-bottom: -6px;
-    }
-
-    &-7-md {
-      margin-top: -7px;
-      margin-bottom: -7px;
-    }
-
-    &-8-md {
-      margin-top: -8px;
-      margin-bottom: -8px;
-    }
-
-    &-9-md {
-      margin-top: -9px;
-      margin-bottom: -9px;
-    }
-
-    &-10-md {
-      margin-top: -10px;
-      margin-bottom: -10px;
-    }
-
-    &-15-md {
-      margin-top: -15px;
-      margin-bottom: -15px;
-    }
-
-    &-20-md {
-      margin-top: -20px;
-      margin-bottom: -20px;
-    }
-
-    &-25-md {
-      margin-top: -25px;
-      margin-bottom: -25px;
-    }
-
-    &-30-md {
-      margin-top: -30px;
-      margin-bottom: -30px;
-    }
-
-    &-35-md {
-      margin-top: -35px;
-      margin-bottom: -35px;
-    }
-
-    &-40-md {
-      margin-top: -40px;
-      margin-bottom: -40px;
-    }
-
-    &-45-md {
-      margin-top: -45px;
-      margin-bottom: -45px;
-    }
-
-    &-50-md {
-      margin-top: -50px;
-      margin-bottom: -50px;
-    }
-
-    &-55-md {
-      margin-top: -55px;
-      margin-bottom: -55px;
-    }
-
-    &-60-md {
-      margin-top: -60px;
-      margin-bottom: -60px;
-    }
-
-    &-65-md {
-      margin-top: -65px;
-      margin-bottom: -65px;
-    }
-
-    &-70-md {
-      margin-top: -70px;
-      margin-bottom: -70px;
-    }
-
-    &-75-md {
-      margin-top: -75px;
-      margin-bottom: -75px;
-    }
-
-    &-80-md {
-      margin-top: -80px;
-      margin-bottom: -80px;
-    }
-
-    &-85-md {
-      margin-top: -85px;
-      margin-bottom: -85px;
-    }
-
-    &-90-md {
-      margin-top: -90px;
-      margin-bottom: -90px;
-    }
-
-    &-95-md {
-      margin-top: -95px;
-      margin-bottom: -95px;
-    }
-
-    &-100-md {
-      margin-top: -100px;
-      margin-bottom: -100px;
+  .#{$margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-md {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
+  .#{$margin-out-top} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-md {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-top} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-md {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-md {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-md {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-md {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-md {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-md {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
-
-  .#{$group-m} {
-    &-0-sm > * {
-      margin: 0;
-    }
-
-    &-1-sm > * {
-      margin: 1px;
-    }
-
-    &-2-sm > * {
-      margin: 2px;
-    }
-
-    &-3-sm > * {
-      margin: 3px;
-    }
-
-    &-4-sm > * {
-      margin: 4px;
-    }
-
-    &-5-sm > * {
-      margin: 5px;
-    }
-
-    &-6-sm > * {
-      margin: 6px;
-    }
-
-    &-7-sm > * {
-      margin: 7px;
-    }
-
-    &-8-sm > * {
-      margin: 8px;
-    }
-
-    &-9-sm > * {
-      margin: 9px;
-    }
-
-    &-10-sm > * {
-      margin: 10px;
-    }
-
-    &-15-sm > * {
-      margin: 15px;
-    }
-
-    &-20-sm > * {
-      margin: 20px;
-    }
-
-    &-25-sm > * {
-      margin: 25px;
-    }
-
-    &-30-sm > * {
-      margin: 30px;
-    }
-
-    &-35-sm > * {
-      margin: 35px;
-    }
-
-    &-40-sm > * {
-      margin: 40px;
-    }
-
-    &-45-sm > * {
-      margin: 45px;
-    }
-
-    &-50-sm > * {
-      margin: 50px;
-    }
-
-    &-55-sm > * {
-      margin: 55px;
-    }
-
-    &-60-sm > * {
-      margin: 60px;
-    }
-
-    &-65-sm > * {
-      margin: 65px;
-    }
-
-    &-70-sm > * {
-      margin: 70px;
-    }
-
-    &-75-sm > * {
-      margin: 75px;
-    }
-
-    &-80-sm > * {
-      margin: 80px;
-    }
-
-    &-85-sm > * {
-      margin: 85px;
-    }
-
-    &-90-sm > * {
-      margin: 90px;
-    }
-
-    &-95-sm > * {
-      margin: 95px;
-    }
-
-    &-100-sm > * {
-      margin: 100px;
+  //Medium devices (tablets, 576px and 768px)
+  .#{$group-margin} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm > * {
+        @include group-m-variant($value);
+      }
     }
   }
 
-  .#{$group-mt} {
-    &-0-sm > * {
-      margin-top: 0;
-    }
-
-    &-1-sm > * {
-      margin-top: 1px;
-    }
-
-    &-2-sm > * {
-      margin-top: 2px;
-    }
-
-    &-3-sm > * {
-      margin-top: 3px;
-    }
-
-    &-4-sm > * {
-      margin-top: 4px;
-    }
-
-    &-5-sm > * {
-      margin-top: 5px;
-    }
-
-    &-6-sm > * {
-      margin-top: 6px;
-    }
-
-    &-7-sm > * {
-      margin-top: 7px;
-    }
-
-    &-8-sm > * {
-      margin-top: 8px;
-    }
-
-    &-9-sm > * {
-      margin-top: 9px;
-    }
-
-    &-10-sm > * {
-      margin-top: 10px;
-    }
-
-    &-15-sm > * {
-      margin-top: 15px;
-    }
-
-    &-20-sm > * {
-      margin-top: 20px;
-    }
-
-    &-25-sm > * {
-      margin-top: 25px;
-    }
-
-    &-30-sm > * {
-      margin-top: 30px;
-    }
-
-    &-35-sm > * {
-      margin-top: 35px;
-    }
-
-    &-40-sm > * {
-      margin-top: 40px;
-    }
-
-    &-45-sm > * {
-      margin-top: 45px;
-    }
-
-    &-50-sm > * {
-      margin-top: 50px;
-    }
-
-    &-55-sm > * {
-      margin-top: 55px;
-    }
-
-    &-60-sm > * {
-      margin-top: 60px;
-    }
-
-    &-65-sm > * {
-      margin-top: 65px;
-    }
-
-    &-70-sm > * {
-      margin-top: 70px;
-    }
-
-    &-75-sm > * {
-      margin-top: 75px;
-    }
-
-    &-80-sm > * {
-      margin-top: 80px;
-    }
-
-    &-85-sm > * {
-      margin-top: 85px;
-    }
-
-    &-90-sm > * {
-      margin-top: 90px;
-    }
-
-    &-95-sm > * {
-      margin-top: 95px;
-    }
-
-    &-100-sm > * {
-      margin-top: 100px;
+  .#{$group-margin} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-m-variant($value);
+      }
     }
   }
 
-  .#{$group-mr} {
-    &-0-sm > * {
-      margin-right: 0;
-    }
-
-    &-1-sm > * {
-      margin-right: 1px;
-    }
-
-    &-2-sm > * {
-      margin-right: 2px;
-    }
-
-    &-3-sm > * {
-      margin-right: 3px;
-    }
-
-    &-4-sm > * {
-      margin-right: 4px;
-    }
-
-    &-5-sm > * {
-      margin-right: 5px;
-    }
-
-    &-6-sm > * {
-      margin-right: 6px;
-    }
-
-    &-7-sm > * {
-      margin-right: 7px;
-    }
-
-    &-8-sm > * {
-      margin-right: 8px;
-    }
-
-    &-9-sm > * {
-      margin-right: 9px;
-    }
-
-    &-10-sm > * {
-      margin-right: 10px;
-    }
-
-    &-15-sm > * {
-      margin-right: 15px;
-    }
-
-    &-20-sm > * {
-      margin-right: 20px;
-    }
-
-    &-25-sm > * {
-      margin-right: 25px;
-    }
-
-    &-30-sm > * {
-      margin-right: 30px;
-    }
-
-    &-35-sm > * {
-      margin-right: 35px;
-    }
-
-    &-40-sm > * {
-      margin-right: 40px;
-    }
-
-    &-45-sm > * {
-      margin-right: 45px;
-    }
-
-    &-50-sm > * {
-      margin-right: 50px;
-    }
-
-    &-55-sm > * {
-      margin-right: 55px;
-    }
-
-    &-60-sm > * {
-      margin-right: 60px;
-    }
-
-    &-65-sm > * {
-      margin-right: 65px;
-    }
-
-    &-70-sm > * {
-      margin-right: 70px;
-    }
-
-    &-75-sm > * {
-      margin-right: 75px;
-    }
-
-    &-80-sm > * {
-      margin-right: 80px;
-    }
-
-    &-85-sm > * {
-      margin-right: 85px;
-    }
-
-    &-90-sm > * {
-      margin-right: 90px;
-    }
-
-    &-95-sm > * {
-      margin-right: 95px;
-    }
-
-    &-100-sm > * {
-      margin-right: 100px;
+  .#{$group-margin-top} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm > * {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$group-mb} {
-    &-0-sm > * {
-      margin-bottom: 0;
-    }
-
-    &-1-sm > * {
-      margin-bottom: 1px;
-    }
-
-    &-2-sm > * {
-      margin-bottom: 2px;
-    }
-
-    &-3-sm > * {
-      margin-bottom: 3px;
-    }
-
-    &-4-sm > * {
-      margin-bottom: 4px;
-    }
-
-    &-5-sm > * {
-      margin-bottom: 5px;
-    }
-
-    &-6-sm > * {
-      margin-bottom: 6px;
-    }
-
-    &-7-sm > * {
-      margin-bottom: 7px;
-    }
-
-    &-8-sm > * {
-      margin-bottom: 8px;
-    }
-
-    &-9-sm > * {
-      margin-bottom: 9px;
-    }
-
-    &-10-sm > * {
-      margin-bottom: 10px;
-    }
-
-    &-15-sm > * {
-      margin-bottom: 15px;
-    }
-
-    &-20-sm > * {
-      margin-bottom: 20px;
-    }
-
-    &-25-sm > * {
-      margin-bottom: 25px;
-    }
-
-    &-30-sm > * {
-      margin-bottom: 30px;
-    }
-
-    &-35-sm > * {
-      margin-bottom: 35px;
-    }
-
-    &-40-sm > * {
-      margin-bottom: 40px;
-    }
-
-    &-45-sm > * {
-      margin-bottom: 45px;
-    }
-
-    &-50-sm > * {
-      margin-bottom: 50px;
-    }
-
-    &-55-sm > * {
-      margin-bottom: 55px;
-    }
-
-    &-60-sm > * {
-      margin-bottom: 60px;
-    }
-
-    &-65-sm > * {
-      margin-bottom: 65px;
-    }
-
-    &-70-sm > * {
-      margin-bottom: 70px;
-    }
-
-    &-75-sm > * {
-      margin-bottom: 75px;
-    }
-
-    &-80-sm > * {
-      margin-bottom: 80px;
-    }
-
-    &-85-sm > * {
-      margin-bottom: 85px;
-    }
-
-    &-90-sm > * {
-      margin-bottom: 90px;
-    }
-
-    &-95-sm > * {
-      margin-bottom: 95px;
-    }
-
-    &-100-sm > * {
-      margin-bottom: 100px;
+  .#{$group-margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$group-ml} {
-    &-0-sm > * {
-      margin-left: 0;
-    }
-
-    &-1-sm > * {
-      margin-left: 1px;
-    }
-
-    &-2-sm > * {
-      margin-left: 2px;
-    }
-
-    &-3-sm > * {
-      margin-left: 3px;
-    }
-
-    &-4-sm > * {
-      margin-left: 4px;
-    }
-
-    &-5-sm > * {
-      margin-left: 5px;
-    }
-
-    &-6-sm > * {
-      margin-left: 6px;
-    }
-
-    &-7-sm > * {
-      margin-left: 7px;
-    }
-
-    &-8-sm > * {
-      margin-left: 8px;
-    }
-
-    &-9-sm > * {
-      margin-left: 9px;
-    }
-
-    &-10-sm > * {
-      margin-left: 10px;
-    }
-
-    &-15-sm > * {
-      margin-left: 15px;
-    }
-
-    &-20-sm > * {
-      margin-left: 20px;
-    }
-
-    &-25-sm > * {
-      margin-left: 25px;
-    }
-
-    &-30-sm > * {
-      margin-left: 30px;
-    }
-
-    &-35-sm > * {
-      margin-left: 35px;
-    }
-
-    &-40-sm > * {
-      margin-left: 40px;
-    }
-
-    &-45-sm > * {
-      margin-left: 45px;
-    }
-
-    &-50-sm > * {
-      margin-left: 50px;
-    }
-
-    &-55-sm > * {
-      margin-left: 55px;
-    }
-
-    &-60-sm > * {
-      margin-left: 60px;
-    }
-
-    &-65-sm > * {
-      margin-left: 65px;
-    }
-
-    &-70-sm > * {
-      margin-left: 70px;
-    }
-
-    &-75-sm > * {
-      margin-left: 75px;
-    }
-
-    &-80-sm > * {
-      margin-left: 80px;
-    }
-
-    &-85-sm > * {
-      margin-left: 85px;
-    }
-
-    &-90-sm > * {
-      margin-left: 90px;
-    }
-
-    &-95-sm > * {
-      margin-left: 95px;
-    }
-
-    &-100-sm > * {
-      margin-left: 100px;
+  .#{$group-margin-right} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm > * {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$group-mx} {
-    &-0-sm > * {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    &-1-sm > * {
-      margin-left: 1px;
-      margin-right: 1px;
-    }
-
-    &-2-sm > * {
-      margin-left: 2px;
-      margin-right: 2px;
-    }
-
-    &-3-sm > * {
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-
-    &-4-sm > * {
-      margin-left: 4px;
-      margin-right: 4px;
-    }
-
-    &-5-sm > * {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    &-6-sm > * {
-      margin-left: 6px;
-      margin-right: 6px;
-    }
-
-    &-7-sm > * {
-      margin-left: 7px;
-      margin-right: 7px;
-    }
-
-    &-8-sm > * {
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-
-    &-9-sm > * {
-      margin-left: 9px;
-      margin-right: 9px;
-    }
-
-    &-10-sm > * {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    &-15-sm > * {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    &-20-sm > * {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-
-    &-25-sm > * {
-      margin-left: 25px;
-      margin-right: 25px;
-    }
-
-    &-30-sm > * {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-
-    &-35-sm > * {
-      margin-left: 35px;
-      margin-right: 35px;
-    }
-
-    &-40-sm > * {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    &-45-sm > * {
-      margin-left: 45px;
-      margin-right: 45px;
-    }
-
-    &-50-sm > * {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    &-55-sm > * {
-      margin-left: 55px;
-      margin-right: 55px;
-    }
-
-    &-60-sm > * {
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-
-    &-65-sm > * {
-      margin-left: 65px;
-      margin-right: 65px;
-    }
-
-    &-70-sm > * {
-      margin-left: 70px;
-      margin-right: 70px;
-    }
-
-    &-75-sm > * {
-      margin-left: 75px;
-      margin-right: 75px;
-    }
-
-    &-80-sm > * {
-      margin-left: 80px;
-      margin-right: 80px;
-    }
-
-    &-85-sm > * {
-      margin-left: 85px;
-      margin-right: 85px;
-    }
-
-    &-90-sm > * {
-      margin-left: 90px;
-      margin-right: 90px;
-    }
-
-    &-95-sm > * {
-      margin-left: 95px;
-      margin-right: 95px;
-    }
-
-    &-100-sm > * {
-      margin-left: 100px;
-      margin-right: 100px;
+  .#{$group-margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$group-my} {
-    &-0-sm > * {
-      margin-top: 0;
-      margin-bottom: 0;
+  .#{$group-margin-bottom} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm > * {
+        @include group-mb-variant($value);
+      }
     }
+  }
 
-    &-1-sm > * {
-      margin-top: 1px;
-      margin-bottom: 1px;
+  .#{$group-margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-mb-variant($value);
+      }
     }
+  }
 
-    &-2-sm > * {
-      margin-top: 2px;
-      margin-bottom: 2px;
+  .#{$group-margin-left} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm > * {
+        @include group-ml-variant($value);
+      }
     }
+  }
 
-    &-3-sm > * {
-      margin-top: 3px;
-      margin-bottom: 3px;
+  .#{$group-margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-ml-variant($value);
+      }
     }
+  }
 
-    &-4-sm > * {
-      margin-top: 4px;
-      margin-bottom: 4px;
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm > * {
+        @include group-mx-variant($value, $value);
+      }
     }
+  }
 
-    &-5-sm > * {
-      margin-top: 5px;
-      margin-bottom: 5px;
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-mx-variant($value, $value);
+      }
     }
+  }
 
-    &-6-sm > * {
-      margin-top: 6px;
-      margin-bottom: 6px;
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm > * {
+        @include group-my-variant($value, $value);
+      }
     }
+  }
 
-    &-7-sm > * {
-      margin-top: 7px;
-      margin-bottom: 7px;
-    }
-
-    &-8-sm > * {
-      margin-top: 8px;
-      margin-bottom: 8px;
-    }
-
-    &-9-sm > * {
-      margin-top: 9px;
-      margin-bottom: 9px;
-    }
-
-    &-10-sm > * {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    &-15-sm > * {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    &-20-sm > * {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    &-25-sm > * {
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
-
-    &-30-sm > * {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    &-35-sm > * {
-      margin-top: 35px;
-      margin-bottom: 35px;
-    }
-
-    &-40-sm > * {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-
-    &-45-sm > * {
-      margin-top: 45px;
-      margin-bottom: 45px;
-    }
-
-    &-50-sm > * {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-
-    &-55-sm > * {
-      margin-top: 55px;
-      margin-bottom: 55px;
-    }
-
-    &-60-sm > * {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-
-    &-65-sm > * {
-      margin-top: 65px;
-      margin-bottom: 65px;
-    }
-
-    &-70-sm > * {
-      margin-top: 70px;
-      margin-bottom: 70px;
-    }
-
-    &-75-sm > * {
-      margin-top: 75px;
-      margin-bottom: 75px;
-    }
-
-    &-80-sm > * {
-      margin-top: 80px;
-      margin-bottom: 80px;
-    }
-
-    &-85-sm > * {
-      margin-top: 85px;
-      margin-bottom: 85px;
-    }
-
-    &-90-sm > * {
-      margin-top: 90px;
-      margin-bottom: 90px;
-    }
-
-    &-95-sm > * {
-      margin-top: 95px;
-      margin-bottom: 95px;
-    }
-
-    &-100-sm > * {
-      margin-top: 100px;
-      margin-bottom: 100px;
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm > * {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
@@ -8492,2511 +1191,335 @@
       margin: 0;
     }
 
-    &-0-sm {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm {
+        @include margin-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$margin} {
+    &-center-sm {
+      margin: 0 auto;
+    }
+
+    &-all-0-sm,
+    &-all-0-sm > *,
+    &-all-0-sm * {
       margin: 0;
     }
 
-    &-1-sm {
-      margin: 1px;
-    }
-
-    &-2-sm {
-      margin: 2px;
-    }
-
-    &-3-sm {
-      margin: 3px;
-    }
-
-    &-4-sm {
-      margin: 4px;
-    }
-
-    &-5-sm {
-      margin: 5px;
-    }
-
-    &-6-sm {
-      margin: 6px;
-    }
-
-    &-7-sm {
-      margin: 7px;
-    }
-
-    &-8-sm {
-      margin: 8px;
-    }
-
-    &-9-sm {
-      margin: 9px;
-    }
-
-    &-10-sm {
-      margin: 10px;
-    }
-
-    &-15-sm {
-      margin: 15px;
-    }
-
-    &-20-sm {
-      margin: 20px;
-    }
-
-    &-25-sm {
-      margin: 25px;
-    }
-
-    &-30-sm {
-      margin: 30px;
-    }
-
-    &-35-sm {
-      margin: 35px;
-    }
-
-    &-40-sm {
-      margin: 50px;
-    }
-
-    &-45-sm {
-      margin: 45px;
-    }
-
-    &-50-sm {
-      margin: 50px;
-    }
-
-    &-55-sm {
-      margin: 55px;
-    }
-
-    &-60-sm {
-      margin: 60px;
-    }
-
-    &-65-sm {
-      margin: 65px;
-    }
-
-    &-70-sm {
-      margin: 70px;
-    }
-
-    &-75-sm {
-      margin: 75px;
-    }
-
-    &-80-sm {
-      margin: 80px;
-    }
-
-    &-85-sm {
-      margin: 85px;
-    }
-
-    &-90-sm {
-      margin: 90px;
-    }
-
-    &-95-sm {
-      margin: 95px;
-    }
-
-    &-100-sm {
-      margin: 100px;
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include margin-pixel-variant($value);
+      }
     }
   }
 
-  .#{$margin-t} {
-    &-0-sm {
-      margin-top: 0;
-    }
-
-    &-1-sm {
-      margin-top: 1px;
-    }
-
-    &-2-sm {
-      margin-top: 2px;
-    }
-
-    &-3-sm {
-      margin-top: 3px;
-    }
-
-    &-4-sm {
-      margin-top: 4px;
-    }
-
-    &-5-sm {
-      margin-top: 5px;
-    }
-
-    &-6-sm {
-      margin-top: 6px;
-    }
-
-    &-7-sm {
-      margin-top: 7px;
-    }
-
-    &-8-sm {
-      margin-top: 8px;
-    }
-
-    &-9-sm {
-      margin-top: 9px;
-    }
-
-    &-10-sm {
-      margin-top: 10px;
-    }
-
-    &-15-sm {
-      margin-top: 15px;
-    }
-
-    &-20-sm {
-      margin-top: 20px;
-    }
-
-    &-25-sm {
-      margin-top: 25px;
-    }
-
-    &-30-sm {
-      margin-top: 30px;
-    }
-
-    &-35-sm {
-      margin-top: 35px;
-    }
-
-    &-40-sm {
-      margin-top: 40px;
-    }
-
-    &-45-sm {
-      margin-top: 45px;
-    }
-
-    &-50-sm {
-      margin-top: 50px;
-    }
-
-    &-55-sm {
-      margin-top: 55px;
-    }
-
-    &-60-sm {
-      margin-top: 60px;
-    }
-
-    &-65-sm {
-      margin-top: 65px;
-    }
-
-    &-70-sm {
-      margin-top: 70px;
-    }
-
-    &-75-sm {
-      margin-top: 75px;
-    }
-
-    &-80-sm {
-      margin-top: 80px;
-    }
-
-    &-85-sm {
-      margin-top: 85px;
-    }
-
-    &-90-sm {
-      margin-top: 50px;
-    }
-
-    &-95-sm {
-      margin-top: 95px;
-    }
-
-    &-100-sm {
-      margin-top: 100px;
+  .#{$margin-top} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$margin-r} {
-    &-0-sm {
-      margin-right: 0;
-    }
-
-    &-1-sm {
-      margin-right: 1px;
-    }
-
-    &-2-sm {
-      margin-right: 2px;
-    }
-
-    &-3-sm {
-      margin-right: 3px;
-    }
-
-    &-4-sm {
-      margin-right: 4px;
-    }
-
-    &-5-sm {
-      margin-right: 5px;
-    }
-
-    &-6-sm {
-      margin-right: 6px;
-    }
-
-    &-7-sm {
-      margin-right: 7px;
-    }
-
-    &-8-sm {
-      margin-right: 8px;
-    }
-
-    &-9-sm {
-      margin-right: 9px;
-    }
-
-    &-10-sm {
-      margin-right: 10px;
-    }
-
-    &-15-sm {
-      margin-right: 15px;
-    }
-
-    &-20-sm {
-      margin-right: 20px;
-    }
-
-    &-25-sm {
-      margin-right: 25px;
-    }
-
-    &-30-sm {
-      margin-right: 30px;
-    }
-
-    &-35-sm {
-      margin-right: 35px;
-    }
-
-    &-40-sm {
-      margin-right: 40px;
-    }
-
-    &-45-sm {
-      margin-right: 45px;
-    }
-
-    &-50-sm {
-      margin-right: 50px;
-    }
-
-    &-55-sm {
-      margin-right: 55px;
-    }
-
-    &-60-sm {
-      margin-right: 60px;
-    }
-
-    &-65-sm {
-      margin-right: 65px;
-    }
-
-    &-70-sm {
-      margin-right: 70px;
-    }
-
-    &-75-sm {
-      margin-right: 75px;
-    }
-
-    &-80-sm {
-      margin-right: 80px;
-    }
-
-    &-85-sm {
-      margin-right: 85px;
-    }
-
-    &-90-sm {
-      margin-right: 90px;
-    }
-
-    &-95-sm {
-      margin-right: 95px;
-    }
-
-    &-100-sm {
-      margin-right: 100px;
+  .#{$margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$margin-b} {
-    &-0-sm {
-      margin-bottom: 0;
-    }
-
-    &-1-sm {
-      margin-bottom: 1px;
-    }
-
-    &-2-sm {
-      margin-bottom: 2px;
-    }
-
-    &-3-sm {
-      margin-bottom: 3px;
-    }
-
-    &-4-sm {
-      margin-bottom: 4px;
-    }
-
-    &-5-sm {
-      margin-bottom: 5px;
-    }
-
-    &-6-sm {
-      margin-bottom: 6px;
-    }
-
-    &-7-sm {
-      margin-bottom: 7px;
-    }
-
-    &-8-sm {
-      margin-bottom: 8px;
-    }
-
-    &-9-sm {
-      margin-bottom: 9px;
-    }
-
-    &-10-sm {
-      margin-bottom: 10px;
-    }
-
-    &-15-sm {
-      margin-bottom: 15px;
-    }
-
-    &-20-sm {
-      margin-bottom: 20px;
-    }
-
-    &-25-sm {
-      margin-bottom: 25px;
-    }
-
-    &-30-sm {
-      margin-bottom: 30px;
-    }
-
-    &-35-sm {
-      margin-bottom: 35px;
-    }
-
-    &-40-sm {
-      margin-bottom: 40px;
-    }
-
-    &-45-sm {
-      margin-bottom: 45px;
-    }
-
-    &-50-sm {
-      margin-bottom: 50px;
-    }
-
-    &-55-sm {
-      margin-bottom: 55px;
-    }
-
-    &-60-sm {
-      margin-bottom: 60px;
-    }
-
-    &-65-sm {
-      margin-bottom: 65px;
-    }
-
-    &-70-sm {
-      margin-bottom: 70px;
-    }
-
-    &-75-sm {
-      margin-bottom: 75px;
-    }
-
-    &-80-sm {
-      margin-bottom: 80px;
-    }
-
-    &-85-sm {
-      margin-bottom: 85px;
-    }
-
-    &-90-sm {
-      margin-bottom: 90px;
-    }
-
-    &-95-sm {
-      margin-bottom: 95px;
-    }
-
-    &-100-sm {
-      margin-bottom: 100px;
+  .#{$margin-right} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$margin-l} {
-    &-0-sm {
-      margin-left: 0;
-    }
-
-    &-1-sm {
-      margin-left: 1px;
-    }
-
-    &-2-sm {
-      margin-left: 2px;
-    }
-
-    &-3-sm {
-      margin-left: 3px;
-    }
-
-    &-4-sm {
-      margin-left: 4px;
-    }
-
-    &-5-sm {
-      margin-left: 5px;
-    }
-
-    &-6-sm {
-      margin-left: 6px;
-    }
-
-    &-7-sm {
-      margin-left: 7px;
-    }
-
-    &-8-sm {
-      margin-left: 8px;
-    }
-
-    &-9-sm {
-      margin-left: 9px;
-    }
-
-    &-10-sm {
-      margin-left: 10px;
-    }
-
-    &-15-sm {
-      margin-left: 15px;
-    }
-
-    &-20-sm {
-      margin-left: 20px;
-    }
-
-    &-25-sm {
-      margin-left: 25px;
-    }
-
-    &-30-sm {
-      margin-left: 30px;
-    }
-
-    &-35-sm {
-      margin-left: 35px;
-    }
-
-    &-40-sm {
-      margin-left: 40px;
-    }
-
-    &-45-sm {
-      margin-left: 45px;
-    }
-
-    &-50-sm {
-      margin-left: 50px;
-    }
-
-    &-55-sm {
-      margin-left: 55px;
-    }
-
-    &-65-sm {
-      margin-left: 65px;
-    }
-
-    &-70-sm {
-      margin-left: 70px;
-    }
-
-    &-75-sm {
-      margin-left: 75px;
-    }
-
-    &-80-sm {
-      margin-left: 80px;
-    }
-
-    &-85-sm {
-      margin-left: 85px;
-    }
-
-    &-90-sm {
-      margin-left: 90px;
-    }
-
-    &-95-sm {
-      margin-left: 95px;
-    }
-
-    &-100-sm {
-      margin-left: 100px;
+  .#{$margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$margin-x} {
-    &-0-sm {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    &-1-sm {
-      margin-left: 1px;
-      margin-right: 1px;
-    }
-
-    &-2-sm {
-      margin-left: 2px;
-      margin-right: 2px;
-    }
-
-    &-3-sm {
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-
-    &-4-sm {
-      margin-left: 4px;
-      margin-right: 4px;
-    }
-
-    &-5-sm {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    &-6-sm {
-      margin-left: 6px;
-      margin-right: 6px;
-    }
-
-    &-7-sm {
-      margin-left: 7px;
-      margin-right: 7px;
-    }
-
-    &-8-sm {
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-
-    &-9-sm {
-      margin-left: 9px;
-      margin-right: 9px;
-    }
-
-    &-10-sm {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    &-15-sm {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    &-20-sm {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-
-    &-25-sm {
-      margin-left: 25px;
-      margin-right: 25px;
-    }
-
-    &-30-sm {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-
-    &-35-sm {
-      margin-left: 35px;
-      margin-right: 35px;
-    }
-
-    &-40-sm {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    &-45-sm {
-      margin-left: 45px;
-      margin-right: 45px;
-    }
-
-    &-50-sm {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    &-55-sm {
-      margin-left: 55px;
-      margin-right: 55px;
-    }
-
-    &-60-sm {
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-
-    &-65-sm {
-      margin-left: 65px;
-      margin-right: 65px;
-    }
-
-    &-70-sm {
-      margin-left: 70px;
-      margin-right: 70px;
-    }
-
-    &-75-sm {
-      margin-left: 75px;
-      margin-right: 75px;
-    }
-
-    &-80-sm {
-      margin-left: 80px;
-      margin-right: 80px;
-    }
-
-    &-85-sm {
-      margin-left: 85px;
-      margin-right: 85px;
-    }
-
-    &-90-sm {
-      margin-left: 90px;
-      margin-right: 90px;
-    }
-
-    &-95-sm {
-      margin-left: 95px;
-      margin-right: 95px;
-    }
-
-    &-100-sm {
-      margin-left: 100px;
-      margin-right: 100px;
+  .#{$margin-bottom} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm {
+        @include group-mb-variant($value);
+      }
     }
   }
 
-  .#{$margin-y} {
-    &-0-sm {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &-1-sm {
-      margin-top: 1px;
-      margin-bottom: 1px;
-    }
-
-    &-2-sm {
-      margin-top: 2px;
-      margin-bottom: 2px;
-    }
-
-    &-3-sm {
-      margin-top: 3px;
-      margin-bottom: 3px;
-    }
-
-    &-4-sm {
-      margin-top: 4px;
-      margin-bottom: 4px;
-    }
-
-    &-5-sm {
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-
-    &-6-sm {
-      margin-top: 6px;
-      margin-bottom: 6px;
-    }
-
-    &-7-sm {
-      margin-top: 7px;
-      margin-bottom: 7px;
-    }
-
-    &-8-sm {
-      margin-top: 8px;
-      margin-bottom: 8px;
-    }
-
-    &-9-sm {
-      margin-top: 9px;
-      margin-bottom: 9px;
-    }
-
-    &-10-sm {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    &-15-sm {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    &-20-sm {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    &-25-sm {
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
-
-    &-30-sm {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    &-35-sm {
-      margin-top: 35px;
-      margin-bottom: 35px;
-    }
-
-    &-40-sm {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-
-    &-45-sm {
-      margin-top: 45px;
-      margin-bottom: 45px;
-    }
-
-    &-50-sm {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-
-    &-55-sm {
-      margin-top: 55px;
-      margin-bottom: 55px;
-    }
-
-    &-60-sm {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-
-    &-65-sm {
-      margin-top: 65px;
-      margin-bottom: 65px;
-    }
-
-    &-70-sm {
-      margin-top: 70px;
-      margin-bottom: 70px;
-    }
-
-    &-75-sm {
-      margin-top: 75px;
-      margin-bottom: 75px;
-    }
-
-    &-80-sm {
-      margin-top: 80px;
-      margin-bottom: 80px;
-    }
-
-    &-85-sm {
-      margin-top: 85px;
-      margin-bottom: 85px;
-    }
-
-    &-90-sm {
-      margin-top: 90px;
-      margin-bottom: 90px;
-    }
-
-    &-95-sm {
-      margin-top: 95px;
-      margin-bottom: 95px;
-    }
-
-    &-100-sm {
-      margin-top: 100px;
-      margin-bottom: 100px;
+  .#{$margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-mb-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-t} {
-    &-1-sm {
-      margin-top: -1px;
-    }
-
-    &-2-sm {
-      margin-top: -2px;
-    }
-
-    &-3-sm {
-      margin-top: -3px;
-    }
-
-    &-4-sm {
-      margin-top: -4px;
-    }
-
-    &-5-sm {
-      margin-top: -5px;
-    }
-
-    &-6-sm {
-      margin-top: -6px;
-    }
-
-    &-7-sm {
-      margin-top: -7px;
-    }
-
-    &-8-sm {
-      margin-top: -8px;
-    }
-
-    &-9-sm {
-      margin-top: -9px;
-    }
-
-    &-10-sm {
-      margin-top: -10px;
-    }
-
-    &-15-sm {
-      margin-top: -15px;
-    }
-
-    &-20-sm {
-      margin-top: -20px;
-    }
-
-    &-25-sm {
-      margin-top: -25px;
-    }
-
-    &-30-sm {
-      margin-top: -30px;
-    }
-
-    &-35-sm {
-      margin-top: -35px;
-    }
-
-    &-40-sm {
-      margin-top: -40px;
-    }
-
-    &-45-sm {
-      margin-top: -45px;
-    }
-
-    &-50-sm {
-      margin-top: -50px;
-    }
-
-    &-55-sm {
-      margin-top: -55px;
-    }
-
-    &-60-sm {
-      margin-top: -60px;
-    }
-
-    &-65-sm {
-      margin-top: -65px;
-    }
-
-    &-70-sm {
-      margin-top: -70px;
-    }
-
-    &-75-sm {
-      margin-top: -75px;
-    }
-
-    &-80-sm {
-      margin-top: -80px;
-    }
-
-    &-85-sm {
-      margin-top: -85px;
-    }
-
-    &-90-sm {
-      margin-top: -50px;
-    }
-
-    &-95-sm {
-      margin-top: -95px;
-    }
-
-    &-100-sm {
-      margin-top: -100px;
+  .#{$margin-left} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm {
+        @include group-ml-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-r} {
-    &-1-sm {
-      margin-right: -1px;
-    }
-
-    &-2-sm {
-      margin-right: -2px;
-    }
-
-    &-3-sm {
-      margin-right: -3px;
-    }
-
-    &-4-sm {
-      margin-right: -4px;
-    }
-
-    &-5-sm {
-      margin-right: -5px;
-    }
-
-    &-6-sm {
-      margin-right: -6px;
-    }
-
-    &-7-sm {
-      margin-right: -7px;
-    }
-
-    &-8-sm {
-      margin-right: -8px;
-    }
-
-    &-9-sm {
-      margin-right: -9px;
-    }
-
-    &-10-sm {
-      margin-right: -10px;
-    }
-
-    &-15-sm {
-      margin-right: -15px;
-    }
-
-    &-20-sm {
-      margin-right: -20px;
-    }
-
-    &-25-sm {
-      margin-right: -25px;
-    }
-
-    &-30-sm {
-      margin-right: -30px;
-    }
-
-    &-35-sm {
-      margin-right: -35px;
-    }
-
-    &-40-sm {
-      margin-right: -40px;
-    }
-
-    &-45-sm {
-      margin-right: -45px;
-    }
-
-    &-50-sm {
-      margin-right: -50px;
-    }
-
-    &-55-sm {
-      margin-right: -55px;
-    }
-
-    &-60-sm {
-      margin-right: -60px;
-    }
-
-    &-65-sm {
-      margin-right: -65px;
-    }
-
-    &-70-sm {
-      margin-right: -70px;
-    }
-
-    &-75-sm {
-      margin-right: -75px;
-    }
-
-    &-80-sm {
-      margin-right: -80px;
-    }
-
-    &-85-sm {
-      margin-right: -85px;
-    }
-
-    &-90-sm {
-      margin-right: -90px;
-    }
-
-    &-95-sm {
-      margin-right: -95px;
-    }
-
-    &-100-sm {
-      margin-right: -100px;
+  .#{$margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-ml-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-b} {
-    &-1-sm {
-      margin-bottom: -1px;
-    }
-
-    &-2-sm {
-      margin-bottom: -2px;
-    }
-
-    &-3-sm {
-      margin-bottom: -3px;
-    }
-
-    &-4-sm {
-      margin-bottom: -4px;
-    }
-
-    &-5-sm {
-      margin-bottom: -5px;
-    }
-
-    &-6-sm {
-      margin-bottom: -6px;
-    }
-
-    &-7-sm {
-      margin-bottom: -7px;
-    }
-
-    &-8-sm {
-      margin-bottom: -8px;
-    }
-
-    &-9-sm {
-      margin-bottom: -9px;
-    }
-
-    &-10-sm {
-      margin-bottom: -10px;
-    }
-
-    &-15-sm {
-      margin-bottom: -15px;
-    }
-
-    &-20-sm {
-      margin-bottom: -20px;
-    }
-
-    &-25-sm {
-      margin-bottom: -25px;
-    }
-
-    &-30-sm {
-      margin-bottom: -30px;
-    }
-
-    &-35-sm {
-      margin-bottom: -35px;
-    }
-
-    &-40-sm {
-      margin-bottom: -40px;
-    }
-
-    &-45-sm {
-      margin-bottom: -45px;
-    }
-
-    &-50-sm {
-      margin-bottom: -50px;
-    }
-
-    &-55-sm {
-      margin-bottom: -55px;
-    }
-
-    &-60-sm {
-      margin-bottom: -60px;
-    }
-
-    &-65-sm {
-      margin-bottom: -65px;
-    }
-
-    &-70-sm {
-      margin-bottom: -70px;
-    }
-
-    &-75-sm {
-      margin-bottom: -75px;
-    }
-
-    &-80-sm {
-      margin-bottom: -80px;
-    }
-
-    &-85-sm {
-      margin-bottom: -85px;
-    }
-
-    &-90-sm {
-      margin-bottom: -90px;
-    }
-
-    &-95-sm {
-      margin-bottom: -95px;
-    }
-
-    &-100-sm {
-      margin-bottom: -100px;
+  .#{$margin-x-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm {
+        @include group-mx-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-l} {
-    &-1-sm {
-      margin-left: -1px;
-    }
-
-    &-2-sm {
-      margin-left: -2px;
-    }
-
-    &-3-sm {
-      margin-left: -3px;
-    }
-
-    &-4-sm {
-      margin-left: -4px;
-    }
-
-    &-5-sm {
-      margin-left: -5px;
-    }
-
-    &-6-sm {
-      margin-left: -6px;
-    }
-
-    &-7-sm {
-      margin-left: -7px;
-    }
-
-    &-8-sm {
-      margin-left: -8px;
-    }
-
-    &-9-sm {
-      margin-left: -9px;
-    }
-
-    &-10-sm {
-      margin-left: -10px;
-    }
-
-    &-15-sm {
-      margin-left: -15px;
-    }
-
-    &-20-sm {
-      margin-left: -20px;
-    }
-
-    &-25-sm {
-      margin-left: -25px;
-    }
-
-    &-30-sm {
-      margin-left: -30px;
-    }
-
-    &-35-sm {
-      margin-left: -35px;
-    }
-
-    &-40-sm {
-      margin-left: -40px;
-    }
-
-    &-45-sm {
-      margin-left: -45px;
-    }
-
-    &-50-sm {
-      margin-left: -50px;
-    }
-
-    &-55-sm {
-      margin-left: -55px;
-    }
-
-    &-65-sm {
-      margin-left: -65px;
-    }
-
-    &-70-sm {
-      margin-left: -70px;
-    }
-
-    &-75-sm {
-      margin-left: -75px;
-    }
-
-    &-80-sm {
-      margin-left: -80px;
-    }
-
-    &-85-sm {
-      margin-left: -85px;
-    }
-
-    &-90-sm {
-      margin-left: -90px;
-    }
-
-    &-95-sm {
-      margin-left: -95px;
-    }
-
-    &-100-sm {
-      margin-left: -100px;
+  .#{$margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-mx-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-x} {
-    &-1-sm {
-      margin-left: -1px;
-      margin-right: -1px;
-    }
-
-    &-2-sm {
-      margin-left: -2px;
-      margin-right: -2px;
-    }
-
-    &-3-sm {
-      margin-left: -3px;
-      margin-right: -3px;
-    }
-
-    &-4-sm {
-      margin-left: -4px;
-      margin-right: -4px;
-    }
-
-    &-5-sm {
-      margin-left: -5px;
-      margin-right: -5px;
-    }
-
-    &-6-sm {
-      margin-left: -6px;
-      margin-right: -6px;
-    }
-
-    &-7-sm {
-      margin-left: -7px;
-      margin-right: -7px;
-    }
-
-    &-8-sm {
-      margin-left: -8px;
-      margin-right: -8px;
-    }
-
-    &-9-sm {
-      margin-left: -9px;
-      margin-right: -9px;
-    }
-
-    &-10-sm {
-      margin-left: -10px;
-      margin-right: -10px;
-    }
-
-    &-15-sm {
-      margin-left: -15px;
-      margin-right: -15px;
-    }
-
-    &-20-sm {
-      margin-left: -20px;
-      margin-right: -20px;
-    }
-
-    &-25-sm {
-      margin-left: -25px;
-      margin-right: -25px;
-    }
-
-    &-30-sm {
-      margin-left: -30px;
-      margin-right: -30px;
-    }
-
-    &-35-sm {
-      margin-left: -35px;
-      margin-right: -35px;
-    }
-
-    &-40-sm {
-      margin-left: -40px;
-      margin-right: -40px;
-    }
-
-    &-45-sm {
-      margin-left: -45px;
-      margin-right: -45px;
-    }
-
-    &-50-sm {
-      margin-left: -50px;
-      margin-right: -50px;
-    }
-
-    &-55-sm {
-      margin-left: -55px;
-      margin-right: -55px;
-    }
-
-    &-60-sm {
-      margin-left: -60px;
-      margin-right: -60px;
-    }
-
-    &-65-sm {
-      margin-left: -65px;
-      margin-right: -65px;
-    }
-
-    &-70-sm {
-      margin-left: -70px;
-      margin-right: -70px;
-    }
-
-    &-75-sm {
-      margin-left: -75px;
-      margin-right: -75px;
-    }
-
-    &-80-sm {
-      margin-left: -80px;
-      margin-right: -80px;
-    }
-
-    &-85-sm {
-      margin-left: -85px;
-      margin-right: -85px;
-    }
-
-    &-90-sm {
-      margin-left: -90px;
-      margin-right: -90px;
-    }
-
-    &-95-sm {
-      margin-left: -95px;
-      margin-right: -95px;
-    }
-
-    &-100-sm {
-      margin-left: -100px;
-      margin-right: -100px;
+  .#{$margin-y-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-sm {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-y} {
-    &-0-sm {
-      margin-top: -0;
-      margin-bottom: -0;
-    }
-
-    &-1-sm {
-      margin-top: -1px;
-      margin-bottom: -1px;
-    }
-
-    &-2-sm {
-      margin-top: -2px;
-      margin-bottom: -2px;
-    }
-
-    &-3-sm {
-      margin-top: -3px;
-      margin-bottom: -3px;
-    }
-
-    &-4-sm {
-      margin-top: -4px;
-      margin-bottom: -4px;
-    }
-
-    &-5-sm {
-      margin-top: -5px;
-      margin-bottom: -5px;
-    }
-
-    &-6-sm {
-      margin-top: -6px;
-      margin-bottom: -6px;
-    }
-
-    &-7-sm {
-      margin-top: -7px;
-      margin-bottom: -7px;
-    }
-
-    &-8-sm {
-      margin-top: -8px;
-      margin-bottom: -8px;
-    }
-
-    &-9-sm {
-      margin-top: -9px;
-      margin-bottom: -9px;
-    }
-
-    &-10-sm {
-      margin-top: -10px;
-      margin-bottom: -10px;
-    }
-
-    &-15-sm {
-      margin-top: -15px;
-      margin-bottom: -15px;
-    }
-
-    &-20-sm {
-      margin-top: -20px;
-      margin-bottom: -20px;
-    }
-
-    &-25-sm {
-      margin-top: -25px;
-      margin-bottom: -25px;
-    }
-
-    &-30-sm {
-      margin-top: -30px;
-      margin-bottom: -30px;
-    }
-
-    &-35-sm {
-      margin-top: -35px;
-      margin-bottom: -35px;
-    }
-
-    &-40-sm {
-      margin-top: -40px;
-      margin-bottom: -40px;
-    }
-
-    &-45-sm {
-      margin-top: -45px;
-      margin-bottom: -45px;
-    }
-
-    &-50-sm {
-      margin-top: -50px;
-      margin-bottom: -50px;
-    }
-
-    &-55-sm {
-      margin-top: -55px;
-      margin-bottom: -55px;
-    }
-
-    &-60-sm {
-      margin-top: -60px;
-      margin-bottom: -60px;
-    }
-
-    &-65-sm {
-      margin-top: -65px;
-      margin-bottom: -65px;
-    }
-
-    &-70-sm {
-      margin-top: -70px;
-      margin-bottom: -70px;
-    }
-
-    &-75-sm {
-      margin-top: -75px;
-      margin-bottom: -75px;
-    }
-
-    &-80-sm {
-      margin-top: -80px;
-      margin-bottom: -80px;
-    }
-
-    &-85-sm {
-      margin-top: -85px;
-      margin-bottom: -85px;
-    }
-
-    &-90-sm {
-      margin-top: -90px;
-      margin-bottom: -90px;
-    }
-
-    &-95-sm {
-      margin-top: -95px;
-      margin-bottom: -95px;
-    }
-
-    &-100-sm {
-      margin-top: -100px;
-      margin-bottom: -100px;
+  .#{$margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-sm {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
+  .#{$margin-out-top} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-sm {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-top} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-sm {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-sm {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-sm {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-sm {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-sm {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-sm {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
 }
 
-@media (max-width: 479px) {
-
-  .#{$group-m} {
-    &-0-xs > * {
-      margin: 0;
-    }
-
-    &-1-xs > * {
-      margin: 1px;
-    }
-
-    &-2-xs > * {
-      margin: 2px;
-    }
-
-    &-3-xs > * {
-      margin: 3px;
-    }
-
-    &-4-xs > * {
-      margin: 4px;
-    }
-
-    &-5-xs > * {
-      margin: 5px;
-    }
-
-    &-6-xs > * {
-      margin: 6px;
-    }
-
-    &-7-xs > * {
-      margin: 7px;
-    }
-
-    &-8-xs > * {
-      margin: 8px;
-    }
-
-    &-9-xs > * {
-      margin: 9px;
-    }
-
-    &-10-xs > * {
-      margin: 10px;
-    }
-
-    &-15-xs > * {
-      margin: 15px;
-    }
-
-    &-20-xs > * {
-      margin: 20px;
-    }
-
-    &-25-xs > * {
-      margin: 25px;
-    }
-
-    &-30-xs > * {
-      margin: 30px;
-    }
-
-    &-35-xs > * {
-      margin: 35px;
-    }
-
-    &-40-xs > * {
-      margin: 40px;
-    }
-
-    &-45-xs > * {
-      margin: 45px;
-    }
-
-    &-50-xs > * {
-      margin: 50px;
-    }
-
-    &-55-xs > * {
-      margin: 55px;
-    }
-
-    &-60-xs > * {
-      margin: 60px;
-    }
-
-    &-65-xs > * {
-      margin: 65px;
-    }
-
-    &-70-xs > * {
-      margin: 70px;
-    }
-
-    &-75-xs > * {
-      margin: 75px;
-    }
-
-    &-80-xs > * {
-      margin: 80px;
-    }
-
-    &-85-xs > * {
-      margin: 85px;
-    }
-
-    &-90-xs > * {
-      margin: 90px;
-    }
-
-    &-95-xs > * {
-      margin: 95px;
-    }
-
-    &-100-xs > * {
-      margin: 100px;
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$group-margin} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs > * {
+        @include group-m-variant($value);
+      }
     }
   }
 
-  .#{$group-mt} {
-    &-0-xs > * {
-      margin-top: 0;
-    }
-
-    &-1-xs > * {
-      margin-top: 1px;
-    }
-
-    &-2-xs > * {
-      margin-top: 2px;
-    }
-
-    &-3-xs > * {
-      margin-top: 3px;
-    }
-
-    &-4-xs > * {
-      margin-top: 4px;
-    }
-
-    &-5-xs > * {
-      margin-top: 5px;
-    }
-
-    &-6-xs > * {
-      margin-top: 6px;
-    }
-
-    &-7-xs > * {
-      margin-top: 7px;
-    }
-
-    &-8-xs > * {
-      margin-top: 8px;
-    }
-
-    &-9-xs > * {
-      margin-top: 9px;
-    }
-
-    &-10-xs > * {
-      margin-top: 10px;
-    }
-
-    &-15-xs > * {
-      margin-top: 15px;
-    }
-
-    &-20-xs > * {
-      margin-top: 20px;
-    }
-
-    &-25-xs > * {
-      margin-top: 25px;
-    }
-
-    &-30-xs > * {
-      margin-top: 30px;
-    }
-
-    &-35-xs > * {
-      margin-top: 35px;
-    }
-
-    &-40-xs > * {
-      margin-top: 40px;
-    }
-
-    &-45-xs > * {
-      margin-top: 45px;
-    }
-
-    &-50-xs > * {
-      margin-top: 50px;
-    }
-
-    &-55-xs > * {
-      margin-top: 55px;
-    }
-
-    &-60-xs > * {
-      margin-top: 60px;
-    }
-
-    &-65-xs > * {
-      margin-top: 65px;
-    }
-
-    &-70-xs > * {
-      margin-top: 70px;
-    }
-
-    &-75-xs > * {
-      margin-top: 75px;
-    }
-
-    &-80-xs > * {
-      margin-top: 80px;
-    }
-
-    &-85-xs > * {
-      margin-top: 85px;
-    }
-
-    &-90-xs > * {
-      margin-top: 90px;
-    }
-
-    &-95-xs > * {
-      margin-top: 95px;
-    }
-
-    &-100-xs > * {
-      margin-top: 100px;
+  .#{$group-margin} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-m-variant($value);
+      }
     }
   }
 
-  .#{$group-mr} {
-    &-0-xs > * {
-      margin-right: 0;
-    }
-
-    &-1-xs > * {
-      margin-right: 1px;
-    }
-
-    &-2-xs > * {
-      margin-right: 2px;
-    }
-
-    &-3-xs > * {
-      margin-right: 3px;
-    }
-
-    &-4-xs > * {
-      margin-right: 4px;
-    }
-
-    &-5-xs > * {
-      margin-right: 5px;
-    }
-
-    &-6-xs > * {
-      margin-right: 6px;
-    }
-
-    &-7-xs > * {
-      margin-right: 7px;
-    }
-
-    &-8-xs > * {
-      margin-right: 8px;
-    }
-
-    &-9-xs > * {
-      margin-right: 9px;
-    }
-
-    &-10-xs > * {
-      margin-right: 10px;
-    }
-
-    &-15-xs > * {
-      margin-right: 15px;
-    }
-
-    &-20-xs > * {
-      margin-right: 20px;
-    }
-
-    &-25-xs > * {
-      margin-right: 25px;
-    }
-
-    &-30-xs > * {
-      margin-right: 30px;
-    }
-
-    &-35-xs > * {
-      margin-right: 35px;
-    }
-
-    &-40-xs > * {
-      margin-right: 40px;
-    }
-
-    &-45-xs > * {
-      margin-right: 45px;
-    }
-
-    &-50-xs > * {
-      margin-right: 50px;
-    }
-
-    &-55-xs > * {
-      margin-right: 55px;
-    }
-
-    &-60-xs > * {
-      margin-right: 60px;
-    }
-
-    &-65-xs > * {
-      margin-right: 65px;
-    }
-
-    &-70-xs > * {
-      margin-right: 70px;
-    }
-
-    &-75-xs > * {
-      margin-right: 75px;
-    }
-
-    &-80-xs > * {
-      margin-right: 80px;
-    }
-
-    &-85-xs > * {
-      margin-right: 85px;
-    }
-
-    &-90-xs > * {
-      margin-right: 90px;
-    }
-
-    &-95-xs > * {
-      margin-right: 95px;
-    }
-
-    &-100-xs > * {
-      margin-right: 100px;
+  .#{$group-margin-top} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs > * {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$group-mb} {
-    &-0-xs > * {
-      margin-bottom: 0;
-    }
-
-    &-1-xs > * {
-      margin-bottom: 1px;
-    }
-
-    &-2-xs > * {
-      margin-bottom: 2px;
-    }
-
-    &-3-xs > * {
-      margin-bottom: 3px;
-    }
-
-    &-4-xs > * {
-      margin-bottom: 4px;
-    }
-
-    &-5-xs > * {
-      margin-bottom: 5px;
-    }
-
-    &-6-xs > * {
-      margin-bottom: 6px;
-    }
-
-    &-7-xs > * {
-      margin-bottom: 7px;
-    }
-
-    &-8-xs > * {
-      margin-bottom: 8px;
-    }
-
-    &-9-xs > * {
-      margin-bottom: 9px;
-    }
-
-    &-10-xs > * {
-      margin-bottom: 10px;
-    }
-
-    &-15-xs > * {
-      margin-bottom: 15px;
-    }
-
-    &-20-xs > * {
-      margin-bottom: 20px;
-    }
-
-    &-25-xs > * {
-      margin-bottom: 25px;
-    }
-
-    &-30-xs > * {
-      margin-bottom: 30px;
-    }
-
-    &-35-xs > * {
-      margin-bottom: 35px;
-    }
-
-    &-40-xs > * {
-      margin-bottom: 40px;
-    }
-
-    &-45-xs > * {
-      margin-bottom: 45px;
-    }
-
-    &-50-xs > * {
-      margin-bottom: 50px;
-    }
-
-    &-55-xs > * {
-      margin-bottom: 55px;
-    }
-
-    &-60-xs > * {
-      margin-bottom: 60px;
-    }
-
-    &-65-xs > * {
-      margin-bottom: 65px;
-    }
-
-    &-70-xs > * {
-      margin-bottom: 70px;
-    }
-
-    &-75-xs > * {
-      margin-bottom: 75px;
-    }
-
-    &-80-xs > * {
-      margin-bottom: 80px;
-    }
-
-    &-85-xs > * {
-      margin-bottom: 85px;
-    }
-
-    &-90-xs > * {
-      margin-bottom: 90px;
-    }
-
-    &-95-xs > * {
-      margin-bottom: 95px;
-    }
-
-    &-100-xs > * {
-      margin-bottom: 100px;
+  .#{$group-margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$group-ml} {
-    &-0-xs > * {
-      margin-left: 0;
-    }
-
-    &-1-xs > * {
-      margin-left: 1px;
-    }
-
-    &-2-xs > * {
-      margin-left: 2px;
-    }
-
-    &-3-xs > * {
-      margin-left: 3px;
-    }
-
-    &-4-xs > * {
-      margin-left: 4px;
-    }
-
-    &-5-xs > * {
-      margin-left: 5px;
-    }
-
-    &-6-xs > * {
-      margin-left: 6px;
-    }
-
-    &-7-xs > * {
-      margin-left: 7px;
-    }
-
-    &-8-xs > * {
-      margin-left: 8px;
-    }
-
-    &-9-xs > * {
-      margin-left: 9px;
-    }
-
-    &-10-xs > * {
-      margin-left: 10px;
-    }
-
-    &-15-xs > * {
-      margin-left: 15px;
-    }
-
-    &-20-xs > * {
-      margin-left: 20px;
-    }
-
-    &-25-xs > * {
-      margin-left: 25px;
-    }
-
-    &-30-xs > * {
-      margin-left: 30px;
-    }
-
-    &-35-xs > * {
-      margin-left: 35px;
-    }
-
-    &-40-xs > * {
-      margin-left: 40px;
-    }
-
-    &-45-xs > * {
-      margin-left: 45px;
-    }
-
-    &-50-xs > * {
-      margin-left: 50px;
-    }
-
-    &-55-xs > * {
-      margin-left: 55px;
-    }
-
-    &-60-xs > * {
-      margin-left: 60px;
-    }
-
-    &-65-xs > * {
-      margin-left: 65px;
-    }
-
-    &-70-xs > * {
-      margin-left: 70px;
-    }
-
-    &-75-xs > * {
-      margin-left: 75px;
-    }
-
-    &-80-xs > * {
-      margin-left: 80px;
-    }
-
-    &-85-xs > * {
-      margin-left: 85px;
-    }
-
-    &-90-xs > * {
-      margin-left: 90px;
-    }
-
-    &-95-xs > * {
-      margin-left: 95px;
-    }
-
-    &-100-xs > * {
-      margin-left: 100px;
+  .#{$group-margin-right} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs > * {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$group-mx} {
-    &-0-xs > * {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    &-1-xs > * {
-      margin-left: 1px;
-      margin-right: 1px;
-    }
-
-    &-2-xs > * {
-      margin-left: 2px;
-      margin-right: 2px;
-    }
-
-    &-3-xs > * {
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-
-    &-4-xs > * {
-      margin-left: 4px;
-      margin-right: 4px;
-    }
-
-    &-5-xs > * {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    &-6-xs > * {
-      margin-left: 6px;
-      margin-right: 6px;
-    }
-
-    &-7-xs > * {
-      margin-left: 7px;
-      margin-right: 7px;
-    }
-
-    &-8-xs > * {
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-
-    &-9-xs > * {
-      margin-left: 9px;
-      margin-right: 9px;
-    }
-
-    &-10-xs > * {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    &-15-xs > * {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    &-20-xs > * {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-
-    &-25-xs > * {
-      margin-left: 25px;
-      margin-right: 25px;
-    }
-
-    &-30-xs > * {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-
-    &-35-xs > * {
-      margin-left: 35px;
-      margin-right: 35px;
-    }
-
-    &-40-xs > * {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    &-45-xs > * {
-      margin-left: 45px;
-      margin-right: 45px;
-    }
-
-    &-50-xs > * {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    &-55-xs > * {
-      margin-left: 55px;
-      margin-right: 55px;
-    }
-
-    &-60-xs > * {
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-
-    &-65-xs > * {
-      margin-left: 65px;
-      margin-right: 65px;
-    }
-
-    &-70-xs > * {
-      margin-left: 70px;
-      margin-right: 70px;
-    }
-
-    &-75-xs > * {
-      margin-left: 75px;
-      margin-right: 75px;
-    }
-
-    &-80-xs > * {
-      margin-left: 80px;
-      margin-right: 80px;
-    }
-
-    &-85-xs > * {
-      margin-left: 85px;
-      margin-right: 85px;
-    }
-
-    &-90-xs > * {
-      margin-left: 90px;
-      margin-right: 90px;
-    }
-
-    &-95-xs > * {
-      margin-left: 95px;
-      margin-right: 95px;
-    }
-
-    &-100-xs > * {
-      margin-left: 100px;
-      margin-right: 100px;
+  .#{$group-margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$group-my} {
-    &-0-xs > * {
-      margin-top: 0;
-      margin-bottom: 0;
+  .#{$group-margin-bottom} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs > * {
+        @include group-mb-variant($value);
+      }
     }
+  }
 
-    &-1-xs > * {
-      margin-top: 1px;
-      margin-bottom: 1px;
+  .#{$group-margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-mb-variant($value);
+      }
     }
+  }
 
-    &-2-xs > * {
-      margin-top: 2px;
-      margin-bottom: 2px;
+  .#{$group-margin-left} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs > * {
+        @include group-ml-variant($value);
+      }
     }
+  }
 
-    &-3-xs > * {
-      margin-top: 3px;
-      margin-bottom: 3px;
+  .#{$group-margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-ml-variant($value);
+      }
     }
+  }
 
-    &-4-xs > * {
-      margin-top: 4px;
-      margin-bottom: 4px;
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs > * {
+        @include group-mx-variant($value, $value);
+      }
     }
+  }
 
-    &-5-xs > * {
-      margin-top: 5px;
-      margin-bottom: 5px;
+  .#{$group-margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-mx-variant($value, $value);
+      }
     }
+  }
 
-    &-6-xs > * {
-      margin-top: 6px;
-      margin-bottom: 6px;
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs > * {
+        @include group-my-variant($value, $value);
+      }
     }
+  }
 
-    &-7-xs > * {
-      margin-top: 7px;
-      margin-bottom: 7px;
-    }
-
-    &-8-xs > * {
-      margin-top: 8px;
-      margin-bottom: 8px;
-    }
-
-    &-9-xs > * {
-      margin-top: 9px;
-      margin-bottom: 9px;
-    }
-
-    &-10-xs > * {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    &-15-xs > * {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    &-20-xs > * {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    &-25-xs > * {
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
-
-    &-30-xs > * {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    &-35-xs > * {
-      margin-top: 35px;
-      margin-bottom: 35px;
-    }
-
-    &-40-xs > * {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-
-    &-45-xs > * {
-      margin-top: 45px;
-      margin-bottom: 45px;
-    }
-
-    &-50-xs > * {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-
-    &-55-xs > * {
-      margin-top: 55px;
-      margin-bottom: 55px;
-    }
-
-    &-60-xs > * {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-
-    &-65-xs > * {
-      margin-top: 65px;
-      margin-bottom: 65px;
-    }
-
-    &-70-xs > * {
-      margin-top: 70px;
-      margin-bottom: 70px;
-    }
-
-    &-75-xs > * {
-      margin-top: 75px;
-      margin-bottom: 75px;
-    }
-
-    &-80-xs > * {
-      margin-top: 80px;
-      margin-bottom: 80px;
-    }
-
-    &-85-xs > * {
-      margin-top: 85px;
-      margin-bottom: 85px;
-    }
-
-    &-90-xs > * {
-      margin-top: 90px;
-      margin-bottom: 90px;
-    }
-
-    &-95-xs > * {
-      margin-top: 95px;
-      margin-bottom: 95px;
-    }
-
-    &-100-xs > * {
-      margin-top: 100px;
-      margin-bottom: 100px;
+  .#{$group-margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs > * {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
@@ -11011,1626 +1534,241 @@
       margin: 0;
     }
 
-    &-0-xs {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs {
+        @include margin-pixel-variant($value);
+      }
+    }
+  }
+
+  .#{$margin} {
+    &-center-xs {
+      margin: 0 auto;
+    }
+
+    &-all-0-xs,
+    &-all-0-xs > *,
+    &-all-0-xs * {
       margin: 0;
     }
 
-    &-1-xs {
-      margin: 1px;
-    }
-
-    &-2-xs {
-      margin: 2px;
-    }
-
-    &-3-xs {
-      margin: 3px;
-    }
-
-    &-4-xs {
-      margin: 4px;
-    }
-
-    &-5-xs {
-      margin: 5px;
-    }
-
-    &-6-xs {
-      margin: 6px;
-    }
-
-    &-7-xs {
-      margin: 7px;
-    }
-
-    &-8-xs {
-      margin: 8px;
-    }
-
-    &-9-xs {
-      margin: 9px;
-    }
-
-    &-10-xs {
-      margin: 10px;
-    }
-
-    &-15-xs {
-      margin: 15px;
-    }
-
-    &-20-xs {
-      margin: 20px;
-    }
-
-    &-25-xs {
-      margin: 25px;
-    }
-
-    &-30-xs {
-      margin: 30px;
-    }
-
-    &-35-xs {
-      margin: 35px;
-    }
-
-    &-40-xs {
-      margin: 50px;
-    }
-
-    &-45-xs {
-      margin: 45px;
-    }
-
-    &-50-xs {
-      margin: 50px;
-    }
-
-    &-55-xs {
-      margin: 55px;
-    }
-
-    &-60-xs {
-      margin: 60px;
-    }
-
-    &-65-xs {
-      margin: 65px;
-    }
-
-    &-70-xs {
-      margin: 70px;
-    }
-
-    &-75-xs {
-      margin: 75px;
-    }
-
-    &-80-xs {
-      margin: 80px;
-    }
-
-    &-85-xs {
-      margin: 85px;
-    }
-
-    &-90-xs {
-      margin: 90px;
-    }
-
-    &-95-xs {
-      margin: 95px;
-    }
-
-    &-100-xs {
-      margin: 100px;
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include margin-pixel-variant($value);
+      }
     }
   }
 
-  .#{$margin-t} {
-    &-0-xs {
-      margin-top: 0;
-    }
-
-    &-1-xs {
-      margin-top: 1px;
-    }
-
-    &-2-xs {
-      margin-top: 2px;
-    }
-
-    &-3-xs {
-      margin-top: 3px;
-    }
-
-    &-4-xs {
-      margin-top: 4px;
-    }
-
-    &-5-xs {
-      margin-top: 5px;
-    }
-
-    &-6-xs {
-      margin-top: 6px;
-    }
-
-    &-7-xs {
-      margin-top: 7px;
-    }
-
-    &-8-xs {
-      margin-top: 8px;
-    }
-
-    &-9-xs {
-      margin-top: 9px;
-    }
-
-    &-10-xs {
-      margin-top: 10px;
-    }
-
-    &-15-xs {
-      margin-top: 15px;
-    }
-
-    &-20-xs {
-      margin-top: 20px;
-    }
-
-    &-25-xs {
-      margin-top: 25px;
-    }
-
-    &-30-xs {
-      margin-top: 30px;
-    }
-
-    &-35-xs {
-      margin-top: 35px;
-    }
-
-    &-40-xs {
-      margin-top: 40px;
-    }
-
-    &-45-xs {
-      margin-top: 45px;
-    }
-
-    &-50-xs {
-      margin-top: 50px;
-    }
-
-    &-55-xs {
-      margin-top: 55px;
-    }
-
-    &-60-xs {
-      margin-top: 60px;
-    }
-
-    &-65-xs {
-      margin-top: 65px;
-    }
-
-    &-70-xs {
-      margin-top: 70px;
-    }
-
-    &-75-xs {
-      margin-top: 75px;
-    }
-
-    &-80-xs {
-      margin-top: 80px;
-    }
-
-    &-85-xs {
-      margin-top: 85px;
-    }
-
-    &-90-xs {
-      margin-top: 50px;
-    }
-
-    &-95-xs {
-      margin-top: 95px;
-    }
-
-    &-100-xs {
-      margin-top: 100px;
+  .#{$margin-top} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$margin-r} {
-    &-0-xs {
-      margin-right: 0;
-    }
-
-    &-1-xs {
-      margin-right: 1px;
-    }
-
-    &-2-xs {
-      margin-right: 2px;
-    }
-
-    &-3-xs {
-      margin-right: 3px;
-    }
-
-    &-4-xs {
-      margin-right: 4px;
-    }
-
-    &-5-xs {
-      margin-right: 5px;
-    }
-
-    &-6-xs {
-      margin-right: 6px;
-    }
-
-    &-7-xs {
-      margin-right: 7px;
-    }
-
-    &-8-xs {
-      margin-right: 8px;
-    }
-
-    &-9-xs {
-      margin-right: 9px;
-    }
-
-    &-10-xs {
-      margin-right: 10px;
-    }
-
-    &-15-xs {
-      margin-right: 15px;
-    }
-
-    &-20-xs {
-      margin-right: 20px;
-    }
-
-    &-25-xs {
-      margin-right: 25px;
-    }
-
-    &-30-xs {
-      margin-right: 30px;
-    }
-
-    &-35-xs {
-      margin-right: 35px;
-    }
-
-    &-40-xs {
-      margin-right: 40px;
-    }
-
-    &-45-xs {
-      margin-right: 45px;
-    }
-
-    &-50-xs {
-      margin-right: 50px;
-    }
-
-    &-55-xs {
-      margin-right: 55px;
-    }
-
-    &-60-xs {
-      margin-right: 60px;
-    }
-
-    &-65-xs {
-      margin-right: 65px;
-    }
-
-    &-70-xs {
-      margin-right: 70px;
-    }
-
-    &-75-xs {
-      margin-right: 75px;
-    }
-
-    &-80-xs {
-      margin-right: 80px;
-    }
-
-    &-85-xs {
-      margin-right: 85px;
-    }
-
-    &-90-xs {
-      margin-right: 90px;
-    }
-
-    &-95-xs {
-      margin-right: 95px;
-    }
-
-    &-100-xs {
-      margin-right: 100px;
+  .#{$margin-top} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-mt-variant($value);
+      }
     }
   }
 
-  .#{$margin-b} {
-    &-0-xs {
-      margin-bottom: 0;
-    }
-
-    &-1-xs {
-      margin-bottom: 1px;
-    }
-
-    &-2-xs {
-      margin-bottom: 2px;
-    }
-
-    &-3-xs {
-      margin-bottom: 3px;
-    }
-
-    &-4-xs {
-      margin-bottom: 4px;
-    }
-
-    &-5-xs {
-      margin-bottom: 5px;
-    }
-
-    &-6-xs {
-      margin-bottom: 6px;
-    }
-
-    &-7-xs {
-      margin-bottom: 7px;
-    }
-
-    &-8-xs {
-      margin-bottom: 8px;
-    }
-
-    &-9-xs {
-      margin-bottom: 9px;
-    }
-
-    &-10-xs {
-      margin-bottom: 10px;
-    }
-
-    &-15-xs {
-      margin-bottom: 15px;
-    }
-
-    &-20-xs {
-      margin-bottom: 20px;
-    }
-
-    &-25-xs {
-      margin-bottom: 25px;
-    }
-
-    &-30-xs {
-      margin-bottom: 30px;
-    }
-
-    &-35-xs {
-      margin-bottom: 35px;
-    }
-
-    &-40-xs {
-      margin-bottom: 40px;
-    }
-
-    &-45-xs {
-      margin-bottom: 45px;
-    }
-
-    &-50-xs {
-      margin-bottom: 50px;
-    }
-
-    &-55-xs {
-      margin-bottom: 55px;
-    }
-
-    &-60-xs {
-      margin-bottom: 60px;
-    }
-
-    &-65-xs {
-      margin-bottom: 65px;
-    }
-
-    &-70-xs {
-      margin-bottom: 70px;
-    }
-
-    &-75-xs {
-      margin-bottom: 75px;
-    }
-
-    &-80-xs {
-      margin-bottom: 80px;
-    }
-
-    &-85-xs {
-      margin-bottom: 85px;
-    }
-
-    &-90-xs {
-      margin-bottom: 90px;
-    }
-
-    &-95-xs {
-      margin-bottom: 95px;
-    }
-
-    &-100-xs {
-      margin-bottom: 100px;
+  .#{$margin-right} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$margin-l} {
-    &-0-xs {
-      margin-left: 0;
-    }
-
-    &-1-xs {
-      margin-left: 1px;
-    }
-
-    &-2-xs {
-      margin-left: 2px;
-    }
-
-    &-3-xs {
-      margin-left: 3px;
-    }
-
-    &-4-xs {
-      margin-left: 4px;
-    }
-
-    &-5-xs {
-      margin-left: 5px;
-    }
-
-    &-6-xs {
-      margin-left: 6px;
-    }
-
-    &-7-xs {
-      margin-left: 7px;
-    }
-
-    &-8-xs {
-      margin-left: 8px;
-    }
-
-    &-9-xs {
-      margin-left: 9px;
-    }
-
-    &-10-xs {
-      margin-left: 10px;
-    }
-
-    &-15-xs {
-      margin-left: 15px;
-    }
-
-    &-20-xs {
-      margin-left: 20px;
-    }
-
-    &-25-xs {
-      margin-left: 25px;
-    }
-
-    &-30-xs {
-      margin-left: 30px;
-    }
-
-    &-35-xs {
-      margin-left: 35px;
-    }
-
-    &-40-xs {
-      margin-left: 40px;
-    }
-
-    &-45-xs {
-      margin-left: 45px;
-    }
-
-    &-50-xs {
-      margin-left: 50px;
-    }
-
-    &-55-xs {
-      margin-left: 55px;
-    }
-
-    &-65-xs {
-      margin-left: 65px;
-    }
-
-    &-70-xs {
-      margin-left: 70px;
-    }
-
-    &-75-xs {
-      margin-left: 75px;
-    }
-
-    &-80-xs {
-      margin-left: 80px;
-    }
-
-    &-85-xs {
-      margin-left: 85px;
-    }
-
-    &-90-xs {
-      margin-left: 90px;
-    }
-
-    &-95-xs {
-      margin-left: 95px;
-    }
-
-    &-100-xs {
-      margin-left: 100px;
+  .#{$margin-right} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-mr-variant($value);
+      }
     }
   }
 
-  .#{$margin-x} {
-    &-0-xs {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    &-1-xs {
-      margin-left: 1px;
-      margin-right: 1px;
-    }
-
-    &-2-xs {
-      margin-left: 2px;
-      margin-right: 2px;
-    }
-
-    &-3-xs {
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-
-    &-4-xs {
-      margin-left: 4px;
-      margin-right: 4px;
-    }
-
-    &-5-xs {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    &-6-xs {
-      margin-left: 6px;
-      margin-right: 6px;
-    }
-
-    &-7-xs {
-      margin-left: 7px;
-      margin-right: 7px;
-    }
-
-    &-8-xs {
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-
-    &-9-xs {
-      margin-left: 9px;
-      margin-right: 9px;
-    }
-
-    &-10-xs {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    &-15-xs {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    &-20-xs {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-
-    &-25-xs {
-      margin-left: 25px;
-      margin-right: 25px;
-    }
-
-    &-30-xs {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-
-    &-35-xs {
-      margin-left: 35px;
-      margin-right: 35px;
-    }
-
-    &-40-xs {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
-    &-45-xs {
-      margin-left: 45px;
-      margin-right: 45px;
-    }
-
-    &-50-xs {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    &-55-xs {
-      margin-left: 55px;
-      margin-right: 55px;
-    }
-
-    &-60-xs {
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-
-    &-65-xs {
-      margin-left: 65px;
-      margin-right: 65px;
-    }
-
-    &-70-xs {
-      margin-left: 70px;
-      margin-right: 70px;
-    }
-
-    &-75-xs {
-      margin-left: 75px;
-      margin-right: 75px;
-    }
-
-    &-80-xs {
-      margin-left: 80px;
-      margin-right: 80px;
-    }
-
-    &-85-xs {
-      margin-left: 85px;
-      margin-right: 85px;
-    }
-
-    &-90-xs {
-      margin-left: 90px;
-      margin-right: 90px;
-    }
-
-    &-95-xs {
-      margin-left: 95px;
-      margin-right: 95px;
-    }
-
-    &-100-xs {
-      margin-left: 100px;
-      margin-right: 100px;
+  .#{$margin-bottom} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs {
+        @include group-mb-variant($value);
+      }
     }
   }
 
-  .#{$margin-y} {
-    &-0-xs {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &-1-xs {
-      margin-top: 1px;
-      margin-bottom: 1px;
-    }
-
-    &-2-xs {
-      margin-top: 2px;
-      margin-bottom: 2px;
-    }
-
-    &-3-xs {
-      margin-top: 3px;
-      margin-bottom: 3px;
-    }
-
-    &-4-xs {
-      margin-top: 4px;
-      margin-bottom: 4px;
-    }
-
-    &-5-xs {
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-
-    &-6-xs {
-      margin-top: 6px;
-      margin-bottom: 6px;
-    }
-
-    &-7-xs {
-      margin-top: 7px;
-      margin-bottom: 7px;
-    }
-
-    &-8-xs {
-      margin-top: 8px;
-      margin-bottom: 8px;
-    }
-
-    &-9-xs {
-      margin-top: 9px;
-      margin-bottom: 9px;
-    }
-
-    &-10-xs {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    &-15-xs {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    &-20-xs {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    &-25-xs {
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
-
-    &-30-xs {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    &-35-xs {
-      margin-top: 35px;
-      margin-bottom: 35px;
-    }
-
-    &-40-xs {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-
-    &-45-xs {
-      margin-top: 45px;
-      margin-bottom: 45px;
-    }
-
-    &-50-xs {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-
-    &-55-xs {
-      margin-top: 55px;
-      margin-bottom: 55px;
-    }
-
-    &-60-xs {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-
-    &-65-xs {
-      margin-top: 65px;
-      margin-bottom: 65px;
-    }
-
-    &-70-xs {
-      margin-top: 70px;
-      margin-bottom: 70px;
-    }
-
-    &-75-xs {
-      margin-top: 75px;
-      margin-bottom: 75px;
-    }
-
-    &-80-xs {
-      margin-top: 80px;
-      margin-bottom: 80px;
-    }
-
-    &-85-xs {
-      margin-top: 85px;
-      margin-bottom: 85px;
-    }
-
-    &-90-xs {
-      margin-top: 90px;
-      margin-bottom: 90px;
-    }
-
-    &-95-xs {
-      margin-top: 95px;
-      margin-bottom: 95px;
-    }
-
-    &-100-xs {
-      margin-top: 100px;
-      margin-bottom: 100px;
+  .#{$margin-bottom} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-mb-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-t} {
-    &-1-xs {
-      margin-top: -1px;
-    }
-
-    &-2-xs {
-      margin-top: -2px;
-    }
-
-    &-3-xs {
-      margin-top: -3px;
-    }
-
-    &-4-xs {
-      margin-top: -4px;
-    }
-
-    &-5-xs {
-      margin-top: -5px;
-    }
-
-    &-6-xs {
-      margin-top: -6px;
-    }
-
-    &-7-xs {
-      margin-top: -7px;
-    }
-
-    &-8-xs {
-      margin-top: -8px;
-    }
-
-    &-9-xs {
-      margin-top: -9px;
-    }
-
-    &-10-xs {
-      margin-top: -10px;
-    }
-
-    &-15-xs {
-      margin-top: -15px;
-    }
-
-    &-20-xs {
-      margin-top: -20px;
-    }
-
-    &-25-xs {
-      margin-top: -25px;
-    }
-
-    &-30-xs {
-      margin-top: -30px;
-    }
-
-    &-35-xs {
-      margin-top: -35px;
-    }
-
-    &-40-xs {
-      margin-top: -40px;
-    }
-
-    &-45-xs {
-      margin-top: -45px;
-    }
-
-    &-50-xs {
-      margin-top: -50px;
-    }
-
-    &-55-xs {
-      margin-top: -55px;
-    }
-
-    &-60-xs {
-      margin-top: -60px;
-    }
-
-    &-65-xs {
-      margin-top: -65px;
-    }
-
-    &-70-xs {
-      margin-top: -70px;
-    }
-
-    &-75-xs {
-      margin-top: -75px;
-    }
-
-    &-80-xs {
-      margin-top: -80px;
-    }
-
-    &-85-xs {
-      margin-top: -85px;
-    }
-
-    &-90-xs {
-      margin-top: -50px;
-    }
-
-    &-95-xs {
-      margin-top: -95px;
-    }
-
-    &-100-xs {
-      margin-top: -100px;
+  .#{$margin-left} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs {
+        @include group-ml-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-r} {
-    &-1-xs {
-      margin-right: -1px;
-    }
-
-    &-2-xs {
-      margin-right: -2px;
-    }
-
-    &-3-xs {
-      margin-right: -3px;
-    }
-
-    &-4-xs {
-      margin-right: -4px;
-    }
-
-    &-5-xs {
-      margin-right: -5px;
-    }
-
-    &-6-xs {
-      margin-right: -6px;
-    }
-
-    &-7-xs {
-      margin-right: -7px;
-    }
-
-    &-8-xs {
-      margin-right: -8px;
-    }
-
-    &-9-xs {
-      margin-right: -9px;
-    }
-
-    &-10-xs {
-      margin-right: -10px;
-    }
-
-    &-15-xs {
-      margin-right: -15px;
-    }
-
-    &-20-xs {
-      margin-right: -20px;
-    }
-
-    &-25-xs {
-      margin-right: -25px;
-    }
-
-    &-30-xs {
-      margin-right: -30px;
-    }
-
-    &-35-xs {
-      margin-right: -35px;
-    }
-
-    &-40-xs {
-      margin-right: -40px;
-    }
-
-    &-45-xs {
-      margin-right: -45px;
-    }
-
-    &-50-xs {
-      margin-right: -50px;
-    }
-
-    &-55-xs {
-      margin-right: -55px;
-    }
-
-    &-60-xs {
-      margin-right: -60px;
-    }
-
-    &-65-xs {
-      margin-right: -65px;
-    }
-
-    &-70-xs {
-      margin-right: -70px;
-    }
-
-    &-75-xs {
-      margin-right: -75px;
-    }
-
-    &-80-xs {
-      margin-right: -80px;
-    }
-
-    &-85-xs {
-      margin-right: -85px;
-    }
-
-    &-90-xs {
-      margin-right: -90px;
-    }
-
-    &-95-xs {
-      margin-right: -95px;
-    }
-
-    &-100-xs {
-      margin-right: -100px;
+  .#{$margin-left} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-ml-variant($value);
+      }
     }
   }
 
-  .#{$margin-out-b} {
-    &-1-xs {
-      margin-bottom: -1px;
-    }
-
-    &-2-xs {
-      margin-bottom: -2px;
-    }
-
-    &-3-xs {
-      margin-bottom: -3px;
-    }
-
-    &-4-xs {
-      margin-bottom: -4px;
-    }
-
-    &-5-xs {
-      margin-bottom: -5px;
-    }
-
-    &-6-xs {
-      margin-bottom: -6px;
-    }
-
-    &-7-xs {
-      margin-bottom: -7px;
-    }
-
-    &-8-xs {
-      margin-bottom: -8px;
-    }
-
-    &-9-xs {
-      margin-bottom: -9px;
-    }
-
-    &-10-xs {
-      margin-bottom: -10px;
-    }
-
-    &-15-xs {
-      margin-bottom: -15px;
-    }
-
-    &-20-xs {
-      margin-bottom: -20px;
-    }
-
-    &-25-xs {
-      margin-bottom: -25px;
-    }
-
-    &-30-xs {
-      margin-bottom: -30px;
-    }
-
-    &-35-xs {
-      margin-bottom: -35px;
-    }
-
-    &-40-xs {
-      margin-bottom: -40px;
-    }
-
-    &-45-xs {
-      margin-bottom: -45px;
-    }
-
-    &-50-xs {
-      margin-bottom: -50px;
-    }
-
-    &-55-xs {
-      margin-bottom: -55px;
-    }
-
-    &-60-xs {
-      margin-bottom: -60px;
-    }
-
-    &-65-xs {
-      margin-bottom: -65px;
-    }
-
-    &-70-xs {
-      margin-bottom: -70px;
-    }
-
-    &-75-xs {
-      margin-bottom: -75px;
-    }
-
-    &-80-xs {
-      margin-bottom: -80px;
-    }
-
-    &-85-xs {
-      margin-bottom: -85px;
-    }
-
-    &-90-xs {
-      margin-bottom: -90px;
-    }
-
-    &-95-xs {
-      margin-bottom: -95px;
-    }
-
-    &-100-xs {
-      margin-bottom: -100px;
+  .#{$margin-x-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs {
+        @include group-mx-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-l} {
-    &-1-xs {
-      margin-left: -1px;
-    }
-
-    &-2-xs {
-      margin-left: -2px;
-    }
-
-    &-3-xs {
-      margin-left: -3px;
-    }
-
-    &-4-xs {
-      margin-left: -4px;
-    }
-
-    &-5-xs {
-      margin-left: -5px;
-    }
-
-    &-6-xs {
-      margin-left: -6px;
-    }
-
-    &-7-xs {
-      margin-left: -7px;
-    }
-
-    &-8-xs {
-      margin-left: -8px;
-    }
-
-    &-9-xs {
-      margin-left: -9px;
-    }
-
-    &-10-xs {
-      margin-left: -10px;
-    }
-
-    &-15-xs {
-      margin-left: -15px;
-    }
-
-    &-20-xs {
-      margin-left: -20px;
-    }
-
-    &-25-xs {
-      margin-left: -25px;
-    }
-
-    &-30-xs {
-      margin-left: -30px;
-    }
-
-    &-35-xs {
-      margin-left: -35px;
-    }
-
-    &-40-xs {
-      margin-left: -40px;
-    }
-
-    &-45-xs {
-      margin-left: -45px;
-    }
-
-    &-50-xs {
-      margin-left: -50px;
-    }
-
-    &-55-xs {
-      margin-left: -55px;
-    }
-
-    &-65-xs {
-      margin-left: -65px;
-    }
-
-    &-70-xs {
-      margin-left: -70px;
-    }
-
-    &-75-xs {
-      margin-left: -75px;
-    }
-
-    &-80-xs {
-      margin-left: -80px;
-    }
-
-    &-85-xs {
-      margin-left: -85px;
-    }
-
-    &-90-xs {
-      margin-left: -90px;
-    }
-
-    &-95-xs {
-      margin-left: -95px;
-    }
-
-    &-100-xs {
-      margin-left: -100px;
+  .#{$margin-x-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-mx-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-x} {
-    &-1-xs {
-      margin-left: -1px;
-      margin-right: -1px;
-    }
-
-    &-2-xs {
-      margin-left: -2px;
-      margin-right: -2px;
-    }
-
-    &-3-xs {
-      margin-left: -3px;
-      margin-right: -3px;
-    }
-
-    &-4-xs {
-      margin-left: -4px;
-      margin-right: -4px;
-    }
-
-    &-5-xs {
-      margin-left: -5px;
-      margin-right: -5px;
-    }
-
-    &-6-xs {
-      margin-left: -6px;
-      margin-right: -6px;
-    }
-
-    &-7-xs {
-      margin-left: -7px;
-      margin-right: -7px;
-    }
-
-    &-8-xs {
-      margin-left: -8px;
-      margin-right: -8px;
-    }
-
-    &-9-xs {
-      margin-left: -9px;
-      margin-right: -9px;
-    }
-
-    &-10-xs {
-      margin-left: -10px;
-      margin-right: -10px;
-    }
-
-    &-15-xs {
-      margin-left: -15px;
-      margin-right: -15px;
-    }
-
-    &-20-xs {
-      margin-left: -20px;
-      margin-right: -20px;
-    }
-
-    &-25-xs {
-      margin-left: -25px;
-      margin-right: -25px;
-    }
-
-    &-30-xs {
-      margin-left: -30px;
-      margin-right: -30px;
-    }
-
-    &-35-xs {
-      margin-left: -35px;
-      margin-right: -35px;
-    }
-
-    &-40-xs {
-      margin-left: -40px;
-      margin-right: -40px;
-    }
-
-    &-45-xs {
-      margin-left: -45px;
-      margin-right: -45px;
-    }
-
-    &-50-xs {
-      margin-left: -50px;
-      margin-right: -50px;
-    }
-
-    &-55-xs {
-      margin-left: -55px;
-      margin-right: -55px;
-    }
-
-    &-60-xs {
-      margin-left: -60px;
-      margin-right: -60px;
-    }
-
-    &-65-xs {
-      margin-left: -65px;
-      margin-right: -65px;
-    }
-
-    &-70-xs {
-      margin-left: -70px;
-      margin-right: -70px;
-    }
-
-    &-75-xs {
-      margin-left: -75px;
-      margin-right: -75px;
-    }
-
-    &-80-xs {
-      margin-left: -80px;
-      margin-right: -80px;
-    }
-
-    &-85-xs {
-      margin-left: -85px;
-      margin-right: -85px;
-    }
-
-    &-90-xs {
-      margin-left: -90px;
-      margin-right: -90px;
-    }
-
-    &-95-xs {
-      margin-left: -95px;
-      margin-right: -95px;
-    }
-
-    &-100-xs {
-      margin-left: -100px;
-      margin-right: -100px;
+  .#{$margin-y-axis} {
+    @each $key, $value in $group-m-series {
+      &-#{$key}-xs {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
-  .#{$margin-out-y} {
-    &-0-xs {
-      margin-top: -0;
-      margin-bottom: -0;
-    }
-
-    &-1-xs {
-      margin-top: -1px;
-      margin-bottom: -1px;
-    }
-
-    &-2-xs {
-      margin-top: -2px;
-      margin-bottom: -2px;
-    }
-
-    &-3-xs {
-      margin-top: -3px;
-      margin-bottom: -3px;
-    }
-
-    &-4-xs {
-      margin-top: -4px;
-      margin-bottom: -4px;
-    }
-
-    &-5-xs {
-      margin-top: -5px;
-      margin-bottom: -5px;
-    }
-
-    &-6-xs {
-      margin-top: -6px;
-      margin-bottom: -6px;
-    }
-
-    &-7-xs {
-      margin-top: -7px;
-      margin-bottom: -7px;
-    }
-
-    &-8-xs {
-      margin-top: -8px;
-      margin-bottom: -8px;
-    }
-
-    &-9-xs {
-      margin-top: -9px;
-      margin-bottom: -9px;
-    }
-
-    &-10-xs {
-      margin-top: -10px;
-      margin-bottom: -10px;
-    }
-
-    &-15-xs {
-      margin-top: -15px;
-      margin-bottom: -15px;
-    }
-
-    &-20-xs {
-      margin-top: -20px;
-      margin-bottom: -20px;
-    }
-
-    &-25-xs {
-      margin-top: -25px;
-      margin-bottom: -25px;
-    }
-
-    &-30-xs {
-      margin-top: -30px;
-      margin-bottom: -30px;
-    }
-
-    &-35-xs {
-      margin-top: -35px;
-      margin-bottom: -35px;
-    }
-
-    &-40-xs {
-      margin-top: -40px;
-      margin-bottom: -40px;
-    }
-
-    &-45-xs {
-      margin-top: -45px;
-      margin-bottom: -45px;
-    }
-
-    &-50-xs {
-      margin-top: -50px;
-      margin-bottom: -50px;
-    }
-
-    &-55-xs {
-      margin-top: -55px;
-      margin-bottom: -55px;
-    }
-
-    &-60-xs {
-      margin-top: -60px;
-      margin-bottom: -60px;
-    }
-
-    &-65-xs {
-      margin-top: -65px;
-      margin-bottom: -65px;
-    }
-
-    &-70-xs {
-      margin-top: -70px;
-      margin-bottom: -70px;
-    }
-
-    &-75-xs {
-      margin-top: -75px;
-      margin-bottom: -75px;
-    }
-
-    &-80-xs {
-      margin-top: -80px;
-      margin-bottom: -80px;
-    }
-
-    &-85-xs {
-      margin-top: -85px;
-      margin-bottom: -85px;
-    }
-
-    &-90-xs {
-      margin-top: -90px;
-      margin-bottom: -90px;
-    }
-
-    &-95-xs {
-      margin-top: -95px;
-      margin-bottom: -95px;
-    }
-
-    &-100-xs {
-      margin-top: -100px;
-      margin-bottom: -100px;
+  .#{$margin-y-axis} {
+    @each $key, $value in $rem-size-series {
+      &-#{$key}-xs {
+        @include group-my-variant($value, $value);
+      }
     }
   }
 
+  .#{$margin-out-top} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-xs {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-top} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-ot-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-xs {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-right} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-or-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-xs {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-bottom} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-ob-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-xs {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-left} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-ol-variant($value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-xs {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-x-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-ox-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $group-mo-series {
+      &-#{$key}-xs {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
+
+  .#{$margin-out-y-axis} {
+    @each $key, $value in $rem-size-minus-series {
+      &-#{$key}-xs {
+        @include margin-oy-variant($value, $value);
+      }
+    }
+  }
 }
 
-@media (max-width: 319px) {}
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
+}

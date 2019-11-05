@@ -1,5810 +1,705 @@
 //background-color
 
 [class^="bg-"].default {
-  background-color: $default-color;
+  background-color: $color-default;
 }
 
-.#{$bg-color} {
-  &-transparent {
+.#{$background-transparent} {
+  background-color: transparent;
+}
+
+.#{$background-white} {
+  background-color: $color-f;
+}
+
+.#{$background-black} {
+  color: $color-f;
+  background-color: $color-0;
+}
+
+@each $key, $value in $red-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $pink-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $purple-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $deep-purple-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $indigo-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $blue-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $light-blue-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $cyan-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $teal-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $green-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $light-green-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $lime-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $yellow-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $amber-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $orange-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $deep-orange-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $brown-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $grey-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $blue-grey-series {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+@each $key, $value in $namespace-color {
+  .#{$background}-#{$key} {
+    @include bg-variant($value);
+  }
+}
+
+//responsive-pc
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+  .#{$background-transparent}-lg {
     background-color: transparent;
   }
 
-  &-white {
-    background-color: $white;
+  .#{$background-white}-lg {
+    background-color: $color-f;
   }
 
-  &-black {
-    color: $white;
-    background-color: $black;
+  .#{$background-black}-lg {
+    color: $color-f;
+    background-color: $color-0;
   }
-}
 
-//red
-
-.#{$bg-color-red} {
-  & {
-    background-color: $red;
-  }
-
-  &-50 {
-    background-color: $red-50;
-  }
-
-  &-100 {
-    background-color: $red-100;
-  }
-
-  &-200 {
-    background-color: $red-200;
-  }
-
-  &-300 {
-    background-color: $red-300;
-  }
-
-  &-400 {
-    background-color: $red-400;
-  }
-
-  &-500 {
-    background-color: $red-500;
-  }
-
-  &-600 {
-    background-color: $red-600;
-  }
-
-  &-700 {
-    background-color: $red-700;
-  }
-
-  &-800 {
-    background-color: $red-800;
-  }
-
-  &-900 {
-    background-color: $red-900;
-  }
-
-  &-a100 {
-    background-color: $red-a100;
-  }
-
-  &-a200 {
-    background-color: $red-a200;
-  }
-
-  &-a400 {
-    background-color: $red-a400;
-  }
-
-  &-a700 {
-    background-color: $red-a700;
-  }
-}
-
-//pink
-
-.#{$bg-color-pink} {
-  & {
-    background-color: $pink;
-  }
-
-  &-50 {
-    background-color: $pink-50;
-  }
-
-  &-100 {
-    background-color: $pink-100;
-  }
-
-  &-200 {
-    background-color: $pink-200;
-  }
-
-  &-300 {
-    background-color: $pink-300;
-  }
-
-  &-400 {
-    background-color: $pink-400;
-  }
-
-  &-500 {
-    background-color: $pink-500;
-  }
-
-  &-600 {
-    background-color: $pink-600;
-  }
-
-  &-700 {
-    background-color: $pink-700;
-  }
-
-  &-800 {
-    background-color: $pink-800;
-  }
-
-  &-900 {
-    background-color: $pink-900;
-  }
-
-  &-a100 {
-    background-color: $pink-a100;
-  }
-
-  &-a200 {
-    background-color: $pink-a200;
-  }
-
-  &-a400 {
-    background-color: $pink-a400;
-  }
-
-  &-a700 {
-    background-color: $pink-a700;
-  }
-}
-
-//purple
-
-.#{$bg-color-purple} {
-  & {
-    color: $white;
-    background-color: $purple;
-  }
-
-  &-50 {
-    background-color: $purple-50;
-  }
-
-  &-100 {
-    background-color: $purple-100;
-  }
-
-  &-200 {
-    background-color: $purple-200;
-  }
-
-  &-300 {
-    background-color: $purple-300;
-  }
-
-  &-400 {
-    background-color: $purple-400;
-  }
-
-  &-500 {
-    background-color: $purple-500;
-  }
-
-  &-600 {
-    background-color: $purple-600;
-  }
-
-  &-700 {
-    background-color: $purple-700;
-  }
-
-  &-800 {
-    background-color: $purple-800;
-  }
-
-  &-900 {
-    background-color: $purple-900;
-  }
-
-  &-a100 {
-    background-color: $purple-a100;
-  }
-
-  &-a200 {
-    background-color: $purple-a200;
-  }
-
-  &-a400 {
-    background-color: $purple-a400;
-  }
-
-  &-a700 {
-    background-color: $purple-a700;
-  }
-}
-
-//deep-purple
-
-.#{$bg-color-deep-purple} {
-  & {
-    background-color: $deep-purple;
-  }
-
-  &-50 {
-    background-color: $deep-purple-50;
-  }
-
-  &-100 {
-    background-color: $deep-purple-100;
-  }
-
-  &-200 {
-    background-color: $deep-purple-200;
-  }
-
-  &-300 {
-    background-color: $deep-purple-300;
-  }
-
-  &-400 {
-    background-color: $deep-purple-400;
-  }
-
-  &-500 {
-    background-color: $deep-purple-500;
-  }
-
-  &-600 {
-    background-color: $deep-purple-600;
-  }
-
-  &-700 {
-    background-color: $deep-purple-700;
-  }
-
-  &-800 {
-    background-color: $deep-purple-800;
-  }
-
-  &-900 {
-    background-color: $deep-purple-900;
-  }
-
-  &-a100 {
-    background-color: $deep-purple-a100;
-  }
-
-  &-a200 {
-    background-color: $deep-purple-a200;
-  }
-
-  &-a400 {
-    background-color: $deep-purple-a400;
-  }
-
-  &-a700 {
-    background-color: $deep-purple-a700;
-  }
-}
-
-//indigo
-
-.#{$bg-color-indigo} {
-  & {
-    background-color: $indigo;
-  }
-
-  &-50 {
-    background-color: $indigo-50;
-  }
-
-  &-100 {
-    background-color: $indigo-100;
-  }
-
-  &-200 {
-    background-color: $indigo-200;
-  }
-
-  &-300 {
-    background-color: $indigo-300;
-  }
-
-  &-400 {
-    background-color: $indigo-400;
-  }
-
-  &-500 {
-    background-color: $indigo-500;
-  }
-
-  &-600 {
-    background-color: $indigo-600;
-  }
-
-  &-700 {
-    background-color: $indigo-700;
-  }
-
-  &-800 {
-    background-color: $indigo-800;
-  }
-
-  &-900 {
-    background-color: $indigo-900;
-  }
-
-  &-a100 {
-    background-color: $indigo-a100;
-  }
-
-  &-a200 {
-    background-color: $indigo-a200;
-  }
-
-  &-a400 {
-    background-color: $indigo-a400;
-  }
-
-  &-a700 {
-    background-color: $indigo-a700;
-  }
-}
-
-//blue
-
-.#{$bg-color-blue} {
-  & {
-    background-color: $blue;
-  }
-
-  &-50 {
-    background-color: $blue-50;
-  }
-
-  &-100 {
-    background-color: $blue-100;
-  }
-
-  &-200 {
-    background-color: $blue-200;
-  }
-
-  &-300 {
-    background-color: $blue-300;
-  }
-
-  &-400 {
-    background-color: $blue-400;
-  }
-
-  &-500 {
-    background-color: $blue-500;
-  }
-
-  &-600 {
-    background-color: $blue-600;
-  }
-
-  &-700 {
-    background-color: $blue-700;
-  }
-
-  &-800 {
-    background-color: $blue-800;
-  }
-
-  &-900 {
-    background-color: $blue-900;
-  }
-
-  &-a100 {
-    background-color: $blue-a100;
-  }
-
-  &-a200 {
-    background-color: $blue-a200;
-  }
-
-  &-a400 {
-    background-color: $blue-a400;
-  }
-
-  &-a700 {
-    background-color: $blue-a700;
-  }
-}
-
-//light-blue
-
-.#{$bg-color-light-blue} {
-  & {
-    background-color: $light-blue;
-  }
-
-  &-50 {
-    background-color: $light-blue-50;
-  }
-
-  &-100 {
-    background-color: $light-blue-100;
-  }
-
-  &-200 {
-    background-color: $light-blue-200;
-  }
-
-  &-300 {
-    background-color: $light-blue-300;
-  }
-
-  &-400 {
-    background-color: $light-blue-400;
-  }
-
-  &-500 {
-    background-color: $light-blue-500;
-  }
-
-  &-600 {
-    background-color: $light-blue-600;
-  }
-
-  &-700 {
-    background-color: $light-blue-700;
-  }
-
-  &-800 {
-    background-color: $light-blue-800;
-  }
-
-  &-900 {
-    background-color: $light-blue-900;
-  }
-
-  &-a100 {
-    background-color: $light-blue-a100;
-  }
-
-  &-a200 {
-    background-color: $light-blue-a200;
-  }
-
-  &-a400 {
-    background-color: $light-blue-a400;
-  }
-
-  &-a700 {
-    background-color: $light-blue-a700;
-  }
-}
-
-//cyan
-
-.#{$bg-color-cyan} {
-  & {
-    background-color: $cyan;
-  }
-
-  &-50 {
-    background-color: $cyan-50;
-  }
-
-  &-100 {
-    background-color: $cyan-100;
-  }
-
-  &-200 {
-    background-color: $cyan-200;
-  }
-
-  &-300 {
-    background-color: $cyan-300;
-  }
-
-  &-400 {
-    background-color: $cyan-400;
-  }
-
-  &-500 {
-    background-color: $cyan-500;
-  }
-
-  &-600 {
-    background-color: $cyan-600;
-  }
-
-  &-700 {
-    background-color: $cyan-700;
-  }
-
-  &-800 {
-    background-color: $cyan-800;
-  }
-
-  &-900 {
-    background-color: $cyan-900;
-  }
-
-  &-a100 {
-    background-color: $cyan-a100;
-  }
-
-  &-a200 {
-    background-color: $cyan-a200;
-  }
-
-  &-a400 {
-    background-color: $cyan-a400;
-  }
-
-  &-a700 {
-    background-color: $cyan-a700;
-  }
-}
-
-//teal
-
-.#{$bg-color-teal} {
-  & {
-    background-color: $teal;
-  }
-
-  &-50 {
-    background-color: $teal-50;
-  }
-
-  &-100 {
-    background-color: $teal-100;
-  }
-
-  &-200 {
-    background-color: $teal-200;
-  }
-
-  &-300 {
-    background-color: $teal-300;
-  }
-
-  &-400 {
-    background-color: $teal-400;
-  }
-
-  &-500 {
-    background-color: $teal-500;
-  }
-
-  &-600 {
-    background-color: $teal-600;
-  }
-
-  &-700 {
-    background-color: $teal-700;
-  }
-
-  &-800 {
-    background-color: $teal-800;
-  }
-
-  &-900 {
-    background-color: $teal-900;
-  }
-
-  &-a100 {
-    background-color: $teal-a100;
-  }
-
-  &-a200 {
-    background-color: $teal-a200;
-  }
-
-  &-a400 {
-    background-color: $teal-a400;
-  }
-
-  &-a700 {
-    background-color: $teal-a700;
-  }
-}
-
-//green
-
-.#{$bg-color-green} {
-  & {
-    background-color: $green;
-  }
-
-  &-50 {
-    background-color: $green-50;
-  }
-
-  &-100 {
-    background-color: $green-100;
-  }
-
-  &-200 {
-    background-color: $green-200;
-  }
-
-  &-300 {
-    background-color: $green-300;
-  }
-
-  &-400 {
-    background-color: $green-400;
-  }
-
-  &-500 {
-    background-color: $green-500;
-  }
-
-  &-600 {
-    background-color: $green-600;
-  }
-
-  &-700 {
-    background-color: $green-700;
-  }
-
-  &-800 {
-    background-color: $green-800;
-  }
-
-  &-900 {
-    background-color: $green-900;
-  }
-
-  &-a100 {
-    background-color: $green-a100;
-  }
-
-  &-a200 {
-    background-color: $green-a200;
-  }
-
-  &-a400 {
-    background-color: $green-a400;
-  }
-
-  &-a700 {
-    background-color: $green-a700;
-  }
-}
-
-//light-green
-
-.#{$bg-color-light-green} {
-  & {
-    background-color: $light-green;
-  }
-
-  &-50 {
-    background-color: $light-green-50;
-  }
-
-  &-100 {
-    background-color: $light-green-100;
-  }
-
-  &-200 {
-    background-color: $light-green-200;
-  }
-
-  &-300 {
-    background-color: $light-green-300;
-  }
-
-  &-400 {
-    background-color: $light-green-400;
-  }
-
-  &-500 {
-    background-color: $light-green-500;
-  }
-
-  &-600 {
-    background-color: $light-green-600;
-  }
-
-  &-700 {
-    background-color: $light-green-700;
-  }
-
-  &-800 {
-    background-color: $light-green-800;
-  }
-
-  &-900 {
-    background-color: $light-green-900;
-  }
-
-  &-a100 {
-    background-color: $light-green-100;
-  }
-
-  &-a200 {
-    background-color: $light-green-a200;
-  }
-
-  &-a400 {
-    background-color: $light-green-a400;
-  }
-
-  &-a700 {
-    background-color: $light-green-a700;
-  }
-}
-
-//lime
-
-.#{$bg-color-lime} {
-  & {
-    background-color: $lime;
-  }
-
-  &-50 {
-    background-color: $lime-50;
-  }
-
-  &-100 {
-    background-color: $lime-100;
-  }
-
-  &-200 {
-    background-color: $lime-200;
-  }
-
-  &-300 {
-    background-color: $lime-300;
-  }
-
-  &-400 {
-    background-color: $lime-400;
-  }
-
-  &-500 {
-    background-color: $lime-500;
-  }
-
-  &-600 {
-    background-color: $lime-600;
-  }
-
-  &-700 {
-    background-color: $lime-700;
-  }
-
-  &-800 {
-    background-color: $lime-800;
-  }
-
-  &-900 {
-    background-color: $lime-900;
-  }
-
-  &-a100 {
-    background-color: $lime-a100;
-  }
-
-  &-a200 {
-    background-color: $lime-a200;
-  }
-
-  &-a400 {
-    background-color: $lime-a400;
-  }
-
-  &-a700 {
-    background-color: $lime-a700;
-  }
-}
-
-//yellow
-
-.#{$bg-color-yellow} {
-  & {
-    background-color: $yellow;
-  }
-
-  &-50 {
-    background-color: $yellow-50;
-  }
-
-  &-100 {
-    background-color: $yellow-100;
-  }
-
-  &-200 {
-    background-color: $yellow-200;
-  }
-
-  &-300 {
-    background-color: $yellow-300;
-  }
-
-  &-400 {
-    background-color: $yellow-400;
-  }
-
-  &-500 {
-    background-color: $yellow-500;
-  }
-
-  &-600 {
-    background-color: $yellow-600;
-  }
-
-  &-700 {
-    background-color: $yellow-700;
-  }
-
-  &-800 {
-    background-color: $yellow-800;
-  }
-
-  &-900 {
-    background-color: $yellow-900;
-  }
-
-  &-a100 {
-    background-color: $yellow-a100;
-  }
-
-  &-a200 {
-    background-color: $yellow-a200;
-  }
-
-  &-a400 {
-    background-color: $yellow-a400;
-  }
-
-  &-a700 {
-    background-color: $yellow-a700;
-  }
-}
-
-//amber
-
-.#{$bg-color-amber} {
-  & {
-    background-color: $amber;
-  }
-
-  &-50 {
-    background-color: $amber-50;
-  }
-
-  &-100 {
-    background-color: $amber-100;
-  }
-
-  &-200 {
-    background-color: $amber-200;
-  }
-
-  &-300 {
-    background-color: $amber-300;
-  }
-
-  &-400 {
-    background-color: $amber-400;
-  }
-
-  &-500 {
-    background-color: $amber-500;
-  }
-
-  &-600 {
-    background-color: $amber-600;
-  }
-
-  &-700 {
-    background-color: $amber-700;
-  }
-
-  &-800 {
-    background-color: $amber-800;
-  }
-
-  &-900 {
-    background-color: $amber-900;
-  }
-
-  &-a100 {
-    background-color: $amber-a100;
-  }
-
-  &-a200 {
-    background-color: $amber-a200;
-  }
-
-  &-a400 {
-    background-color: $amber-a400;
-  }
-
-  &-a700 {
-    background-color: $amber-a700;
-  }
-}
-
-//orange
-
-.#{$bg-color-orange} {
-  & {
-    background-color: $orange;
-  }
-
-  &-50 {
-    background-color: $orange-50;
-  }
-
-  &-100 {
-    background-color: $orange-100;
-  }
-
-  &-200 {
-    background-color: $orange-200;
-  }
-
-  &-300 {
-    background-color: $orange-300;
-  }
-
-  &-400 {
-    background-color: $orange-400;
-  }
-
-  &-500 {
-    background-color: $orange-500;
-  }
-
-  &-600 {
-    background-color: $orange-600;
-  }
-
-  &-700 {
-    background-color: $orange-700;
-  }
-
-  &-800 {
-    background-color: $orange-800;
-  }
-
-  &-900 {
-    background-color: $orange-900;
-  }
-
-  &-a100 {
-    background-color: $orange-a100;
-  }
-
-  &-a200 {
-    background-color: $orange-a200;
-  }
-
-  &-a400 {
-    background-color: $orange-a400;
-  }
-
-  &-a700 {
-    background-color: $orange-a700;
-  }
-}
-
-//deep-orange
-
-.#{$bg-color-deep-orange} {
-  & {
-    background-color: $deep-orange;
-  }
-
-  &-50 {
-    background-color: $deep-orange-50;
-  }
-
-  &-100 {
-    background-color: $deep-orange-100;
-  }
-
-  &-200 {
-    background-color: $deep-orange-200;
-  }
-
-  &-300 {
-    background-color: $deep-orange-300;
-  }
-
-  &-400 {
-    background-color: $deep-orange-400;
-  }
-
-  &-500 {
-    background-color: $deep-orange-500;
-  }
-
-  &-600 {
-    background-color: $deep-orange-600;
-  }
-
-  &-700 {
-    background-color: $deep-orange-700;
-  }
-
-  &-800 {
-    background-color: $deep-orange-800;
-  }
-
-  &-900 {
-    background-color: $deep-orange-900;
-  }
-
-  &-a100 {
-    background-color: $deep-orange-a100;
-  }
-
-  &-a200 {
-    background-color: $deep-orange-a200;
-  }
-
-  &-a400 {
-    background-color: $deep-orange-a400;
-  }
-
-  &-a700 {
-    background-color: $deep-orange-a700;
-  }
-}
-
-//brown
-
-.#{$bg-color-brown} {
-  & {
-    background-color: $brown;
-  }
-
-  &-50 {
-    background-color: $brown-50;
-  }
-
-  &-100 {
-    background-color: $brown-100;
-  }
-
-  &-200 {
-    background-color: $brown-200;
-  }
-
-  &-300 {
-    background-color: $brown-300;
-  }
-
-  &-400 {
-    background-color: $brown-400;
-  }
-
-  &-500 {
-    background-color: $brown-500;
-  }
-
-  &-600 {
-    background-color: $brown-600;
-  }
-
-  &-700 {
-    background-color: $brown-700;
-  }
-
-  &-800 {
-    background-color: $brown-800;
-  }
-
-  &-900 {
-    background-color: $brown-900;
-  }
-}
-
-//grey
-
-.#{$bg-color-grey} {
-  & {
-    background-color: $grey;
-  }
-
-  &-50 {
-    background-color: $grey-50;
-  }
-
-  &-100 {
-    background-color: $grey-100;
-  }
-
-  &-200 {
-    background-color: $grey-200;
-  }
-
-  &-300 {
-    background-color: $grey-300;
-  }
-
-  &-400 {
-    background-color: $grey-400;
-  }
-
-  &-500 {
-    background-color: $grey-500;
-  }
-
-  &-600 {
-    background-color: $grey-600;
-  }
-
-  &-700 {
-    background-color: $grey-700;
-  }
-
-  &-800 {
-    background-color: $grey-800;
-  }
-
-  &-900 {
-    background-color: $grey-900;
-  }
-}
-
-//blue-grey
-
-.#{$bg-color-blue-grey} {
-  & {
-    background-color: $blue-grey;
-  }
-
-  &-50 {
-    background-color: $blue-grey-50;
-  }
-
-  &-100 {
-    background-color: $blue-grey-100;
-  }
-
-  &-200 {
-    background-color: $blue-grey-200;
-  }
-
-  &-300 {
-    background-color: $blue-grey-300;
-  }
-
-  &-400 {
-    background-color: $blue-grey-400;
-  }
-
-  &-500 {
-    background-color: $blue-grey-500;
-  }
-
-  &-600 {
-    background-color: $blue-grey-600;
-  }
-
-  &-700 {
-    background-color: $blue-grey-700;
-  }
-
-  &-800 {
-    background-color: $blue-grey-800;
-  }
-
-  &-900 {
-    background-color: $blue-grey-900;
-  }
-}
-
-//responsive
-
-@media (max-width: 1199px) {
-
-  [class^="bg-"].default-lg {
-    background-color: $default-color;
-  }
-
-  .#{$bg-color} {
-    &-transparent-lg {
-      background-color: transparent;
-    }
-
-    &-white-lg {
-      background-color: $white;
-    }
-
-    &-black-lg {
-      color: $white;
-      background-color: $black;
-    }
-  }
-
-  .#{$bg-color-red} {
-    &-lg {
-      background-color: $red;
-    }
-
-    &-50-lg {
-      background-color: $red-50;
-    }
-
-    &-100-lg {
-      background-color: $red-100;
-    }
-
-    &-200-lg {
-      background-color: $red-200;
-    }
-
-    &-300-lg {
-      background-color: $red-300;
-    }
-
-    &-400-lg {
-      background-color: $red-400;
-    }
-
-    &-500-lg {
-      background-color: $red-500;
-    }
-
-    &-600-lg {
-      background-color: $red-600;
-    }
-
-    &-700-lg {
-      background-color: $red-700;
-    }
-
-    &-800-lg {
-      background-color: $red-800;
-    }
-
-    &-900-lg {
-      background-color: $red-900;
-    }
-
-    &-a100-lg {
-      background-color: $red-a100;
-    }
-
-    &-a200-lg {
-      background-color: $red-a200;
-    }
-
-    &-a400-lg {
-      background-color: $red-a400;
-    }
-
-    &-a700-lg {
-      background-color: $red-a700;
-    }
-  }
-
-  .#{$bg-color-pink} {
-    &-lg {
-      background-color: $pink;
-    }
-
-    &-50-lg {
-      background-color: $pink-50;
-    }
-
-    &-100-lg {
-      background-color: $pink-100;
-    }
-
-    &-200-lg {
-      background-color: $pink-200;
-    }
-
-    &-300-lg {
-      background-color: $pink-300;
-    }
-
-    &-400-lg {
-      background-color: $pink-400;
-    }
-
-    &-500-lg {
-      background-color: $pink-500;
-    }
-
-    &-600-lg {
-      background-color: $pink-600;
-    }
-
-    &-700-lg {
-      background-color: $pink-700;
-    }
-
-    &-800-lg {
-      background-color: $pink-800;
-    }
-
-    &-900-lg {
-      background-color: $pink-900;
-    }
-
-    &-a100-lg {
-      background-color: $pink-a100;
-    }
-
-    &-a200-lg {
-      background-color: $pink-a200;
-    }
-
-    &-a400-lg {
-      background-color: $pink-a400;
-    }
-
-    &-a700-lg {
-      background-color: $pink-a700;
-    }
-  }
-
-  .#{$bg-color-purple} {
-    &-lg {
-      color: $white;
-      background-color: $purple;
-    }
-
-    &-50-lg {
-      background-color: $purple-50;
-    }
-
-    &-100-lg {
-      background-color: $purple-100;
-    }
-
-    &-200-lg {
-      background-color: $purple-200;
-    }
-
-    &-300-lg {
-      background-color: $purple-300;
-    }
-
-    &-400-lg {
-      background-color: $purple-400;
-    }
-
-    &-500-lg {
-      background-color: $purple-500;
-    }
-
-    &-600-lg {
-      background-color: $purple-600;
-    }
-
-    &-700-lg {
-      background-color: $purple-700;
-    }
-
-    &-800-lg {
-      background-color: $purple-800;
-    }
-
-    &-900-lg {
-      background-color: $purple-900;
-    }
-
-    &-a100-lg {
-      background-color: $purple-a100;
-    }
-
-    &-a200-lg {
-      background-color: $purple-a200;
-    }
-
-    &-a400-lg {
-      background-color: $purple-a400;
-    }
-
-    &-a700-lg {
-      background-color: $purple-a700;
-    }
-  }
-
-  .#{$bg-color-deep-purple} {
-    &-lg {
-      background-color: $deep-purple;
-    }
-
-    &-50-lg {
-      background-color: $deep-purple-50;
-    }
-
-    &-100-lg {
-      background-color: $deep-purple-100;
-    }
-
-    &-200-lg {
-      background-color: $deep-purple-200;
-    }
-
-    &-300-lg {
-      background-color: $deep-purple-300;
-    }
-
-    &-400-lg {
-      background-color: $deep-purple-400;
-    }
-
-    &-500-lg {
-      background-color: $deep-purple-500;
-    }
-
-    &-600-lg {
-      background-color: $deep-purple-600;
-    }
-
-    &-700-lg {
-      background-color: $deep-purple-700;
-    }
-
-    &-800-lg {
-      background-color: $deep-purple-800;
-    }
-
-    &-900-lg {
-      background-color: $deep-purple-900;
-    }
-
-    &-a100-lg {
-      background-color: $deep-purple-a100;
-    }
-
-    &-a200-lg {
-      background-color: $deep-purple-a200;
-    }
-
-    &-a400-lg {
-      background-color: $deep-purple-a400;
-    }
-
-    &-a700-lg {
-      background-color: $deep-purple-a700;
-    }
-  }
-
-  .#{$bg-color-indigo} {
-    &-lg {
-      background-color: $indigo;
-    }
-
-    &-50-lg {
-      background-color: $indigo-50;
-    }
-
-    &-100-lg {
-      background-color: $indigo-100;
-    }
-
-    &-200-lg {
-      background-color: $indigo-200;
-    }
-
-    &-300-lg {
-      background-color: $indigo-300;
-    }
-
-    &-400-lg {
-      background-color: $indigo-400;
-    }
-
-    &-500-lg {
-      background-color: $indigo-500;
-    }
-
-    &-600-lg {
-      background-color: $indigo-600;
-    }
-
-    &-700-lg {
-      background-color: $indigo-700;
-    }
-
-    &-800-lg {
-      background-color: $indigo-800;
-    }
-
-    &-900-lg {
-      background-color: $indigo-900;
-    }
-
-    &-a100-lg {
-      background-color: $indigo-a100;
-    }
-
-    &-a200-lg {
-      background-color: $indigo-a200;
-    }
-
-    &-a400-lg {
-      background-color: $indigo-a400;
-    }
-
-    &-a700-lg {
-      background-color: $indigo-a700;
-    }
-  }
-
-  .#{$bg-color-blue} {
-    &-lg {
-      background-color: $blue;
-    }
-
-    &-50-lg {
-      background-color: $blue-50;
-    }
-
-    &-100-lg {
-      background-color: $blue-100;
-    }
-
-    &-200-lg {
-      background-color: $blue-200;
-    }
-
-    &-300-lg {
-      background-color: $blue-300;
-    }
-
-    &-400-lg {
-      background-color: $blue-400;
-    }
-
-    &-500-lg {
-      background-color: $blue-500;
-    }
-
-    &-600-lg {
-      background-color: $blue-600;
-    }
-
-    &-700-lg {
-      background-color: $blue-700;
-    }
-
-    &-800-lg {
-      background-color: $blue-800;
-    }
-
-    &-900-lg {
-      background-color: $blue-900;
-    }
-
-    &-a100-lg {
-      background-color: $blue-a100;
-    }
-
-    &-a200-lg {
-      background-color: $blue-a200;
-    }
-
-    &-a400-lg {
-      background-color: $blue-a400;
-    }
-
-    &-a700-lg {
-      background-color: $blue-a700;
-    }
-  }
-
-  .#{$bg-color-light-blue} {
-    &-lg {
-      background-color: $light-blue;
-    }
-
-    &-50-lg {
-      background-color: $light-blue-50;
-    }
-
-    &-100-lg {
-      background-color: $light-blue-100;
-    }
-
-    &-200-lg {
-      background-color: $light-blue-200;
-    }
-
-    &-300-lg {
-      background-color: $light-blue-300;
-    }
-
-    &-400-lg {
-      background-color: $light-blue-400;
-    }
-
-    &-500-lg {
-      background-color: $light-blue-500;
-    }
-
-    &-600-lg {
-      background-color: $light-blue-600;
-    }
-
-    &-700-lg {
-      background-color: $light-blue-700;
-    }
-
-    &-800-lg {
-      background-color: $light-blue-800;
-    }
-
-    &-900-lg {
-      background-color: $light-blue-900;
-    }
-
-    &-a100-lg {
-      background-color: $light-blue-a100;
-    }
-
-    &-a200-lg {
-      background-color: $light-blue-a200;
-    }
-
-    &-a400-lg {
-      background-color: $light-blue-a400;
-    }
-
-    &-a700-lg {
-      background-color: $light-blue-a700;
-    }
-  }
-
-  .#{$bg-color-cyan} {
-    &-lg {
-      background-color: $cyan;
-    }
-
-    &-50-lg {
-      background-color: $cyan-50;
-    }
-
-    &-100-lg {
-      background-color: $cyan-100;
-    }
-
-    &-200-lg {
-      background-color: $cyan-200;
-    }
-
-    &-300-lg {
-      background-color: $cyan-300;
-    }
-
-    &-400-lg {
-      background-color: $cyan-400;
-    }
-
-    &-500-lg {
-      background-color: $cyan-500;
-    }
-
-    &-600-lg {
-      background-color: $cyan-600;
-    }
-
-    &-700-lg {
-      background-color: $cyan-700;
-    }
-
-    &-800-lg {
-      background-color: $cyan-800;
-    }
-
-    &-900-lg {
-      background-color: $cyan-900;
-    }
-
-    &-a100-lg {
-      background-color: $cyan-a100;
-    }
-
-    &-a200-lg {
-      background-color: $cyan-a200;
-    }
-
-    &-a400-lg {
-      background-color: $cyan-a400;
-    }
-
-    &-a700-lg {
-      background-color: $cyan-a700;
-    }
-  }
-
-  .#{$bg-color-teal} {
-    &-lg {
-      background-color: $teal;
-    }
-
-    &-50-lg {
-      background-color: $teal-50;
-    }
-
-    &-100-lg {
-      background-color: $teal-100;
-    }
-
-    &-200-lg {
-      background-color: $teal-200;
-    }
-
-    &-300-lg {
-      background-color: $teal-300;
-    }
-
-    &-400-lg {
-      background-color: $teal-400;
-    }
-
-    &-500-lg {
-      background-color: $teal-500;
-    }
-
-    &-600-lg {
-      background-color: $teal-600;
-    }
-
-    &-700-lg {
-      background-color: $teal-700;
-    }
-
-    &-800-lg {
-      background-color: $teal-800;
-    }
-
-    &-900-lg {
-      background-color: $teal-900;
-    }
-
-    &-a100-lg {
-      background-color: $teal-a100;
-    }
-
-    &-a200-lg {
-      background-color: $teal-a200;
-    }
-
-    &-a400-lg {
-      background-color: $teal-a400;
-    }
-
-    &-a700-lg {
-      background-color: $teal-a700;
+  @each $key, $value in $red-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
   }
-
-  .#{$bg-color-green} {
-    &-lg {
-      background-color: $green;
-    }
-
-    &-50-lg {
-      background-color: $green-50;
-    }
-
-    &-100-lg {
-      background-color: $green-100;
-    }
-
-    &-200-lg {
-      background-color: $green-200;
-    }
-
-    &-300-lg {
-      background-color: $green-300;
-    }
-
-    &-400-lg {
-      background-color: $green-400;
-    }
-
-    &-500-lg {
-      background-color: $green-500;
-    }
-
-    &-600-lg {
-      background-color: $green-600;
-    }
-
-    &-700-lg {
-      background-color: $green-700;
-    }
-
-    &-800-lg {
-      background-color: $green-800;
-    }
-
-    &-900-lg {
-      background-color: $green-900;
-    }
-
-    &-a100-lg {
-      background-color: $green-a100;
-    }
-
-    &-a200-lg {
-      background-color: $green-a200;
-    }
-
-    &-a400-lg {
-      background-color: $green-a400;
-    }
 
-    &-a700-lg {
-      background-color: $green-a700;
+  @each $key, $value in $pink-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
   }
-
-  .#{$bg-color-light-green} {
-    &-lg {
-      background-color: $light-green;
-    }
-
-    &-50-lg {
-      background-color: $light-green-50;
-    }
-
-    &-100-lg {
-      background-color: $light-green-100;
-    }
-
-    &-200-lg {
-      background-color: $light-green-200;
-    }
-
-    &-300-lg {
-      background-color: $light-green-300;
-    }
-
-    &-400-lg {
-      background-color: $light-green-400;
-    }
-
-    &-500-lg {
-      background-color: $light-green-500;
-    }
-
-    &-600-lg {
-      background-color: $light-green-600;
-    }
-
-    &-700-lg {
-      background-color: $light-green-700;
-    }
-
-    &-800-lg {
-      background-color: $light-green-800;
-    }
-
-    &-900-lg {
-      background-color: $light-green-900;
-    }
-
-    &-a100-lg {
-      background-color: $light-green-100;
-    }
-
-    &-a200-lg {
-      background-color: $light-green-a200;
-    }
-
-    &-a400-lg {
-      background-color: $light-green-a400;
-    }
 
-    &-a700-lg {
-      background-color: $light-green-a700;
+  @each $key, $value in $purple-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
   }
-
-  .#{$bg-color-lime} {
-    &-lg {
-      background-color: $lime;
-    }
-
-    &-50-lg {
-      background-color: $lime-50;
-    }
-
-    &-100-lg {
-      background-color: $lime-100;
-    }
-
-    &-200-lg {
-      background-color: $lime-200;
-    }
-
-    &-300-lg {
-      background-color: $lime-300;
-    }
-
-    &-400-lg {
-      background-color: $lime-400;
-    }
-
-    &-500-lg {
-      background-color: $lime-500;
-    }
-
-    &-600-lg {
-      background-color: $lime-600;
-    }
-
-    &-700-lg {
-      background-color: $lime-700;
-    }
-
-    &-800-lg {
-      background-color: $lime-800;
-    }
-
-    &-900-lg {
-      background-color: $lime-900;
-    }
-
-    &-a100-lg {
-      background-color: $lime-a100;
-    }
-
-    &-a200-lg {
-      background-color: $lime-a200;
-    }
-
-    &-a400-lg {
-      background-color: $lime-a400;
-    }
 
-    &-a700-lg {
-      background-color: $lime-a700;
+  @each $key, $value in $deep-purple-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
   }
-
-  .#{$bg-color-yellow} {
-    &-lg {
-      background-color: $yellow;
-    }
-
-    &-50-lg {
-      background-color: $yellow-50;
-    }
-
-    &-100-lg {
-      background-color: $yellow-100;
-    }
-
-    &-200-lg {
-      background-color: $yellow-200;
-    }
-
-    &-300-lg {
-      background-color: $yellow-300;
-    }
-
-    &-400-lg {
-      background-color: $yellow-400;
-    }
-
-    &-500-lg {
-      background-color: $yellow-500;
-    }
-
-    &-600-lg {
-      background-color: $yellow-600;
-    }
-
-    &-700-lg {
-      background-color: $yellow-700;
-    }
-
-    &-800-lg {
-      background-color: $yellow-800;
-    }
-
-    &-900-lg {
-      background-color: $yellow-900;
-    }
-
-    &-a100-lg {
-      background-color: $yellow-a100;
-    }
-
-    &-a200-lg {
-      background-color: $yellow-a200;
-    }
-
-    &-a400-lg {
-      background-color: $yellow-a400;
-    }
 
-    &-a700-lg {
-      background-color: $yellow-a700;
+  @each $key, $value in $indigo-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
   }
-
-  .#{$bg-color-amber} {
-    &-lg {
-      background-color: $amber;
-    }
-
-    &-50-lg {
-      background-color: $amber-50;
-    }
-
-    &-100-lg {
-      background-color: $amber-100;
-    }
-
-    &-200-lg {
-      background-color: $amber-200;
-    }
-
-    &-300-lg {
-      background-color: $amber-300;
-    }
-
-    &-400-lg {
-      background-color: $amber-400;
-    }
-
-    &-500-lg {
-      background-color: $amber-500;
-    }
-
-    &-600-lg {
-      background-color: $amber-600;
-    }
-
-    &-700-lg {
-      background-color: $amber-700;
-    }
-
-    &-800-lg {
-      background-color: $amber-800;
-    }
-
-    &-900-lg {
-      background-color: $amber-900;
-    }
-
-    &-a100-lg {
-      background-color: $amber-a100;
-    }
-
-    &-a200-lg {
-      background-color: $amber-a200;
-    }
-
-    &-a400-lg {
-      background-color: $amber-a400;
-    }
 
-    &-a700-lg {
-      background-color: $amber-a700;
+  @each $key, $value in $blue-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
   }
-
-  .#{$bg-color-orange} {
-    &-lg {
-      background-color: $orange;
-    }
-
-    &-50-lg {
-      background-color: $orange-50;
-    }
-
-    &-100-lg {
-      background-color: $orange-100;
-    }
-
-    &-200-lg {
-      background-color: $orange-200;
-    }
-
-    &-300-lg {
-      background-color: $orange-300;
-    }
-
-    &-400-lg {
-      background-color: $orange-400;
-    }
-
-    &-500-lg {
-      background-color: $orange-500;
-    }
-
-    &-600-lg {
-      background-color: $orange-600;
-    }
-
-    &-700-lg {
-      background-color: $orange-700;
-    }
-
-    &-800-lg {
-      background-color: $orange-800;
-    }
-
-    &-900-lg {
-      background-color: $orange-900;
-    }
-
-    &-a100-lg {
-      background-color: $orange-a100;
-    }
-
-    &-a200-lg {
-      background-color: $orange-a200;
-    }
-
-    &-a400-lg {
-      background-color: $orange-a400;
-    }
 
-    &-a700-lg {
-      background-color: $orange-a700;
+  @each $key, $value in $light-blue-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
   }
-
-  .#{$bg-color-deep-orange} {
-    &-lg {
-      background-color: $deep-orange;
-    }
-
-    &-50-lg {
-      background-color: $deep-orange-50;
-    }
-
-    &-100-lg {
-      background-color: $deep-orange-100;
-    }
-
-    &-200-lg {
-      background-color: $deep-orange-200;
-    }
-
-    &-300-lg {
-      background-color: $deep-orange-300;
-    }
-
-    &-400-lg {
-      background-color: $deep-orange-400;
-    }
-
-    &-500-lg {
-      background-color: $deep-orange-500;
-    }
-
-    &-600-lg {
-      background-color: $deep-orange-600;
-    }
-
-    &-700-lg {
-      background-color: $deep-orange-700;
-    }
-
-    &-800-lg {
-      background-color: $deep-orange-800;
-    }
-
-    &-900-lg {
-      background-color: $deep-orange-900;
-    }
-
-    &-a100-lg {
-      background-color: $deep-orange-a100;
-    }
-
-    &-a200-lg {
-      background-color: $deep-orange-a200;
-    }
-
-    &-a400-lg {
-      background-color: $deep-orange-a400;
-    }
 
-    &-a700-lg {
-      background-color: $deep-orange-a700;
+  @each $key, $value in $cyan-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
   }
-
-  .#{$bg-color-brown} {
-    &-lg {
-      background-color: $brown;
-    }
-
-    &-50-lg {
-      background-color: $brown-50;
-    }
-
-    &-100-lg {
-      background-color: $brown-100;
-    }
-
-    &-200-lg {
-      background-color: $brown-200;
-    }
-
-    &-300-lg {
-      background-color: $brown-300;
-    }
-
-    &-400-lg {
-      background-color: $brown-400;
-    }
-
-    &-500-lg {
-      background-color: $brown-500;
-    }
-
-    &-600-lg {
-      background-color: $brown-600;
-    }
-
-    &-700-lg {
-      background-color: $brown-700;
-    }
-
-    &-800-lg {
-      background-color: $brown-800;
-    }
 
-    &-900-lg {
-      background-color: $brown-900;
+  @each $key, $value in $teal-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
   }
-
-  .#{$bg-color-grey} {
-    &-lg {
-      background-color: $grey;
-    }
-
-    &-50-lg {
-      background-color: $grey-50;
-    }
-
-    &-100-lg {
-      background-color: $grey-100;
-    }
-
-    &-200-lg {
-      background-color: $grey-200;
-    }
-
-    &-300-lg {
-      background-color: $grey-300;
-    }
-
-    &-400-lg {
-      background-color: $grey-400;
-    }
-
-    &-500-lg {
-      background-color: $grey-500;
-    }
-
-    &-600-lg {
-      background-color: $grey-600;
-    }
-
-    &-700-lg {
-      background-color: $grey-700;
-    }
-
-    &-800-lg {
-      background-color: $grey-800;
-    }
 
-    &-900-lg {
-      background-color: $grey-900;
+  @each $key, $value in $green-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
   }
-
-  .#{$bg-color-blue-grey} {
-    &-lg {
-      background-color: $blue-grey;
-    }
 
-    &-50-lg {
-      background-color: $blue-grey-50;
+  @each $key, $value in $light-green-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
+  }
 
-    &-100-lg {
-      background-color: $blue-grey-100;
+  @each $key, $value in $lime-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
+  }
 
-    &-200-lg {
-      background-color: $blue-grey-200;
+  @each $key, $value in $yellow-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
+  }
 
-    &-300-lg {
-      background-color: $blue-grey-300;
+  @each $key, $value in $amber-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
+  }
 
-    &-400-lg {
-      background-color: $blue-grey-400;
+  @each $key, $value in $orange-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
+  }
 
-    &-500-lg {
-      background-color: $blue-grey-500;
+  @each $key, $value in $deep-orange-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
+  }
 
-    &-600-lg {
-      background-color: $blue-grey-600;
+  @each $key, $value in $brown-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
+  }
 
-    &-700-lg {
-      background-color: $blue-grey-700;
+  @each $key, $value in $grey-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
+  }
 
-    &-800-lg {
-      background-color: $blue-grey-800;
+  @each $key, $value in $blue-grey-series {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
+  }
 
-    &-900-lg {
-      background-color: $blue-grey-900;
+  @each $key, $value in $namespace-color {
+    .#{$background}-#{$key}-lg {
+      @include bg-variant($value);
     }
   }
-
 }
 
 @media (max-width: 991px) {
-
-  [class^="bg-"].default-md {
-    background-color: $default-color;
+  //Large devices (desktops, 768px and 992px)
+  .#{$background-transparent}-md {
+    background-color: transparent;
   }
 
-  .#{$bg-color} {
-    &-transparent-md {
-      background-color: transparent;
-    }
-
-    &-white-md {
-      background-color: $white;
-    }
-
-    &-black-md {
-      color: $white;
-      background-color: $black;
-    }
+  .#{$background-white}-md {
+    background-color: $color-f;
   }
 
-  .#{$bg-color-red} {
-    &-md {
-      background-color: $red;
-    }
+  .#{$background-black}-md {
+    color: $color-f;
+    background-color: $color-0;
+  }
 
-    &-50-md {
-      background-color: $red-50;
-    }
-
-    &-100-md {
-      background-color: $red-100;
-    }
-
-    &-200-md {
-      background-color: $red-200;
-    }
-
-    &-300-md {
-      background-color: $red-300;
-    }
-
-    &-400-md {
-      background-color: $red-400;
-    }
-
-    &-500-md {
-      background-color: $red-500;
-    }
-
-    &-600-md {
-      background-color: $red-600;
-    }
-
-    &-700-md {
-      background-color: $red-700;
-    }
-
-    &-800-md {
-      background-color: $red-800;
-    }
-
-    &-900-md {
-      background-color: $red-900;
-    }
-
-    &-a100-md {
-      background-color: $red-a100;
-    }
-
-    &-a200-md {
-      background-color: $red-a200;
-    }
-
-    &-a400-md {
-      background-color: $red-a400;
-    }
-
-    &-a700-md {
-      background-color: $red-a700;
+  @each $key, $value in $red-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-pink} {
-    &-md {
-      background-color: $pink;
-    }
-
-    &-50-md {
-      background-color: $pink-50;
-    }
-
-    &-100-md {
-      background-color: $pink-100;
-    }
-
-    &-200-md {
-      background-color: $pink-200;
-    }
-
-    &-300-md {
-      background-color: $pink-300;
-    }
-
-    &-400-md {
-      background-color: $pink-400;
-    }
-
-    &-500-md {
-      background-color: $pink-500;
-    }
-
-    &-600-md {
-      background-color: $pink-600;
-    }
-
-    &-700-md {
-      background-color: $pink-700;
-    }
-
-    &-800-md {
-      background-color: $pink-800;
-    }
-
-    &-900-md {
-      background-color: $pink-900;
-    }
-
-    &-a100-md {
-      background-color: $pink-a100;
-    }
-
-    &-a200-md {
-      background-color: $pink-a200;
-    }
-
-    &-a400-md {
-      background-color: $pink-a400;
-    }
-
-    &-a700-md {
-      background-color: $pink-a700;
+  @each $key, $value in $pink-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-purple} {
-    &-md {
-      color: $white;
-      background-color: $purple;
-    }
-
-    &-50-md {
-      background-color: $purple-50;
-    }
-
-    &-100-md {
-      background-color: $purple-100;
-    }
-
-    &-200-md {
-      background-color: $purple-200;
-    }
-
-    &-300-md {
-      background-color: $purple-300;
-    }
-
-    &-400-md {
-      background-color: $purple-400;
-    }
-
-    &-500-md {
-      background-color: $purple-500;
-    }
-
-    &-600-md {
-      background-color: $purple-600;
-    }
-
-    &-700-md {
-      background-color: $purple-700;
-    }
-
-    &-800-md {
-      background-color: $purple-800;
-    }
-
-    &-900-md {
-      background-color: $purple-900;
-    }
-
-    &-a100-md {
-      background-color: $purple-a100;
-    }
-
-    &-a200-md {
-      background-color: $purple-a200;
-    }
-
-    &-a400-md {
-      background-color: $purple-a400;
-    }
-
-    &-a700-md {
-      background-color: $purple-a700;
+  @each $key, $value in $purple-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-deep-purple} {
-    &-md {
-      background-color: $deep-purple;
-    }
-
-    &-50-md {
-      background-color: $deep-purple-50;
-    }
-
-    &-100-md {
-      background-color: $deep-purple-100;
-    }
-
-    &-200-md {
-      background-color: $deep-purple-200;
-    }
-
-    &-300-md {
-      background-color: $deep-purple-300;
-    }
-
-    &-400-md {
-      background-color: $deep-purple-400;
-    }
-
-    &-500-md {
-      background-color: $deep-purple-500;
-    }
-
-    &-600-md {
-      background-color: $deep-purple-600;
-    }
-
-    &-700-md {
-      background-color: $deep-purple-700;
-    }
-
-    &-800-md {
-      background-color: $deep-purple-800;
-    }
-
-    &-900-md {
-      background-color: $deep-purple-900;
-    }
-
-    &-a100-md {
-      background-color: $deep-purple-a100;
-    }
-
-    &-a200-md {
-      background-color: $deep-purple-a200;
-    }
-
-    &-a400-md {
-      background-color: $deep-purple-a400;
-    }
-
-    &-a700-md {
-      background-color: $deep-purple-a700;
+  @each $key, $value in $deep-purple-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-indigo} {
-    &-md {
-      background-color: $indigo;
-    }
-
-    &-50-md {
-      background-color: $indigo-50;
-    }
-
-    &-100-md {
-      background-color: $indigo-100;
-    }
-
-    &-200-md {
-      background-color: $indigo-200;
-    }
-
-    &-300-md {
-      background-color: $indigo-300;
-    }
-
-    &-400-md {
-      background-color: $indigo-400;
-    }
-
-    &-500-md {
-      background-color: $indigo-500;
-    }
-
-    &-600-md {
-      background-color: $indigo-600;
-    }
-
-    &-700-md {
-      background-color: $indigo-700;
-    }
-
-    &-800-md {
-      background-color: $indigo-800;
-    }
-
-    &-900-md {
-      background-color: $indigo-900;
-    }
-
-    &-a100-md {
-      background-color: $indigo-a100;
-    }
-
-    &-a200-md {
-      background-color: $indigo-a200;
-    }
-
-    &-a400-md {
-      background-color: $indigo-a400;
-    }
-
-    &-a700-md {
-      background-color: $indigo-a700;
+  @each $key, $value in $indigo-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-blue} {
-    &-md {
-      background-color: $blue;
-    }
-
-    &-50-md {
-      background-color: $blue-50;
-    }
-
-    &-100-md {
-      background-color: $blue-100;
-    }
-
-    &-200-md {
-      background-color: $blue-200;
-    }
-
-    &-300-md {
-      background-color: $blue-300;
-    }
-
-    &-400-md {
-      background-color: $blue-400;
-    }
-
-    &-500-md {
-      background-color: $blue-500;
-    }
-
-    &-600-md {
-      background-color: $blue-600;
-    }
-
-    &-700-md {
-      background-color: $blue-700;
-    }
-
-    &-800-md {
-      background-color: $blue-800;
-    }
-
-    &-900-md {
-      background-color: $blue-900;
-    }
-
-    &-a100-md {
-      background-color: $blue-a100;
-    }
-
-    &-a200-md {
-      background-color: $blue-a200;
-    }
-
-    &-a400-md {
-      background-color: $blue-a400;
-    }
-
-    &-a700-md {
-      background-color: $blue-a700;
+  @each $key, $value in $blue-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-light-blue} {
-    &-md {
-      background-color: $light-blue;
-    }
-
-    &-50-md {
-      background-color: $light-blue-50;
-    }
-
-    &-100-md {
-      background-color: $light-blue-100;
-    }
-
-    &-200-md {
-      background-color: $light-blue-200;
-    }
-
-    &-300-md {
-      background-color: $light-blue-300;
-    }
-
-    &-400-md {
-      background-color: $light-blue-400;
-    }
-
-    &-500-md {
-      background-color: $light-blue-500;
-    }
-
-    &-600-md {
-      background-color: $light-blue-600;
-    }
-
-    &-700-md {
-      background-color: $light-blue-700;
-    }
-
-    &-800-md {
-      background-color: $light-blue-800;
-    }
-
-    &-900-md {
-      background-color: $light-blue-900;
-    }
-
-    &-a100-md {
-      background-color: $light-blue-a100;
-    }
-
-    &-a200-md {
-      background-color: $light-blue-a200;
-    }
-
-    &-a400-md {
-      background-color: $light-blue-a400;
-    }
-
-    &-a700-md {
-      background-color: $light-blue-a700;
+  @each $key, $value in $light-blue-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-cyan} {
-    &-md {
-      background-color: $cyan;
-    }
-
-    &-50-md {
-      background-color: $cyan-50;
-    }
-
-    &-100-md {
-      background-color: $cyan-100;
-    }
-
-    &-200-md {
-      background-color: $cyan-200;
-    }
-
-    &-300-md {
-      background-color: $cyan-300;
-    }
-
-    &-400-md {
-      background-color: $cyan-400;
-    }
-
-    &-500-md {
-      background-color: $cyan-500;
-    }
-
-    &-600-md {
-      background-color: $cyan-600;
-    }
-
-    &-700-md {
-      background-color: $cyan-700;
-    }
-
-    &-800-md {
-      background-color: $cyan-800;
-    }
-
-    &-900-md {
-      background-color: $cyan-900;
-    }
-
-    &-a100-md {
-      background-color: $cyan-a100;
-    }
-
-    &-a200-md {
-      background-color: $cyan-a200;
-    }
-
-    &-a400-md {
-      background-color: $cyan-a400;
-    }
-
-    &-a700-md {
-      background-color: $cyan-a700;
+  @each $key, $value in $cyan-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-teal} {
-    &-md {
-      background-color: $teal;
-    }
-
-    &-50-md {
-      background-color: $teal-50;
-    }
-
-    &-100-md {
-      background-color: $teal-100;
-    }
-
-    &-200-md {
-      background-color: $teal-200;
-    }
-
-    &-300-md {
-      background-color: $teal-300;
-    }
-
-    &-400-md {
-      background-color: $teal-400;
-    }
-
-    &-500-md {
-      background-color: $teal-500;
-    }
-
-    &-600-md {
-      background-color: $teal-600;
-    }
-
-    &-700-md {
-      background-color: $teal-700;
-    }
-
-    &-800-md {
-      background-color: $teal-800;
-    }
-
-    &-900-md {
-      background-color: $teal-900;
-    }
-
-    &-a100-md {
-      background-color: $teal-a100;
-    }
-
-    &-a200-md {
-      background-color: $teal-a200;
-    }
-
-    &-a400-md {
-      background-color: $teal-a400;
-    }
-
-    &-a700-md {
-      background-color: $teal-a700;
+  @each $key, $value in $teal-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-green} {
-    &-md {
-      background-color: $green;
-    }
-
-    &-50-md {
-      background-color: $green-50;
-    }
-
-    &-100-md {
-      background-color: $green-100;
-    }
-
-    &-200-md {
-      background-color: $green-200;
-    }
-
-    &-300-md {
-      background-color: $green-300;
-    }
-
-    &-400-md {
-      background-color: $green-400;
-    }
-
-    &-500-md {
-      background-color: $green-500;
-    }
-
-    &-600-md {
-      background-color: $green-600;
-    }
-
-    &-700-md {
-      background-color: $green-700;
-    }
-
-    &-800-md {
-      background-color: $green-800;
-    }
-
-    &-900-md {
-      background-color: $green-900;
-    }
-
-    &-a100-md {
-      background-color: $green-a100;
-    }
-
-    &-a200-md {
-      background-color: $green-a200;
-    }
-
-    &-a400-md {
-      background-color: $green-a400;
-    }
-
-    &-a700-md {
-      background-color: $green-a700;
+  @each $key, $value in $green-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-light-green} {
-    &-md {
-      background-color: $light-green;
-    }
-
-    &-50-md {
-      background-color: $light-green-50;
-    }
-
-    &-100-md {
-      background-color: $light-green-100;
-    }
-
-    &-200-md {
-      background-color: $light-green-200;
-    }
-
-    &-300-md {
-      background-color: $light-green-300;
-    }
-
-    &-400-md {
-      background-color: $light-green-400;
-    }
-
-    &-500-md {
-      background-color: $light-green-500;
-    }
-
-    &-600-md {
-      background-color: $light-green-600;
-    }
-
-    &-700-md {
-      background-color: $light-green-700;
-    }
-
-    &-800-md {
-      background-color: $light-green-800;
-    }
-
-    &-900-md {
-      background-color: $light-green-900;
-    }
-
-    &-a100-md {
-      background-color: $light-green-100;
-    }
-
-    &-a200-md {
-      background-color: $light-green-a200;
-    }
-
-    &-a400-md {
-      background-color: $light-green-a400;
-    }
-
-    &-a700-md {
-      background-color: $light-green-a700;
+  @each $key, $value in $light-green-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-lime} {
-    &-md {
-      background-color: $lime;
-    }
-
-    &-50-md {
-      background-color: $lime-50;
-    }
-
-    &-100-md {
-      background-color: $lime-100;
-    }
-
-    &-200-md {
-      background-color: $lime-200;
-    }
-
-    &-300-md {
-      background-color: $lime-300;
-    }
-
-    &-400-md {
-      background-color: $lime-400;
-    }
-
-    &-500-md {
-      background-color: $lime-500;
-    }
-
-    &-600-md {
-      background-color: $lime-600;
-    }
-
-    &-700-md {
-      background-color: $lime-700;
-    }
-
-    &-800-md {
-      background-color: $lime-800;
-    }
-
-    &-900-md {
-      background-color: $lime-900;
-    }
-
-    &-a100-md {
-      background-color: $lime-a100;
-    }
-
-    &-a200-md {
-      background-color: $lime-a200;
-    }
-
-    &-a400-md {
-      background-color: $lime-a400;
-    }
-
-    &-a700-md {
-      background-color: $lime-a700;
+  @each $key, $value in $lime-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-yellow} {
-    &-md {
-      background-color: $yellow;
-    }
-
-    &-50-md {
-      background-color: $yellow-50;
-    }
-
-    &-100-md {
-      background-color: $yellow-100;
-    }
-
-    &-200-md {
-      background-color: $yellow-200;
-    }
-
-    &-300-md {
-      background-color: $yellow-300;
-    }
-
-    &-400-md {
-      background-color: $yellow-400;
-    }
-
-    &-500-md {
-      background-color: $yellow-500;
-    }
-
-    &-600-md {
-      background-color: $yellow-600;
-    }
-
-    &-700-md {
-      background-color: $yellow-700;
-    }
-
-    &-800-md {
-      background-color: $yellow-800;
-    }
-
-    &-900-md {
-      background-color: $yellow-900;
-    }
-
-    &-a100-md {
-      background-color: $yellow-a100;
-    }
-
-    &-a200-md {
-      background-color: $yellow-a200;
-    }
-
-    &-a400-md {
-      background-color: $yellow-a400;
-    }
-
-    &-a700-md {
-      background-color: $yellow-a700;
+  @each $key, $value in $yellow-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-amber} {
-    &-md {
-      background-color: $amber;
-    }
-
-    &-50-md {
-      background-color: $amber-50;
-    }
-
-    &-100-md {
-      background-color: $amber-100;
-    }
-
-    &-200-md {
-      background-color: $amber-200;
-    }
-
-    &-300-md {
-      background-color: $amber-300;
-    }
-
-    &-400-md {
-      background-color: $amber-400;
-    }
-
-    &-500-md {
-      background-color: $amber-500;
-    }
-
-    &-600-md {
-      background-color: $amber-600;
-    }
-
-    &-700-md {
-      background-color: $amber-700;
-    }
-
-    &-800-md {
-      background-color: $amber-800;
-    }
-
-    &-900-md {
-      background-color: $amber-900;
-    }
-
-    &-a100-md {
-      background-color: $amber-a100;
-    }
-
-    &-a200-md {
-      background-color: $amber-a200;
-    }
-
-    &-a400-md {
-      background-color: $amber-a400;
-    }
-
-    &-a700-md {
-      background-color: $amber-a700;
+  @each $key, $value in $amber-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-orange} {
-    &-md {
-      background-color: $orange;
-    }
-
-    &-50-md {
-      background-color: $orange-50;
-    }
-
-    &-100-md {
-      background-color: $orange-100;
-    }
-
-    &-200-md {
-      background-color: $orange-200;
-    }
-
-    &-300-md {
-      background-color: $orange-300;
-    }
-
-    &-400-md {
-      background-color: $orange-400;
-    }
-
-    &-500-md {
-      background-color: $orange-500;
-    }
-
-    &-600-md {
-      background-color: $orange-600;
-    }
-
-    &-700-md {
-      background-color: $orange-700;
-    }
-
-    &-800-md {
-      background-color: $orange-800;
-    }
-
-    &-900-md {
-      background-color: $orange-900;
-    }
-
-    &-a100-md {
-      background-color: $orange-a100;
-    }
-
-    &-a200-md {
-      background-color: $orange-a200;
-    }
-
-    &-a400-md {
-      background-color: $orange-a400;
-    }
-
-    &-a700-md {
-      background-color: $orange-a700;
+  @each $key, $value in $orange-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-deep-orange} {
-    &-md {
-      background-color: $deep-orange;
-    }
-
-    &-50-md {
-      background-color: $deep-orange-50;
-    }
-
-    &-100-md {
-      background-color: $deep-orange-100;
-    }
-
-    &-200-md {
-      background-color: $deep-orange-200;
-    }
-
-    &-300-md {
-      background-color: $deep-orange-300;
-    }
-
-    &-400-md {
-      background-color: $deep-orange-400;
-    }
-
-    &-500-md {
-      background-color: $deep-orange-500;
-    }
-
-    &-600-md {
-      background-color: $deep-orange-600;
-    }
-
-    &-700-md {
-      background-color: $deep-orange-700;
-    }
-
-    &-800-md {
-      background-color: $deep-orange-800;
-    }
-
-    &-900-md {
-      background-color: $deep-orange-900;
-    }
-
-    &-a100-md {
-      background-color: $deep-orange-a100;
-    }
-
-    &-a200-md {
-      background-color: $deep-orange-a200;
-    }
-
-    &-a400-md {
-      background-color: $deep-orange-a400;
-    }
-
-    &-a700-md {
-      background-color: $deep-orange-a700;
+  @each $key, $value in $deep-orange-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-brown} {
-    &-md {
-      background-color: $brown;
-    }
-
-    &-50-md {
-      background-color: $brown-50;
-    }
-
-    &-100-md {
-      background-color: $brown-100;
-    }
-
-    &-200-md {
-      background-color: $brown-200;
-    }
-
-    &-300-md {
-      background-color: $brown-300;
-    }
-
-    &-400-md {
-      background-color: $brown-400;
-    }
-
-    &-500-md {
-      background-color: $brown-500;
-    }
-
-    &-600-md {
-      background-color: $brown-600;
-    }
-
-    &-700-md {
-      background-color: $brown-700;
-    }
-
-    &-800-md {
-      background-color: $brown-800;
-    }
-
-    &-900-md {
-      background-color: $brown-900;
+  @each $key, $value in $brown-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-grey} {
-    &-md {
-      background-color: $grey;
-    }
-
-    &-50-md {
-      background-color: $grey-50;
-    }
-
-    &-100-md {
-      background-color: $grey-100;
-    }
-
-    &-200-md {
-      background-color: $grey-200;
-    }
-
-    &-300-md {
-      background-color: $grey-300;
-    }
-
-    &-400-md {
-      background-color: $grey-400;
-    }
-
-    &-500-md {
-      background-color: $grey-500;
-    }
-
-    &-600-md {
-      background-color: $grey-600;
-    }
-
-    &-700-md {
-      background-color: $grey-700;
-    }
-
-    &-800-md {
-      background-color: $grey-800;
-    }
-
-    &-900-md {
-      background-color: $grey-900;
+  @each $key, $value in $grey-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-blue-grey} {
-    &-md {
-      background-color: $blue-grey;
-    }
-
-    &-50-md {
-      background-color: $blue-grey-50;
-    }
-
-    &-100-md {
-      background-color: $blue-grey-100;
-    }
-
-    &-200-md {
-      background-color: $blue-grey-200;
-    }
-
-    &-300-md {
-      background-color: $blue-grey-300;
-    }
-
-    &-400-md {
-      background-color: $blue-grey-400;
-    }
-
-    &-500-md {
-      background-color: $blue-grey-500;
-    }
-
-    &-600-md {
-      background-color: $blue-grey-600;
-    }
-
-    &-700-md {
-      background-color: $blue-grey-700;
-    }
-
-    &-800-md {
-      background-color: $blue-grey-800;
-    }
-
-    &-900-md {
-      background-color: $blue-grey-900;
+  @each $key, $value in $blue-grey-series {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
     }
   }
 
+  @each $key, $value in $namespace-color {
+    .#{$background}-#{$key}-md {
+      @include bg-variant($value);
+    }
+  }
 }
 
 @media (max-width: 767px) {
-
-  [class^="bg-"].default-sm {
-    background-color: $default-color;
+  //Medium devices (tablets, 576px and 768px)
+  .#{$background-transparent}-sm {
+    background-color: transparent;
   }
 
-  .#{$bg-color} {
-    &-transparent-sm {
-      background-color: transparent;
-    }
-
-    &-white-sm {
-      background-color: $white;
-    }
-
-    &-black-sm {
-      color: $white;
-      background-color: $black;
-    }
+  .#{$background-white}-sm {
+    background-color: $color-f;
   }
 
-  .#{$bg-color-red} {
-    &-sm {
-      background-color: $red;
-    }
+  .#{$background-black}-sm {
+    color: $color-f;
+    background-color: $color-0;
+  }
 
-    &-50-sm {
-      background-color: $red-50;
-    }
-
-    &-100-sm {
-      background-color: $red-100;
-    }
-
-    &-200-sm {
-      background-color: $red-200;
-    }
-
-    &-300-sm {
-      background-color: $red-300;
-    }
-
-    &-400-sm {
-      background-color: $red-400;
-    }
-
-    &-500-sm {
-      background-color: $red-500;
-    }
-
-    &-600-sm {
-      background-color: $red-600;
-    }
-
-    &-700-sm {
-      background-color: $red-700;
-    }
-
-    &-800-sm {
-      background-color: $red-800;
-    }
-
-    &-900-sm {
-      background-color: $red-900;
-    }
-
-    &-a100-sm {
-      background-color: $red-a100;
-    }
-
-    &-a200-sm {
-      background-color: $red-a200;
-    }
-
-    &-a400-sm {
-      background-color: $red-a400;
-    }
-
-    &-a700-sm {
-      background-color: $red-a700;
+  @each $key, $value in $red-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-pink} {
-    &-sm {
-      background-color: $pink;
-    }
-
-    &-50-sm {
-      background-color: $pink-50;
-    }
-
-    &-100-sm {
-      background-color: $pink-100;
-    }
-
-    &-200-sm {
-      background-color: $pink-200;
-    }
-
-    &-300-sm {
-      background-color: $pink-300;
-    }
-
-    &-400-sm {
-      background-color: $pink-400;
-    }
-
-    &-500-sm {
-      background-color: $pink-500;
-    }
-
-    &-600-sm {
-      background-color: $pink-600;
-    }
-
-    &-700-sm {
-      background-color: $pink-700;
-    }
-
-    &-800-sm {
-      background-color: $pink-800;
-    }
-
-    &-900-sm {
-      background-color: $pink-900;
-    }
-
-    &-a100-sm {
-      background-color: $pink-a100;
-    }
-
-    &-a200-sm {
-      background-color: $pink-a200;
-    }
-
-    &-a400-sm {
-      background-color: $pink-a400;
-    }
-
-    &-a700-sm {
-      background-color: $pink-a700;
+  @each $key, $value in $pink-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-purple} {
-    &-sm {
-      color: $white;
-      background-color: $purple;
-    }
-
-    &-50-sm {
-      background-color: $purple-50;
-    }
-
-    &-100-sm {
-      background-color: $purple-100;
-    }
-
-    &-200-sm {
-      background-color: $purple-200;
-    }
-
-    &-300-sm {
-      background-color: $purple-300;
-    }
-
-    &-400-sm {
-      background-color: $purple-400;
-    }
-
-    &-500-sm {
-      background-color: $purple-500;
-    }
-
-    &-600-sm {
-      background-color: $purple-600;
-    }
-
-    &-700-sm {
-      background-color: $purple-700;
-    }
-
-    &-800-sm {
-      background-color: $purple-800;
-    }
-
-    &-900-sm {
-      background-color: $purple-900;
-    }
-
-    &-a100-sm {
-      background-color: $purple-a100;
-    }
-
-    &-a200-sm {
-      background-color: $purple-a200;
-    }
-
-    &-a400-sm {
-      background-color: $purple-a400;
-    }
-
-    &-a700-sm {
-      background-color: $purple-a700;
+  @each $key, $value in $purple-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-deep-purple} {
-    &-sm {
-      background-color: $deep-purple;
-    }
-
-    &-50-sm {
-      background-color: $deep-purple-50;
-    }
-
-    &-100-sm {
-      background-color: $deep-purple-100;
-    }
-
-    &-200-sm {
-      background-color: $deep-purple-200;
-    }
-
-    &-300-sm {
-      background-color: $deep-purple-300;
-    }
-
-    &-400-sm {
-      background-color: $deep-purple-400;
-    }
-
-    &-500-sm {
-      background-color: $deep-purple-500;
-    }
-
-    &-600-sm {
-      background-color: $deep-purple-600;
-    }
-
-    &-700-sm {
-      background-color: $deep-purple-700;
-    }
-
-    &-800-sm {
-      background-color: $deep-purple-800;
-    }
-
-    &-900-sm {
-      background-color: $deep-purple-900;
-    }
-
-    &-a100-sm {
-      background-color: $deep-purple-a100;
-    }
-
-    &-a200-sm {
-      background-color: $deep-purple-a200;
-    }
-
-    &-a400-sm {
-      background-color: $deep-purple-a400;
-    }
-
-    &-a700-sm {
-      background-color: $deep-purple-a700;
+  @each $key, $value in $deep-purple-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-indigo} {
-    &-sm {
-      background-color: $indigo;
-    }
-
-    &-50-sm {
-      background-color: $indigo-50;
-    }
-
-    &-100-sm {
-      background-color: $indigo-100;
-    }
-
-    &-200-sm {
-      background-color: $indigo-200;
-    }
-
-    &-300-sm {
-      background-color: $indigo-300;
-    }
-
-    &-400-sm {
-      background-color: $indigo-400;
-    }
-
-    &-500-sm {
-      background-color: $indigo-500;
-    }
-
-    &-600-sm {
-      background-color: $indigo-600;
-    }
-
-    &-700-sm {
-      background-color: $indigo-700;
-    }
-
-    &-800-sm {
-      background-color: $indigo-800;
-    }
-
-    &-900-sm {
-      background-color: $indigo-900;
-    }
-
-    &-a100-sm {
-      background-color: $indigo-a100;
-    }
-
-    &-a200-sm {
-      background-color: $indigo-a200;
-    }
-
-    &-a400-sm {
-      background-color: $indigo-a400;
-    }
-
-    &-a700-sm {
-      background-color: $indigo-a700;
+  @each $key, $value in $indigo-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-blue} {
-    &-sm {
-      background-color: $blue;
-    }
-
-    &-50-sm {
-      background-color: $blue-50;
-    }
-
-    &-100-sm {
-      background-color: $blue-100;
-    }
-
-    &-200-sm {
-      background-color: $blue-200;
-    }
-
-    &-300-sm {
-      background-color: $blue-300;
-    }
-
-    &-400-sm {
-      background-color: $blue-400;
-    }
-
-    &-500-sm {
-      background-color: $blue-500;
-    }
-
-    &-600-sm {
-      background-color: $blue-600;
-    }
-
-    &-700-sm {
-      background-color: $blue-700;
-    }
-
-    &-800-sm {
-      background-color: $blue-800;
-    }
-
-    &-900-sm {
-      background-color: $blue-900;
-    }
-
-    &-a100-sm {
-      background-color: $blue-a100;
-    }
-
-    &-a200-sm {
-      background-color: $blue-a200;
-    }
-
-    &-a400-sm {
-      background-color: $blue-a400;
-    }
-
-    &-a700-sm {
-      background-color: $blue-a700;
+  @each $key, $value in $blue-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-light-blue} {
-    &-sm {
-      background-color: $light-blue;
-    }
-
-    &-50-sm {
-      background-color: $light-blue-50;
-    }
-
-    &-100-sm {
-      background-color: $light-blue-100;
-    }
-
-    &-200-sm {
-      background-color: $light-blue-200;
-    }
-
-    &-300-sm {
-      background-color: $light-blue-300;
-    }
-
-    &-400-sm {
-      background-color: $light-blue-400;
-    }
-
-    &-500-sm {
-      background-color: $light-blue-500;
-    }
-
-    &-600-sm {
-      background-color: $light-blue-600;
-    }
-
-    &-700-sm {
-      background-color: $light-blue-700;
-    }
-
-    &-800-sm {
-      background-color: $light-blue-800;
-    }
-
-    &-900-sm {
-      background-color: $light-blue-900;
-    }
-
-    &-a100-sm {
-      background-color: $light-blue-a100;
-    }
-
-    &-a200-sm {
-      background-color: $light-blue-a200;
-    }
-
-    &-a400-sm {
-      background-color: $light-blue-a400;
-    }
-
-    &-a700-sm {
-      background-color: $light-blue-a700;
+  @each $key, $value in $light-blue-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-cyan} {
-    &-sm {
-      background-color: $cyan;
-    }
-
-    &-50-sm {
-      background-color: $cyan-50;
-    }
-
-    &-100-sm {
-      background-color: $cyan-100;
-    }
-
-    &-200-sm {
-      background-color: $cyan-200;
-    }
-
-    &-300-sm {
-      background-color: $cyan-300;
-    }
-
-    &-400-sm {
-      background-color: $cyan-400;
-    }
-
-    &-500-sm {
-      background-color: $cyan-500;
-    }
-
-    &-600-sm {
-      background-color: $cyan-600;
-    }
-
-    &-700-sm {
-      background-color: $cyan-700;
-    }
-
-    &-800-sm {
-      background-color: $cyan-800;
-    }
-
-    &-900-sm {
-      background-color: $cyan-900;
-    }
-
-    &-a100-sm {
-      background-color: $cyan-a100;
-    }
-
-    &-a200-sm {
-      background-color: $cyan-a200;
-    }
-
-    &-a400-sm {
-      background-color: $cyan-a400;
-    }
-
-    &-a700-sm {
-      background-color: $cyan-a700;
+  @each $key, $value in $cyan-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-teal} {
-    &-sm {
-      background-color: $teal;
-    }
-
-    &-50-sm {
-      background-color: $teal-50;
-    }
-
-    &-100-sm {
-      background-color: $teal-100;
-    }
-
-    &-200-sm {
-      background-color: $teal-200;
-    }
-
-    &-300-sm {
-      background-color: $teal-300;
-    }
-
-    &-400-sm {
-      background-color: $teal-400;
-    }
-
-    &-500-sm {
-      background-color: $teal-500;
-    }
-
-    &-600-sm {
-      background-color: $teal-600;
-    }
-
-    &-700-sm {
-      background-color: $teal-700;
-    }
-
-    &-800-sm {
-      background-color: $teal-800;
-    }
-
-    &-900-sm {
-      background-color: $teal-900;
-    }
-
-    &-a100-sm {
-      background-color: $teal-a100;
-    }
-
-    &-a200-sm {
-      background-color: $teal-a200;
-    }
-
-    &-a400-sm {
-      background-color: $teal-a400;
-    }
-
-    &-a700-sm {
-      background-color: $teal-a700;
+  @each $key, $value in $teal-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-green} {
-    &-sm {
-      background-color: $green;
-    }
-
-    &-50-sm {
-      background-color: $green-50;
-    }
-
-    &-100-sm {
-      background-color: $green-100;
-    }
-
-    &-200-sm {
-      background-color: $green-200;
-    }
-
-    &-300-sm {
-      background-color: $green-300;
-    }
-
-    &-400-sm {
-      background-color: $green-400;
-    }
-
-    &-500-sm {
-      background-color: $green-500;
-    }
-
-    &-600-sm {
-      background-color: $green-600;
-    }
-
-    &-700-sm {
-      background-color: $green-700;
-    }
-
-    &-800-sm {
-      background-color: $green-800;
-    }
-
-    &-900-sm {
-      background-color: $green-900;
-    }
-
-    &-a100-sm {
-      background-color: $green-a100;
-    }
-
-    &-a200-sm {
-      background-color: $green-a200;
-    }
-
-    &-a400-sm {
-      background-color: $green-a400;
-    }
-
-    &-a700-sm {
-      background-color: $green-a700;
+  @each $key, $value in $green-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-light-green} {
-    &-sm {
-      background-color: $light-green;
-    }
-
-    &-50-sm {
-      background-color: $light-green-50;
-    }
-
-    &-100-sm {
-      background-color: $light-green-100;
-    }
-
-    &-200-sm {
-      background-color: $light-green-200;
-    }
-
-    &-300-sm {
-      background-color: $light-green-300;
-    }
-
-    &-400-sm {
-      background-color: $light-green-400;
-    }
-
-    &-500-sm {
-      background-color: $light-green-500;
-    }
-
-    &-600-sm {
-      background-color: $light-green-600;
-    }
-
-    &-700-sm {
-      background-color: $light-green-700;
-    }
-
-    &-800-sm {
-      background-color: $light-green-800;
-    }
-
-    &-900-sm {
-      background-color: $light-green-900;
-    }
-
-    &-a100-sm {
-      background-color: $light-green-100;
-    }
-
-    &-a200-sm {
-      background-color: $light-green-a200;
-    }
-
-    &-a400-sm {
-      background-color: $light-green-a400;
-    }
-
-    &-a700-sm {
-      background-color: $light-green-a700;
+  @each $key, $value in $light-green-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-lime} {
-    &-sm {
-      background-color: $lime;
-    }
-
-    &-50-sm {
-      background-color: $lime-50;
-    }
-
-    &-100-sm {
-      background-color: $lime-100;
-    }
-
-    &-200-sm {
-      background-color: $lime-200;
-    }
-
-    &-300-sm {
-      background-color: $lime-300;
-    }
-
-    &-400-sm {
-      background-color: $lime-400;
-    }
-
-    &-500-sm {
-      background-color: $lime-500;
-    }
-
-    &-600-sm {
-      background-color: $lime-600;
-    }
-
-    &-700-sm {
-      background-color: $lime-700;
-    }
-
-    &-800-sm {
-      background-color: $lime-800;
-    }
-
-    &-900-sm {
-      background-color: $lime-900;
-    }
-
-    &-a100-sm {
-      background-color: $lime-a100;
-    }
-
-    &-a200-sm {
-      background-color: $lime-a200;
-    }
-
-    &-a400-sm {
-      background-color: $lime-a400;
-    }
-
-    &-a700-sm {
-      background-color: $lime-a700;
+  @each $key, $value in $lime-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-yellow} {
-    &-sm {
-      background-color: $yellow;
-    }
-
-    &-50-sm {
-      background-color: $yellow-50;
-    }
-
-    &-100-sm {
-      background-color: $yellow-100;
-    }
-
-    &-200-sm {
-      background-color: $yellow-200;
-    }
-
-    &-300-sm {
-      background-color: $yellow-300;
-    }
-
-    &-400-sm {
-      background-color: $yellow-400;
-    }
-
-    &-500-sm {
-      background-color: $yellow-500;
-    }
-
-    &-600-sm {
-      background-color: $yellow-600;
-    }
-
-    &-700-sm {
-      background-color: $yellow-700;
-    }
-
-    &-800-sm {
-      background-color: $yellow-800;
-    }
-
-    &-900-sm {
-      background-color: $yellow-900;
-    }
-
-    &-a100-sm {
-      background-color: $yellow-a100;
-    }
-
-    &-a200-sm {
-      background-color: $yellow-a200;
-    }
-
-    &-a400-sm {
-      background-color: $yellow-a400;
-    }
-
-    &-a700-sm {
-      background-color: $yellow-a700;
+  @each $key, $value in $yellow-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-amber} {
-    &-sm {
-      background-color: $amber;
-    }
-
-    &-50-sm {
-      background-color: $amber-50;
-    }
-
-    &-100-sm {
-      background-color: $amber-100;
-    }
-
-    &-200-sm {
-      background-color: $amber-200;
-    }
-
-    &-300-sm {
-      background-color: $amber-300;
-    }
-
-    &-400-sm {
-      background-color: $amber-400;
-    }
-
-    &-500-sm {
-      background-color: $amber-500;
-    }
-
-    &-600-sm {
-      background-color: $amber-600;
-    }
-
-    &-700-sm {
-      background-color: $amber-700;
-    }
-
-    &-800-sm {
-      background-color: $amber-800;
-    }
-
-    &-900-sm {
-      background-color: $amber-900;
-    }
-
-    &-a100-sm {
-      background-color: $amber-a100;
-    }
-
-    &-a200-sm {
-      background-color: $amber-a200;
-    }
-
-    &-a400-sm {
-      background-color: $amber-a400;
-    }
-
-    &-a700-sm {
-      background-color: $amber-a700;
+  @each $key, $value in $amber-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-orange} {
-    &-sm {
-      background-color: $orange;
-    }
-
-    &-50-sm {
-      background-color: $orange-50;
-    }
-
-    &-100-sm {
-      background-color: $orange-100;
-    }
-
-    &-200-sm {
-      background-color: $orange-200;
-    }
-
-    &-300-sm {
-      background-color: $orange-300;
-    }
-
-    &-400-sm {
-      background-color: $orange-400;
-    }
-
-    &-500-sm {
-      background-color: $orange-500;
-    }
-
-    &-600-sm {
-      background-color: $orange-600;
-    }
-
-    &-700-sm {
-      background-color: $orange-700;
-    }
-
-    &-800-sm {
-      background-color: $orange-800;
-    }
-
-    &-900-sm {
-      background-color: $orange-900;
-    }
-
-    &-a100-sm {
-      background-color: $orange-a100;
-    }
-
-    &-a200-sm {
-      background-color: $orange-a200;
-    }
-
-    &-a400-sm {
-      background-color: $orange-a400;
-    }
-
-    &-a700-sm {
-      background-color: $orange-a700;
+  @each $key, $value in $orange-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-deep-orange} {
-    &-sm {
-      background-color: $deep-orange;
-    }
-
-    &-50-sm {
-      background-color: $deep-orange-50;
-    }
-
-    &-100-sm {
-      background-color: $deep-orange-100;
-    }
-
-    &-200-sm {
-      background-color: $deep-orange-200;
-    }
-
-    &-300-sm {
-      background-color: $deep-orange-300;
-    }
-
-    &-400-sm {
-      background-color: $deep-orange-400;
-    }
-
-    &-500-sm {
-      background-color: $deep-orange-500;
-    }
-
-    &-600-sm {
-      background-color: $deep-orange-600;
-    }
-
-    &-700-sm {
-      background-color: $deep-orange-700;
-    }
-
-    &-800-sm {
-      background-color: $deep-orange-800;
-    }
-
-    &-900-sm {
-      background-color: $deep-orange-900;
-    }
-
-    &-a100-sm {
-      background-color: $deep-orange-a100;
-    }
-
-    &-a200-sm {
-      background-color: $deep-orange-a200;
-    }
-
-    &-a400-sm {
-      background-color: $deep-orange-a400;
-    }
-
-    &-a700-sm {
-      background-color: $deep-orange-a700;
+  @each $key, $value in $deep-orange-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-brown} {
-    &-sm {
-      background-color: $brown;
-    }
-
-    &-50-sm {
-      background-color: $brown-50;
-    }
-
-    &-100-sm {
-      background-color: $brown-100;
-    }
-
-    &-200-sm {
-      background-color: $brown-200;
-    }
-
-    &-300-sm {
-      background-color: $brown-300;
-    }
-
-    &-400-sm {
-      background-color: $brown-400;
-    }
-
-    &-500-sm {
-      background-color: $brown-500;
-    }
-
-    &-600-sm {
-      background-color: $brown-600;
-    }
-
-    &-700-sm {
-      background-color: $brown-700;
-    }
-
-    &-800-sm {
-      background-color: $brown-800;
-    }
-
-    &-900-sm {
-      background-color: $brown-900;
+  @each $key, $value in $brown-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-grey} {
-    &-sm {
-      background-color: $grey;
-    }
-
-    &-50-sm {
-      background-color: $grey-50;
-    }
-
-    &-100-sm {
-      background-color: $grey-100;
-    }
-
-    &-200-sm {
-      background-color: $grey-200;
-    }
-
-    &-300-sm {
-      background-color: $grey-300;
-    }
-
-    &-400-sm {
-      background-color: $grey-400;
-    }
-
-    &-500-sm {
-      background-color: $grey-500;
-    }
-
-    &-600-sm {
-      background-color: $grey-600;
-    }
-
-    &-700-sm {
-      background-color: $grey-700;
-    }
-
-    &-800-sm {
-      background-color: $grey-800;
-    }
-
-    &-900-sm {
-      background-color: $grey-900;
+  @each $key, $value in $grey-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-blue-grey} {
-    &-sm {
-      background-color: $blue-grey;
-    }
-
-    &-50-sm {
-      background-color: $blue-grey-50;
-    }
-
-    &-100-sm {
-      background-color: $blue-grey-100;
-    }
-
-    &-200-sm {
-      background-color: $blue-grey-200;
-    }
-
-    &-300-sm {
-      background-color: $blue-grey-300;
-    }
-
-    &-400-sm {
-      background-color: $blue-grey-400;
-    }
-
-    &-500-sm {
-      background-color: $blue-grey-500;
-    }
-
-    &-600-sm {
-      background-color: $blue-grey-600;
-    }
-
-    &-700-sm {
-      background-color: $blue-grey-700;
-    }
-
-    &-800-sm {
-      background-color: $blue-grey-800;
-    }
-
-    &-900-sm {
-      background-color: $blue-grey-900;
+  @each $key, $value in $blue-grey-series {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
     }
   }
 
+  @each $key, $value in $namespace-color {
+    .#{$background}-#{$key}-sm {
+      @include bg-variant($value);
+    }
+  }
 }
 
-@media (max-width: 479px) {
-
-  [class^="bg-"].default-xs {
-    background-color: $default-color;
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+  .#{$background-transparent}-xs {
+    background-color: transparent;
   }
 
-  .#{$bg-color} {
-    &-transparent-xs {
-      background-color: transparent;
-    }
-
-    &-white-xs {
-      background-color: $white;
-    }
-
-    &-black-xs {
-      color: $white;
-      background-color: $black;
-    }
+  .#{$background-white}-xs {
+    background-color: $color-f;
   }
 
-  .#{$bg-color-red} {
-    &-xs {
-      background-color: $red;
-    }
+  .#{$background-black}-xs {
+    color: $color-f;
+    background-color: $color-0;
+  }
 
-    &-50-xs {
-      background-color: $red-50;
-    }
-
-    &-100-xs {
-      background-color: $red-100;
-    }
-
-    &-200-xs {
-      background-color: $red-200;
-    }
-
-    &-300-xs {
-      background-color: $red-300;
-    }
-
-    &-400-xs {
-      background-color: $red-400;
-    }
-
-    &-500-xs {
-      background-color: $red-500;
-    }
-
-    &-600-xs {
-      background-color: $red-600;
-    }
-
-    &-700-xs {
-      background-color: $red-700;
-    }
-
-    &-800-xs {
-      background-color: $red-800;
-    }
-
-    &-900-xs {
-      background-color: $red-900;
-    }
-
-    &-a100-xs {
-      background-color: $red-a100;
-    }
-
-    &-a200-xs {
-      background-color: $red-a200;
-    }
-
-    &-a400-xs {
-      background-color: $red-a400;
-    }
-
-    &-a700-xs {
-      background-color: $red-a700;
+  @each $key, $value in $red-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-pink} {
-    &-xs {
-      background-color: $pink;
-    }
-
-    &-50-xs {
-      background-color: $pink-50;
-    }
-
-    &-100-xs {
-      background-color: $pink-100;
-    }
-
-    &-200-xs {
-      background-color: $pink-200;
-    }
-
-    &-300-xs {
-      background-color: $pink-300;
-    }
-
-    &-400-xs {
-      background-color: $pink-400;
-    }
-
-    &-500-xs {
-      background-color: $pink-500;
-    }
-
-    &-600-xs {
-      background-color: $pink-600;
-    }
-
-    &-700-xs {
-      background-color: $pink-700;
-    }
-
-    &-800-xs {
-      background-color: $pink-800;
-    }
-
-    &-900-xs {
-      background-color: $pink-900;
-    }
-
-    &-a100-xs {
-      background-color: $pink-a100;
-    }
-
-    &-a200-xs {
-      background-color: $pink-a200;
-    }
-
-    &-a400-xs {
-      background-color: $pink-a400;
-    }
-
-    &-a700-xs {
-      background-color: $pink-a700;
+  @each $key, $value in $pink-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-purple} {
-    &-xs {
-      color: $white;
-      background-color: $purple;
-    }
-
-    &-50-xs {
-      background-color: $purple-50;
-    }
-
-    &-100-xs {
-      background-color: $purple-100;
-    }
-
-    &-200-xs {
-      background-color: $purple-200;
-    }
-
-    &-300-xs {
-      background-color: $purple-300;
-    }
-
-    &-400-xs {
-      background-color: $purple-400;
-    }
-
-    &-500-xs {
-      background-color: $purple-500;
-    }
-
-    &-600-xs {
-      background-color: $purple-600;
-    }
-
-    &-700-xs {
-      background-color: $purple-700;
-    }
-
-    &-800-xs {
-      background-color: $purple-800;
-    }
-
-    &-900-xs {
-      background-color: $purple-900;
-    }
-
-    &-a100-xs {
-      background-color: $purple-a100;
-    }
-
-    &-a200-xs {
-      background-color: $purple-a200;
-    }
-
-    &-a400-xs {
-      background-color: $purple-a400;
-    }
-
-    &-a700-xs {
-      background-color: $purple-a700;
+  @each $key, $value in $purple-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-deep-purple} {
-    &-xs {
-      background-color: $deep-purple;
-    }
-
-    &-50-xs {
-      background-color: $deep-purple-50;
-    }
-
-    &-100-xs {
-      background-color: $deep-purple-100;
-    }
-
-    &-200-xs {
-      background-color: $deep-purple-200;
-    }
-
-    &-300-xs {
-      background-color: $deep-purple-300;
-    }
-
-    &-400-xs {
-      background-color: $deep-purple-400;
-    }
-
-    &-500-xs {
-      background-color: $deep-purple-500;
-    }
-
-    &-600-xs {
-      background-color: $deep-purple-600;
-    }
-
-    &-700-xs {
-      background-color: $deep-purple-700;
-    }
-
-    &-800-xs {
-      background-color: $deep-purple-800;
-    }
-
-    &-900-xs {
-      background-color: $deep-purple-900;
-    }
-
-    &-a100-xs {
-      background-color: $deep-purple-a100;
-    }
-
-    &-a200-xs {
-      background-color: $deep-purple-a200;
-    }
-
-    &-a400-xs {
-      background-color: $deep-purple-a400;
-    }
-
-    &-a700-xs {
-      background-color: $deep-purple-a700;
+  @each $key, $value in $deep-purple-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-indigo} {
-    &-xs {
-      background-color: $indigo;
-    }
-
-    &-50-xs {
-      background-color: $indigo-50;
-    }
-
-    &-100-xs {
-      background-color: $indigo-100;
-    }
-
-    &-200-xs {
-      background-color: $indigo-200;
-    }
-
-    &-300-xs {
-      background-color: $indigo-300;
-    }
-
-    &-400-xs {
-      background-color: $indigo-400;
-    }
-
-    &-500-xs {
-      background-color: $indigo-500;
-    }
-
-    &-600-xs {
-      background-color: $indigo-600;
-    }
-
-    &-700-xs {
-      background-color: $indigo-700;
-    }
-
-    &-800-xs {
-      background-color: $indigo-800;
-    }
-
-    &-900-xs {
-      background-color: $indigo-900;
-    }
-
-    &-a100-xs {
-      background-color: $indigo-a100;
-    }
-
-    &-a200-xs {
-      background-color: $indigo-a200;
-    }
-
-    &-a400-xs {
-      background-color: $indigo-a400;
-    }
-
-    &-a700-xs {
-      background-color: $indigo-a700;
+  @each $key, $value in $indigo-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-blue} {
-    &-xs {
-      background-color: $blue;
-    }
-
-    &-50-xs {
-      background-color: $blue-50;
-    }
-
-    &-100-xs {
-      background-color: $blue-100;
-    }
-
-    &-200-xs {
-      background-color: $blue-200;
-    }
-
-    &-300-xs {
-      background-color: $blue-300;
-    }
-
-    &-400-xs {
-      background-color: $blue-400;
-    }
-
-    &-500-xs {
-      background-color: $blue-500;
-    }
-
-    &-600-xs {
-      background-color: $blue-600;
-    }
-
-    &-700-xs {
-      background-color: $blue-700;
-    }
-
-    &-800-xs {
-      background-color: $blue-800;
-    }
-
-    &-900-xs {
-      background-color: $blue-900;
-    }
-
-    &-a100-xs {
-      background-color: $blue-a100;
-    }
-
-    &-a200-xs {
-      background-color: $blue-a200;
-    }
-
-    &-a400-xs {
-      background-color: $blue-a400;
-    }
-
-    &-a700-xs {
-      background-color: $blue-a700;
+  @each $key, $value in $blue-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-light-blue} {
-    &-xs {
-      background-color: $light-blue;
-    }
-
-    &-50-xs {
-      background-color: $light-blue-50;
-    }
-
-    &-100-xs {
-      background-color: $light-blue-100;
-    }
-
-    &-200-xs {
-      background-color: $light-blue-200;
-    }
-
-    &-300-xs {
-      background-color: $light-blue-300;
-    }
-
-    &-400-xs {
-      background-color: $light-blue-400;
-    }
-
-    &-500-xs {
-      background-color: $light-blue-500;
-    }
-
-    &-600-xs {
-      background-color: $light-blue-600;
-    }
-
-    &-700-xs {
-      background-color: $light-blue-700;
-    }
-
-    &-800-xs {
-      background-color: $light-blue-800;
-    }
-
-    &-900-xs {
-      background-color: $light-blue-900;
-    }
-
-    &-a100-xs {
-      background-color: $light-blue-a100;
-    }
-
-    &-a200-xs {
-      background-color: $light-blue-a200;
-    }
-
-    &-a400-xs {
-      background-color: $light-blue-a400;
-    }
-
-    &-a700-xs {
-      background-color: $light-blue-a700;
+  @each $key, $value in $light-blue-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-cyan} {
-    &-xs {
-      background-color: $cyan;
-    }
-
-    &-50-xs {
-      background-color: $cyan-50;
-    }
-
-    &-100-xs {
-      background-color: $cyan-100;
-    }
-
-    &-200-xs {
-      background-color: $cyan-200;
-    }
-
-    &-300-xs {
-      background-color: $cyan-300;
-    }
-
-    &-400-xs {
-      background-color: $cyan-400;
-    }
-
-    &-500-xs {
-      background-color: $cyan-500;
-    }
-
-    &-600-xs {
-      background-color: $cyan-600;
-    }
-
-    &-700-xs {
-      background-color: $cyan-700;
-    }
-
-    &-800-xs {
-      background-color: $cyan-800;
-    }
-
-    &-900-xs {
-      background-color: $cyan-900;
-    }
-
-    &-a100-xs {
-      background-color: $cyan-a100;
-    }
-
-    &-a200-xs {
-      background-color: $cyan-a200;
-    }
-
-    &-a400-xs {
-      background-color: $cyan-a400;
-    }
-
-    &-a700-xs {
-      background-color: $cyan-a700;
+  @each $key, $value in $cyan-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-teal} {
-    &-xs {
-      background-color: $teal;
-    }
-
-    &-50-xs {
-      background-color: $teal-50;
-    }
-
-    &-100-xs {
-      background-color: $teal-100;
-    }
-
-    &-200-xs {
-      background-color: $teal-200;
-    }
-
-    &-300-xs {
-      background-color: $teal-300;
-    }
-
-    &-400-xs {
-      background-color: $teal-400;
-    }
-
-    &-500-xs {
-      background-color: $teal-500;
-    }
-
-    &-600-xs {
-      background-color: $teal-600;
-    }
-
-    &-700-xs {
-      background-color: $teal-700;
-    }
-
-    &-800-xs {
-      background-color: $teal-800;
-    }
-
-    &-900-xs {
-      background-color: $teal-900;
-    }
-
-    &-a100-xs {
-      background-color: $teal-a100;
-    }
-
-    &-a200-xs {
-      background-color: $teal-a200;
-    }
-
-    &-a400-xs {
-      background-color: $teal-a400;
-    }
-
-    &-a700-xs {
-      background-color: $teal-a700;
+  @each $key, $value in $teal-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-green} {
-    &-xs {
-      background-color: $green;
-    }
-
-    &-50-xs {
-      background-color: $green-50;
-    }
-
-    &-100-xs {
-      background-color: $green-100;
-    }
-
-    &-200-xs {
-      background-color: $green-200;
-    }
-
-    &-300-xs {
-      background-color: $green-300;
-    }
-
-    &-400-xs {
-      background-color: $green-400;
-    }
-
-    &-500-xs {
-      background-color: $green-500;
-    }
-
-    &-600-xs {
-      background-color: $green-600;
-    }
-
-    &-700-xs {
-      background-color: $green-700;
-    }
-
-    &-800-xs {
-      background-color: $green-800;
-    }
-
-    &-900-xs {
-      background-color: $green-900;
-    }
-
-    &-a100-xs {
-      background-color: $green-a100;
-    }
-
-    &-a200-xs {
-      background-color: $green-a200;
-    }
-
-    &-a400-xs {
-      background-color: $green-a400;
-    }
-
-    &-a700-xs {
-      background-color: $green-a700;
+  @each $key, $value in $green-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-light-green} {
-    &-xs {
-      background-color: $light-green;
-    }
-
-    &-50-xs {
-      background-color: $light-green-50;
-    }
-
-    &-100-xs {
-      background-color: $light-green-100;
-    }
-
-    &-200-xs {
-      background-color: $light-green-200;
-    }
-
-    &-300-xs {
-      background-color: $light-green-300;
-    }
-
-    &-400-xs {
-      background-color: $light-green-400;
-    }
-
-    &-500-xs {
-      background-color: $light-green-500;
-    }
-
-    &-600-xs {
-      background-color: $light-green-600;
-    }
-
-    &-700-xs {
-      background-color: $light-green-700;
-    }
-
-    &-800-xs {
-      background-color: $light-green-800;
-    }
-
-    &-900-xs {
-      background-color: $light-green-900;
-    }
-
-    &-a100-xs {
-      background-color: $light-green-100;
-    }
-
-    &-a200-xs {
-      background-color: $light-green-a200;
-    }
-
-    &-a400-xs {
-      background-color: $light-green-a400;
-    }
-
-    &-a700-xs {
-      background-color: $light-green-a700;
+  @each $key, $value in $light-green-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-lime} {
-    &-xs {
-      background-color: $lime;
-    }
-
-    &-50-xs {
-      background-color: $lime-50;
-    }
-
-    &-100-xs {
-      background-color: $lime-100;
-    }
-
-    &-200-xs {
-      background-color: $lime-200;
-    }
-
-    &-300-xs {
-      background-color: $lime-300;
-    }
-
-    &-400-xs {
-      background-color: $lime-400;
-    }
-
-    &-500-xs {
-      background-color: $lime-500;
-    }
-
-    &-600-xs {
-      background-color: $lime-600;
-    }
-
-    &-700-xs {
-      background-color: $lime-700;
-    }
-
-    &-800-xs {
-      background-color: $lime-800;
-    }
-
-    &-900-xs {
-      background-color: $lime-900;
-    }
-
-    &-a100-xs {
-      background-color: $lime-a100;
-    }
-
-    &-a200-xs {
-      background-color: $lime-a200;
-    }
-
-    &-a400-xs {
-      background-color: $lime-a400;
-    }
-
-    &-a700-xs {
-      background-color: $lime-a700;
+  @each $key, $value in $lime-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-yellow} {
-    &-xs {
-      background-color: $yellow;
-    }
-
-    &-50-xs {
-      background-color: $yellow-50;
-    }
-
-    &-100-xs {
-      background-color: $yellow-100;
-    }
-
-    &-200-xs {
-      background-color: $yellow-200;
-    }
-
-    &-300-xs {
-      background-color: $yellow-300;
-    }
-
-    &-400-xs {
-      background-color: $yellow-400;
-    }
-
-    &-500-xs {
-      background-color: $yellow-500;
-    }
-
-    &-600-xs {
-      background-color: $yellow-600;
-    }
-
-    &-700-xs {
-      background-color: $yellow-700;
-    }
-
-    &-800-xs {
-      background-color: $yellow-800;
-    }
-
-    &-900-xs {
-      background-color: $yellow-900;
-    }
-
-    &-a100-xs {
-      background-color: $yellow-a100;
-    }
-
-    &-a200-xs {
-      background-color: $yellow-a200;
-    }
-
-    &-a400-xs {
-      background-color: $yellow-a400;
-    }
-
-    &-a700-xs {
-      background-color: $yellow-a700;
+  @each $key, $value in $yellow-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-amber} {
-    &-xs {
-      background-color: $amber;
-    }
-
-    &-50-xs {
-      background-color: $amber-50;
-    }
-
-    &-100-xs {
-      background-color: $amber-100;
-    }
-
-    &-200-xs {
-      background-color: $amber-200;
-    }
-
-    &-300-xs {
-      background-color: $amber-300;
-    }
-
-    &-400-xs {
-      background-color: $amber-400;
-    }
-
-    &-500-xs {
-      background-color: $amber-500;
-    }
-
-    &-600-xs {
-      background-color: $amber-600;
-    }
-
-    &-700-xs {
-      background-color: $amber-700;
-    }
-
-    &-800-xs {
-      background-color: $amber-800;
-    }
-
-    &-900-xs {
-      background-color: $amber-900;
-    }
-
-    &-a100-xs {
-      background-color: $amber-a100;
-    }
-
-    &-a200-xs {
-      background-color: $amber-a200;
-    }
-
-    &-a400-xs {
-      background-color: $amber-a400;
-    }
-
-    &-a700-xs {
-      background-color: $amber-a700;
+  @each $key, $value in $amber-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-orange} {
-    &-xs {
-      background-color: $orange;
-    }
-
-    &-50-xs {
-      background-color: $orange-50;
-    }
-
-    &-100-xs {
-      background-color: $orange-100;
-    }
-
-    &-200-xs {
-      background-color: $orange-200;
-    }
-
-    &-300-xs {
-      background-color: $orange-300;
-    }
-
-    &-400-xs {
-      background-color: $orange-400;
-    }
-
-    &-500-xs {
-      background-color: $orange-500;
-    }
-
-    &-600-xs {
-      background-color: $orange-600;
-    }
-
-    &-700-xs {
-      background-color: $orange-700;
-    }
-
-    &-800-xs {
-      background-color: $orange-800;
-    }
-
-    &-900-xs {
-      background-color: $orange-900;
-    }
-
-    &-a100-xs {
-      background-color: $orange-a100;
-    }
-
-    &-a200-xs {
-      background-color: $orange-a200;
-    }
-
-    &-a400-xs {
-      background-color: $orange-a400;
-    }
-
-    &-a700-xs {
-      background-color: $orange-a700;
+  @each $key, $value in $orange-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-deep-orange} {
-    &-xs {
-      background-color: $deep-orange;
-    }
-
-    &-50-xs {
-      background-color: $deep-orange-50;
-    }
-
-    &-100-xs {
-      background-color: $deep-orange-100;
-    }
-
-    &-200-xs {
-      background-color: $deep-orange-200;
-    }
-
-    &-300-xs {
-      background-color: $deep-orange-300;
-    }
-
-    &-400-xs {
-      background-color: $deep-orange-400;
-    }
-
-    &-500-xs {
-      background-color: $deep-orange-500;
-    }
-
-    &-600-xs {
-      background-color: $deep-orange-600;
-    }
-
-    &-700-xs {
-      background-color: $deep-orange-700;
-    }
-
-    &-800-xs {
-      background-color: $deep-orange-800;
-    }
-
-    &-900-xs {
-      background-color: $deep-orange-900;
-    }
-
-    &-a100-xs {
-      background-color: $deep-orange-a100;
-    }
-
-    &-a200-xs {
-      background-color: $deep-orange-a200;
-    }
-
-    &-a400-xs {
-      background-color: $deep-orange-a400;
-    }
-
-    &-a700-xs {
-      background-color: $deep-orange-a700;
+  @each $key, $value in $deep-orange-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-brown} {
-    &-xs {
-      background-color: $brown;
-    }
-
-    &-50-xs {
-      background-color: $brown-50;
-    }
-
-    &-100-xs {
-      background-color: $brown-100;
-    }
-
-    &-200-xs {
-      background-color: $brown-200;
-    }
-
-    &-300-xs {
-      background-color: $brown-300;
-    }
-
-    &-400-xs {
-      background-color: $brown-400;
-    }
-
-    &-500-xs {
-      background-color: $brown-500;
-    }
-
-    &-600-xs {
-      background-color: $brown-600;
-    }
-
-    &-700-xs {
-      background-color: $brown-700;
-    }
-
-    &-800-xs {
-      background-color: $brown-800;
-    }
-
-    &-900-xs {
-      background-color: $brown-900;
+  @each $key, $value in $brown-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-grey} {
-    &-xs {
-      background-color: $grey;
-    }
-
-    &-50-xs {
-      background-color: $grey-50;
-    }
-
-    &-100-xs {
-      background-color: $grey-100;
-    }
-
-    &-200-xs {
-      background-color: $grey-200;
-    }
-
-    &-300-xs {
-      background-color: $grey-300;
-    }
-
-    &-400-xs {
-      background-color: $grey-400;
-    }
-
-    &-500-xs {
-      background-color: $grey-500;
-    }
-
-    &-600-xs {
-      background-color: $grey-600;
-    }
-
-    &-700-xs {
-      background-color: $grey-700;
-    }
-
-    &-800-xs {
-      background-color: $grey-800;
-    }
-
-    &-900-xs {
-      background-color: $grey-900;
+  @each $key, $value in $grey-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
-  .#{$bg-color-blue-grey} {
-    &-xs {
-      background-color: $blue-grey;
-    }
-
-    &-50-xs {
-      background-color: $blue-grey-50;
-    }
-
-    &-100-xs {
-      background-color: $blue-grey-100;
-    }
-
-    &-200-xs {
-      background-color: $blue-grey-200;
-    }
-
-    &-300-xs {
-      background-color: $blue-grey-300;
-    }
-
-    &-400-xs {
-      background-color: $blue-grey-400;
-    }
-
-    &-500-xs {
-      background-color: $blue-grey-500;
-    }
-
-    &-600-xs {
-      background-color: $blue-grey-600;
-    }
-
-    &-700-xs {
-      background-color: $blue-grey-700;
-    }
-
-    &-800-xs {
-      background-color: $blue-grey-800;
-    }
-
-    &-900-xs {
-      background-color: $blue-grey-900;
+  @each $key, $value in $blue-grey-series {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
     }
   }
 
+  @each $key, $value in $namespace-color {
+    .#{$background}-#{$key}-xs {
+      @include bg-variant($value);
+    }
+  }
 }
 
-@media (max-width: 319px) {
+//responsive-mobile
+
+//Extra small devices (portrait phones, less than 576px)
+//No media query for `xs` since this is the default
+
+@media (min-width: 576px) {
+  //Small devices (landscape phones, 576px and up)
+}
+
+@media (min-width: 768px) {
+  //Medium devices (tablets, 768px and up)
+}
+
+@media (min-width: 992px) {
+  //Large devices (desktops, 992px and up)
+}
+
+@media (min-width: 1200px) {
+  //Extra large devices (large desktops, 1200px and up)
 }
