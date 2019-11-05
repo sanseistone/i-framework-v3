@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * css-framework v4.0 (https://sanseistone.com/)
+ * css-framework v3.0 (https://sanseistone.com/)
  * Copyright 2009-2019 The Sansei Stone Authors
  * Copyright 2009-2019 Sansei Stone.
  * Licensed under MIT (https://github.com/sanseistone/css-framework/blob/master/LICENSE)
@@ -145618,6 +145618,8 @@ Grid布局
 
 .layout:before,
 .layout:after,
+.grid:before,
+.grid:after,
 .row:before,
 .row:after {
   display: table;
@@ -145625,7 +145627,21 @@ Grid布局
 }
 
 .layout:after,
+.grid:after,
 .row:after {
+  clear: both;
+}
+
+.wrapper:before,
+.wrapper:after,
+.package:before,
+.package:after {
+  display: table;
+  content: "";
+}
+
+.wrapper:after,
+.package:after {
   clear: both;
 }
 
@@ -145638,3 +145654,5 @@ Grid布局
 .average:after {
   clear: both;
 }
+
+/*# sourceMappingURL=common.css.map */
