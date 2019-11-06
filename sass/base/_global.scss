@@ -65,6 +65,15 @@ img {
 header {
 }
 
+//carousel-control
+
+.carousel-control {
+  &.left, &.right {
+    background: none;
+    z-index: 1;
+  }
+}
+
 //breadcrumb
 
 .breadcrumb {
