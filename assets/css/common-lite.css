@@ -856,14 +856,12 @@
 }
 
 .layout,
-.grid,
 .row {
   margin-right: -15px;
   margin-left: -15px;
 }
 
 .layout,
-.grid,
 .row {
   display: -ms-flexbox;
   display: -webkit-box;
@@ -18008,7 +18006,6 @@ Grid布局
   }
 }
 .layout > [class^="w-"],
-.grid > [class^="w-"],
 .row > [class^="w-"] {
   position: relative;
   min-height: 1px;
@@ -18017,7 +18014,6 @@ Grid布局
 }
 
 .layout > [class^="w-"],
-.grid > [class^="w-"],
 .row > [class^="w-"] {
   float: left;
 }
@@ -36374,192 +36370,192 @@ Grid布局
   float: left;
 }
 
-.layout.one > .average, .grid.one > .average, .row.one > .average {
+.layout.one > .average, .row.one > .average {
   width: calc(100% / 1);
 }
-.layout.two > .average, .grid.two > .average, .row.two > .average {
+.layout.two > .average, .row.two > .average {
   width: calc(100% / 2);
 }
-.layout.three > .average, .grid.three > .average, .row.three > .average {
+.layout.three > .average, .row.three > .average {
   width: calc(100% / 3);
 }
-.layout.four > .average, .grid.four > .average, .row.four > .average {
+.layout.four > .average, .row.four > .average {
   width: calc(100% / 4);
 }
-.layout.five > .average, .grid.five > .average, .row.five > .average {
+.layout.five > .average, .row.five > .average {
   width: calc(100% / 5);
 }
-.layout.six > .average, .grid.six > .average, .row.six > .average {
+.layout.six > .average, .row.six > .average {
   width: calc(100% / 6);
 }
-.layout.seven > .average, .grid.seven > .average, .row.seven > .average {
+.layout.seven > .average, .row.seven > .average {
   width: calc(100% / 7);
 }
-.layout.eight > .average, .grid.eight > .average, .row.eight > .average {
+.layout.eight > .average, .row.eight > .average {
   width: calc(100% / 8);
 }
-.layout.nine > .average, .grid.nine > .average, .row.nine > .average {
+.layout.nine > .average, .row.nine > .average {
   width: calc(100% / 9);
 }
-.layout.ten > .average, .grid.ten > .average, .row.ten > .average {
+.layout.ten > .average, .row.ten > .average {
   width: calc(100% / 10);
 }
-.layout.eleven > .average, .grid.eleven > .average, .row.eleven > .average {
+.layout.eleven > .average, .row.eleven > .average {
   width: calc(100% / 11);
 }
-.layout.twelve > .average, .grid.twelve > .average, .row.twelve > .average {
+.layout.twelve > .average, .row.twelve > .average {
   width: calc(100% / 12);
 }
 
 @media (max-width: 1199px) {
-  .layout.one-lg > .average, .grid.one-lg > .average, .row.one-lg > .average {
+  .layout.one-lg > .average, .row.one-lg > .average {
     width: calc(100% / 1);
   }
-  .layout.two-lg > .average, .grid.two-lg > .average, .row.two-lg > .average {
+  .layout.two-lg > .average, .row.two-lg > .average {
     width: calc(100% / 2);
   }
-  .layout.three-lg > .average, .grid.three-lg > .average, .row.three-lg > .average {
+  .layout.three-lg > .average, .row.three-lg > .average {
     width: calc(100% / 3);
   }
-  .layout.four-lg > .average, .grid.four-lg > .average, .row.four-lg > .average {
+  .layout.four-lg > .average, .row.four-lg > .average {
     width: calc(100% / 4);
   }
-  .layout.five-lg > .average, .grid.five-lg > .average, .row.five-lg > .average {
+  .layout.five-lg > .average, .row.five-lg > .average {
     width: calc(100% / 5);
   }
-  .layout.six-lg > .average, .grid.six-lg > .average, .row.six-lg > .average {
+  .layout.six-lg > .average, .row.six-lg > .average {
     width: calc(100% / 6);
   }
-  .layout.seven-lg > .average, .grid.seven-lg > .average, .row.seven-lg > .average {
+  .layout.seven-lg > .average, .row.seven-lg > .average {
     width: calc(100% / 7);
   }
-  .layout.eight-lg > .average, .grid.eight-lg > .average, .row.eight-lg > .average {
+  .layout.eight-lg > .average, .row.eight-lg > .average {
     width: calc(100% / 8);
   }
-  .layout.nine-lg > .average, .grid.nine-lg > .average, .row.nine-lg > .average {
+  .layout.nine-lg > .average, .row.nine-lg > .average {
     width: calc(100% / 9);
   }
-  .layout.ten-lg > .average, .grid.ten-lg > .average, .row.ten-lg > .average {
+  .layout.ten-lg > .average, .row.ten-lg > .average {
     width: calc(100% / 10);
   }
-  .layout.eleven-lg > .average, .grid.eleven-lg > .average, .row.eleven-lg > .average {
+  .layout.eleven-lg > .average, .row.eleven-lg > .average {
     width: calc(100% / 11);
   }
-  .layout.twelve-lg > .average, .grid.twelve-lg > .average, .row.twelve-lg > .average {
+  .layout.twelve-lg > .average, .row.twelve-lg > .average {
     width: calc(100% / 12);
   }
 }
 @media (max-width: 991px) {
-  .layout.one-md > .average, .grid.one-md > .average, .row.one-md > .average {
+  .layout.one-md > .average, .row.one-md > .average {
     width: calc(100% / 1);
   }
-  .layout.two-md > .average, .grid.two-md > .average, .row.two-md > .average {
+  .layout.two-md > .average, .row.two-md > .average {
     width: calc(100% / 2);
   }
-  .layout.three-md > .average, .grid.three-md > .average, .row.three-md > .average {
+  .layout.three-md > .average, .row.three-md > .average {
     width: calc(100% / 3);
   }
-  .layout.four-md > .average, .grid.four-md > .average, .row.four-md > .average {
+  .layout.four-md > .average, .row.four-md > .average {
     width: calc(100% / 4);
   }
-  .layout.five-md > .average, .grid.five-md > .average, .row.five-md > .average {
+  .layout.five-md > .average, .row.five-md > .average {
     width: calc(100% / 5);
   }
-  .layout.six-md > .average, .grid.six-md > .average, .row.six-md > .average {
+  .layout.six-md > .average, .row.six-md > .average {
     width: calc(100% / 6);
   }
-  .layout.seven-md > .average, .grid.seven-md > .average, .row.seven-md > .average {
+  .layout.seven-md > .average, .row.seven-md > .average {
     width: calc(100% / 7);
   }
-  .layout.eight-md > .average, .grid.eight-md > .average, .row.eight-md > .average {
+  .layout.eight-md > .average, .row.eight-md > .average {
     width: calc(100% / 8);
   }
-  .layout.nine-md > .average, .grid.nine-md > .average, .row.nine-md > .average {
+  .layout.nine-md > .average, .row.nine-md > .average {
     width: calc(100% / 9);
   }
-  .layout.ten-md > .average, .grid.ten-md > .average, .row.ten-md > .average {
+  .layout.ten-md > .average, .row.ten-md > .average {
     width: calc(100% / 10);
   }
-  .layout.eleven-md > .average, .grid.eleven-md > .average, .row.eleven-md > .average {
+  .layout.eleven-md > .average, .row.eleven-md > .average {
     width: calc(100% / 11);
   }
-  .layout.twelve-md > .average, .grid.twelve-md > .average, .row.twelve-md > .average {
+  .layout.twelve-md > .average, .row.twelve-md > .average {
     width: calc(100% / 12);
   }
 }
 @media (max-width: 767px) {
-  .layout.one-sm > .average, .grid.one-sm > .average, .row.one-sm > .average {
+  .layout.one-sm > .average, .row.one-sm > .average {
     width: calc(100% / 1);
   }
-  .layout.two-sm > .average, .grid.two-sm > .average, .row.two-sm > .average {
+  .layout.two-sm > .average, .row.two-sm > .average {
     width: calc(100% / 2);
   }
-  .layout.three-sm > .average, .grid.three-sm > .average, .row.three-sm > .average {
+  .layout.three-sm > .average, .row.three-sm > .average {
     width: calc(100% / 3);
   }
-  .layout.four-sm > .average, .grid.four-sm > .average, .row.four-sm > .average {
+  .layout.four-sm > .average, .row.four-sm > .average {
     width: calc(100% / 4);
   }
-  .layout.five-sm > .average, .grid.five-sm > .average, .row.five-sm > .average {
+  .layout.five-sm > .average, .row.five-sm > .average {
     width: calc(100% / 5);
   }
-  .layout.six-sm > .average, .grid.six-sm > .average, .row.six-sm > .average {
+  .layout.six-sm > .average, .row.six-sm > .average {
     width: calc(100% / 6);
   }
-  .layout.seven-sm > .average, .grid.seven-sm > .average, .row.seven-sm > .average {
+  .layout.seven-sm > .average, .row.seven-sm > .average {
     width: calc(100% / 7);
   }
-  .layout.eight-sm > .average, .grid.eight-sm > .average, .row.eight-sm > .average {
+  .layout.eight-sm > .average, .row.eight-sm > .average {
     width: calc(100% / 8);
   }
-  .layout.nine-sm > .average, .grid.nine-sm > .average, .row.nine-sm > .average {
+  .layout.nine-sm > .average, .row.nine-sm > .average {
     width: calc(100% / 9);
   }
-  .layout.ten-sm > .average, .grid.ten-sm > .average, .row.ten-sm > .average {
+  .layout.ten-sm > .average, .row.ten-sm > .average {
     width: calc(100% / 10);
   }
-  .layout.eleven-sm > .average, .grid.eleven-sm > .average, .row.eleven-sm > .average {
+  .layout.eleven-sm > .average, .row.eleven-sm > .average {
     width: calc(100% / 11);
   }
-  .layout.twelve-sm > .average, .grid.twelve-sm > .average, .row.twelve-sm > .average {
+  .layout.twelve-sm > .average, .row.twelve-sm > .average {
     width: calc(100% / 12);
   }
 }
 @media (max-width: 575px) {
-  .layout.one-xs > .average, .grid.one-xs > .average, .row.one-xs > .average {
+  .layout.one-xs > .average, .row.one-xs > .average {
     width: calc(100% / 1);
   }
-  .layout.two-xs > .average, .grid.two-xs > .average, .row.two-xs > .average {
+  .layout.two-xs > .average, .row.two-xs > .average {
     width: calc(100% / 2);
   }
-  .layout.three-xs > .average, .grid.three-xs > .average, .row.three-xs > .average {
+  .layout.three-xs > .average, .row.three-xs > .average {
     width: calc(100% / 3);
   }
-  .layout.four-xs > .average, .grid.four-xs > .average, .row.four-xs > .average {
+  .layout.four-xs > .average, .row.four-xs > .average {
     width: calc(100% / 4);
   }
-  .layout.five-xs > .average, .grid.five-xs > .average, .row.five-xs > .average {
+  .layout.five-xs > .average, .row.five-xs > .average {
     width: calc(100% / 5);
   }
-  .layout.six-xs > .average, .grid.six-xs > .average, .row.six-xs > .average {
+  .layout.six-xs > .average, .row.six-xs > .average {
     width: calc(100% / 6);
   }
-  .layout.seven-xs > .average, .grid.seven-xs > .average, .row.seven-xs > .average {
+  .layout.seven-xs > .average, .row.seven-xs > .average {
     width: calc(100% / 7);
   }
-  .layout.eight-xs > .average, .grid.eight-xs > .average, .row.eight-xs > .average {
+  .layout.eight-xs > .average, .row.eight-xs > .average {
     width: calc(100% / 8);
   }
-  .layout.nine-xs > .average, .grid.nine-xs > .average, .row.nine-xs > .average {
+  .layout.nine-xs > .average, .row.nine-xs > .average {
     width: calc(100% / 9);
   }
-  .layout.ten-xs > .average, .grid.ten-xs > .average, .row.ten-xs > .average {
+  .layout.ten-xs > .average, .row.ten-xs > .average {
     width: calc(100% / 10);
   }
-  .layout.eleven-xs > .average, .grid.eleven-xs > .average, .row.eleven-xs > .average {
+  .layout.eleven-xs > .average, .row.eleven-xs > .average {
     width: calc(100% / 11);
   }
-  .layout.twelve-xs > .average, .grid.twelve-xs > .average, .row.twelve-xs > .average {
+  .layout.twelve-xs > .average, .row.twelve-xs > .average {
     width: calc(100% / 12);
   }
 }
@@ -46362,8 +46358,6 @@ Grid布局
 
 .layout:before,
 .layout:after,
-.grid:before,
-.grid:after,
 .row:before,
 .row:after {
   display: table;
@@ -46371,7 +46365,6 @@ Grid布局
 }
 
 .layout:after,
-.grid:after,
 .row:after {
   clear: both;
 }
