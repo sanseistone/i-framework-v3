@@ -1,10 +1,10 @@
 //width-percent
 
 .#{$layout} > [class^="w-"],
+.#{$grid} > [class^="w-"],
 .#{$row} > [class^="w-"] {
   position: relative;
   min-height: 1px;
-  /*float: left;*/
   padding-left: 15px;
   padding-right: 15px;
 }
