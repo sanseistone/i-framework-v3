@@ -60341,6 +60341,12 @@ Grid布局
   padding-right: 15px;
 }
 
+.layout > [class^="w-"],
+.grid > [class^="w-"],
+.row > [class^="w-"] {
+  float: left;
+}
+
 .w-5p {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 5%;
@@ -96264,6 +96270,10 @@ Grid布局
   padding-right: 15px;
 }
 
+.average {
+  float: left;
+}
+
 .layout.one > .average, .grid.one > .average, .row.one > .average {
   width: calc(100% / 1);
 }
@@ -96458,6 +96468,10 @@ Grid布局
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+[class^="col-"] {
+  float: left;
 }
 
 .col {

@@ -9,6 +9,12 @@
   padding-right: 15px;
 }
 
+.#{$layout} > [class^="w-"],
+.#{$grid} > [class^="w-"],
+.#{$row} > [class^="w-"] {
+  float: left;
+}
+
 //width-percent
 
 .#{$width} {
